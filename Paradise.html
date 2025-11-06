@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paradise</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #fff;
+            min-height: 100vh;
+        }
+
+        .header {
+            background: #fff;
+            padding: 25px 0;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            font-weight: 300;
+            letter-spacing: 3px;
+            color: #333;
+        }
+
+        .container {
+            padding: 20px 10px;
+            max-width: 100%;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .product-card {
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .product-card:active {
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 180px;
+            object-fit: contain;
+            background: #f9f9f9;
+        }
+
+        .product-info {
+            padding: 12px;
+        }
+
+        .product-name {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .product-price {
+            font-size: 16px;
+            color: #000;
+            font-weight: 600;
+        }
+
+        /* Страница товара */
+        .product-page {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            z-index: 1000;
+            overflow-y: auto;
+        }
+
+        .product-page.active {
+            display: block;
+        }
+
+        .product-header {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .back-button {
+            background: none;
+            border: none;
+            font-size: 16px;
+            color: #333;
+            cursor: pointer;
+            padding: 0;
+        }
+
+        .detail-image {
+            width: 100%;
+            height: 350px;
+            object-fit: contain;
+            background: #f9f9f9;
+        }
+
+        .detail-content {
+            padding: 20px;
+        }
+
+        .variants {
+            margin: 20px 0;
+        }
+
+        .variants h3 {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 12px;
+            font-weight: 500;
+        }
+
+        .variant-option {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 12px 16px;
+            border-radius: 6px;
+            margin-bottom: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 14px;
+        }
+
+        .variant-option:active, .variant-option.selected {
+            background: #000;
+            color: #fff;
+            border-color: #000;
+        }
+
+        .detail-price {
+            font-size: 24px;
+            color: #000;
+            font-weight: 600;
+            margin: 20px 0;
+        }
+
+        .order-button {
+            width: 100%;
+            background: #000;
+            color: #fff;
+            border: none;
+            padding: 16px;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+        }
+
+        .order-button:active {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Paradise</h1>
+    </div>
+
+    <div class="container">
+        <div class="products-grid">
+            <!-- Товар 1 -->
+            <div class="product-card" onclick="openProduct(1)">
+                <img src="https://vapeartbaku.com/storage/media/ov0kNkrGPlngW9kbaRxMfNzN4DQuYV2deuoV4cSb.webp" 
+                     alt="Vozol 30ml 50mg" 
+                     class="product-image">
+                <div class="product-info">
+                    <div class="product-name">Vozol 30ml 50mg</div>
+                    <div class="product-price">13€</div>
+                </div>
+            </div>
+
+            <!-- Товар 2 -->
+            <div class="product-card" onclick="openProduct(2)">
+                <img src="https://images.unsplash.com/photo-1526424382096-74a93e105682?w=400" 
+                     alt="Товар 2" 
+                     class="product-image">
+                <div class="product-info">
+                    <div class="product-name">Витаминный комплекс</div>
+                    <div class="product-price">1800₽</div>
+                </div>
+            </div>
+
+            <!-- Товар 3 -->
+            <div class="product-card" onclick="openProduct(3)">
+                <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=400" 
+                     alt="Товар 3" 
+                     class="product-image">
+                <div class="product-info">
+                    <div class="product-name">Энергетический напиток</div>
+                    <div class="product-price">1500₽</div>
+                </div>
+            </div>
+
+            <!-- Товар 4 -->
+            <div class="product-card" onclick="openProduct(4)">
+                <img src="https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=400" 
+                     alt="Товар 4" 
+                     class="product-image">
+                <div class="product-info">
+                    <div class="product-name">Гейнер</div>
+                    <div class="product-price">3200₽</div>
+                </div>
+            </div>
+
+            <!-- Товар 5 -->
+            <div class="product-card" onclick="openProduct(5)">
+                <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400" 
+                     alt="Товар 5" 
+                     class="product-image">
+                <div class="product-info">
+                    <div class="product-name">Аминокислоты BCAA</div>
+                    <div class="product-price">2200₽</div>
+                </div>
+            </div>
+
+            <!-- Товар 6 -->
+            <div class="product-card" onclick="openProduct(6)">
+                <img src="https://images.unsplash.com/photo-1579722821273-0f6c7d44362f?w=400" 
+                     alt="Товар 6" 
+                     class="product-image">
+                <div class="product-info">
+                    <div class="product-name">Креатин моногидрат</div>
+                    <div class="product-price">1600₽</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Страницы товаров -->
+    <div class="product-page" id="product-1">
+        <div class="product-header">
+            <button class="back-button" onclick="closeProduct(1)">← Назад</button>
+        </div>
+        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600" 
+             alt="Товар 1" 
+             class="detail-image">
+        <div class="detail-content">
+            <div class="variants">
+                <h3>Выберите вкус:</h3>
+                <div class="variant-option" onclick="selectVariant(this)">Шоколад</div>
+                <div class="variant-option" onclick="selectVariant(this)">Ваниль</div>
+                <div class="variant-option" onclick="selectVariant(this)">Клубника</div>
+                <div class="variant-option" onclick="selectVariant(this)">Банан</div>
+            </div>
+            <div class="detail-price">2500₽</div>
+            <button class="order-button" onclick="orderTelegram('username')">
+                Заказать в Telegram
+            </button>
+        </div>
+    </div>
+
+    <div class="product-page" id="product-2">
+        <div class="product-header">
+            <button class="back-button" onclick="closeProduct(2)">← Назад</button>
+        </div>
+        <img src="https://images.unsplash.com/photo-1526424382096-74a93e105682?w=600" 
+             alt="Товар 2" 
+             class="detail-image">
+        <div class="detail-content">
+            <div class="variants">
+                <h3>Выберите упаковку:</h3>
+                <div class="variant-option" onclick="selectVariant(this)">30 капсул</div>
+                <div class="variant-option" onclick="selectVariant(this)">60 капсул</div>
+                <div class="variant-option" onclick="selectVariant(this)">90 капсул</div>
+            </div>
+            <div class="detail-price">1800₽</div>
+            <button class="order-button" onclick="orderTelegram('username')">
+                Заказать в Telegram
+            </button>
+        </div>
+    </div>
+
+    <div class="product-page" id="product-3">
+        <div class="product-header">
+            <button class="back-button" onclick="closeProduct(3)">← Назад</button>
+        </div>
+        <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=600" 
+             alt="Товар 3" 
+             class="detail-image">
+        <div class="detail-content">
+            <div class="variants">
+                <h3>Выберите вкус:</h3>
+                <div class="variant-option" onclick="selectVariant(this)">Цитрус</div>
+                <div class="variant-option" onclick="selectVariant(this)">Ягодный микс</div>
+                <div class="variant-option" onclick="selectVariant(this)">Тропик</div>
+            </div>
+            <div class="detail-price">1500₽</div>
+            <button class="order-button" onclick="orderTelegram('username')">
+                Заказать в Telegram
+            </button>
+        </div>
+    </div>
+
+    <div class="product-page" id="product-4">
+        <div class="product-header">
+            <button class="back-button" onclick="closeProduct(4)">← Назад</button>
+        </div>
+        <img src="https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600" 
+             alt="Товар 4" 
+             class="detail-image">
+        <div class="detail-content">
+            <div class="variants">
+                <h3>Выберите вкус:</h3>
+                <div class="variant-option" onclick="selectVariant(this)">Шоколад</div>
+                <div class="variant-option" onclick="selectVariant(this)">Карамель</div>
+                <div class="variant-option" onclick="selectVariant(this)">Печенье</div>
+            </div>
+            <div class="detail-price">3200₽</div>
+            <button class="order-button" onclick="orderTelegram('username')">
+                Заказать в Telegram
+            </button>
+        </div>
+    </div>
+
+    <div class="product-page" id="product-5">
+        <div class="product-header">
+            <button class="back-button" onclick="closeProduct(5)">← Назад</button>
+        </div>
+        <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600" 
+             alt="Товар 5" 
+             class="detail-image">
+        <div class="detail-content">
+            <div class="variants">
+                <h3>Выберите вкус:</h3>
+                <div class="variant-option" onclick="selectVariant(this)">Яблоко</div>
+                <div class="variant-option" onclick="selectVariant(this)">Апельсин</div>
+                <div class="variant-option" onclick="selectVariant(this)">Манго</div>
+            </div>
+            <div class="detail-price">2200₽</div>
+            <button class="order-button" onclick="orderTelegram('username')">
+                Заказать в Telegram
+            </button>
+        </div>
+    </div>
+
+    <div class="product-page" id="product-6">
+        <div class="product-header">
+            <button class="back-button" onclick="closeProperty(6)">← Назад</button>
+        </div>
+        <img src="https://images.unsplash.com/photo-1579722821273-0f6c7d44362f?w=600" 
+             alt="Товар 6" 
+             class="detail-image">
+        <div class="detail-content">
+            <div class="variants">
+                <h3>Выберите объем:</h3>
+                <div class="variant-option" onclick="selectVariant(this)">300г</div>
+                <div class="variant-option" onclick="selectVariant(this)">500г</div>
+                <div class="variant-option" onclick="selectVariant(this)">1000г</div>
+            </div>
+            <div class="detail-price">1600₽</div>
+            <button class="order-button" onclick="orderTelegram('username')">
+                Заказать в Telegram
+            </button>
+        </div>
+    </div>
+
+    <script>
+        function openProduct(id) {
+            document.getElementById('product-' + id).classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeProduct(id) {
+            document.getElementById('product-' + id).classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        function selectVariant(element) {
+            const variants = element.parentElement.querySelectorAll('.variant-option');
+            variants.forEach(v => v.classList.remove('selected'));
+            element.classList.add('selected');
+        }
+
+        function orderTelegram(username) {
+            window.open('https://t.me/' + username, '_blank');
+        }
+    </script>
+</body>
+</html>
