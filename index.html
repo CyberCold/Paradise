@@ -321,6 +321,63 @@
         .order-button:active {
             opacity: 0.8;
         }
+
+        /* Стили для iOS модального окна */
+        .ios-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 3000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ios-modal.active {
+            display: flex;
+        }
+
+        .ios-modal-content {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            max-width: 300px;
+            margin: 20px;
+        }
+
+        .ios-modal-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .ios-modal-buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .ios-modal-button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .ios-modal-button.primary {
+            background: #000;
+            color: white;
+        }
+
+        .ios-modal-button.secondary {
+            background: #f0f0f0;
+            color: #333;
+        }
     </style>
 </head>
 <body>
@@ -619,12 +676,25 @@
         </div>
     </div>
 
+    <!-- Модальное окно для iOS -->
+    <div class="ios-modal" id="iosModal">
+        <div class="ios-modal-content">
+            <div class="ios-modal-title">Открыть в Telegram?</div>
+            <p>Нажмите "Открыть", чтобы перейти в Telegram с заполненным сообщением</p>
+            <div class="ios-modal-buttons">
+                <button class="ios-modal-button secondary" onclick="closeIOSModal()">Отмена</button>
+                <button class="ios-modal-button primary" onclick="openTelegramFromModal()">Открыть</button>
+            </div>
+        </div>
+    </div>
+
     <script>
         let selectedProduct = '';
         let selectedVariant = '';
         let currentImageIndex = {};
         let currentFullscreenProduct = 0;
         let currentFullscreenIndex = 0;
+        let currentTelegramUrl = '';
 
         function openProduct(id) {
             document.getElementById('product-' + id).classList.add('active');
@@ -663,33 +733,44 @@
             
             const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
             const tgUrl = `https://t.me/${username}?text=${encodedMessage}`;
+            currentTelegramUrl = tgUrl;
             
             if (isIOS) {
-                // Для iOS используем комбинированный подход
-                openLinkForIOS(tgUrl);
+                // Для iOS показываем модальное окно
+                showIOSModal();
             } else {
                 // Для Android и компьютеров - обычное открытие
                 window.open(tgUrl, '_blank');
             }
         }
 
-        function openLinkForIOS(url) {
-            // Пробуем несколько методов для iOS
-            const link = document.createElement('a');
-            link.href = url;
-            link.target = '_blank';
-            link.rel = 'noopener noreferrer';
-            document.body.appendChild(link);
+        function showIOSModal() {
+            document.getElementById('iosModal').classList.add('active');
+        }
+
+        function closeIOSModal() {
+            document.getElementById('iosModal').classList.remove('active');
+        }
+
+        function openTelegramFromModal() {
+            closeIOSModal();
             
-            // Кликаем по ссылке
-            link.click();
-            
-            // Удаляем ссылку через секунду
+            // Для iOS используем комбинированный подход
             setTimeout(() => {
-                if (link.parentNode) {
-                    link.parentNode.removeChild(link);
-                }
-            }, 1000);
+                // Пробуем открыть в приложении
+                window.location.href = currentTelegramUrl;
+                
+                // Fallback: через 500ms открываем в браузере если приложение не открылось
+                setTimeout(() => {
+                    const link = document.createElement('a');
+                    link.href = currentTelegramUrl;
+                    link.target = '_blank';
+                    link.rel = 'noopener noreferrer';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                }, 500);
+            }, 100);
         }
 
         // Функции галереи
@@ -776,6 +857,13 @@
         document.getElementById('fullscreen').addEventListener('click', function(e) {
             if (e.target === this) {
                 closeFullscreen();
+            }
+        });
+
+        // Закрытие iOS модального окна при клике на фон
+        document.getElementById('iosModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeIOSModal();
             }
         });
     </script>
