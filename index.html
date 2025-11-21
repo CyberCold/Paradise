@@ -1,40 +1,56 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Telegram Button</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Telegram Button</title>
 
-    <style>
-        body {
-            background: #111;
-            color: white;
-            font-family: Arial, sans-serif;
-            display: flex;
-            height: 100vh;
-            align-items: center;
-            justify-content: center;
-        }
-        .btn {
-            padding: 15px 25px;
-            background: #0088cc;
-            color: white;
-            font-size: 20px;
-            border-radius: 10px;
-            text-decoration: none;
-            transition: 0.2s;
-        }
-        .btn:hover {
-            background: #0aa0f5;
-        }
-    </style>
+<style>
+    body {
+        background: #111;
+        color: white;
+        font-family: Arial, sans-serif;
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+    .btn {
+        padding: 15px 25px;
+        background: #0088cc;
+        color: white;
+        font-size: 20px;
+        border-radius: 10px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
+
+<script>
+function openTelegram() {
+    const username = "CamipaMamaa";
+    const text = encodeURIComponent("Здравствуйте, хочу сделать заказ");
+
+    const tgLink = "tg://resolve?domain=" + username + "&text=" + text;
+    const httpsFallback = "https://t.me/" + username + "?text=" + text;
+
+    const iframe = document.createElement("iframe");
+    iframe.style.display = "none";
+    iframe.src = tgLink;
+    document.body.appendChild(iframe);
+
+    setTimeout(() => {
+        window.location.href = httpsFallback;
+    }, 500);
+}
+</script>
+
 </head>
 <body>
 
-<a class="btn"
-   href="tg://resolve?domain=USERNAME&text=Здравствуйте%2C%20хочу%20сделать%20заказ">
-   Заказать в Telegram
-</a>
+<button class="btn" onclick="openTelegram()">
+    Заказать в Telegram
+</button>
 
 </body>
 </html>
