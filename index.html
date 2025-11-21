@@ -661,36 +661,11 @@
             }
             const encodedMessage = encodeURIComponent(message);
             
-            const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-            const isAndroid = /Android/.test(navigator.userAgent);
+            // Используем универсальный подход для всех устройств
+            const tgUrl = `https://t.me/${username}?start=${encodedMessage}`;
             
-            if (isIOS) {
-                // Для iOS всегда используем https ссылку
-                const tgUrl = `https://t.me/${username}?text=${encodedMessage}`;
-                // Создаем ссылку и имитируем клик для лучшей совместимости с iOS
-                const link = document.createElement('a');
-                link.href = tgUrl;
-                link.target = '_blank';
-                link.rel = 'noopener noreferrer';
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-            } else if (isAndroid) {
-                // Для Android пытаемся открыть в приложении
-                const tgAppUrl = `tg://resolve?domain=${username}&text=${encodedMessage}`;
-                const tgWebUrl = `https://t.me/${username}?text=${encodedMessage}`;
-                
-                window.location.href = tgAppUrl;
-                
-                // Фолбэк на веб-версию
-                setTimeout(() => {
-                    window.open(tgWebUrl, '_blank');
-                }, 500);
-            } else {
-                // Для компьютеров
-                const tgUrl = `https://t.me/${username}?text=${encodedMessage}`;
-                window.open(tgUrl, '_blank');
-            }
+            // Простое перенаправление - самый надежный способ для iOS
+            window.location.href = tgUrl;
         }
 
         // Функции галереи
