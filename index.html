@@ -118,6 +118,150 @@
             height: 350px;
             object-fit: contain;
             background: #f9f9f9;
+            cursor: pointer;
+        }
+
+        .image-gallery {
+            position: relative;
+            width: 100%;
+            height: 350px;
+            background: #f9f9f9;
+            overflow: hidden;
+        }
+
+        .gallery-container {
+            display: flex;
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-image {
+            min-width: 100%;
+            height: 100%;
+            object-fit: contain;
+            cursor: pointer;
+        }
+
+        .gallery-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+        }
+
+        .gallery-nav.prev {
+            left: 10px;
+        }
+
+        .gallery-nav.next {
+            right: 10px;
+        }
+
+        .gallery-dots {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+            z-index: 10;
+        }
+
+        .gallery-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+        }
+
+        .gallery-dot.active {
+            background: #000;
+        }
+
+        /* Полноэкранный просмотр */
+        .fullscreen-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 2000;
+            overflow: hidden;
+        }
+
+        .fullscreen-overlay.active {
+            display: block;
+        }
+
+        .fullscreen-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .fullscreen-image {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+            touch-action: none;
+        }
+
+        .fullscreen-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 2001;
+        }
+
+        .fullscreen-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2001;
+        }
+
+        .fullscreen-nav.prev {
+            left: 20px;
+        }
+
+        .fullscreen-nav.next {
+            right: 20px;
         }
 
         .detail-content {
@@ -246,6 +390,17 @@
                     <div class="product-price">20€ (3+1 sale)</div>
                 </div>
             </div>
+
+            <!-- Товар 7 -->
+            <div class="product-card" onclick="openProduct(7)">
+                <img src="https://i.postimg.cc/jSp5rp0V/photo-2025-11-20-19-12-29.jpg" 
+                     alt="Fireworks" 
+                     class="product-image">
+                <div class="product-info">
+                    <div class="product-name">Fireworks</div>
+                    <div class="product-price">Уточнить цену</div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -254,9 +409,14 @@
         <div class="product-header">
             <button class="back-button" onclick="closeProduct(1)">← Назад</button>
         </div>
-        <img src="https://vapeartbaku.com/storage/media/ov0kNkrGPlngW9kbaRxMfNzN4DQuYV2deuoV4cSb.webp" 
-             alt="Vozol 30ml 50mg" 
-             class="detail-image">
+        <div class="image-gallery" data-product="1">
+            <div class="gallery-container">
+                <img src="https://vapeartbaku.com/storage/media/ov0kNkrGPlngW9kbaRxMfNzN4DQuYV2deuoV4cSb.webp" 
+                     alt="Vozol 30ml 50mg" 
+                     class="gallery-image"
+                     onclick="openFullscreen(1, 0)">
+            </div>
+        </div>
         <div class="detail-content">
             <div class="variants">
                 <h3>Выберите вкус:</h3>
@@ -277,9 +437,24 @@
         <div class="product-header">
             <button class="back-button" onclick="closeProduct(2)">← Назад</button>
         </div>
-        <img src="https://www.mountainprophet.de/wp-content/uploads/2023/01/07.jpg" 
-             alt="Elfliq 30ml 50mg" 
-             class="detail-image">
+        <div class="image-gallery" data-product="2">
+            <div class="gallery-container">
+                <img src="https://www.mountainprophet.de/wp-content/uploads/2023/01/07.jpg" 
+                     alt="Elfliq 30ml 50mg" 
+                     class="gallery-image"
+                     onclick="openFullscreen(2, 0)">
+                <img src="https://vapeartbaku.com/storage/media/ov0kNkrGPlngW9kbaRxMfNzN4DQuYV2deuoV4cSb.webp" 
+                     alt="Elfliq 30ml 50mg" 
+                     class="gallery-image"
+                     onclick="openFullscreen(2, 1)">
+            </div>
+            <button class="gallery-nav prev" onclick="changeImage(2, -1)">‹</button>
+            <button class="gallery-nav next" onclick="changeImage(2, 1)">›</button>
+            <div class="gallery-dots">
+                <span class="gallery-dot active" onclick="goToImage(2, 0)"></span>
+                <span class="gallery-dot" onclick="goToImage(2, 1)"></span>
+            </div>
+        </div>
         <div class="detail-content">
             <div class="variants">
                 <h3>Выберите вкус:</h3>
@@ -309,9 +484,14 @@
         <div class="product-header">
             <button class="back-button" onclick="closeProduct(3)">← Назад</button>
         </div>
-        <img src="https://elfbarrendeleseu.com/wp-content/uploads/2025/08/elfbar-gh33000-pro-blue-razz-ice.webp" 
-             alt="Elfbar GH 33000 Pro 5%" 
-             class="detail-image">
+        <div class="image-gallery" data-product="3">
+            <div class="gallery-container">
+                <img src="https://elfbarrendeleseu.com/wp-content/uploads/2025/08/elfbar-gh33000-pro-blue-razz-ice.webp" 
+                     alt="Elfbar GH 33000 Pro 5%" 
+                     class="gallery-image"
+                     onclick="openFullscreen(3, 0)">
+            </div>
+        </div>
         <div class="detail-content">
             <div class="variants">
                 <h3>Выберите вкус:</h3>
@@ -332,9 +512,14 @@
         <div class="product-header">
             <button class="back-button" onclick="closeProduct(5)">← Назад</button>
         </div>
-        <img src="https://www.fumot-store.de/wp-content/uploads/2025/07/Vozol-Rave-40K-Puffs-%E2%80%93-Blueberry-Ice-300x300.jpg" 
-             alt="VOZOL RAVE 40000 PUFS 5%" 
-             class="detail-image">
+        <div class="image-gallery" data-product="5">
+            <div class="gallery-container">
+                <img src="https://www.fumot-store.de/wp-content/uploads/2025/07/Vozol-Rave-40K-Puffs-%E2%80%93-Blueberry-Ice-300x300.jpg" 
+                     alt="VOZOL RAVE 40000 PUFS 5%" 
+                     class="gallery-image"
+                     onclick="openFullscreen(5, 0)">
+            </div>
+        </div>
         <div class="detail-content">
             <div class="variants">
                 <h3>Выберите вкус:</h3>
@@ -351,9 +536,14 @@
         <div class="product-header">
             <button class="back-button" onclick="closeProduct(6)">← Назад</button>
         </div>
-        <img src="https://image.vapesourcing.uk/imagecache/800/images/202506/vozol-star-40k.jpg" 
-             alt="VOZOL STAR 40000 PUFS 5%" 
-             class="detail-image">
+        <div class="image-gallery" data-product="6">
+            <div class="gallery-container">
+                <img src="https://image.vapesourcing.uk/imagecache/800/images/202506/vozol-star-40k.jpg" 
+                     alt="VOZOL STAR 40000 PUFS 5%" 
+                     class="gallery-image"
+                     onclick="openFullscreen(6, 0)">
+            </div>
+        </div>
         <div class="detail-content">
             <div class="variants">
                 <h3>Выберите вкус:</h3>
@@ -369,9 +559,70 @@
         </div>
     </div>
 
+    <div class="product-page" id="product-7">
+        <div class="product-header">
+            <button class="back-button" onclick="closeProduct(7)">← Назад</button>
+        </div>
+        <div class="image-gallery" data-product="7">
+            <div class="gallery-container">
+                <img src="https://i.postimg.cc/jSp5rp0V/photo-2025-11-20-19-12-29.jpg" 
+                     alt="Fireworks" 
+                     class="gallery-image"
+                     onclick="openFullscreen(7, 0)">
+                <img src="https://i.postimg.cc/Px4rYNLh/photo-2025-11-20-19-12-31.jpg" 
+                     alt="Fireworks" 
+                     class="gallery-image"
+                     onclick="openFullscreen(7, 1)">
+            </div>
+            <button class="gallery-nav prev" onclick="changeImage(7, -1)">‹</button>
+            <button class="gallery-nav next" onclick="changeImage(7, 1)">›</button>
+            <div class="gallery-dots">
+                <span class="gallery-dot active" onclick="goToImage(7, 0)"></span>
+                <span class="gallery-dot" onclick="goToImage(7, 1)"></span>
+            </div>
+        </div>
+        <div class="detail-content">
+            <div class="variants">
+                <h3>Выберите модель:</h3>
+                <div class="variant-option" onclick="selectVariant(this)">🎆 Revolt - 19 выстрелов, 25мм, 40-45м</div>
+                <div class="variant-option" onclick="selectVariant(this)">🌌 Iryd - 19 выстрелов, 30мм, ≈60м</div>
+                <div class="variant-option" onclick="selectVariant(this)">⚡️ Saturn - 19 выстрелов, 30мм, 45-60м</div>
+                <div class="variant-option" onclick="selectVariant(this)">🏖️ Coral - 20 выстрелов, 30мм, ≈60м</div>
+                <div class="variant-option" onclick="selectVariant(this)">🦠 Pandemia - 35 выстрелов, 30мм, 50-60м</div>
+                <div class="variant-option" onclick="selectVariant(this)">🚀 Delta - 50 выстрелов, 20мм, 20-30м</div>
+                <div class="variant-option" onclick="selectVariant(this)">✨ Vesta - 60 выстрелов, 20мм, 25-35м</div>
+                <div class="variant-option" onclick="selectVariant(this)">🪐 Jupiter - 25 выстрелов, 30мм, 40-60м</div>
+                <div class="variant-option" onclick="selectVariant(this)">🌠 Sirius - 25 выстрелов, 30мм, 40-50м</div>
+                <div class="variant-option" onclick="selectVariant(this)">🔥 Fornax - 48 выстрелов, 30мм, 40-60м</div>
+                <div class="variant-option" onclick="selectVariant(this)">♈️ Aries - 36 выстрелов, 30мм, 30-40м</div>
+                <div class="variant-option" onclick="selectVariant(this)">💥 Smash - 60 выстрелов, 25мм, 40-50м</div>
+                <div class="variant-option" onclick="selectVariant(this)">🌬️ Mistral - 80 выстрелов, 20мм, 20-40м</div>
+                <div class="variant-option" onclick="selectVariant(this)">🔫 Kalashnikov - ≈130 выстрелов, 20-25мм, 40-45м</div>
+                <div class="variant-option" onclick="selectVariant(this)">⚫️ Boson - 136 выстрелов, 25мм, 40-50м</div>
+            </div>
+            <div class="detail-price">Уточнить цену</div>
+            <button class="order-button" onclick="orderTelegram('CamipaMamaa')">
+                Заказать в Telegram
+            </button>
+        </div>
+    </div>
+
+    <!-- Полноэкранный просмотр -->
+    <div class="fullscreen-overlay" id="fullscreen">
+        <button class="fullscreen-close" onclick="closeFullscreen()">×</button>
+        <div class="fullscreen-container">
+            <button class="fullscreen-nav prev" onclick="changeFullscreenImage(-1)">‹</button>
+            <img src="" alt="" class="fullscreen-image" id="fullscreen-image">
+            <button class="fullscreen-nav next" onclick="changeFullscreenImage(1)">›</button>
+        </div>
+    </div>
+
     <script>
         let selectedProduct = '';
         let selectedVariant = '';
+        let currentImageIndex = {};
+        let currentFullscreenProduct = 0;
+        let currentFullscreenIndex = 0;
 
         function openProduct(id) {
             document.getElementById('product-' + id).classList.add('active');
@@ -382,6 +633,11 @@
             const productNameElement = productCard.querySelector('.product-name');
             selectedProduct = productNameElement.textContent;
             selectedVariant = '';
+
+            // Инициализируем индекс изображения для этого товара
+            if (!(id in currentImageIndex)) {
+                currentImageIndex[id] = 0;
+            }
         }
 
         function closeProduct(id) {
@@ -404,6 +660,93 @@
             const encodedMessage = encodeURIComponent(message);
             window.open('https://t.me/' + username + '?text=' + encodedMessage, '_blank');
         }
+
+        // Функции галереи
+        function changeImage(productId, direction) {
+            const gallery = document.querySelector(`[data-product="${productId}"]`);
+            const container = gallery.querySelector('.gallery-container');
+            const images = gallery.querySelectorAll('.gallery-image');
+            const dots = gallery.querySelectorAll('.gallery-dot');
+
+            if (images.length <= 1) return;
+
+            currentImageIndex[productId] = (currentImageIndex[productId] || 0) + direction;
+            
+            // Циклический переход
+            if (currentImageIndex[productId] < 0) {
+                currentImageIndex[productId] = images.length - 1;
+            } else if (currentImageIndex[productId] >= images.length) {
+                currentImageIndex[productId] = 0;
+            }
+
+            container.style.transform = `translateX(-${currentImageIndex[productId] * 100}%)`;
+
+            // Обновляем точки
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentImageIndex[productId]);
+            });
+        }
+
+        function goToImage(productId, index) {
+            const gallery = document.querySelector(`[data-product="${productId}"]`);
+            const container = gallery.querySelector('.gallery-container');
+            const dots = gallery.querySelectorAll('.gallery-dot');
+
+            currentImageIndex[productId] = index;
+            container.style.transform = `translateX(-${index * 100}%)`;
+
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+        }
+
+        // Полноэкранный просмотр
+        function openFullscreen(productId, imageIndex) {
+            currentFullscreenProduct = productId;
+            currentFullscreenIndex = imageIndex;
+
+            const gallery = document.querySelector(`[data-product="${productId}"]`);
+            const images = gallery.querySelectorAll('.gallery-image');
+            const fullscreenImg = document.getElementById('fullscreen-image');
+            
+            fullscreenImg.src = images[imageIndex].src;
+            fullscreenImg.alt = images[imageIndex].alt;
+            
+            document.getElementById('fullscreen').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeFullscreen() {
+            document.getElementById('fullscreen').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        function changeFullscreenImage(direction) {
+            const gallery = document.querySelector(`[data-product="${currentFullscreenProduct}"]`);
+            const images = gallery.querySelectorAll('.gallery-image');
+
+            if (images.length <= 1) return;
+
+            currentFullscreenIndex += direction;
+
+            // Циклический переход
+            if (currentFullscreenIndex < 0) {
+                currentFullscreenIndex = images.length - 1;
+            } else if (currentFullscreenIndex >= images.length) {
+                currentFullscreenIndex = 0;
+            }
+
+            const fullscreenImg = document.getElementById('fullscreen-image');
+            fullscreenImg.src = images[currentFullscreenIndex].src;
+            fullscreenImg.alt = images[currentFullscreenIndex].alt;
+        }
+
+        // Закрытие полноэкранного режима при клике на фон
+        document.getElementById('fullscreen').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeFullscreen();
+            }
+        });
     </script>
 </body>
 </html>
