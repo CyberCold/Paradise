@@ -355,10 +355,20 @@
             margin-bottom: 15px;
         }
 
+        .ios-modal-text {
+            background: #f5f5f5;
+            padding: 10px;
+            border-radius: 6px;
+            margin: 10px 0;
+            font-size: 14px;
+            word-break: break-all;
+        }
+
         .ios-modal-buttons {
             display: flex;
             gap: 10px;
             justify-content: center;
+            margin-top: 15px;
         }
 
         .ios-modal-button {
@@ -367,6 +377,7 @@
             border-radius: 6px;
             font-size: 16px;
             cursor: pointer;
+            flex: 1;
         }
 
         .ios-modal-button.primary {
@@ -378,6 +389,22 @@
             background: #f0f0f0;
             color: #333;
         }
+
+        .ios-modal-button.success {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .copy-message {
+            color: #4CAF50;
+            font-size: 14px;
+            margin-top: 10px;
+            display: none;
+        }
+
+        .copy-message.show {
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -387,6 +414,7 @@
 
     <div class="container">
         <div class="products-grid">
+            <!-- Товары остаются без изменений -->
             <!-- Товар 1 -->
             <div class="product-card" onclick="openProduct(1)">
                 <img src="https://vapeartbaku.com/storage/media/ov0kNkrGPlngW9kbaRxMfNzN4DQuYV2deuoV4cSb.webp" 
@@ -463,7 +491,7 @@
         </div>
     </div>
 
-    <!-- Страницы товаров -->
+    <!-- Страницы товаров (остаются без изменений) -->
     <div class="product-page" id="product-1">
         <div class="product-header">
             <button class="back-button" onclick="closeProduct(1)">← Назад</button>
@@ -679,11 +707,15 @@
     <!-- Модальное окно для iOS -->
     <div class="ios-modal" id="iosModal">
         <div class="ios-modal-content">
-            <div class="ios-modal-title">Открыть в Telegram?</div>
-            <p>Нажмите "Открыть", чтобы перейти в Telegram с заполненным сообщением</p>
+            <div class="ios-modal-title">Заказ в Telegram</div>
+            <p>Текст вашего заказа скопирован в буфер обмена:</p>
+            <div class="ios-modal-text" id="orderText"></div>
+            <p>Теперь откройте Telegram и вставьте текст в чат</p>
+            <div class="copy-message" id="copyMessage">✓ Текст скопирован!</div>
             <div class="ios-modal-buttons">
                 <button class="ios-modal-button secondary" onclick="closeIOSModal()">Отмена</button>
-                <button class="ios-modal-button primary" onclick="openTelegramFromModal()">Открыть</button>
+                <button class="ios-modal-button success" onclick="copyToClipboard()">Скопировать еще раз</button>
+                <button class="ios-modal-button primary" onclick="openTelegram()">Открыть Telegram</button>
             </div>
         </div>
     </div>
@@ -694,19 +726,17 @@
         let currentImageIndex = {};
         let currentFullscreenProduct = 0;
         let currentFullscreenIndex = 0;
-        let currentTelegramUrl = '';
+        let currentOrderText = '';
 
         function openProduct(id) {
             document.getElementById('product-' + id).classList.add('active');
             document.body.style.overflow = 'hidden';
             
-            // Получаем название товара из карточки
             const productCard = event.target.closest('.product-card');
             const productNameElement = productCard.querySelector('.product-name');
             selectedProduct = productNameElement.textContent;
             selectedVariant = '';
 
-            // Инициализируем индекс изображения для этого товара
             if (!(id in currentImageIndex)) {
                 currentImageIndex[id] = 0;
             }
@@ -729,51 +759,55 @@
             if (selectedVariant) {
                 message += ', вкус: ' + selectedVariant;
             }
-            const encodedMessage = encodeURIComponent(message);
             
             const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-            const tgUrl = `https://t.me/${username}?text=${encodedMessage}`;
-            currentTelegramUrl = tgUrl;
             
             if (isIOS) {
-                // Для iOS показываем модальное окно
-                showIOSModal();
+                // Для iOS используем копирование в буфер обмена
+                currentOrderText = message;
+                showIOSModal(message);
             } else {
-                // Для Android и компьютеров - обычное открытие
+                // Для Android и компьютеров - обычная ссылка
+                const encodedMessage = encodeURIComponent(message);
+                const tgUrl = `https://t.me/${username}?text=${encodedMessage}`;
                 window.open(tgUrl, '_blank');
             }
         }
 
-        function showIOSModal() {
+        function showIOSModal(message) {
+            document.getElementById('orderText').textContent = message;
             document.getElementById('iosModal').classList.add('active');
+            // Автоматически копируем текст при открытии модального окна
+            copyToClipboard();
         }
 
         function closeIOSModal() {
             document.getElementById('iosModal').classList.remove('active');
         }
 
-        function openTelegramFromModal() {
-            closeIOSModal();
+        function copyToClipboard() {
+            const textArea = document.createElement('textarea');
+            textArea.value = currentOrderText;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
             
-            // Для iOS используем комбинированный подход
+            // Показываем сообщение об успешном копировании
+            const copyMessage = document.getElementById('copyMessage');
+            copyMessage.classList.add('show');
             setTimeout(() => {
-                // Пробуем открыть в приложении
-                window.location.href = currentTelegramUrl;
-                
-                // Fallback: через 500ms открываем в браузере если приложение не открылось
-                setTimeout(() => {
-                    const link = document.createElement('a');
-                    link.href = currentTelegramUrl;
-                    link.target = '_blank';
-                    link.rel = 'noopener noreferrer';
-                    document.body.appendChild(link);
-                    link.click();
-                    document.body.removeChild(link);
-                }, 500);
-            }, 100);
+                copyMessage.classList.remove('show');
+            }, 2000);
         }
 
-        // Функции галереи
+        function openTelegram() {
+            closeIOSModal();
+            // Открываем Telegram без текста (так как текст уже в буфере обмена)
+            window.open('https://t.me/CamipaMamaa', '_blank');
+        }
+
+        // Остальные функции галереи остаются без изменений
         function changeImage(productId, direction) {
             const gallery = document.querySelector(`[data-product="${productId}"]`);
             const container = gallery.querySelector('.gallery-container');
@@ -784,7 +818,6 @@
 
             currentImageIndex[productId] = (currentImageIndex[productId] || 0) + direction;
             
-            // Циклический переход
             if (currentImageIndex[productId] < 0) {
                 currentImageIndex[productId] = images.length - 1;
             } else if (currentImageIndex[productId] >= images.length) {
@@ -793,7 +826,6 @@
 
             container.style.transform = `translateX(-${currentImageIndex[productId] * 100}%)`;
 
-            // Обновляем точки
             dots.forEach((dot, index) => {
                 dot.classList.toggle('active', index === currentImageIndex[productId]);
             });
@@ -812,7 +844,6 @@
             });
         }
 
-        // Полноэкранный просмотр
         function openFullscreen(productId, imageIndex) {
             currentFullscreenProduct = productId;
             currentFullscreenIndex = imageIndex;
@@ -841,7 +872,6 @@
 
             currentFullscreenIndex += direction;
 
-            // Циклический переход
             if (currentFullscreenIndex < 0) {
                 currentFullscreenIndex = images.length - 1;
             } else if (currentFullscreenIndex >= images.length) {
@@ -853,14 +883,12 @@
             fullscreenImg.alt = images[currentFullscreenIndex].alt;
         }
 
-        // Закрытие полноэкранного режима при клике на фон
         document.getElementById('fullscreen').addEventListener('click', function(e) {
             if (e.target === this) {
                 closeFullscreen();
             }
         });
 
-        // Закрытие iOS модального окна при клике на фон
         document.getElementById('iosModal').addEventListener('click', function(e) {
             if (e.target === this) {
                 closeIOSModal();
