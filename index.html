@@ -655,7 +655,7 @@
         function orderTelegram(username) {
             let message = 'Здравствуйте, хочу у вас купить ' + selectedProduct;
             if (selectedVariant) {
-                message += ', вкус: ' + selectedVariant;
+                message += ', ' + selectedVariant;
             }
             const encodedMessage = encodeURIComponent(message);
             window.open('https://t.me/' + username + '?text=' + encodedMessage, '_blank');
@@ -750,3 +750,4 @@
     </script>
 </body>
 </html>
+
