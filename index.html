@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <title>Paradise</title>
     <style>
         * {
@@ -84,6 +82,7 @@
             font-weight: 600;
         }
 
+        /* Страница товара */
         .product-page {
             display: none;
             position: fixed;
@@ -112,6 +111,14 @@
             color: #333;
             cursor: pointer;
             padding: 0;
+        }
+
+        .detail-image {
+            width: 100%;
+            height: 350px;
+            object-fit: contain;
+            background: #f9f9f9;
+            cursor: pointer;
         }
 
         .image-gallery {
@@ -183,6 +190,7 @@
             background: #000;
         }
 
+        /* Полноэкранный просмотр */
         .fullscreen-overlay {
             display: none;
             position: fixed;
@@ -311,125 +319,6 @@
         .order-button:active {
             opacity: 0.8;
         }
-
-        .ios-modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.9);
-            z-index: 3000;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .ios-modal.active {
-            display: flex;
-        }
-
-        .ios-modal-content {
-            background: white;
-            padding: 25px;
-            border-radius: 15px;
-            text-align: center;
-            max-width: 320px;
-            margin: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-        }
-
-        .ios-modal-title {
-            font-size: 20px;
-            font-weight: 600;
-            margin-bottom: 15px;
-            color: #000;
-        }
-
-        .ios-modal-text {
-            background: #f8f9fa;
-            padding: 15px;
-            border-radius: 8px;
-            margin: 15px 0;
-            font-size: 14px;
-            border: 1px solid #e9ecef;
-            line-height: 1.4;
-        }
-
-        .ios-modal-instruction {
-            background: #e7f3ff;
-            padding: 12px;
-            border-radius: 8px;
-            margin: 15px 0;
-            font-size: 13px;
-            border-left: 4px solid #007bff;
-            text-align: left;
-        }
-
-        .ios-modal-instruction ol {
-            margin: 0;
-            padding-left: 20px;
-        }
-
-        .ios-modal-instruction li {
-            margin-bottom: 8px;
-        }
-
-        .ios-modal-buttons {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            margin-top: 20px;
-        }
-
-        .ios-modal-button {
-            padding: 14px 20px;
-            border: none;
-            border-radius: 8px;
-            font-size: 16px;
-            font-weight: 500;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .ios-modal-button.primary {
-            background: #000;
-            color: white;
-        }
-
-        .ios-modal-button.primary:active {
-            background: #333;
-        }
-
-        .ios-modal-button.success {
-            background: #28a745;
-            color: white;
-        }
-
-        .ios-modal-button.success:active {
-            background: #218838;
-        }
-
-        .ios-modal-button.secondary {
-            background: #6c757d;
-            color: white;
-        }
-
-        .ios-modal-button.secondary:active {
-            background: #545b62;
-        }
-
-        .copy-success {
-            color: #28a745;
-            font-size: 14px;
-            margin-top: 10px;
-            font-weight: 500;
-            display: none;
-        }
-
-        .copy-success.show {
-            display: block;
-        }
     </style>
 </head>
 <body>
@@ -439,8 +328,8 @@
 
     <div class="container">
         <div class="products-grid">
-            <!-- Товары -->
-            <div class="product-card" data-product-id="1">
+            <!-- Товар 1 -->
+            <div class="product-card" onclick="openProduct(1)">
                 <img src="https://vapeartbaku.com/storage/media/ov0kNkrGPlngW9kbaRxMfNzN4DQuYV2deuoV4cSb.webp" 
                      alt="Vozol 30ml 50mg" 
                      class="product-image">
@@ -454,7 +343,8 @@
                 </div>
             </div>
 
-            <div class="product-card" data-product-id="2">
+            <!-- Товар 2 -->
+            <div class="product-card" onclick="openProduct(2)">
                 <img src="https://www.mountainprophet.de/wp-content/uploads/2023/01/07.jpg" 
                      alt="Elfliq 30ml 50mg" 
                      class="product-image">
@@ -468,7 +358,8 @@
                 </div>
             </div>
 
-            <div class="product-card" data-product-id="3">
+            <!-- Товар 3 -->
+            <div class="product-card" onclick="openProduct(3)">
                 <img src="https://elfbarrendeleseu.com/wp-content/uploads/2025/08/elfbar-gh33000-pro-blue-razz-ice.webp" 
                      alt="Elfbar GH 33000 Pro 5%" 
                      class="product-image">
@@ -478,7 +369,8 @@
                 </div>
             </div>
 
-            <div class="product-card" data-product-id="5">
+            <!-- Товар 5 -->
+            <div class="product-card" onclick="openProduct(5)">
                 <img src="https://www.fumot-store.de/wp-content/uploads/2025/07/Vozol-Rave-40K-Puffs-%E2%80%93-Blueberry-Ice-300x300.jpg" 
                      alt="VOZOL RAVE  40000 PUFS 5%" 
                      class="product-image">
@@ -488,7 +380,8 @@
                 </div>
             </div>
 
-            <div class="product-card" data-product-id="6">
+            <!-- Товар 6 -->
+            <div class="product-card" onclick="openProduct(6)">
                 <img src="https://image.vapesourcing.uk/imagecache/800/images/202506/vozol-star-40k.jpg" 
                      alt="VOZOL 40000 PUFS 5%" 
                      class="product-image">
@@ -498,7 +391,8 @@
                 </div>
             </div>
 
-            <div class="product-card" data-product-id="7">
+            <!-- Товар 7 -->
+            <div class="product-card" onclick="openProduct(7)">
                 <img src="https://i.postimg.cc/jSp5rp0V/photo-2025-11-20-19-12-29.jpg" 
                      alt="Fireworks" 
                      class="product-image">
@@ -510,7 +404,7 @@
         </div>
     </div>
 
-    <!-- Страницы товаров (остаются без изменений) -->
+    <!-- Страницы товаров -->
     <div class="product-page" id="product-1">
         <div class="product-header">
             <button class="back-button" onclick="closeProduct(1)">← Назад</button>
@@ -539,7 +433,179 @@
         </div>
     </div>
 
-    <!-- Остальные страницы товаров... -->
+    <div class="product-page" id="product-2">
+        <div class="product-header">
+            <button class="back-button" onclick="closeProduct(2)">← Назад</button>
+        </div>
+        <div class="image-gallery" data-product="2">
+            <div class="gallery-container">
+                <img src="https://www.mountainprophet.de/wp-content/uploads/2023/01/07.jpg" 
+                     alt="Elfliq 30ml 50mg" 
+                     class="gallery-image"
+                     onclick="openFullscreen(2, 0)">
+                <img src="https://vapeartbaku.com/storage/media/ov0kNkrGPlngW9kbaRxMfNzN4DQuYV2deuoV4cSb.webp" 
+                     alt="Elfliq 30ml 50mg" 
+                     class="gallery-image"
+                     onclick="openFullscreen(2, 1)">
+            </div>
+            <button class="gallery-nav prev" onclick="changeImage(2, -1)">‹</button>
+            <button class="gallery-nav next" onclick="changeImage(2, 1)">›</button>
+            <div class="gallery-dots">
+                <span class="gallery-dot active" onclick="goToImage(2, 0)"></span>
+                <span class="gallery-dot" onclick="goToImage(2, 1)"></span>
+            </div>
+        </div>
+        <div class="detail-content">
+            <div class="variants">
+                <h3>Выберите вкус:</h3>
+                <div class="variant-option" onclick="selectVariant(this)">Berries</div>
+                <div class="variant-option" onclick="selectVariant(this)">Blue Razz Ice</div>
+                <div class="variant-option" onclick="selectVariant(this)">Grape</div>
+                <div class="variant-option" onclick="selectVariant(this)">Watermelon</div>
+                <div class="variant-option" onclick="selectVariant(this)">Strawberry Ice</div>
+                <div class="variant-option" onclick="selectVariant(this)">Blackberry Lemon</div>
+                <div class="variant-option" onclick="selectVariant(this)">Pink Lemonade</div>
+                <div class="variant-option" onclick="selectVariant(this)">Watermelon Cherry</div>
+                <div class="variant-option" onclick="selectVariant(this)">Red Bull</div>
+                <div class="variant-option" onclick="selectVariant(this)">Sour Watermelon Gummy</div>
+            </div>
+            <div class="detail-price">1 - 15€<br>
+                2 - 28€<br>
+                3 - 40€<br>
+                5 - 60€
+            </div>
+            <button class="order-button" onclick="orderTelegram('CamipaMamaa')">
+                Заказать в Telegram
+            </button>
+        </div>
+    </div>
+
+    <div class="product-page" id="product-3">
+        <div class="product-header">
+            <button class="back-button" onclick="closeProduct(3)">← Назад</button>
+        </div>
+        <div class="image-gallery" data-product="3">
+            <div class="gallery-container">
+                <img src="https://elfbarrendeleseu.com/wp-content/uploads/2025/08/elfbar-gh33000-pro-blue-razz-ice.webp" 
+                     alt="Elfbar GH 33000 Pro 5%" 
+                     class="gallery-image"
+                     onclick="openFullscreen(3, 0)">
+            </div>
+        </div>
+        <div class="detail-content">
+            <div class="variants">
+                <h3>Выберите вкус:</h3>
+                <div class="variant-option" onclick="selectVariant(this)">Strawberry Kiwi</div>
+                <div class="variant-option" onclick="selectVariant(this)">Cherry</div>
+                <div class="variant-option" onclick="selectVariant(this)">Apple Kiwi Ice</div>
+                <div class="variant-option" onclick="selectVariant(this)">Grapefruit Passion Guava</div>
+                <div class="variant-option" onclick="selectVariant(this)">Raspberry Grapefruit Lemon</div>
+            </div>
+            <div class="detail-price">20€ (3+1 sale)</div>
+            <button class="order-button" onclick="orderTelegram('CamipaMamaa')">
+                Заказать в Telegram
+            </button>
+        </div>
+    </div>
+
+    <div class="product-page" id="product-5">
+        <div class="product-header">
+            <button class="back-button" onclick="closeProduct(5)">← Назад</button>
+        </div>
+        <div class="image-gallery" data-product="5">
+            <div class="gallery-container">
+                <img src="https://www.fumot-store.de/wp-content/uploads/2025/07/Vozol-Rave-40K-Puffs-%E2%80%93-Blueberry-Ice-300x300.jpg" 
+                     alt="VOZOL RAVE 40000 PUFS 5%" 
+                     class="gallery-image"
+                     onclick="openFullscreen(5, 0)">
+            </div>
+        </div>
+        <div class="detail-content">
+            <div class="variants">
+                <h3>Выберите вкус:</h3>
+                <div class="variant-option" onclick="selectVariant(this)">Временно недоступно</div>
+            </div>
+            <div class="detail-price">20€ (3+1 sale)</div>
+            <button class="order-button" onclick="orderTelegram('CamipaMamaa')">
+                Заказать в Telegram
+            </button>
+        </div>
+    </div>
+
+    <div class="product-page" id="product-6">
+        <div class="product-header">
+            <button class="back-button" onclick="closeProduct(6)">← Назад</button>
+        </div>
+        <div class="image-gallery" data-product="6">
+            <div class="gallery-container">
+                <img src="https://image.vapesourcing.uk/imagecache/800/images/202506/vozol-star-40k.jpg" 
+                     alt="VOZOL STAR 40000 PUFS 5%" 
+                     class="gallery-image"
+                     onclick="openFullscreen(6, 0)">
+            </div>
+        </div>
+        <div class="detail-content">
+            <div class="variants">
+                <h3>Выберите вкус:</h3>
+                <div class="variant-option" onclick="selectVariant(this)">Cherimoya Grapefruit Berries</div>
+                <div class="variant-option" onclick="selectVariant(this)">Blue Razz Ice</div>
+                <div class="variant-option" onclick="selectVariant(this)">Dragon Fruit Banana</div>
+                <div class="variant-option" onclick="selectVariant(this)">Blueberry Ice</div>
+            </div>
+            <div class="detail-price">20€ (3+1 sale)</div>
+            <button class="order-button" onclick="orderTelegram('CamipaMamaa')">
+                Заказать в Telegram
+            </button>
+        </div>
+    </div>
+
+    <div class="product-page" id="product-7">
+        <div class="product-header">
+            <button class="back-button" onclick="closeProduct(7)">← Назад</button>
+        </div>
+        <div class="image-gallery" data-product="7">
+            <div class="gallery-container">
+                <img src="https://i.postimg.cc/jSp5rp0V/photo-2025-11-20-19-12-29.jpg" 
+                     alt="Fireworks" 
+                     class="gallery-image"
+                     onclick="openFullscreen(7, 0)">
+                <img src="https://i.postimg.cc/Px4rYNLh/photo-2025-11-20-19-12-31.jpg" 
+                     alt="Fireworks" 
+                     class="gallery-image"
+                     onclick="openFullscreen(7, 1)">
+            </div>
+            <button class="gallery-nav prev" onclick="changeImage(7, -1)">‹</button>
+            <button class="gallery-nav next" onclick="changeImage(7, 1)">›</button>
+            <div class="gallery-dots">
+                <span class="gallery-dot active" onclick="goToImage(7, 0)"></span>
+                <span class="gallery-dot" onclick="goToImage(7, 1)"></span>
+            </div>
+        </div>
+        <div class="detail-content">
+            <div class="variants">
+                <h3>Выберите модель:</h3>
+                <div class="variant-option" onclick="selectVariant(this)">🎆 Revolt - 19 выстрелов, 25мм, 40-45м</div>
+                <div class="variant-option" onclick="selectVariant(this)">🌌 Iryd - 19 выстрелов, 30мм, ≈60м</div>
+                <div class="variant-option" onclick="selectVariant(this)">⚡️ Saturn - 19 выстрелов, 30мм, 45-60м</div>
+                <div class="variant-option" onclick="selectVariant(this)">🏖️ Coral - 20 выстрелов, 30мм, ≈60м</div>
+                <div class="variant-option" onclick="selectVariant(this)">🦠 Pandemia - 35 выстрелов, 30мм, 50-60м</div>
+                <div class="variant-option" onclick="selectVariant(this)">🚀 Delta - 50 выстрелов, 20мм, 20-30м</div>
+                <div class="variant-option" onclick="selectVariant(this)">✨ Vesta - 60 выстрелов, 20мм, 25-35м</div>
+                <div class="variant-option" onclick="selectVariant(this)">🪐 Jupiter - 25 выстрелов, 30мм, 40-60м</div>
+                <div class="variant-option" onclick="selectVariant(this)">🌠 Sirius - 25 выстрелов, 30мм, 40-50м</div>
+                <div class="variant-option" onclick="selectVariant(this)">🔥 Fornax - 48 выстрелов, 30мм, 40-60м</div>
+                <div class="variant-option" onclick="selectVariant(this)">♈️ Aries - 36 выстрелов, 30мм, 30-40м</div>
+                <div class="variant-option" onclick="selectVariant(this)">💥 Smash - 60 выстрелов, 25мм, 40-50м</div>
+                <div class="variant-option" onclick="selectVariant(this)">🌬️ Mistral - 80 выстрелов, 20мм, 20-40м</div>
+                <div class="variant-option" onclick="selectVariant(this)">🔫 Kalashnikov - ≈130 выстрелов, 20-25мм, 40-45м</div>
+                <div class="variant-option" onclick="selectVariant(this)">⚫️ Boson - 136 выстрелов, 25мм, 40-50м</div>
+            </div>
+            <div class="detail-price">Уточнить цену</div>
+            <button class="order-button" onclick="orderTelegram('CamipaMamaa')">
+                Заказать в Telegram
+            </button>
+        </div>
+    </div>
 
     <!-- Полноэкранный просмотр -->
     <div class="fullscreen-overlay" id="fullscreen">
@@ -551,62 +617,24 @@
         </div>
     </div>
 
-    <!-- Модальное окно для iOS -->
-    <div class="ios-modal" id="iosModal">
-        <div class="ios-modal-content">
-            <div class="ios-modal-title">📱 Заказ через Telegram</div>
-            
-            <div class="ios-modal-text" id="orderText"></div>
-            
-            <div class="copy-success" id="copySuccess">✅ Текст скопирован в буфер обмена!</div>
-            
-            <div class="ios-modal-instruction">
-                <strong>Инструкция для iOS:</strong>
-                <ol>
-                    <li>Нажмите "Скопировать текст"</li>
-                    <li>Нажмите "Открыть Telegram"</li>
-                    <li>В чате сделайте долгое нажатие</li>
-                    <li>Выберите "Вставить"</li>
-                    <li>Отправьте сообщение</li>
-                </ol>
-            </div>
-            
-            <div class="ios-modal-buttons">
-                <button class="ios-modal-button success" onclick="copyOrderText()">📋 Скопировать текст</button>
-                <button class="ios-modal-button primary" onclick="openTelegramApp()">📲 Открыть Telegram</button>
-                <button class="ios-modal-button secondary" onclick="closeIOSModal()">Закрыть</button>
-            </div>
-        </div>
-    </div>
-
     <script>
         let selectedProduct = '';
         let selectedVariant = '';
         let currentImageIndex = {};
         let currentFullscreenProduct = 0;
         let currentFullscreenIndex = 0;
-        let currentOrderText = '';
-
-        // Инициализация обработчиков для товаров
-        document.addEventListener('DOMContentLoaded', function() {
-            const productCards = document.querySelectorAll('.product-card');
-            productCards.forEach(card => {
-                card.addEventListener('click', function() {
-                    const productId = this.getAttribute('data-product-id');
-                    openProduct(productId);
-                });
-            });
-        });
 
         function openProduct(id) {
             document.getElementById('product-' + id).classList.add('active');
             document.body.style.overflow = 'hidden';
             
-            const productCard = document.querySelector(`[data-product-id="${id}"]`);
+            // Получаем название товара из карточки
+            const productCard = event.target.closest('.product-card');
             const productNameElement = productCard.querySelector('.product-name');
             selectedProduct = productNameElement.textContent;
             selectedVariant = '';
 
+            // Инициализируем индекс изображения для этого товара
             if (!(id in currentImageIndex)) {
                 currentImageIndex[id] = 0;
             }
@@ -629,75 +657,11 @@
             if (selectedVariant) {
                 message += ', вкус: ' + selectedVariant;
             }
-            
-            const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-            
-            if (isIOS) {
-                // Для iOS показываем модальное окно с инструкцией
-                currentOrderText = message;
-                showIOSModal(message);
-            } else {
-                // Для Android и компьютеров - прямая ссылка
-                const encodedMessage = encodeURIComponent(message);
-                const tgUrl = `https://t.me/${username}?text=${encodedMessage}`;
-                window.open(tgUrl, '_blank');
-            }
+            const encodedMessage = encodeURIComponent(message);
+            window.open('https://t.me/' + username + '?text=' + encodedMessage, '_blank');
         }
 
-        function showIOSModal(message) {
-            document.getElementById('orderText').textContent = message;
-            document.getElementById('copySuccess').classList.remove('show');
-            document.getElementById('iosModal').classList.add('active');
-        }
-
-        function closeIOSModal() {
-            document.getElementById('iosModal').classList.remove('active');
-        }
-
-        async function copyOrderText() {
-            try {
-                // Современный API для копирования
-                if (navigator.clipboard && navigator.clipboard.writeText) {
-                    await navigator.clipboard.writeText(currentOrderText);
-                } else {
-                    // Fallback для старых браузеров
-                    const textArea = document.createElement('textarea');
-                    textArea.value = currentOrderText;
-                    document.body.appendChild(textArea);
-                    textArea.select();
-                    document.execCommand('copy');
-                    document.body.removeChild(textArea);
-                }
-                
-                // Показываем подтверждение копирования
-                const copySuccess = document.getElementById('copySuccess');
-                copySuccess.classList.add('show');
-                
-                // Скрываем подтверждение через 3 секунды
-                setTimeout(() => {
-                    copySuccess.classList.remove('show');
-                }, 3000);
-                
-            } catch (err) {
-                alert('Не удалось скопировать текст. Скопируйте его вручную.');
-            }
-        }
-
-        function openTelegramApp() {
-            // Открываем Telegram (без текста, так как он уже в буфере)
-            const appUrl = 'tg://resolve?domain=CamipaMamaa';
-            const webUrl = 'https://t.me/CamipaMamaa';
-            
-            // Пробуем открыть приложение
-            window.location.href = appUrl;
-            
-            // Fallback на веб-версию через 500ms
-            setTimeout(() => {
-                window.open(webUrl, '_blank');
-            }, 500);
-        }
-
-        // Остальные функции галереи...
+        // Функции галереи
         function changeImage(productId, direction) {
             const gallery = document.querySelector(`[data-product="${productId}"]`);
             const container = gallery.querySelector('.gallery-container');
@@ -708,6 +672,7 @@
 
             currentImageIndex[productId] = (currentImageIndex[productId] || 0) + direction;
             
+            // Циклический переход
             if (currentImageIndex[productId] < 0) {
                 currentImageIndex[productId] = images.length - 1;
             } else if (currentImageIndex[productId] >= images.length) {
@@ -716,6 +681,7 @@
 
             container.style.transform = `translateX(-${currentImageIndex[productId] * 100}%)`;
 
+            // Обновляем точки
             dots.forEach((dot, index) => {
                 dot.classList.toggle('active', index === currentImageIndex[productId]);
             });
@@ -734,6 +700,7 @@
             });
         }
 
+        // Полноэкранный просмотр
         function openFullscreen(productId, imageIndex) {
             currentFullscreenProduct = productId;
             currentFullscreenIndex = imageIndex;
@@ -762,6 +729,7 @@
 
             currentFullscreenIndex += direction;
 
+            // Циклический переход
             if (currentFullscreenIndex < 0) {
                 currentFullscreenIndex = images.length - 1;
             } else if (currentFullscreenIndex >= images.length) {
@@ -773,15 +741,10 @@
             fullscreenImg.alt = images[currentFullscreenIndex].alt;
         }
 
+        // Закрытие полноэкранного режима при клике на фон
         document.getElementById('fullscreen').addEventListener('click', function(e) {
             if (e.target === this) {
                 closeFullscreen();
-            }
-        });
-
-        document.getElementById('iosModal').addEventListener('click', function(e) {
-            if (e.target === this) {
-                closeIOSModal();
             }
         });
     </script>
