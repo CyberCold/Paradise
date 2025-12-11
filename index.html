@@ -377,7 +377,15 @@
             </div>
 
             <!-- Товар 6 -->
-            
+            <div class="product-card" onclick="openProduct(6)">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToC6UF2v0Kt7HDb-SOeayoBbRjIZSD1u_-fA&s" 
+                     alt="ELFBAR BC20000 PUFS 5%" 
+                     class="product-image">
+                <div class="product-info">
+                    <div class="product-name">ELFBAR BC20000 PUFS 5%</div>
+                    <div class="product-price">1 - 12€
+                </div>
+            </div>
 
             <!-- Товар 7 -->
             <div class="product-card" onclick="openProduct(7)">
@@ -497,7 +505,33 @@
         </div>
     </div>
 
-
+<div class="product-page" id="product-6">
+        <div class="product-header">
+            <button class="back-button" onclick="closeProduct(6)">← Назад</button>
+        </div>
+        <div class="image-gallery" data-product="5">
+            <div class="gallery-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToC6UF2v0Kt7HDb-SOeayoBbRjIZSD1u_-fA&s" 
+                     alt="ELFBAR BC20000 PUFS 5%" 
+                     class="gallery-image"
+                     onclick="openFullscreen(6, 0)">
+            </div>
+        </div>
+        <div class="detail-content">
+            <div class="variants">
+                <h3>Выберите вкус:</h3>
+                <div class="variant-option" onclick="selectVariant(this)">Blue Razz Ice</div>
+                <div class="variant-option" onclick="selectVariant(this)">Peach</div>
+                <div class="variant-option" onclick="selectVariant(this)">Pineapple Ice</div>
+                <div class="variant-option" onclick="selectVariant(this)">Sour Blackberry Blueberry</div>
+                <div class="variant-option" onclick="selectVariant(this)">Kiwi Passion Fruit Guava</div>
+                <div class="variant-option" onclick="selectVariant(this)">Orange Pomegranate Cranberry</div>
+            <div class="detail-price">1 - 12€
+            <button class="order-button" onclick="orderTelegram('HypaaHypaa')">
+                Заказать в Telegram
+            </button>
+        </div>
+    </div>
 
     <div class="product-page" id="product-7">
         <div class="product-header">
@@ -690,6 +724,7 @@
     </script>
 </body>
 </html>
+
 
 
 
