@@ -344,6 +344,34 @@
                 </div>
             </div>
 
+            
+            <!-- Товар 3 -->
+            <div class="product-card" onclick="openProduct(3)">
+                <img src="https://www.onevapepen.com/wp-content/uploads/2025/12/Elf-World-Nicotine-Salt-Vape-Juice-10ml-30ml-0-2-5-0mg-20mg-50mg-60mg-Customizable-ODM-OEM-4.jpg" 
+                     alt="ELFWORLD 30ml 50mg" 
+                     class="product-image">
+                <div class="product-info">
+                    <div class="product-name">EELFWORLD 30ml 50mg</div>
+                    <div class="product-price">1 - 15€<br>
+                        2 - 28€<br>
+                        3 - 40€<br>
+                        5 - 60€
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- Товар 4 -->
+            <div class="product-card" onclick="openProduct(4)">
+                <img src="https://www.irexvapes.com/wp-content/uploads/2025/10/IREX-TWINS-60K-%E4%BA%A7%E5%93%81%E4%B8%BB%E5%9B%BE.jpg" 
+                     alt="IREX Twing 40/60k puffs 50mg" 
+                     class="product-image">
+                <div class="product-info">
+                    <div class="product-name">IREX Twing 40/60k puffs 50mg</div>
+                    <div class="product-price">1 - 20€<br>
+                    </div>
+                </div>
+            </div>
 
            
     <!-- Страницы товаров -->
@@ -378,6 +406,74 @@
     </div>
 
     
+
+
+    <div class="product-page" id="product-3">
+        <div class="product-header">
+            <button class="back-button" onclick="closeProduct(3)">← Назад</button>
+        </div>
+        <div class="image-gallery" data-product="3">
+            <div class="gallery-container">
+                <img src="https://www.onevapepen.com/wp-content/uploads/2025/12/Elf-World-Nicotine-Salt-Vape-Juice-10ml-30ml-0-2-5-0mg-20mg-50mg-60mg-Customizable-ODM-OEM-4.jpg" 
+                     alt="ELFWORLD 30ml 50mg" 
+                     class="gallery-image"
+                     onclick="openFullscreen(3, 0)">
+            </div>
+        </div>
+        <div class="detail-content">
+            <div class="variants">
+                <h3>Выберите вкус:</h3>
+                <div class="variant-option" onclick="selectVariant(this)">Strawberry Raspberry Cherry Ice</div>
+                <div class="variant-option" onclick="selectVariant(this)">Strawberry Kiwi</div>
+                <div class="variant-option" onclick="selectVariant(this)">Cherry Cola</div>
+                <div class="variant-option" onclick="selectVariant(this)">Skittles Candy</div>
+                <div class="variant-option" onclick="selectVariant(this)">Blueberry Sour Raspberry</div>
+            <div class="detail-price">1 - 15€<br>
+                        2 - 28€<br>
+                        3 - 40€<br>
+                        5 - 60€
+            </div>
+            <button class="order-button" onclick="orderTelegram('smkParadiseManager')">
+                Заказать в Telegram
+            </button>
+        </div>
+    </div>
+
+    
+
+
+    <div class="product-page" id="product-4">
+        <div class="product-header">
+            <button class="back-button" onclick="closeProduct(4)">← Назад</button>
+        </div>
+        <div class="image-gallery" data-product="4">
+            <div class="gallery-container">
+                <img src="https://www.irexvapes.com/wp-content/uploads/2025/10/IREX-TWINS-60K-%E4%BA%A7%E5%93%81%E4%B8%BB%E5%9B%BE.jpg" 
+                     alt="IREX Twing 40/60k puffs 50mg" 
+                     class="gallery-image"
+                     onclick="openFullscreen(4, 0)">
+            </div>
+        </div>
+        <div class="detail-content">
+            <div class="variants">
+                <h3>Выберите вкус:</h3>
+                <div class="variant-option" onclick="selectVariant(this)">Blue Razz Lemonade/Lemon Lime 60k pfs</div>
+                <div class="variant-option" onclick="selectVariant(this)">Pineapple Coconut/Strawberry Banana 60k pfs</div>
+                <div class="variant-option" onclick="selectVariant(this)">Strawberry Kiwi/Grape Ice 60k pfs</div>
+                <div class="variant-option" onclick="selectVariant(this)">Watermelon Ice/Strawberry Mango 60k pfs</div>
+                <div class="variant-option" onclick="selectVariant(this)">Strawberry Raspberry Cherry Ice/Grape Ice 60k pfs</div>
+                <div class="variant-option" onclick="selectVariant(this)">Watermelon Ice/Mixed Berry 40k pfs</div>
+                <div class="variant-option" onclick="selectVariant(this)">Strawberry Banana/Fizzy Cherry 40k pfs</div>
+                <div class="variant-option" onclick="selectVariant(this)">Lemon Lime/Watermelon Ice 40k pfs</div>
+            <div class="detail-price">1 - 20€<br>
+            </div>
+            <button class="order-button" onclick="orderTelegram('smkParadiseManager')">
+                Заказать в Telegram
+            </button>
+        </div>
+    </div>
+    
+
 
 
 
@@ -524,6 +620,7 @@
     </script>
 </body>
 </html>
+
 
 
 
