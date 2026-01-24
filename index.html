@@ -142,54 +142,6 @@
             cursor: pointer;
         }
 
-        .gallery-nav {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(0, 0, 0, 0.5);
-            color: #fff;
-            border: none;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            cursor: pointer;
-            font-size: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 10;
-        }
-
-        .gallery-nav.prev {
-            left: 10px;
-        }
-
-        .gallery-nav.next {
-            right: 10px;
-        }
-
-        .gallery-dots {
-            position: absolute;
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 8px;
-            z-index: 10;
-        }
-
-        .gallery-dot {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background: rgba(0, 0, 0, 0.3);
-            cursor: pointer;
-        }
-
-        .gallery-dot.active {
-            background: #000;
-        }
-
         /* Полноэкранный просмотр */
         .fullscreen-overlay {
             display: none;
@@ -238,32 +190,6 @@
             z-index: 2001;
         }
 
-        .fullscreen-nav {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(255, 255, 255, 0.2);
-            color: #fff;
-            border: none;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            cursor: pointer;
-            font-size: 24px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 2001;
-        }
-
-        .fullscreen-nav.prev {
-            left: 20px;
-        }
-
-        .fullscreen-nav.next {
-            right: 20px;
-        }
-
         .detail-content {
             padding: 20px;
         }
@@ -297,10 +223,11 @@
         }
 
         .detail-price {
-            font-size: 24px;
+            font-size: 18px;
             color: #000;
             font-weight: 600;
             margin: 20px 0;
+            line-height: 1.6;
         }
 
         .order-button {
@@ -319,6 +246,23 @@
         .order-button:active {
             opacity: 0.8;
         }
+
+        .order-button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+
+        .error-message {
+            color: #d32f2f;
+            font-size: 14px;
+            margin-top: 10px;
+            display: none;
+        }
+
+        .error-message.show {
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -328,54 +272,73 @@
 
     <div class="container">
         <div class="products-grid">
-
-            <!-- Товар 2 -->
-            <div class="product-card" onclick="openProduct(2)">
+            <!-- Товар 1 -->
+            <div class="product-card" onclick="openProduct(1)">
                 <img src="https://www.mountainprophet.de/wp-content/uploads/2023/01/07.jpg" 
                      alt="Elfliq 30ml 50mg" 
                      class="product-image">
                 <div class="product-info">
                     <div class="product-name">Elfliq 30ml 50mg</div>
-                    <div class="product-price">1 - 15€<br>
-                        2 - 28€<br>
-                        3 - 40€<br>
-                        5 - 60€
-                    </div>
+                    <div class="product-price">1 - 15€ | 2 - 28€<br>3 - 40€ | 5 - 60€</div>
                 </div>
             </div>
 
-            
-            <!-- Товар 3 -->
-            <div class="product-card" onclick="openProduct(3)">
+            <!-- Товар 2 -->
+            <div class="product-card" onclick="openProduct(2)">
                 <img src="https://www.onevapepen.com/wp-content/uploads/2025/12/Elf-World-Nicotine-Salt-Vape-Juice-10ml-30ml-0-2-5-0mg-20mg-50mg-60mg-Customizable-ODM-OEM-4.jpg" 
                      alt="ELFWORLD 30ml 50mg" 
                      class="product-image">
                 <div class="product-info">
-                    <div class="product-name">EELFWORLD 30ml 50mg</div>
-                    <div class="product-price">1 - 15€<br>
-                        2 - 28€<br>
-                        3 - 40€<br>
-                        5 - 60€
-                    </div>
+                    <div class="product-name">ELFWORLD 30ml 50mg</div>
+                    <div class="product-price">1 - 15€ | 2 - 28€<br>3 - 40€ | 5 - 60€</div>
                 </div>
             </div>
 
-            
-            <!-- Товар 4 -->
-            <div class="product-card" onclick="openProduct(4)">
+            <!-- Товар 3 -->
+            <div class="product-card" onclick="openProduct(3)">
                 <img src="https://www.irexvapes.com/wp-content/uploads/2025/10/IREX-TWINS-60K-%E4%BA%A7%E5%93%81%E4%B8%BB%E5%9B%BE.jpg" 
-                     alt="IREX Twing 40/60k puffs 50mg" 
+                     alt="IREX Twins 40/60k puffs 50mg" 
                      class="product-image">
                 <div class="product-info">
-                    <div class="product-name">IREX Twing 40/60k puffs 50mg</div>
-                    <div class="product-price">1 - 20€<br>
-                    </div>
+                    <div class="product-name">IREX Twins 40/60k puffs 50mg</div>
+                    <div class="product-price">20€</div>
                 </div>
             </div>
+        </div>
+    </div>
 
-           
     <!-- Страницы товаров -->
- 
+    <div class="product-page" id="product-1">
+        <div class="product-header">
+            <button class="back-button" onclick="closeProduct(1)">← Назад</button>
+        </div>
+        <div class="image-gallery" data-product="1">
+            <div class="gallery-container">
+                <img src="https://www.mountainprophet.de/wp-content/uploads/2023/01/07.jpg" 
+                     alt="Elfliq 30ml 50mg" 
+                     class="gallery-image"
+                     onclick="openFullscreen(1, 0)">
+            </div>
+        </div>
+        <div class="detail-content">
+            <h2 style="font-size: 20px; margin-bottom: 10px;">Elfliq 30ml 50mg</h2>
+            <div class="variants">
+                <h3>Выберите вкус:</h3>
+                <div class="variant-option" onclick="selectVariant(this, 1)">Blackcurrant Anise</div>
+                <div class="variant-option" onclick="selectVariant(this, 1)">Pineapple Ice</div>
+            </div>
+            <div class="detail-price">
+                1 шт - 15€<br>
+                2 шт - 28€<br>
+                3 шт - 40€<br>
+                5 шт - 60€
+            </div>
+            <div class="error-message" id="error-1">Пожалуйста, выберите вкус</div>
+            <button class="order-button" onclick="orderTelegram(1, 'smkParadiseManager')">
+                Заказать в Telegram
+            </button>
+        </div>
+    </div>
 
     <div class="product-page" id="product-2">
         <div class="product-header">
@@ -383,30 +346,34 @@
         </div>
         <div class="image-gallery" data-product="2">
             <div class="gallery-container">
-                <img src="https://www.mountainprophet.de/wp-content/uploads/2023/01/07.jpg" 
-                     alt="Elfliq 30ml 50mg" 
+                <img src="https://www.onevapepen.com/wp-content/uploads/2025/12/Elf-World-Nicotine-Salt-Vape-Juice-10ml-30ml-0-2-5-0mg-20mg-50mg-60mg-Customizable-ODM-OEM-4.jpg" 
+                     alt="ELFWORLD 30ml 50mg" 
                      class="gallery-image"
                      onclick="openFullscreen(2, 0)">
             </div>
         </div>
         <div class="detail-content">
+            <h2 style="font-size: 20px; margin-bottom: 10px;">ELFWORLD 30ml 50mg</h2>
             <div class="variants">
                 <h3>Выберите вкус:</h3>
-                <div class="variant-option" onclick="selectVariant(this)">Blackcurant Anise</div>
-                <div class="variant-option" onclick="selectVariant(this)">Pineapple Ice</div>
-            <div class="detail-price">1 - 15€<br>
-                        2 - 28€<br>
-                        3 - 40€<br>
-                        5 - 60€
+                <div class="variant-option" onclick="selectVariant(this, 2)">Strawberry Raspberry Cherry Ice</div>
+                <div class="variant-option" onclick="selectVariant(this, 2)">Strawberry Kiwi</div>
+                <div class="variant-option" onclick="selectVariant(this, 2)">Cherry Cola</div>
+                <div class="variant-option" onclick="selectVariant(this, 2)">Skittles Candy</div>
+                <div class="variant-option" onclick="selectVariant(this, 2)">Blueberry Sour Raspberry</div>
             </div>
-            <button class="order-button" onclick="orderTelegram('smkParadiseManager')">
+            <div class="detail-price">
+                1 шт - 15€<br>
+                2 шт - 28€<br>
+                3 шт - 40€<br>
+                5 шт - 60€
+            </div>
+            <div class="error-message" id="error-2">Пожалуйста, выберите вкус</div>
+            <button class="order-button" onclick="orderTelegram(2, 'smkParadiseManager')">
                 Заказать в Telegram
             </button>
         </div>
     </div>
-
-    
-
 
     <div class="product-page" id="product-3">
         <div class="product-header">
@@ -414,101 +381,60 @@
         </div>
         <div class="image-gallery" data-product="3">
             <div class="gallery-container">
-                <img src="https://www.onevapepen.com/wp-content/uploads/2025/12/Elf-World-Nicotine-Salt-Vape-Juice-10ml-30ml-0-2-5-0mg-20mg-50mg-60mg-Customizable-ODM-OEM-4.jpg" 
-                     alt="ELFWORLD 30ml 50mg" 
+                <img src="https://www.irexvapes.com/wp-content/uploads/2025/10/IREX-TWINS-60K-%E4%BA%A7%E5%93%81%E4%B8%BB%E5%9B%BE.jpg" 
+                     alt="IREX Twins 40/60k puffs 50mg" 
                      class="gallery-image"
                      onclick="openFullscreen(3, 0)">
             </div>
         </div>
         <div class="detail-content">
+            <h2 style="font-size: 20px; margin-bottom: 10px;">IREX Twins 40/60k puffs 50mg</h2>
             <div class="variants">
                 <h3>Выберите вкус:</h3>
-                <div class="variant-option" onclick="selectVariant(this)">Strawberry Raspberry Cherry Ice</div>
-                <div class="variant-option" onclick="selectVariant(this)">Strawberry Kiwi</div>
-                <div class="variant-option" onclick="selectVariant(this)">Cherry Cola</div>
-                <div class="variant-option" onclick="selectVariant(this)">Skittles Candy</div>
-                <div class="variant-option" onclick="selectVariant(this)">Blueberry Sour Raspberry</div>
-            <div class="detail-price">1 - 15€<br>
-                        2 - 28€<br>
-                        3 - 40€<br>
-                        5 - 60€
+                <div class="variant-option" onclick="selectVariant(this, 3)">Blue Razz Lemonade/Lemon Lime 60k</div>
+                <div class="variant-option" onclick="selectVariant(this, 3)">Pineapple Coconut/Strawberry Banana 60k</div>
+                <div class="variant-option" onclick="selectVariant(this, 3)">Strawberry Kiwi/Grape Ice 60k</div>
+                <div class="variant-option" onclick="selectVariant(this, 3)">Watermelon Ice/Strawberry Mango 60k</div>
+                <div class="variant-option" onclick="selectVariant(this, 3)">Strawberry Raspberry Cherry Ice/Grape Ice 60k</div>
+                <div class="variant-option" onclick="selectVariant(this, 3)">Watermelon Ice/Mixed Berry 40k</div>
+                <div class="variant-option" onclick="selectVariant(this, 3)">Strawberry Banana/Fizzy Cherry 40k</div>
+                <div class="variant-option" onclick="selectVariant(this, 3)">Lemon Lime/Watermelon Ice 40k</div>
             </div>
-            <button class="order-button" onclick="orderTelegram('smkParadiseManager')">
+            <div class="detail-price">20€</div>
+            <div class="error-message" id="error-3">Пожалуйста, выберите вкус</div>
+            <button class="order-button" onclick="orderTelegram(3, 'smkParadiseManager')">
                 Заказать в Telegram
             </button>
         </div>
     </div>
-    </div>
 
-    
-
-
-    <div class="product-page" id="product-4">
-        <div class="product-header">
-            <button class="back-button" onclick="closeProduct(4)">← Назад</button>
-        </div>
-        <div class="image-gallery" data-product="4">
-            <div class="gallery-container">
-                <img src="https://www.irexvapes.com/wp-content/uploads/2025/10/IREX-TWINS-60K-%E4%BA%A7%E5%93%81%E4%B8%BB%E5%9B%BE.jpg" 
-                     alt="IREX Twing 40/60k puffs 50mg" 
-                     class="gallery-image"
-                     onclick="openFullscreen(4, 0)">
-            </div>
-        </div>
-        <div class="detail-content">
-            <div class="variants">
-                <h3>Выберите вкус:</h3>
-                <div class="variant-option" onclick="selectVariant(this)">Blue Razz Lemonade/Lemon Lime 60k pfs</div>
-                <div class="variant-option" onclick="selectVariant(this)">Pineapple Coconut/Strawberry Banana 60k pfs</div>
-                <div class="variant-option" onclick="selectVariant(this)">Strawberry Kiwi/Grape Ice 60k pfs</div>
-                <div class="variant-option" onclick="selectVariant(this)">Watermelon Ice/Strawberry Mango 60k pfs</div>
-                <div class="variant-option" onclick="selectVariant(this)">Strawberry Raspberry Cherry Ice/Grape Ice 60k pfs</div>
-                <div class="variant-option" onclick="selectVariant(this)">Watermelon Ice/Mixed Berry 40k pfs</div>
-                <div class="variant-option" onclick="selectVariant(this)">Strawberry Banana/Fizzy Cherry 40k pfs</div>
-                <div class="variant-option" onclick="selectVariant(this)">Lemon Lime/Watermelon Ice 40k pfs</div>
-            <div class="detail-price">1 - 20€<br>
-            </div>
-            <button class="order-button" onclick="orderTelegram('smkParadiseManager')">
-                Заказать в Telegram
-            </button>
-        </div>
-    </div>
-    
-
-
-
-
-            <!-- полноэкранный просмотр -->
+    <!-- Полноэкранный просмотр -->
     <div class="fullscreen-overlay" id="fullscreen">
         <button class="fullscreen-close" onclick="closeFullscreen()">×</button>
         <div class="fullscreen-container">
-            <button class="fullscreen-nav prev" onclick="changeFullscreenImage(-1)">‹</button>
             <img src="" alt="" class="fullscreen-image" id="fullscreen-image">
-            <button class="fullscreen-nav next" onclick="changeFullscreenImage(1)">›</button>
         </div>
     </div>
 
     <script>
-        let selectedProduct = '';
-        let selectedVariant = '';
-        let currentImageIndex = {};
-        let currentFullscreenProduct = 0;
-        let currentFullscreenIndex = 0;
+        const productData = {
+            1: { name: 'Elfliq 30ml 50mg', variant: '' },
+            2: { name: 'ELFWORLD 30ml 50mg', variant: '' },
+            3: { name: 'IREX Twins 40/60k puffs 50mg', variant: '' }
+        };
 
         function openProduct(id) {
             document.getElementById('product-' + id).classList.add('active');
             document.body.style.overflow = 'hidden';
             
-            // Получаем название товара из карточки
-            const productCard = event.target.closest('.product-card');
-            const productNameElement = productCard.querySelector('.product-name');
-            selectedProduct = productNameElement.textContent;
-            selectedVariant = '';
-
-            // Инициализируем индекс изображения для этого товара
-            if (!(id in currentImageIndex)) {
-                currentImageIndex[id] = 0;
-            }
+            // Сбрасываем выбор варианта при открытии
+            productData[id].variant = '';
+            const variants = document.querySelectorAll(`#product-${id} .variant-option`);
+            variants.forEach(v => v.classList.remove('selected'));
+            
+            // Скрываем сообщение об ошибке
+            const errorMsg = document.getElementById('error-' + id);
+            if (errorMsg) errorMsg.classList.remove('show');
         }
 
         function closeProduct(id) {
@@ -516,66 +442,37 @@
             document.body.style.overflow = 'auto';
         }
 
-        function selectVariant(element) {
+        function selectVariant(element, productId) {
             const variants = element.parentElement.querySelectorAll('.variant-option');
             variants.forEach(v => v.classList.remove('selected'));
             element.classList.add('selected');
-            selectedVariant = element.textContent;
+            productData[productId].variant = element.textContent;
+            
+            // Скрываем сообщение об ошибке при выборе варианта
+            const errorMsg = document.getElementById('error-' + productId);
+            if (errorMsg) errorMsg.classList.remove('show');
         }
 
-        function orderTelegram(username) {
-            let message = 'Здравствуйте, хочу у вас купить ' + selectedProduct;
-            if (selectedVariant) {
-                message += ', ' + selectedVariant;
+        function orderTelegram(productId, username) {
+            const product = productData[productId];
+            
+            // Проверяем, выбран ли вариант
+            if (!product.variant) {
+                const errorMsg = document.getElementById('error-' + productId);
+                if (errorMsg) {
+                    errorMsg.classList.add('show');
+                    errorMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+                return;
             }
+            
+            let message = 'Здравствуйте, хочу заказать ' + product.name + ', вкус: ' + product.variant;
             const encodedMessage = encodeURIComponent(message);
             window.open('https://t.me/' + username + '?text=' + encodedMessage, '_blank');
         }
 
-        // Функции галереи
-        function changeImage(productId, direction) {
-            const gallery = document.querySelector(`[data-product="${productId}"]`);
-            const container = gallery.querySelector('.gallery-container');
-            const images = gallery.querySelectorAll('.gallery-image');
-            const dots = gallery.querySelectorAll('.gallery-dot');
-
-            if (images.length <= 1) return;
-
-            currentImageIndex[productId] = (currentImageIndex[productId] || 0) + direction;
-            
-            // Циклический переход
-            if (currentImageIndex[productId] < 0) {
-                currentImageIndex[productId] = images.length - 1;
-            } else if (currentImageIndex[productId] >= images.length) {
-                currentImageIndex[productId] = 0;
-            }
-
-            container.style.transform = `translateX(-${currentImageIndex[productId] * 100}%)`;
-
-            // Обновляем точки
-            dots.forEach((dot, index) => {
-                dot.classList.toggle('active', index === currentImageIndex[productId]);
-            });
-        }
-
-        function goToImage(productId, index) {
-            const gallery = document.querySelector(`[data-product="${productId}"]`);
-            const container = gallery.querySelector('.gallery-container');
-            const dots = gallery.querySelectorAll('.gallery-dot');
-
-            currentImageIndex[productId] = index;
-            container.style.transform = `translateX(-${index * 100}%)`;
-
-            dots.forEach((dot, i) => {
-                dot.classList.toggle('active', i === index);
-            });
-        }
-
         // Полноэкранный просмотр
         function openFullscreen(productId, imageIndex) {
-            currentFullscreenProduct = productId;
-            currentFullscreenIndex = imageIndex;
-
             const gallery = document.querySelector(`[data-product="${productId}"]`);
             const images = gallery.querySelectorAll('.gallery-image');
             const fullscreenImg = document.getElementById('fullscreen-image');
@@ -592,79 +489,12 @@
             document.body.style.overflow = 'auto';
         }
 
-        function changeFullscreenImage(direction) {
-            const gallery = document.querySelector(`[data-product="${currentFullscreenProduct}"]`);
-            const images = gallery.querySelectorAll('.gallery-image');
-
-            if (images.length <= 1) return;
-
-            currentFullscreenIndex += direction;
-
-            // Циклический переход
-            if (currentFullscreenIndex < 0) {
-                currentFullscreenIndex = images.length - 1;
-            } else if (currentFullscreenIndex >= images.length) {
-                currentFullscreenIndex = 0;
-            }
-
-            const fullscreenImg = document.getElementById('fullscreen-image');
-            fullscreenImg.src = images[currentFullscreenIndex].src;
-            fullscreenImg.alt = images[currentFullscreenIndex].alt;
-        }
-
         // Закрытие полноэкранного режима при клике на фон
         document.getElementById('fullscreen').addEventListener('click', function(e) {
-            if (e.target === this) {
+            if (e.target === this || e.target.classList.contains('fullscreen-container')) {
                 closeFullscreen();
             }
         });
     </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
