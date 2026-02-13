@@ -366,7 +366,7 @@
                      alt="Monberry Drunk 30ml 50mg" 
                      class="product-image">
                 <div class="product-info">
-                    <div class="product-name">Monberry Drunk 30ml 50mg</div>
+                    <div class="product-name">Monterey Drunk 30ml 50mg</div>
                     <div class="product-price">1 - 13€ | 2 - 25€<br>3 - 33€ | 5 - 50€</div>
                 </div>
             </div>
@@ -378,6 +378,17 @@
                      class="product-image">
                 <div class="product-info">
                     <div class="product-name">Мишка 30ml 50mg</div>
+                    <div class="product-price">1 - 13€ | 2 - 25€<br>3 - 33€ | 5 - 50€</div>
+                </div>
+            </div>
+
+            <!-- ELFWORLD -->
+            <div class="product-card" onclick="openProduct('elfworld')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR72Zw9nvt-imhMrYUtOdFhwwOwLSqLsU4KzA&s" 
+                     alt="ELFWORLD 30ml 50mg" 
+                     class="product-image">
+                <div class="product-info">
+                    <div class="product-name">ELFWORLD 30ml 50mg</div>
                     <div class="product-price">1 - 13€ | 2 - 25€<br>3 - 33€ | 5 - 50€</div>
                 </div>
             </div>
@@ -696,10 +707,11 @@
             </div>
         </div>
         <div class="detail-content">
-            <h2 style="font-size: 20px; margin-bottom: 10px;">Monberry Drunk 30ml 50mg</h2>
+            <h2 style="font-size: 20px; margin-bottom: 10px;">Monterey Drunk 30ml 50mg</h2>
             <div class="variants">
                 <h3>Выберите вкус:</h3>
                 <div class="variant-option" onclick="selectVariant(this, 'monterey')">raspberry lemonade</div>
+                <div class="variant-option" onclick="selectVariant(this, 'monterey')">raspberries lemonade</div>
             </div>
             <div class="detail-price">
                 1 шт - 13€<br>
@@ -744,6 +756,41 @@
             </div>
             <div class="error-message" id="error-mishka">Пожалуйста, выберите вкус</div>
             <button class="order-button" onclick="orderTelegram('mishka', 'smkParadiseManager')">
+                Заказать в Telegram
+            </button>
+        </div>
+    </div>
+
+    <!-- ELFWORLD Page -->
+    <div class="product-page" id="product-elfworld">
+        <div class="product-header">
+            <button class="back-button" onclick="closeProduct('elfworld')">← Назад</button>
+        </div>
+        <div class="image-gallery" data-product="elfworld">
+            <div class="gallery-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR72Zw9nvt-imhMrYUtOdFhwwOwLSqLsU4KzA&s" 
+                     alt="ELFWORLD 30ml 50mg" 
+                     class="gallery-image"
+                     onclick="openFullscreen('elfworld', 0)">
+            </div>
+        </div>
+        <div class="detail-content">
+            <h2 style="font-size: 20px; margin-bottom: 10px;">ELFWORLD 30ml 50mg</h2>
+            <div class="variants">
+                <h3>Выберите вкус:</h3>
+                <div class="variant-option" onclick="selectVariant(this, 'elfworld')">Blueberry Sour Raspberry</div>
+                <div class="variant-option" onclick="selectVariant(this, 'elfworld')">Skittles Candy</div>
+                <div class="variant-option" onclick="selectVariant(this, 'elfworld')">Strawberry Kiwi</div>
+                <div class="variant-option" onclick="selectVariant(this, 'elfworld')">Cherry Cola</div>
+            </div>
+            <div class="detail-price">
+                1 шт - 13€<br>
+                2 шт - 25€<br>
+                3 шт - 33€<br>
+                5 шт - 50€
+            </div>
+            <div class="error-message" id="error-elfworld">Пожалуйста, выберите вкус</div>
+            <button class="order-button" onclick="orderTelegram('elfworld', 'smkParadiseManager')">
                 Заказать в Telegram
             </button>
         </div>
@@ -805,6 +852,7 @@
             'lineup': { name: 'Line Up 30ml 50mg', variant: '' },
             'monterey': { name: 'Monterey Drunk 30ml 50mg', variant: '' },
             'mishka': { name: 'Мишка 30ml 50mg', variant: '' },
+            'elfworld': { name: 'ELFWORLD 30ml 50mg', variant: '' },
             'irex': { name: 'IREX Twins 40/60k puffs 50mg', variant: '' }
         };
 
@@ -883,4 +931,3 @@
     </script>
 </body>
 </html>
-
