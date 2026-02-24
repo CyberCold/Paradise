@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -316,8 +316,6 @@
                 </div>
             </div>
 
-            <!-- Pandas -->
-
             <!-- My Yum My -->
             <div class="product-card" onclick="openProduct('myyummy')">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt95vvRctWoqQ1_NjXQwNNJwuexvuXgd9iPw&s" 
@@ -340,20 +338,16 @@
                 </div>
             </div>
 
-            <!-- Line Up -->
-
             <!-- Monterey Drunk -->
             <div class="product-card" onclick="openProduct('monterey')">
                 <img src="https://zenmod.shop/image/cache/catalog/Liquid/Yummy%20Series/monberry_drunk_iced_out_100ml-800x800.jpg?1568789948" 
                      alt="Monberry Drunk 30ml 50mg" 
                      class="product-image">
                 <div class="product-info">
-                    <div class="product-name">Monterey Drunk 30ml 50mg</div>
+                    <div class="product-name">Monberry Drunk 30ml 50mg</div>
                     <div class="product-price">1 - 13€ | 2 - 25€<br>3 - 33€ | 5 - 50€</div>
                 </div>
             </div>
-
-            <!-- Мишка -->
 
             <!-- ELFWORLD -->
             <div class="product-card" onclick="openProduct('elfworld')">
@@ -362,6 +356,50 @@
                      class="product-image">
                 <div class="product-info">
                     <div class="product-name">ELFWORLD 30ml 50mg</div>
+                    <div class="product-price">1 - 13€ | 2 - 25€<br>3 - 33€ | 5 - 50€</div>
+                </div>
+            </div>
+
+            <!-- Ice Paradise -->
+            <div class="product-card" onclick="openProduct('iceparadise')">
+                <img src="https://zenmod.shop/image/cache/catalog/Liquid/Ice%20Paradise/POD/up/ice_paradise_pod_27ml_dop_re-800x800.jpg?1585124080" 
+                     alt="Ice Paradise Salt 50mg" 
+                     class="product-image">
+                <div class="product-info">
+                    <div class="product-name">Ice Paradise Salt 50mg</div>
+                    <div class="product-price">1 - 13€ | 2 - 25€<br>3 - 33€ | 5 - 50€</div>
+                </div>
+            </div>
+
+            <!-- Солевая Монашка 70mg -->
+            <div class="product-card" onclick="openProduct('monashka70')">
+                <img src="https://sun9-25.userapi.com/impg/udGskhE_h9r6z6B6Ey8XFt0Q4k14rxDMGMZjVw/Oe3F7DL6_78.jpg?size=474x474&quality=95&sign=c20b32d51029545c590c4c0244a4edd3&type=album" 
+                     alt="Солевая Монашка 70mg" 
+                     class="product-image">
+                <div class="product-info">
+                    <div class="product-name">Солевая Монашка 70mg</div>
+                    <div class="product-price">1 - 13€ | 2 - 25€<br>3 - 33€ | 5 - 50€</div>
+                </div>
+            </div>
+
+            <!-- Husky -->
+            <div class="product-card" onclick="openProduct('husky')">
+                <img src="https://vapehan.com/wp-content/uploads/2024/08/husky-salt-siberian-black.jpg" 
+                     alt="Husky Replic 20mg" 
+                     class="product-image">
+                <div class="product-info">
+                    <div class="product-name">Husky Replic 20mg</div>
+                    <div class="product-price">1 - 13€ | 2 - 25€<br>3 - 33€ | 5 - 50€</div>
+                </div>
+            </div>
+
+            <!-- Duall Salt -->
+            <div class="product-card" onclick="openProduct('duall')">
+                <img src="https://zenmod.shop/image/cache/catalog/blog/Review/duall%20salt/obzor_zhidkostei_duall_salt_1-828w.jpg?1680095992" 
+                     alt="Duall Salt 20mg" 
+                     class="product-image">
+                <div class="product-info">
+                    <div class="product-name">Duall Salt 20mg</div>
                     <div class="product-price">1 - 13€ | 2 - 25€<br>3 - 33€ | 5 - 50€</div>
                 </div>
             </div>
@@ -521,8 +559,6 @@
         </div>
     </div>
 
-    <!-- Pandas Page -->
-
     <!-- My Yum My Page -->
     <div class="product-page" id="product-myyummy">
         <div class="product-header">
@@ -591,7 +627,6 @@
         </div>
     </div>
 
-    <!-- Line Up Page -->
     <!-- Monterey Drunk Page -->
     <div class="product-page" id="product-monterey">
         <div class="product-header">
@@ -624,8 +659,6 @@
         </div>
     </div>
 
-    <!-- Мишка Page -->
-
     <!-- ELFWORLD Page -->
     <div class="product-page" id="product-elfworld">
         <div class="product-header">
@@ -654,6 +687,197 @@
             </div>
             <div class="error-message" id="error-elfworld">Пожалуйста, выберите вкус</div>
             <button class="order-button" onclick="orderTelegram('elfworld', 'smkParadiseManager')">
+                Заказать в Telegram
+            </button>
+        </div>
+    </div>
+
+    <!-- Ice Paradise Page -->
+    <div class="product-page" id="product-iceparadise">
+        <div class="product-header">
+            <button class="back-button" onclick="closeProduct('iceparadise')">← Назад</button>
+        </div>
+        <div class="image-gallery" data-product="iceparadise">
+            <div class="gallery-container">
+                <img src="https://zenmod.shop/image/cache/catalog/Liquid/Ice%20Paradise/POD/up/ice_paradise_pod_27ml_dop_re-800x800.jpg?1585124080" 
+                     alt="Ice Paradise Salt 50mg" 
+                     class="gallery-image"
+                     onclick="openFullscreen('iceparadise', 0)">
+            </div>
+        </div>
+        <div class="detail-content">
+            <h2 style="font-size: 20px; margin-bottom: 10px;">Ice Paradise Salt 50mg</h2>
+            <div class="variants">
+                <h3>Выберите вкус:</h3>
+                <div class="variant-option" onclick="selectVariant(this, 'iceparadise')">Черника с кокосом</div>
+                <div class="variant-option" onclick="selectVariant(this, 'iceparadise')">Ананас грейпфрут</div>
+                <div class="variant-option" onclick="selectVariant(this, 'iceparadise')">Фреш из манго и лайма</div>
+                <div class="variant-option" onclick="selectVariant(this, 'iceparadise')">Клубника киви лёд</div>
+                <div class="variant-option" onclick="selectVariant(this, 'iceparadise')">Дыня банан</div>
+                <div class="variant-option" onclick="selectVariant(this, 'iceparadise')">Персик смородина</div>
+                <div class="variant-option" onclick="selectVariant(this, 'iceparadise')">Манго кумкват</div>
+                <div class="variant-option" onclick="selectVariant(this, 'iceparadise')">Гуава личи</div>
+                <div class="variant-option" onclick="selectVariant(this, 'iceparadise')">Киви гуава банан</div>
+            </div>
+            <div class="detail-price">
+                1 шт - 13€<br>
+                2 шт - 25€<br>
+                3 шт - 33€<br>
+                5 шт - 50€
+            </div>
+            <div class="error-message" id="error-iceparadise">Пожалуйста, выберите вкус</div>
+            <button class="order-button" onclick="orderTelegram('iceparadise', 'smkParadiseManager')">
+                Заказать в Telegram
+            </button>
+        </div>
+    </div>
+
+    <!-- Солевая Монашка 70mg Page -->
+    <div class="product-page" id="product-monashka70">
+        <div class="product-header">
+            <button class="back-button" onclick="closeProduct('monashka70')">← Назад</button>
+        </div>
+        <div class="image-gallery" data-product="monashka70">
+            <div class="gallery-container">
+                <img src="https://sun9-25.userapi.com/impg/udGskhE_h9r6z6B6Ey8XFt0Q4k14rxDMGMZjVw/Oe3F7DL6_78.jpg?size=474x474&quality=95&sign=c20b32d51029545c590c4c0244a4edd3&type=album" 
+                     alt="Солевая Монашка 70mg" 
+                     class="gallery-image"
+                     onclick="openFullscreen('monashka70', 0)">
+            </div>
+        </div>
+        <div class="detail-content">
+            <h2 style="font-size: 20px; margin-bottom: 10px;">Солевая Монашка 70mg</h2>
+            <div class="variants">
+                <h3>Выберите вкус:</h3>
+                <div class="variant-option" onclick="selectVariant(this, 'monashka70')">Белый монстр</div>
+                <div class="variant-option" onclick="selectVariant(this, 'monashka70')">Ванильный панкейк с клубникой и сливками</div>
+                <div class="variant-option" onclick="selectVariant(this, 'monashka70')">Клубничные сливки</div>
+                <div class="variant-option" onclick="selectVariant(this, 'monashka70')">Лаймовая кола</div>
+                <div class="variant-option" onclick="selectVariant(this, 'monashka70')">Лимонад личи персик</div>
+                <div class="variant-option" onclick="selectVariant(this, 'monashka70')">Малина личи</div>
+                <div class="variant-option" onclick="selectVariant(this, 'monashka70')">Персиковое варенье</div>
+                <div class="variant-option" onclick="selectVariant(this, 'monashka70')">Хладный виноград</div>
+                <div class="variant-option" onclick="selectVariant(this, 'monashka70')">Черносмородиновый лимонад</div>
+                <div class="variant-option" onclick="selectVariant(this, 'monashka70')">Яблочный леденец</div>
+                <div class="variant-option" onclick="selectVariant(this, 'monashka70')">Яблочный сок</div>
+                <div class="variant-option" onclick="selectVariant(this, 'monashka70')">Dr.Pepper</div>
+                <div class="variant-option" onclick="selectVariant(this, 'monashka70')">E-ON Kiwi Blast (Киви)</div>
+            </div>
+            <div class="detail-price">
+                1 шт - 13€<br>
+                2 шт - 25€<br>
+                3 шт - 33€<br>
+                5 шт - 50€
+            </div>
+            <div class="error-message" id="error-monashka70">Пожалуйста, выберите вкус</div>
+            <button class="order-button" onclick="orderTelegram('monashka70', 'smkParadiseManager')">
+                Заказать в Telegram
+            </button>
+        </div>
+    </div>
+
+    <!-- Husky Page -->
+    <div class="product-page" id="product-husky">
+        <div class="product-header">
+            <button class="back-button" onclick="closeProduct('husky')">← Назад</button>
+        </div>
+        <div class="image-gallery" data-product="husky">
+            <div class="gallery-container">
+                <img src="https://vapehan.com/wp-content/uploads/2024/08/husky-salt-siberian-black.jpg" 
+                     alt="Husky Replic 20mg" 
+                     class="gallery-image"
+                     onclick="openFullscreen('husky', 0)">
+            </div>
+        </div>
+        <div class="detail-content">
+            <h2 style="font-size: 20px; margin-bottom: 10px;">Husky Replic Import 20mg</h2>
+            <div class="variants">
+                <h3>Выберите вкус:</h3>
+                <div class="variant-option" onclick="selectVariant(this, 'husky')">Big Ball — Холодный арбуз, клубника, дыня</div>
+                <div class="variant-option" onclick="selectVariant(this, 'husky')">Dark Flesh — Холодная черника и гуава</div>
+                <div class="variant-option" onclick="selectVariant(this, 'husky')">Gum Wolf — Холодная арбузная жвачка</div>
+                <div class="variant-option" onclick="selectVariant(this, 'husky')">Lemon Flock — Холодный лимон, грейпфрут, апельсин</div>
+                <div class="variant-option" onclick="selectVariant(this, 'husky')">Miami Snow — Холодный ананас, личи и банан</div>
+                <div class="variant-option" onclick="selectVariant(this, 'husky')">Tropic Hunter — Холодный ананас, манго и дыня</div>
+                <div class="variant-option" onclick="selectVariant(this, 'husky')">Wolfberry — Холодный энергетик</div>
+                <div class="variant-option" onclick="selectVariant(this, 'husky')">Yellow King — Холодное дынное мороженое</div>
+                <div class="variant-option" onclick="selectVariant(this, 'husky')">Yogi Doggy — Холодный банан, клубника, йогурт</div>
+                <div class="variant-option" onclick="selectVariant(this, 'husky')">Shake Pears — Холодная груша с личи</div>
+            </div>
+            <div class="detail-price">
+                1 шт - 13€<br>
+                2 шт - 25€<br>
+                3 шт - 33€<br>
+                5 шт - 50€
+            </div>
+            <div class="error-message" id="error-husky">Пожалуйста, выберите вкус</div>
+            <button class="order-button" onclick="orderTelegram('husky', 'smkParadiseManager')">
+                Заказать в Telegram
+            </button>
+        </div>
+    </div>
+
+    <!-- Duall Salt Page -->
+    <div class="product-page" id="product-duall">
+        <div class="product-header">
+            <button class="back-button" onclick="closeProduct('duall')">← Назад</button>
+        </div>
+        <div class="image-gallery" data-product="duall">
+            <div class="gallery-container">
+                <img src="https://zenmod.shop/image/cache/catalog/blog/Review/duall%20salt/obzor_zhidkostei_duall_salt_1-828w.jpg?1680095992" 
+                     alt="Duall Salt 20mg" 
+                     class="gallery-image"
+                     onclick="openFullscreen('duall', 0)">
+            </div>
+        </div>
+        <div class="detail-content">
+            <h2 style="font-size: 20px; margin-bottom: 10px;">Duall Salt 20mg</h2>
+            <div class="variants">
+                <h3>Выберите вкус:</h3>
+                <div class="variant-option" onclick="selectVariant(this, 'duall')">Слива персик</div>
+                <div class="variant-option" onclick="selectVariant(this, 'duall')">Фруктовые конфеты</div>
+                <div class="variant-option" onclick="selectVariant(this, 'duall')">Персиковый чай</div>
+                <div class="variant-option" onclick="selectVariant(this, 'duall')">Вишня клубника</div>
+                <div class="variant-option" onclick="selectVariant(this, 'duall')">Жвачка клубника киви</div>
+                <div class="variant-option" onclick="selectVariant(this, 'duall')">Кислая жвачка грейпфрут клубника</div>
+                <div class="variant-option" onclick="selectVariant(this, 'duall')">Клубника апельсин маракуйя</div>
+                <div class="variant-option" onclick="selectVariant(this, 'duall')">Клубника банан</div>
+                <div class="variant-option" onclick="selectVariant(this, 'duall')">Клубника лайм малина</div>
+                <div class="variant-option" onclick="selectVariant(this, 'duall')">Клубничный йогурт</div>
+                <div class="variant-option" onclick="selectVariant(this, 'duall')">Кумкват гуанабана</div>
+                <div class="variant-option" onclick="selectVariant(this, 'duall')">Ледяная клубника с личи</div>
+                <div class="variant-option" onclick="selectVariant(this, 'duall')">Ледяная кола манго</div>
+                <div class="variant-option" onclick="selectVariant(this, 'duall')">Ледяная малина</div>
+                <div class="variant-option" onclick="selectVariant(this, 'duall')">Ледяная черника</div>
+                <div class="variant-option" onclick="selectVariant(this, 'duall')">Ледяное манго</div>
+                <div class="variant-option" onclick="selectVariant(this, 'duall')">Ледяное манго с апельсином</div>
+                <div class="variant-option" onclick="selectVariant(this, 'duall')">Ледяной арбуз с дыней</div>
+                <div class="variant-option" onclick="selectVariant(this, 'duall')">Ледяной тархун</div>
+                <div class="variant-option" onclick="selectVariant(this, 'duall')">Лесные ягоды</div>
+                <div class="variant-option" onclick="selectVariant(this, 'duall')">Лимонад с грейпфрутом</div>
+                <div class="variant-option" onclick="selectVariant(this, 'duall')">Личи лайм маракуйя</div>
+                <div class="variant-option" onclick="selectVariant(this, 'duall')">Малиновый йогурт</div>
+                <div class="variant-option" onclick="selectVariant(this, 'duall')">Морозный ананас</div>
+                <div class="variant-option" onclick="selectVariant(this, 'duall')">Персиковый лимонад</div>
+                <div class="variant-option" onclick="selectVariant(this, 'duall')">Садовые ягоды</div>
+                <div class="variant-option" onclick="selectVariant(this, 'duall')">Сладкая мята</div>
+                <div class="variant-option" onclick="selectVariant(this, 'duall')">Смородина малина яблоко</div>
+                <div class="variant-option" onclick="selectVariant(this, 'duall')">Спрайт арбуз лайм</div>
+                <div class="variant-option" onclick="selectVariant(this, 'duall')">Фруктовый мармелад</div>
+                <div class="variant-option" onclick="selectVariant(this, 'duall')">Чай с грейпфрутом и ягодами</div>
+                <div class="variant-option" onclick="selectVariant(this, 'duall')">Чай с манго</div>
+                <div class="variant-option" onclick="selectVariant(this, 'duall')">Черничный чизкейк</div>
+                <div class="variant-option" onclick="selectVariant(this, 'duall')">Яблоко виноград</div>
+                <div class="variant-option" onclick="selectVariant(this, 'duall')">Яблоко малина</div>
+            </div>
+            <div class="detail-price">
+                1 шт - 13€<br>
+                2 шт - 25€<br>
+                3 шт - 33€<br>
+                5 шт - 50€
+            </div>
+            <div class="error-message" id="error-duall">Пожалуйста, выберите вкус</div>
+            <button class="order-button" onclick="orderTelegram('duall', 'smkParadiseManager')">
                 Заказать в Telegram
             </button>
         </div>
@@ -709,13 +933,14 @@
             'jigger': { name: 'Jigger 30ml 50mg', variant: '' },
             'headhunter': { name: 'Head Hunter 30ml 50mg', variant: '' },
             'monashka': { name: 'Monashka 30ml 50mg', variant: '' },
-            'pandas': { name: 'Pandas 30ml 50mg', variant: '' },
             'myyummy': { name: 'My Yum My 30ml 50mg', variant: '' },
             'fruitbox': { name: 'Fruit Box 30ml 50mg', variant: '' },
-            'lineup': { name: 'Line Up 30ml 50mg', variant: '' },
             'monterey': { name: 'Monterey Drunk 30ml 50mg', variant: '' },
-            'mishka': { name: 'Мишка 30ml 50mg', variant: '' },
             'elfworld': { name: 'ELFWORLD 30ml 50mg', variant: '' },
+            'iceparadise': { name: 'Ice Paradise Salt 50mg', variant: '' },
+            'monashka70': { name: 'Солевая Монашка 70mg', variant: '' },
+            'husky': { name: 'Husky Replic Import 20mg', variant: '' },
+            'duall': { name: 'Duall Salt 20mg', variant: '' },
             'irex': { name: 'IREX Twins 40/60k puffs 50mg', variant: '' }
         };
 
@@ -794,5 +1019,3 @@
     </script>
 </body>
 </html>
-
-
