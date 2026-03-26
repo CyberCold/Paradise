@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paradise</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -11,78 +12,107 @@
             box-sizing: border-box;
         }
 
+        :root {
+            --bg: #0a0a0a;
+            --surface: #141414;
+            --border: #222;
+            --text: #f0ece4;
+            --muted: #888;
+            --accent: #c9a96e;
+            --accent-dim: rgba(201, 169, 110, 0.12);
+        }
+
         body {
-            font-family: 'Arial', sans-serif;
-            background: #fff;
+            font-family: 'DM Sans', sans-serif;
+            background: var(--bg);
             min-height: 100vh;
+            color: var(--text);
         }
 
         .header {
-            background: #fff;
-            padding: 25px 0;
+            background: var(--bg);
+            padding: 28px 0 22px;
             text-align: center;
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid var(--border);
             position: sticky;
             top: 0;
             z-index: 100;
+            backdrop-filter: blur(12px);
         }
 
         .header h1 {
-            font-size: 32px;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 34px;
             font-weight: 300;
-            letter-spacing: 3px;
-            color: #333;
+            letter-spacing: 8px;
+            color: var(--text);
+            text-transform: uppercase;
+        }
+
+        .header-line {
+            width: 40px;
+            height: 1px;
+            background: var(--accent);
+            margin: 8px auto 0;
         }
 
         .container {
-            padding: 20px 10px;
+            padding: 24px 14px;
             max-width: 100%;
         }
 
         .products-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 15px;
+            gap: 14px;
         }
 
         .product-card {
-            background: #fff;
-            border: 1px solid #eee;
-            border-radius: 8px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 10px;
             overflow: hidden;
             cursor: pointer;
-            transition: box-shadow 0.3s ease;
+            transition: border-color 0.3s ease, transform 0.2s ease;
+            position: relative;
         }
 
         .product-card:active {
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transform: scale(0.98);
+            border-color: var(--accent);
         }
 
         .product-image {
             width: 100%;
-            height: 180px;
+            height: 165px;
             object-fit: contain;
-            background: #f9f9f9;
+            background: #1a1a1a;
+            padding: 10px;
         }
 
         .product-info {
-            padding: 12px;
+            padding: 12px 12px 14px;
+            border-top: 1px solid var(--border);
         }
 
         .product-name {
-            font-size: 14px;
-            color: #333;
-            margin-bottom: 8px;
+            font-size: 13px;
+            color: var(--text);
+            margin-bottom: 7px;
             font-weight: 500;
+            letter-spacing: 0.3px;
         }
 
         .product-price {
-            font-size: 16px;
-            color: #000;
-            font-weight: 600;
+            font-size: 12px;
+            color: var(--accent);
+            font-weight: 400;
+            line-height: 1.7;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 14px;
         }
 
-        /* Страница товара */
+        /* Product page */
         .product-page {
             display: none;
             position: fixed;
@@ -90,7 +120,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: #fff;
+            background: var(--bg);
             z-index: 1000;
             overflow-y: auto;
         }
@@ -100,32 +130,45 @@
         }
 
         .product-header {
-            padding: 20px;
-            border-bottom: 1px solid #eee;
+            padding: 18px 20px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            position: sticky;
+            top: 0;
+            background: var(--bg);
+            z-index: 10;
         }
 
         .back-button {
             background: none;
             border: none;
-            font-size: 16px;
-            color: #333;
+            font-size: 14px;
+            color: var(--accent);
             cursor: pointer;
             padding: 0;
+            font-family: 'DM Sans', sans-serif;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
         }
 
         .detail-image {
             width: 100%;
-            height: 350px;
+            height: 300px;
             object-fit: contain;
-            background: #f9f9f9;
+            background: #111;
             cursor: pointer;
+            padding: 20px;
         }
 
         .image-gallery {
             position: relative;
             width: 100%;
-            height: 350px;
-            background: #f9f9f9;
+            height: 300px;
+            background: #111;
             overflow: hidden;
         }
 
@@ -140,9 +183,10 @@
             height: 100%;
             object-fit: contain;
             cursor: pointer;
+            padding: 20px;
         }
 
-        /* Полноэкранный просмотр */
+        /* Fullscreen */
         .fullscreen-overlay {
             display: none;
             position: fixed;
@@ -150,9 +194,8 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.95);
+            background: rgba(0,0,0,0.97);
             z-index: 2000;
-            overflow: hidden;
         }
 
         .fullscreen-overlay.active {
@@ -172,75 +215,107 @@
             max-width: 90%;
             max-height: 90%;
             object-fit: contain;
-            touch-action: none;
         }
 
         .fullscreen-close {
             position: absolute;
             top: 20px;
             right: 20px;
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(255,255,255,0.1);
             color: #fff;
             border: none;
             width: 40px;
             height: 40px;
             border-radius: 50%;
-            font-size: 24px;
+            font-size: 22px;
             cursor: pointer;
             z-index: 2001;
         }
 
         .detail-content {
-            padding: 20px;
+            padding: 22px 20px 40px;
+        }
+
+        .detail-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 4px;
+            letter-spacing: 1px;
+        }
+
+        .detail-subtitle {
+            font-size: 12px;
+            color: var(--muted);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 22px;
+        }
+
+        .divider {
+            width: 100%;
+            height: 1px;
+            background: var(--border);
+            margin: 20px 0;
         }
 
         .variants {
-            margin: 20px 0;
+            margin: 0 0 20px;
         }
 
         .variants h3 {
-            font-size: 16px;
-            color: #333;
+            font-size: 11px;
+            color: var(--muted);
             margin-bottom: 12px;
-            font-weight: 500;
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
 
         .variant-option {
-            background: #fff;
-            border: 1px solid #ddd;
-            padding: 12px 16px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            padding: 11px 14px;
             border-radius: 6px;
-            margin-bottom: 8px;
+            margin-bottom: 7px;
             cursor: pointer;
-            transition: all 0.3s ease;
-            font-size: 14px;
+            transition: all 0.2s ease;
+            font-size: 13.5px;
+            color: var(--text);
+            font-family: 'DM Sans', sans-serif;
         }
 
-        .variant-option:active, .variant-option.selected {
-            background: #000;
-            color: #fff;
-            border-color: #000;
+        .variant-option:active,
+        .variant-option.selected {
+            background: var(--accent-dim);
+            color: var(--accent);
+            border-color: var(--accent);
         }
 
         .detail-price {
-            font-size: 18px;
-            color: #000;
-            font-weight: 600;
-            margin: 20px 0;
-            line-height: 1.6;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 20px;
+            color: var(--accent);
+            font-weight: 400;
+            margin: 20px 0 22px;
+            line-height: 1.8;
+            letter-spacing: 0.5px;
         }
 
         .order-button {
             width: 100%;
-            background: #000;
-            color: #fff;
+            background: var(--accent);
+            color: #0a0a0a;
             border: none;
             padding: 16px;
             border-radius: 6px;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 500;
             cursor: pointer;
-            transition: opacity 0.3s ease;
+            transition: opacity 0.2s ease;
+            font-family: 'DM Sans', sans-serif;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
         }
 
         .order-button:active {
@@ -248,16 +323,18 @@
         }
 
         .order-button:disabled {
-            background: #ccc;
+            background: #333;
+            color: var(--muted);
             cursor: not-allowed;
-            opacity: 0.6;
         }
 
         .error-message {
-            color: #d32f2f;
-            font-size: 14px;
+            color: #e07070;
+            font-size: 13px;
             margin-top: 10px;
+            margin-bottom: 14px;
             display: none;
+            letter-spacing: 0.3px;
         }
 
         .error-message.show {
@@ -268,71 +345,45 @@
 <body>
     <div class="header">
         <h1>Paradise</h1>
+        <div class="header-line"></div>
     </div>
 
     <div class="container">
         <div class="products-grid">
-            
-            <!-- Husky -->
-            <div class="product-card" onclick="openProduct('husky')">
-                <img src="https://vapehan.com/wp-content/uploads/2024/08/husky-salt-siberian-black.jpg" 
-                     alt="Husky 20mg" 
-                     class="product-image">
-                <div class="product-info">
-                    <div class="product-name">Husky 20mg</div>
-                    <div class="product-price">1 - 13€ | 2 - 25€<br>3 - 33€ | 5 - 50€</div>
-                </div>
-            </div>
 
             <!-- Duall Salt -->
             <div class="product-card" onclick="openProduct('duall')">
-                <img src="https://zenmod.shop/image/cache/catalog/blog/Review/duall%20salt/obzor_zhidkostei_duall_salt_1-828w.jpg?1680095992" 
-                     alt="Duall Salt 20mg" 
+                <img src="https://zenmod.shop/image/cache/catalog/blog/Review/duall%20salt/obzor_zhidkostei_duall_salt_1-828w.jpg?1680095992"
+                     alt="Duall Salt 20mg"
                      class="product-image">
                 <div class="product-info">
                     <div class="product-name">Duall Salt 20mg</div>
-                    <div class="product-price">1 - 13€ | 2 - 25€<br>3 - 33€ | 5 - 50€</div>
+                    <div class="product-price">1 — 13€ | 2 — 25€<br>3 — 33€ | 5 — 50€</div>
                 </div>
             </div>
 
-    <!-- Husky Page -->
-    <div class="product-page" id="product-husky">
-        <div class="product-header">
-            <button class="back-button" onclick="closeProduct('husky')">← Назад</button>
-        </div>
-        <div class="image-gallery" data-product="husky">
-            <div class="gallery-container">
-                <img src="https://vapehan.com/wp-content/uploads/2024/08/husky-salt-siberian-black.jpg" 
-                     alt="Husky 20mg" 
-                     class="gallery-image"
-                     onclick="openFullscreen('husky', 0)">
+            <!-- Vozol -->
+            <div class="product-card" onclick="openProduct('vozol')">
+                <img src="https://vozol.ro/835-large_default/lichid-tigara-electronica-salt-prime-strawberry-vozol.jpg"
+                     alt="Vozol 50mg"
+                     class="product-image">
+                <div class="product-info">
+                    <div class="product-name">Vozol 50mg</div>
+                    <div class="product-price">1 — 13€ | 2 — 25€<br>3 — 33€ | 5 — 50€</div>
+                </div>
             </div>
-        </div>
-        <div class="detail-content">
-            <h2 style="font-size: 20px; margin-bottom: 10px;">Husky 20mg</h2>
-            <div class="variants">
-                <h3>Выберите вкус:</h3>
-                <div class="variant-option" onclick="selectVariant(this, 'husky')">Big Ball — Холодный арбуз, клубника, дыня</div>
-                <div class="variant-option" onclick="selectVariant(this, 'husky')">Dark Flesh — Холодная черника и гуава</div>
-                <div class="variant-option" onclick="selectVariant(this, 'husky')">Gum Wolf — Холодная арбузная жвачка</div>
-                <div class="variant-option" onclick="selectVariant(this, 'husky')">Lemon Flock — Холодный лимон, грейпфрут, апельсин</div>
-                <div class="variant-option" onclick="selectVariant(this, 'husky')">Miami Snow — Холодный ананас, личи и банан</div>
-                <div class="variant-option" onclick="selectVariant(this, 'husky')">Tropic Hunter — Холодный ананас, манго и дыня</div>
-                <div class="variant-option" onclick="selectVariant(this, 'husky')">Wolfberry — Холодный энергетик</div>
-                <div class="variant-option" onclick="selectVariant(this, 'husky')">Yellow King — Холодное дынное мороженое</div>
-                <div class="variant-option" onclick="selectVariant(this, 'husky')">Yogi Doggy — Холодный банан, клубника, йогурт</div>
-                <div class="variant-option" onclick="selectVariant(this, 'husky')">Shake Pears — Холодная груша с личи</div>
+
+            <!-- Elfliq -->
+            <div class="product-card" onclick="openProduct('elfliq')">
+                <img src="https://pufflab.pro/wp-content/uploads/2025/04/Elfliq-30ml-50mg-liquidy-30ml-Pufflab.webp"
+                     alt="Elfliq 50mg"
+                     class="product-image">
+                <div class="product-info">
+                    <div class="product-name">Elfliq 50mg</div>
+                    <div class="product-price">1 — 13€ | 2 — 25€<br>3 — 33€ | 5 — 50€</div>
+                </div>
             </div>
-            <div class="detail-price">
-                1 шт - 13€<br>
-                2 шт - 25€<br>
-                3 шт - 33€<br>
-                5 шт - 50€
-            </div>
-            <div class="error-message" id="error-husky">Пожалуйста, выберите вкус</div>
-            <button class="order-button" onclick="orderTelegram('husky', 'smkParadiseManager')">
-                Заказать в Telegram
-            </button>
+
         </div>
     </div>
 
@@ -343,16 +394,17 @@
         </div>
         <div class="image-gallery" data-product="duall">
             <div class="gallery-container">
-                <img src="https://zenmod.shop/image/cache/catalog/blog/Review/duall%20salt/obzor_zhidkostei_duall_salt_1-828w.jpg?1680095992" 
-                     alt="Duall Salt 20mg" 
+                <img src="https://zenmod.shop/image/cache/catalog/blog/Review/duall%20salt/obzor_zhidkostei_duall_salt_1-828w.jpg?1680095992"
+                     alt="Duall Salt 20mg"
                      class="gallery-image"
                      onclick="openFullscreen('duall', 0)">
             </div>
         </div>
         <div class="detail-content">
-            <h2 style="font-size: 20px; margin-bottom: 10px;">Duall Salt 20mg</h2>
+            <div class="detail-title">Duall Salt</div>
+            <div class="detail-subtitle">20mg · Salt Nicotine</div>
             <div class="variants">
-                <h3>Выберите вкус:</h3>
+                <h3>Выберите вкус</h3>
                 <div class="variant-option" onclick="selectVariant(this, 'duall')">Слива персик</div>
                 <div class="variant-option" onclick="selectVariant(this, 'duall')">Фруктовые конфеты</div>
                 <div class="variant-option" onclick="selectVariant(this, 'duall')">Персиковый чай</div>
@@ -390,10 +442,10 @@
                 <div class="variant-option" onclick="selectVariant(this, 'duall')">Яблоко малина</div>
             </div>
             <div class="detail-price">
-                1 шт - 13€<br>
-                2 шт - 25€<br>
-                3 шт - 33€<br>
-                5 шт - 50€
+                1 шт — 13€<br>
+                2 шт — 25€<br>
+                3 шт — 33€<br>
+                5 шт — 50€
             </div>
             <div class="error-message" id="error-duall">Пожалуйста, выберите вкус</div>
             <button class="order-button" onclick="orderTelegram('duall', 'smkParadiseManager')">
@@ -402,7 +454,106 @@
         </div>
     </div>
 
-    <!-- Полноэкранный просмотр -->
+    <!-- Vozol Page -->
+    <div class="product-page" id="product-vozol">
+        <div class="product-header">
+            <button class="back-button" onclick="closeProduct('vozol')">← Назад</button>
+        </div>
+        <div class="image-gallery" data-product="vozol">
+            <div class="gallery-container">
+                <img src="https://vozol.ro/835-large_default/lichid-tigara-electronica-salt-prime-strawberry-vozol.jpg"
+                     alt="Vozol 50mg"
+                     class="gallery-image"
+                     onclick="openFullscreen('vozol', 0)">
+            </div>
+        </div>
+        <div class="detail-content">
+            <div class="detail-title">Vozol</div>
+            <div class="detail-subtitle">50mg · Salt Nicotine</div>
+            <div class="variants">
+                <h3>Выберите вкус</h3>
+                <div class="variant-option" onclick="selectVariant(this, 'vozol')">Berry Peach</div>
+                <div class="variant-option" onclick="selectVariant(this, 'vozol')">Lavafire</div>
+                <div class="variant-option" onclick="selectVariant(this, 'vozol')">Berry</div>
+                <div class="variant-option" onclick="selectVariant(this, 'vozol')">Mixed Berry</div>
+                <div class="variant-option" onclick="selectVariant(this, 'vozol')">Pineapple Passion Fruit Lime</div>
+                <div class="variant-option" onclick="selectVariant(this, 'vozol')">Blueberry Ice</div>
+                <div class="variant-option" onclick="selectVariant(this, 'vozol')">Strawberry Watermelon</div>
+                <div class="variant-option" onclick="selectVariant(this, 'vozol')">Love 777</div>
+                <div class="variant-option" onclick="selectVariant(this, 'vozol')">Blue Razz Lemon</div>
+                <div class="variant-option" onclick="selectVariant(this, 'vozol')">Pomegranate Lemonade</div>
+                <div class="variant-option" onclick="selectVariant(this, 'vozol')">Peach Mango Watermelon</div>
+                <div class="variant-option" onclick="selectVariant(this, 'vozol')">Blueberry Watermelon</div>
+            </div>
+            <div class="detail-price">
+                1 шт — 13€<br>
+                2 шт — 25€<br>
+                3 шт — 33€<br>
+                5 шт — 50€
+            </div>
+            <div class="error-message" id="error-vozol">Пожалуйста, выберите вкус</div>
+            <button class="order-button" onclick="orderTelegram('vozol', 'smkParadiseManager')">
+                Заказать в Telegram
+            </button>
+        </div>
+    </div>
+
+    <!-- Elfliq Page -->
+    <div class="product-page" id="product-elfliq">
+        <div class="product-header">
+            <button class="back-button" onclick="closeProduct('elfliq')">← Назад</button>
+        </div>
+        <div class="image-gallery" data-product="elfliq">
+            <div class="gallery-container">
+                <img src="https://pufflab.pro/wp-content/uploads/2025/04/Elfliq-30ml-50mg-liquidy-30ml-Pufflab.webp"
+                     alt="Elfliq 50mg"
+                     class="gallery-image"
+                     onclick="openFullscreen('elfliq', 0)">
+            </div>
+        </div>
+        <div class="detail-content">
+            <div class="detail-title">Elfliq</div>
+            <div class="detail-subtitle">50mg · Salt Nicotine</div>
+            <div class="variants">
+                <h3>Выберите вкус</h3>
+                <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Pina Colada</div>
+                <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Blue Razz Lemonade</div>
+                <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Cola</div>
+                <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Apple Peach</div>
+                <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Pink Lemonade Soda</div>
+                <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Elf Jack</div>
+                <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Watermelon</div>
+                <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Blueberry</div>
+                <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Raspberry Lychee</div>
+                <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Blackcurrant Aniseed</div>
+                <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Sour Apple</div>
+                <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Pineapple Colada</div>
+                <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Pink Grapefruit</div>
+                <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Blackberry Lemon</div>
+                <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Strawberry Ice</div>
+                <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Jasmine Raspberry</div>
+                <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Watermelon Cherry</div>
+                <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Strawberry Kiwi</div>
+                <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Cherry</div>
+                <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Double Apple</div>
+                <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Strawberry Cherry Lemon</div>
+                <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Blueberry Rose Mint</div>
+                <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Sour Watermelon Gummy</div>
+            </div>
+            <div class="detail-price">
+                1 шт — 13€<br>
+                2 шт — 25€<br>
+                3 шт — 33€<br>
+                5 шт — 50€
+            </div>
+            <div class="error-message" id="error-elfliq">Пожалуйста, выберите вкус</div>
+            <button class="order-button" onclick="orderTelegram('elfliq', 'smkParadiseManager')">
+                Заказать в Telegram
+            </button>
+        </div>
+    </div>
+
+    <!-- Fullscreen viewer -->
     <div class="fullscreen-overlay" id="fullscreen">
         <button class="fullscreen-close" onclick="closeFullscreen()">×</button>
         <div class="fullscreen-container">
@@ -412,33 +563,18 @@
 
     <script>
         const productData = {
-            'formula': { name: 'Formula 30ml 50mg', variant: '' },
-            'jigger': { name: 'Jigger 30ml 50mg', variant: '' },
-            'headhunter': { name: 'Head Hunter 30ml 50mg', variant: '' },
-            'monashka': { name: 'Monashka 30ml 50mg', variant: '' },
-            'myyummy': { name: 'My Yum My 30ml 50mg', variant: '' },
-            'fruitbox': { name: 'Fruit Box 30ml 50mg', variant: '' },
-            'monterey': { name: 'Monterey Drunk 30ml 50mg', variant: '' },
-            'elfworld': { name: 'ELFWORLD 30ml 50mg', variant: '' },
-            'iceparadise': { name: 'Ice Paradise Salt 50mg', variant: '' },
-            'monashka70': { name: 'Солевая Монашка 70mg', variant: '' },
-            'husky': { name: 'Husky Replic Import 20mg', variant: '' },
-            'duall': { name: 'Duall Salt 20mg', variant: '' },
-            'irex': { name: 'IREX Twins 40/60k puffs 50mg', variant: '' }
+            'duall':  { name: 'Duall Salt 20mg',  variant: '' },
+            'vozol':  { name: 'Vozol 50mg',        variant: '' },
+            'elfliq': { name: 'Elfliq 50mg',       variant: '' }
         };
 
         function openProduct(id) {
             document.getElementById('product-' + id).classList.add('active');
             document.body.style.overflow = 'hidden';
-            
-            // Сбрасываем выбор варианта при открытии
             productData[id].variant = '';
-            const variants = document.querySelectorAll(`#product-${id} .variant-option`);
-            variants.forEach(v => v.classList.remove('selected'));
-            
-            // Скрываем сообщение об ошибке
-            const errorMsg = document.getElementById('error-' + id);
-            if (errorMsg) errorMsg.classList.remove('show');
+            document.querySelectorAll(`#product-${id} .variant-option`).forEach(v => v.classList.remove('selected'));
+            const err = document.getElementById('error-' + id);
+            if (err) err.classList.remove('show');
         }
 
         function closeProduct(id) {
@@ -447,43 +583,30 @@
         }
 
         function selectVariant(element, productId) {
-            const variants = element.parentElement.querySelectorAll('.variant-option');
-            variants.forEach(v => v.classList.remove('selected'));
+            element.parentElement.querySelectorAll('.variant-option').forEach(v => v.classList.remove('selected'));
             element.classList.add('selected');
             productData[productId].variant = element.textContent;
-            
-            // Скрываем сообщение об ошибке при выборе варианта
-            const errorMsg = document.getElementById('error-' + productId);
-            if (errorMsg) errorMsg.classList.remove('show');
+            const err = document.getElementById('error-' + productId);
+            if (err) err.classList.remove('show');
         }
 
         function orderTelegram(productId, username) {
             const product = productData[productId];
-            
-            // Проверяем, выбран ли вариант
             if (!product.variant) {
-                const errorMsg = document.getElementById('error-' + productId);
-                if (errorMsg) {
-                    errorMsg.classList.add('show');
-                    errorMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                }
+                const err = document.getElementById('error-' + productId);
+                if (err) { err.classList.add('show'); err.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }
                 return;
             }
-            
-            let message = 'Здравствуйте, хочу заказать ' + product.name + ', вкус: ' + product.variant;
-            const encodedMessage = encodeURIComponent(message);
-            window.open('https://t.me/' + username + '?text=' + encodedMessage, '_blank');
+            const message = 'Здравствуйте, хочу заказать ' + product.name + ', вкус: ' + product.variant;
+            window.open('https://t.me/' + username + '?text=' + encodeURIComponent(message), '_blank');
         }
 
-        // Полноэкранный просмотр
         function openFullscreen(productId, imageIndex) {
             const gallery = document.querySelector(`[data-product="${productId}"]`);
             const images = gallery.querySelectorAll('.gallery-image');
-            const fullscreenImg = document.getElementById('fullscreen-image');
-            
-            fullscreenImg.src = images[imageIndex].src;
-            fullscreenImg.alt = images[imageIndex].alt;
-            
+            const img = document.getElementById('fullscreen-image');
+            img.src = images[imageIndex].src;
+            img.alt = images[imageIndex].alt;
             document.getElementById('fullscreen').classList.add('active');
             document.body.style.overflow = 'hidden';
         }
@@ -493,15 +616,9 @@
             document.body.style.overflow = 'auto';
         }
 
-        // Закрытие полноэкранного режима при клике на фон
         document.getElementById('fullscreen').addEventListener('click', function(e) {
-            if (e.target === this || e.target.classList.contains('fullscreen-container')) {
-                closeFullscreen();
-            }
+            if (e.target === this || e.target.classList.contains('fullscreen-container')) closeFullscreen();
         });
     </script>
 </body>
 </html>
-
-
-
