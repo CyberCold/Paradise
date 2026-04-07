@@ -6,340 +6,48 @@
     <title>Paradise</title>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         :root {
-            --bg: #0a0a0a;
-            --surface: #141414;
-            --border: #222;
-            --text: #f0ece4; 
-            --muted: #888;
-            --accent: #c9a96e;
+            --bg: #0a0a0a; --surface: #141414; --border: #222;
+            --text: #f0ece4; --muted: #888; --accent: #c9a96e;
             --accent-dim: rgba(201, 169, 110, 0.12);
         }
-
-        body {
-            font-family: 'DM Sans', sans-serif;
-            background: var(--bg);
-            min-height: 100vh;
-            color: var(--text);
-        }
-
-        .header {
-            background: var(--bg);
-            padding: 28px 0 22px;
-            text-align: center;
-            border-bottom: 1px solid var(--border);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            backdrop-filter: blur(12px);
-        }
-
-        .header h1 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 34px;
-            font-weight: 300;
-            letter-spacing: 8px;
-            color: var(--text);
-            text-transform: uppercase;
-        }
-
-        .header-line {
-            width: 40px;
-            height: 1px;
-            background: var(--accent);
-            margin: 8px auto 0;
-        }
-
-        .container {
-            padding: 24px 14px;
-            max-width: 100%;
-        }
-
-        .products-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 14px;
-        }
-
-        .product-card {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 10px;
-            overflow: hidden;
-            cursor: pointer;
-            transition: border-color 0.3s ease, transform 0.2s ease;
-            position: relative;
-        }
-
-        .product-card:active {
-            transform: scale(0.98);
-            border-color: var(--accent);
-        }
-
-        .product-image {
-            width: 100%;
-            height: 165px;
-            object-fit: contain;
-            background: #1a1a1a;
-            padding: 10px;
-        }
-
-        .product-info {
-            padding: 12px 12px 14px;
-            border-top: 1px solid var(--border);
-        }
-
-        .product-name {
-            font-size: 13px;
-            color: var(--text);
-            margin-bottom: 7px;
-            font-weight: 500;
-            letter-spacing: 0.3px;
-        }
-
-        .product-price {
-            font-size: 12px;
-            color: var(--accent);
-            font-weight: 400;
-            line-height: 1.7;
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 14px;
-        }
-
-        /* Product page */
-        .product-page {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: var(--bg);
-            z-index: 1000;
-            overflow-y: auto;
-        }
-
-        .product-page.active {
-            display: block;
-        }
-
-        .product-header {
-            padding: 18px 20px;
-            border-bottom: 1px solid var(--border);
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            position: sticky;
-            top: 0;
-            background: var(--bg);
-            z-index: 10;
-        }
-
-        .back-button {
-            background: none;
-            border: none;
-            font-size: 14px;
-            color: var(--accent);
-            cursor: pointer;
-            padding: 0;
-            font-family: 'DM Sans', sans-serif;
-            letter-spacing: 0.5px;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .detail-image {
-            width: 100%;
-            height: 300px;
-            object-fit: contain;
-            background: #111;
-            cursor: pointer;
-            padding: 20px;
-        }
-
-        .image-gallery {
-            position: relative;
-            width: 100%;
-            height: 300px;
-            background: #111;
-            overflow: hidden;
-        }
-
-        .gallery-container {
-            display: flex;
-            height: 100%;
-            transition: transform 0.3s ease;
-        }
-
-        .gallery-image {
-            min-width: 100%;
-            height: 100%;
-            object-fit: contain;
-            cursor: pointer;
-            padding: 20px;
-        }
-
-        /* Fullscreen */
-        .fullscreen-overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.97);
-            z-index: 2000;
-        }
-
-        .fullscreen-overlay.active {
-            display: block;
-        }
-
-        .fullscreen-container {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .fullscreen-image {
-            max-width: 90%;
-            max-height: 90%;
-            object-fit: contain;
-        }
-
-        .fullscreen-close {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: rgba(255,255,255,0.1);
-            color: #fff;
-            border: none;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            font-size: 22px;
-            cursor: pointer;
-            z-index: 2001;
-        }
-
-        .detail-content {
-            padding: 22px 20px 40px;
-        }
-
-        .detail-title {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 24px;
-            font-weight: 400;
-            margin-bottom: 4px;
-            letter-spacing: 1px;
-        }
-
-        .detail-subtitle {
-            font-size: 12px;
-            color: var(--muted);
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            margin-bottom: 22px;
-        }
-
-        .divider {
-            width: 100%;
-            height: 1px;
-            background: var(--border);
-            margin: 20px 0;
-        }
-
-        .variants {
-            margin: 0 0 20px;
-        }
-
-        .variants h3 {
-            font-size: 11px;
-            color: var(--muted);
-            margin-bottom: 12px;
-            font-weight: 400;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-
-        .variant-option {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            padding: 11px 14px;
-            border-radius: 6px;
-            margin-bottom: 7px;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            font-size: 13.5px;
-            color: var(--text);
-            font-family: 'DM Sans', sans-serif;
-        }
-
-        .variant-option:active,
-        .variant-option.selected {
-            background: var(--accent-dim);
-            color: var(--accent);
-            border-color: var(--accent);
-        }
-
-        .detail-price {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 20px;
-            color: var(--accent);
-            font-weight: 400;
-            margin: 20px 0 22px;
-            line-height: 1.8;
-            letter-spacing: 0.5px;
-        }
-
-        .order-button {
-            width: 100%;
-            background: var(--accent);
-            color: #0a0a0a;
-            border: none;
-            padding: 16px;
-            border-radius: 6px;
-            font-size: 14px;
-            font-weight: 500;
-            cursor: pointer;
-            transition: opacity 0.2s ease;
-            font-family: 'DM Sans', sans-serif;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-        }
-
-        .order-button:active {
-            opacity: 0.8;
-        }
-
-        .order-button:disabled {
-            background: #333;
-            color: var(--muted);
-            cursor: not-allowed;
-        }
-
-        .error-message {
-            color: #e07070;
-            font-size: 13px;
-            margin-top: 10px;
-            margin-bottom: 14px;
-            display: none;
-            letter-spacing: 0.3px;
-        }
-
-        .error-message.show {
-            display: block;
-        }
+        body { font-family: 'DM Sans', sans-serif; background: var(--bg); min-height: 100vh; color: var(--text); }
+        .header { background: var(--bg); padding: 28px 0 22px; text-align: center; border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; backdrop-filter: blur(12px); }
+        .header h1 { font-family: 'Cormorant Garamond', serif; font-size: 34px; font-weight: 300; letter-spacing: 8px; color: var(--text); text-transform: uppercase; }
+        .header-line { width: 40px; height: 1px; background: var(--accent); margin: 8px auto 0; }
+        .container { padding: 24px 14px; max-width: 100%; }
+        .products-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+        .product-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; cursor: pointer; transition: border-color 0.3s ease, transform 0.2s ease; position: relative; }
+        .product-card:active { transform: scale(0.98); border-color: var(--accent); }
+        .product-image { width: 100%; height: 165px; object-fit: contain; background: #1a1a1a; padding: 10px; }
+        .product-info { padding: 12px 12px 14px; border-top: 1px solid var(--border); }
+        .product-name { font-size: 13px; color: var(--text); margin-bottom: 7px; font-weight: 500; letter-spacing: 0.3px; }
+        .product-price { color: var(--accent); font-weight: 400; line-height: 1.7; font-family: 'Cormorant Garamond', serif; font-size: 14px; }
+        .product-page { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: var(--bg); z-index: 1000; overflow-y: auto; }
+        .product-page.active { display: block; }
+        .product-header { padding: 18px 20px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 16px; position: sticky; top: 0; background: var(--bg); z-index: 10; }
+        .back-button { background: none; border: none; font-size: 14px; color: var(--accent); cursor: pointer; padding: 0; font-family: 'DM Sans', sans-serif; letter-spacing: 0.5px; display: flex; align-items: center; gap: 6px; }
+        .image-gallery { position: relative; width: 100%; height: 300px; background: #111; overflow: hidden; }
+        .gallery-container { display: flex; height: 100%; transition: transform 0.3s ease; }
+        .gallery-image { min-width: 100%; height: 100%; object-fit: contain; cursor: pointer; padding: 20px; }
+        .fullscreen-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.97); z-index: 2000; }
+        .fullscreen-overlay.active { display: block; }
+        .fullscreen-container { position: relative; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
+        .fullscreen-image { max-width: 90%; max-height: 90%; object-fit: contain; }
+        .fullscreen-close { position: absolute; top: 20px; right: 20px; background: rgba(255,255,255,0.1); color: #fff; border: none; width: 40px; height: 40px; border-radius: 50%; font-size: 22px; cursor: pointer; z-index: 2001; }
+        .detail-content { padding: 22px 20px 40px; }
+        .detail-title { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 400; margin-bottom: 4px; letter-spacing: 1px; }
+        .detail-subtitle { font-size: 12px; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 22px; }
+        .variants { margin: 0 0 20px; }
+        .variants h3 { font-size: 11px; color: var(--muted); margin-bottom: 12px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase; }
+        .variant-option { background: var(--surface); border: 1px solid var(--border); padding: 11px 14px; border-radius: 6px; margin-bottom: 7px; cursor: pointer; transition: all 0.2s ease; font-size: 13.5px; color: var(--text); font-family: 'DM Sans', sans-serif; }
+        .variant-option:active, .variant-option.selected { background: var(--accent-dim); color: var(--accent); border-color: var(--accent); }
+        .detail-price { font-family: 'Cormorant Garamond', serif; font-size: 20px; color: var(--accent); font-weight: 400; margin: 20px 0 22px; line-height: 1.8; letter-spacing: 0.5px; }
+        .order-button { width: 100%; background: var(--accent); color: #0a0a0a; border: none; padding: 16px; border-radius: 6px; font-size: 14px; font-weight: 500; cursor: pointer; transition: opacity 0.2s ease; font-family: 'DM Sans', sans-serif; letter-spacing: 1.5px; text-transform: uppercase; }
+        .order-button:active { opacity: 0.8; }
+        .error-message { color: #e07070; font-size: 13px; margin-top: 10px; margin-bottom: 14px; display: none; letter-spacing: 0.3px; }
+        .error-message.show { display: block; }
     </style>
 </head>
 <body>
@@ -351,14 +59,14 @@
     <div class="container">
         <div class="products-grid">
 
-            <!-- Duall Salt -->
-            <div class="product-card" onclick="openProduct('duall')">
-                <img src="https://zenmod.shop/image/cache/catalog/blog/Review/duall%20salt/obzor_zhidkostei_duall_salt_1-828w.jpg?1680095992"
-                     alt="Duall Salt 20mg"
+            <!-- Vaape Triple 90K -->
+            <div class="product-card" onclick="openProduct('vaape')">
+                <img src="https://www.serisvape.com/wp-content/uploads/2025/10/Unboxing-the-Vaapee-Triple-90K-Triple-the-Flavor-Triple-the-Fun-768x768.jpg"
+                     alt="Vaape Triple 90K"
                      class="product-image">
                 <div class="product-info">
-                    <div class="product-name">Duall Salt 20mg</div>
-                    <div class="product-price">1 — 13€ | 2 — 25€<br>3 — 33€ | 5 — 50€</div>
+                    <div class="product-name">Vaape Triple 90K</div>
+                    <div class="product-price">25€</div>
                 </div>
             </div>
 
@@ -387,68 +95,36 @@
         </div>
     </div>
 
-    <!-- Duall Salt Page -->
-    <div class="product-page" id="product-duall">
+    <!-- Vaape Triple 90K Page -->
+    <div class="product-page" id="product-vaape">
         <div class="product-header">
-            <button class="back-button" onclick="closeProduct('duall')">← Назад</button>
+            <button class="back-button" onclick="closeProduct('vaape')">← Назад</button>
         </div>
-        <div class="image-gallery" data-product="duall">
+        <div class="image-gallery" data-product="vaape">
             <div class="gallery-container">
-                <img src="https://zenmod.shop/image/cache/catalog/blog/Review/duall%20salt/obzor_zhidkostei_duall_salt_1-828w.jpg?1680095992"
-                     alt="Duall Salt 20mg"
+                <img src="https://www.serisvape.com/wp-content/uploads/2025/10/Unboxing-the-Vaapee-Triple-90K-Triple-the-Flavor-Triple-the-Fun-768x768.jpg"
+                     alt="Vaape Triple 90K"
                      class="gallery-image"
-                     onclick="openFullscreen('duall', 0)">
+                     onclick="openFullscreen('vaape', 0)">
             </div>
         </div>
         <div class="detail-content">
-            <div class="detail-title">Duall Salt</div>
-            <div class="detail-subtitle">20mg · Salt Nicotine</div>
+            <div class="detail-title">Vaape Triple 90K</div>
+            <div class="detail-subtitle">90 000 puffs · Triple Flavor</div>
             <div class="variants">
-                <h3>Выберите вкус</h3>
-                <div class="variant-option" onclick="selectVariant(this, 'duall')">Слива персик</div>
-                <div class="variant-option" onclick="selectVariant(this, 'duall')">Фруктовые конфеты</div>
-                <div class="variant-option" onclick="selectVariant(this, 'duall')">Персиковый чай</div>
-                <div class="variant-option" onclick="selectVariant(this, 'duall')">Вишня клубника</div>
-                <div class="variant-option" onclick="selectVariant(this, 'duall')">Жвачка клубника киви</div>
-                <div class="variant-option" onclick="selectVariant(this, 'duall')">Кислая жвачка грейпфрут клубника</div>
-                <div class="variant-option" onclick="selectVariant(this, 'duall')">Клубника апельсин маракуйя</div>
-                <div class="variant-option" onclick="selectVariant(this, 'duall')">Клубника банан</div>
-                <div class="variant-option" onclick="selectVariant(this, 'duall')">Клубника лайм малина</div>
-                <div class="variant-option" onclick="selectVariant(this, 'duall')">Клубничный йогурт</div>
-                <div class="variant-option" onclick="selectVariant(this, 'duall')">Кумкват гуанабана</div>
-                <div class="variant-option" onclick="selectVariant(this, 'duall')">Ледяная клубника с личи</div>
-                <div class="variant-option" onclick="selectVariant(this, 'duall')">Ледяная кола манго</div>
-                <div class="variant-option" onclick="selectVariant(this, 'duall')">Ледяная малина</div>
-                <div class="variant-option" onclick="selectVariant(this, 'duall')">Ледяная черника</div>
-                <div class="variant-option" onclick="selectVariant(this, 'duall')">Ледяное манго</div>
-                <div class="variant-option" onclick="selectVariant(this, 'duall')">Ледяное манго с апельсином</div>
-                <div class="variant-option" onclick="selectVariant(this, 'duall')">Ледяной арбуз с дыней</div>
-                <div class="variant-option" onclick="selectVariant(this, 'duall')">Ледяной тархун</div>
-                <div class="variant-option" onclick="selectVariant(this, 'duall')">Лесные ягоды</div>
-                <div class="variant-option" onclick="selectVariant(this, 'duall')">Лимонад с грейпфрутом</div>
-                <div class="variant-option" onclick="selectVariant(this, 'duall')">Личи лайм маракуйя</div>
-                <div class="variant-option" onclick="selectVariant(this, 'duall')">Малиновый йогурт</div>
-                <div class="variant-option" onclick="selectVariant(this, 'duall')">Морозный ананас</div>
-                <div class="variant-option" onclick="selectVariant(this, 'duall')">Персиковый лимонад</div>
-                <div class="variant-option" onclick="selectVariant(this, 'duall')">Садовые ягоды</div>
-                <div class="variant-option" onclick="selectVariant(this, 'duall')">Сладкая мята</div>
-                <div class="variant-option" onclick="selectVariant(this, 'duall')">Смородина малина яблоко</div>
-                <div class="variant-option" onclick="selectVariant(this, 'duall')">Спрайт арбуз лайм</div>
-                <div class="variant-option" onclick="selectVariant(this, 'duall')">Фруктовый мармелад</div>
-                <div class="variant-option" onclick="selectVariant(this, 'duall')">Чай с грейпфрутом и ягодами</div>
-                <div class="variant-option" onclick="selectVariant(this, 'duall')">Чай с манго</div>
-                <div class="variant-option" onclick="selectVariant(this, 'duall')">Черничный чизкейк</div>
-                <div class="variant-option" onclick="selectVariant(this, 'duall')">Яблоко виноград</div>
-                <div class="variant-option" onclick="selectVariant(this, 'duall')">Яблоко малина</div>
+                <h3>Выберите вкус (3 в 1)</h3>
+                <div class="variant-option" onclick="selectVariant(this, 'vaape')">Double apple ice, Strawberry dragonfruit, Red bull</div>
+                <div class="variant-option" onclick="selectVariant(this, 'vaape')"> Strawberry watermelon, Grape ice, Blueberry raspberry ice</div>
+                <div class="variant-option" onclick="selectVariant(this, 'vaape')">Blueberry ice, Black dragon ice, Red bull </div>
+                <div class="variant-option" onclick="selectVariant(this, 'vaape')">Mixed berries, Red Bull, Peach ice</div>
+                <div class="variant-option" onclick="selectVariant(this, 'vaape')"> Peach mango pineapple, Strawberry ice, Raspberry watermelon</div>
+                <div class="variant-option" onclick="selectVariant(this, 'vaape')">Strawberry raspberry cherry, Kiwi passion fruit guava, Blue raspberry ice </div>
+                <div class="variant-option" onclick="selectVariant(this, 'vaape')">Red bull, Blueberry watermelon, Monster drink</div>
+                <div class="variant-option" onclick="selectVariant(this, 'vaape')"> Strawberry watermelon, Cola ice, Peach ice</div>
             </div>
-            <div class="detail-price">
-                1 шт — 13€<br>
-                2 шт — 25€<br>
-                3 шт — 33€<br>
-                5 шт — 50€
-            </div>
-            <div class="error-message" id="error-duall">Пожалуйста, выберите вкус</div>
-            <button class="order-button" onclick="orderTelegram('duall', 'smkParadiseManager')">
+            <div class="detail-price">25€</div>
+            <div class="error-message" id="error-vaape">Пожалуйста, выберите вкус</div>
+            <button class="order-button" onclick="orderTelegram('vaape', 'smkParadiseManager')">
                 Заказать в Telegram
             </button>
         </div>
@@ -562,16 +238,16 @@
 
     <script>
         const productData = {
-            'duall':  { name: 'Duall Salt 20mg',  variant: '' },
-            'vozol':  { name: 'Vozol 50mg',        variant: '' },
-            'elfliq': { name: 'Elfliq 50mg',       variant: '' }
+            'vaape':  { name: 'Vaape Triple 90K', variant: '' },
+            'vozol':  { name: 'Vozol 50mg',       variant: '' },
+            'elfliq': { name: 'Elfliq 50mg',      variant: '' }
         };
 
         function openProduct(id) {
             document.getElementById('product-' + id).classList.add('active');
             document.body.style.overflow = 'hidden';
             productData[id].variant = '';
-            document.querySelectorAll(`#product-${id} .variant-option`).forEach(v => v.classList.remove('selected'));
+            document.querySelectorAll('#product-' + id + ' .variant-option').forEach(v => v.classList.remove('selected'));
             const err = document.getElementById('error-' + id);
             if (err) err.classList.remove('show');
         }
@@ -601,7 +277,7 @@
         }
 
         function openFullscreen(productId, imageIndex) {
-            const gallery = document.querySelector(`[data-product="${productId}"]`);
+            const gallery = document.querySelector('[data-product="' + productId + '"]');
             const images = gallery.querySelectorAll('.gallery-image');
             const img = document.getElementById('fullscreen-image');
             img.src = images[imageIndex].src;
