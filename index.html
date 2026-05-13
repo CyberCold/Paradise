@@ -32,7 +32,7 @@
         .gallery-container { display: flex; height: 100%; transition: transform 0.3s ease; }
         .gallery-image { min-width: 100%; height: 100%; object-fit: contain; cursor: pointer; padding: 20px; }
         .fullscreen-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.97); z-index: 2000; }
-        .fullscreen-overlay.active { display block; }
+        .fullscreen-overlay.active { display: block; }
         .fullscreen-container { position: relative; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
         .fullscreen-image { max-width: 90%; max-height: 90%; object-fit: contain; }
         .fullscreen-close { position: absolute; top: 20px; right: 20px; background: rgba(255,255,255,0.1); color: #fff; border: none; width: 40px; height: 40px; border-radius: 50%; font-size: 22px; cursor: pointer; z-index: 2001; }
@@ -83,6 +83,24 @@
                 <div class="product-info">
                     <div class="product-name">Elfliq 50mg</div>
                     <div class="product-price">1 — 13€ | 2 — 25€<br>3 — 33€ | 5 — 50€</div>
+                </div>
+            </div>
+
+            <div class="product-card" onclick="openProduct('ivg')">
+                <img src="https://ivapegreat.com/cdn/shop/files/IVG_INTENSE_Salts_Thumbnail_Blue.png?v=1774900241"
+                     alt="IVG 20mg" class="product-image">
+                <div class="product-info">
+                    <div class="product-name">IVG 20mg</div>
+                    <div class="product-price">1 — 5€ | 3 — 13€</div>
+                </div>
+            </div>
+
+            <div class="product-card" onclick="openProduct('truesalt')">
+                <img src="https://juicedoutvapes.co.uk/cdn/shop/products/4_4be7c1d9-da53-4be0-bb22-0803b4372edf.png?v=1602267819"
+                     alt="True Salt 20mg" class="product-image">
+                <div class="product-info">
+                    <div class="product-name">True Salt 20mg</div>
+                    <div class="product-price">1 — 5€ | 3 — 13€</div>
                 </div>
             </div>
 
@@ -197,6 +215,71 @@
         </div>
     </div>
 
+    <!-- IVG Page -->
+    <div class="product-page" id="product-ivg">
+        <div class="product-header">
+            <button class="back-button" onclick="closeProduct('ivg')">← Назад</button>
+        </div>
+        <div class="image-gallery" data-product="ivg">
+            <div class="gallery-container">
+                <img src="https://ivapegreat.com/cdn/shop/files/IVG_INTENSE_Salts_Thumbnail_Blue.png?v=1774900241"
+                     alt="IVG 20mg" class="gallery-image" onclick="openFullscreen('ivg', 0)">
+            </div>
+        </div>
+        <div class="detail-content">
+            <div class="detail-title">IVG</div>
+            <div class="detail-subtitle">10ml · 20mg · Salt Nicotine</div>
+            <div class="variants">
+                <h3>Выберите вкус</h3>
+                <div class="variant-option" onclick="selectVariant(this, 'ivg')">Pink Lemonade</div>
+                <div class="variant-option" onclick="selectVariant(this, 'ivg')">Blackcurrant Mango</div>
+                <div class="variant-option" onclick="selectVariant(this, 'ivg')">Fruit Twist (Peach, Mango, Pineapple, Passion Fruit)</div>
+                <div class="variant-option" onclick="selectVariant(this, 'ivg')">Honey Dew Rainbow Blast</div>
+                <div class="variant-option" onclick="selectVariant(this, 'ivg')">Pink Fizz</div>
+                <div class="variant-option" onclick="selectVariant(this, 'ivg')">Iced Melonade</div>
+                <div class="variant-option" onclick="selectVariant(this, 'ivg')">Ice Menthol</div>
+                <div class="variant-option" onclick="selectVariant(this, 'ivg')">Lemon Peach Passion Fruit</div>
+            </div>
+            <div class="detail-price">
+                1 шт — 5€<br>
+                3 шт — 13€
+            </div>
+            <div class="error-message" id="error-ivg">Пожалуйста, выберите вкус</div>
+            <button class="order-button" onclick="orderTelegram('ivg', 'smkParadiseManager')">
+                Заказать в Telegram
+            </button>
+        </div>
+    </div>
+
+    <!-- True Salt Page -->
+    <div class="product-page" id="product-truesalt">
+        <div class="product-header">
+            <button class="back-button" onclick="closeProduct('truesalt')">← Назад</button>
+        </div>
+        <div class="image-gallery" data-product="truesalt">
+            <div class="gallery-container">
+                <img src="https://juicedoutvapes.co.uk/cdn/shop/products/4_4be7c1d9-da53-4be0-bb22-0803b4372edf.png?v=1602267819"
+                     alt="True Salt 20mg" class="gallery-image" onclick="openFullscreen('truesalt', 0)">
+            </div>
+        </div>
+        <div class="detail-content">
+            <div class="detail-title">True Salt</div>
+            <div class="detail-subtitle">10ml · 20mg · Salt Nicotine</div>
+            <div class="variants">
+                <h3>Выберите вкус</h3>
+                <div class="variant-option" onclick="selectVariant(this, 'truesalt')">Banana Ice</div>
+            </div>
+            <div class="detail-price">
+                1 шт — 5€<br>
+                3 шт — 13€
+            </div>
+            <div class="error-message" id="error-truesalt">Пожалуйста, выберите вкус</div>
+            <button class="order-button" onclick="orderTelegram('truesalt', 'smkParadiseManager')">
+                Заказать в Telegram
+            </button>
+        </div>
+    </div>
+
     <!-- Fullscreen viewer -->
     <div class="fullscreen-overlay" id="fullscreen">
         <button class="fullscreen-close" onclick="closeFullscreen()">×</button>
@@ -207,9 +290,11 @@
 
     <script>
         const productData = {
-            'vaape':  { name: 'Vaape Triple 90K', variant: '' },
-            'vozol':  { name: 'Vozol 50mg',       variant: '' },
-            'elfliq': { name: 'Elfliq 50mg',      variant: '' }
+            'vaape':    { name: 'Vaape Triple 90K', variant: '' },
+            'vozol':    { name: 'Vozol 50mg',       variant: '' },
+            'elfliq':   { name: 'Elfliq 50mg',      variant: '' },
+            'ivg':      { name: 'IVG 20mg',         variant: '' },
+            'truesalt': { name: 'True Salt 20mg',   variant: '' }
         };
 
         function openProduct(id) {
