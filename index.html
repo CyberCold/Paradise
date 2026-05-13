@@ -4,64 +4,382 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paradise</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         :root {
-            --bg: #0a0a0a; --surface: #141414; --border: #222;
-            --text: #f0ece4; --muted: #888; --accent: #c9a96e;
-            --accent-dim: rgba(201, 169, 110, 0.12);
+            --bg: #faf8f5;
+            --surface: #ffffff;
+            --surface2: #f2ede6;
+            --border: #e8e0d4;
+            --text: #1a1714;
+            --muted: #9a9188;
+            --accent: #b5763a;
+            --accent-light: rgba(181, 118, 58, 0.10);
+            --accent-hover: #9c622e;
+            --shadow: 0 2px 16px rgba(60,40,10,0.08);
+            --shadow-card: 0 1px 4px rgba(60,40,10,0.06), 0 4px 20px rgba(60,40,10,0.06);
         }
-        body { font-family: 'DM Sans', sans-serif; background: var(--bg); min-height: 100vh; color: var(--text); }
-        .header { background: var(--bg); padding: 28px 0 22px; text-align: center; border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; backdrop-filter: blur(12px); }
-        .header h1 { font-family: 'Cormorant Garamond', serif; font-size: 34px; font-weight: 300; letter-spacing: 8px; color: var(--text); text-transform: uppercase; }
-        .header-line { width: 40px; height: 1px; background: var(--accent); margin: 8px auto 0; }
-        .container { padding: 24px 14px; max-width: 100%; }
-        .products-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-        .product-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; cursor: pointer; transition: border-color 0.3s ease, transform 0.2s ease; position: relative; }
-        .product-card:active { transform: scale(0.98); border-color: var(--accent); }
-        .product-image { width: 100%; height: 165px; object-fit: contain; background: #1a1a1a; padding: 10px; }
-        .product-info { padding: 12px 12px 14px; border-top: 1px solid var(--border); }
-        .product-name { font-size: 13px; color: var(--text); margin-bottom: 7px; font-weight: 500; letter-spacing: 0.3px; }
-        .product-price { color: var(--accent); font-weight: 400; line-height: 1.7; font-family: 'Cormorant Garamond', serif; font-size: 14px; }
-        .product-page { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: var(--bg); z-index: 1000; overflow-y: auto; }
+
+        body {
+            font-family: 'Jost', sans-serif;
+            background: var(--bg);
+            min-height: 100vh;
+            color: var(--text);
+        }
+
+        /* HEADER */
+        .header {
+            background: var(--bg);
+            padding: 26px 0 20px;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(12px);
+        }
+        .header-eyebrow {
+            font-size: 10px;
+            letter-spacing: 4px;
+            color: var(--accent);
+            text-transform: uppercase;
+            font-weight: 400;
+            margin-bottom: 4px;
+        }
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 30px;
+            font-weight: 400;
+            letter-spacing: 6px;
+            color: var(--text);
+            text-transform: uppercase;
+        }
+        .header-line {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 8px;
+        }
+        .header-line span { width: 32px; height: 1px; background: var(--accent); display: block; opacity: 0.5; }
+        .header-line i { width: 5px; height: 5px; border-radius: 50%; background: var(--accent); display: block; }
+
+        /* GRID */
+        .container { padding: 22px 14px 40px; max-width: 100%; }
+        .products-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+        .product-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: var(--shadow-card);
+            position: relative;
+        }
+        .product-card:active {
+            transform: scale(0.97);
+            box-shadow: 0 1px 6px rgba(60,40,10,0.10);
+        }
+
+        .product-image-wrap {
+            background: var(--surface2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 160px;
+            padding: 12px;
+            border-bottom: 1px solid var(--border);
+        }
+        .product-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            mix-blend-mode: multiply;
+        }
+
+        .product-info { padding: 12px 12px 14px; }
+        .product-name {
+            font-size: 13px;
+            color: var(--text);
+            margin-bottom: 5px;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+        }
+        .product-price {
+            color: var(--accent);
+            font-family: 'Playfair Display', serif;
+            font-size: 13.5px;
+            line-height: 1.7;
+            font-style: italic;
+        }
+
+        /* PRODUCT PAGE */
+        .product-page {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: var(--bg);
+            z-index: 1000;
+            overflow-y: auto;
+        }
         .product-page.active { display: block; }
-        .product-header { padding: 18px 20px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 16px; position: sticky; top: 0; background: var(--bg); z-index: 10; }
-        .back-button { background: none; border: none; font-size: 14px; color: var(--accent); cursor: pointer; padding: 0; font-family: 'DM Sans', sans-serif; letter-spacing: 0.5px; display: flex; align-items: center; gap: 6px; }
-        .image-gallery { position: relative; width: 100%; height: 300px; background: #111; overflow: hidden; }
-        .gallery-container { display: flex; height: 100%; transition: transform 0.3s ease; }
-        .gallery-image { min-width: 100%; height: 100%; object-fit: contain; cursor: pointer; padding: 20px; }
-        .fullscreen-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.97); z-index: 2000; }
-        .fullscreen-overlay.active { display: block; }
-        .fullscreen-container { position: relative; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
-        .fullscreen-image { max-width: 90%; max-height: 90%; object-fit: contain; }
-        .fullscreen-close { position: absolute; top: 20px; right: 20px; background: rgba(255,255,255,0.1); color: #fff; border: none; width: 40px; height: 40px; border-radius: 50%; font-size: 22px; cursor: pointer; z-index: 2001; }
-        .detail-content { padding: 22px 20px 40px; }
-        .detail-title { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 400; margin-bottom: 4px; letter-spacing: 1px; }
-        .detail-subtitle { font-size: 12px; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 22px; }
-        .variants { margin: 0 0 20px; }
-        .variants h3 { font-size: 11px; color: var(--muted); margin-bottom: 12px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase; }
-        .variant-option { background: var(--surface); border: 1px solid var(--border); padding: 11px 14px; border-radius: 6px; margin-bottom: 7px; cursor: pointer; transition: all 0.2s ease; font-size: 13.5px; color: var(--text); font-family: 'DM Sans', sans-serif; }
-        .variant-option:active, .variant-option.selected { background: var(--accent-dim); color: var(--accent); border-color: var(--accent); }
-        .detail-price { font-family: 'Cormorant Garamond', serif; font-size: 20px; color: var(--accent); font-weight: 400; margin: 20px 0 22px; line-height: 1.8; letter-spacing: 0.5px; }
-        .order-button { width: 100%; background: var(--accent); color: #0a0a0a; border: none; padding: 16px; border-radius: 6px; font-size: 14px; font-weight: 500; cursor: pointer; transition: opacity 0.2s ease; font-family: 'DM Sans', sans-serif; letter-spacing: 1.5px; text-transform: uppercase; }
-        .order-button:active { opacity: 0.8; }
-        .error-message { color: #e07070; font-size: 13px; margin-top: 10px; margin-bottom: 14px; display: none; letter-spacing: 0.3px; }
+
+        .product-header {
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            background: rgba(250,248,245,0.95);
+            backdrop-filter: blur(10px);
+            z-index: 10;
+        }
+        .back-button {
+            background: none;
+            border: none;
+            font-size: 13px;
+            color: var(--accent);
+            cursor: pointer;
+            padding: 4px 0;
+            font-family: 'Jost', sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .back-arrow {
+            width: 28px; height: 28px;
+            border-radius: 50%;
+            border: 1px solid var(--border);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 14px;
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+
+        /* GALLERY */
+        .image-gallery {
+            position: relative;
+            width: 100%;
+            height: 280px;
+            background: var(--surface2);
+            overflow: hidden;
+            border-bottom: 1px solid var(--border);
+        }
+        .gallery-container {
+            display: flex;
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+        .gallery-image {
+            min-width: 100%;
+            height: 100%;
+            object-fit: contain;
+            cursor: pointer;
+            padding: 28px;
+            mix-blend-mode: multiply;
+        }
+
+        /* DETAIL */
+        .detail-content { padding: 24px 20px 50px; }
+
+        .detail-tag {
+            display: inline-block;
+            font-size: 10px;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            color: var(--accent);
+            background: var(--accent-light);
+            border-radius: 20px;
+            padding: 4px 12px;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+        .detail-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            font-weight: 400;
+            margin-bottom: 2px;
+            letter-spacing: 0.5px;
+            color: var(--text);
+        }
+        .detail-subtitle {
+            font-size: 12px;
+            color: var(--muted);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 26px;
+            font-weight: 300;
+        }
+
+        /* DIVIDER */
+        .divider {
+            height: 1px;
+            background: var(--border);
+            margin: 20px 0;
+        }
+
+        /* VARIANTS */
+        .variants h3 {
+            font-size: 10px;
+            color: var(--muted);
+            margin-bottom: 12px;
+            font-weight: 500;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+        }
+        .variant-option {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            padding: 12px 16px;
+            border-radius: 10px;
+            margin-bottom: 8px;
+            cursor: pointer;
+            transition: all 0.18s ease;
+            font-size: 13.5px;
+            color: var(--text);
+            font-family: 'Jost', sans-serif;
+            font-weight: 400;
+            box-shadow: 0 1px 3px rgba(60,40,10,0.04);
+        }
+        .variant-option:active,
+        .variant-option.selected {
+            background: var(--accent-light);
+            color: var(--accent);
+            border-color: var(--accent);
+            box-shadow: none;
+        }
+
+        /* PRICE */
+        .detail-price {
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+            color: var(--text);
+            font-weight: 400;
+            margin: 20px 0 24px;
+            line-height: 2;
+            letter-spacing: 0.3px;
+        }
+        .detail-price span {
+            color: var(--accent);
+            font-style: italic;
+        }
+
+        /* ORDER BUTTON */
+        .order-button {
+            width: 100%;
+            background: var(--accent);
+            color: #fff;
+            border: none;
+            padding: 17px;
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s ease, transform 0.15s ease;
+            font-family: 'Jost', sans-serif;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            box-shadow: 0 4px 14px rgba(181,118,58,0.3);
+        }
+        .order-button:active {
+            background: var(--accent-hover);
+            transform: scale(0.98);
+        }
+
+        /* ERROR */
+        .error-message {
+            color: #c0594a;
+            font-size: 12.5px;
+            margin-top: 10px;
+            margin-bottom: 14px;
+            display: none;
+            letter-spacing: 0.3px;
+            background: rgba(192,89,74,0.08);
+            padding: 8px 12px;
+            border-radius: 6px;
+        }
         .error-message.show { display: block; }
+
+        /* FULLSCREEN */
+        .fullscreen-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(250,248,245,0.97);
+            z-index: 2000;
+        }
+        .fullscreen-overlay.active { display: block; }
+        .fullscreen-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .fullscreen-image {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+            mix-blend-mode: multiply;
+        }
+        .fullscreen-close {
+            position: absolute;
+            top: 20px; right: 20px;
+            background: var(--surface);
+            color: var(--text);
+            border: 1px solid var(--border);
+            width: 40px; height: 40px;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            z-index: 2001;
+            box-shadow: var(--shadow);
+        }
+
+        /* Animation */
+        .product-card {
+            animation: fadeUp 0.4s ease both;
+        }
+        .product-card:nth-child(1) { animation-delay: 0.05s; }
+        .product-card:nth-child(2) { animation-delay: 0.1s; }
+        .product-card:nth-child(3) { animation-delay: 0.15s; }
+        .product-card:nth-child(4) { animation-delay: 0.2s; }
+        .product-card:nth-child(5) { animation-delay: 0.25s; }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(14px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
     </style>
 </head>
 <body>
+
     <div class="header">
+        <div class="header-eyebrow">Premium Vape Shop</div>
         <h1>Paradise</h1>
-        <div class="header-line"></div>
+        <div class="header-line">
+            <span></span><i></i><span></span>
+        </div>
     </div>
 
     <div class="container">
         <div class="products-grid">
 
             <div class="product-card" onclick="openProduct('vaape')">
-                <img src="https://www.serisvape.com/wp-content/uploads/2025/10/Unboxing-the-Vaapee-Triple-90K-Triple-the-Flavor-Triple-the-Fun-768x768.jpg"
-                     alt="Vaape Triple 90K" class="product-image">
+                <div class="product-image-wrap">
+                    <img src="https://www.serisvape.com/wp-content/uploads/2025/10/Unboxing-the-Vaapee-Triple-90K-Triple-the-Flavor-Triple-the-Fun-768x768.jpg"
+                         alt="Vaape Triple 90K" class="product-image">
+                </div>
                 <div class="product-info">
                     <div class="product-name">Vaape Triple 90K</div>
                     <div class="product-price">15€</div>
@@ -69,8 +387,10 @@
             </div>
 
             <div class="product-card" onclick="openProduct('vozol')">
-                <img src="https://vozol.ro/835-large_default/lichid-tigara-electronica-salt-prime-strawberry-vozol.jpg"
-                     alt="Vozol 50mg" class="product-image">
+                <div class="product-image-wrap">
+                    <img src="https://vozol.ro/835-large_default/lichid-tigara-electronica-salt-prime-strawberry-vozol.jpg"
+                         alt="Vozol 50mg" class="product-image">
+                </div>
                 <div class="product-info">
                     <div class="product-name">Vozol 50mg</div>
                     <div class="product-price">1 — 13€ | 2 — 25€<br>3 — 33€ | 5 — 50€</div>
@@ -78,8 +398,10 @@
             </div>
 
             <div class="product-card" onclick="openProduct('elfliq')">
-                <img src="https://pufflab.pro/wp-content/uploads/2025/04/Elfliq-30ml-50mg-liquidy-30ml-Pufflab.webp"
-                     alt="Elfliq 50mg" class="product-image">
+                <div class="product-image-wrap">
+                    <img src="https://pufflab.pro/wp-content/uploads/2025/04/Elfliq-30ml-50mg-liquidy-30ml-Pufflab.webp"
+                         alt="Elfliq 50mg" class="product-image">
+                </div>
                 <div class="product-info">
                     <div class="product-name">Elfliq 50mg</div>
                     <div class="product-price">1 — 13€ | 2 — 25€<br>3 — 33€ | 5 — 50€</div>
@@ -87,8 +409,10 @@
             </div>
 
             <div class="product-card" onclick="openProduct('ivg')">
-                <img src="https://ivapegreat.com/cdn/shop/files/IVG_INTENSE_Salts_Thumbnail_Blue.png?v=1774900241"
-                     alt="IVG 20mg" class="product-image">
+                <div class="product-image-wrap">
+                    <img src="https://ivapegreat.com/cdn/shop/files/IVG_INTENSE_Salts_Thumbnail_Blue.png?v=1774900241"
+                         alt="IVG 20mg" class="product-image">
+                </div>
                 <div class="product-info">
                     <div class="product-name">IVG 20mg</div>
                     <div class="product-price">1 — 5€ | 3 — 13€</div>
@@ -96,8 +420,10 @@
             </div>
 
             <div class="product-card" onclick="openProduct('truesalt')">
-                <img src="https://juicedoutvapes.co.uk/cdn/shop/products/4_4be7c1d9-da53-4be0-bb22-0803b4372edf.png?v=1602267819"
-                     alt="True Salt 20mg" class="product-image">
+                <div class="product-image-wrap">
+                    <img src="https://juicedoutvapes.co.uk/cdn/shop/products/4_4be7c1d9-da53-4be0-bb22-0803b4372edf.png?v=1602267819"
+                         alt="True Salt 20mg" class="product-image">
+                </div>
                 <div class="product-info">
                     <div class="product-name">True Salt 20mg</div>
                     <div class="product-price">1 — 5€ | 3 — 13€</div>
@@ -107,10 +433,12 @@
         </div>
     </div>
 
-    <!-- Vaape Triple 90K Page -->
+    <!-- Vaape Page -->
     <div class="product-page" id="product-vaape">
         <div class="product-header">
-            <button class="back-button" onclick="closeProduct('vaape')">← Назад</button>
+            <button class="back-button" onclick="closeProduct('vaape')">
+                <span class="back-arrow">←</span> Назад
+            </button>
         </div>
         <div class="image-gallery" data-product="vaape">
             <div class="gallery-container">
@@ -119,8 +447,10 @@
             </div>
         </div>
         <div class="detail-content">
+            <div class="detail-tag">Disposable</div>
             <div class="detail-title">Vaape Triple 90K</div>
             <div class="detail-subtitle">90 000 puffs · Triple Flavor</div>
+            <div class="divider"></div>
             <div class="variants">
                 <h3>Выберите вкус (3 в 1)</h3>
                 <div class="variant-option" onclick="selectVariant(this, 'vaape')">Blueberry Ice / Black Dragon Ice / Red Bull</div>
@@ -129,18 +459,18 @@
                 <div class="variant-option" onclick="selectVariant(this, 'vaape')">Strawberry Raspberry Cherry / Kiwi Passion Fruit Guava / Blue Raspberry Ice</div>
                 <div class="variant-option" onclick="selectVariant(this, 'vaape')">Strawberry Watermelon / Cola Ice / Peach Ice</div>
             </div>
-            <div class="detail-price">15€ (Брак не меняем)</div>
+            <div class="detail-price"><span>15€</span> &nbsp;·&nbsp; Брак не меняем</div>
             <div class="error-message" id="error-vaape">Пожалуйста, выберите вкус</div>
-            <button class="order-button" onclick="orderTelegram('vaape', 'smkParadiseManager')">
-                Заказать в Telegram
-            </button>
+            <button class="order-button" onclick="orderTelegram('vaape', 'smkParadiseManager')">Заказать в Telegram</button>
         </div>
     </div>
 
     <!-- Vozol Page -->
     <div class="product-page" id="product-vozol">
         <div class="product-header">
-            <button class="back-button" onclick="closeProduct('vozol')">← Назад</button>
+            <button class="back-button" onclick="closeProduct('vozol')">
+                <span class="back-arrow">←</span> Назад
+            </button>
         </div>
         <div class="image-gallery" data-product="vozol">
             <div class="gallery-container">
@@ -149,8 +479,10 @@
             </div>
         </div>
         <div class="detail-content">
+            <div class="detail-tag">Salt Nicotine</div>
             <div class="detail-title">Vozol</div>
             <div class="detail-subtitle">50mg · Salt Nicotine</div>
+            <div class="divider"></div>
             <div class="variants">
                 <h3>Выберите вкус</h3>
                 <div class="variant-option" onclick="selectVariant(this, 'vozol')">Perfume Lemon</div>
@@ -164,22 +496,22 @@
                 <div class="variant-option" onclick="selectVariant(this, 'vozol')">Watermelon Ice</div>
             </div>
             <div class="detail-price">
-                1 шт — 13€<br>
-                2 шт — 25€<br>
-                3 шт — 33€<br>
-                5 шт — 50€
+                <span>13€</span> · 1 шт<br>
+                <span>25€</span> · 2 шт<br>
+                <span>33€</span> · 3 шт<br>
+                <span>50€</span> · 5 шт
             </div>
             <div class="error-message" id="error-vozol">Пожалуйста, выберите вкус</div>
-            <button class="order-button" onclick="orderTelegram('vozol', 'smkParadiseManager')">
-                Заказать в Telegram
-            </button>
+            <button class="order-button" onclick="orderTelegram('vozol', 'smkParadiseManager')">Заказать в Telegram</button>
         </div>
     </div>
 
     <!-- Elfliq Page -->
     <div class="product-page" id="product-elfliq">
         <div class="product-header">
-            <button class="back-button" onclick="closeProduct('elfliq')">← Назад</button>
+            <button class="back-button" onclick="closeProduct('elfliq')">
+                <span class="back-arrow">←</span> Назад
+            </button>
         </div>
         <div class="image-gallery" data-product="elfliq">
             <div class="gallery-container">
@@ -188,8 +520,10 @@
             </div>
         </div>
         <div class="detail-content">
+            <div class="detail-tag">Salt Nicotine</div>
             <div class="detail-title">Elfliq</div>
             <div class="detail-subtitle">50mg · Salt Nicotine</div>
+            <div class="divider"></div>
             <div class="variants">
                 <h3>Выберите вкус</h3>
                 <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Cola</div>
@@ -203,22 +537,22 @@
                 <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Watermelon Cherry</div>
             </div>
             <div class="detail-price">
-                1 шт — 13€<br>
-                2 шт — 25€<br>
-                3 шт — 33€<br>
-                5 шт — 50€
+                <span>13€</span> · 1 шт<br>
+                <span>25€</span> · 2 шт<br>
+                <span>33€</span> · 3 шт<br>
+                <span>50€</span> · 5 шт
             </div>
             <div class="error-message" id="error-elfliq">Пожалуйста, выберите вкус</div>
-            <button class="order-button" onclick="orderTelegram('elfliq', 'smkParadiseManager')">
-                Заказать в Telegram
-            </button>
+            <button class="order-button" onclick="orderTelegram('elfliq', 'smkParadiseManager')">Заказать в Telegram</button>
         </div>
     </div>
 
     <!-- IVG Page -->
     <div class="product-page" id="product-ivg">
         <div class="product-header">
-            <button class="back-button" onclick="closeProduct('ivg')">← Назад</button>
+            <button class="back-button" onclick="closeProduct('ivg')">
+                <span class="back-arrow">←</span> Назад
+            </button>
         </div>
         <div class="image-gallery" data-product="ivg">
             <div class="gallery-container">
@@ -227,8 +561,10 @@
             </div>
         </div>
         <div class="detail-content">
+            <div class="detail-tag">Salt Nicotine</div>
             <div class="detail-title">IVG</div>
             <div class="detail-subtitle">10ml · 20mg · Salt Nicotine</div>
+            <div class="divider"></div>
             <div class="variants">
                 <h3>Выберите вкус</h3>
                 <div class="variant-option" onclick="selectVariant(this, 'ivg')">Pink Lemonade</div>
@@ -242,20 +578,20 @@
                 <div class="variant-option" onclick="selectVariant(this, 'ivg')">Rainbow Blast (Fruity candy)</div>
             </div>
             <div class="detail-price">
-                1 шт — 5€<br>
-                3 шт — 13€
+                <span>5€</span> · 1 шт<br>
+                <span>13€</span> · 3 шт
             </div>
             <div class="error-message" id="error-ivg">Пожалуйста, выберите вкус</div>
-            <button class="order-button" onclick="orderTelegram('ivg', 'smkParadiseManager')">
-                Заказать в Telegram
-            </button>
+            <button class="order-button" onclick="orderTelegram('ivg', 'smkParadiseManager')">Заказать в Telegram</button>
         </div>
     </div>
 
     <!-- True Salt Page -->
     <div class="product-page" id="product-truesalt">
         <div class="product-header">
-            <button class="back-button" onclick="closeProduct('truesalt')">← Назад</button>
+            <button class="back-button" onclick="closeProduct('truesalt')">
+                <span class="back-arrow">←</span> Назад
+            </button>
         </div>
         <div class="image-gallery" data-product="truesalt">
             <div class="gallery-container">
@@ -264,24 +600,24 @@
             </div>
         </div>
         <div class="detail-content">
+            <div class="detail-tag">Salt Nicotine</div>
             <div class="detail-title">True Salt</div>
             <div class="detail-subtitle">10ml · 20mg · Salt Nicotine</div>
+            <div class="divider"></div>
             <div class="variants">
                 <h3>Выберите вкус</h3>
                 <div class="variant-option" onclick="selectVariant(this, 'truesalt')">Banana Ice</div>
             </div>
             <div class="detail-price">
-                1 шт — 5€<br>
-                3 шт — 13€
+                <span>5€</span> · 1 шт<br>
+                <span>13€</span> · 3 шт
             </div>
             <div class="error-message" id="error-truesalt">Пожалуйста, выберите вкус</div>
-            <button class="order-button" onclick="orderTelegram('truesalt', 'smkParadiseManager')">
-                Заказать в Telegram
-            </button>
+            <button class="order-button" onclick="orderTelegram('truesalt', 'smkParadiseManager')">Заказать в Telegram</button>
         </div>
     </div>
 
-    <!-- Fullscreen viewer -->
+    <!-- Fullscreen -->
     <div class="fullscreen-overlay" id="fullscreen">
         <button class="fullscreen-close" onclick="closeFullscreen()">×</button>
         <div class="fullscreen-container">
