@@ -28,7 +28,6 @@
             color: var(--text);
         }
 
-        /* HEADER */
         .header {
             background: var(--bg);
             padding: 26px 0 20px;
@@ -65,7 +64,6 @@
         .header-line span { width: 32px; height: 1px; background: var(--accent); display: block; opacity: 0.5; }
         .header-line i { width: 5px; height: 5px; border-radius: 50%; background: var(--accent); display: block; }
 
-        /* GRID */
         .container { padding: 22px 14px 40px; max-width: 100%; }
         .products-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 
@@ -118,7 +116,6 @@
             text-shadow: 0 1px 3px rgba(156, 98, 46, 0.18);
         }
 
-        /* PRODUCT PAGE */
         .product-page {
             display: none;
             position: fixed;
@@ -166,7 +163,6 @@
             flex-shrink: 0;
         }
 
-        /* GALLERY */
         .image-gallery {
             position: relative;
             width: 100%;
@@ -189,7 +185,6 @@
             mix-blend-mode: multiply;
         }
 
-        /* DETAIL */
         .detail-content { padding: 24px 20px 50px; }
 
         .detail-tag {
@@ -221,14 +216,12 @@
             font-weight: 300;
         }
 
-        /* DIVIDER */
         .divider {
             height: 1px;
             background: var(--border);
             margin: 20px 0;
         }
 
-        /* VARIANTS */
         .variants h3 {
             font-size: 10px;
             color: var(--muted);
@@ -259,7 +252,6 @@
             box-shadow: none;
         }
 
-        /* PRICE */
         .detail-price {
             font-family: 'Playfair Display', serif;
             font-size: 18px;
@@ -277,7 +269,6 @@
             text-shadow: 0 1px 4px rgba(156, 98, 46, 0.18);
         }
 
-        /* ORDER BUTTON */
         .order-button {
             width: 100%;
             background: var(--accent);
@@ -299,7 +290,6 @@
             transform: scale(0.98);
         }
 
-        /* ERROR */
         .error-message {
             color: #c0594a;
             font-size: 12.5px;
@@ -313,7 +303,6 @@
         }
         .error-message.show { display: block; }
 
-        /* FULLSCREEN */
         .fullscreen-overlay {
             display: none;
             position: fixed;
@@ -351,7 +340,6 @@
             box-shadow: var(--shadow);
         }
 
-        /* Animation */
         .product-card {
             animation: fadeUp 0.4s ease both;
         }
@@ -458,11 +446,12 @@
             <div class="divider"></div>
             <div class="variants">
                 <h3>Выберите вкус (3 в 1)</h3>
-                <div class="variant-option" onclick="selectVariant(this, 'vaape')">Blueberry Ice / Black Dragon Ice / Red Bull</div>
-                <div class="variant-option" onclick="selectVariant(this, 'vaape')">Mixed Berries / Red Bull / Peach Ice</div>
-                <div class="variant-option" onclick="selectVariant(this, 'vaape')">Peach Mango Pineapple / Strawberry Ice / Raspberry Watermelon</div>
-                <div class="variant-option" onclick="selectVariant(this, 'vaape')">Strawberry Raspberry Cherry / Kiwi Passion Fruit Guava / Blue Raspberry Ice</div>
+                <div class="variant-option" onclick="selectVariant(this, 'vaape')">Red Bull / Blueberry Watermelon / Monster Drink</div>
+                <div class="variant-option" onclick="selectVariant(this, 'vaape')">Strawberry Watermelon / Grape Ice / Blueberry Raspberry Ice</div>
                 <div class="variant-option" onclick="selectVariant(this, 'vaape')">Strawberry Watermelon / Cola Ice / Peach Ice</div>
+                <div class="variant-option" onclick="selectVariant(this, 'vaape')">Blueberry Ice / Black Dragon Ice / Red Bull</div>
+                <div class="variant-option" onclick="selectVariant(this, 'vaape')">Strawberry Raspberry Cherry / Kiwi Passion Fruit Guava / Blue Raspberry Ice</div>
+                <div class="variant-option" onclick="selectVariant(this, 'vaape')">Double Apple Ice / Strawberry Dragonfruit / Red Bull</div>
             </div>
             <div class="detail-price"><span>15€</span> &nbsp;·&nbsp; Брак не меняем</div>
             <div class="error-message" id="error-vaape">Пожалуйста, выберите вкус</div>
