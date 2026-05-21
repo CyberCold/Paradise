@@ -337,6 +337,17 @@
                 </div>
             </div>
             
+            
+            <div class="product-card" onclick="openProduct('vista40k')">
+                <div class="product-image-wrap">
+                    <img src="https://static.insales-cdn.com/r/Wyjdakq5fKM/rs:fit:1000:1000:1/plain/images/products/1/3553/2387275233/Peach-Berry-6.jpg.webp@webp" alt="Vozol Vista 40k puffs" class="product-image">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Vozol Vista 40k puffs</div>
+                    <div class="product-price">20€</div>
+                </div>
+            </div>
+            
             <!-- CARDS_END -->
         </div>
     </div>
@@ -625,6 +636,48 @@
         </div>
     </div>
     
+    
+    <div class="product-page" id="product-vista40k">
+        <div class="product-header">
+            <button class="back-button" onclick="closeProduct('vista40k')">
+                <span class="back-arrow">←</span> Назад
+            </button>
+        </div>
+        <div class="image-gallery" data-product="vista40k">
+            <div class="gallery-container">
+                <img src="https://static.insales-cdn.com/r/Wyjdakq5fKM/rs:fit:1000:1000:1/plain/images/products/1/3553/2387275233/Peach-Berry-6.jpg.webp@webp" alt="Vozol Vista 40k puffs" class="gallery-image" onclick="openFullscreen('vista40k', 0)">
+            </div>
+        </div>
+        <div class="detail-content">
+            <div class="detail-tag">Disposable</div>
+            <div class="detail-title">Vozol Vista 40k puffs</div>
+            <div class="detail-subtitle">40 000 puffs • 50mg • salt nicotine</div>
+            <div class="divider"></div>
+            <div class="variants">
+                <h3>Выберите вкус</h3>
+                <div class="variant-option" onclick="selectVariant(this, 'vista40k')">Watermelon Bubblegum</div>
+                <div class="variant-option" onclick="selectVariant(this, 'vista40k')">Melon Gum</div>
+            </div>
+            <div class="quantity-section">
+                <span class="quantity-label">Количество</span>
+                <div class="quantity-control">
+                    <button class="qty-btn" onclick="changeQty('vista40k',-1)">−</button>
+                    <span class="qty-value" id="qty-vista40k">1</span>
+                    <button class="qty-btn" onclick="changeQty('vista40k',1)">+</button>
+                </div>
+            </div>
+            <div class="detail-price">
+                <span>20€</span>
+            </div>
+            <div class="error-message" id="error-vista40k">Пожалуйста, выберите вкус</div>
+            <button class="order-button" onclick="orderTelegram('vista40k', 'smkParadiseManager')">Заказать в Telegram</button>
+            <button class="add-to-cart-button" onclick="addToCart('vista40k')">
+                <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                Добавить в корзину
+            </button>
+        </div>
+    </div>
+    
     <!-- PAGES_END -->
 
     <!-- FULLSCREEN -->
@@ -656,6 +709,7 @@
     <script>
         // ── Product Data ──
         const productData = {
+            'vista40k': { name: 'Vozol Vista 40k puffs', variant: '', qty: 1 },
             'star40k': { name: 'Vozol Star 40k puffs', variant: '', qty: 1 },
             'rave40k': { name: 'Vozol Rave 40k puffs', variant: '', qty: 1 },
             'vaape':    { name: 'Vaape Triple 90K', variant: '', qty: 1 },
