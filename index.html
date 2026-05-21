@@ -121,16 +121,6 @@
                     <div class="product-price">1 — 5€ | 3 — 13€</div>
                 </div>
             </div>
-            <div class="product-card" onclick="openProduct('2')">
-                <div class="product-image-wrap">
-                    <img src="http//salt.png" alt="2" class="product-image">
-                </div>
-                <div class="product-info">
-                    <div class="product-name">2</div>
-                    <div class="product-price">2</div>
-                </div>
-            </div>
-            
             <!-- CARDS_END -->
         </div>
     </div>
@@ -275,34 +265,6 @@
             <button class="order-button" onclick="orderTelegram('truesalt', 'smkParadiseManager')">Заказать в Telegram</button>
         </div>
     </div>
-    <div class="product-page" id="product-2">
-        <div class="product-header">
-            <button class="back-button" onclick="closeProduct('2')">
-                <span class="back-arrow">←</span> Назад
-            </button>
-        </div>
-        <div class="image-gallery" data-product="2">
-            <div class="gallery-container">
-                <img src="http//salt.png" alt="2" class="gallery-image" onclick="openFullscreen('2', 0)">
-            </div>
-        </div>
-        <div class="detail-content">
-            <div class="detail-tag">2</div>
-            <div class="detail-title">2</div>
-            <div class="detail-subtitle">2</div>
-            <div class="divider"></div>
-            <div class="variants">
-                <h3>Выберите вкус</h3>
-                <div class="variant-option" onclick="selectVariant(this, '2')">2</div>
-            </div>
-            <div class="detail-price">
-                2
-            </div>
-            <div class="error-message" id="error-2">Пожалуйста, выберите вкус</div>
-            <button class="order-button" onclick="orderTelegram('2', 'smkParadiseManager')">Заказать в Telegram</button>
-        </div>
-    </div>
-    
     <!-- PAGES_END -->
     <div class="fullscreen-overlay" id="fullscreen">
         <button class="fullscreen-close" onclick="closeFullscreen()">×</button>
@@ -312,7 +274,6 @@
     </div>
     <script>
         const productData = {
-            '2': { name: '2', variant: '' },
             'vaape': { name: 'Vaape Triple 90K', variant: '' },
             'vozol': { name: 'Vozol 50mg', variant: '' },
             'elfliq': { name: 'Elfliq 50mg', variant: '' },
