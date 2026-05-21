@@ -121,11 +121,6 @@
                     <div class="product-price">1 — 5€ | 3 — 13€</div>
                 </div>
             </div>
-            <div class="product-info">
-                    <div class="product-name">1</div>
-                    <div class="product-price">1 — 13€ | 2 — 25€<br>3 — 33€ | 5 — 50€</div>
-                </div>
-            </div>
             <!-- PRODUCTS_GRID_END -->
         </div>
     </div>
@@ -270,30 +265,6 @@
             <button class="order-button" onclick="orderTelegram('truesalt', 'smkParadiseManager')">Заказать в Telegram</button>
         </div>
     </div>
-    <div class="image-gallery" data-product="1">
-            <div class="gallery-container">
-                <img src="http//salt.png" alt="1" class="gallery-image" onclick="openFullscreen('1', 0)">
-            </div>
-        </div>
-        <div class="detail-content">
-            <div class="detail-tag">Salt Nicotine</div>
-            <div class="detail-title">1</div>
-            <div class="detail-subtitle">1</div>
-            <div class="divider"></div>
-            <div class="variants">
-                <h3>Выберите вкус</h3>
-                <div class="variant-option" onclick="selectVariant(this, '1')">1</div>
-            </div>
-            <div class="detail-price">
-                <span>13€</span> · 1 шт<br>
-                <span>25€</span> · 2 шт<br>
-                <span>33€</span> · 3 шт<br>
-                <span>50€</span> · 5 шт
-            </div>
-            <div class="error-message" id="error-1">Пожалуйста, выберите вкус</div>
-            <button class="order-button" onclick="orderTelegram('1', 'smkParadiseManager')">Заказать в Telegram</button>
-        </div>
-    </div>
     <!-- PRODUCT_PAGES_END -->
     <div class="fullscreen-overlay" id="fullscreen">
         <button class="fullscreen-close" onclick="closeFullscreen()">×</button>
@@ -309,62 +280,9 @@
             'elfliq': { name: 'Elfliq 50mg', variant: '' },
             'ivg': { name: 'IVG 20mg', variant: '' },
             'truesalt': { name: 'True Salt 20mg', variant: '' }
-                        // PRODUCT_DATA_END
+            // PRODUCT_DATA_END
         };
-        function openProduct(id) {
-            const page = document.getElementById('product-' + id);
-            if (page) {
-                page.classList.add('active');
-                document.body.style.overflow = 'hidden';
-                if (productData[id]) productData[id].variant = '';
-                const variants = document.querySelectorAll('#product-' + id + ' .variant-option');
-                variants.forEach(v => v.classList.remove('selected'));
-                const err = document.getElementById('error-' + id);
-                if (err) err.classList.remove('show');
-            }
-        }
-        function closeProduct(id) {
-            const page = document.getElementById('product-' + id);
-            if (page) {
-                page.classList.remove('active');
-                document.body.style.overflow = 'auto';
-            }
-        }
-        function selectVariant(element, productId) {
-            element.parentElement.querySelectorAll('.variant-option').forEach(v => v.classList.remove('selected'));
-            element.classList.add('selected');
-            if (productData[productId]) productData[productId].variant = element.textContent;
-            const err = document.getElementById('error-' + productId);
-            if (err) err.classList.remove('show');
-        }
-        function orderTelegram(productId, username) {
-            const product = productData[productId];
-            if (!product || !product.variant) {
-                const err = document.getElementById('error-' + productId);
-                if (err) err.classList.add('show');
-                return;
-            }
-            const message = 'Здравствуйте, хочу заказать ' + product.name + ', вкус: ' + product.variant;
-            window.open('https://t.me/' + username + '?text=' + encodeURIComponent(message), '_blank');
-        }
-        function openFullscreen(productId, imageIndex) {
-            const gallery = document.querySelector('[data-product="' + productId + '"]');
-            if (gallery) {
-                const images = gallery.querySelectorAll('.gallery-image');
-                if (images[imageIndex]) {
-                    document.getElementById('fullscreen-image').src = images[imageIndex].src;
-                    document.getElementById('fullscreen').classList.add('active');
-                    document.body.style.overflow = 'hidden';
-                }
-            }
-        }
-        function closeFullscreen() {
-            document.getElementById('fullscreen').classList.remove('active');
-            document.body.style.overflow = 'auto';
-        }
-        document.getElementById('fullscreen').addEventListener('click', function(e) {
-            if (e.target === this || e.target.classList.contains('fullscreen-container')) closeFullscreen();
-        });
+        // PRODUCT_DATA_END_MARKER
     </script>
 </body>
 </html>
