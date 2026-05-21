@@ -446,7 +446,7 @@
             <div class="divider"></div>
             <div class="variants">
                 <h3>Выберите вкус (3 в 1)</h3>
-                                                <div class="variant-option" onclick="selectVariant(this, 'vaape')">Red Bull / Blueberry Watermelon / Monster Drink</div>
+                <div class="variant-option" onclick="selectVariant(this, 'vaape')">Red Bull / Blueberry Watermelon / Monster Drink</div>
                 <div class="variant-option" onclick="selectVariant(this, 'vaape')">Strawberry Watermelon / Grape Ice / Blueberry Raspberry Ice</div>
                 <div class="variant-option" onclick="selectVariant(this, 'vaape')">Strawberry Watermelon / Cola Ice / Peach Ice</div>
                 <div class="variant-option" onclick="selectVariant(this, 'vaape')">Blueberry Ice / Black Dragon Ice / Red Bull</div>
@@ -520,11 +520,15 @@
             <div class="divider"></div>
             <div class="variants">
                 <h3>Выберите вкус</h3>
-                                <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Lemon lime</div>
-                <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Blackberry lemon</div>
+                <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Cola</div>
+                <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Blackcurrant Aniseed</div>
+                <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Lemon Lime</div>
+                <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Green Grape Rose</div>
+                <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Strawberry Raspberry Cherry Ice</div>
+                <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Pink Lemonade Soda</div>
                 <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Blueberry</div>
-                <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Pineapple</div>
-                <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Blue razz lemonade</div>
+                <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Sour Watermelon Gummy</div>
+                <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Watermelon Cherry</div>
             </div>
             <div class="detail-price">
                 <span>13€</span> · 1 шт<br>
@@ -603,47 +607,6 @@
         </div>
     </div>
 
-    
-    <!-- DK 50mg Page -->
-    <div class="product-page" id="product-dk">
-        <div class="product-header">
-            <button class="back-button" onclick="closeProduct('dk')">
-                <span class="back-arrow">←</span> Назад
-            </button>
-        </div>
-        <div class="image-gallery" data-product="dk">
-            <div class="gallery-container">
-                <img src="https://dkeliquid.co.uk/wp-content/uploads/2024/11/DK-1st-Section-1024x1024.png" alt="DK 50mg" class="gallery-image" onclick="openFullscreen('dk', 0)">
-            </div>
-        </div>
-        <div class="detail-content">
-            <div class="detail-tag">SALT NICOTINE</div>
-            <div class="detail-title">DK 50mg</div>
-            <div class="detail-subtitle">30ml • 50mg • SALT NICOTINE</div>
-            <div class="divider"></div>
-            <div class="variants">
-                <h3>Выберите вкус</h3>
-                <div class="variant-option" onclick="selectVariant(this, 'dk')">White peach</div>
-                <div class="variant-option" onclick="selectVariant(this, 'dk')">Berry citrus fizz</div>
-                <div class="variant-option" onclick="selectVariant(this, 'dk')">Blue sour raspberry</div>
-                <div class="variant-option" onclick="selectVariant(this, 'dk')">Watermelon kiwi fizz</div>
-                <div class="variant-option" onclick="selectVariant(this, 'dk')">Red energy ice</div>
-                <div class="variant-option" onclick="selectVariant(this, 'dk')">Strawberry kiwi</div>
-                <div class="variant-option" onclick="selectVariant(this, 'dk')">Cola ice best one</div>
-                <div class="variant-option" onclick="selectVariant(this, 'dk')">Cherry cola</div>
-                <div class="variant-option" onclick="selectVariant(this, 'dk')">Watermelon sangria</div>
-                <div class="variant-option" onclick="selectVariant(this, 'dk')">Blackcurrant menthol</div>
-                <div class="variant-option" onclick="selectVariant(this, 'dk')">Cherry lime fizz</div>
-            </div>
-            <div class="detail-price"><span>13€</span> · 1 шт<br>
-<span>25€</span> · 2 шт<br>
-<span>33€</span> · 3 шт<br>
-<span>50€</span> · 5 шт<br></div>
-            <div class="error-message" id="error-dk">Пожалуйста, выберите вкус</div>
-            <button class="order-button" onclick="orderTelegram('dk', 'smkParadiseManager')">Заказать в Telegram</button>
-        </div>
-    </div>
-
     <!-- Fullscreen -->
     <div class="fullscreen-overlay" id="fullscreen">
         <button class="fullscreen-close" onclick="closeFullscreen()">×</button>
@@ -659,7 +622,6 @@
             'elfliq':   { name: 'Elfliq 50mg',      variant: '' },
             'ivg':      { name: 'IVG 20mg',         variant: '' },
             'truesalt': { name: 'True Salt 20mg',   variant: '' }
-            'dk':    { name: 'DK 50mg', variant: '' },
         };
 
         function openProduct(id) {
