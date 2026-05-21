@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Paradise</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
@@ -635,10 +635,14 @@
             }
 
             updateCartCount();
-            renderCartItems();
-            closeProduct(productId);
-            // Небольшая задержка чтобы страница успела закрыться
-            setTimeout(() => openCart(), 120);
+            // Показываем фидбек на кнопке, не закрываем страницу и не открываем корзину
+            const btn = document.querySelector(`#product-${productId} .add-to-cart-button`);
+            if (btn && !btn._busy) {
+                btn._busy = true;
+                const original = btn.innerHTML;
+                btn.innerHTML = '<svg viewBox="0 0 24 24" style="width:15px;height:15px;stroke:var(--accent);fill:none;stroke-width:2.5"><polyline points="20 6 9 17 4 12"/></svg> Добавлено!';
+                setTimeout(() => { btn.innerHTML = original; btn._busy = false; }, 1500);
+            }
         }
 
         // ── Cart count badge ──
@@ -692,18 +696,24 @@
             `).join('');
         }
 
-        // ── Change qty in cart ──
+        // ── Change qty in cart (точечное обновление, корзина не закрывается) ──
         function changeCartQty(idx, delta) {
             if (!cart[idx]) return;
             cart[idx].qty = Math.max(1, Math.min(cart[idx].qty + delta, 99));
             updateCartCount();
-            renderCartItems();
+            // Обновляем только цифру количества
+            const itemEl = document.getElementById('cart-item-' + idx);
+            if (itemEl) {
+                const valEl = itemEl.querySelector('.cart-qty-val');
+                if (valEl) valEl.textContent = cart[idx].qty;
+            }
         }
 
-        // ── Remove cart item ──
+        // ── Remove cart item (точечное удаление, корзина не закрывается) ──
         function removeCartItem(idx) {
             cart.splice(idx, 1);
             updateCartCount();
+            // Полная перерисовка нужна только здесь — индексы сдвигаются
             renderCartItems();
         }
 
