@@ -343,6 +343,11 @@
         .product-card {
             animation: fadeUp 0.4s ease both;
         }
+        .product-card:nth-child(1) { animation-delay: 0.05s; }
+        .product-card:nth-child(2) { animation-delay: 0.1s; }
+        .product-card:nth-child(3) { animation-delay: 0.15s; }
+        .product-card:nth-child(4) { animation-delay: 0.2s; }
+        .product-card:nth-child(5) { animation-delay: 0.25s; }
 
         @keyframes fadeUp {
             from { opacity: 0; transform: translateY(14px); }
@@ -361,11 +366,12 @@
     </div>
 
     <div class="container">
-        <div class="products-grid" id="productsGrid">
+        <div class="products-grid">
 
             <div class="product-card" onclick="openProduct('vaape')">
                 <div class="product-image-wrap">
-                    <img src="https://www.serisvape.com/wp-content/uploads/2025/10/Unboxing-the-Vaapee-Triple-90K-Triple-the-Flavor-Triple-the-Fun-768x768.jpg" alt="Vaape Triple 90K" class="product-image">
+                    <img src="https://www.serisvape.com/wp-content/uploads/2025/10/Unboxing-the-Vaapee-Triple-90K-Triple-the-Flavor-Triple-the-Fun-768x768.jpg"
+                         alt="Vaape Triple 90K" class="product-image">
                 </div>
                 <div class="product-info">
                     <div class="product-name">Vaape Triple 90K</div>
@@ -375,7 +381,8 @@
 
             <div class="product-card" onclick="openProduct('vozol')">
                 <div class="product-image-wrap">
-                    <img src="https://vozol.ro/835-large_default/lichid-tigara-electronica-salt-prime-strawberry-vozol.jpg" alt="Vozol 50mg" class="product-image">
+                    <img src="https://vozol.ro/835-large_default/lichid-tigara-electronica-salt-prime-strawberry-vozol.jpg"
+                         alt="Vozol 50mg" class="product-image">
                 </div>
                 <div class="product-info">
                     <div class="product-name">Vozol 50mg</div>
@@ -385,7 +392,8 @@
 
             <div class="product-card" onclick="openProduct('elfliq')">
                 <div class="product-image-wrap">
-                    <img src="https://pufflab.pro/wp-content/uploads/2025/04/Elfliq-30ml-50mg-liquidy-30ml-Pufflab.webp" alt="Elfliq 50mg" class="product-image">
+                    <img src="https://pufflab.pro/wp-content/uploads/2025/04/Elfliq-30ml-50mg-liquidy-30ml-Pufflab.webp"
+                         alt="Elfliq 50mg" class="product-image">
                 </div>
                 <div class="product-info">
                     <div class="product-name">Elfliq 50mg</div>
@@ -395,7 +403,8 @@
 
             <div class="product-card" onclick="openProduct('ivg')">
                 <div class="product-image-wrap">
-                    <img src="https://ivapegreat.com/cdn/shop/files/IVG_INTENSE_Salts_Thumbnail_Blue.png?v=1774900241" alt="IVG 20mg" class="product-image">
+                    <img src="https://ivapegreat.com/cdn/shop/files/IVG_INTENSE_Salts_Thumbnail_Blue.png?v=1774900241"
+                         alt="IVG 20mg" class="product-image">
                 </div>
                 <div class="product-info">
                     <div class="product-name">IVG 20mg</div>
@@ -405,7 +414,8 @@
 
             <div class="product-card" onclick="openProduct('truesalt')">
                 <div class="product-image-wrap">
-                    <img src="https://juicedoutvapes.co.uk/cdn/shop/products/4_4be7c1d9-da53-4be0-bb22-0803b4372edf.png?v=1602267819" alt="True Salt 20mg" class="product-image">
+                    <img src="https://juicedoutvapes.co.uk/cdn/shop/products/4_4be7c1d9-da53-4be0-bb22-0803b4372edf.png?v=1602267819"
+                         alt="True Salt 20mg" class="product-image">
                 </div>
                 <div class="product-info">
                     <div class="product-name">True Salt 20mg</div>
@@ -416,14 +426,17 @@
         </div>
     </div>
 
-    <!-- Страницы товаров -->
+    <!-- Vaape Page -->
     <div class="product-page" id="product-vaape">
         <div class="product-header">
-            <button class="back-button" onclick="closeProduct('vaape')"><span class="back-arrow">←</span> Назад</button>
+            <button class="back-button" onclick="closeProduct('vaape')">
+                <span class="back-arrow">←</span> Назад
+            </button>
         </div>
         <div class="image-gallery" data-product="vaape">
             <div class="gallery-container">
-                <img src="https://www.serisvape.com/wp-content/uploads/2025/10/Unboxing-the-Vaapee-Triple-90K-Triple-the-Flavor-Triple-the-Fun-768x768.jpg" alt="Vaape Triple 90K" class="gallery-image" onclick="openFullscreen('vaape', 0)">
+                <img src="https://www.serisvape.com/wp-content/uploads/2025/10/Unboxing-the-Vaapee-Triple-90K-Triple-the-Flavor-Triple-the-Fun-768x768.jpg"
+                     alt="Vaape Triple 90K" class="gallery-image" onclick="openFullscreen('vaape', 0)">
             </div>
         </div>
         <div class="detail-content">
@@ -446,13 +459,17 @@
         </div>
     </div>
 
+    <!-- Vozol Page -->
     <div class="product-page" id="product-vozol">
         <div class="product-header">
-            <button class="back-button" onclick="closeProduct('vozol')"><span class="back-arrow">←</span> Назад</button>
+            <button class="back-button" onclick="closeProduct('vozol')">
+                <span class="back-arrow">←</span> Назад
+            </button>
         </div>
         <div class="image-gallery" data-product="vozol">
             <div class="gallery-container">
-                <img src="https://vozol.ro/835-large_default/lichid-tigara-electronica-salt-prime-strawberry-vozol.jpg" alt="Vozol 50mg" class="gallery-image" onclick="openFullscreen('vozol', 0)">
+                <img src="https://vozol.ro/835-large_default/lichid-tigara-electronica-salt-prime-strawberry-vozol.jpg"
+                     alt="Vozol 50mg" class="gallery-image" onclick="openFullscreen('vozol', 0)">
             </div>
         </div>
         <div class="detail-content">
@@ -472,19 +489,28 @@
                 <div class="variant-option" onclick="selectVariant(this, 'vozol')">Berry</div>
                 <div class="variant-option" onclick="selectVariant(this, 'vozol')">Watermelon Ice</div>
             </div>
-            <div class="detail-price"><span>13€</span> · 1 шт<br><span>25€</span> · 2 шт<br><span>33€</span> · 3 шт<br><span>50€</span> · 5 шт</div>
+            <div class="detail-price">
+                <span>13€</span> · 1 шт<br>
+                <span>25€</span> · 2 шт<br>
+                <span>33€</span> · 3 шт<br>
+                <span>50€</span> · 5 шт
+            </div>
             <div class="error-message" id="error-vozol">Пожалуйста, выберите вкус</div>
             <button class="order-button" onclick="orderTelegram('vozol', 'smkParadiseManager')">Заказать в Telegram</button>
         </div>
     </div>
 
+    <!-- Elfliq Page -->
     <div class="product-page" id="product-elfliq">
         <div class="product-header">
-            <button class="back-button" onclick="closeProduct('elfliq')"><span class="back-arrow">←</span> Назад</button>
+            <button class="back-button" onclick="closeProduct('elfliq')">
+                <span class="back-arrow">←</span> Назад
+            </button>
         </div>
         <div class="image-gallery" data-product="elfliq">
             <div class="gallery-container">
-                <img src="https://pufflab.pro/wp-content/uploads/2025/04/Elfliq-30ml-50mg-liquidy-30ml-Pufflab.webp" alt="Elfliq 50mg" class="gallery-image" onclick="openFullscreen('elfliq', 0)">
+                <img src="https://pufflab.pro/wp-content/uploads/2025/04/Elfliq-30ml-50mg-liquidy-30ml-Pufflab.webp"
+                     alt="Elfliq 50mg" class="gallery-image" onclick="openFullscreen('elfliq', 0)">
             </div>
         </div>
         <div class="detail-content">
@@ -504,19 +530,28 @@
                 <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Sour Watermelon Gummy</div>
                 <div class="variant-option" onclick="selectVariant(this, 'elfliq')">Watermelon Cherry</div>
             </div>
-            <div class="detail-price"><span>13€</span> · 1 шт<br><span>25€</span> · 2 шт<br><span>33€</span> · 3 шт<br><span>50€</span> · 5 шт</div>
+            <div class="detail-price">
+                <span>13€</span> · 1 шт<br>
+                <span>25€</span> · 2 шт<br>
+                <span>33€</span> · 3 шт<br>
+                <span>50€</span> · 5 шт
+            </div>
             <div class="error-message" id="error-elfliq">Пожалуйста, выберите вкус</div>
             <button class="order-button" onclick="orderTelegram('elfliq', 'smkParadiseManager')">Заказать в Telegram</button>
         </div>
     </div>
 
+    <!-- IVG Page -->
     <div class="product-page" id="product-ivg">
         <div class="product-header">
-            <button class="back-button" onclick="closeProduct('ivg')"><span class="back-arrow">←</span> Назад</button>
+            <button class="back-button" onclick="closeProduct('ivg')">
+                <span class="back-arrow">←</span> Назад
+            </button>
         </div>
         <div class="image-gallery" data-product="ivg">
             <div class="gallery-container">
-                <img src="https://ivapegreat.com/cdn/shop/files/IVG_INTENSE_Salts_Thumbnail_Blue.png?v=1774900241" alt="IVG 20mg" class="gallery-image" onclick="openFullscreen('ivg', 0)">
+                <img src="https://ivapegreat.com/cdn/shop/files/IVG_INTENSE_Salts_Thumbnail_Blue.png?v=1774900241"
+                     alt="IVG 20mg" class="gallery-image" onclick="openFullscreen('ivg', 0)">
             </div>
         </div>
         <div class="detail-content">
@@ -532,19 +567,26 @@
                 <div class="variant-option" onclick="selectVariant(this, 'ivg')">Iced Melonade</div>
                 <div class="variant-option" onclick="selectVariant(this, 'ivg')">Ice Menthol</div>
             </div>
-            <div class="detail-price"><span>5€</span> · 1 шт<br><span>13€</span> · 3 шт</div>
+            <div class="detail-price">
+                <span>5€</span> · 1 шт<br>
+                <span>13€</span> · 3 шт
+            </div>
             <div class="error-message" id="error-ivg">Пожалуйста, выберите вкус</div>
             <button class="order-button" onclick="orderTelegram('ivg', 'smkParadiseManager')">Заказать в Telegram</button>
         </div>
     </div>
 
+    <!-- True Salt Page -->
     <div class="product-page" id="product-truesalt">
         <div class="product-header">
-            <button class="back-button" onclick="closeProduct('truesalt')"><span class="back-arrow">←</span> Назад</button>
+            <button class="back-button" onclick="closeProduct('truesalt')">
+                <span class="back-arrow">←</span> Назад
+            </button>
         </div>
         <div class="image-gallery" data-product="truesalt">
             <div class="gallery-container">
-                <img src="https://juicedoutvapes.co.uk/cdn/shop/products/4_4be7c1d9-da53-4be0-bb22-0803b4372edf.png?v=1602267819" alt="True Salt 20mg" class="gallery-image" onclick="openFullscreen('truesalt', 0)">
+                <img src="https://juicedoutvapes.co.uk/cdn/shop/products/4_4be7c1d9-da53-4be0-bb22-0803b4372edf.png?v=1602267819"
+                     alt="True Salt 20mg" class="gallery-image" onclick="openFullscreen('truesalt', 0)">
             </div>
         </div>
         <div class="detail-content">
@@ -556,7 +598,10 @@
                 <h3>Выберите вкус</h3>
                 <div class="variant-option" onclick="selectVariant(this, 'truesalt')">Banana Ice</div>
             </div>
-            <div class="detail-price"><span>5€</span> · 1 шт<br><span>13€</span> · 3 шт</div>
+            <div class="detail-price">
+                <span>5€</span> · 1 шт<br>
+                <span>13€</span> · 3 шт
+            </div>
             <div class="error-message" id="error-truesalt">Пожалуйста, выберите вкус</div>
             <button class="order-button" onclick="orderTelegram('truesalt', 'smkParadiseManager')">Заказать в Telegram</button>
         </div>
@@ -572,46 +617,40 @@
 
     <script>
         const productData = {
-            'vaape': { name: 'Vaape Triple 90K', variant: '' },
-            'vozol': { name: 'Vozol 50mg', variant: '' },
-            'elfliq': { name: 'Elfliq 50mg', variant: '' },
-            'ivg': { name: 'IVG 20mg', variant: '' },
-            'truesalt': { name: 'True Salt 20mg', variant: '' }
+            'vaape':    { name: 'Vaape Triple 90K', variant: '' },
+            'vozol':    { name: 'Vozol 50mg',       variant: '' },
+            'elfliq':   { name: 'Elfliq 50mg',      variant: '' },
+            'ivg':      { name: 'IVG 20mg',         variant: '' },
+            'truesalt': { name: 'True Salt 20mg',   variant: '' }
         };
 
         function openProduct(id) {
-            const page = document.getElementById('product-' + id);
-            if (page) {
-                page.classList.add('active');
-                document.body.style.overflow = 'hidden';
-                if (productData[id]) productData[id].variant = '';
-                document.querySelectorAll('#product-' + id + ' .variant-option').forEach(v => v.classList.remove('selected'));
-                const err = document.getElementById('error-' + id);
-                if (err) err.classList.remove('show');
-            }
+            document.getElementById('product-' + id).classList.add('active');
+            document.body.style.overflow = 'hidden';
+            productData[id].variant = '';
+            document.querySelectorAll('#product-' + id + ' .variant-option').forEach(v => v.classList.remove('selected'));
+            const err = document.getElementById('error-' + id);
+            if (err) err.classList.remove('show');
         }
 
         function closeProduct(id) {
-            const page = document.getElementById('product-' + id);
-            if (page) {
-                page.classList.remove('active');
-                document.body.style.overflow = 'auto';
-            }
+            document.getElementById('product-' + id).classList.remove('active');
+            document.body.style.overflow = 'auto';
         }
 
         function selectVariant(element, productId) {
             element.parentElement.querySelectorAll('.variant-option').forEach(v => v.classList.remove('selected'));
             element.classList.add('selected');
-            if (productData[productId]) productData[productId].variant = element.textContent;
+            productData[productId].variant = element.textContent;
             const err = document.getElementById('error-' + productId);
             if (err) err.classList.remove('show');
         }
 
         function orderTelegram(productId, username) {
             const product = productData[productId];
-            if (!product || !product.variant) {
+            if (!product.variant) {
                 const err = document.getElementById('error-' + productId);
-                if (err) err.classList.add('show');
+                if (err) { err.classList.add('show'); err.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }
                 return;
             }
             const message = 'Здравствуйте, хочу заказать ' + product.name + ', вкус: ' + product.variant;
@@ -620,14 +659,12 @@
 
         function openFullscreen(productId, imageIndex) {
             const gallery = document.querySelector('[data-product="' + productId + '"]');
-            if (gallery) {
-                const images = gallery.querySelectorAll('.gallery-image');
-                if (images[imageIndex]) {
-                    document.getElementById('fullscreen-image').src = images[imageIndex].src;
-                    document.getElementById('fullscreen').classList.add('active');
-                    document.body.style.overflow = 'hidden';
-                }
-            }
+            const images = gallery.querySelectorAll('.gallery-image');
+            const img = document.getElementById('fullscreen-image');
+            img.src = images[imageIndex].src;
+            img.alt = images[imageIndex].alt;
+            document.getElementById('fullscreen').classList.add('active');
+            document.body.style.overflow = 'hidden';
         }
 
         function closeFullscreen() {
