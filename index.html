@@ -6,7 +6,6 @@
     <title>Paradise</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
-        /* ваш CSS без изменений */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         :root {
             --bg: #faf8f5;
@@ -120,12 +119,6 @@
                 <div class="product-info">
                     <div class="product-name">True Salt 20mg</div>
                     <div class="product-price">1 — 5€ | 3 — 13€</div>
-                </div>
-            </div>
-            
-            <div class="product-info">
-                    <div class="product-name">1</div>
-                    <div class="product-price">1 — 13€ | 2 — 25€<br>3 — 33€ | 5 — 50€</div>
                 </div>
             </div>
             <!-- PRODUCTS_GRID_END -->
@@ -272,7 +265,6 @@
             <button class="order-button" onclick="orderTelegram('truesalt', 'smkParadiseManager')">Заказать в Telegram</button>
         </div>
     </div>
-    
     <!-- PRODUCT_PAGES_END -->
     <div class="fullscreen-overlay" id="fullscreen">
         <button class="fullscreen-close" onclick="closeFullscreen()">×</button>
@@ -287,7 +279,8 @@
             'vozol': { name: 'Vozol 50mg', variant: '' },
             'elfliq': { name: 'Elfliq 50mg', variant: '' },
             'ivg': { name: 'IVG 20mg', variant: '' },
-            'truesalt': { name: 'True Salt 20mg', variant: '' }            // PRODUCT_DATA_END
+            'truesalt': { name: 'True Salt 20mg', variant: '' }
+            // PRODUCT_DATA_END
         };
 
         function openProduct(id) {
@@ -312,15 +305,9 @@
         }
 
         function selectVariant(element, productId) {
-            const container = element.parentElement;
-            if (container) {
-                const variants = container.querySelectorAll('.variant-option');
-                variants.forEach(v => v.classList.remove('selected'));
-            }
+            element.parentElement.querySelectorAll('.variant-option').forEach(v => v.classList.remove('selected'));
             element.classList.add('selected');
-            if (productData[productId]) {
-                productData[productId].variant = element.textContent;
-            }
+            if (productData[productId]) productData[productId].variant = element.textContent;
             const err = document.getElementById('error-' + productId);
             if (err) err.classList.remove('show');
         }
