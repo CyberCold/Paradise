@@ -412,6 +412,16 @@
                     <div class="product-price">1 — 5€ | 3 — 13€</div>
                 </div>
             </div>
+            
+            <div class="product-card" onclick="openProduct('test')">
+                <div class="product-image-wrap">
+                    <img src="http//salt.png" alt="Test" class="product-image">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Test</div>
+                    <div class="product-price">1 — 13€ | 2 — 25€<br>3 — 33€ | 5 — 50€</div>
+                </div>
+            </div>
             <!-- PRODUCTS_GRID_END -->
         </div>
     </div>
@@ -561,6 +571,37 @@
             <button class="order-button" onclick="orderTelegram('truesalt', 'smkParadiseManager')">Заказать в Telegram</button>
         </div>
     </div>
+    
+    <div class="product-page" id="product-test">
+        <div class="product-header">
+            <button class="back-button" onclick="closeProduct('test')">
+                <span class="back-arrow">←</span> Назад
+            </button>
+        </div>
+        <div class="image-gallery" data-product="test">
+            <div class="gallery-container">
+                <img src="http//salt.png" alt="Test" class="gallery-image" onclick="openFullscreen('test', 0)">
+            </div>
+        </div>
+        <div class="detail-content">
+            <div class="detail-tag">Salt Nicotine</div>
+            <div class="detail-title">Test</div>
+            <div class="detail-subtitle">Test</div>
+            <div class="divider"></div>
+            <div class="variants">
+                <h3>Выберите вкус</h3>
+                <div class="variant-option" onclick="selectVariant(this, 'test')">Test</div>
+            </div>
+            <div class="detail-price">
+                <span>13€</span> · 1 шт<br>
+                <span>25€</span> · 2 шт<br>
+                <span>33€</span> · 3 шт<br>
+                <span>50€</span> · 5 шт
+            </div>
+            <div class="error-message" id="error-test">Пожалуйста, выберите вкус</div>
+            <button class="order-button" onclick="orderTelegram('test', 'smkParadiseManager')">Заказать в Telegram</button>
+        </div>
+    </div>
     <!-- PRODUCT_PAGES_END -->
 
     <!-- Fullscreen -->
@@ -579,6 +620,7 @@
             'elfliq': { name: 'Elfliq 50mg', variant: '' },
             'ivg': { name: 'IVG 20mg', variant: '' },
             'truesalt': { name: 'True Salt 20mg', variant: '' }
+                        'test': { name: 'Test', variant: '' },
             // PRODUCT_DATA_END
         };
 
