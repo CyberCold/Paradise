@@ -407,6 +407,16 @@
                 <div class="product-image-wrap">
                     <img src="https://juicedoutvapes.co.uk/cdn/shop/products/4_4be7c1d9-da53-4be0-bb22-0803b4372edf.png?v=1602267819" alt="True Salt 20mg" class="product-image">
                 </div>
+
+            <div class="product-card" onclick="openProduct('test')">
+                <div class="product-image-wrap">
+                    <img src="http//salt.png" alt="Test" class="product-image">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Test</div>
+                    <div class="product-price">1 — 13€ | 2 — 25€<br>3 — 33€ | 5 — 50€</div>
+                </div>
+            </div>
                 <div class="product-info">
                     <div class="product-name">True Salt 20mg</div>
                     <div class="product-price">1 — 5€ | 3 — 13€</div>
@@ -562,6 +572,38 @@
         </div>
     </div>
 
+    <!-- Test Page -->
+    <div class="product-page" id="product-test">
+        <div class="product-header">
+            <button class="back-button" onclick="closeProduct('test')">
+                <span class="back-arrow">←</span> Назад
+            </button>
+        </div>
+        <div class="image-gallery" data-product="test">
+            <div class="gallery-container">
+                <img src="http//salt.png" alt="Test" class="gallery-image" onclick="openFullscreen('test', 0)">
+            </div>
+        </div>
+        <div class="detail-content">
+            <div class="detail-tag">Salt Nicotine</div>
+            <div class="detail-title">Test</div>
+            <div class="detail-subtitle">Test</div>
+            <div class="divider"></div>
+            <div class="variants">
+                <h3>Выберите вкус</h3>
+                <div class="variant-option" onclick="selectVariant(this, 'test')">Test</div>
+            </div>
+            <div class="detail-price">
+                <span>13€</span> · 1 шт<br>
+                <span>25€</span> · 2 шт<br>
+                <span>33€</span> · 3 шт<br>
+                <span>50€</span> · 5 шт
+            </div>
+            <div class="error-message" id="error-test">Пожалуйста, выберите вкус</div>
+            <button class="order-button" onclick="orderTelegram('test', 'smkParadiseManager')">Заказать в Telegram</button>
+        </div>
+    </div>
+
     <!-- Fullscreen -->
     <div class="fullscreen-overlay" id="fullscreen">
         <button class="fullscreen-close" onclick="closeFullscreen()">×</button>
@@ -572,7 +614,8 @@
 
     <script>
         const productData = {
-            'vaape': { name: 'Vaape Triple 90K', variant: '' },
+            'vaape': { name: 'Vaape Triple 90K', variant: ''             'test': { name: 'Test', variant: '' },
+        },
             'vozol': { name: 'Vozol 50mg', variant: '' },
             'elfliq': { name: 'Elfliq 50mg', variant: '' },
             'ivg': { name: 'IVG 20mg', variant: '' },
