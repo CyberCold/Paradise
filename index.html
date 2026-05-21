@@ -372,8 +372,7 @@
                 <div class="product-image-wrap">
                     <img src="https://www.serisvape.com/wp-content/uploads/2025/10/Unboxing-the-Vaapee-Triple-90K-Triple-the-Flavor-Triple-the-Fun-768x768.jpg"
                          alt="Vaape Triple 90K" class="product-image">
-
-        </div>
+                </div>
                 <div class="product-info">
                     <div class="product-name">Vaape Triple 90K</div>
                     <div class="product-price">15€</div>
@@ -387,6 +386,17 @@
                 </div>
                 <div class="product-info">
                     <div class="product-name">Vozol 50mg</div>
+                    <div class="product-price">1 — 13€ | 2 — 25€<br>3 — 33€ | 5 — 50€</div>
+                </div>
+            </div>
+
+            <div class="product-card" onclick="openProduct('elfliq')">
+                <div class="product-image-wrap">
+                    <img src="https://pufflab.pro/wp-content/uploads/2025/04/Elfliq-30ml-50mg-liquidy-30ml-Pufflab.webp"
+                         alt="Elfliq 50mg" class="product-image">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Elfliq 50mg</div>
                     <div class="product-price">1 — 13€ | 2 — 25€<br>3 — 33€ | 5 — 50€</div>
                 </div>
             </div>
@@ -597,34 +607,6 @@
         </div>
     </div>
 
-    
-    <!-- Test Page -->
-    <div class="product-page" id="product-test">
-        <div class="product-header">
-            <button class="back-button" onclick="closeProduct('test')">
-                <span class="back-arrow">←</span> Назад
-            </button>
-        </div>
-        <div class="image-gallery" data-product="test">
-            <div class="gallery-container">
-                <img src="https://example.com/photo.jpg" alt="Test" class="gallery-image" onclick="openFullscreen('test', 0)">
-            </div>
-        </div>
-        <div class="detail-content">
-            <div class="detail-tag">Test</div>
-            <div class="detail-title">Test</div>
-            <div class="detail-subtitle">Test</div>
-            <div class="divider"></div>
-            <div class="variants">
-                <h3>Выберите вкус</h3>
-                <div class="variant-option" onclick="selectVariant(this, 'test')">Test</div>
-            </div>
-            <div class="detail-price">Test</div>
-            <div class="error-message" id="error-test">Пожалуйста, выберите вкус</div>
-            <button class="order-button" onclick="orderTelegram('test', 'smkParadiseManager')">Заказать в Telegram</button>
-        </div>
-    </div>
-
     <!-- Fullscreen -->
     <div class="fullscreen-overlay" id="fullscreen">
         <button class="fullscreen-close" onclick="closeFullscreen()">×</button>
@@ -637,36 +619,55 @@
         const productData = {
             'vaape':    { name: 'Vaape Triple 90K', variant: '' },
             'vozol':    { name: 'Vozol 50mg',       variant: '' },
+            'elfliq':   { name: 'Elfliq 50mg',      variant: '' },
             'ivg':      { name: 'IVG 20mg',         variant: '' },
-            'truesalt': { name: 'True Salt 20mg',   variant: '' }        };
+            'truesalt': { name: 'True Salt 20mg',   variant: '' }
+        };
 
         function openProduct(id) {
-            document.getElementById('product-' + id).classList.add('active');
-            document.body.style.overflow = 'hidden';
-            productData[id].variant = '';
-            document.querySelectorAll('#product-' + id + ' .variant-option').forEach(v => v.classList.remove('selected'));
-            const err = document.getElementById('error-' + id);
-            if (err) err.classList.remove('show');
+            const page = document.getElementById('product-' + id);
+            if (page) {
+                page.classList.add('active');
+                document.body.style.overflow = 'hidden';
+                if (productData[id]) {
+                    productData[id].variant = '';
+                }
+                const variants = document.querySelectorAll('#product-' + id + ' .variant-option');
+                variants.forEach(v => v.classList.remove('selected'));
+                const err = document.getElementById('error-' + id);
+                if (err) err.classList.remove('show');
+            }
         }
 
         function closeProduct(id) {
-            document.getElementById('product-' + id).classList.remove('active');
-            document.body.style.overflow = 'auto';
+            const page = document.getElementById('product-' + id);
+            if (page) {
+                page.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
         }
 
         function selectVariant(element, productId) {
-            element.parentElement.querySelectorAll('.variant-option').forEach(v => v.classList.remove('selected'));
+            const parent = element.parentElement;
+            if (parent) {
+                parent.querySelectorAll('.variant-option').forEach(v => v.classList.remove('selected'));
+            }
             element.classList.add('selected');
-            productData[productId].variant = element.textContent;
+            if (productData[productId]) {
+                productData[productId].variant = element.textContent;
+            }
             const err = document.getElementById('error-' + productId);
             if (err) err.classList.remove('show');
         }
 
         function orderTelegram(productId, username) {
             const product = productData[productId];
-            if (!product.variant) {
+            if (!product || !product.variant) {
                 const err = document.getElementById('error-' + productId);
-                if (err) { err.classList.add('show'); err.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }
+                if (err) {
+                    err.classList.add('show');
+                    err.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
                 return;
             }
             const message = 'Здравствуйте, хочу заказать ' + product.name + ', вкус: ' + product.variant;
@@ -675,12 +676,16 @@
 
         function openFullscreen(productId, imageIndex) {
             const gallery = document.querySelector('[data-product="' + productId + '"]');
-            const images = gallery.querySelectorAll('.gallery-image');
-            const img = document.getElementById('fullscreen-image');
-            img.src = images[imageIndex].src;
-            img.alt = images[imageIndex].alt;
-            document.getElementById('fullscreen').classList.add('active');
-            document.body.style.overflow = 'hidden';
+            if (gallery) {
+                const images = gallery.querySelectorAll('.gallery-image');
+                if (images[imageIndex]) {
+                    const img = document.getElementById('fullscreen-image');
+                    img.src = images[imageIndex].src;
+                    img.alt = images[imageIndex].alt;
+                    document.getElementById('fullscreen').classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                }
+            }
         }
 
         function closeFullscreen() {
@@ -689,7 +694,9 @@
         }
 
         document.getElementById('fullscreen').addEventListener('click', function(e) {
-            if (e.target === this || e.target.classList.contains('fullscreen-container')) closeFullscreen();
+            if (e.target === this || e.target.classList.contains('fullscreen-container')) {
+                closeFullscreen();
+            }
         });
     </script>
 </body>
