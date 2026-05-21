@@ -121,12 +121,7 @@
                     <div class="product-price">1 — 5€ | 3 — 13€</div>
                 </div>
             </div>
-            
-            <div class="product-card" onclick="openProduct('1')">
-                <div class="product-image-wrap">
-                    <img src="http//salt.png" alt="1" class="product-image">
-                </div>
-                <div class="product-info">
+            <div class="product-info">
                     <div class="product-name">1</div>
                     <div class="product-price">1 — 13€ | 2 — 25€<br>3 — 33€ | 5 — 50€</div>
                 </div>
@@ -275,14 +270,7 @@
             <button class="order-button" onclick="orderTelegram('truesalt', 'smkParadiseManager')">Заказать в Telegram</button>
         </div>
     </div>
-    
-    <div class="product-page" id="product-1">
-        <div class="product-header">
-            <button class="back-button" onclick="closeProduct('1')">
-                <span class="back-arrow">←</span> Назад
-            </button>
-        </div>
-        <div class="image-gallery" data-product="1">
+    <div class="image-gallery" data-product="1">
             <div class="gallery-container">
                 <img src="http//salt.png" alt="1" class="gallery-image" onclick="openFullscreen('1', 0)">
             </div>
@@ -321,11 +309,8 @@
             'elfliq': { name: 'Elfliq 50mg', variant: '' },
             'ivg': { name: 'IVG 20mg', variant: '' },
             'truesalt': { name: 'True Salt 20mg', variant: '' }
-            ,
-            '1': { name: '1', variant: '' }
-            // PRODUCT_DATA_END
+                        // PRODUCT_DATA_END
         };
-
         function openProduct(id) {
             const page = document.getElementById('product-' + id);
             if (page) {
@@ -338,7 +323,6 @@
                 if (err) err.classList.remove('show');
             }
         }
-
         function closeProduct(id) {
             const page = document.getElementById('product-' + id);
             if (page) {
@@ -346,7 +330,6 @@
                 document.body.style.overflow = 'auto';
             }
         }
-
         function selectVariant(element, productId) {
             element.parentElement.querySelectorAll('.variant-option').forEach(v => v.classList.remove('selected'));
             element.classList.add('selected');
@@ -354,7 +337,6 @@
             const err = document.getElementById('error-' + productId);
             if (err) err.classList.remove('show');
         }
-
         function orderTelegram(productId, username) {
             const product = productData[productId];
             if (!product || !product.variant) {
@@ -365,7 +347,6 @@
             const message = 'Здравствуйте, хочу заказать ' + product.name + ', вкус: ' + product.variant;
             window.open('https://t.me/' + username + '?text=' + encodeURIComponent(message), '_blank');
         }
-
         function openFullscreen(productId, imageIndex) {
             const gallery = document.querySelector('[data-product="' + productId + '"]');
             if (gallery) {
@@ -377,12 +358,10 @@
                 }
             }
         }
-
         function closeFullscreen() {
             document.getElementById('fullscreen').classList.remove('active');
             document.body.style.overflow = 'auto';
         }
-
         document.getElementById('fullscreen').addEventListener('click', function(e) {
             if (e.target === this || e.target.classList.contains('fullscreen-container')) closeFullscreen();
         });
