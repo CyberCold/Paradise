@@ -413,7 +413,11 @@
                 </div>
             </div>
             
-            <div class="product-info">
+            <div class="product-card" onclick="openProduct('test')">
+                <div class="product-image-wrap">
+                    <img src="http//salt.png" alt="Test" class="product-image">
+                </div>
+                <div class="product-info">
                     <div class="product-name">Test</div>
                     <div class="product-price">1 — 13€ | 2 — 25€<br>3 — 33€ | 5 — 50€</div>
                 </div>
@@ -568,7 +572,13 @@
         </div>
     </div>
     
-    <div class="image-gallery" data-product="test">
+    <div class="product-page" id="product-test">
+        <div class="product-header">
+            <button class="back-button" onclick="closeProduct('test')">
+                <span class="back-arrow">←</span> Назад
+            </button>
+        </div>
+        <div class="image-gallery" data-product="test">
             <div class="gallery-container">
                 <img src="http//salt.png" alt="Test" class="gallery-image" onclick="openFullscreen('test', 0)">
             </div>
@@ -609,7 +619,9 @@
             'vozol': { name: 'Vozol 50mg', variant: '' },
             'elfliq': { name: 'Elfliq 50mg', variant: '' },
             'ivg': { name: 'IVG 20mg', variant: '' },
-            'truesalt': { name: 'True Salt 20mg', variant: '' },            // PRODUCT_DATA_END
+            'truesalt': { name: 'True Salt 20mg', variant: '' },
+                        'test': { name: 'Test', variant: '' },
+            // PRODUCT_DATA_END
         };
 
         function openProduct(id) {
