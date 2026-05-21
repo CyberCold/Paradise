@@ -337,6 +337,17 @@
                 </div>
             </div>
             
+            
+            <div class="product-card" onclick="openProduct('rave40k')">
+                <div class="product-image-wrap">
+                    <img src="https://vapemaison.com/wp-content/uploads/2025/12/vozol-rave-40000-Blueberry-Ice-2-768x768-1.webp" alt="Vozol Rave 40k puffs" class="product-image">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Vozol Rave 40k puffs</div>
+                    <div class="product-price">20€</div>
+                </div>
+            </div>
+            
             <!-- CARDS_END -->
         </div>
     </div>
@@ -590,6 +601,35 @@
         </div>
     </div>
     
+    
+    <div class="product-page" id="product-rave40k">
+        <div class="product-header">
+            <button class="back-button" onclick="closeProduct('rave40k')">
+                <span class="back-arrow">←</span> Назад
+            </button>
+        </div>
+        <div class="image-gallery" data-product="rave40k">
+            <div class="gallery-container">
+                <img src="https://vapemaison.com/wp-content/uploads/2025/12/vozol-rave-40000-Blueberry-Ice-2-768x768-1.webp" alt="Vozol Rave 40k puffs" class="gallery-image" onclick="openFullscreen('rave40k', 0)">
+            </div>
+        </div>
+        <div class="detail-content">
+            <div class="detail-tag">Disposable</div>
+            <div class="detail-title">Vozol Rave 40k puffs</div>
+            <div class="detail-subtitle">40 000 puffs • 50mg • salt nicotine</div>
+            <div class="divider"></div>
+            <div class="variants">
+                <h3>Выберите вкус</h3>
+                <div class="variant-option" onclick="selectVariant(this, 'rave40k')">Strawberry Watermelon</div>
+            </div>
+            <div class="detail-price">
+                <span>20€</span>
+            </div>
+            <div class="error-message" id="error-rave40k">Пожалуйста, выберите вкус</div>
+            <button class="order-button" onclick="orderTelegram('rave40k', 'smkParadiseManager')">Заказать в Telegram</button>
+        </div>
+    </div>
+    
     <!-- PAGES_END -->
 
     <!-- FULLSCREEN -->
@@ -621,6 +661,7 @@
     <script>
         // ── Product Data ──
         const productData = {
+            'rave40k': { name: 'Vozol Rave 40k puffs', variant: '' },
             'star40k': { name: 'Vozol Star 40k puffs', variant: '' },
             'vista40k': { name: 'Vozol Vista 40k puffs', variant: '' },
             'vaape':    { name: 'Vaape Triple 90K', variant: '', qty: 1 },
