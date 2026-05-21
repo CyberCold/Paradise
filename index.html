@@ -6,6 +6,7 @@
     <title>Paradise</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
+        /* ваш CSS без изменений */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         :root {
             --bg: #faf8f5;
@@ -20,346 +21,59 @@
             --shadow: 0 2px 16px rgba(60,40,10,0.08);
             --shadow-card: 0 1px 4px rgba(60,40,10,0.06), 0 4px 20px rgba(60,40,10,0.06);
         }
-
-        body {
-            font-family: 'Jost', sans-serif;
-            background: var(--bg);
-            min-height: 100vh;
-            color: var(--text);
-        }
-
-        .header {
-            background: var(--bg);
-            padding: 26px 0 20px;
-            text-align: center;
-            border-bottom: 1px solid var(--border);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            backdrop-filter: blur(12px);
-        }
-        .header-eyebrow {
-            font-size: 10px;
-            letter-spacing: 4px;
-            color: var(--accent);
-            text-transform: uppercase;
-            font-weight: 400;
-            margin-bottom: 4px;
-        }
-        .header h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 30px;
-            font-weight: 400;
-            letter-spacing: 6px;
-            color: var(--text);
-            text-transform: uppercase;
-        }
-        .header-line {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 8px;
-        }
+        body { font-family: 'Jost', sans-serif; background: var(--bg); min-height: 100vh; color: var(--text); }
+        .header { background: var(--bg); padding: 26px 0 20px; text-align: center; border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; backdrop-filter: blur(12px); }
+        .header-eyebrow { font-size: 10px; letter-spacing: 4px; color: var(--accent); text-transform: uppercase; font-weight: 400; margin-bottom: 4px; }
+        .header h1 { font-family: 'Playfair Display', serif; font-size: 30px; font-weight: 400; letter-spacing: 6px; color: var(--text); text-transform: uppercase; }
+        .header-line { display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 8px; }
         .header-line span { width: 32px; height: 1px; background: var(--accent); display: block; opacity: 0.5; }
         .header-line i { width: 5px; height: 5px; border-radius: 50%; background: var(--accent); display: block; }
-
         .container { padding: 22px 14px 40px; max-width: 100%; }
         .products-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-
-        .product-card {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 14px;
-            overflow: hidden;
-            cursor: pointer;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-            box-shadow: var(--shadow-card);
-            position: relative;
-        }
-        .product-card:active {
-            transform: scale(0.97);
-            box-shadow: 0 1px 6px rgba(60,40,10,0.10);
-        }
-
-        .product-image-wrap {
-            background: var(--surface2);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 160px;
-            padding: 12px;
-            border-bottom: 1px solid var(--border);
-        }
-        .product-image {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            mix-blend-mode: multiply;
-        }
-
+        .product-card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; cursor: pointer; transition: transform 0.2s ease, box-shadow 0.2s ease; box-shadow: var(--shadow-card); position: relative; }
+        .product-card:active { transform: scale(0.97); box-shadow: 0 1px 6px rgba(60,40,10,0.10); }
+        .product-image-wrap { background: var(--surface2); display: flex; align-items: center; justify-content: center; height: 160px; padding: 12px; border-bottom: 1px solid var(--border); }
+        .product-image { width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply; }
         .product-info { padding: 12px 12px 14px; }
-        .product-name {
-            font-size: 13px;
-            color: var(--text);
-            margin-bottom: 5px;
-            font-weight: 500;
-            letter-spacing: 0.3px;
-        }
-        .product-price {
-            color: var(--accent-hover);
-            font-family: 'Playfair Display', serif;
-            font-size: 15.5px;
-            line-height: 1.7;
-            font-style: italic;
-            font-weight: 600;
-            text-shadow: 0 1px 3px rgba(156, 98, 46, 0.18);
-        }
-
-        .product-page {
-            display: none;
-            position: fixed;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            background: var(--bg);
-            z-index: 1000;
-            overflow-y: auto;
-        }
+        .product-name { font-size: 13px; color: var(--text); margin-bottom: 5px; font-weight: 500; letter-spacing: 0.3px; }
+        .product-price { color: var(--accent-hover); font-family: 'Playfair Display', serif; font-size: 15.5px; line-height: 1.7; font-style: italic; font-weight: 600; text-shadow: 0 1px 3px rgba(156, 98, 46, 0.18); }
+        .product-page { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: var(--bg); z-index: 1000; overflow-y: auto; }
         .product-page.active { display: block; }
-
-        .product-header {
-            padding: 16px 20px;
-            border-bottom: 1px solid var(--border);
-            display: flex;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            background: rgba(250,248,245,0.95);
-            backdrop-filter: blur(10px);
-            z-index: 10;
-        }
-        .back-button {
-            background: none;
-            border: none;
-            font-size: 13px;
-            color: var(--accent);
-            cursor: pointer;
-            padding: 4px 0;
-            font-family: 'Jost', sans-serif;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            font-weight: 500;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .back-arrow {
-            width: 28px; height: 28px;
-            border-radius: 50%;
-            border: 1px solid var(--border);
-            display: flex; align-items: center; justify-content: center;
-            font-size: 14px;
-            color: var(--accent);
-            flex-shrink: 0;
-        }
-
-        .image-gallery {
-            position: relative;
-            width: 100%;
-            height: 280px;
-            background: var(--surface2);
-            overflow: hidden;
-            border-bottom: 1px solid var(--border);
-        }
-        .gallery-container {
-            display: flex;
-            height: 100%;
-            transition: transform 0.3s ease;
-        }
-        .gallery-image {
-            min-width: 100%;
-            height: 100%;
-            object-fit: contain;
-            cursor: pointer;
-            padding: 28px;
-            mix-blend-mode: multiply;
-        }
-
+        .product-header { padding: 16px 20px; border-bottom: 1px solid var(--border); display: flex; align-items: center; position: sticky; top: 0; background: rgba(250,248,245,0.95); backdrop-filter: blur(10px); z-index: 10; }
+        .back-button { background: none; border: none; font-size: 13px; color: var(--accent); cursor: pointer; padding: 4px 0; font-family: 'Jost', sans-serif; letter-spacing: 1px; text-transform: uppercase; font-weight: 500; display: flex; align-items: center; gap: 8px; }
+        .back-arrow { width: 28px; height: 28px; border-radius: 50%; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 14px; color: var(--accent); flex-shrink: 0; }
+        .image-gallery { position: relative; width: 100%; height: 280px; background: var(--surface2); overflow: hidden; border-bottom: 1px solid var(--border); }
+        .gallery-container { display: flex; height: 100%; transition: transform 0.3s ease; }
+        .gallery-image { min-width: 100%; height: 100%; object-fit: contain; cursor: pointer; padding: 28px; mix-blend-mode: multiply; }
         .detail-content { padding: 24px 20px 50px; }
-
-        .detail-tag {
-            display: inline-block;
-            font-size: 10px;
-            letter-spacing: 2.5px;
-            text-transform: uppercase;
-            color: var(--accent);
-            background: var(--accent-light);
-            border-radius: 20px;
-            padding: 4px 12px;
-            margin-bottom: 10px;
-            font-weight: 500;
-        }
-        .detail-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 28px;
-            font-weight: 400;
-            margin-bottom: 2px;
-            letter-spacing: 0.5px;
-            color: var(--text);
-        }
-        .detail-subtitle {
-            font-size: 12px;
-            color: var(--muted);
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            margin-bottom: 26px;
-            font-weight: 300;
-        }
-
-        .divider {
-            height: 1px;
-            background: var(--border);
-            margin: 20px 0;
-        }
-
-        .variants h3 {
-            font-size: 10px;
-            color: var(--muted);
-            margin-bottom: 12px;
-            font-weight: 500;
-            letter-spacing: 2.5px;
-            text-transform: uppercase;
-        }
-        .variant-option {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            padding: 12px 16px;
-            border-radius: 10px;
-            margin-bottom: 8px;
-            cursor: pointer;
-            transition: all 0.18s ease;
-            font-size: 13.5px;
-            color: var(--text);
-            font-family: 'Jost', sans-serif;
-            font-weight: 400;
-            box-shadow: 0 1px 3px rgba(60,40,10,0.04);
-        }
-        .variant-option:active,
-        .variant-option.selected {
-            background: var(--accent-light);
-            color: var(--accent);
-            border-color: var(--accent);
-            box-shadow: none;
-        }
-
-        .detail-price {
-            font-family: 'Playfair Display', serif;
-            font-size: 18px;
-            color: var(--text);
-            font-weight: 400;
-            margin: 20px 0 24px;
-            line-height: 2;
-            letter-spacing: 0.3px;
-        }
-        .detail-price span {
-            color: var(--accent-hover);
-            font-style: italic;
-            font-weight: 600;
-            font-size: 20px;
-            text-shadow: 0 1px 4px rgba(156, 98, 46, 0.18);
-        }
-
-        .order-button {
-            width: 100%;
-            background: var(--accent);
-            color: #fff;
-            border: none;
-            padding: 17px;
-            border-radius: 10px;
-            font-size: 13px;
-            font-weight: 500;
-            cursor: pointer;
-            transition: background 0.2s ease, transform 0.15s ease;
-            font-family: 'Jost', sans-serif;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            box-shadow: 0 4px 14px rgba(181,118,58,0.3);
-        }
-        .order-button:active {
-            background: var(--accent-hover);
-            transform: scale(0.98);
-        }
-
-        .error-message {
-            color: #c0594a;
-            font-size: 12.5px;
-            margin-top: 10px;
-            margin-bottom: 14px;
-            display: none;
-            letter-spacing: 0.3px;
-            background: rgba(192,89,74,0.08);
-            padding: 8px 12px;
-            border-radius: 6px;
-        }
+        .detail-tag { display: inline-block; font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--accent); background: var(--accent-light); border-radius: 20px; padding: 4px 12px; margin-bottom: 10px; font-weight: 500; }
+        .detail-title { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 400; margin-bottom: 2px; letter-spacing: 0.5px; color: var(--text); }
+        .detail-subtitle { font-size: 12px; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 26px; font-weight: 300; }
+        .divider { height: 1px; background: var(--border); margin: 20px 0; }
+        .variants h3 { font-size: 10px; color: var(--muted); margin-bottom: 12px; font-weight: 500; letter-spacing: 2.5px; text-transform: uppercase; }
+        .variant-option { background: var(--surface); border: 1px solid var(--border); padding: 12px 16px; border-radius: 10px; margin-bottom: 8px; cursor: pointer; transition: all 0.18s ease; font-size: 13.5px; color: var(--text); font-family: 'Jost', sans-serif; font-weight: 400; box-shadow: 0 1px 3px rgba(60,40,10,0.04); }
+        .variant-option:active, .variant-option.selected { background: var(--accent-light); color: var(--accent); border-color: var(--accent); box-shadow: none; }
+        .detail-price { font-family: 'Playfair Display', serif; font-size: 18px; color: var(--text); font-weight: 400; margin: 20px 0 24px; line-height: 2; letter-spacing: 0.3px; }
+        .detail-price span { color: var(--accent-hover); font-style: italic; font-weight: 600; font-size: 20px; text-shadow: 0 1px 4px rgba(156, 98, 46, 0.18); }
+        .order-button { width: 100%; background: var(--accent); color: #fff; border: none; padding: 17px; border-radius: 10px; font-size: 13px; font-weight: 500; cursor: pointer; transition: background 0.2s ease, transform 0.15s ease; font-family: 'Jost', sans-serif; letter-spacing: 2px; text-transform: uppercase; box-shadow: 0 4px 14px rgba(181,118,58,0.3); }
+        .order-button:active { background: var(--accent-hover); transform: scale(0.98); }
+        .error-message { color: #c0594a; font-size: 12.5px; margin-top: 10px; margin-bottom: 14px; display: none; letter-spacing: 0.3px; background: rgba(192,89,74,0.08); padding: 8px 12px; border-radius: 6px; }
         .error-message.show { display: block; }
-
-        .fullscreen-overlay {
-            display: none;
-            position: fixed;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            background: rgba(250,248,245,0.97);
-            z-index: 2000;
-        }
+        .fullscreen-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(250,248,245,0.97); z-index: 2000; }
         .fullscreen-overlay.active { display: block; }
-        .fullscreen-container {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .fullscreen-image {
-            max-width: 90%;
-            max-height: 90%;
-            object-fit: contain;
-            mix-blend-mode: multiply;
-        }
-        .fullscreen-close {
-            position: absolute;
-            top: 20px; right: 20px;
-            background: var(--surface);
-            color: var(--text);
-            border: 1px solid var(--border);
-            width: 40px; height: 40px;
-            border-radius: 50%;
-            font-size: 20px;
-            cursor: pointer;
-            z-index: 2001;
-            box-shadow: var(--shadow);
-        }
-
-        .product-card {
-            animation: fadeUp 0.4s ease both;
-        }
-
-        @keyframes fadeUp {
-            from { opacity: 0; transform: translateY(14px); }
-            to   { opacity: 1; transform: translateY(0); }
-        }
+        .fullscreen-container { position: relative; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
+        .fullscreen-image { max-width: 90%; max-height: 90%; object-fit: contain; mix-blend-mode: multiply; }
+        .fullscreen-close { position: absolute; top: 20px; right: 20px; background: var(--surface); color: var(--text); border: 1px solid var(--border); width: 40px; height: 40px; border-radius: 50%; font-size: 20px; cursor: pointer; z-index: 2001; box-shadow: var(--shadow); }
+        .product-card { animation: fadeUp 0.4s ease both; }
+        @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
     </style>
 </head>
 <body>
-
     <div class="header">
         <div class="header-eyebrow">Premium Vape Shop</div>
         <h1>Paradise</h1>
-        <div class="header-line">
-            <span></span><i></i><span></span>
-        </div>
+        <div class="header-line"><span></span><i></i><span></span></div>
     </div>
-
     <div class="container">
         <div class="products-grid" id="productsGrid">
             <!-- PRODUCTS_GRID_START -->
@@ -372,7 +86,6 @@
                     <div class="product-price">15€</div>
                 </div>
             </div>
-
             <div class="product-card" onclick="openProduct('vozol')">
                 <div class="product-image-wrap">
                     <img src="https://vozol.ro/835-large_default/lichid-tigara-electronica-salt-prime-strawberry-vozol.jpg" alt="Vozol 50mg" class="product-image">
@@ -382,7 +95,6 @@
                     <div class="product-price">1 — 13€ | 2 — 25€<br>3 — 33€ | 5 — 50€</div>
                 </div>
             </div>
-
             <div class="product-card" onclick="openProduct('elfliq')">
                 <div class="product-image-wrap">
                     <img src="https://pufflab.pro/wp-content/uploads/2025/04/Elfliq-30ml-50mg-liquidy-30ml-Pufflab.webp" alt="Elfliq 50mg" class="product-image">
@@ -392,7 +104,6 @@
                     <div class="product-price">1 — 13€ | 2 — 25€<br>3 — 33€ | 5 — 50€</div>
                 </div>
             </div>
-
             <div class="product-card" onclick="openProduct('ivg')">
                 <div class="product-image-wrap">
                     <img src="https://ivapegreat.com/cdn/shop/files/IVG_INTENSE_Salts_Thumbnail_Blue.png?v=1774900241" alt="IVG 20mg" class="product-image">
@@ -402,7 +113,6 @@
                     <div class="product-price">1 — 5€ | 3 — 13€</div>
                 </div>
             </div>
-
             <div class="product-card" onclick="openProduct('truesalt')">
                 <div class="product-image-wrap">
                     <img src="https://juicedoutvapes.co.uk/cdn/shop/products/4_4be7c1d9-da53-4be0-bb22-0803b4372edf.png?v=1602267819" alt="True Salt 20mg" class="product-image">
@@ -412,20 +122,9 @@
                     <div class="product-price">1 — 5€ | 3 — 13€</div>
                 </div>
             </div>
-            
-            <div class="product-card" onclick="openProduct('test')">
-                <div class="product-image-wrap">
-                    <img src="http//salt.png" alt="Test" class="product-image">
-                </div>
-                <div class="product-info">
-                    <div class="product-name">Test</div>
-                    <div class="product-price">1 — 13€ | 2 — 25€<br>3 — 33€ | 5 — 50€</div>
-                </div>
-            </div>
             <!-- PRODUCTS_GRID_END -->
         </div>
     </div>
-
     <!-- PRODUCT_PAGES_START -->
     <div class="product-page" id="product-vaape">
         <div class="product-header">
@@ -455,7 +154,6 @@
             <button class="order-button" onclick="orderTelegram('vaape', 'smkParadiseManager')">Заказать в Telegram</button>
         </div>
     </div>
-
     <div class="product-page" id="product-vozol">
         <div class="product-header">
             <button class="back-button" onclick="closeProduct('vozol')"><span class="back-arrow">←</span> Назад</button>
@@ -487,7 +185,6 @@
             <button class="order-button" onclick="orderTelegram('vozol', 'smkParadiseManager')">Заказать в Telegram</button>
         </div>
     </div>
-
     <div class="product-page" id="product-elfliq">
         <div class="product-header">
             <button class="back-button" onclick="closeProduct('elfliq')"><span class="back-arrow">←</span> Назад</button>
@@ -519,7 +216,6 @@
             <button class="order-button" onclick="orderTelegram('elfliq', 'smkParadiseManager')">Заказать в Telegram</button>
         </div>
     </div>
-
     <div class="product-page" id="product-ivg">
         <div class="product-header">
             <button class="back-button" onclick="closeProduct('ivg')"><span class="back-arrow">←</span> Назад</button>
@@ -547,7 +243,6 @@
             <button class="order-button" onclick="orderTelegram('ivg', 'smkParadiseManager')">Заказать в Telegram</button>
         </div>
     </div>
-
     <div class="product-page" id="product-truesalt">
         <div class="product-header">
             <button class="back-button" onclick="closeProduct('truesalt')"><span class="back-arrow">←</span> Назад</button>
@@ -571,47 +266,13 @@
             <button class="order-button" onclick="orderTelegram('truesalt', 'smkParadiseManager')">Заказать в Telegram</button>
         </div>
     </div>
-    
-    <div class="product-page" id="product-test">
-        <div class="product-header">
-            <button class="back-button" onclick="closeProduct('test')">
-                <span class="back-arrow">←</span> Назад
-            </button>
-        </div>
-        <div class="image-gallery" data-product="test">
-            <div class="gallery-container">
-                <img src="http//salt.png" alt="Test" class="gallery-image" onclick="openFullscreen('test', 0)">
-            </div>
-        </div>
-        <div class="detail-content">
-            <div class="detail-tag">Salt Nicotine</div>
-            <div class="detail-title">Test</div>
-            <div class="detail-subtitle">Test</div>
-            <div class="divider"></div>
-            <div class="variants">
-                <h3>Выберите вкус</h3>
-                <div class="variant-option" onclick="selectVariant(this, 'test')">Test</div>
-            </div>
-            <div class="detail-price">
-                <span>13€</span> · 1 шт<br>
-                <span>25€</span> · 2 шт<br>
-                <span>33€</span> · 3 шт<br>
-                <span>50€</span> · 5 шт
-            </div>
-            <div class="error-message" id="error-test">Пожалуйста, выберите вкус</div>
-            <button class="order-button" onclick="orderTelegram('test', 'smkParadiseManager')">Заказать в Telegram</button>
-        </div>
-    </div>
     <!-- PRODUCT_PAGES_END -->
-
-    <!-- Fullscreen -->
     <div class="fullscreen-overlay" id="fullscreen">
         <button class="fullscreen-close" onclick="closeFullscreen()">×</button>
         <div class="fullscreen-container">
             <img src="" alt="" class="fullscreen-image" id="fullscreen-image">
         </div>
     </div>
-
     <script>
         const productData = {
             // PRODUCT_DATA_START
@@ -619,8 +280,7 @@
             'vozol': { name: 'Vozol 50mg', variant: '' },
             'elfliq': { name: 'Elfliq 50mg', variant: '' },
             'ivg': { name: 'IVG 20mg', variant: '' },
-            'truesalt': { name: 'True Salt 20mg', variant: '' },
-                        'test': { name: 'Test', variant: '' },
+            'truesalt': { name: 'True Salt 20mg', variant: '' }
             // PRODUCT_DATA_END
         };
 
