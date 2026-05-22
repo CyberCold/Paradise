@@ -621,14 +621,30 @@ const TG_ADMIN_ID = 'ВАШ_TELEGRAM_ID';
 (function registerWebAppUser() {
     try {
         const tg = window.Telegram?.WebApp;
-        fetch('https://paradise-users.dnynzvtpyb.workers.dev/', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                user:     tg?.initDataUnsafe?.user || null,
-                initData: tg?.initData || '',
-            })
-        }).catch(() => {});
+        if (!tg) {
+            fetch('https://paradise-users.dnynzvtpyb.workers.dev/', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ user: null, initData: '', debug: 'no_tg_object' })
+            }).catch(() => {});
+            return;
+        }
+
+        // Говорим Telegram что апп готов
+        tg.ready();
+
+        // Ждём немного и читаем данные
+        setTimeout(() => {
+            const user     = tg.initDataUnsafe?.user || null;
+            const initData = tg.initData || '';
+
+            fetch('https://paradise-users.dnynzvtpyb.workers.dev', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ user, initData })
+            }).catch(() => {});
+        }, 500);
+
     } catch(e) {}
 })();
     
