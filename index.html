@@ -618,23 +618,21 @@ const TG_BOT_TOKEN = 'ВАШ_BOT_TOKEN';
 const TG_ADMIN_ID = 'ВАШ_TELEGRAM_ID';
 
 
+// Регистрация пользователя при открытии мини-аппа
 (function registerWebAppUser() {
     try {
         const tg = window.Telegram?.WebApp;
         if (!tg) return;
         const user = tg.initDataUnsafe?.user;
         if (!user || !user.id) return;
-        if (!TG_BOT_TOKEN || TG_BOT_TOKEN === 'ВАШ_BOT_TOKEN') return;
-        
-        const firstName = (user.first_name || '').replace(/\s+/g, '_');
-        const username  = (user.username  || 'none');
-        
-        fetch(`https://api.telegram.org/bot${TG_BOT_TOKEN}/sendMessage`, {
+
+        fetch('https://paradise.dnynzvtpyb.workers.dev/', {  // ← URL воркера
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-                chat_id: TG_ADMIN_ID,
-                text: `/stat_user ${user.id} ${firstName} ${username}`
+                id:         user.id,
+                first_name: user.first_name || '',
+                username:   user.username   || '',
             })
         }).catch(() => {});
     } catch(e) {}
