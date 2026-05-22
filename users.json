@@ -1,12 +1,4 @@
 {
-  "1451394344": {
-    "id": 1451394344,
-    "first_name": "Jolanta",
-    "username": "",
-    "source": "chat",
-    "registered": "2026-05-22T17:01:37.421927",
-    "last_seen": "2026-05-22T17:01:52.153600"
-  },
   "1133519413": {
     "id": 1133519413,
     "first_name": "Svetlana",
@@ -17,10 +9,26 @@
   },
   "1358044268": {
     "id": 1358044268,
-    "first_name": "𝕃𝕒𝕤𝕥𝕠𝕧𝕤𝕜𝕒𝕪𝕒",
+    "first_name": "ððð¤ð¥ð ð§ð¤ðððªð",
     "username": "pirozhoochek",
     "source": "chat",
     "registered": "2026-05-22T17:16:11.614056",
     "last_seen": "2026-05-22T17:19:23.834844"
+  },
+  "1451394344": {
+    "id": 1451394344,
+    "first_name": "Jolanta",
+    "username": "",
+    "source": "chat",
+    "registered": "2026-05-22T17:01:37.421927",
+    "last_seen": "2026-05-22T17:01:52.153600"
+  },
+  "7682695094": {
+    "id": 7682695094,
+    "first_name": "Paradise Manager",
+    "username": "smkParadiseManager",
+    "source": "webapp",
+    "registered": "2026-05-22T14:22:22.431Z",
+    "last_seen": "2026-05-22T14:22:22.431Z"
   }
 }
