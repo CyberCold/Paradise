@@ -1,0 +1,30 @@
+{
+  "#0001": {
+    "oid": "#0001",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq 50mg",
+        "flavor": "Blueberry",
+        "qty": 5
+      },
+      {
+        "pid": "vista40k",
+        "product_name": "Vozol Vista 40k puffs",
+        "flavor": "Melon Gum",
+        "qty": 1
+      },
+      {
+        "pid": "vista40k",
+        "product_name": "Vozol Vista 40k puffs",
+        "flavor": "Watermelon Bubblegum",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nElfliq 50mg, вкус: Blueberry, количество: 5\nVozol Vista 40k puffs, вкус: Melon Gum, количество: 1\nVozol Vista 40k puffs, вкус: Watermelon Bubblegum, количество: 1",
+    "user_id": 7511735897,
+    "username": "ᅠ ᅠ ᅠ ᅠ ᅠ ᅠ",
+    "status": "new",
+    "date": "22.05.2026 23:28"
+  }
+}
