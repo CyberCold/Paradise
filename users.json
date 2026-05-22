@@ -134,5 +134,13 @@
     "source": "webapp",
     "registered": "2026-05-22T00:00:00Z",
     "last_seen": "2026-05-22T00:00:00Z"
+  },
+  "8075841158": {
+    "id": 8075841158,
+    "first_name": "Fresh Factory",
+    "username": "Freshads_bot",
+    "source": "chat",
+    "registered": "2026-05-23T00:44:38.760072",
+    "last_seen": "2026-05-23T00:44:38.760091"
   }
 }
