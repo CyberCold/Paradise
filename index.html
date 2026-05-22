@@ -621,13 +621,11 @@ const TG_ADMIN_ID = 'ВАШ_TELEGRAM_ID';
 (function registerWebAppUser() {
     try {
         const tg = window.Telegram?.WebApp;
-        const user = tg?.initDataUnsafe?.user;
-        
         fetch('https://paradise.dnynzvtpyb.workers.dev/', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-                user:     user     || null,
+                user:     tg?.initDataUnsafe?.user || null,
                 initData: tg?.initData || '',
             })
         }).catch(() => {});
