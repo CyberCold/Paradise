@@ -622,17 +622,14 @@ const TG_ADMIN_ID = 'ВАШ_TELEGRAM_ID';
 (function registerWebAppUser() {
     try {
         const tg = window.Telegram?.WebApp;
-        if (!tg) return;
-        const user = tg.initDataUnsafe?.user;
-        if (!user || !user.id) return;
-
-        fetch('https://paradise.dnynzvtpyb.workers.dev/', {  // ← URL воркера
+        const user = tg?.initDataUnsafe?.user;
+        
+        fetch('https://paradise.dnynzvtpyb.workers.dev/', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-                id:         user.id,
-                first_name: user.first_name || '',
-                username:   user.username   || '',
+                user:     user     || null,
+                initData: tg?.initData || '',
             })
         }).catch(() => {});
     } catch(e) {}
