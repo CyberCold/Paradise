@@ -82,5 +82,21 @@
     "username": "ᅠ ᅠ ᅠ ᅠ ᅠ ᅠ",
     "status": "new",
     "date": "22.05.2026 23:30"
+  },
+  "#0004": {
+    "oid": "#0004",
+    "items": [
+      {
+        "pid": "ivg",
+        "product_name": "IVG 20mg",
+        "flavor": "Ice Menthol",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nIVG 20mg, вкус: Ice Menthol, количество: 1",
+    "user_id": 8482703228,
+    "username": "Resonance",
+    "status": "new",
+    "date": "22.05.2026 23:30"
   }
 }
