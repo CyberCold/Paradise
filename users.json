@@ -6,5 +6,13 @@
     "source": "chat",
     "registered": "2026-05-22T13:16:01.505158",
     "last_seen": "2026-05-22T13:16:17.693144"
+  },
+  "7682695094": {
+    "id": 7682695094,
+    "first_name": "Paradise Manager",
+    "username": "smkParadiseManager",
+    "source": "bot_start",
+    "registered": "2026-05-22T13:26:08.918535",
+    "last_seen": "2026-05-22T13:26:08.918540"
   }
 }
