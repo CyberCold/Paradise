@@ -126,5 +126,13 @@
     "source": "webapp",
     "registered": "2026-05-22T16:04:58.554Z",
     "last_seen": "2026-05-22T16:04:58.554Z"
+  },
+  "1229091921": {
+    "id": 1229091921,
+    "first_name": "Милана",
+    "username": "marshvill",
+    "source": "bot_start",
+    "registered": "2026-05-22T21:35:32.095618",
+    "last_seen": "2026-05-22T21:35:32.095629"
   }
 }
