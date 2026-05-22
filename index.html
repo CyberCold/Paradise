@@ -16,7 +16,7 @@
             --shadow: 0 2px 16px rgba(60,40,10,0.08);
             --shadow-card: 0 1px 4px rgba(60,40,10,0.06), 0 4px 20px rgba(60,40,10,0.06);
         }
-        body { font-family: 'Jost', sans-serif; background: var(--bg); min-height: 100vh; color: var(--text); display: flex; flex-direction: column; }
+        body { font-family: 'Jost', sans-serif; background: var(--bg); min-height: 100vh; color: var(--text); display: flex; flex-direction: column; -webkit-user-select: none; -ms-user-select: none; user-select: none;}
         body[data-closed="1"] .closed-banner { display: block; }
         body[data-closed="1"] .order-button,
         body[data-closed="1"] .add-to-cart-button,
@@ -934,6 +934,21 @@ function reorder() {
         window.open('https://t.me/smkParadiseManager?text=' + encodeURIComponent(msg), '_blank');
     } catch(e) {}
 }
+
+
+  document.addEventListener('contextmenu', (e) => e.preventDefault());
+
+  document.addEventListener('selectstart', (e) => e.preventDefault());
+
+  document.addEventListener('keydown', (e) => {
+    if (
+      e.ctrlKey && (e.key === 'c' || e.key === 'u' || e.key === 's' || e.key === 'a') || 
+      e.key === 'F12' || 
+      (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J'))
+    ) {
+      e.preventDefault();
+    }
+  });
 
 loadLastOrder();
 if (document.body.getAttribute('data-closed') === '1') { updateShopClosedBanner(true); }
