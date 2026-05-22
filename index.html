@@ -950,6 +950,27 @@ function reorder() {
     }
   });
 
+document.addEventListener('keydown', (e) => {
+  const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
+  
+  const modifierKey = isMac ? e.metaKey : e.ctrlKey;
+  const inspectModifier = isMac ? (e.metaKey && e.altKey) : (e.ctrlKey && e.shiftKey);
+
+  const blockedKeys = ['c', 'i', 'j', 'u', 's', 'a', 'o', 'p', 'q'];
+  const currentKey = e.key.toLowerCase();
+
+  if ((modifierKey || inspectModifier) && blockedKeys.includes(currentKey)) {
+    e.preventDefault();
+    e.stopPropagation();
+    return; 
+  }
+
+  if (e.key === 'F12' || e.keyCode === 123) {
+    e.preventDefault();
+    e.stopPropagation();
+  }
+}, true);
+
 loadLastOrder();
 if (document.body.getAttribute('data-closed') === '1') { updateShopClosedBanner(true); }
 </script>
