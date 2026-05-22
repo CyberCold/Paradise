@@ -145,9 +145,9 @@
         .fullscreen-image { max-width: 90%; max-height: 90%; object-fit: contain; mix-blend-mode: multiply; }
         .fullscreen-close { position: absolute; top: 20px; right: 20px; background: var(--surface); color: var(--text); border: 1px solid var(--border); width: 40px; height: 40px; border-radius: 50%; font-size: 20px; cursor: pointer; z-index: 2001; box-shadow: var(--shadow); }
 
-        .cart-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(26,23,20,0); z-index: 500; pointer-events: none; transition: background 0.35s ease; }
+        .cart-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(26,23,20,0); z-index: 1500; pointer-events: none; transition: background 0.35s ease; }
         .cart-overlay.open { background: rgba(26,23,20,0.22); pointer-events: auto; }
-        .cart-sidebar { position: fixed; top: 0; right: 0; width: 88%; max-width: 360px; height: 100%; background: var(--bg); border-left: 1px solid var(--border); box-shadow: -4px 0 32px rgba(60,40,10,0.12); transform: translateX(100%); transition: transform 0.35s cubic-bezier(0.4,0,0.2,1); z-index: 501; display: flex; flex-direction: column; overflow: hidden; }
+        .cart-sidebar { position: fixed; top: 0; right: 0; width: 88%; max-width: 360px; height: 100%; background: var(--bg); border-left: 1px solid var(--border); box-shadow: -4px 0 32px rgba(60,40,10,0.12); transform: translateX(100%); transition: transform 0.35s cubic-bezier(0.4,0,0.2,1); z-index: 1501; display: flex; flex-direction: column; overflow: hidden; }
         .cart-sidebar.open { transform: translateX(0); }
         .cart-sidebar-header { padding: 20px 18px 16px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; flex-shrink: 0; background: var(--bg); }
         .cart-sidebar-title { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 400; letter-spacing: 1px; color: var(--text); }
@@ -331,7 +331,6 @@
 
 <!-- ФУТЕР — В САМОМ НИЗУ, КОПИРАЙТ МАЛЕНЬКИЙ, ПОЧТА РАБОТАЕТ -->
 <div class="site-footer">
-    <div class="footer-copyright">© 2025-2026 CyberCold, Co-founder of Paradise. All rights reserved.</div>
     <div class="social-links">
         <a href="https://t.me/smkParadiseManager" class="social-item" target="_blank">
             <div class="social-icon"><svg viewBox="0 0 24 24"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/><path d="M11 13L22 2"/></svg></div>
@@ -345,10 +344,8 @@
             <div class="social-icon"><svg viewBox="0 0 24 24"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/><path d="M11 13L22 2"/></svg></div>
             <span class="social-label">Информация</span>
         </a>
+        <div class="footer-copyright">© 2025-2026 CyberCold, Co-founder of Paradise. All rights reserved.</div>
     </div>
-    <a href="mailto:sparadiselatvia@gmail.com" class="contact-email">
-        <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        <span>Написать нам</span>
     </a>
 </div>
 
@@ -628,7 +625,8 @@
         <button class="order-button" onclick="orderTelegram('dk')">Заказать в Telegram</button>
         <button class="add-to-cart-button" onclick="addToCart('dk')"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>Добавить в корзину</button>
     </div>
-</div><!-- PAGES_END -->
+</div>
+<!-- PAGES_END -->
 
 <div class="fullscreen-overlay" id="fullscreen">
     <button class="fullscreen-close" onclick="closeFullscreen()">×</button>
@@ -732,6 +730,7 @@ function openProduct(id) {
 function closeProduct(id) {
     const page = document.getElementById('product-' + id);
     if (page) { page.classList.remove('active'); document.body.style.overflow = 'auto'; }
+    closeCart();
 }
 function changeQty(pid, delta) {
     const el = document.getElementById('qty-' + pid);
