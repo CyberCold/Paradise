@@ -17,39 +17,20 @@
             --shadow-card: 0 1px 4px rgba(60,40,10,0.06), 0 4px 20px rgba(60,40,10,0.06);
         }
         body { font-family: 'Jost', sans-serif; background: var(--bg); min-height: 100vh; color: var(--text); }
-        body[] .closed-banner { display: block; }
-        body[] .order-button,
-        body[] .add-to-cart-button,
-        body[] .cart-order-btn { opacity: 0.4; pointer-events: none; }
+        body[data-closed="1"] .closed-banner { display: block; }
+        body[data-closed="1"] .order-button,
+        body[data-closed="1"] .add-to-cart-button,
+        body[data-closed="1"] .cart-order-btn { opacity: 0.4; pointer-events: none; }
 
         /* ── HEADER ── */
-        .header {
-            background: var(--bg);
-            border-bottom: 1px solid var(--border);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            backdrop-filter: blur(12px);
-        }
-        .header-inner {
-            display: grid;
-            grid-template-columns: 1fr auto 1fr;
-            align-items: center;
-            padding: 18px 12px 14px;
-        }
-        .header-left { }
-        .header-center { text-align: center; }
+        .header { background: var(--bg); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; backdrop-filter: blur(12px); }
+        .header-inner { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; padding: 18px 12px 14px; }
         .header-eyebrow { font-size: 10px; letter-spacing: 4px; color: var(--accent); text-transform: uppercase; font-weight: 400; margin-bottom: 4px; }
         .header h1 { font-family: 'Playfair Display', serif; font-size: 30px; font-weight: 400; letter-spacing: 6px; color: var(--text); text-transform: uppercase; }
         .header-line { display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 6px; }
         .header-line span { width: 32px; height: 1px; background: var(--accent); display: block; opacity: 0.5; }
         .header-line i { width: 5px; height: 5px; border-radius: 50%; background: var(--accent); display: block; }
-        .header-controls {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            gap: 8px;
-        }
+        .header-controls { display: flex; align-items: center; justify-content: flex-end; gap: 8px; }
 
         .icon-btn { background: var(--surface); border: 1px solid var(--border); border-radius: 50px; width: 38px; height: 38px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.2s ease; box-shadow: var(--shadow-card); flex-shrink: 0; }
         .icon-btn:active { transform: scale(0.93); }
@@ -60,6 +41,13 @@
         .cart-count.bump { animation: bump 0.25s ease; }
         @keyframes bump { 0%,100%{transform:scale(1)} 50%{transform:scale(1.35)} }
 
+        /* Летящий товар в корзину */
+        .fly-img { position: fixed; width: 60px; height: 60px; border-radius: 10px; object-fit: contain; background: var(--surface2); border: 1px solid var(--border); padding: 4px; mix-blend-mode: multiply; pointer-events: none; z-index: 9999; transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1); opacity: 1; }
+        .fly-img.fly-end { width: 20px; height: 20px; opacity: 0; }
+
+        /* Корзина в шапке товара */
+        .product-header-right { display: flex; align-items: center; gap: 8px; }
+
         .search-bar-wrap { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; border-bottom: 0px solid var(--border); }
         .search-bar-wrap.open { max-height: 60px; border-bottom: 1px solid var(--border); }
         .search-bar-inner { padding: 10px 16px; display: flex; align-items: center; gap: 10px; background: var(--bg); }
@@ -69,7 +57,6 @@
         .search-clear { background: none; border: none; color: var(--muted); font-size: 18px; cursor: pointer; padding: 0 4px; line-height: 1; }
 
         .closed-banner { display: none; background: #1a1714; color: #faf8f5; text-align: center; padding: 10px 20px; font-size: 13px; letter-spacing: 0.5px; }
-
         .container { padding: 22px 14px 40px; }
         .products-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 
@@ -192,51 +179,17 @@
         .cart-order-btn:active { background: var(--accent-hover); transform: scale(0.98); }
         .cart-order-btn:disabled { opacity: 0.45; cursor: default; transform: none; box-shadow: none; }
 
+        .shop-closed-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 10000; justify-content: center; align-items: center; backdrop-filter: blur(8px); }
+        .shop-closed-overlay.active { display: flex; }
+        .shop-closed-card { background: var(--surface); padding: 40px 30px; border-radius: 24px; text-align: center; max-width: 320px; box-shadow: 0 20px 40px rgba(0,0,0,0.3); border: 1px solid var(--accent); }
+        .shop-closed-card .lock-icon { font-size: 48px; margin-bottom: 20px; }
+        .shop-closed-card h2 { font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 12px; color: var(--accent); }
+        .shop-closed-card p { color: var(--muted); font-size: 14px; line-height: 1.5; }
+
         @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
-        
-        .shop-closed-overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.85);
-            z-index: 10000;
-            justify-content: center;
-            align-items: center;
-            backdrop-filter: blur(8px);
-        }
-        .shop-closed-overlay.active {
-            display: flex;
-        }
-        .shop-closed-card {
-            background: var(--surface);
-            padding: 40px 30px;
-            border-radius: 24px;
-            text-align: center;
-            max-width: 320px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-            border: 1px solid var(--accent);
-        }
-        .shop-closed-card .lock-icon {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-        .shop-closed-card h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 24px;
-            margin-bottom: 12px;
-            color: var(--accent);
-        }
-        .shop-closed-card p {
-            color: var(--muted);
-            font-size: 14px;
-            line-height: 1.5;
-        }
     </style>
 </head>
-<body  >
+<body>
 
 <div class="shop-closed-overlay" id="shopClosedOverlay">
     <div class="shop-closed-card">
@@ -298,15 +251,6 @@
                 <div class="product-price">1 — 13€ | 2 — 25€<br>3 — 33€ | 5 — 50€</div>
             </div>
         </div>
-        <div class="product-card" onclick="openProduct('rave40k')" data-badge="" data-stock="in">
-            <div class="product-image-wrap">
-                <img src="https://vapemaison.com/wp-content/uploads/2025/12/vozol-rave-40000-Blueberry-Ice-2-768x768-1.webp" alt="Vozol Rave 40k puffs" class="product-image">
-            </div>
-            <div class="product-info">
-                <div class="product-name">Vozol Rave 40k puffs</div>
-                <div class="product-price">20€</div>
-            </div>
-        </div>
         <div class="product-card" onclick="openProduct('ivg')" data-badge="" data-stock="in">
             <div class="product-image-wrap">
                 <img src="https://ivapegreat.com/cdn/shop/files/IVG_INTENSE_Salts_Thumbnail_Blue.png?v=1774900241" alt="IVG 20mg" class="product-image">
@@ -316,15 +260,6 @@
                 <div class="product-price">1 — 5€ | 3 — 13€</div>
             </div>
         </div>
-        <div class="product-card" onclick="openProduct('star40k')" data-badge="" data-stock="in">
-            <div class="product-image-wrap">
-                <img src="https://elfvaping.com/wp-content/uploads/2025/06/Vozol-Star-40k-Puffs-LED-Screen-Low-Nicotine-Bulk-Buy-Original-Rechargeable-Disposable-Vapes-Wholesale-1.webp" alt="Vozol Star 40k puffs" class="product-image">
-            </div>
-            <div class="product-info">
-                <div class="product-name">Vozol Star 40k puffs</div>
-                <div class="product-price">20€</div>
-            </div>
-        </div>
         <div class="product-card" onclick="openProduct('truesalt')" data-badge="" data-stock="in">
             <div class="product-image-wrap">
                 <img src="https://juicedoutvapes.co.uk/cdn/shop/products/4_4be7c1d9-da53-4be0-bb22-0803b4372edf.png?v=1602267819" alt="True Salt 20mg" class="product-image">
@@ -332,6 +267,24 @@
             <div class="product-info">
                 <div class="product-name">True Salt 20mg</div>
                 <div class="product-price">1 — 5€ | 3 — 13€</div>
+            </div>
+        </div>
+        <div class="product-card" onclick="openProduct('rave40k')" data-badge="" data-stock="in">
+            <div class="product-image-wrap">
+                <img src="https://vapemaison.com/wp-content/uploads/2025/12/vozol-rave-40000-Blueberry-Ice-2-768x768-1.webp" alt="Vozol Rave 40k puffs" class="product-image">
+            </div>
+            <div class="product-info">
+                <div class="product-name">Vozol Rave 40k puffs</div>
+                <div class="product-price">20€</div>
+            </div>
+        </div>
+        <div class="product-card" onclick="openProduct('star40k')" data-badge="" data-stock="in">
+            <div class="product-image-wrap">
+                <img src="https://elfvaping.com/wp-content/uploads/2025/06/Vozol-Star-40k-Puffs-LED-Screen-Low-Nicotine-Bulk-Buy-Original-Rechargeable-Disposable-Vapes-Wholesale-1.webp" alt="Vozol Star 40k puffs" class="product-image">
+            </div>
+            <div class="product-info">
+                <div class="product-name">Vozol Star 40k puffs</div>
+                <div class="product-price">20€</div>
             </div>
         </div>
         <div class="product-card" onclick="openProduct('vista40k')" data-badge="" data-stock="in">
@@ -360,7 +313,13 @@
 <div class="product-page" id="product-vaape">
     <div class="product-header">
         <button class="back-button" onclick="closeProduct('vaape')"><span class="back-arrow">←</span> Назад</button>
-        <span class="page-stock-badge stock-in" id="stockbadge-vaape">В наличии</span>
+        <div class="product-header-right">
+            <span class="page-stock-badge stock-in" id="stockbadge-vaape">В наличии</span>
+            <button class="icon-btn cart-btn cart-btn-header" onclick="openCart()" aria-label="Корзина">
+                <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                <span class="cart-count hidden" id="cartCount-vaape">0</span>
+            </button>
+        </div>
     </div>
     <div class="image-gallery" data-product="vaape">
         <div class="gallery-container">
@@ -374,14 +333,14 @@
         <div class="divider"></div>
         <div class="variants">
             <h3>Выберите вкус (3 в 1)</h3>
-                <div class="variant-option" onclick="selectVariant(this,'vaape')">Red Bull / Blueberry Watermelon / Monster Drink</div>
-                <div class="variant-option" onclick="selectVariant(this,'vaape')">Mixed Berries / Red Bull / Peach Ice</div>
-                <div class="variant-option" onclick="selectVariant(this,'vaape')">Strawberry Watermelon / Cola Ice / Peach Ice</div>
-                <div class="variant-option" onclick="selectVariant(this,'vaape')">Blueberry Ice / Black Dragon Ice / Red Bull</div>
-                <div class="variant-option" onclick="selectVariant(this,'vaape')">Strawberry Raspberry Cherry / Kiwi Passion Fruit Guava / Blue Raspberry Ice</div>
-                <div class="variant-option" onclick="selectVariant(this,'vaape')">Double Apple Ice / Strawberry Dragonfruit / Red Bull</div>
-                <div class="variant-option" onclick="selectVariant(this,'vaape')">Peach Mango Pineapple / Strawberry Ice / Raspberry Watermelon</div>
-            </div>
+            <div class="variant-option" onclick="selectVariant(this,'vaape')">Red Bull / Blueberry Watermelon / Monster Drink</div>
+            <div class="variant-option" onclick="selectVariant(this,'vaape')">Strawberry Watermelon / Grape Ice / Blueberry Raspberry Ice</div>
+            <div class="variant-option" onclick="selectVariant(this,'vaape')">Strawberry Watermelon / Cola Ice / Peach Ice</div>
+            <div class="variant-option" onclick="selectVariant(this,'vaape')">Blueberry Ice / Black Dragon Ice / Red Bull</div>
+            <div class="variant-option" onclick="selectVariant(this,'vaape')">Strawberry Raspberry Cherry / Kiwi Passion Fruit Guava / Blue Raspberry Ice</div>
+            <div class="variant-option" onclick="selectVariant(this,'vaape')">Double Apple Ice / Strawberry Dragonfruit / Red Bull</div>
+            <div class="variant-option" onclick="selectVariant(this,'vaape')">Peach Mango Pineapple / Strawberry Ice / Raspberry Watermelon</div>
+        </div>
         <div class="quantity-section"><span class="quantity-label">Количество</span><div class="quantity-control"><button class="qty-btn" onclick="changeQty('vaape',-1)">−</button><span class="qty-value" id="qty-vaape">1</span><button class="qty-btn" onclick="changeQty('vaape',1)">+</button></div></div>
         <div class="detail-price"><span>15€</span> &nbsp;·&nbsp; Брак не меняем</div>
         <div class="error-message" id="error-vaape">Пожалуйста, выберите вкус</div>
@@ -392,7 +351,13 @@
 <div class="product-page" id="product-elfliq">
     <div class="product-header">
         <button class="back-button" onclick="closeProduct('elfliq')"><span class="back-arrow">←</span> Назад</button>
-        <span class="page-stock-badge stock-in" id="stockbadge-elfliq">В наличии</span>
+        <div class="product-header-right">
+            <span class="page-stock-badge stock-in" id="stockbadge-elfliq">В наличии</span>
+            <button class="icon-btn cart-btn cart-btn-header" onclick="openCart()" aria-label="Корзина">
+                <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                <span class="cart-count hidden" id="cartCount-elfliq">0</span>
+            </button>
+        </div>
     </div>
     <div class="image-gallery" data-product="elfliq">
         <div class="gallery-container">
@@ -422,7 +387,13 @@
 <div class="product-page" id="product-ivg">
     <div class="product-header">
         <button class="back-button" onclick="closeProduct('ivg')"><span class="back-arrow">←</span> Назад</button>
-        <span class="page-stock-badge stock-in" id="stockbadge-ivg">В наличии</span>
+        <div class="product-header-right">
+            <span class="page-stock-badge stock-in" id="stockbadge-ivg">В наличии</span>
+            <button class="icon-btn cart-btn cart-btn-header" onclick="openCart()" aria-label="Корзина">
+                <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                <span class="cart-count hidden" id="cartCount-ivg">0</span>
+            </button>
+        </div>
     </div>
     <div class="image-gallery" data-product="ivg">
         <div class="gallery-container">
@@ -452,7 +423,13 @@
 <div class="product-page" id="product-truesalt">
     <div class="product-header">
         <button class="back-button" onclick="closeProduct('truesalt')"><span class="back-arrow">←</span> Назад</button>
-        <span class="page-stock-badge stock-in" id="stockbadge-truesalt">В наличии</span>
+        <div class="product-header-right">
+            <span class="page-stock-badge stock-in" id="stockbadge-truesalt">В наличии</span>
+            <button class="icon-btn cart-btn cart-btn-header" onclick="openCart()" aria-label="Корзина">
+                <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                <span class="cart-count hidden" id="cartCount-truesalt">0</span>
+            </button>
+        </div>
     </div>
     <div class="image-gallery" data-product="truesalt">
         <div class="gallery-container">
@@ -478,7 +455,13 @@
 <div class="product-page" id="product-rave40k">
     <div class="product-header">
         <button class="back-button" onclick="closeProduct('rave40k')"><span class="back-arrow">←</span> Назад</button>
-        <span class="page-stock-badge stock-in" id="stockbadge-rave40k">В наличии</span>
+        <div class="product-header-right">
+            <span class="page-stock-badge stock-in" id="stockbadge-rave40k">В наличии</span>
+            <button class="icon-btn cart-btn cart-btn-header" onclick="openCart()" aria-label="Корзина">
+                <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                <span class="cart-count hidden" id="cartCount-rave40k">0</span>
+            </button>
+        </div>
     </div>
     <div class="image-gallery" data-product="rave40k">
         <div class="gallery-container">
@@ -504,7 +487,13 @@
 <div class="product-page" id="product-star40k">
     <div class="product-header">
         <button class="back-button" onclick="closeProduct('star40k')"><span class="back-arrow">←</span> Назад</button>
-        <span class="page-stock-badge stock-in" id="stockbadge-star40k">В наличии</span>
+        <div class="product-header-right">
+            <span class="page-stock-badge stock-in" id="stockbadge-star40k">В наличии</span>
+            <button class="icon-btn cart-btn cart-btn-header" onclick="openCart()" aria-label="Корзина">
+                <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                <span class="cart-count hidden" id="cartCount-star40k">0</span>
+            </button>
+        </div>
     </div>
     <div class="image-gallery" data-product="star40k">
         <div class="gallery-container">
@@ -531,7 +520,13 @@
 <div class="product-page" id="product-vista40k">
     <div class="product-header">
         <button class="back-button" onclick="closeProduct('vista40k')"><span class="back-arrow">←</span> Назад</button>
-        <span class="page-stock-badge stock-in" id="stockbadge-vista40k">В наличии</span>
+        <div class="product-header-right">
+            <span class="page-stock-badge stock-in" id="stockbadge-vista40k">В наличии</span>
+            <button class="icon-btn cart-btn cart-btn-header" onclick="openCart()" aria-label="Корзина">
+                <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                <span class="cart-count hidden" id="cartCount-vista40k">0</span>
+            </button>
+        </div>
     </div>
     <div class="image-gallery" data-product="vista40k">
         <div class="gallery-container">
@@ -558,7 +553,13 @@
 <div class="product-page" id="product-dk">
     <div class="product-header">
         <button class="back-button" onclick="closeProduct('dk')"><span class="back-arrow">←</span> Назад</button>
-        <span class="page-stock-badge stock-in" id="stockbadge-dk">В наличии</span>
+        <div class="product-header-right">
+            <span class="page-stock-badge stock-in" id="stockbadge-dk">В наличии</span>
+            <button class="icon-btn cart-btn cart-btn-header" onclick="openCart()" aria-label="Корзина">
+                <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                <span class="cart-count hidden" id="cartCount-dk">0</span>
+            </button>
+        </div>
     </div>
     <div class="image-gallery" data-product="dk">
         <div class="gallery-container">
@@ -584,7 +585,8 @@
         <button class="order-button" onclick="orderTelegram('dk')">Заказать в Telegram</button>
         <button class="add-to-cart-button" onclick="addToCart('dk')"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>Добавить в корзину</button>
     </div>
-</div><!-- PAGES_END -->
+</div>
+<!-- PAGES_END -->
 
 <div class="fullscreen-overlay" id="fullscreen">
     <button class="fullscreen-close" onclick="closeFullscreen()">×</button>
@@ -615,80 +617,63 @@
 
 <script>
 const TG_BOT_TOKEN = 'ВАШ_BOT_TOKEN';
-const TG_ADMIN_ID = 'ВАШ_TELEGRAM_ID';
+const TG_ADMIN_ID  = 'ВАШ_TELEGRAM_ID';
 
-
-// Регистрация пользователя при открытии мини-аппа
 (function registerWebAppUser() {
     try {
         const tg = window.Telegram?.WebApp;
-        if (!tg) {
-            fetch('https://paradise-users.dnynzvtpyb.workers.dev/', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ user: null, initData: '', debug: 'no_tg_object' })
-            }).catch(() => {});
-            return;
-        }
-
-        // Говорим Telegram что апп готов
+        if (!tg) return;
         tg.ready();
-
-        // Ждём немного и читаем данные
         setTimeout(() => {
             const user     = tg.initDataUnsafe?.user || null;
             const initData = tg.initData || '';
-
+            if (!user) return;
             fetch('https://paradise-users.dnynzvtpyb.workers.dev', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ user, initData })
             }).catch(() => {});
         }, 500);
-
     } catch(e) {}
 })();
-    
+
 async function sendStatToBot(pid) {
     if (!TG_BOT_TOKEN || TG_BOT_TOKEN === 'ВАШ_BOT_TOKEN') return;
     try {
         await fetch(`https://api.telegram.org/bot${TG_BOT_TOKEN}/sendMessage`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                chat_id: TG_ADMIN_ID,
-                text: `/stat ${pid}`
-            })
+            body: JSON.stringify({ chat_id: TG_ADMIN_ID, text: `/stat ${pid}` })
         });
-    } catch(e) { console.log('stat error', e); }
+    } catch(e) {}
 }
+
+const productData = {
+    'vaape':    { name: 'Vaape Triple 90K',     variant: '', qty: 1, badge: '', stock: 'in' },
+    'elfliq':   { name: 'Elfliq 50mg',          variant: '', qty: 1, badge: '', stock: 'in' },
+    'ivg':      { name: 'IVG 20mg',             variant: '', qty: 1, badge: '', stock: 'in' },
+    'truesalt': { name: 'True Salt 20mg',       variant: '', qty: 1, badge: '', stock: 'in' },
+    'rave40k':  { name: 'Vozol Rave 40k puffs', variant: '', qty: 1, badge: '', stock: 'in' },
+    'star40k':  { name: 'Vozol Star 40k puffs', variant: '', qty: 1, badge: '', stock: 'in' },
+    'vista40k': { name: 'Vozol Vista 40k puffs',variant: '', qty: 1, badge: '', stock: 'in' },
+    'dk':       { name: 'DK Salt 50mg',         variant: '', qty: 1, badge: '', stock: 'in' },
+};
+
+let cart = [];
 
 function updateShopClosedBanner(closed) {
     const overlay = document.getElementById('shopClosedOverlay');
-    const banner = document.getElementById('closedBanner');
+    const banner  = document.getElementById('closedBanner');
     if (closed) {
-        if (overlay) overlay.classList.add('active');
+        overlay?.classList.add('active');
         if (banner) banner.style.display = 'block';
         document.body.setAttribute('data-closed', '1');
     } else {
-        if (overlay) overlay.classList.remove('active');
+        overlay?.classList.remove('active');
         if (banner) banner.style.display = 'none';
         document.body.removeAttribute('data-closed');
     }
 }
-
-const productData = {
-    'vaape': { name: 'Vaape Triple 90K', variant: '', qty: 1, badge: '', stock: 'in' },
-    'elfliq': { name: 'Elfliq 50mg', variant: '', qty: 1, badge: '', stock: 'in' },
-    'ivg': { name: 'IVG 20mg', variant: '', qty: 1, badge: '', stock: 'in' },
-    'truesalt': { name: 'True Salt 20mg', variant: '', qty: 1, badge: '', stock: 'in' },
-    'rave40k': { name: 'Vozol Rave 40k puffs', variant: '', qty: 1, badge: '', stock: 'in' },
-    'star40k': { name: 'Vozol Star 40k puffs', variant: '', qty: 1, badge: '', stock: 'in' },
-    'vista40k': { name: 'Vozol Vista 40k puffs', variant: '', qty: 1, badge: '', stock: 'in' },
-    'dk': { name: 'DK Salt 50mg', variant: '', qty: 1, badge: '', stock: 'in' },
-};
-
-let cart = [];
 
 function openProduct(id) {
     const page = document.getElementById('product-' + id);
@@ -730,7 +715,7 @@ function orderTelegram(productId) {
         return;
     }
     const qty = parseInt(document.getElementById('qty-' + productId)?.textContent || '1');
-    const msg = `Здравствуйте, хочу заказать ${product.name}, вкус: ${product.variant}, количество: ${qty}`;
+    const msg = `Здравствуйте, хочу заказать:\n${product.name}, вкус: ${product.variant}, количество: ${qty}`;
     saveLastOrder([{ name: product.name, variant: product.variant, qty }]);
     sendStatToBot(productId);
     window.open('https://t.me/smkParadiseManager?text=' + encodeURIComponent(msg), '_blank');
@@ -743,13 +728,33 @@ function addToCart(productId) {
         if (err) err.classList.add('show');
         return;
     }
-    const qty = parseInt(document.getElementById('qty-' + productId)?.textContent || '1');
-    const imgEl = document.querySelector(`#product-${productId} .gallery-image`);
-    const img = imgEl ? imgEl.src : '';
+    const qty    = parseInt(document.getElementById('qty-' + productId)?.textContent || '1');
+    const imgEl  = document.querySelector(`#product-${productId} .gallery-image`);
+    const img    = imgEl ? imgEl.src : '';
     const existing = cart.find(i => i.id === productId && i.variant === product.variant);
     if (existing) { existing.qty = Math.min(existing.qty + qty, 99); }
     else { cart.push({ id: productId, name: product.name, variant: product.variant, qty, img }); }
     updateCartCount();
+
+    // Анимация полёта
+    if (imgEl) {
+        const cartBtn = document.querySelector(`#product-${productId} .cart-btn-header`);
+        const from    = imgEl.getBoundingClientRect();
+        const to      = cartBtn ? cartBtn.getBoundingClientRect() : document.querySelector('.cart-btn').getBoundingClientRect();
+        const fly = document.createElement('img');
+        fly.src = imgEl.src;
+        fly.className = 'fly-img';
+        fly.style.left = (from.left + from.width/2 - 30) + 'px';
+        fly.style.top  = (from.top  + from.height/2 - 30) + 'px';
+        document.body.appendChild(fly);
+        requestAnimationFrame(() => { requestAnimationFrame(() => {
+            fly.style.left = (to.left + to.width/2 - 10) + 'px';
+            fly.style.top  = (to.top  + to.height/2 - 10) + 'px';
+            fly.classList.add('fly-end');
+        }); });
+        setTimeout(() => fly.remove(), 700);
+    }
+
     const btn = document.querySelector(`#product-${productId} .add-to-cart-button`);
     if (btn && !btn._busy) {
         btn._busy = true;
@@ -758,18 +763,20 @@ function addToCart(productId) {
         setTimeout(() => { btn.innerHTML = orig; btn._busy = false; }, 1500);
     }
 }
+
 function updateCartCount() {
     const total = cart.reduce((s, i) => s + i.qty, 0);
-    const el = document.getElementById('cartCount');
-    if (!el) return;
-    if (total === 0) { el.classList.add('hidden'); return; }
-    el.classList.remove('hidden');
-    el.textContent = total > 99 ? '99+' : total;
-    el.classList.remove('bump'); void el.offsetWidth; el.classList.add('bump');
+    document.querySelectorAll('.cart-count').forEach(el => {
+        if (total === 0) { el.classList.add('hidden'); return; }
+        el.classList.remove('hidden');
+        el.textContent = total > 99 ? '99+' : total;
+        el.classList.remove('bump'); void el.offsetWidth; el.classList.add('bump');
+    });
 }
+
 function renderCartItems() {
     const container = document.getElementById('cartItems');
-    const orderBtn = document.getElementById('cartOrderBtn');
+    const orderBtn  = document.getElementById('cartOrderBtn');
     if (!container) return;
     if (cart.length === 0) {
         container.innerHTML = `<div class="cart-empty"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>Корзина пуста</div>`;
@@ -779,6 +786,7 @@ function renderCartItems() {
     if (orderBtn) orderBtn.disabled = false;
     container.innerHTML = cart.map((item, idx) => `<div class="cart-item" id="cart-item-${idx}"><img class="cart-item-img" src="${item.img}" alt="${item.name}"><div class="cart-item-info"><div class="cart-item-name">${item.name}</div><div class="cart-item-variant">${item.variant}</div><div class="cart-item-bottom"><div class="cart-qty-control"><button class="cart-qty-btn" onclick="changeCartQty(${idx},-1)">−</button><span class="cart-qty-val">${item.qty}</span><button class="cart-qty-btn" onclick="changeCartQty(${idx},1)">+</button></div><button class="cart-item-del" onclick="removeCartItem(${idx})"><svg viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4h6v2"/></svg></button></div></div></div>`).join('');
 }
+
 function changeCartQty(idx, delta) {
     if (!cart[idx]) return;
     cart[idx].qty = Math.max(1, Math.min(cart[idx].qty + delta, 99));
@@ -810,8 +818,7 @@ function toggleSearch() {
     else { clearSearch(); }
 }
 function clearSearch() {
-    const inp = document.getElementById('searchInput');
-    inp.value = '';
+    document.getElementById('searchInput').value = '';
     handleSearch('');
 }
 function handleSearch(q) {
@@ -825,21 +832,19 @@ function handleSearch(q) {
     document.querySelectorAll('.product-page').forEach(page => {
         const pid = page.id.replace('product-', '');
         const nameEl = page.querySelector('.detail-title');
-        const tagEl = page.querySelector('.detail-tag');
-        const imgEl = page.querySelector('.gallery-image');
+        const tagEl  = page.querySelector('.detail-tag');
+        const imgEl  = page.querySelector('.gallery-image');
         if (!nameEl) return;
         const matchedFlavors = [];
         page.querySelectorAll('.variant-option').forEach(opt => { if (opt.textContent.toLowerCase().includes(q)) matchedFlavors.push(opt.textContent.trim()); });
         if (matchedFlavors.length > 0) results.push({ pid, name: nameEl.textContent, tag: tagEl ? tagEl.textContent : '', img: imgEl ? imgEl.src : '', flavors: matchedFlavors });
     });
     if (results.length === 0) { resultsEl.innerHTML = '<div class="search-no-results">Ничего не найдено</div>'; return; }
-    function highlight(text, q) { const idx = text.toLowerCase().indexOf(q); if (idx < 0) return text; return text.slice(0, idx) + '<mark>' + text.slice(idx, idx + q.length) + '</mark>' + text.slice(idx + q.length); }
-    resultsEl.innerHTML = results.map(r => `<div class="search-result-item"><div class="sri-header" onclick="openProduct('${r.pid}'); clearSearch(); if(searchOpen) toggleSearch();"><img class="sri-img" src="${r.img}" alt="${r.name}"><div><div class="sri-name">${r.name}</div><div class="sri-tag">${r.tag}</div></div></div><div class="sri-flavors">${r.flavors.map(f => `<div class="sri-flavor" onclick="openProductWithFlavor('${r.pid}','${f.replace(/'/g,"\\'")}')"><span>${highlight(f, q)}</span><span class="sri-flavor-action">Открыть →</span></div>`).join('')}</div></div>`).join('');
+    function highlight(text, q) { const idx = text.toLowerCase().indexOf(q); if (idx < 0) return text; return text.slice(0,idx)+'<mark>'+text.slice(idx,idx+q.length)+'</mark>'+text.slice(idx+q.length); }
+    resultsEl.innerHTML = results.map(r => `<div class="search-result-item"><div class="sri-header" onclick="openProduct('${r.pid}'); clearSearch(); if(searchOpen) toggleSearch();"><img class="sri-img" src="${r.img}" alt="${r.name}"><div><div class="sri-name">${r.name}</div><div class="sri-tag">${r.tag}</div></div></div><div class="sri-flavors">${r.flavors.map(f=>`<div class="sri-flavor" onclick="openProductWithFlavor('${r.pid}','${f.replace(/'/g,"\\'")}')"><span>${highlight(f,q)}</span><span class="sri-flavor-action">Открыть →</span></div>`).join('')}</div></div>`).join('');
 }
 function openProductWithFlavor(pid, flavor) {
-    clearSearch();
-    if (searchOpen) toggleSearch();
-    openProduct(pid);
+    clearSearch(); if (searchOpen) toggleSearch(); openProduct(pid);
     setTimeout(() => {
         const page = document.getElementById('product-' + pid);
         if (!page) return;
@@ -872,7 +877,7 @@ function loadLastOrder() {
 function renderLastOrder(items) {
     const block = document.getElementById('lastOrderBlock');
     if (!block) return;
-    block.innerHTML = `<div class="last-order-banner"><div class="lob-header"><span class="lob-title">Ваш прошлый заказ</span><button class="lob-clear" onclick="clearLastOrder()">Скрыть</button></div><div class="lob-items">${items.map(i => `<div class="lob-item">${i.name} <span>· ${i.variant} · ${i.qty} шт</span></div>`).join('')}</div><button class="lob-reorder" onclick="reorder()">Повторить заказ</button></div>`;
+    block.innerHTML = `<div class="last-order-banner"><div class="lob-header"><span class="lob-title">Ваш прошлый заказ</span><button class="lob-clear" onclick="clearLastOrder()">Скрыть</button></div><div class="lob-items">${items.map(i=>`<div class="lob-item">${i.name} <span>· ${i.variant} · ${i.qty} шт</span></div>`).join('')}</div><button class="lob-reorder" onclick="reorder()">Повторить заказ</button></div>`;
 }
 function clearLastOrder() { try { localStorage.removeItem(LS_KEY); } catch(e) {} const block = document.getElementById('lastOrderBlock'); if (block) block.innerHTML = ''; }
 function reorder() {
@@ -886,10 +891,7 @@ function reorder() {
 }
 
 loadLastOrder();
-
-if (document.body.getAttribute('data-closed') === '1') {
-    updateShopClosedBanner(true);
-}
+if (document.body.getAttribute('data-closed') === '1') { updateShopClosedBanner(true); }
 </script>
 </body>
 </html>
