@@ -42,13 +42,11 @@
         .cart-count.bump { animation: bump 0.25s ease; }
         @keyframes bump { 0%,100%{transform:scale(1)} 50%{transform:scale(1.35)} }
 
-        /* Летящий товар в корзину */
         .fly-img { position: fixed; width: 60px; height: 60px; border-radius: 10px; object-fit: contain; background: var(--surface2); border: 1px solid var(--border); padding: 4px; mix-blend-mode: multiply; pointer-events: none; z-index: 9999; transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1); opacity: 1; }
         .fly-img.fly-end { width: 20px; height: 20px; opacity: 0; }
 
         .product-header-right { display: flex; align-items: center; gap: 8px; }
 
-        /* ПОИСК — ФИКС КРЕСТИКА */
         .search-bar-wrap { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; border-bottom: 0px solid var(--border); }
         .search-bar-wrap.open { max-height: 60px; border-bottom: 1px solid var(--border); }
         .search-bar-inner { padding: 10px 16px; display: flex; align-items: center; gap: 10px; background: var(--bg); }
@@ -188,20 +186,18 @@
         .shop-closed-card h2 { font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 12px; color: var(--accent); }
         .shop-closed-card p { color: var(--muted); font-size: 14px; line-height: 1.5; }
 
-        /* НОВЫЙ ФУТЕР ТОЛЬКО С КОПИРАЙТОМ И СОЦСЕТЯМИ (БЕЗ ИЗМЕНЕНИЯ СТРУКТУРЫ ТОВАРОВ) */
-        .site-footer { margin-top: 40px; padding: 32px 20px 28px; background: var(--surface); border-top: 1px solid var(--border); border-radius: 32px 32px 0 0; box-shadow: var(--shadow-card); text-align: center; }
-        .footer-copyright { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); margin-bottom: 24px; font-family: 'Jost', sans-serif; }
-        .social-links { display: flex; justify-content: center; gap: 28px; margin-bottom: 28px; flex-wrap: wrap; }
-        .social-item { display: flex; flex-direction: column; align-items: center; gap: 6px; text-decoration: none; transition: transform 0.2s; }
+        /* ФУТЕР — В САМОМ НИЗУ, МАЛЕНЬКИЙ КОПИРАЙТ */
+        .site-footer { margin-top: 60px; padding: 24px 20px 20px; background: var(--surface); border-top: 1px solid var(--border); text-align: center; }
+        .footer-copyright { font-size: 9px; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); margin-bottom: 16px; font-family: 'Jost', sans-serif; }
+        .social-links { display: flex; justify-content: center; gap: 24px; margin-bottom: 20px; flex-wrap: wrap; }
+        .social-item { display: flex; flex-direction: column; align-items: center; gap: 5px; text-decoration: none; transition: transform 0.2s; }
         .social-item:active { transform: scale(0.95); }
-        .social-icon { background: var(--bg); border: 1px solid var(--border); border-radius: 50px; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-card); }
-        .social-icon svg { width: 24px; height: 24px; stroke: var(--accent); fill: none; stroke-width: 1.8; }
-        .social-label { font-size: 11px; color: var(--text); font-weight: 500; letter-spacing: 1px; }
-        .contacts-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin-top: 12px; border-top: 1px solid var(--border); padding-top: 24px; }
-        .contact-link { display: flex; align-items: center; gap: 8px; background: var(--bg); padding: 8px 16px; border-radius: 40px; text-decoration: none; border: 1px solid var(--border); transition: all 0.2s; font-size: 13px; color: var(--text); }
-        .contact-link:active { background: var(--accent-light); border-color: var(--accent); }
-        .contact-link svg { width: 16px; height: 16px; stroke: var(--accent); fill: none; stroke-width: 1.8; }
-        .contact-link span { font-weight: 500; }
+        .social-icon { background: var(--bg); border: 1px solid var(--border); border-radius: 50px; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-card); }
+        .social-icon svg { width: 20px; height: 20px; stroke: var(--accent); fill: none; stroke-width: 1.8; }
+        .social-label { font-size: 10px; color: var(--text); font-weight: 400; letter-spacing: 0.8px; }
+        .contact-email { display: inline-flex; align-items: center; gap: 8px; background: var(--bg); padding: 8px 16px; border-radius: 40px; text-decoration: none; border: 1px solid var(--border); transition: all 0.2s; font-size: 12px; color: var(--text); margin-top: 8px; }
+        .contact-email:active { background: var(--accent-light); border-color: var(--accent); }
+        .contact-email svg { width: 14px; height: 14px; stroke: var(--accent); fill: none; stroke-width: 1.8; }
 
         @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
     </style>
@@ -333,7 +329,7 @@
     </div>
 </div>
 
-<!-- НОВЫЙ ФУТЕР — ТОЛЬКО ВИЗУАЛ, НЕ ЛОМАЕТ СТРУКТУРУ -->
+<!-- ФУТЕР — В САМОМ НИЗУ, КОПИРАЙТ МАЛЕНЬКИЙ, ПОЧТА РАБОТАЕТ -->
 <div class="site-footer">
     <div class="footer-copyright">© 2025-2026 CyberCold, Co-founder of Paradise. All rights reserved.</div>
     <div class="social-links">
@@ -341,32 +337,299 @@
             <div class="social-icon"><svg viewBox="0 0 24 24"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/><path d="M11 13L22 2"/></svg></div>
             <span class="social-label">Менеджер</span>
         </a>
-        <a href="https://t.me/paradise_channel" class="social-item" target="_blank">
-            <div class="social-icon"><svg viewBox="0 0 24 24"><path d="M4 4L20 12 4 20 4 4z"/><polyline points="10 12 15 9 10 6 10 12z"/></svg></div>
+        <a href="https://t.me/+QyMgpz4r5YRjMjg0" class="social-item" target="_blank">
+            <div class="social-icon"><svg viewBox="0 0 24 24"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/><path d="M11 13L22 2"/></svg></div>
             <span class="social-label">Наш канал</span>
         </a>
-        <a href="https://t.me/paradise_info" class="social-item" target="_blank">
-            <div class="social-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></div>
+        <a href="https://t.me/sparadiseinfo" class="social-item" target="_blank">
+            <div class="social-icon"><svg viewBox="0 0 24 24"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/><path d="M11 13L22 2"/></svg></div>
             <span class="social-label">Информация</span>
         </a>
     </div>
-    <div class="contacts-grid">
-        <a href="mailto:paradise@example.com" class="contact-link">
-            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <span>Написать нам</span>
-        </a>
-    </div>
+    <a href="mailto:sparadiselatvia@gmail.com" class="contact-email">
+        <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <span>Написать нам</span>
+    </a>
 </div>
 
-<!-- СТРАНИЦЫ ТОВАРОВ (ПОЛНОСТЬЮ СОХРАНЕНЫ, БЕЗ ИЗМЕНЕНИЙ) -->
-<div class="product-page" id="product-vaape"><div class="product-header"><button class="back-button" onclick="closeProduct('vaape')"><span class="back-arrow">←</span> Назад</button><div class="product-header-right"><span class="page-stock-badge stock-in" id="stockbadge-vaape">В наличии</span><button class="icon-btn cart-btn cart-btn-header" onclick="openCart()" aria-label="Корзина"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg><span class="cart-count hidden" id="cartCount-vaape">0</span></button></div></div><div class="image-gallery" data-product="vaape"><div class="gallery-container"><img src="https://www.serisvape.com/wp-content/uploads/2025/10/Unboxing-the-Vaapee-Triple-90K-Triple-the-Flavor-Triple-the-Fun-768x768.jpg" alt="Vaape Triple 90K" class="gallery-image" onclick="openFullscreen('vaape',0)"></div></div><div class="detail-content"><div class="detail-tag">Disposable</div><div class="detail-title">Vaape Triple 90K</div><div class="detail-subtitle">90 000 puffs · Triple Flavor</div><div class="divider"></div><div class="variants"><h3>Выберите вкус (3 в 1)</h3><div class="variant-option" onclick="selectVariant(this,'vaape')">Red Bull / Blueberry Watermelon / Monster Drink</div><div class="variant-option" onclick="selectVariant(this,'vaape')">Strawberry Watermelon / Grape Ice / Blueberry Raspberry Ice</div><div class="variant-option" onclick="selectVariant(this,'vaape')">Strawberry Watermelon / Cola Ice / Peach Ice</div><div class="variant-option" onclick="selectVariant(this,'vaape')">Blueberry Ice / Black Dragon Ice / Red Bull</div><div class="variant-option" onclick="selectVariant(this,'vaape')">Strawberry Raspberry Cherry / Kiwi Passion Fruit Guava / Blue Raspberry Ice</div><div class="variant-option" onclick="selectVariant(this,'vaape')">Double Apple Ice / Strawberry Dragonfruit / Red Bull</div><div class="variant-option" onclick="selectVariant(this,'vaape')">Peach Mango Pineapple / Strawberry Ice / Raspberry Watermelon</div></div><div class="quantity-section"><span class="quantity-label">Количество</span><div class="quantity-control"><button class="qty-btn" onclick="changeQty('vaape',-1)">−</button><span class="qty-value" id="qty-vaape">1</span><button class="qty-btn" onclick="changeQty('vaape',1)">+</button></div></div><div class="detail-price"><span>15€</span> &nbsp;·&nbsp; Брак не меняем</div><div class="error-message" id="error-vaape">Пожалуйста, выберите вкус</div><button class="order-button" onclick="orderTelegram('vaape')">Заказать в Telegram</button><button class="add-to-cart-button" onclick="addToCart('vaape')"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>Добавить в корзину</button></div></div>
-<div class="product-page" id="product-elfliq"><div class="product-header"><button class="back-button" onclick="closeProduct('elfliq')"><span class="back-arrow">←</span> Назад</button><div class="product-header-right"><span class="page-stock-badge stock-in" id="stockbadge-elfliq">В наличии</span><button class="icon-btn cart-btn cart-btn-header" onclick="openCart()" aria-label="Корзина"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg><span class="cart-count hidden" id="cartCount-elfliq">0</span></button></div></div><div class="image-gallery" data-product="elfliq"><div class="gallery-container"><img src="https://pufflab.pro/wp-content/uploads/2025/04/Elfliq-30ml-50mg-liquidy-30ml-Pufflab.webp" alt="Elfliq 50mg" class="gallery-image" onclick="openFullscreen('elfliq',0)"></div></div><div class="detail-content"><div class="detail-tag">Salt Nicotine</div><div class="detail-title">Elfliq</div><div class="detail-subtitle">50mg · Salt Nicotine</div><div class="divider"></div><div class="variants"><h3>Выберите вкус</h3><div class="variant-option" onclick="selectVariant(this,'elfliq')">Lemon Lime</div><div class="variant-option" onclick="selectVariant(this,'elfliq')">Cool Mint</div><div class="variant-option" onclick="selectVariant(this,'elfliq')">Blue Razz Lemonade</div><div class="variant-option" onclick="selectVariant(this,'elfliq')">Blueberry</div><div class="variant-option" onclick="selectVariant(this,'elfliq')">Pineapple Ice</div></div><div class="quantity-section"><span class="quantity-label">Количество</span><div class="quantity-control"><button class="qty-btn" onclick="changeQty('elfliq',-1)">−</button><span class="qty-value" id="qty-elfliq">1</span><button class="qty-btn" onclick="changeQty('elfliq',1)">+</button></div></div><div class="detail-price"><span>13€</span> · 1 шт<br><span>25€</span> · 2 шт<br><span>33€</span> · 3 шт<br><span>50€</span> · 5 шт</div><div class="error-message" id="error-elfliq">Пожалуйста, выберите вкус</div><button class="order-button" onclick="orderTelegram('elfliq')">Заказать в Telegram</button><button class="add-to-cart-button" onclick="addToCart('elfliq')"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>Добавить в корзину</button></div></div>
-<div class="product-page" id="product-ivg"><div class="product-header"><button class="back-button" onclick="closeProduct('ivg')"><span class="back-arrow">←</span> Назад</button><div class="product-header-right"><span class="page-stock-badge stock-in" id="stockbadge-ivg">В наличии</span><button class="icon-btn cart-btn cart-btn-header" onclick="openCart()" aria-label="Корзина"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg><span class="cart-count hidden" id="cartCount-ivg">0</span></button></div></div><div class="image-gallery" data-product="ivg"><div class="gallery-container"><img src="https://ivapegreat.com/cdn/shop/files/IVG_INTENSE_Salts_Thumbnail_Blue.png?v=1774900241" alt="IVG 20mg" class="gallery-image" onclick="openFullscreen('ivg',0)"></div></div><div class="detail-content"><div class="detail-tag">Salt Nicotine</div><div class="detail-title">IVG</div><div class="detail-subtitle">10ml · 20mg · Salt Nicotine</div><div class="divider"></div><div class="variants"><h3>Выберите вкус</h3><div class="variant-option" onclick="selectVariant(this,'ivg')">Blackcurrant Mango</div><div class="variant-option" onclick="selectVariant(this,'ivg')">Honey Dew</div><div class="variant-option" onclick="selectVariant(this,'ivg')">Pink Fizz</div><div class="variant-option" onclick="selectVariant(this,'ivg')">Iced Melonade</div><div class="variant-option" onclick="selectVariant(this,'ivg')">Ice Menthol</div></div><div class="quantity-section"><span class="quantity-label">Количество</span><div class="quantity-control"><button class="qty-btn" onclick="changeQty('ivg',-1)">−</button><span class="qty-value" id="qty-ivg">1</span><button class="qty-btn" onclick="changeQty('ivg',1)">+</button></div></div><div class="detail-price"><span>5€</span> · 1 шт<br><span>13€</span> · 3 шт</div><div class="error-message" id="error-ivg">Пожалуйста, выберите вкус</div><button class="order-button" onclick="orderTelegram('ivg')">Заказать в Telegram</button><button class="add-to-cart-button" onclick="addToCart('ivg')"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>Добавить в корзину</button></div></div>
-<div class="product-page" id="product-truesalt"><div class="product-header"><button class="back-button" onclick="closeProduct('truesalt')"><span class="back-arrow">←</span> Назад</button><div class="product-header-right"><span class="page-stock-badge stock-in" id="stockbadge-truesalt">В наличии</span><button class="icon-btn cart-btn cart-btn-header" onclick="openCart()" aria-label="Корзина"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg><span class="cart-count hidden" id="cartCount-truesalt">0</span></button></div></div><div class="image-gallery" data-product="truesalt"><div class="gallery-container"><img src="https://juicedoutvapes.co.uk/cdn/shop/products/4_4be7c1d9-da53-4be0-bb22-0803b4372edf.png?v=1602267819" alt="True Salt 20mg" class="gallery-image" onclick="openFullscreen('truesalt',0)"></div></div><div class="detail-content"><div class="detail-tag">Salt Nicotine</div><div class="detail-title">True Salt</div><div class="detail-subtitle">10ml · 20mg · Salt Nicotine</div><div class="divider"></div><div class="variants"><h3>Выберите вкус</h3><div class="variant-option" onclick="selectVariant(this,'truesalt')">Banana Ice</div></div><div class="quantity-section"><span class="quantity-label">Количество</span><div class="quantity-control"><button class="qty-btn" onclick="changeQty('truesalt',-1)">−</button><span class="qty-value" id="qty-truesalt">1</span><button class="qty-btn" onclick="changeQty('truesalt',1)">+</button></div></div><div class="detail-price"><span>5€</span> · 1 шт<br><span>13€</span> · 3 шт</div><div class="error-message" id="error-truesalt">Пожалуйста, выберите вкус</div><button class="order-button" onclick="orderTelegram('truesalt')">Заказать в Telegram</button><button class="add-to-cart-button" onclick="addToCart('truesalt')"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>Добавить в корзину</button></div></div>
-<div class="product-page" id="product-rave40k"><div class="product-header"><button class="back-button" onclick="closeProduct('rave40k')"><span class="back-arrow">←</span> Назад</button><div class="product-header-right"><span class="page-stock-badge stock-in" id="stockbadge-rave40k">В наличии</span><button class="icon-btn cart-btn cart-btn-header" onclick="openCart()" aria-label="Корзина"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg><span class="cart-count hidden" id="cartCount-rave40k">0</span></button></div></div><div class="image-gallery" data-product="rave40k"><div class="gallery-container"><img src="https://vapemaison.com/wp-content/uploads/2025/12/vozol-rave-40000-Blueberry-Ice-2-768x768-1.webp" alt="Vozol Rave 40k puffs" class="gallery-image" onclick="openFullscreen('rave40k',0)"></div></div><div class="detail-content"><div class="detail-tag">Disposable</div><div class="detail-title">Vozol Rave 40k puffs</div><div class="detail-subtitle">40 000 puffs · 50mg · Salt Nicotine</div><div class="divider"></div><div class="variants"><h3>Выберите вкус</h3><div class="variant-option" onclick="selectVariant(this,'rave40k')">Strawberry Watermelon</div></div><div class="quantity-section"><span class="quantity-label">Количество</span><div class="quantity-control"><button class="qty-btn" onclick="changeQty('rave40k',-1)">−</button><span class="qty-value" id="qty-rave40k">1</span><button class="qty-btn" onclick="changeQty('rave40k',1)">+</button></div></div><div class="detail-price"><span>20€</span></div><div class="error-message" id="error-rave40k">Пожалуйста, выберите вкус</div><button class="order-button" onclick="orderTelegram('rave40k')">Заказать в Telegram</button><button class="add-to-cart-button" onclick="addToCart('rave40k')"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>Добавить в корзину</button></div></div>
-<div class="product-page" id="product-star40k"><div class="product-header"><button class="back-button" onclick="closeProduct('star40k')"><span class="back-arrow">←</span> Назад</button><div class="product-header-right"><span class="page-stock-badge stock-in" id="stockbadge-star40k">В наличии</span><button class="icon-btn cart-btn cart-btn-header" onclick="openCart()" aria-label="Корзина"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg><span class="cart-count hidden" id="cartCount-star40k">0</span></button></div></div><div class="image-gallery" data-product="star40k"><div class="gallery-container"><img src="https://elfvaping.com/wp-content/uploads/2025/06/Vozol-Star-40k-Puffs-LED-Screen-Low-Nicotine-Bulk-Buy-Original-Rechargeable-Disposable-Vapes-Wholesale-1.webp" alt="Vozol Star 40k puffs" class="gallery-image" onclick="openFullscreen('star40k',0)"></div></div><div class="detail-content"><div class="detail-tag">Disposable</div><div class="detail-title">Vozol Star 40k puffs</div><div class="detail-subtitle">40 000 puffs · 50mg · Salt Nicotine</div><div class="divider"></div><div class="variants"><h3>Выберите вкус</h3><div class="variant-option" onclick="selectVariant(this,'star40k')">Watermelon Grape Boysenberry</div><div class="variant-option" onclick="selectVariant(this,'star40k')">Blue Razz Ice</div></div><div class="quantity-section"><span class="quantity-label">Количество</span><div class="quantity-control"><button class="qty-btn" onclick="changeQty('star40k',-1)">−</button><span class="qty-value" id="qty-star40k">1</span><button class="qty-btn" onclick="changeQty('star40k',1)">+</button></div></div><div class="detail-price"><span>20€</span></div><div class="error-message" id="error-star40k">Пожалуйста, выберите вкус</div><button class="order-button" onclick="orderTelegram('star40k')">Заказать в Telegram</button><button class="add-to-cart-button" onclick="addToCart('star40k')"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>Добавить в корзину</button></div></div>
-<div class="product-page" id="product-vista40k"><div class="product-header"><button class="back-button" onclick="closeProduct('vista40k')"><span class="back-arrow">←</span> Назад</button><div class="product-header-right"><span class="page-stock-badge stock-in" id="stockbadge-vista40k">В наличии</span><button class="icon-btn cart-btn cart-btn-header" onclick="openCart()" aria-label="Корзина"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg><span class="cart-count hidden" id="cartCount-vista40k">0</span></button></div></div><div class="image-gallery" data-product="vista40k"><div class="gallery-container"><img src="https://static.insales-cdn.com/r/Wyjdakq5fKM/rs:fit:1000:1000:1/plain/images/products/1/3553/2387275233/Peach-Berry-6.jpg.webp@webp" alt="Vozol Vista 40k puffs" class="gallery-image" onclick="openFullscreen('vista40k',0)"></div></div><div class="detail-content"><div class="detail-tag">Disposable</div><div class="detail-title">Vozol Vista 40k puffs</div><div class="detail-subtitle">40 000 puffs · 50mg · Salt Nicotine</div><div class="divider"></div><div class="variants"><h3>Выберите вкус</h3><div class="variant-option" onclick="selectVariant(this,'vista40k')">Watermelon Bubblegum</div><div class="variant-option" onclick="selectVariant(this,'vista40k')">Melon Gum</div></div><div class="quantity-section"><span class="quantity-label">Количество</span><div class="quantity-control"><button class="qty-btn" onclick="changeQty('vista40k',-1)">−</button><span class="qty-value" id="qty-vista40k">1</span><button class="qty-btn" onclick="changeQty('vista40k',1)">+</button></div></div><div class="detail-price"><span>20€</span></div><div class="error-message" id="error-vista40k">Пожалуйста, выберите вкус</div><button class="order-button" onclick="orderTelegram('vista40k')">Заказать в Telegram</button><button class="add-to-cart-button" onclick="addToCart('vista40k')"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>Добавить в корзину</button></div></div>
-<div class="product-page" id="product-dk"><div class="product-header"><button class="back-button" onclick="closeProduct('dk')"><span class="back-arrow">←</span> Назад</button><div class="product-header-right"><span class="page-stock-badge stock-in" id="stockbadge-dk">В наличии</span><button class="icon-btn cart-btn cart-btn-header" onclick="openCart()" aria-label="Корзина"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg><span class="cart-count hidden" id="cartCount-dk">0</span></button></div></div><div class="image-gallery" data-product="dk"><div class="gallery-container"><img src="https://dkeliquid.co.uk/wp-content/uploads/2024/11/DK-1st-Section-1024x1024.png" alt="DK Salt 50mg" class="gallery-image" onclick="openFullscreen('dk',0)"></div></div><div class="detail-content"><div class="detail-tag">Salt Nicotine</div><div class="detail-title">DK Salt 50mg</div><div class="detail-subtitle">30ml · 50mg · Salt Nicotine</div><div class="divider"></div><div class="variants"><h3>Выберите вкус</h3><div class="variant-option" onclick="selectVariant(this,'dk')">Cherry Cola</div><div class="variant-option" onclick="selectVariant(this,'dk')">Strawberry Kiwi</div><div class="variant-option" onclick="selectVariant(this,'dk')">White Peach</div><div class="variant-option" onclick="selectVariant(this,'dk')">Red Energy Ice</div><div class="variant-option" onclick="selectVariant(this,'dk')">Cherry Lime Fizz</div></div><div class="quantity-section"><span class="quantity-label">Количество</span><div class="quantity-control"><button class="qty-btn" onclick="changeQty('dk',-1)">−</button><span class="qty-value" id="qty-dk">1</span><button class="qty-btn" onclick="changeQty('dk',1)">+</button></div></div><div class="detail-price"><span>13€</span> · 1 шт<br><span>25€</span> · 2 шт<br><span>33€</span> · 3 шт<br><span>50€</span> · 5 шт</div><div class="error-message" id="error-dk">Пожалуйста, выберите вкус</div><button class="order-button" onclick="orderTelegram('dk')">Заказать в Telegram</button><button class="add-to-cart-button" onclick="addToCart('dk')"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>Добавить в корзину</button></div></div>
+<!-- PAGES_START -->
+<div class="product-page" id="product-vaape">
+    <div class="product-header">
+        <button class="back-button" onclick="closeProduct('vaape')"><span class="back-arrow">←</span> Назад</button>
+        <div class="product-header-right">
+            <span class="page-stock-badge stock-in" id="stockbadge-vaape">В наличии</span>
+            <button class="icon-btn cart-btn cart-btn-header" onclick="openCart()" aria-label="Корзина">
+                <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                <span class="cart-count hidden" id="cartCount-vaape">0</span>
+            </button>
+        </div>
+    </div>
+    <div class="image-gallery" data-product="vaape">
+        <div class="gallery-container">
+            <img src="https://www.serisvape.com/wp-content/uploads/2025/10/Unboxing-the-Vaapee-Triple-90K-Triple-the-Flavor-Triple-the-Fun-768x768.jpg" alt="Vaape Triple 90K" class="gallery-image" onclick="openFullscreen('vaape',0)">
+        </div>
+    </div>
+    <div class="detail-content">
+        <div class="detail-tag">Disposable</div>
+        <div class="detail-title">Vaape Triple 90K</div>
+        <div class="detail-subtitle">90 000 puffs · Triple Flavor</div>
+        <div class="divider"></div>
+        <div class="variants">
+            <h3>Выберите вкус (3 в 1)</h3>
+            <div class="variant-option" onclick="selectVariant(this,'vaape')">Red Bull / Blueberry Watermelon / Monster Drink</div>
+            <div class="variant-option" onclick="selectVariant(this,'vaape')">Strawberry Watermelon / Grape Ice / Blueberry Raspberry Ice</div>
+            <div class="variant-option" onclick="selectVariant(this,'vaape')">Strawberry Watermelon / Cola Ice / Peach Ice</div>
+            <div class="variant-option" onclick="selectVariant(this,'vaape')">Blueberry Ice / Black Dragon Ice / Red Bull</div>
+            <div class="variant-option" onclick="selectVariant(this,'vaape')">Strawberry Raspberry Cherry / Kiwi Passion Fruit Guava / Blue Raspberry Ice</div>
+            <div class="variant-option" onclick="selectVariant(this,'vaape')">Double Apple Ice / Strawberry Dragonfruit / Red Bull</div>
+            <div class="variant-option" onclick="selectVariant(this,'vaape')">Peach Mango Pineapple / Strawberry Ice / Raspberry Watermelon</div>
+        </div>
+        <div class="quantity-section"><span class="quantity-label">Количество</span><div class="quantity-control"><button class="qty-btn" onclick="changeQty('vaape',-1)">−</button><span class="qty-value" id="qty-vaape">1</span><button class="qty-btn" onclick="changeQty('vaape',1)">+</button></div></div>
+        <div class="detail-price"><span>15€</span> &nbsp;·&nbsp; Брак не меняем</div>
+        <div class="error-message" id="error-vaape">Пожалуйста, выберите вкус</div>
+        <button class="order-button" onclick="orderTelegram('vaape')">Заказать в Telegram</button>
+        <button class="add-to-cart-button" onclick="addToCart('vaape')"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>Добавить в корзину</button>
+    </div>
+</div>
+<div class="product-page" id="product-elfliq">
+    <div class="product-header">
+        <button class="back-button" onclick="closeProduct('elfliq')"><span class="back-arrow">←</span> Назад</button>
+        <div class="product-header-right">
+            <span class="page-stock-badge stock-in" id="stockbadge-elfliq">В наличии</span>
+            <button class="icon-btn cart-btn cart-btn-header" onclick="openCart()" aria-label="Корзина">
+                <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                <span class="cart-count hidden" id="cartCount-elfliq">0</span>
+            </button>
+        </div>
+    </div>
+    <div class="image-gallery" data-product="elfliq">
+        <div class="gallery-container">
+            <img src="https://pufflab.pro/wp-content/uploads/2025/04/Elfliq-30ml-50mg-liquidy-30ml-Pufflab.webp" alt="Elfliq 50mg" class="gallery-image" onclick="openFullscreen('elfliq',0)">
+        </div>
+    </div>
+    <div class="detail-content">
+        <div class="detail-tag">Salt Nicotine</div>
+        <div class="detail-title">Elfliq</div>
+        <div class="detail-subtitle">50mg · Salt Nicotine</div>
+        <div class="divider"></div>
+        <div class="variants">
+            <h3>Выберите вкус</h3>
+            <div class="variant-option" onclick="selectVariant(this,'elfliq')">Lemon Lime</div>
+            <div class="variant-option" onclick="selectVariant(this,'elfliq')">Cool Mint</div>
+            <div class="variant-option" onclick="selectVariant(this,'elfliq')">Blue Razz Lemonade</div>
+            <div class="variant-option" onclick="selectVariant(this,'elfliq')">Blueberry</div>
+            <div class="variant-option" onclick="selectVariant(this,'elfliq')">Pineapple Ice</div>
+        </div>
+        <div class="quantity-section"><span class="quantity-label">Количество</span><div class="quantity-control"><button class="qty-btn" onclick="changeQty('elfliq',-1)">−</button><span class="qty-value" id="qty-elfliq">1</span><button class="qty-btn" onclick="changeQty('elfliq',1)">+</button></div></div>
+        <div class="detail-price"><span>13€</span> · 1 шт<br><span>25€</span> · 2 шт<br><span>33€</span> · 3 шт<br><span>50€</span> · 5 шт</div>
+        <div class="error-message" id="error-elfliq">Пожалуйста, выберите вкус</div>
+        <button class="order-button" onclick="orderTelegram('elfliq')">Заказать в Telegram</button>
+        <button class="add-to-cart-button" onclick="addToCart('elfliq')"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>Добавить в корзину</button>
+    </div>
+</div>
+<div class="product-page" id="product-ivg">
+    <div class="product-header">
+        <button class="back-button" onclick="closeProduct('ivg')"><span class="back-arrow">←</span> Назад</button>
+        <div class="product-header-right">
+            <span class="page-stock-badge stock-in" id="stockbadge-ivg">В наличии</span>
+            <button class="icon-btn cart-btn cart-btn-header" onclick="openCart()" aria-label="Корзина">
+                <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                <span class="cart-count hidden" id="cartCount-ivg">0</span>
+            </button>
+        </div>
+    </div>
+    <div class="image-gallery" data-product="ivg">
+        <div class="gallery-container">
+            <img src="https://ivapegreat.com/cdn/shop/files/IVG_INTENSE_Salts_Thumbnail_Blue.png?v=1774900241" alt="IVG 20mg" class="gallery-image" onclick="openFullscreen('ivg',0)">
+        </div>
+    </div>
+    <div class="detail-content">
+        <div class="detail-tag">Salt Nicotine</div>
+        <div class="detail-title">IVG</div>
+        <div class="detail-subtitle">10ml · 20mg · Salt Nicotine</div>
+        <div class="divider"></div>
+        <div class="variants">
+            <h3>Выберите вкус</h3>
+            <div class="variant-option" onclick="selectVariant(this,'ivg')">Blackcurrant Mango</div>
+            <div class="variant-option" onclick="selectVariant(this,'ivg')">Honey Dew</div>
+            <div class="variant-option" onclick="selectVariant(this,'ivg')">Pink Fizz</div>
+            <div class="variant-option" onclick="selectVariant(this,'ivg')">Iced Melonade</div>
+            <div class="variant-option" onclick="selectVariant(this,'ivg')">Ice Menthol</div>
+        </div>
+        <div class="quantity-section"><span class="quantity-label">Количество</span><div class="quantity-control"><button class="qty-btn" onclick="changeQty('ivg',-1)">−</button><span class="qty-value" id="qty-ivg">1</span><button class="qty-btn" onclick="changeQty('ivg',1)">+</button></div></div>
+        <div class="detail-price"><span>5€</span> · 1 шт<br><span>13€</span> · 3 шт</div>
+        <div class="error-message" id="error-ivg">Пожалуйста, выберите вкус</div>
+        <button class="order-button" onclick="orderTelegram('ivg')">Заказать в Telegram</button>
+        <button class="add-to-cart-button" onclick="addToCart('ivg')"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>Добавить в корзину</button>
+    </div>
+</div>
+<div class="product-page" id="product-truesalt">
+    <div class="product-header">
+        <button class="back-button" onclick="closeProduct('truesalt')"><span class="back-arrow">←</span> Назад</button>
+        <div class="product-header-right">
+            <span class="page-stock-badge stock-in" id="stockbadge-truesalt">В наличии</span>
+            <button class="icon-btn cart-btn cart-btn-header" onclick="openCart()" aria-label="Корзина">
+                <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                <span class="cart-count hidden" id="cartCount-truesalt">0</span>
+            </button>
+        </div>
+    </div>
+    <div class="image-gallery" data-product="truesalt">
+        <div class="gallery-container">
+            <img src="https://juicedoutvapes.co.uk/cdn/shop/products/4_4be7c1d9-da53-4be0-bb22-0803b4372edf.png?v=1602267819" alt="True Salt 20mg" class="gallery-image" onclick="openFullscreen('truesalt',0)">
+        </div>
+    </div>
+    <div class="detail-content">
+        <div class="detail-tag">Salt Nicotine</div>
+        <div class="detail-title">True Salt</div>
+        <div class="detail-subtitle">10ml · 20mg · Salt Nicotine</div>
+        <div class="divider"></div>
+        <div class="variants">
+            <h3>Выберите вкус</h3>
+            <div class="variant-option" onclick="selectVariant(this,'truesalt')">Banana Ice</div>
+        </div>
+        <div class="quantity-section"><span class="quantity-label">Количество</span><div class="quantity-control"><button class="qty-btn" onclick="changeQty('truesalt',-1)">−</button><span class="qty-value" id="qty-truesalt">1</span><button class="qty-btn" onclick="changeQty('truesalt',1)">+</button></div></div>
+        <div class="detail-price"><span>5€</span> · 1 шт<br><span>13€</span> · 3 шт</div>
+        <div class="error-message" id="error-truesalt">Пожалуйста, выберите вкус</div>
+        <button class="order-button" onclick="orderTelegram('truesalt')">Заказать в Telegram</button>
+        <button class="add-to-cart-button" onclick="addToCart('truesalt')"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>Добавить в корзину</button>
+    </div>
+</div>
+<div class="product-page" id="product-rave40k">
+    <div class="product-header">
+        <button class="back-button" onclick="closeProduct('rave40k')"><span class="back-arrow">←</span> Назад</button>
+        <div class="product-header-right">
+            <span class="page-stock-badge stock-in" id="stockbadge-rave40k">В наличии</span>
+            <button class="icon-btn cart-btn cart-btn-header" onclick="openCart()" aria-label="Корзина">
+                <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                <span class="cart-count hidden" id="cartCount-rave40k">0</span>
+            </button>
+        </div>
+    </div>
+    <div class="image-gallery" data-product="rave40k">
+        <div class="gallery-container">
+            <img src="https://vapemaison.com/wp-content/uploads/2025/12/vozol-rave-40000-Blueberry-Ice-2-768x768-1.webp" alt="Vozol Rave 40k puffs" class="gallery-image" onclick="openFullscreen('rave40k',0)">
+        </div>
+    </div>
+    <div class="detail-content">
+        <div class="detail-tag">Disposable</div>
+        <div class="detail-title">Vozol Rave 40k puffs</div>
+        <div class="detail-subtitle">40 000 puffs · 50mg · Salt Nicotine</div>
+        <div class="divider"></div>
+        <div class="variants">
+            <h3>Выберите вкус</h3>
+            <div class="variant-option" onclick="selectVariant(this,'rave40k')">Strawberry Watermelon</div>
+        </div>
+        <div class="quantity-section"><span class="quantity-label">Количество</span><div class="quantity-control"><button class="qty-btn" onclick="changeQty('rave40k',-1)">−</button><span class="qty-value" id="qty-rave40k">1</span><button class="qty-btn" onclick="changeQty('rave40k',1)">+</button></div></div>
+        <div class="detail-price"><span>20€</span></div>
+        <div class="error-message" id="error-rave40k">Пожалуйста, выберите вкус</div>
+        <button class="order-button" onclick="orderTelegram('rave40k')">Заказать в Telegram</button>
+        <button class="add-to-cart-button" onclick="addToCart('rave40k')"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>Добавить в корзину</button>
+    </div>
+</div>
+<div class="product-page" id="product-star40k">
+    <div class="product-header">
+        <button class="back-button" onclick="closeProduct('star40k')"><span class="back-arrow">←</span> Назад</button>
+        <div class="product-header-right">
+            <span class="page-stock-badge stock-in" id="stockbadge-star40k">В наличии</span>
+            <button class="icon-btn cart-btn cart-btn-header" onclick="openCart()" aria-label="Корзина">
+                <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                <span class="cart-count hidden" id="cartCount-star40k">0</span>
+            </button>
+        </div>
+    </div>
+    <div class="image-gallery" data-product="star40k">
+        <div class="gallery-container">
+            <img src="https://elfvaping.com/wp-content/uploads/2025/06/Vozol-Star-40k-Puffs-LED-Screen-Low-Nicotine-Bulk-Buy-Original-Rechargeable-Disposable-Vapes-Wholesale-1.webp" alt="Vozol Star 40k puffs" class="gallery-image" onclick="openFullscreen('star40k',0)">
+        </div>
+    </div>
+    <div class="detail-content">
+        <div class="detail-tag">Disposable</div>
+        <div class="detail-title">Vozol Star 40k puffs</div>
+        <div class="detail-subtitle">40 000 puffs · 50mg · Salt Nicotine</div>
+        <div class="divider"></div>
+        <div class="variants">
+            <h3>Выберите вкус</h3>
+            <div class="variant-option" onclick="selectVariant(this,'star40k')">Watermelon Grape Boysenberry</div>
+            <div class="variant-option" onclick="selectVariant(this,'star40k')">Blue Razz Ice</div>
+        </div>
+        <div class="quantity-section"><span class="quantity-label">Количество</span><div class="quantity-control"><button class="qty-btn" onclick="changeQty('star40k',-1)">−</button><span class="qty-value" id="qty-star40k">1</span><button class="qty-btn" onclick="changeQty('star40k',1)">+</button></div></div>
+        <div class="detail-price"><span>20€</span></div>
+        <div class="error-message" id="error-star40k">Пожалуйста, выберите вкус</div>
+        <button class="order-button" onclick="orderTelegram('star40k')">Заказать в Telegram</button>
+        <button class="add-to-cart-button" onclick="addToCart('star40k')"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>Добавить в корзину</button>
+    </div>
+</div>
+<div class="product-page" id="product-vista40k">
+    <div class="product-header">
+        <button class="back-button" onclick="closeProduct('vista40k')"><span class="back-arrow">←</span> Назад</button>
+        <div class="product-header-right">
+            <span class="page-stock-badge stock-in" id="stockbadge-vista40k">В наличии</span>
+            <button class="icon-btn cart-btn cart-btn-header" onclick="openCart()" aria-label="Корзина">
+                <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                <span class="cart-count hidden" id="cartCount-vista40k">0</span>
+            </button>
+        </div>
+    </div>
+    <div class="image-gallery" data-product="vista40k">
+        <div class="gallery-container">
+            <img src="https://static.insales-cdn.com/r/Wyjdakq5fKM/rs:fit:1000:1000:1/plain/images/products/1/3553/2387275233/Peach-Berry-6.jpg.webp@webp" alt="Vozol Vista 40k puffs" class="gallery-image" onclick="openFullscreen('vista40k',0)">
+        </div>
+    </div>
+    <div class="detail-content">
+        <div class="detail-tag">Disposable</div>
+        <div class="detail-title">Vozol Vista 40k puffs</div>
+        <div class="detail-subtitle">40 000 puffs · 50mg · Salt Nicotine</div>
+        <div class="divider"></div>
+        <div class="variants">
+            <h3>Выберите вкус</h3>
+            <div class="variant-option" onclick="selectVariant(this,'vista40k')">Watermelon Bubblegum</div>
+            <div class="variant-option" onclick="selectVariant(this,'vista40k')">Melon Gum</div>
+        </div>
+        <div class="quantity-section"><span class="quantity-label">Количество</span><div class="quantity-control"><button class="qty-btn" onclick="changeQty('vista40k',-1)">−</button><span class="qty-value" id="qty-vista40k">1</span><button class="qty-btn" onclick="changeQty('vista40k',1)">+</button></div></div>
+        <div class="detail-price"><span>20€</span></div>
+        <div class="error-message" id="error-vista40k">Пожалуйста, выберите вкус</div>
+        <button class="order-button" onclick="orderTelegram('vista40k')">Заказать в Telegram</button>
+        <button class="add-to-cart-button" onclick="addToCart('vista40k')"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>Добавить в корзину</button>
+    </div>
+</div>
+<div class="product-page" id="product-dk">
+    <div class="product-header">
+        <button class="back-button" onclick="closeProduct('dk')"><span class="back-arrow">←</span> Назад</button>
+        <div class="product-header-right">
+            <span class="page-stock-badge stock-in" id="stockbadge-dk">В наличии</span>
+            <button class="icon-btn cart-btn cart-btn-header" onclick="openCart()" aria-label="Корзина">
+                <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                <span class="cart-count hidden" id="cartCount-dk">0</span>
+            </button>
+        </div>
+    </div>
+    <div class="image-gallery" data-product="dk">
+        <div class="gallery-container">
+            <img src="https://dkeliquid.co.uk/wp-content/uploads/2024/11/DK-1st-Section-1024x1024.png" alt="DK Salt 50mg" class="gallery-image" onclick="openFullscreen('dk',0)">
+        </div>
+    </div>
+    <div class="detail-content">
+        <div class="detail-tag">Salt Nicotine</div>
+        <div class="detail-title">DK Salt 50mg</div>
+        <div class="detail-subtitle">30ml · 50mg · Salt Nicotine</div>
+        <div class="divider"></div>
+        <div class="variants">
+            <h3>Выберите вкус</h3>
+            <div class="variant-option" onclick="selectVariant(this,'dk')">Cherry Cola</div>
+            <div class="variant-option" onclick="selectVariant(this,'dk')">Strawberry Kiwi</div>
+            <div class="variant-option" onclick="selectVariant(this,'dk')">White Peach</div>
+            <div class="variant-option" onclick="selectVariant(this,'dk')">Red Energy Ice</div>
+            <div class="variant-option" onclick="selectVariant(this,'dk')">Cherry Lime Fizz</div>
+        </div>
+        <div class="quantity-section"><span class="quantity-label">Количество</span><div class="quantity-control"><button class="qty-btn" onclick="changeQty('dk',-1)">−</button><span class="qty-value" id="qty-dk">1</span><button class="qty-btn" onclick="changeQty('dk',1)">+</button></div></div>
+        <div class="detail-price"><span>13€</span> · 1 шт<br><span>25€</span> · 2 шт<br><span>33€</span> · 3 шт<br><span>50€</span> · 5 шт</div>
+        <div class="error-message" id="error-dk">Пожалуйста, выберите вкус</div>
+        <button class="order-button" onclick="orderTelegram('dk')">Заказать в Telegram</button>
+        <button class="add-to-cart-button" onclick="addToCart('dk')"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>Добавить в корзину</button>
+    </div>
+</div>
+<!-- PAGES_END -->
 
 <div class="fullscreen-overlay" id="fullscreen">
     <button class="fullscreen-close" onclick="closeFullscreen()">×</button>
@@ -599,7 +862,6 @@ function toggleSearch() {
 function clearSearch() {
     document.getElementById('searchInput').value = '';
     handleSearch('');
-    // Закрываем поиск, если он открыт
     const wrap = document.getElementById('searchBarWrap');
     if (wrap.classList.contains('open')) {
         wrap.classList.remove('open');
