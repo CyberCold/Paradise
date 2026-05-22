@@ -17,57 +17,66 @@
         }
         body { font-family: 'Jost', sans-serif; background: var(--bg); min-height: 100vh; color: var(--text); }
 
-        /* ── HEADER ── */
-        .header { background: var(--bg); padding: 26px 0 20px; text-align: center; border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; backdrop-filter: blur(12px); }
+        /* ── HEADER — переделан структурно ── */
+        .header {
+            background: var(--bg);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(12px);
+        }
+        .header-inner {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            padding: 18px 12px 14px;
+        }
+        .header-left { /* пусто, для симметрии */ }
+        .header-center { text-align: center; }
         .header-eyebrow { font-size: 10px; letter-spacing: 4px; color: var(--accent); text-transform: uppercase; font-weight: 400; margin-bottom: 4px; }
-        .header h1 { font-family: 'Playfair Display', serif; font-size: 30px; font-weight: 400; letter-spacing: 6px; color: var(--text); text-transform: uppercase; transition: opacity 0.2s; }
-        .header-line { display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 8px; }
+        .header h1 { font-family: 'Playfair Display', serif; font-size: 30px; font-weight: 400; letter-spacing: 6px; color: var(--text); text-transform: uppercase; }
+        .header-line { display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 6px; }
         .header-line span { width: 32px; height: 1px; background: var(--accent); display: block; opacity: 0.5; }
         .header-line i { width: 5px; height: 5px; border-radius: 50%; background: var(--accent); display: block; }
+        .header-controls {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 8px;
+        }
 
-        /* ── HEADER CONTROLS ── */
-        .header-controls { position: absolute; right: 16px; top: 50%; transform: translateY(-50%); display: flex; align-items: center; gap: 8px; }
+        /* ── BUTTONS ── */
         .icon-btn { background: var(--surface); border: 1px solid var(--border); border-radius: 50px; width: 38px; height: 38px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.2s ease; box-shadow: var(--shadow-card); flex-shrink: 0; }
         .icon-btn:active { transform: scale(0.93); }
         .icon-btn svg { width: 16px; height: 16px; stroke: var(--accent); fill: none; stroke-width: 1.8; }
-        .cart-btn { padding: 7px 14px 7px 10px; width: auto; gap: 6px; border-radius: 50px; }
-        .cart-count { background: var(--accent); color: #fff; border-radius: 50%; width: 18px; height: 18px; font-size: 10px; display: flex; align-items: center; justify-content: center; font-weight: 500; }
+        .cart-btn { padding: 7px 12px 7px 10px; width: auto; gap: 6px; border-radius: 50px; }
+        .cart-count { background: var(--accent); color: #fff; border-radius: 50%; min-width: 18px; width: auto; padding: 0 3px; height: 18px; font-size: 10px; display: flex; align-items: center; justify-content: center; font-weight: 500; flex-shrink: 0; }
         .cart-count.bump { animation: bump 0.25s ease; }
         @keyframes bump { 0%,100%{transform:scale(1)} 50%{transform:scale(1.35)} }
         .cart-count.hidden { display: none; }
 
         /* ── SEARCH BAR ── */
-        .search-bar-wrap {
-            max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.3s ease;
-            border-bottom: 0px solid var(--border);
-        }
-        .search-bar-wrap.open {
-            max-height: 60px;
-            border-bottom: 1px solid var(--border);
-        }
+        .search-bar-wrap { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; border-bottom: 0px solid var(--border); }
+        .search-bar-wrap.open { max-height: 60px; border-bottom: 1px solid var(--border); }
         .search-bar-inner { padding: 10px 16px; display: flex; align-items: center; gap: 10px; background: var(--bg); }
-        .search-input {
-            flex: 1; border: 1px solid var(--border); border-radius: 10px; padding: 9px 14px;
-            font-family: 'Jost', sans-serif; font-size: 13px; background: var(--surface);
-            color: var(--text); outline: none; transition: border-color 0.18s;
-        }
+        .search-input { flex: 1; border: 1px solid var(--border); border-radius: 10px; padding: 9px 14px; font-family: 'Jost', sans-serif; font-size: 13px; background: var(--surface); color: var(--text); outline: none; transition: border-color 0.18s; }
         .search-input:focus { border-color: var(--accent); }
         .search-input::placeholder { color: var(--muted); }
         .search-clear { background: none; border: none; color: var(--muted); font-size: 18px; cursor: pointer; padding: 0 4px; line-height: 1; }
 
         /* ── CLOSED BANNER ── */
-        /* на body показывает баннер */
         .closed-banner { display: none; background: #1a1714; color: #faf8f5; text-align: center; padding: 10px 20px; font-size: 13px; letter-spacing: 0.5px; }
-        body[] .closed-banner { display: block; }
-        body[] .order-button,
-        body[] .add-to-cart-button,
-        body[] .cart-order-btn { opacity: 0.4; pointer-events: none; }
+        body[data-closed="1"] .closed-banner { display: block; }
+        body[data-closed="1"] .order-button,
+        body[data-closed="1"] .add-to-cart-button,
+        body[data-closed="1"] .cart-order-btn { opacity: 0.4; pointer-events: none; }
 
         /* ── GRID ── */
         .container { padding: 22px 14px 40px; }
         .products-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 
-        /* ── SEARCH RESULTS (заменяет грид) ── */
+        /* ── SEARCH RESULTS ── */
         .search-results { display: none; padding: 0; }
         .search-results.active { display: block; }
         .search-result-item { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; margin-bottom: 12px; overflow: hidden; box-shadow: var(--shadow-card); animation: fadeUp 0.2s ease both; }
@@ -87,18 +96,13 @@
         .product-card:active { transform: scale(0.97); }
         .product-image-wrap { background: var(--surface2); display: flex; align-items: center; justify-content: center; height: 160px; padding: 12px; border-bottom: 1px solid var(--border); position: relative; }
         .product-image { width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply; }
-
-        /* Badge: новинка / хит */
         .product-badge { position: absolute; top: 8px; left: 8px; font-size: 9px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; padding: 3px 8px; border-radius: 20px; }
         .badge-new { background: #2d6a4f; color: #fff; }
         .badge-hit { background: var(--accent); color: #fff; }
-
-        /* Badge: статус наличия */
         .stock-badge { position: absolute; bottom: 8px; right: 8px; font-size: 9px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; padding: 3px 8px; border-radius: 20px; }
         .stock-in    { background: rgba(45,106,79,0.12); color: #2d6a4f; border: 1px solid rgba(45,106,79,0.25); }
         .stock-order { background: rgba(181,118,58,0.12); color: var(--accent-hover); border: 1px solid rgba(181,118,58,0.25); }
         .stock-out   { background: rgba(192,89,74,0.10); color: #c0594a; border: 1px solid rgba(192,89,74,0.25); }
-
         .product-info { padding: 12px 12px 14px; }
         .product-name { font-size: 13px; color: var(--text); margin-bottom: 5px; font-weight: 500; letter-spacing: 0.3px; }
         .product-price { color: var(--accent-hover); font-family: 'Playfair Display', serif; font-size: 15.5px; line-height: 1.7; font-style: italic; font-weight: 600; text-shadow: 0 1px 3px rgba(156,98,46,0.18); }
@@ -109,8 +113,6 @@
         .product-header { padding: 16px 20px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; background: rgba(250,248,245,0.95); backdrop-filter: blur(10px); z-index: 10; }
         .back-button { background: none; border: none; font-size: 13px; color: var(--accent); cursor: pointer; padding: 4px 0; font-family: 'Jost', sans-serif; letter-spacing: 1px; text-transform: uppercase; font-weight: 500; display: flex; align-items: center; gap: 8px; }
         .back-arrow { width: 28px; height: 28px; border-radius: 50%; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 14px; color: var(--accent); flex-shrink: 0; }
-
-        /* Статус наличия на странице товара */
         .page-stock-badge { font-size: 10px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; padding: 4px 10px; border-radius: 20px; }
         .page-stock-badge.stock-in    { background: rgba(45,106,79,0.12); color: #2d6a4f; border: 1px solid rgba(45,106,79,0.25); }
         .page-stock-badge.stock-order { background: rgba(181,118,58,0.12); color: var(--accent-hover); border: 1px solid rgba(181,118,58,0.25); }
@@ -121,7 +123,7 @@
         .gallery-container { display: flex; height: 100%; transition: transform 0.3s ease; }
         .gallery-image { min-width: 100%; height: 100%; object-fit: contain; cursor: pointer; padding: 28px; mix-blend-mode: multiply; }
 
-        /* ── DETAIL CONTENT ── */
+        /* ── DETAIL ── */
         .detail-content { padding: 24px 20px 50px; }
         .detail-tag { display: inline-block; font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--accent); background: var(--accent-light); border-radius: 20px; padding: 4px 12px; margin-bottom: 10px; font-weight: 500; }
         .detail-title { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 400; margin-bottom: 2px; letter-spacing: 0.5px; color: var(--text); }
@@ -141,7 +143,7 @@
         .qty-btn:active { background: var(--accent-light); }
         .qty-value { width: 36px; text-align: center; font-size: 15px; font-weight: 500; color: var(--text); border-left: 1px solid var(--border); border-right: 1px solid var(--border); height: 38px; line-height: 38px; }
 
-        /* ── BUTTONS ── */
+        /* ── ACTION BUTTONS ── */
         .order-button { width: 100%; background: var(--accent); color: #fff; border: none; padding: 17px; border-radius: 10px; font-size: 13px; font-weight: 500; cursor: pointer; transition: background 0.2s ease, transform 0.15s ease; font-family: 'Jost', sans-serif; letter-spacing: 2px; text-transform: uppercase; box-shadow: 0 4px 14px rgba(181,118,58,0.3); }
         .order-button:active { background: var(--accent-hover); transform: scale(0.98); }
         .add-to-cart-button { width: 100%; background: var(--surface); color: var(--accent); border: 1.5px solid var(--accent); padding: 15px; border-radius: 10px; font-size: 13px; font-weight: 500; cursor: pointer; transition: all 0.2s ease; font-family: 'Jost', sans-serif; letter-spacing: 2px; text-transform: uppercase; margin-top: 10px; display: flex; align-items: center; justify-content: center; gap: 8px; }
@@ -206,23 +208,28 @@
         @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
     </style>
 </head>
-<body data-closed="1">
+<body>
 
-<!-- CLOSED BANNER — управляется data-closed на body -->
+<!-- CLOSED BANNER -->
 <div class="closed-banner" id="closedBanner">🔒 Магазин временно закрыт. Напишите нам позже.</div>
 
 <div class="header">
-    <div class="header-eyebrow">Premium Vape Shop</div>
-    <h1>Paradise</h1>
-    <div class="header-line"><span></span><i></i><span></span></div>
-    <div class="header-controls">
-        <button class="icon-btn" onclick="toggleSearch()" aria-label="Поиск" id="searchBtn">
-            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        </button>
-        <button class="icon-btn cart-btn" onclick="openCart()" aria-label="Корзина">
-            <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
-            <span class="cart-count hidden" id="cartCount">0</span>
-        </button>
+    <div class="header-inner">
+        <div class="header-left"></div>
+        <div class="header-center">
+            <div class="header-eyebrow">Premium Vape Shop</div>
+            <h1>Paradise</h1>
+            <div class="header-line"><span></span><i></i><span></span></div>
+        </div>
+        <div class="header-controls">
+            <button class="icon-btn" onclick="toggleSearch()" aria-label="Поиск" id="searchBtn">
+                <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </button>
+            <button class="icon-btn cart-btn" onclick="openCart()" aria-label="Корзина">
+                <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                <span class="cart-count hidden" id="cartCount">0</span>
+            </button>
+        </div>
     </div>
 </div>
 
@@ -235,12 +242,8 @@
 </div>
 
 <div class="container">
-    <!-- ПОСЛЕДНИЙ ЗАКАЗ -->
     <div id="lastOrderBlock"></div>
-
-    <!-- РЕЗУЛЬТАТЫ ПОИСКА -->
     <div class="search-results" id="searchResults"></div>
-
     <div class="products-grid" id="productsGrid">
         <!-- CARDS_START -->
         <div class="product-card" onclick="openProduct('vaape')" data-badge="" data-stock="in">
@@ -315,7 +318,7 @@
                 <div class="product-price">1 — 13€ | 2 — 25€<br>3 — 33€ | 5 — 50€</div>
             </div>
         </div>
-            <!-- CARDS_END -->
+        <!-- CARDS_END -->
     </div>
 </div>
 
@@ -429,8 +432,9 @@
         <div class="divider"></div>
         <div class="variants">
             <h3>Выберите вкус</h3>
-                <div class="variant-option" onclick="selectVariant(this, 'truesalt')">Banana Ice</div>
-            </div>
+            <div class="variant-option" onclick="selectVariant(this,'truesalt')">Banana Ice</div>
+        </div>
+        <div class="quantity-section"><span class="quantity-label">Количество</span><div class="quantity-control"><button class="qty-btn" onclick="changeQty('truesalt',-1)">−</button><span class="qty-value" id="qty-truesalt">1</span><button class="qty-btn" onclick="changeQty('truesalt',1)">+</button></div></div>
         <div class="detail-price"><span>5€</span> · 1 шт<br><span>13€</span> · 3 шт</div>
         <div class="error-message" id="error-truesalt">Пожалуйста, выберите вкус</div>
         <button class="order-button" onclick="orderTelegram('truesalt','smkParadiseManager')">Заказать в Telegram</button>
@@ -547,7 +551,7 @@
         <button class="add-to-cart-button" onclick="addToCart('dk')"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>Добавить в корзину</button>
     </div>
 </div>
-    <!-- PAGES_END -->
+<!-- PAGES_END -->
 
 <!-- FULLSCREEN -->
 <div class="fullscreen-overlay" id="fullscreen">
@@ -579,9 +583,65 @@
 </div>
 
 <script>
+// ── CONFIG ──
+// Замените на свой токен бота и chat_id (ваш Telegram ID)
+const TG_BOT_TOKEN = 'ВАШ_BOT_TOKEN'; // например: '7123456789:AAF...'
+const TG_ADMIN_ID  = 'ВАШ_TELEGRAM_ID'; // например: '123456789'
+
+// ── Отправка уведомления боту через Telegram Bot API ──
+// Это работает напрямую из браузера — не нужен отдельный сервер!
+async function notifyBot(text) {
+    if (!TG_BOT_TOKEN || TG_BOT_TOKEN === 'ВАШ_BOT_TOKEN') return;
+    try {
+        await fetch(`https://api.telegram.org/bot${TG_BOT_TOKEN}/sendMessage`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                chat_id: TG_ADMIN_ID,
+                text: text,
+                parse_mode: 'HTML'
+            })
+        });
+    } catch(e) { console.log('notify error', e); }
+}
+
+// ── Инкремент статистики через GitHub API ──
+// Заполните свои данные:
+const GH_TOKEN  = ''; // GitHub Personal Access Token (repo scope)
+const GH_REPO   = ''; // например: 'username/paradise'
+const GH_BRANCH = 'main';
+const GH_STATS  = 'stats.json';
+
+async function incrementStat(pid) {
+    if (!GH_TOKEN || !GH_REPO) return;
+    try {
+        // Читаем текущий stats.json
+        const r = await fetch(`https://api.github.com/repos/${GH_REPO}/contents/${GH_STATS}?ref=${GH_BRANCH}`, {
+            headers: { 'Authorization': `token ${GH_TOKEN}`, 'Accept': 'application/vnd.github.v3+json' }
+        });
+        let stats = {}, sha = '';
+        if (r.ok) {
+            const data = await r.json();
+            sha = data.sha;
+            stats = JSON.parse(atob(data.content.replace(/\n/g, '')));
+        }
+        stats[pid] = (stats[pid] || 0) + 1;
+
+        // Записываем обратно
+        await fetch(`https://api.github.com/repos/${GH_REPO}/contents/${GH_STATS}`, {
+            method: 'PUT',
+            headers: { 'Authorization': `token ${GH_TOKEN}`, 'Accept': 'application/vnd.github.v3+json', 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                message: `stat: +1 [${pid}]`,
+                content: btoa(unescape(encodeURIComponent(JSON.stringify(stats, null, 2)))),
+                sha: sha,
+                branch: GH_BRANCH
+            })
+        });
+    } catch(e) { console.log('stat error', e); }
+}
+
 // ── Product Data ──
-// badge: '' | 'new' | 'hit'
-// stock: 'in' | 'order' | 'out'
 const productData = {
     'vaape':    { name: 'Vaape Triple 90K',      variant: '', qty: 1, badge: '', stock: 'in' },
     'elfliq':   { name: 'Elfliq 50mg',           variant: '', qty: 1, badge: '', stock: 'in' },
@@ -595,41 +655,22 @@ const productData = {
 
 let cart = [];
 
-// ── Инициализация значков на картах ──
+// ── Значки на карточках ──
 function initCardBadges() {
     document.querySelectorAll('.product-card').forEach(card => {
         const pid = card.getAttribute('onclick').match(/'([^']+)'/)?.[1];
         if (!pid || !productData[pid]) return;
         const wrap = card.querySelector('.product-image-wrap');
-
-        // Удаляем старые значки
         wrap.querySelectorAll('.product-badge,.stock-badge').forEach(b => b.remove());
-
         const { badge, stock } = productData[pid];
-        if (badge === 'new') {
-            const b = document.createElement('span');
-            b.className = 'product-badge badge-new'; b.textContent = 'Новинка';
-            wrap.appendChild(b);
-        } else if (badge === 'hit') {
-            const b = document.createElement('span');
-            b.className = 'product-badge badge-hit'; b.textContent = 'Хит';
-            wrap.appendChild(b);
-        }
-        if (stock !== 'in') {
-            const s = document.createElement('span');
-            const labels = { order: 'Под заказ', out: 'Нет в наличии' };
-            s.className = 'stock-badge stock-' + stock;
-            s.textContent = labels[stock] || '';
-            wrap.appendChild(s);
-        }
-
-        // Синхронизируем data-атрибуты
+        if (badge === 'new') { const b = document.createElement('span'); b.className = 'product-badge badge-new'; b.textContent = 'Новинка'; wrap.appendChild(b); }
+        else if (badge === 'hit') { const b = document.createElement('span'); b.className = 'product-badge badge-hit'; b.textContent = 'Хит'; wrap.appendChild(b); }
+        if (stock !== 'in') { const s = document.createElement('span'); const labels = { order: 'Под заказ', out: 'Нет в наличии' }; s.className = 'stock-badge stock-' + stock; s.textContent = labels[stock] || ''; wrap.appendChild(s); }
         card.setAttribute('data-badge', badge);
         card.setAttribute('data-stock', stock);
     });
 }
 
-// Синхронизируем значок наличия на странице товара
 function updatePageStockBadge(pid) {
     const el = document.getElementById('stockbadge-' + pid);
     if (!el || !productData[pid]) return;
@@ -645,38 +686,21 @@ function toggleSearch() {
     searchOpen = !searchOpen;
     const wrap = document.getElementById('searchBarWrap');
     wrap.classList.toggle('open', searchOpen);
-    if (searchOpen) {
-        setTimeout(() => document.getElementById('searchInput').focus(), 300);
-    } else {
-        clearSearch();
-    }
+    if (searchOpen) { setTimeout(() => document.getElementById('searchInput').focus(), 300); }
+    else { clearSearch(); }
 }
-
 function clearSearch() {
     const inp = document.getElementById('searchInput');
     inp.value = '';
     handleSearch('');
-    if (!searchOpen) {
-        document.getElementById('searchBarWrap').classList.remove('open');
-    }
 }
-
 function handleSearch(q) {
     const grid = document.getElementById('productsGrid');
     const resultsEl = document.getElementById('searchResults');
     q = q.trim().toLowerCase();
-
-    if (!q) {
-        grid.style.display = '';
-        resultsEl.classList.remove('active');
-        resultsEl.innerHTML = '';
-        return;
-    }
-
+    if (!q) { grid.style.display = ''; resultsEl.classList.remove('active'); resultsEl.innerHTML = ''; return; }
     grid.style.display = 'none';
     resultsEl.classList.add('active');
-
-    // Собираем данные из DOM
     const results = [];
     document.querySelectorAll('.product-page').forEach(page => {
         const pid = page.id.replace('product-', '');
@@ -684,71 +708,22 @@ function handleSearch(q) {
         const tagEl  = page.querySelector('.detail-tag');
         const imgEl  = page.querySelector('.gallery-image');
         if (!nameEl) return;
-
         const matchedFlavors = [];
-        page.querySelectorAll('.variant-option').forEach(opt => {
-            if (opt.textContent.toLowerCase().includes(q)) {
-                matchedFlavors.push(opt.textContent.trim());
-            }
-        });
-        if (matchedFlavors.length > 0) {
-            results.push({
-                pid,
-                name: nameEl.textContent,
-                tag:  tagEl ? tagEl.textContent : '',
-                img:  imgEl ? imgEl.src : '',
-                flavors: matchedFlavors,
-            });
-        }
+        page.querySelectorAll('.variant-option').forEach(opt => { if (opt.textContent.toLowerCase().includes(q)) matchedFlavors.push(opt.textContent.trim()); });
+        if (matchedFlavors.length > 0) results.push({ pid, name: nameEl.textContent, tag: tagEl ? tagEl.textContent : '', img: imgEl ? imgEl.src : '', flavors: matchedFlavors });
     });
-
-    if (results.length === 0) {
-        resultsEl.innerHTML = '<div class="search-no-results">Ничего не найдено</div>';
-        return;
-    }
-
-    function highlight(text, q) {
-        const idx = text.toLowerCase().indexOf(q);
-        if (idx < 0) return text;
-        return text.slice(0, idx) + '<mark>' + text.slice(idx, idx + q.length) + '</mark>' + text.slice(idx + q.length);
-    }
-
-    resultsEl.innerHTML = results.map(r => `
-        <div class="search-result-item">
-            <div class="sri-header" onclick="openProduct('${r.pid}'); clearSearch(); toggleSearch();">
-                <img class="sri-img" src="${r.img}" alt="${r.name}">
-                <div>
-                    <div class="sri-name">${r.name}</div>
-                    <div class="sri-tag">${r.tag}</div>
-                </div>
-            </div>
-            <div class="sri-flavors">
-                ${r.flavors.map(f => `
-                <div class="sri-flavor" onclick="openProductWithFlavor('${r.pid}','${f.replace(/'/g,"\\'")}')">
-                    <span>${highlight(f, q)}</span>
-                    <span class="sri-flavor-action">Открыть →</span>
-                </div>`).join('')}
-            </div>
-        </div>
-    `).join('');
+    if (results.length === 0) { resultsEl.innerHTML = '<div class="search-no-results">Ничего не найдено</div>'; return; }
+    function highlight(text, q) { const idx = text.toLowerCase().indexOf(q); if (idx < 0) return text; return text.slice(0, idx) + '<mark>' + text.slice(idx, idx + q.length) + '</mark>' + text.slice(idx + q.length); }
+    resultsEl.innerHTML = results.map(r => `<div class="search-result-item"><div class="sri-header" onclick="openProduct('${r.pid}'); clearSearch(); if(searchOpen) toggleSearch();"><img class="sri-img" src="${r.img}" alt="${r.name}"><div><div class="sri-name">${r.name}</div><div class="sri-tag">${r.tag}</div></div></div><div class="sri-flavors">${r.flavors.map(f => `<div class="sri-flavor" onclick="openProductWithFlavor('${r.pid}','${f.replace(/'/g,"\\'")}')"><span>${highlight(f, q)}</span><span class="sri-flavor-action">Открыть →</span></div>`).join('')}</div></div>`).join('');
 }
-
-// Открыть товар и сразу выбрать вкус из поиска
 function openProductWithFlavor(pid, flavor) {
     clearSearch();
     if (searchOpen) toggleSearch();
     openProduct(pid);
-    // Даём время открыться странице, потом кликаем нужный вкус
     setTimeout(() => {
         const page = document.getElementById('product-' + pid);
         if (!page) return;
-        const opts = page.querySelectorAll('.variant-option');
-        opts.forEach(opt => {
-            if (opt.textContent.trim() === flavor) {
-                opt.click();
-                opt.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            }
-        });
+        page.querySelectorAll('.variant-option').forEach(opt => { if (opt.textContent.trim() === flavor) { opt.click(); opt.scrollIntoView({ behavior: 'smooth', block: 'center' }); } });
     }, 80);
 }
 
@@ -766,12 +741,10 @@ function openProduct(id) {
     if (err) err.classList.remove('show');
     updatePageStockBadge(id);
 }
-
 function closeProduct(id) {
     const page = document.getElementById('product-' + id);
     if (page) { page.classList.remove('active'); document.body.style.overflow = 'auto'; }
 }
-
 function changeQty(pid, delta) {
     const el = document.getElementById('qty-' + pid);
     if (!el) return;
@@ -780,7 +753,6 @@ function changeQty(pid, delta) {
     el.textContent = v;
     if (productData[pid]) productData[pid].qty = v;
 }
-
 function selectVariant(element, productId) {
     element.parentElement.querySelectorAll('.variant-option').forEach(v => v.classList.remove('selected'));
     element.classList.add('selected');
@@ -799,8 +771,18 @@ function orderTelegram(productId, username) {
     }
     const qty = parseInt(document.getElementById('qty-' + productId)?.textContent || '1');
     const msg = `Здравствуйте, хочу заказать ${product.name}, вкус: ${product.variant}, количество: ${qty}`;
+
     // Сохраняем в историю
     saveLastOrder([{ name: product.name, variant: product.variant, qty }]);
+
+    // 1. Статистика — пишем в GitHub
+    incrementStat(productId);
+
+    // 2. Уведомляем бота (CRM) — отправляем сообщение от имени бота себе
+    const orderText = `🛍 <b>Новый заказ</b>\n\n📦 ${product.name}\n🍓 Вкус: ${product.variant}\n🔢 Кол-во: ${qty}\n\n⚠️ Клиент сейчас напишет в ЛС`;
+    notifyBot(orderText);
+
+    // 3. Открываем Telegram
     window.open('https://t.me/' + username + '?text=' + encodeURIComponent(msg), '_blank');
 }
 
@@ -827,7 +809,6 @@ function addToCart(productId) {
         setTimeout(() => { btn.innerHTML = orig; btn._busy = false; }, 1500);
     }
 }
-
 function updateCartCount() {
     const total = cart.reduce((s, i) => s + i.qty, 0);
     const el = document.getElementById('cartCount');
@@ -837,7 +818,6 @@ function updateCartCount() {
     el.textContent = total > 99 ? '99+' : total;
     el.classList.remove('bump'); void el.offsetWidth; el.classList.add('bump');
 }
-
 function renderCartItems() {
     const container = document.getElementById('cartItems');
     const orderBtn  = document.getElementById('cartOrderBtn');
@@ -848,26 +828,8 @@ function renderCartItems() {
         return;
     }
     if (orderBtn) orderBtn.disabled = false;
-    container.innerHTML = cart.map((item, idx) => `
-        <div class="cart-item" id="cart-item-${idx}">
-            <img class="cart-item-img" src="${item.img}" alt="${item.name}">
-            <div class="cart-item-info">
-                <div class="cart-item-name">${item.name}</div>
-                <div class="cart-item-variant">${item.variant}</div>
-                <div class="cart-item-bottom">
-                    <div class="cart-qty-control">
-                        <button class="cart-qty-btn" onclick="changeCartQty(${idx},-1)">−</button>
-                        <span class="cart-qty-val">${item.qty}</span>
-                        <button class="cart-qty-btn" onclick="changeCartQty(${idx},1)">+</button>
-                    </div>
-                    <button class="cart-item-del" onclick="removeCartItem(${idx})">
-                        <svg viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4h6v2"/></svg>
-                    </button>
-                </div>
-            </div>
-        </div>`).join('');
+    container.innerHTML = cart.map((item, idx) => `<div class="cart-item" id="cart-item-${idx}"><img class="cart-item-img" src="${item.img}" alt="${item.name}"><div class="cart-item-info"><div class="cart-item-name">${item.name}</div><div class="cart-item-variant">${item.variant}</div><div class="cart-item-bottom"><div class="cart-qty-control"><button class="cart-qty-btn" onclick="changeCartQty(${idx},-1)">−</button><span class="cart-qty-val">${item.qty}</span><button class="cart-qty-btn" onclick="changeCartQty(${idx},1)">+</button></div><button class="cart-item-del" onclick="removeCartItem(${idx})"><svg viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4h6v2"/></svg></button></div></div></div>`).join('');
 }
-
 function changeCartQty(idx, delta) {
     if (!cart[idx]) return;
     cart[idx].qty = Math.max(1, Math.min(cart[idx].qty + delta, 99));
@@ -875,40 +837,23 @@ function changeCartQty(idx, delta) {
     const itemEl = document.getElementById('cart-item-' + idx);
     if (itemEl) { const v = itemEl.querySelector('.cart-qty-val'); if (v) v.textContent = cart[idx].qty; }
 }
-
-function removeCartItem(idx) {
-    cart.splice(idx, 1);
-    updateCartCount();
-    renderCartItems();
-}
-
-function clearCart() {
-    if (cart.length === 0) return;
-    cart = [];
-    updateCartCount();
-    renderCartItems();
-}
-
-function openCart() {
-    document.getElementById('cartOverlay').classList.add('open');
-    document.getElementById('cartSidebar').classList.add('open');
-    renderCartItems();
-}
-
-function closeCart() {
-    document.getElementById('cartOverlay').classList.remove('open');
-    document.getElementById('cartSidebar').classList.remove('open');
-}
-
-function handleOverlayClick(e) {
-    if (!document.getElementById('cartSidebar').contains(e.target)) closeCart();
-}
+function removeCartItem(idx) { cart.splice(idx, 1); updateCartCount(); renderCartItems(); }
+function clearCart() { if (cart.length === 0) return; cart = []; updateCartCount(); renderCartItems(); }
+function openCart() { document.getElementById('cartOverlay').classList.add('open'); document.getElementById('cartSidebar').classList.add('open'); renderCartItems(); }
+function closeCart() { document.getElementById('cartOverlay').classList.remove('open'); document.getElementById('cartSidebar').classList.remove('open'); }
+function handleOverlayClick(e) { if (!document.getElementById('cartSidebar').contains(e.target)) closeCart(); }
 
 function orderCartTelegram(username) {
     if (cart.length === 0) return;
     const lines = cart.map(i => `${i.name}, вкус: ${i.variant}, количество: ${i.qty}`);
     const msg = 'Здравствуйте, хочу заказать:\n' + lines.join('\n');
     saveLastOrder(cart.map(i => ({ name: i.name, variant: i.variant, qty: i.qty })));
+
+    // Статистика и уведомление для каждого товара в корзине
+    cart.forEach(item => incrementStat(item.id));
+    const orderText = `🛍 <b>Заказ из корзины</b>\n\n` + cart.map(i => `📦 ${i.name}\n🍓 ${i.variant} · ${i.qty} шт`).join('\n\n') + `\n\n⚠️ Клиент сейчас напишет в ЛС`;
+    notifyBot(orderText);
+
     window.open('https://t.me/' + username + '?text=' + encodeURIComponent(msg), '_blank');
 }
 
@@ -917,71 +862,37 @@ function openFullscreen(productId, imageIndex) {
     const gallery = document.querySelector('[data-product="' + productId + '"]');
     if (gallery) {
         const images = gallery.querySelectorAll('.gallery-image');
-        if (images[imageIndex]) {
-            document.getElementById('fullscreen-image').src = images[imageIndex].src;
-            document.getElementById('fullscreen').classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
+        if (images[imageIndex]) { document.getElementById('fullscreen-image').src = images[imageIndex].src; document.getElementById('fullscreen').classList.add('active'); document.body.style.overflow = 'hidden'; }
     }
 }
-function closeFullscreen() {
-    document.getElementById('fullscreen').classList.remove('active');
-    document.body.style.overflow = 'auto';
-}
-document.getElementById('fullscreen').addEventListener('click', function(e) {
-    if (e.target === this || e.target.classList.contains('fullscreen-container')) closeFullscreen();
-});
+function closeFullscreen() { document.getElementById('fullscreen').classList.remove('active'); document.body.style.overflow = 'auto'; }
+document.getElementById('fullscreen').addEventListener('click', function(e) { if (e.target === this || e.target.classList.contains('fullscreen-container')) closeFullscreen(); });
 
-// ── ИСТОРИЯ ЗАКАЗОВ (localStorage) ──
+// ── ИСТОРИЯ ЗАКАЗОВ ──
 const LS_KEY = 'paradise_last_order';
-
-function saveLastOrder(items) {
-    try {
-        localStorage.setItem(LS_KEY, JSON.stringify({ items, date: Date.now() }));
-    } catch(e) {}
-}
-
+function saveLastOrder(items) { try { localStorage.setItem(LS_KEY, JSON.stringify({ items, date: Date.now() })); } catch(e) {} }
 function loadLastOrder() {
     try {
         const raw = localStorage.getItem(LS_KEY);
         if (!raw) return;
         const data = JSON.parse(raw);
         if (!data.items || data.items.length === 0) return;
-        // Показываем только если не старше 30 дней
         if (Date.now() - data.date > 30 * 24 * 3600 * 1000) return;
         renderLastOrder(data.items);
     } catch(e) {}
 }
-
 function renderLastOrder(items) {
     const block = document.getElementById('lastOrderBlock');
     if (!block) return;
-    block.innerHTML = `
-        <div class="last-order-banner">
-            <div class="lob-header">
-                <span class="lob-title">Ваш прошлый заказ</span>
-                <button class="lob-clear" onclick="clearLastOrder()">Скрыть</button>
-            </div>
-            <div class="lob-items">
-                ${items.map(i => `<div class="lob-item">${i.name} <span>· ${i.variant} · ${i.qty} шт</span></div>`).join('')}
-            </div>
-            <button class="lob-reorder" onclick="reorder()">Повторить заказ</button>
-        </div>`;
+    block.innerHTML = `<div class="last-order-banner"><div class="lob-header"><span class="lob-title">Ваш прошлый заказ</span><button class="lob-clear" onclick="clearLastOrder()">Скрыть</button></div><div class="lob-items">${items.map(i => `<div class="lob-item">${i.name} <span>· ${i.variant} · ${i.qty} шт</span></div>`).join('')}</div><button class="lob-reorder" onclick="reorder()">Повторить заказ</button></div>`;
 }
-
-function clearLastOrder() {
-    try { localStorage.removeItem(LS_KEY); } catch(e) {}
-    const block = document.getElementById('lastOrderBlock');
-    if (block) block.innerHTML = '';
-}
-
+function clearLastOrder() { try { localStorage.removeItem(LS_KEY); } catch(e) {} const block = document.getElementById('lastOrderBlock'); if (block) block.innerHTML = ''; }
 function reorder() {
     try {
         const raw = localStorage.getItem(LS_KEY);
         if (!raw) return;
         const data = JSON.parse(raw);
-        const msg = 'Здравствуйте, хочу повторить заказ:\n' +
-            data.items.map(i => `${i.name}, вкус: ${i.variant}, количество: ${i.qty}`).join('\n');
+        const msg = 'Здравствуйте, хочу повторить заказ:\n' + data.items.map(i => `${i.name}, вкус: ${i.variant}, количество: ${i.qty}`).join('\n');
         window.open('https://t.me/smkParadiseManager?text=' + encodeURIComponent(msg), '_blank');
     } catch(e) {}
 }
