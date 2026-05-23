@@ -19,8 +19,12 @@
     {
       "poll_id": "TEST-20260524000125",
       "date": "24.05.2026",
-      "answers": {},
-      "sent_to": []
+      "answers": {
+        "Pososi": 1
+      },
+      "sent_to": [
+        7682695094
+      ]
     }
   ]
 }
