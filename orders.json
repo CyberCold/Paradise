@@ -136,5 +136,21 @@
     "username": "Кристофер",
     "status": "new",
     "date": "23.05.2026 13:09"
+  },
+  "#0007": {
+    "oid": "#0007",
+    "items": [
+      {
+        "pid": "dk",
+        "product_name": "DK Salt 50mg",
+        "flavor": "Strawberry Kiwi",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nDK Salt 50mg, вкус: Strawberry Kiwi, количество: 1",
+    "user_id": 1992370369,
+    "username": "~",
+    "status": "new",
+    "date": "23.05.2026 21:23"
   }
 }
