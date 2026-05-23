@@ -30,6 +30,17 @@
     "rating": 5,
     "comment": null,
     "date": "24.05.2026 00:43",
+    "sent_to_channel": true
+  },
+  "#0005_Vaape Triple 90K": {
+    "oid": "#0005",
+    "user_id": 8482703228,
+    "username": "Resonance",
+    "product_name": "Vaape Triple 90K",
+    "flavor": "Strawberry Watermelon / Grape Ice / Blueberry Raspberry Ice",
+    "rating": 2,
+    "comment": null,
+    "date": "24.05.2026 00:43",
     "sent_to_channel": false
   }
 }
