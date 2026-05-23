@@ -3,8 +3,12 @@
     {
       "poll_id": "TEST-20260523235852",
       "date": "23.05.2026",
-      "answers": {},
-      "sent_to": []
+      "answers": {
+        "Elfliq Cocojambo": 1
+      },
+      "sent_to": [
+        7511735897
+      ]
     }
   ]
 }
