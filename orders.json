@@ -1,1 +1,18 @@
-
+{
+  "#0001": {
+    "oid": "#0001",
+    "items": [
+      {
+        "pid": "dk",
+        "product_name": "DK Salt 50mg",
+        "flavor": "White Peach",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу повторить заказ:\nDK Salt 50mg, вкус: White Peach, количество: 1",
+    "user_id": 7511735897,
+    "username": "ᅠ ᅠ ᅠ ᅠ ᅠ ᅠ",
+    "status": "new",
+    "date": "24.05.2026 01:14"
+  }
+}
