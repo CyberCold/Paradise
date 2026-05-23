@@ -15,5 +15,21 @@
     "status": "done",
     "date": "23.05.2026 23:33",
     "done_at": "2026-05-23T23:33:12.116792"
+  },
+  "#0002": {
+    "oid": "#0002",
+    "items": [
+      {
+        "pid": "vaape",
+        "product_name": "Vaape Triple 90K",
+        "flavor": "Strawberry Watermelon / Cola Ice / Peach Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу повторить заказ:\nVaape Triple 90K, вкус: Strawberry Watermelon / Cola Ice / Peach Ice, количество: 1",
+    "user_id": 7511735897,
+    "username": "ᅠ ᅠ ᅠ ᅠ ᅠ ᅠ",
+    "status": "new",
+    "date": "24.05.2026 00:17"
   }
 }
