@@ -64,5 +64,33 @@
     "status": "done",
     "date": "24.05.2026 00:40",
     "done_at": "2026-05-24T00:40:27.657308"
+  },
+  "#0005": {
+    "oid": "#0005",
+    "items": [
+      {
+        "pid": "vaape",
+        "product_name": "Vaape Triple 90K",
+        "flavor": "Strawberry Watermelon / Grape Ice / Blueberry Raspberry Ice",
+        "qty": 1
+      },
+      {
+        "pid": "vista40k",
+        "product_name": "Vozol Vista 40k puffs",
+        "flavor": "Melon Gum",
+        "qty": 1
+      },
+      {
+        "pid": "star40k",
+        "product_name": "Vozol Star 40k puffs",
+        "flavor": "Blue Razz Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nVaape Triple 90K, вкус: Strawberry Watermelon / Grape Ice / Blueberry Raspberry Ice, количество: 1\nVozol Vista 40k puffs, вкус: Melon Gum, количество: 1\nVozol Star 40k puffs, вкус: Blue Razz Ice, количество: 1",
+    "user_id": 8482703228,
+    "username": "Resonance",
+    "status": "new",
+    "date": "24.05.2026 00:41"
   }
 }
