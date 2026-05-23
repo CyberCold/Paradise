@@ -98,5 +98,27 @@
     "username": "Resonance",
     "status": "cancelled",
     "date": "22.05.2026 23:30"
+  },
+  "#0005": {
+    "oid": "#0005",
+    "items": [
+      {
+        "pid": "vista40k",
+        "product_name": "Vozol Vista 40k puffs",
+        "flavor": "Watermelon Bubblegum",
+        "qty": 1
+      },
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq 50mg",
+        "flavor": "Blueberry",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nVozol Vista 40k puffs, вкус: Watermelon Bubblegum, количество: 1\nElfliq 50mg, вкус: Blueberry, количество: 1",
+    "user_id": 1845398543,
+    "username": "dead",
+    "status": "new",
+    "date": "23.05.2026 11:08"
   }
 }
