@@ -1,1 +1,13 @@
-
+{
+  "#0002_IVG 20mg": {
+    "oid": "#0002",
+    "user_id": 7511735897,
+    "username": "ᅠ ᅠ ᅠ ᅠ ᅠ ᅠ",
+    "product_name": "IVG 20mg",
+    "flavor": "Blackcurrant Mango",
+    "rating": 5,
+    "comment": "Хуйня",
+    "date": "24.05.2026 00:33",
+    "sent_to_channel": false
+  }
+}
