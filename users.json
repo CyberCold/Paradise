@@ -214,5 +214,13 @@
     "source": "webapp",
     "registered": "2026-05-23T15:00:35.635Z",
     "last_seen": "2026-05-23T15:00:35.635Z"
+  },
+  "1992370369": {
+    "id": 1992370369,
+    "first_name": "~",
+    "username": "Vladimirgarkaj",
+    "source": "chat",
+    "registered": "2026-05-23T21:19:59.939824",
+    "last_seen": "2026-05-23T21:19:59.939833"
   }
 }
