@@ -1,4 +1,3 @@
-
 {
   "#0002_IVG 20mg": {
     "oid": "#0002",
@@ -42,6 +41,17 @@
     "rating": 2,
     "comment": null,
     "date": "24.05.2026 00:43",
+    "sent_to_channel": false
+  },
+  "#0005_Vozol Vista 40k puffs": {
+    "oid": "#0005",
+    "user_id": 8482703228,
+    "username": "Resonance",
+    "product_name": "Vozol Vista 40k puffs",
+    "flavor": "Melon Gum",
+    "rating": 5,
+    "comment": "Вкусно",
+    "date": "24.05.2026 00:56",
     "sent_to_channel": false
   }
 }
