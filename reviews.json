@@ -1,13 +1,1 @@
-{
-  "#TEST-002142_Elfliq 50mg": {
-    "oid": "#TEST-002142",
-    "user_id": 7511735897,
-    "username": "Тест",
-    "product_name": "Elfliq 50mg",
-    "flavor": "Blueberry",
-    "rating": 5,
-    "comment": null,
-    "date": "24.05.2026 00:21",
-    "sent_to_channel": false
-  }
-}
+
