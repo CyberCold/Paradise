@@ -1,1 +1,13 @@
-
+{
+  "#0001_DK Salt 50mg": {
+    "oid": "#0001",
+    "user_id": 7511735897,
+    "username": "ᅠ ᅠ ᅠ ᅠ ᅠ ᅠ",
+    "product_name": "DK Salt 50mg",
+    "flavor": "White Peach",
+    "rating": 5,
+    "comment": "Вкусная",
+    "date": "24.05.2026 01:18",
+    "sent_to_channel": false
+  }
+}
