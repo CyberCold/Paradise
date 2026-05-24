@@ -79,5 +79,21 @@
     "username": "Артур",
     "status": "new",
     "date": "24.05.2026 16:18"
+  },
+  "#0006": {
+    "oid": "#0006",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq 50mg",
+        "flavor": "Lemon Lime",
+        "qty": 2
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nElfliq 50mg, вкус: Lemon Lime, количество: 2",
+    "user_id": 1636239325,
+    "username": "rob4ik",
+    "status": "new",
+    "date": "24.05.2026 17:13"
   }
 }
