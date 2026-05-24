@@ -318,5 +318,13 @@
     "source": "chat",
     "registered": "2026-05-24T18:48:47.074224",
     "last_seen": "2026-05-24T18:58:22.663724"
+  },
+  "5141991801": {
+    "id": 5141991801,
+    "first_name": "Karolinock_a",
+    "username": "Karolinock_a",
+    "source": "bot_start",
+    "registered": "2026-05-24T19:09:38.209609",
+    "last_seen": "2026-05-24T19:09:38.209617"
   }
 }
