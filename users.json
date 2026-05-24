@@ -262,5 +262,13 @@
     "source": "webapp",
     "registered": "2026-05-24T11:11:41.370Z",
     "last_seen": "2026-05-24T11:11:41.370Z"
+  },
+  "1256468499": {
+    "id": 1256468499,
+    "first_name": "Sonya",
+    "username": "ssonyaa07",
+    "source": "bot_start",
+    "registered": "2026-05-24T14:12:12.893460",
+    "last_seen": "2026-05-24T14:12:12.893469"
   }
 }
