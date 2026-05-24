@@ -278,5 +278,13 @@
     "source": "chat",
     "registered": "2026-05-24T11:11:41.370Z",
     "last_seen": "2026-05-24T15:33:56.654683"
+  },
+  "594474550": {
+    "id": 594474550,
+    "first_name": "anteneh",
+    "username": "",
+    "source": "bot_start",
+    "registered": "2026-05-24T15:48:16.080663",
+    "last_seen": "2026-05-24T15:48:16.080668"
   }
 }
