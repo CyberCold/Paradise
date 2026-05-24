@@ -95,5 +95,21 @@
     "username": "rob4ik",
     "status": "new",
     "date": "24.05.2026 17:13"
+  },
+  "#0007": {
+    "oid": "#0007",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq 50mg",
+        "flavor": "Blueberry",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nElfliq 50mg, вкус: Blueberry, количество: 1",
+    "user_id": 1636239325,
+    "username": "rob4ik",
+    "status": "new",
+    "date": "24.05.2026 17:13"
   }
 }
