@@ -310,5 +310,13 @@
     "source": "chat",
     "registered": "2026-05-24T16:17:47.873344",
     "last_seen": "2026-05-24T16:22:00.603720"
+  },
+  "1229091921": {
+    "id": 1229091921,
+    "first_name": "Милана",
+    "username": "marshvill",
+    "source": "bot_start",
+    "registered": "2026-05-24T18:48:47.074224",
+    "last_seen": "2026-05-24T18:48:47.074232"
   }
 }
