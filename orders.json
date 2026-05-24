@@ -63,5 +63,21 @@
     "username": "rob4ik",
     "status": "new",
     "date": "24.05.2026 15:58"
+  },
+  "#0005": {
+    "oid": "#0005",
+    "items": [
+      {
+        "pid": "vaape",
+        "product_name": "Vaape Triple 90K",
+        "flavor": "Strawberry Watermelon / Grape Ice / Blueberry Raspberry Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nVaape Triple 90K, вкус: Strawberry Watermelon / Grape Ice / Blueberry Raspberry Ice, количество: 1",
+    "user_id": 2144149419,
+    "username": "Артур",
+    "status": "new",
+    "date": "24.05.2026 16:18"
   }
 }
