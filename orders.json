@@ -194,7 +194,41 @@
     "raw_text": "Здравствуйте, хочу повторить заказ:\nVaape Triple 90K, вкус: Blueberry Ice / Black Dragon Ice / Red Bull, количество: 1",
     "user_id": 6491742117,
     "username": "Dontik",
-    "status": "new",
+    "status": "cancelled",
     "date": "25.05.2026 17:47"
+  },
+  "#0012": {
+    "oid": "#0012",
+    "items": [
+      {
+        "pid": "vaape",
+        "product_name": "Vaape Triple 90K",
+        "flavor": "Red Bull / Blueberry Watermelon / Monster Drink",
+        "qty": 1
+      },
+      {
+        "pid": "vaape",
+        "product_name": "Vaape Triple 90K",
+        "flavor": "Mixed Berries / Red Bull / Peach Ice",
+        "qty": 1
+      },
+      {
+        "pid": "vaape",
+        "product_name": "Vaape Triple 90K",
+        "flavor": "Blueberry Ice / Black Dragon Ice / Red Bull",
+        "qty": 1
+      },
+      {
+        "pid": "vaape",
+        "product_name": "Vaape Triple 90K",
+        "flavor": "Peach Mango Pineapple / Strawberry Ice / Raspberry Watermelon",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nVaape Triple 90K, вкус: Red Bull / Blueberry Watermelon / Monster Drink, количество: 1\nVaape Triple 90K, вкус: Mixed Berries / Red Bull / Peach Ice, количество: 1\nVaape Triple 90K, вкус: Blueberry Ice / Black Dragon Ice / Red Bull, количество: 1\nVaape Triple 90K, вкус: Peach Mango Pineapple / Strawberry Ice / Raspberry Watermelon, количество: 1",
+    "user_id": 6491742117,
+    "username": "Dontik",
+    "status": "new",
+    "date": "25.05.2026 18:03"
   }
 }
