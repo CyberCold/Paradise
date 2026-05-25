@@ -1558,5 +1558,13 @@
     "source": "bot_start",
     "registered": "2026-05-25T20:13:21.675565",
     "last_seen": "2026-05-25T20:13:21.675571"
+  },
+  "7527383374": {
+    "id": 7527383374,
+    "first_name": "Fred",
+    "username": "",
+    "source": "bot_start",
+    "registered": "2026-05-25T20:13:23.824074",
+    "last_seen": "2026-05-25T20:13:23.824080"
   }
 }
