@@ -178,8 +178,9 @@
     "raw_text": "Здравствуйте, хочу заказать:\nElfliq 50mg, вкус: Lemon Lime, количество: 2\nElfliq 50mg, вкус: Blue Razz Lemonade, количество: 1\nElfliq 50mg, вкус: Blueberry, количество: 2",
     "user_id": 5471367072,
     "username": "Aļoņčiks❤️",
-    "status": "new",
-    "date": "25.05.2026 14:01"
+    "status": "done",
+    "date": "25.05.2026 14:01",
+    "done_at": "2026-05-25T18:24:47.187548"
   },
   "#0011": {
     "oid": "#0011",
