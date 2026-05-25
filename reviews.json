@@ -20,5 +20,16 @@
     "comment": null,
     "date": "25.05.2026 19:58",
     "sent_to_channel": false
+  },
+  "#0007_Elfliq 50mg": {
+    "oid": "#0007",
+    "user_id": 1636239325,
+    "username": "rob4ik",
+    "product_name": "Elfliq 50mg",
+    "flavor": "Blueberry",
+    "rating": 5,
+    "comment": null,
+    "date": "25.05.2026 20:12",
+    "sent_to_channel": false
   }
 }
