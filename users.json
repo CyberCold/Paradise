@@ -422,5 +422,13 @@
     "source": "bot_start",
     "registered": "2026-05-25T20:02:04.350950",
     "last_seen": "2026-05-25T20:02:04.350958"
+  },
+  "7600024756": {
+    "id": 7600024756,
+    "first_name": "Jane",
+    "username": "",
+    "source": "bot_start",
+    "registered": "2026-05-25T20:02:06.217263",
+    "last_seen": "2026-05-25T20:02:06.217268"
   }
 }
