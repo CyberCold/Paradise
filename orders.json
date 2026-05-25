@@ -130,5 +130,27 @@
     "status": "done",
     "date": "24.05.2026 18:51",
     "done_at": "2026-05-25T08:04:03.090645"
+  },
+  "#0009": {
+    "oid": "#0009",
+    "items": [
+      {
+        "pid": "vaape",
+        "product_name": "Vaape Triple 90K",
+        "flavor": "Red Bull / Blueberry Watermelon / Monster Drink",
+        "qty": 1
+      },
+      {
+        "pid": "vaape",
+        "product_name": "Vaape Triple 90K",
+        "flavor": "Strawberry Watermelon / Grape Ice / Blueberry Raspberry Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nVaape Triple 90K, вкус: Red Bull / Blueberry Watermelon / Monster Drink, количество: 1\nVaape Triple 90K, вкус: Strawberry Watermelon / Grape Ice / Blueberry Raspberry Ice, количество: 1",
+    "user_id": 6491742117,
+    "username": "Dontik",
+    "status": "new",
+    "date": "25.05.2026 11:44"
   }
 }
