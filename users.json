@@ -366,5 +366,13 @@
     "source": "chat",
     "registered": "2026-05-25T10:30:02.475Z",
     "last_seen": "2026-05-25T18:52:53.254444"
+  },
+  "7684785364": {
+    "id": 7684785364,
+    "first_name": "Lynn",
+    "username": "",
+    "source": "bot_start",
+    "registered": "2026-05-25T20:01:53.745684",
+    "last_seen": "2026-05-25T20:01:53.745689"
   }
 }
