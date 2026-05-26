@@ -1570,23 +1570,57 @@ const TG_BOT_TOKEN = 'ВАШ_BOT_TOKEN';
 const TG_ADMIN_ID  = 'ВАШ_TELEGRAM_ID';
 
 // ════════════════════════════════════════════════════════════
-//  GITHUB CONFIG — через Cloudflare Worker
+//  WORKER URL (глобальный лидерборд)
 // ════════════════════════════════════════════════════════════
 const WORKER_URL = 'https://leaderbord.dnynzvtpyb.workers.dev';
 
-// Глобальные переменные для лидерборда (ТОЛЬКО ОДИН РАЗ!)
-let snGlobalLB = [];
-let snCurrentTab = 'global';
+// ════════════════════════════════════════════════════════════
+//  TELEGRAM ID ИНИЦИАЛИЗАЦИЯ
+// ════════════════════════════════════════════════════════════
+(function initTelegram() {
+    const tg = window.Telegram?.WebApp;
+    if (tg) {
+        tg.ready();
+        const checkUser = setInterval(() => {
+            if (tg.initDataUnsafe?.user?.id) {
+                localStorage.setItem('paradise_telegram_user_id', tg.initDataUnsafe.user.id);
+                clearInterval(checkUser);
+            }
+        }, 100);
+        setTimeout(() => clearInterval(checkUser), 5000);
+    }
+})();
+
+function getTelegramUserId() {
+    const savedId = localStorage.getItem('paradise_telegram_user_id');
+    if (savedId) return savedId;
     
-// Получение рекордов
+    const tg = window.Telegram?.WebApp?.initDataUnsafe?.user;
+    if (tg && tg.id) {
+        const id = String(tg.id);
+        localStorage.setItem('paradise_telegram_user_id', id);
+        return id;
+    }
+    
+    let localId = localStorage.getItem('paradise_user_id');
+    if (!localId) {
+        localId = 'local_' + Date.now() + '_' + Math.random().toString(36).slice(2);
+        localStorage.setItem('paradise_user_id', localId);
+    }
+    return localId;
+}
+
+// ════════════════════════════════════════════════════════════
+//  LEADERBOARD FUNCTIONS
+// ════════════════════════════════════════════════════════════
+let snGlobalLB = [];
+
 async function snakeFetchGlobalLB() {
     try {
         const response = await fetch(WORKER_URL);
         if (!response.ok) throw new Error();
         const data = await response.json();
-        // Фильтруем записи с userId
-        const validRecords = Array.isArray(data) ? data.filter(entry => entry.userId).sort((a,b)=>b.score-a.score).slice(0,20) : [];
-        snGlobalLB = validRecords;
+        snGlobalLB = Array.isArray(data) ? data.filter(entry => entry.userId).sort((a,b)=>b.score-a.score).slice(0,20) : [];
         snakeLBRender();
         snakeLBOverlayRender();
     } catch(e) { 
@@ -1596,31 +1630,9 @@ async function snakeFetchGlobalLB() {
     }
 }
 
-// Получение Telegram ID
-function getTelegramUserId() {
-    const tg = window.Telegram?.WebApp?.initDataUnsafe?.user;
-    if (tg && tg.id) {
-        console.log('✅ Telegram ID:', tg.id);
-        return String(tg.id);
-    }
-    let localId = localStorage.getItem('paradise_user_id');
-    if (!localId) {
-        localId = 'local_' + Date.now() + '_' + Math.random().toString(36).slice(2);
-        localStorage.setItem('paradise_user_id', localId);
-        console.log('🆕 Создан локальный ID:', localId);
-    }
-    return localId;
-}
-
-// Отправка рекорда
 async function snakePushGlobalLB(name, pts) {
     const userId = getTelegramUserId();
-    console.log('💾 Сохраняем рекорд:', { userId, name, pts });
-    
-    if (!userId) {
-        console.error('❌ Нет userId!');
-        return false;
-    }
+    if (!userId) return false;
     
     try {
         const response = await fetch(WORKER_URL, {
@@ -1633,43 +1645,65 @@ async function snakePushGlobalLB(name, pts) {
             })
         });
         
-        const text = await response.text();
-        console.log('📥 Ответ (текст):', text);
-        
-        let data;
-        try {
-            data = JSON.parse(text);
-        } catch(e) {
-            console.error('❌ Не удалось распарсить JSON:', text);
-            return false;
-        }
-        
+        const data = await response.json();
         if (response.ok && data.success) {
-            if (data.leaderboard) {
-                snGlobalLB = data.leaderboard.filter(entry => entry.userId).slice(0,20);
-            }
+            if (data.leaderboard) snGlobalLB = data.leaderboard.filter(entry => entry.userId).slice(0,20);
             snakeLBRender();
             snakeLBOverlayRender();
-            console.log('✅ Рекорд сохранён!');
             return true;
-        } else {
-            console.log('❌ Ошибка от сервера:', data);
-            return false;
         }
+        return false;
     } catch(e) {
-        console.error('❌ Ошибка сети:', e);
         return false;
     }
 }
 
+function snakeLBRender() {
+    const el = document.getElementById('sn-lb-section');
+    if (!el) return;
+    if (!snGlobalLB.length) {
+        el.innerHTML = '<div class="snake-lb-empty">Нет записей.<br>Сыграй первым!</div>';
+        return;
+    }
+    const medals = ['🥇', '🥈', '🥉'];
+    el.innerHTML = snGlobalLB.slice(0,10).map((e,i) => `
+        <div class="snake-lb-row r${i+1}">
+            <span class="snake-lb-rank">${medals[i] || i+1}</span>
+            <span class="snake-lb-name">${e.name}</span>
+            <span class="snake-lb-score">${e.score}</span>
+        </div>
+    `).join('');
+}
+
+function snakeLBOverlayRender() {
+    const el = document.getElementById('sgo-lb-content');
+    if (!el) return;
+    if (!snGlobalLB.length) {
+        el.innerHTML = '<div style="font-family:\'Press Start 2P\',monospace;font-size:7px;color:var(--muted);text-align:center;padding:20px;">Нет записей</div>';
+        return;
+    }
+    el.innerHTML = snGlobalLB.slice(0,10).map((e,i) => `
+        <div style="display:grid;grid-template-columns:28px 1fr auto;gap:8px;align-items:center;padding:7px 10px;border:2px solid var(--muted);margin-bottom:5px;background:#1a1a24;">
+            <span style="font-family:'Press Start 2P',monospace;font-size:7px;color:var(--muted);text-align:center;">${i+1}</span>
+            <span style="font-family:'VT323',monospace;font-size:19px;color:#e8d8b8;">${e.name}</span>
+            <span style="font-family:'Press Start 2P',monospace;font-size:8px;color:var(--accent-hover);">${e.score}</span>
+        </div>
+    `).join('');
+}
+
+function snakeSwitchTab(tab) {
+    if (tab === 'global') snakeLBRender();
+}
+
 // ════════════════════════════════════════════════════════════
-//  16-BIT CLICK SOUNDS (оставляем как есть, не трогаем)
+//  16-BIT CLICK SOUNDS
 // ════════════════════════════════════════════════════════════
 let clickAudioCtx = null;
 function getClickAudioCtx() {
     if (!clickAudioCtx) clickAudioCtx = new (window.AudioContext || window.webkitAudioContext)();
     return clickAudioCtx;
 }
+
 function play16BitClick(freq=880, duration=0.08, volume=0.2, type='square') {
     const ctx = getClickAudioCtx();
     if (ctx.state === 'suspended') ctx.resume();
@@ -1682,6 +1716,7 @@ function play16BitClick(freq=880, duration=0.08, volume=0.2, type='square') {
     osc.connect(gain); gain.connect(ctx.destination);
     osc.start(); osc.stop(now + duration);
 }
+
 document.body.addEventListener('click', (e) => {
     if (e.target.closest('#musicBtn') || e.target.closest('#snakeOverlay')) return;
     let freq=880, duration=0.07, volume=0.22, type='square';
@@ -1702,6 +1737,7 @@ const NOTE={C4:261.63,D4:293.66,E4:329.63,F4:349.23,G4:392.00,A4:440.00,B4:493.8
 const MELODY=[[NOTE.E5,.5],[NOTE.E5,.5],[NOTE._,.5],[NOTE.E5,.5],[NOTE._,.5],[NOTE.C5,.5],[NOTE.E5,1],[NOTE.G5,1],[NOTE._,1],[NOTE.G4,1],[NOTE._,1],[NOTE.C5,1.5],[NOTE.G4,.5],[NOTE._,1],[NOTE.E4,1.5],[NOTE.A4,1],[NOTE.B4,1],[NOTE.A4*1.059,.5],[NOTE.A4,1],[NOTE.G4,.67],[NOTE.E5,.67],[NOTE.G5,.67],[NOTE.A5,1],[NOTE.F5,.5],[NOTE.G5,.5],[NOTE._,.5],[NOTE.E5,1],[NOTE.C5,.5],[NOTE.D5,.5],[NOTE.B4,1],[NOTE._,.5]];
 const BASS=[[NOTE.C3,2],[NOTE.G3,2],[NOTE.A3,2],[NOTE.F4/2,2],[NOTE.C3,2],[NOTE.G3,2],[NOTE.A3,2],[NOTE.G3,2]];
 const BPM=160, BEAT=60/BPM;
+
 function getAudioCtx(){ if(!audioCtx) audioCtx=new(window.AudioContext||window.webkitAudioContext)(); return audioCtx; }
 function playNote(ctx,freq,startTime,duration,type='square',gainVal=0.04){
     if(!freq) return;
@@ -1813,58 +1849,27 @@ function secretTap() {
 
 function openSnakeGame() {
     const hint = document.getElementById('secretHint');
-    hint.style.display = 'block';
-    setTimeout(() => { hint.style.display = 'none'; }, 1200);
-
-    const ol = document.getElementById('snakeOverlay');
-    ol.classList.add('active');
-    document.body.style.overflow = 'hidden';
-
-    snakeClearLoop();
-    snakeShowStart();
-    
-    const canvas = document.getElementById('snakeCanvas');
-    const ctx = canvas.getContext('2d');
-    ctx.fillStyle = '#050508';
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-    snakeDrawGrid(ctx, canvas.width, canvas.height);
-
+    if(hint){hint.style.display='block';setTimeout(()=>{hint.style.display='none';},1200);}
+    const ol=document.getElementById('snakeOverlay');
+    if(ol){ol.classList.add('active');document.body.style.overflow='hidden';}
+    snakeClearLoop();snakeShowStart();
+    const canvas=document.getElementById('snakeCanvas');if(canvas){const ctx=canvas.getContext('2d');ctx.fillStyle='#050508';ctx.fillRect(0,0,canvas.width,canvas.height);snakeDrawGrid(ctx,canvas.width,canvas.height);}
     snakeFetchGlobalLB();
-    
-    const localTab = document.getElementById('sn-tab-local');
-    if (localTab) localTab.style.display = 'none';
-    const globalTab = document.getElementById('sn-tab-global');
-    if (globalTab) globalTab.classList.add('active');
 }
 
 function closeSnakeGame() {
     snakeClearLoop();
-    document.getElementById('snakeOverlay').classList.remove('active');
+    document.getElementById('snakeOverlay')?.classList.remove('active');
     document.body.style.overflow = 'auto';
 }
 
 // ════════════════════════════════════════════════════════════
 //  SNAKE GAME ENGINE
 // ════════════════════════════════════════════════════════════
-const SGRID = 20;
-const SCOLS = 16;
-const SROWS = 16;
-
-const SC = {
-    bg:'#050508', grid:'rgba(181,118,58,0.05)',
-    snH:'#d4944a', snB:'#b5763a', snD:'#7a5028',
-    apple:'#e84040', appleGl:'rgba(232,64,64,0.4)',
-    diamond:'#5dde8a', diamondGl:'rgba(93,222,138,0.5)',
-};
-
-let snSnake, snDir, snNextDir, snApple, snDiamond, snScore, snHi, snLevel, snSpeed;
-let snLoop = null, snAlive = false, snFrame = 0;
-let snDiamondTimer = 0, snDiamondVisible = false;
-let gameOverFlag = false;
-let currentGameId = null;
-
-const SLS_HI = 'paradise_snake_hi';
-const SLS_NAME = 'paradise_snake_name';
+const SGRID = 20, SCOLS = 16, SROWS = 16;
+const SC = { bg:'#050508', grid:'rgba(181,118,58,0.05)', snH:'#d4944a', snB:'#b5763a', snD:'#7a5028', apple:'#e84040', appleGl:'rgba(232,64,64,0.4)', diamond:'#5dde8a', diamondGl:'rgba(93,222,138,0.5)' };
+let snSnake, snDir, snNextDir, snApple, snDiamond, snScore, snHi, snLevel, snSpeed, snLoop=null, snAlive=false, snFrame=0, snDiamondTimer=0, snDiamondVisible=false, gameOverFlag=false, currentGameId=null;
+const SLS_HI='paradise_snake_hi', SLS_NAME='paradise_snake_name';
 
 function snGetHi(){ return parseInt(localStorage.getItem(SLS_HI)||'0'); }
 function snSetHi(v){ localStorage.setItem(SLS_HI, v); }
@@ -1954,11 +1959,9 @@ function snakeDie() {
     if (snLoop) clearInterval(snLoop);
     snLoop = null;
     snakeDrawDead(); 
-    
     setTimeout(() => {
         const name = snGetName();
         if (snScore > 0) {
-            console.log(`🎮 Игра окончена! Счёт: ${snScore}, Имя: ${name}`);
             snakePushGlobalLB(name, snScore);
         }
         snakeShowDead();
@@ -2020,114 +2023,27 @@ function snakeDrawDead() {
 
 function snakeClearLoop() { if (snLoop) { clearInterval(snLoop); snLoop=null; } snAlive=false; }
 
-function snakeHideAll() { ['sgo-start','sgo-dead','sgo-lb'].forEach(id=>document.getElementById(id).classList.add('hidden')); }
-function snakeShowStart() { snakeHideAll(); document.getElementById('sgo-start').classList.remove('hidden'); }
+function snakeHideAll() { ['sgo-start','sgo-dead','sgo-lb'].forEach(id=>document.getElementById(id)?.classList.add('hidden')); }
+function snakeShowStart() { snakeHideAll(); document.getElementById('sgo-start')?.classList.remove('hidden'); }
 function snakeShowDead() {
     snakeHideAll();
     const ol=document.getElementById('sgo-dead');
-    ol.classList.remove('hidden');
+    if(ol) ol.classList.remove('hidden');
     document.getElementById('sgo-dead-score').textContent = snScore+' pts';
     const msgs=['Неплохо!','Ещё чуть-чуть!','Не сдавайся!','Почти рекорд!','Змейка устала 🐍'];
     document.getElementById('sgo-dead-msg').textContent = msgs[Math.floor(Math.random()*msgs.length)];
     document.getElementById('sn-name').value = snGetName();
 }
-
-function snakeShowLB() {
-    snakeHideAll();
-    document.getElementById('sgo-lb').classList.remove('hidden');
-    snakeLBOverlayRender();
-}
-
-function snakeStart() {
-    snakeClearLoop();
-    gameOverFlag = false;
-    snakeInit();
-    snakeDraw();
-    if (snLoop) clearInterval(snLoop);
-    snLoop = setInterval(snakeTick, snSpeed);
-    snakeHideAll();
-}
-
-async function snakeSaveRestart() {
-    const nameEl = document.getElementById('sn-name');
-    let name = nameEl.value.trim().toUpperCase().slice(0,10);
-    if (!name) name = snGetName();
-    if (name) snSaveName(name);
-    snakeStart();
-}
-
-function snakeSetDir(action) {
-    if (!snAlive) return;
-    const opp={UP:'DOWN',DOWN:'UP',LEFT:'RIGHT',RIGHT:'LEFT'};
-    const map={UP:{x:0,y:-1},DOWN:{x:0,y:1},LEFT:{x:-1,y:0},RIGHT:{x:1,y:0}};
-    let cur;
-    if (snDir.x === 1) cur = 'RIGHT';
-    else if (snDir.x === -1) cur = 'LEFT';
-    else if (snDir.y === 1) cur = 'DOWN';
-    else cur = 'UP';
-    if(action !== opp[cur]) snNextDir = map[action];
-}
-
+function snakeShowLB() { snakeHideAll(); document.getElementById('sgo-lb')?.classList.remove('hidden'); snakeLBOverlayRender(); }
+function snakeStart() { snakeClearLoop(); gameOverFlag=false; snakeInit(); snakeDraw(); if(snLoop) clearInterval(snLoop); snLoop = setInterval(snakeTick, snSpeed); snakeHideAll(); }
+async function snakeSaveRestart() { const nameEl=document.getElementById('sn-name'); let name=nameEl.value.trim().toUpperCase().slice(0,10); if(!name) name=snGetName(); if(name) snSaveName(name); snakeStart(); }
+function snakeSetDir(action){ if(!snAlive) return; const opp={UP:'DOWN',DOWN:'UP',LEFT:'RIGHT',RIGHT:'LEFT'}; const map={UP:{x:0,y:-1},DOWN:{x:0,y:1},LEFT:{x:-1,y:0},RIGHT:{x:1,y:0}}; let cur; if(snDir.x===1) cur='RIGHT'; else if(snDir.x===-1) cur='LEFT'; else if(snDir.y===1) cur='DOWN'; else cur='UP'; if(action!==opp[cur]) snNextDir=map[action]; }
 function snakeDpad(action){ snakeSetDir(action); const ids={UP:'sn-up',DOWN:'sn-down',LEFT:'sn-left',RIGHT:'sn-right'}; document.getElementById(ids[action])?.classList.add('pressed'); }
 function snakeDpadOff(action){ const ids={UP:'sn-up',DOWN:'sn-down',LEFT:'sn-left',RIGHT:'sn-right'}; document.getElementById(ids[action])?.classList.remove('pressed'); }
-
-document.addEventListener('keydown', e => {
-    if (!document.getElementById('snakeOverlay').classList.contains('active')) return;
-    const map={ArrowUp:'UP',ArrowDown:'DOWN',ArrowLeft:'LEFT',ArrowRight:'RIGHT',w:'UP',s:'DOWN',a:'LEFT',d:'RIGHT',W:'UP',S:'DOWN',A:'LEFT',D:'RIGHT'};
-    const action=map[e.key];
-    if(action){e.preventDefault();snakeSetDir(action);}
-});
-
-let snTouchX=0, snTouchY=0;
-const snakeCanvasElem = document.getElementById('snakeCanvas');
-if (snakeCanvasElem) {
-    snakeCanvasElem.addEventListener('touchstart',e=>{snTouchX=e.touches[0].clientX;snTouchY=e.touches[0].clientY;e.preventDefault();},{passive:false});
-    snakeCanvasElem.addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-snTouchX,dy=e.changedTouches[0].clientY-snTouchY;if(Math.abs(dx)>Math.abs(dy)){snakeSetDir(dx>0?'RIGHT':'LEFT');}else{snakeSetDir(dy>0?'DOWN':'UP');}e.preventDefault();},{passive:false});
-}
-
-let snAC=null;
-function snGetAC(){if(!snAC)snAC=new(window.AudioContext||window.webkitAudioContext)();return snAC;}
+document.addEventListener('keydown', e=>{ if(!document.getElementById('snakeOverlay')?.classList.contains('active')) return; const map={ArrowUp:'UP',ArrowDown:'DOWN',ArrowLeft:'LEFT',ArrowRight:'RIGHT',w:'UP',s:'DOWN',a:'LEFT',d:'RIGHT',W:'UP',S:'DOWN',A:'LEFT',D:'RIGHT'}; const action=map[e.key]; if(action){e.preventDefault();snakeSetDir(action);}});
+let snTouchX=0,snTouchY=0; const snakeCanvasElem=document.getElementById('snakeCanvas'); if(snakeCanvasElem){ snakeCanvasElem.addEventListener('touchstart',e=>{snTouchX=e.touches[0].clientX;snTouchY=e.touches[0].clientY;e.preventDefault();},{passive:false}); snakeCanvasElem.addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-snTouchX,dy=e.changedTouches[0].clientY-snTouchY;if(Math.abs(dx)>Math.abs(dy)){snakeSetDir(dx>0?'RIGHT':'LEFT');}else{snakeSetDir(dy>0?'DOWN':'UP');}e.preventDefault();},{passive:false}); }
+let snAC=null; function snGetAC(){if(!snAC)snAC=new(window.AudioContext||window.webkitAudioContext)();return snAC;}
 function snPlayEat(freq){try{const ac=snGetAC();if(ac.state==='suspended')ac.resume();const o=ac.createOscillator(),g=ac.createGain();o.type='square';o.frequency.value=freq;g.gain.value=0.15;g.gain.exponentialRampToValueAtTime(0.001,ac.currentTime+0.12);o.connect(g);g.connect(ac.destination);o.start();o.stop(ac.currentTime+0.12);}catch(e){}}
-
-function snakeSwitchTab(tab) {
-    snCurrentTab = tab;
-    document.getElementById('sn-tab-local').classList.toggle('active', tab === 'local');
-    document.getElementById('sn-tab-global').classList.toggle('active', tab === 'global');
-    if (tab === 'global') snakeLBRender();
-}
-
-function snakeLBRender() {
-    const el = document.getElementById('sn-lb-section');
-    if (!el) return;
-    if (!snGlobalLB.length) {
-        el.innerHTML = '<div class="snake-lb-empty">Нет записей.<br>Сыграй первым!</div>';
-        return;
-    }
-    const medals = ['🥇', '🥈', '🥉'];
-    el.innerHTML = snGlobalLB.slice(0,10).map((e,i) => `
-        <div class="snake-lb-row r${i+1}">
-            <span class="snake-lb-rank">${medals[i] || i+1}</span>
-            <span class="snake-lb-name">${e.name}</span>
-            <span class="snake-lb-score">${e.score}</span>
-        </div>
-    `).join('');
-}
-
-function snakeLBOverlayRender() {
-    const el = document.getElementById('sgo-lb-content');
-    if (!el) return;
-    if (!snGlobalLB.length) {
-        el.innerHTML = '<div style="font-family:\'Press Start 2P\',monospace;font-size:7px;color:var(--muted);text-align:center;padding:20px;">Нет записей</div>';
-        return;
-    }
-    el.innerHTML = snGlobalLB.slice(0,10).map((e,i) => `
-        <div style="display:grid;grid-template-columns:28px 1fr auto;gap:8px;align-items:center;padding:7px 10px;border:2px solid var(--muted);margin-bottom:5px;background:#1a1a24;">
-            <span style="font-family:'Press Start 2P',monospace;font-size:7px;color:var(--muted);text-align:center;">${i+1}</span>
-            <span style="font-family:'VT323',monospace;font-size:19px;color:#e8d8b8;">${e.name}</span>
-            <span style="font-family:'Press Start 2P',monospace;font-size:8px;color:var(--accent-hover);">${e.score}</span>
-        </div>
-    `).join('');
-}
 
 // ════════════════════════════════════════════════════════════
 //  INIT
