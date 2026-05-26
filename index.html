@@ -1607,18 +1607,22 @@ function getTelegramUserId() {
 let snGlobalLB = [];
 
 async function snakeFetchGlobalLB() {
+    // Показываем лоадер пока грузим
+    const el = document.getElementById('sn-lb-section');
+    if (el) el.innerHTML = '<div class="snake-lb-empty">ЗАГРУЗКА...</div>';
+
     try {
-        const response = await fetch(WORKER_URL);
+        const response = await fetch(WORKER_URL + '?_=' + Date.now());
         if (!response.ok) throw new Error();
         const data = await response.json();
-        snGlobalLB = Array.isArray(data) ? data.filter(entry => entry.userId).sort((a,b)=>b.score-a.score).slice(0,20) : [];
-        snakeLBRender();
-        snakeLBOverlayRender();
-    } catch(e) { 
-        snGlobalLB = []; 
-        snakeLBRender();
-        snakeLBOverlayRender();
+        snGlobalLB = Array.isArray(data) ? data.sort((a, b) => b.score - a.score).slice(0, 20) : [];
+    } catch(e) {
+        snGlobalLB = [];
     }
+
+    // Рендерим везде сразу как данные пришли
+    snakeLBRender();
+    snakeLBOverlayRender();
 }
 
 async function snakePushGlobalLB(name, pts) {
@@ -1840,11 +1844,17 @@ function secretTap() {
 
 function openSnakeGame() {
     const hint = document.getElementById('secretHint');
-    if(hint){hint.style.display='block';setTimeout(()=>{hint.style.display='none';},1200);}
-    const ol=document.getElementById('snakeOverlay');
-    if(ol){ol.classList.add('active');document.body.style.overflow='hidden';}
-    snakeClearLoop();snakeShowStart();
-    const canvas=document.getElementById('snakeCanvas');if(canvas){const ctx=canvas.getContext('2d');ctx.fillStyle='#050508';ctx.fillRect(0,0,canvas.width,canvas.height);snakeDrawGrid(ctx,canvas.width,canvas.height);}
+    if (hint) { hint.style.display = 'block'; setTimeout(() => { hint.style.display = 'none'; }, 1200); }
+    const ol = document.getElementById('snakeOverlay');
+    if (ol) { ol.classList.add('active'); document.body.style.overflow = 'hidden'; }
+    snakeClearLoop(); snakeShowStart();
+    const canvas = document.getElementById('snakeCanvas');
+    if (canvas) {
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = '#050508';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        snakeDrawGrid(ctx, canvas.width, canvas.height);
+    }
     snakeFetchGlobalLB();
 }
 
