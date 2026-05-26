@@ -1499,7 +1499,7 @@
             <div class="sgo-sub" id="sgo-dead-msg">Попробуй ещё!</div>
             <div style="display:flex;flex-direction:column;align-items:center;gap:8px;">
                 <div class="snake-name-label">НИК ДЛЯ РЕКОРДОВ:</div>
-                <input class="snake-name-input" id="sn-name" maxlength="10" placeholder="PLAYER1">
+                <input class="snake-name-input" id="sn-name" maxlength="20" placeholder="PLAYER1">
             </div>
             <div class="sgo-btn-row">
                 <button class="snake-pixel-btn" onclick="snakeSaveRestart()">▶ ЕЩЁ РАЗ</button>
@@ -1546,8 +1546,6 @@
 
     <!-- TIPS -->
     <div class="snake-tips">
-        <div class="snake-tip-row"><span class="snake-tip-key">↑↓←→</span>Управление змейкой</div>
-        <div class="snake-tip-row"><span class="snake-tip-key">WASD</span>Альтернативное управление</div>
         <div class="snake-tip-row"><span class="snake-tip-key">🍎</span>+10 очков за яблоко</div>
         <div class="snake-tip-row"><span class="snake-tip-key">💎</span>+50 очков, редкий бонус</div>
         <div class="snake-tip-row"><span class="snake-tip-key">LVL</span>Каждые 50 очков — быстрее</div>
@@ -1868,8 +1866,8 @@ function snGetHi(){ return parseInt(localStorage.getItem(SLS_HI)||'0'); }
 function snSetHi(v){ localStorage.setItem(SLS_HI, v); }
 function snGetName(){ 
     const tg = window.Telegram?.WebApp?.initDataUnsafe?.user;
-    if (tg && tg.username) return tg.username.toUpperCase().slice(0,10);
-    if (tg && tg.first_name) return tg.first_name.toUpperCase().slice(0,10);
+    if (tg && tg.username) return tg.username.toUpperCase().slice(0,20);
+    if (tg && tg.first_name) return tg.first_name.toUpperCase().slice(0,20);
     return localStorage.getItem(SLS_NAME) || 'ANON';
 }
 function snSaveName(n){ localStorage.setItem(SLS_NAME,(n||'ANON').toUpperCase().slice(0,10)); }
@@ -2040,7 +2038,7 @@ function snakeShowLB() {
 function snakeStart() { snakeClearLoop(); gameOverFlag=false; snakeInit(); snakeDraw(); if(snLoop) clearInterval(snLoop); snLoop = setInterval(snakeTick, snSpeed); snakeHideAll(); }
 async function snakeSaveRestart() {
     const nameEl = document.getElementById('sn-name');
-    let name = nameEl.value.trim().toUpperCase().replace(/[^\x20-\x7E]/g, '').slice(0, 10);
+    let name = nameEl.value.trim().toUpperCase().replace(/[^\x20-\x7E]/g, '').slice(0, 20);
     if (!name) {
         name = localStorage.getItem(SLS_NAME) || 'ANON';
     }
