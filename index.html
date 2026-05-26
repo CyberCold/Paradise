@@ -1570,21 +1570,36 @@ const TG_BOT_TOKEN = 'ВАШ_BOT_TOKEN';
 const TG_ADMIN_ID  = 'ВАШ_TELEGRAM_ID';
 
 // ════════════════════════════════════════════════════════════
-//  GITHUB CONFIG (читается из paradise.env на сервере,
-//  здесь заглушки — замени на реальные значения из твоего .env)
+//  GITHUB CONFIG — через Cloudflare Worker
 // ════════════════════════════════════════════════════════════
-// paradise.env должен содержать:
-//   GH_USER=yourusername
-//   GH_REPO=paradise-lb
-//   GH_TOKEN=ghp_xxxxxxxxx
-// На сервере (Node/CF Worker) прочитай и подставь сюда при сборке.
-// Для Cloudflare Pages используй переменные окружения.
-const GH_USER  = 'CyberCold';
-const GH_REPO  = process.env.GITHUB_REPO;   // ← подхватит из .env
-const GH_TOKEN = process.env.GITHUB_TOKEN;  // ← подхватит из .env
-const GH_FILE  = 'leaderboard.json';
-const GH_RAW   = `https://raw.githubusercontent.com/${GH_USER}/${GH_REPO}/main/${GH_FILE}`;
-const GH_API   = `https://api.github.com/repos/${GH_USER}/${GH_REPO}/contents/${GH_FILE}`;
+const WORKER_URL = 'https://leaderbord.dnynzvtpyb.workers.dev/';
+
+// Получение рекордов
+async function snakeFetchGlobalLB() {
+    try {
+        const response = await fetch(WORKER_URL);
+        if (!response.ok) throw new Error('Failed to fetch');
+        const data = await response.json();
+        snGlobalLB = Array.isArray(data) ? data.sort((a,b)=>b.score-a.score).slice(0,20) : [];
+    } catch(e) {
+        snGlobalLB = [];
+    }
+}
+
+// Отправка рекорда
+async function snakePushGlobalLB(name, pts) {
+    try {
+        const response = await fetch(WORKER_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name: name, score: pts })
+        });
+        if (response.ok) {
+            const data = await response.json();
+            if (data.leaderboard) snGlobalLB = data.leaderboard.slice(0,20);
+        }
+    } catch(e) {}
+}
 
 // ════════════════════════════════════════════════════════════
 //  16-BIT CLICK SOUNDS
