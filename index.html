@@ -1574,7 +1574,7 @@ const TG_ADMIN_ID  = 'ВАШ_TELEGRAM_ID';
 // ════════════════════════════════════════════════════════════
 const WORKER_URL = 'https://leaderbord.dnynzvtpyb.workers.dev';
 
-// Глобальные переменные для лидерборда
+// Глобальные переменные для лидерборда (ТОЛЬКО ОДИН РАЗ!)
 let snGlobalLB = [];
 let snCurrentTab = 'global';
     
@@ -1584,7 +1584,9 @@ async function snakeFetchGlobalLB() {
         const response = await fetch(WORKER_URL);
         if (!response.ok) throw new Error();
         const data = await response.json();
-        snGlobalLB = Array.isArray(data) ? data.sort((a,b)=>b.score-a.score).slice(0,20) : [];
+        // Фильтруем записи с userId
+        const validRecords = Array.isArray(data) ? data.filter(entry => entry.userId).sort((a,b)=>b.score-a.score).slice(0,20) : [];
+        snGlobalLB = validRecords;
         snakeLBRender();
         snakeLBOverlayRender();
     } catch(e) { 
@@ -1599,7 +1601,7 @@ function getTelegramUserId() {
     const tg = window.Telegram?.WebApp?.initDataUnsafe?.user;
     if (tg && tg.id) {
         console.log('✅ Telegram ID:', tg.id);
-        return tg.id;
+        return String(tg.id);
     }
     let localId = localStorage.getItem('paradise_user_id');
     if (!localId) {
@@ -1610,17 +1612,23 @@ function getTelegramUserId() {
     return localId;
 }
 
+// Отправка рекорда
 async function snakePushGlobalLB(name, pts) {
     const userId = getTelegramUserId();
     console.log('💾 Сохраняем рекорд:', { userId, name, pts });
+    
+    if (!userId) {
+        console.error('❌ Нет userId!');
+        return false;
+    }
     
     try {
         const response = await fetch(WORKER_URL, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ 
-                userId: String(userId), 
-                name: String(name), 
+                userId: userId, 
+                name: (name || 'ANON').toUpperCase().slice(0,10), 
                 score: Number(pts) 
             })
         });
@@ -1637,13 +1645,15 @@ async function snakePushGlobalLB(name, pts) {
         }
         
         if (response.ok && data.success) {
-            if (data.leaderboard) snGlobalLB = data.leaderboard.slice(0,20);
+            if (data.leaderboard) {
+                snGlobalLB = data.leaderboard.filter(entry => entry.userId).slice(0,20);
+            }
             snakeLBRender();
             snakeLBOverlayRender();
             console.log('✅ Рекорд сохранён!');
             return true;
         } else {
-            console.log('❌ Ошибка:', data);
+            console.log('❌ Ошибка от сервера:', data);
             return false;
         }
     } catch(e) {
@@ -1653,7 +1663,7 @@ async function snakePushGlobalLB(name, pts) {
 }
 
 // ════════════════════════════════════════════════════════════
-//  16-BIT CLICK SOUNDS
+//  16-BIT CLICK SOUNDS (оставляем как есть, не трогаем)
 // ════════════════════════════════════════════════════════════
 let clickAudioCtx = null;
 function getClickAudioCtx() {
@@ -1788,7 +1798,7 @@ document.addEventListener('selectstart',(e)=>e.preventDefault());
 document.addEventListener('keydown',(e)=>{if(e.ctrlKey&&(e.key==='c'||e.key==='u'||e.key==='s'||e.key==='a')||e.key==='F12'||(e.ctrlKey&&e.shiftKey&&(e.key==='I'||e.key==='J'))){e.preventDefault();}},true);
 
 // ════════════════════════════════════════════════════════════
-//  SECRET ZONE — 5 тапов за 3 сек открывает игру
+//  SECRET ZONE
 // ════════════════════════════════════════════════════════════
 let secretTaps = [];
 function secretTap() {
@@ -1819,13 +1829,10 @@ function openSnakeGame() {
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     snakeDrawGrid(ctx, canvas.width, canvas.height);
 
-    // Загружаем глобальные рекорды
     snakeFetchGlobalLB();
     
-    // Скрываем локальную вкладку
     const localTab = document.getElementById('sn-tab-local');
     if (localTab) localTab.style.display = 'none';
-    // Активируем глобальную вкладку
     const globalTab = document.getElementById('sn-tab-global');
     if (globalTab) globalTab.classList.add('active');
 }
@@ -1951,6 +1958,7 @@ function snakeDie() {
     setTimeout(() => {
         const name = snGetName();
         if (snScore > 0) {
+            console.log(`🎮 Игра окончена! Счёт: ${snScore}, Имя: ${name}`);
             snakePushGlobalLB(name, snScore);
         }
         snakeShowDead();
