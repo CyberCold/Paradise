@@ -80,7 +80,6 @@
             box-shadow: 4px 4px 0 0 #000, inset 0 0 0 1px rgba(181,118,58,0.2);
         }
 
-        /* ── HEADER ── */
         .header {
             background: var(--bg);
             border-bottom: 3px solid var(--border);
@@ -146,7 +145,6 @@
             height: 3px;
             background: var(--accent);
             display: block;
-            image-rendering: pixelated;
         }
         .header-line i {
             width: 5px;
@@ -160,7 +158,32 @@
 
         .header-controls { display: flex; align-items: center; justify-content: flex-end; gap: 8px; }
 
-        /* ── PIXEL JUMP ANIMATION (УМЕНЬШЕННОЕ РАССТОЯНИЕ) ── */
+        /* SECRET TAP ZONE — left side of header, invisible */
+        .header-secret {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        #secretZone {
+            width: 36px;
+            height: 36px;
+            cursor: default;
+            -webkit-tap-highlight-color: transparent;
+            position: relative;
+        }
+        /* subtle pixel dot that hints at something — only visible if you look hard */
+        #secretZone::after {
+            content: '';
+            position: absolute;
+            bottom: 4px;
+            left: 4px;
+            width: 3px;
+            height: 3px;
+            background: var(--accent);
+            opacity: 0.3;
+            animation: blink 3s step-end infinite;
+        }
+
         @keyframes pixelJump {
             0%   { transform: translateY(0px); }
             20%  { transform: translateY(-4px); }
@@ -171,52 +194,20 @@
             100% { transform: translateY(0px); }
         }
 
-        /* Кнопки целиком прыгают — SVG внутри НЕ анимируем */
-        .icon-btn svg,
-        .cart-btn svg,
-        .back-button svg,
-        .social-icon svg,
-        .cart-btn-header svg,
-        .cart-item-del svg,
-        .cart-close-btn svg,
-        .add-to-cart-button svg,
-        .cart-empty svg {
-            animation: none !important;
-        }
+        .icon-btn svg, .cart-btn svg, .back-button svg, .social-icon svg,
+        .cart-btn-header svg, .cart-item-del svg, .cart-close-btn svg,
+        .add-to-cart-button svg, .cart-empty svg { animation: none !important; }
 
-        /* Кнопки поиска и корзины в хедере */
-        .header-controls .icon-btn:nth-of-type(1) {
-            animation: pixelJump 2.4s steps(6, end) infinite;
-            animation-delay: 0s;
-        }
-        .header-controls .icon-btn:nth-of-type(2) {
-            animation: pixelJump 2.4s steps(6, end) infinite;
-            animation-delay: 0.5s;
-        }
-
-        /* Кнопка назад целиком */
-        .back-button {
-            animation: pixelJump 2.2s steps(5, end) infinite;
-            animation-delay: 0.1s;
-        }
-
-        /* Корзина на странице продукта */
-        .cart-btn-header {
-            animation: pixelJump 2.4s steps(6, end) infinite;
-            animation-delay: 0.3s;
-        }
-
-        /* Социальные иконки целиком */
+        .header-controls .icon-btn:nth-of-type(1) { animation: pixelJump 2.4s steps(6, end) infinite; animation-delay: 0s; }
+        .header-controls .icon-btn:nth-of-type(2) { animation: pixelJump 2.4s steps(6, end) infinite; animation-delay: 0.5s; }
+        .back-button { animation: pixelJump 2.2s steps(5, end) infinite; animation-delay: 0.1s; }
+        .cart-btn-header { animation: pixelJump 2.4s steps(6, end) infinite; animation-delay: 0.3s; }
         .social-item:nth-child(1) .social-icon { animation: pixelJump 2.4s steps(6, end) infinite; animation-delay: 0s; }
         .social-item:nth-child(2) .social-icon { animation: pixelJump 2.4s steps(6, end) infinite; animation-delay: 0.3s; }
         .social-item:nth-child(3) .social-icon { animation: pixelJump 2.4s steps(6, end) infinite; animation-delay: 0.6s; }
         .social-item:nth-child(4) .social-icon { animation: pixelJump 2.4s steps(6, end) infinite; animation-delay: 0.9s; }
 
-        /* Кнопка "Добавить в корзину" — слегка прыгает, не иконка */
-        .add-to-cart-button {
-            animation: pixelJumpSmall 2s steps(5, end) infinite;
-            animation-delay: 0.7s;
-        }
+        .add-to-cart-button { animation: pixelJumpSmall 2s steps(5, end) infinite; animation-delay: 0.7s; }
         @keyframes pixelJumpSmall {
             0%   { transform: translateY(0px); }
             25%  { transform: translateY(-2px); }
@@ -225,10 +216,6 @@
             100% { transform: translateY(0px); }
         }
 
-        /* Пустая корзина — иконка пусть остаётся, кнопка не нужна */
-        .cart-empty svg { animation: none; }
-
-        /* ── КНОПКА МУЗЫКИ ── */
         .music-btn {
             position: fixed;
             bottom: 20px;
@@ -252,9 +239,6 @@
         .music-btn.muted { background: var(--surface); border-color: var(--muted); }
         .music-btn.muted .music-icon { opacity: 0.4; }
 
-        /* Иконки бейджей тоже немного пульсируют */
-        .badge-hit { animation: badgePulse 2s step-end infinite; }
-
         .icon-btn {
             background: var(--surface);
             border: 3px solid var(--border);
@@ -268,94 +252,56 @@
             transition: all 0.1s ease;
             box-shadow: 3px 3px 0 0 #000;
             flex-shrink: 0;
-            image-rendering: pixelated;
         }
-        .icon-btn:active {
-            transform: translate(3px, 3px);
-            box-shadow: none;
-        }
+        .icon-btn:active { transform: translate(3px, 3px); box-shadow: none; }
         .icon-btn svg { width: 14px; height: 14px; stroke: var(--accent); fill: none; stroke-width: 2; }
-        .cart-btn { padding: 7px 10px 7px 8px; width: auto; gap: 6px; border-radius: 0; }
+        .cart-btn { padding: 7px 10px 7px 8px; width: auto; gap: 6px; }
         .cart-count {
-            background: var(--accent);
-            color: #000;
-            border-radius: 0;
-            min-width: 18px;
-            width: auto;
-            padding: 0 3px;
-            height: 18px;
-            font-family: 'Press Start 2P', monospace;
-            font-size: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 400;
-            flex-shrink: 0;
-            box-shadow: 2px 2px 0 #000;
+            background: var(--accent); color: #000; border-radius: 0;
+            min-width: 18px; width: auto; padding: 0 3px; height: 18px;
+            font-family: 'Press Start 2P', monospace; font-size: 8px;
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0; box-shadow: 2px 2px 0 #000;
         }
         .cart-count.hidden { display: none; }
         .cart-count.bump { animation: bump 0.25s steps(2, end); }
         @keyframes bump { 0%,100%{transform:scale(1)} 50%{transform:scale(1.3)} }
 
         .fly-img {
-            position: fixed;
-            width: 60px;
-            height: 60px;
-            border: 3px solid var(--border);
-            padding: 4px;
-            background: var(--surface2);
-            image-rendering: pixelated;
-            pointer-events: none;
-            z-index: 9999;
-            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-            opacity: 1;
+            position: fixed; width: 60px; height: 60px;
+            border: 3px solid var(--border); padding: 4px;
+            background: var(--surface2); image-rendering: pixelated;
+            pointer-events: none; z-index: 9999;
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1); opacity: 1;
         }
         .fly-img.fly-end { width: 20px; height: 20px; opacity: 0; }
 
         .product-header-right { display: flex; align-items: center; gap: 8px; }
 
-        .search-bar-wrap { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; border-bottom: 0px solid var(--border); }
+        .search-bar-wrap { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
         .search-bar-wrap.open { max-height: 60px; border-bottom: 3px solid var(--border); }
         .search-bar-inner { padding: 10px 14px; display: flex; align-items: center; gap: 10px; background: var(--surface); }
         .search-input {
-            flex: 1;
-            border: 3px solid var(--border);
-            border-radius: 0;
-            padding: 8px 12px;
-            font-family: 'VT323', monospace;
-            font-size: 18px;
-            background: var(--bg);
-            color: var(--text);
-            outline: none;
-            transition: border-color 0.18s;
+            flex: 1; border: 3px solid var(--border); padding: 8px 12px;
+            font-family: 'VT323', monospace; font-size: 18px;
+            background: var(--bg); color: var(--text); outline: none;
             box-shadow: 3px 3px 0 #000;
         }
         .search-input:focus { border-color: var(--accent-hover); box-shadow: 3px 3px 0 #000, 0 0 10px var(--accent-glow); }
         .search-input::placeholder { color: var(--muted); }
         .search-clear {
-            background: var(--surface);
-            border: 3px solid var(--border);
-            color: var(--accent);
-            font-family: 'Press Start 2P', monospace;
-            font-size: 8px;
-            cursor: pointer;
-            padding: 6px 8px;
-            line-height: 1;
-            transition: all 0.1s;
+            background: var(--surface); border: 3px solid var(--border);
+            color: var(--accent); font-family: 'Press Start 2P', monospace;
+            font-size: 8px; cursor: pointer; padding: 6px 8px;
             box-shadow: 2px 2px 0 #000;
         }
         .search-clear:active { transform: translate(2px,2px); box-shadow: none; }
 
         .closed-banner {
-            display: none;
-            background: var(--accent);
-            color: #000;
-            text-align: center;
-            padding: 8px 20px;
-            font-family: 'Press Start 2P', monospace;
-            font-size: 9px;
-            letter-spacing: 1px;
-            box-shadow: 0 3px 0 #000;
+            display: none; background: var(--accent); color: #000;
+            text-align: center; padding: 8px 20px;
+            font-family: 'Press Start 2P', monospace; font-size: 9px;
+            letter-spacing: 1px; box-shadow: 0 3px 0 #000;
         }
 
         .container {
@@ -371,100 +317,46 @@
         .search-results { display: none; padding: 0; }
         .search-results.active { display: block; }
         .search-result-item {
-            background: var(--surface);
-            border: 3px solid var(--border);
-            border-radius: 0;
-            margin-bottom: 14px;
-            overflow: hidden;
-            box-shadow: 4px 4px 0 0 #000;
+            background: var(--surface); border: 3px solid var(--border);
+            margin-bottom: 14px; overflow: hidden; box-shadow: 4px 4px 0 0 #000;
             animation: fadeUp 0.2s steps(4, end) both;
         }
-        .sri-header {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            padding: 12px;
-            border-bottom: 2px solid var(--border);
-            cursor: pointer;
-        }
-        .sri-img {
-            width: 52px;
-            height: 52px;
-            object-fit: contain;
-            background: var(--surface2);
-            border: 3px solid var(--muted);
-            flex-shrink: 0;
-            image-rendering: pixelated;
-        }
+        .sri-header { display: flex; align-items: center; gap: 12px; padding: 12px; border-bottom: 2px solid var(--border); cursor: pointer; }
+        .sri-img { width: 52px; height: 52px; object-fit: contain; background: var(--surface2); border: 3px solid var(--muted); flex-shrink: 0; image-rendering: pixelated; }
         .sri-name { font-family: 'Press Start 2P', monospace; font-size: 8px; color: var(--text); line-height: 1.6; }
         .sri-tag { font-family: 'VT323', monospace; font-size: 14px; color: var(--accent); letter-spacing: 1px; text-transform: uppercase; margin-top: 2px; }
         .sri-flavors { padding: 10px 12px 12px; display: flex; flex-direction: column; gap: 6px; }
         .sri-flavor {
-            background: var(--surface2);
-            border: 2px solid var(--muted);
-            border-radius: 0;
-            padding: 9px 11px;
-            font-family: 'VT323', monospace;
-            font-size: 18px;
-            color: var(--text);
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            transition: all 0.1s;
-            box-shadow: 2px 2px 0 #000;
+            background: var(--surface2); border: 2px solid var(--muted);
+            padding: 9px 11px; font-family: 'VT323', monospace; font-size: 18px;
+            color: var(--text); cursor: pointer; display: flex; align-items: center;
+            justify-content: space-between; box-shadow: 2px 2px 0 #000;
         }
         .sri-flavor:active { background: var(--accent-light); border-color: var(--accent); color: var(--accent); transform: translate(2px,2px); box-shadow: none; }
-        .sri-flavor mark { background: rgba(181,118,58,0.3); color: var(--accent-hover); border-radius: 0; padding: 0 2px; font-style: normal; }
-        .sri-flavor-action { font-family: 'Press Start 2P', monospace; font-size: 7px; color: var(--accent); letter-spacing: 0.5px; flex-shrink: 0; margin-left: 8px; }
+        .sri-flavor mark { background: rgba(181,118,58,0.3); color: var(--accent-hover); padding: 0 2px; font-style: normal; }
+        .sri-flavor-action { font-family: 'Press Start 2P', monospace; font-size: 7px; color: var(--accent); flex-shrink: 0; margin-left: 8px; }
         .search-no-results { text-align: center; padding: 40px 20px; color: var(--muted); font-family: 'Press Start 2P', monospace; font-size: 9px; letter-spacing: 1px; line-height: 2; }
 
         .product-card {
-            background: var(--surface);
-            border: 3px solid var(--border);
-            border-radius: 0;
-            overflow: hidden;
-            cursor: pointer;
+            background: var(--surface); border: 3px solid var(--border);
+            overflow: hidden; cursor: pointer;
             transition: transform 0.1s, box-shadow 0.1s;
-            box-shadow: 4px 4px 0 0 #000;
-            position: relative;
+            box-shadow: 4px 4px 0 0 #000; position: relative;
             animation: fadeUp 0.3s steps(4, end) both;
         }
         .product-card:active { transform: translate(4px, 4px); box-shadow: none; }
         .product-card:hover { box-shadow: 6px 6px 0 0 #000, 0 0 12px var(--accent-glow); border-color: var(--accent-hover); }
 
         .product-image-wrap {
-            background: var(--surface2);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 150px;
-            padding: 10px;
-            border-bottom: 3px solid var(--border);
-            position: relative;
-            overflow: hidden;
+            background: var(--surface2); display: flex; align-items: center;
+            justify-content: center; height: 150px; padding: 10px;
+            border-bottom: 3px solid var(--border); position: relative; overflow: hidden;
         }
-
-        .product-image-wrap::before,
-        .product-image-wrap::after {
-            content: '';
-            position: absolute;
-            width: 8px;
-            height: 8px;
-            background: var(--accent);
-        }
+        .product-image-wrap::before, .product-image-wrap::after { content: ''; position: absolute; width: 8px; height: 8px; background: var(--accent); }
         .product-image-wrap::before { top: 0; left: 0; }
         .product-image-wrap::after { bottom: 0; right: 0; }
 
-        /* ── ПРЫЖОК КАРТИНОК ТОВАРОВ ── */
-        .product-image {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            image-rendering: pixelated;
-            animation: pixelJump 2.6s steps(6, end) infinite;
-        }
-        /* Каждая карточка со своим сдвигом */
+        .product-image { width: 100%; height: 100%; object-fit: contain; image-rendering: pixelated; animation: pixelJump 2.6s steps(6, end) infinite; }
         .product-card:nth-child(1) .product-image { animation-delay: 0s; }
         .product-card:nth-child(2) .product-image { animation-delay: 0.35s; }
         .product-card:nth-child(3) .product-image { animation-delay: 0.7s; }
@@ -475,716 +367,640 @@
         .product-card:nth-child(8) .product-image { animation-delay: 1.25s; }
 
         .product-badge {
-            position: absolute;
-            top: 8px;
-            right: 8px;
-            font-family: 'Press Start 2P', monospace;
-            font-size: 6px;
-            font-weight: 400;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-            padding: 4px 6px;
-            border-radius: 0;
-            box-shadow: 2px 2px 0 #000;
+            position: absolute; top: 8px; right: 8px;
+            font-family: 'Press Start 2P', monospace; font-size: 6px;
+            text-transform: uppercase; padding: 4px 6px; box-shadow: 2px 2px 0 #000;
         }
         .badge-new { background: var(--green); color: #fff; border: 2px solid #fff; }
         .badge-hit { background: var(--accent); color: #000; border: 2px solid #000; animation: badgePulse 2s step-end infinite; }
         @keyframes badgePulse { 0%,100%{background:var(--accent)} 50%{background:var(--accent-hover)} }
 
         .stock-badge {
-            position: absolute;
-            bottom: 8px;
-            left: 8px;
-            font-family: 'Press Start 2P', monospace;
-            font-size: 5px;
-            font-weight: 400;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-            padding: 4px 6px;
-            border-radius: 0;
-            box-shadow: 2px 2px 0 #000;
+            position: absolute; bottom: 8px; left: 8px;
+            font-family: 'Press Start 2P', monospace; font-size: 5px;
+            text-transform: uppercase; padding: 4px 6px; box-shadow: 2px 2px 0 #000;
         }
         .stock-in    { background: rgba(45,138,79,0.2); color: #5dde8a; border: 2px solid #2d8a4f; }
         .stock-order { background: rgba(181,118,58,0.2); color: var(--accent-hover); border: 2px solid var(--accent); }
         .stock-out   { background: rgba(192,89,74,0.15); color: #ff7a6b; border: 2px solid var(--red); }
 
         .product-info { padding: 10px 10px 12px; }
-        .product-name {
-            font-family: 'Press Start 2P', monospace;
-            font-size: 7px;
-            color: var(--text);
-            margin-bottom: 8px;
-            font-weight: 400;
-            letter-spacing: 0.5px;
-            line-height: 1.7;
-        }
-        .product-price {
-            font-family: 'VT323', monospace;
-            color: var(--accent-hover);
-            font-size: 20px;
-            line-height: 1.4;
-            text-shadow: 0 0 8px rgba(212,148,74,0.4);
-        }
+        .product-name { font-family: 'Press Start 2P', monospace; font-size: 7px; color: var(--text); margin-bottom: 8px; line-height: 1.7; }
+        .product-price { font-family: 'VT323', monospace; color: var(--accent-hover); font-size: 20px; line-height: 1.4; text-shadow: 0 0 8px rgba(212,148,74,0.4); }
 
         .product-page {
-            display: none;
-            position: fixed;
-            top: 0; left: 0;
-            width: 100%;
-            height: 100%;
-            background: var(--bg);
-            z-index: 1000;
-            overflow-y: auto;
-            background-image:
-                linear-gradient(rgba(181,118,58,0.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(181,118,58,0.03) 1px, transparent 1px);
+            display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: var(--bg); z-index: 1000; overflow-y: auto;
+            background-image: linear-gradient(rgba(181,118,58,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(181,118,58,0.03) 1px, transparent 1px);
             background-size: 24px 24px;
         }
         .product-page.active { display: block; }
 
         .product-header {
-            padding: 12px 16px;
-            border-bottom: 3px solid var(--border);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            position: sticky;
-            top: 0;
-            background: var(--bg);
-            z-index: 10;
-            box-shadow: 0 3px 0 #000;
+            padding: 12px 16px; border-bottom: 3px solid var(--border);
+            display: flex; align-items: center; justify-content: space-between;
+            position: sticky; top: 0; background: var(--bg); z-index: 10; box-shadow: 0 3px 0 #000;
         }
         .product-header::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0;
-            height: 3px;
+            content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
             background: repeating-linear-gradient(90deg, var(--accent) 0px, var(--accent) 8px, transparent 8px, transparent 16px);
         }
-
         .back-button {
-            background: var(--surface);
-            border: 3px solid var(--border);
-            font-family: 'Press Start 2P', monospace;
-            font-size: 7px;
-            color: var(--accent);
-            cursor: pointer;
-            padding: 8px 10px;
-            font-weight: 400;
-            display: flex;
-            align-items: center;
-            gap: 8px;
+            background: var(--surface); border: 3px solid var(--border);
+            font-family: 'Press Start 2P', monospace; font-size: 7px; color: var(--accent);
+            cursor: pointer; padding: 8px 10px; display: flex; align-items: center; gap: 8px;
             box-shadow: 3px 3px 0 #000;
-            transition: box-shadow 0.1s;
         }
         .back-button:active { transform: translate(3px,3px) !important; box-shadow: none !important; animation: none !important; }
-        .back-arrow {
-            width: 20px;
-            height: 20px;
-            border: 2px solid var(--accent);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 12px;
-            color: var(--accent);
-            flex-shrink: 0;
-        }
+        .back-arrow { width: 20px; height: 20px; border: 2px solid var(--accent); display: flex; align-items: center; justify-content: center; font-size: 12px; color: var(--accent); }
         .page-stock-badge {
-            font-family: 'Press Start 2P', monospace;
-            font-size: 6px;
-            font-weight: 400;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-            padding: 6px 8px;
-            border-radius: 0;
-            box-shadow: 2px 2px 0 #000;
+            font-family: 'Press Start 2P', monospace; font-size: 6px; text-transform: uppercase;
+            padding: 6px 8px; box-shadow: 2px 2px 0 #000;
         }
         .page-stock-badge.stock-in    { background: rgba(45,138,79,0.2); color: #5dde8a; border: 2px solid #2d8a4f; }
         .page-stock-badge.stock-order { background: rgba(181,118,58,0.2); color: var(--accent-hover); border: 2px solid var(--accent); }
         .page-stock-badge.stock-out   { background: rgba(192,89,74,0.15); color: #ff7a6b; border: 2px solid var(--red); }
 
-        .image-gallery {
-            position: relative;
-            width: 100%;
-            height: 260px;
-            background: var(--surface2);
-            overflow: hidden;
-            border-bottom: 3px solid var(--border);
-        }
+        .image-gallery { position: relative; width: 100%; height: 260px; background: var(--surface2); overflow: hidden; border-bottom: 3px solid var(--border); }
         .image-gallery::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background:
-                linear-gradient(to right, rgba(181,118,58,0.15) 0px, transparent 3px),
-                linear-gradient(to bottom, rgba(181,118,58,0.15) 0px, transparent 3px),
-                linear-gradient(to left, rgba(181,118,58,0.15) 0px, transparent 3px),
-                linear-gradient(to top, rgba(181,118,58,0.15) 0px, transparent 3px);
-            pointer-events: none;
-            z-index: 1;
+            content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(to right,rgba(181,118,58,0.15) 0px,transparent 3px),linear-gradient(to bottom,rgba(181,118,58,0.15) 0px,transparent 3px),linear-gradient(to left,rgba(181,118,58,0.15) 0px,transparent 3px),linear-gradient(to top,rgba(181,118,58,0.15) 0px,transparent 3px);
+            pointer-events: none; z-index: 1;
         }
         .gallery-container { display: flex; height: 100%; transition: transform 0.3s steps(6, end); }
-
-        /* Прыжок на странице продукта */
-        .gallery-image {
-            min-width: 100%;
-            height: 100%;
-            object-fit: contain;
-            cursor: pointer;
-            padding: 24px;
-            image-rendering: pixelated;
-            animation: pixelJump 2.4s steps(6, end) infinite;
-        }
+        .gallery-image { min-width: 100%; height: 100%; object-fit: contain; cursor: pointer; padding: 24px; image-rendering: pixelated; animation: pixelJump 2.4s steps(6, end) infinite; }
 
         .detail-content { padding: 20px 18px 50px; }
-        .detail-tag {
-            display: inline-block;
-            font-family: 'Press Start 2P', monospace;
-            font-size: 7px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            color: #000;
-            background: var(--accent);
-            border-radius: 0;
-            padding: 5px 10px;
-            margin-bottom: 12px;
-            font-weight: 400;
-            box-shadow: 3px 3px 0 #000;
-        }
-        .detail-title {
-            font-family: 'Press Start 2P', monospace;
-            font-size: 14px;
-            font-weight: 400;
-            margin-bottom: 6px;
-            letter-spacing: 1px;
-            color: var(--text);
-            line-height: 1.6;
-            text-shadow: 2px 2px 0 #000;
-        }
-        .detail-subtitle {
-            font-family: 'VT323', monospace;
-            font-size: 18px;
-            color: var(--muted);
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            margin-bottom: 22px;
-            font-weight: 400;
-        }
+        .detail-tag { display: inline-block; font-family: 'Press Start 2P', monospace; font-size: 7px; letter-spacing: 1px; text-transform: uppercase; color: #000; background: var(--accent); padding: 5px 10px; margin-bottom: 12px; box-shadow: 3px 3px 0 #000; }
+        .detail-title { font-family: 'Press Start 2P', monospace; font-size: 14px; margin-bottom: 6px; letter-spacing: 1px; color: var(--text); line-height: 1.6; text-shadow: 2px 2px 0 #000; }
+        .detail-subtitle { font-family: 'VT323', monospace; font-size: 18px; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 22px; }
 
-        .divider {
-            height: 3px;
-            margin: 18px 0;
-            background: repeating-linear-gradient(
-                90deg,
-                var(--border) 0px, var(--border) 6px,
-                transparent 6px, transparent 12px
-            );
-        }
+        .divider { height: 3px; margin: 18px 0; background: repeating-linear-gradient(90deg, var(--border) 0px, var(--border) 6px, transparent 6px, transparent 12px); }
 
-        .variants h3 {
-            font-family: 'Press Start 2P', monospace;
-            font-size: 7px;
-            color: var(--muted);
-            margin-bottom: 12px;
-            font-weight: 400;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
+        .variants h3 { font-family: 'Press Start 2P', monospace; font-size: 7px; color: var(--muted); margin-bottom: 12px; letter-spacing: 1px; text-transform: uppercase; }
         .variant-option {
-            background: var(--surface2);
-            border: 3px solid var(--muted);
-            padding: 11px 14px;
-            border-radius: 0;
-            margin-bottom: 8px;
-            cursor: pointer;
-            transition: all 0.1s;
-            font-family: 'VT323', monospace;
-            font-size: 20px;
-            color: var(--text);
-            font-weight: 400;
-            box-shadow: 3px 3px 0 #000;
+            background: var(--surface2); border: 3px solid var(--muted); padding: 11px 14px;
+            margin-bottom: 8px; cursor: pointer; font-family: 'VT323', monospace; font-size: 20px;
+            color: var(--text); box-shadow: 3px 3px 0 #000; transition: all 0.1s;
         }
         .variant-option:active { transform: translate(3px,3px); box-shadow: none; }
-        .variant-option.selected {
-            background: var(--accent-light);
-            color: var(--accent-hover);
-            border-color: var(--accent);
-            box-shadow: 0 0 8px var(--accent-glow), 3px 3px 0 #000;
-        }
+        .variant-option.selected { background: var(--accent-light); color: var(--accent-hover); border-color: var(--accent); box-shadow: 0 0 8px var(--accent-glow), 3px 3px 0 #000; }
 
-        .detail-price {
-            font-family: 'VT323', monospace;
-            font-size: 22px;
-            color: var(--text);
-            font-weight: 400;
-            margin: 20px 0 22px;
-            line-height: 1.7;
-            letter-spacing: 0.5px;
-        }
-        .detail-price span {
-            color: var(--accent-hover);
-            font-size: 26px;
-            text-shadow: 0 0 10px rgba(212,148,74,0.5);
-        }
+        .detail-price { font-family: 'VT323', monospace; font-size: 22px; color: var(--text); margin: 20px 0 22px; line-height: 1.7; }
+        .detail-price span { color: var(--accent-hover); font-size: 26px; text-shadow: 0 0 10px rgba(212,148,74,0.5); }
 
         .quantity-section { display: flex; align-items: center; gap: 14px; margin: 18px 0 6px; }
-        .quantity-label {
-            font-family: 'Press Start 2P', monospace;
-            font-size: 7px;
-            color: var(--muted);
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            font-weight: 400;
-        }
-        .quantity-control {
-            display: flex;
-            align-items: center;
-            border: 3px solid var(--border);
-            border-radius: 0;
-            overflow: hidden;
-            background: var(--surface);
-            box-shadow: 3px 3px 0 #000;
-        }
-        .qty-btn {
-            width: 38px;
-            height: 38px;
-            border: none;
-            background: none;
-            font-family: 'Press Start 2P', monospace;
-            font-size: 14px;
-            color: var(--accent);
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: background 0.1s;
-            font-weight: 400;
-        }
+        .quantity-label { font-family: 'Press Start 2P', monospace; font-size: 7px; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; }
+        .quantity-control { display: flex; align-items: center; border: 3px solid var(--border); overflow: hidden; background: var(--surface); box-shadow: 3px 3px 0 #000; }
+        .qty-btn { width: 38px; height: 38px; border: none; background: none; font-family: 'Press Start 2P', monospace; font-size: 14px; color: var(--accent); cursor: pointer; display: flex; align-items: center; justify-content: center; }
         .qty-btn:active { background: var(--accent-light); }
-        .qty-value {
-            width: 38px;
-            text-align: center;
-            font-family: 'Press Start 2P', monospace;
-            font-size: 11px;
-            font-weight: 400;
-            color: var(--text);
-            border-left: 3px solid var(--border);
-            border-right: 3px solid var(--border);
-            height: 38px;
-            line-height: 38px;
-        }
+        .qty-value { width: 38px; text-align: center; font-family: 'Press Start 2P', monospace; font-size: 11px; color: var(--text); border-left: 3px solid var(--border); border-right: 3px solid var(--border); height: 38px; line-height: 38px; }
 
-        .order-button {
-            width: 100%;
-            background: var(--accent);
-            color: #000;
-            border: 3px solid #000;
-            padding: 16px;
-            border-radius: 0;
-            font-family: 'Press Start 2P', monospace;
-            font-size: 9px;
-            font-weight: 400;
-            cursor: pointer;
-            transition: all 0.1s;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            box-shadow: 4px 4px 0 0 #000;
-        }
-        .order-button:active { transform: translate(4px,4px); box-shadow: none; background: var(--accent-hover); }
+        .order-button { width: 100%; background: var(--accent); color: #000; border: 3px solid #000; padding: 16px; font-family: 'Press Start 2P', monospace; font-size: 9px; cursor: pointer; letter-spacing: 1px; text-transform: uppercase; box-shadow: 4px 4px 0 0 #000; transition: all 0.1s; }
+        .order-button:active { transform: translate(4px,4px); box-shadow: none; }
         .order-button:hover { background: var(--accent-hover); box-shadow: 4px 4px 0 0 #000, 0 0 14px var(--accent-glow); }
 
-        .add-to-cart-button {
-            width: 100%;
-            background: var(--surface);
-            color: var(--accent);
-            border: 3px solid var(--accent);
-            padding: 14px;
-            border-radius: 0;
-            font-family: 'Press Start 2P', monospace;
-            font-size: 9px;
-            font-weight: 400;
-            cursor: pointer;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            margin-top: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            box-shadow: 4px 4px 0 0 #000;
-        }
+        .add-to-cart-button { width: 100%; background: var(--surface); color: var(--accent); border: 3px solid var(--accent); padding: 14px; font-family: 'Press Start 2P', monospace; font-size: 9px; cursor: pointer; letter-spacing: 1px; text-transform: uppercase; margin-top: 10px; display: flex; align-items: center; justify-content: center; gap: 8px; box-shadow: 4px 4px 0 0 #000; }
         .add-to-cart-button:active { transform: translate(4px,4px) !important; box-shadow: none !important; background: var(--accent-light); animation: none !important; }
-        .add-to-cart-button:hover { box-shadow: 4px 4px 0 0 #000, 0 0 10px var(--accent-glow); }
         .add-to-cart-button svg { width: 14px; height: 14px; stroke: var(--accent); fill: none; stroke-width: 2; animation: none !important; }
 
-        .error-message {
-            font-family: 'Press Start 2P', monospace;
-            font-size: 7px;
-            color: #ff7a6b;
-            margin-top: 10px;
-            margin-bottom: 14px;
-            display: none;
-            letter-spacing: 0.5px;
-            background: rgba(192,89,74,0.1);
-            padding: 10px 12px;
-            border: 2px solid var(--red);
-            box-shadow: 2px 2px 0 #000;
-            line-height: 2;
-        }
+        .error-message { font-family: 'Press Start 2P', monospace; font-size: 7px; color: #ff7a6b; margin-top: 10px; margin-bottom: 14px; display: none; letter-spacing: 0.5px; background: rgba(192,89,74,0.1); padding: 10px 12px; border: 2px solid var(--red); box-shadow: 2px 2px 0 #000; line-height: 2; }
         .error-message.show { display: block; }
 
-        .last-order-banner {
-            margin: 0 0 16px;
-            background: var(--surface);
-            border: 3px solid var(--border);
-            border-radius: 0;
-            padding: 14px 14px;
-            box-shadow: 4px 4px 0 0 #000;
-            animation: fadeUp 0.3s steps(4, end) both;
-        }
+        .last-order-banner { margin: 0 0 16px; background: var(--surface); border: 3px solid var(--border); padding: 14px; box-shadow: 4px 4px 0 0 #000; animation: fadeUp 0.3s steps(4, end) both; }
         .lob-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
-        .lob-title {
-            font-family: 'Press Start 2P', monospace;
-            font-size: 7px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            color: var(--muted);
-            font-weight: 400;
-        }
-        .lob-clear {
-            background: none;
-            border: 2px solid var(--muted);
-            font-family: 'Press Start 2P', monospace;
-            font-size: 6px;
-            color: var(--muted);
-            cursor: pointer;
-            padding: 4px 6px;
-            letter-spacing: 0.5px;
-            box-shadow: 2px 2px 0 #000;
-        }
+        .lob-title { font-family: 'Press Start 2P', monospace; font-size: 7px; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); }
+        .lob-clear { background: none; border: 2px solid var(--muted); font-family: 'Press Start 2P', monospace; font-size: 6px; color: var(--muted); cursor: pointer; padding: 4px 6px; box-shadow: 2px 2px 0 #000; }
         .lob-clear:active { transform: translate(2px,2px); box-shadow: none; }
         .lob-items { display: flex; flex-direction: column; gap: 6px; margin-bottom: 10px; }
-        .lob-item {
-            font-family: 'VT323', monospace;
-            font-size: 18px;
-            color: var(--text);
-            line-height: 1.4;
-        }
+        .lob-item { font-family: 'VT323', monospace; font-size: 18px; color: var(--text); line-height: 1.4; }
         .lob-item span { color: var(--muted); }
-        .lob-reorder {
-            width: 100%;
-            background: none;
-            border: 3px solid var(--accent);
-            color: var(--accent);
-            padding: 10px;
-            border-radius: 0;
-            font-family: 'Press Start 2P', monospace;
-            font-size: 7px;
-            font-weight: 400;
-            cursor: pointer;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            box-shadow: 3px 3px 0 #000;
-            transition: all 0.1s;
-        }
+        .lob-reorder { width: 100%; background: none; border: 3px solid var(--accent); color: var(--accent); padding: 10px; font-family: 'Press Start 2P', monospace; font-size: 7px; cursor: pointer; letter-spacing: 1px; text-transform: uppercase; box-shadow: 3px 3px 0 #000; transition: all 0.1s; }
         .lob-reorder:active { transform: translate(3px,3px); box-shadow: none; background: var(--accent-light); }
 
         .fullscreen-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 2000; }
         .fullscreen-overlay.active { display: block; }
         .fullscreen-container { position: relative; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
         .fullscreen-image { max-width: 90%; max-height: 90%; object-fit: contain; image-rendering: pixelated; border: 3px solid var(--border); box-shadow: 0 0 30px var(--accent-glow); }
-        .fullscreen-close {
-            position: absolute;
-            top: 16px;
-            right: 16px;
-            background: var(--surface);
-            color: var(--accent);
-            border: 3px solid var(--border);
-            width: 40px;
-            height: 40px;
-            font-family: 'Press Start 2P', monospace;
-            font-size: 10px;
-            cursor: pointer;
-            z-index: 2001;
-            box-shadow: 3px 3px 0 #000;
-        }
+        .fullscreen-close { position: absolute; top: 16px; right: 16px; background: var(--surface); color: var(--accent); border: 3px solid var(--border); width: 40px; height: 40px; font-family: 'Press Start 2P', monospace; font-size: 10px; cursor: pointer; z-index: 2001; box-shadow: 3px 3px 0 #000; }
 
         .cart-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0); z-index: 1500; pointer-events: none; transition: background 0.35s ease; }
         .cart-overlay.open { background: rgba(0,0,0,0.7); pointer-events: auto; }
         .cart-sidebar {
-            position: fixed;
-            top: 0; right: 0;
-            width: 88%;
-            max-width: 360px;
-            height: 100%;
-            background: var(--bg);
-            border-left: 3px solid var(--border);
-            box-shadow: -6px 0 0 #000, -12px 0 20px rgba(181,118,58,0.1);
-            transform: translateX(100%);
-            transition: transform 0.35s cubic-bezier(0.4,0,0.2,1);
-            z-index: 1501;
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-            background-image:
-                linear-gradient(rgba(181,118,58,0.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(181,118,58,0.03) 1px, transparent 1px);
+            position: fixed; top: 0; right: 0; width: 88%; max-width: 360px; height: 100%;
+            background: var(--bg); border-left: 3px solid var(--border);
+            box-shadow: -6px 0 0 #000; transform: translateX(100%);
+            transition: transform 0.35s cubic-bezier(0.4,0,0.2,1); z-index: 1501;
+            display: flex; flex-direction: column; overflow: hidden;
+            background-image: linear-gradient(rgba(181,118,58,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(181,118,58,0.03) 1px,transparent 1px);
             background-size: 24px 24px;
         }
         .cart-sidebar.open { transform: translateX(0); }
-        .cart-sidebar-header {
-            padding: 16px 14px 14px;
-            border-bottom: 3px solid var(--border);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-shrink: 0;
-            background: var(--bg);
-            box-shadow: 0 3px 0 #000;
-        }
-        .cart-sidebar-header::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0;
-            height: 3px;
-            background: repeating-linear-gradient(90deg, var(--accent) 0px, var(--accent) 8px, transparent 8px, transparent 16px);
-        }
-        .cart-sidebar-title {
-            font-family: 'Press Start 2P', monospace;
-            font-size: 11px;
-            font-weight: 400;
-            letter-spacing: 1px;
-            color: var(--text);
-            text-shadow: 2px 2px 0 #000;
-        }
+        .cart-sidebar-header { padding: 16px 14px 14px; border-bottom: 3px solid var(--border); display: flex; align-items: center; justify-content: space-between; flex-shrink: 0; background: var(--bg); box-shadow: 0 3px 0 #000; position: relative; }
+        .cart-sidebar-header::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: repeating-linear-gradient(90deg, var(--accent) 0px, var(--accent) 8px, transparent 8px, transparent 16px); }
+        .cart-sidebar-title { font-family: 'Press Start 2P', monospace; font-size: 11px; letter-spacing: 1px; color: var(--text); text-shadow: 2px 2px 0 #000; }
         .cart-header-right { display: flex; align-items: center; gap: 8px; }
-        .cart-clear-btn {
-            background: none;
-            border: 2px solid var(--muted);
-            font-family: 'Press Start 2P', monospace;
-            font-size: 6px;
-            color: var(--muted);
-            cursor: pointer;
-            padding: 5px 7px;
-            letter-spacing: 0.3px;
-            box-shadow: 2px 2px 0 #000;
-            transition: all 0.1s;
-        }
+        .cart-clear-btn { background: none; border: 2px solid var(--muted); font-family: 'Press Start 2P', monospace; font-size: 6px; color: var(--muted); cursor: pointer; padding: 5px 7px; box-shadow: 2px 2px 0 #000; }
         .cart-clear-btn:active { transform: translate(2px,2px); box-shadow: none; }
-        .cart-close-btn {
-            width: 32px;
-            height: 32px;
-            border-radius: 0;
-            border: 3px solid var(--border);
-            background: var(--surface);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            transition: all 0.1s;
-            box-shadow: 2px 2px 0 #000;
-        }
+        .cart-close-btn { width: 32px; height: 32px; border: 3px solid var(--border); background: var(--surface); display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 2px 2px 0 #000; }
         .cart-close-btn svg { width: 14px; height: 14px; stroke: var(--muted); fill: none; stroke-width: 2; }
         .cart-close-btn:active { transform: translate(2px,2px); box-shadow: none; }
         .cart-items { flex: 1; overflow-y: auto; padding: 10px 14px; }
-        .cart-empty {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-            gap: 14px;
-            color: var(--muted);
-            font-family: 'Press Start 2P', monospace;
-            font-size: 8px;
-            letter-spacing: 1px;
-            padding-bottom: 60px;
-            text-align: center;
-            line-height: 2;
-        }
+        .cart-empty { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 14px; color: var(--muted); font-family: 'Press Start 2P', monospace; font-size: 8px; letter-spacing: 1px; padding-bottom: 60px; text-align: center; line-height: 2; }
         .cart-empty svg { width: 40px; height: 40px; stroke: var(--muted); fill: none; stroke-width: 1.5; opacity: 0.4; }
-        .cart-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
-            padding: 12px 0;
-            border-bottom: 2px dashed var(--muted);
-            animation: fadeUp 0.2s steps(3, end) both;
-        }
+        .cart-item { display: flex; align-items: flex-start; gap: 10px; padding: 12px 0; border-bottom: 2px dashed var(--muted); animation: fadeUp 0.2s steps(3, end) both; }
         .cart-item:last-child { border-bottom: none; }
-        .cart-item-img {
-            width: 48px;
-            height: 48px;
-            border: 3px solid var(--border);
-            background: var(--surface2);
-            object-fit: contain;
-            padding: 4px;
-            flex-shrink: 0;
-            image-rendering: pixelated;
-            animation: pixelJump 2.6s steps(6, end) infinite;
-        }
+        .cart-item-img { width: 48px; height: 48px; border: 3px solid var(--border); background: var(--surface2); object-fit: contain; padding: 4px; flex-shrink: 0; image-rendering: pixelated; animation: pixelJump 2.6s steps(6, end) infinite; }
         .cart-item-info { flex: 1; min-width: 0; }
-        .cart-item-name {
-            font-family: 'Press Start 2P', monospace;
-            font-size: 7px;
-            font-weight: 400;
-            color: var(--text);
-            margin-bottom: 4px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            line-height: 1.7;
-        }
-        .cart-item-variant {
-            font-family: 'VT323', monospace;
-            font-size: 15px;
-            color: var(--muted);
-            margin-bottom: 8px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
+        .cart-item-name { font-family: 'Press Start 2P', monospace; font-size: 7px; color: var(--text); margin-bottom: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 1.7; }
+        .cart-item-variant { font-family: 'VT323', monospace; font-size: 15px; color: var(--muted); margin-bottom: 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
         .cart-item-bottom { display: flex; align-items: center; justify-content: space-between; }
-        .cart-qty-control {
-            display: flex;
-            align-items: center;
-            border: 3px solid var(--border);
-            border-radius: 0;
-            overflow: hidden;
-            background: var(--surface);
-            box-shadow: 2px 2px 0 #000;
-        }
-        .cart-qty-btn {
-            width: 28px;
-            height: 28px;
-            border: none;
-            background: none;
-            font-family: 'Press Start 2P', monospace;
-            font-size: 12px;
-            color: var(--accent);
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 400;
-            transition: background 0.1s;
-        }
+        .cart-qty-control { display: flex; align-items: center; border: 3px solid var(--border); overflow: hidden; background: var(--surface); box-shadow: 2px 2px 0 #000; }
+        .cart-qty-btn { width: 28px; height: 28px; border: none; background: none; font-family: 'Press Start 2P', monospace; font-size: 12px; color: var(--accent); cursor: pointer; display: flex; align-items: center; justify-content: center; }
         .cart-qty-btn:active { background: var(--accent-light); }
-        .cart-qty-val {
-            width: 26px;
-            text-align: center;
-            font-family: 'Press Start 2P', monospace;
-            font-size: 9px;
-            font-weight: 400;
-            color: var(--text);
-            border-left: 2px solid var(--border);
-            border-right: 2px solid var(--border);
-            height: 28px;
-            line-height: 28px;
-        }
-        .cart-item-del {
-            width: 28px;
-            height: 28px;
-            border: 3px solid var(--muted);
-            border-radius: 0;
-            background: var(--surface);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            transition: all 0.1s;
-            box-shadow: 2px 2px 0 #000;
-        }
+        .cart-qty-val { width: 26px; text-align: center; font-family: 'Press Start 2P', monospace; font-size: 9px; color: var(--text); border-left: 2px solid var(--border); border-right: 2px solid var(--border); height: 28px; line-height: 28px; }
+        .cart-item-del { width: 28px; height: 28px; border: 3px solid var(--muted); background: var(--surface); display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 2px 2px 0 #000; }
         .cart-item-del svg { width: 12px; height: 12px; stroke: var(--muted); fill: none; stroke-width: 2; }
         .cart-item-del:active { transform: translate(2px,2px); box-shadow: none; border-color: var(--red); }
-        .cart-item-del:active svg { stroke: var(--red); }
         .cart-footer { padding: 14px 14px 22px; border-top: 3px solid var(--border); flex-shrink: 0; background: var(--bg); box-shadow: 0 -3px 0 #000; }
-        .cart-order-btn {
-            width: 100%;
-            background: var(--accent);
-            color: #000;
-            border: 3px solid #000;
-            padding: 15px;
-            border-radius: 0;
-            font-family: 'Press Start 2P', monospace;
-            font-size: 8px;
-            font-weight: 400;
-            cursor: pointer;
-            transition: all 0.1s;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-            box-shadow: 4px 4px 0 0 #000;
-        }
-        .cart-order-btn:active { transform: translate(4px,4px); box-shadow: none; background: var(--accent-hover); }
+        .cart-order-btn { width: 100%; background: var(--accent); color: #000; border: 3px solid #000; padding: 15px; font-family: 'Press Start 2P', monospace; font-size: 8px; cursor: pointer; letter-spacing: 0.5px; text-transform: uppercase; box-shadow: 4px 4px 0 0 #000; transition: all 0.1s; }
+        .cart-order-btn:active { transform: translate(4px,4px); box-shadow: none; }
         .cart-order-btn:disabled { opacity: 0.35; cursor: default; transform: none; box-shadow: 4px 4px 0 0 #000; }
 
         .shop-closed-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.92); z-index: 10000; justify-content: center; align-items: center; }
         .shop-closed-overlay.active { display: flex; }
-        .shop-closed-card {
-            background: var(--surface);
-            padding: 36px 28px;
-            border: 3px solid var(--accent);
-            text-align: center;
-            max-width: 300px;
-            box-shadow: 8px 8px 0 0 #000, 0 0 40px var(--accent-glow);
-        }
+        .shop-closed-card { background: var(--surface); padding: 36px 28px; border: 3px solid var(--accent); text-align: center; max-width: 300px; box-shadow: 8px 8px 0 0 #000, 0 0 40px var(--accent-glow); }
         .shop-closed-card .lock-icon { font-size: 40px; margin-bottom: 18px; display: block; animation: blink 1s step-end infinite; }
         .shop-closed-card h2 { font-family: 'Press Start 2P', monospace; font-size: 12px; margin-bottom: 14px; color: var(--accent); line-height: 1.8; text-shadow: 2px 2px 0 #000; }
         .shop-closed-card p { font-family: 'VT323', monospace; color: var(--muted); font-size: 18px; line-height: 1.5; }
 
-        .site-footer {
-            margin-top: 40px;
-            padding: 20px 16px 18px;
-            background: var(--surface);
-            border-top: 3px solid var(--border);
-            text-align: center;
-            box-shadow: 0 -3px 0 #000;
-        }
-        .site-footer::before {
-            content: '';
-            display: block;
-            height: 3px;
-            margin-bottom: 16px;
-            background: repeating-linear-gradient(90deg, var(--accent) 0px, var(--accent) 8px, transparent 8px, transparent 16px);
-        }
-        .footer-copyright {
-            font-family: 'Press Start 2P', monospace;
-            font-size: 6px;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-            color: var(--muted);
-            margin-bottom: 16px;
-            font-weight: 400;
-            line-height: 2.2;
-        }
+        .site-footer { margin-top: 40px; padding: 20px 16px 18px; background: var(--surface); border-top: 3px solid var(--border); text-align: center; box-shadow: 0 -3px 0 #000; }
+        .site-footer::before { content: ''; display: block; height: 3px; margin-bottom: 16px; background: repeating-linear-gradient(90deg, var(--accent) 0px, var(--accent) 8px, transparent 8px, transparent 16px); }
+        .footer-copyright { font-family: 'Press Start 2P', monospace; font-size: 6px; letter-spacing: 0.5px; text-transform: uppercase; color: var(--muted); margin-bottom: 16px; line-height: 2.2; }
         .social-links { display: flex; justify-content: center; gap: 18px; margin-bottom: 18px; flex-wrap: wrap; }
         .social-item { display: flex; flex-direction: column; align-items: center; gap: 6px; text-decoration: none; transition: transform 0.1s; }
         .social-item:active { transform: translate(2px,2px); }
-        .social-icon {
-            background: var(--bg);
-            border: 3px solid var(--border);
-            border-radius: 0;
-            width: 44px;
-            height: 44px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 3px 3px 0 #000;
-        }
+        .social-icon { background: var(--bg); border: 3px solid var(--border); width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; box-shadow: 3px 3px 0 #000; }
         .social-icon svg { width: 18px; height: 18px; stroke: var(--accent); fill: none; stroke-width: 2; }
-        .social-label { font-family: 'Press Start 2P', monospace; font-size: 6px; color: var(--text); font-weight: 400; letter-spacing: 0.5px; }
+        .social-label { font-family: 'Press Start 2P', monospace; font-size: 6px; color: var(--text); letter-spacing: 0.5px; }
         .contact-email { display: inline-flex; align-items: center; gap: 8px; background: var(--bg); padding: 8px 14px; text-decoration: none; border: 3px solid var(--border); font-family: 'VT323', monospace; font-size: 16px; color: var(--text); margin-top: 8px; box-shadow: 3px 3px 0 #000; }
-        .contact-email:active { background: var(--accent-light); border-color: var(--accent); transform: translate(3px,3px); box-shadow: none; }
         .contact-email svg { width: 14px; height: 14px; stroke: var(--accent); fill: none; stroke-width: 2; }
 
-        @keyframes fadeUp {
-            from { opacity: 0; transform: translateY(12px); }
-            to   { opacity: 1; transform: translateY(0); }
-        }
+        @keyframes fadeUp { from{opacity:0;transform:translateY(12px);}to{opacity:1;transform:translateY(0);} }
 
         ::-webkit-scrollbar { width: 6px; }
         ::-webkit-scrollbar-track { background: var(--bg); border-left: 2px solid var(--border); }
         ::-webkit-scrollbar-thumb { background: var(--accent); }
+
+                /* ═══════════════════════════════════════════════
+           SNAKE GAME — CORRUPTED 16-BIT MATRIX STYLE
+           Битый файл · Глитч-эффекты · Хакерский терминал
+        ═══════════════════════════════════════════════ */
+        #snakeOverlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: #0a0a0f;
+            z-index: 50000;
+            overflow-y: auto;
+            flex-direction: column;
+            align-items: center;
+            -webkit-user-select: none;
+            user-select: none;
+            animation: glitchBg 0.3s steps(5, end) infinite;
+        }
+        #snakeOverlay.active { display: flex; }
+
+        /* Глитч-фон (битые полосы) */
+        #snakeOverlay::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: repeating-linear-gradient(0deg, 
+                rgba(0,255,80,0.08) 0px, 
+                rgba(0,255,80,0.08) 2px, 
+                transparent 2px, 
+                transparent 6px),
+                repeating-linear-gradient(90deg,
+                rgba(255,0,80,0.05) 0px,
+                rgba(255,0,80,0.05) 1px,
+                transparent 1px,
+                transparent 4px);
+            pointer-events: none;
+            z-index: 99999;
+            opacity: 0.6;
+            animation: scanMove 0.2s linear infinite;
+        }
+        @keyframes scanMove {
+            0% { background-position: 0 0; }
+            100% { background-position: 0 8px; }
+        }
+
+        /* MATRIX RAIN EFFECT (поверх всего) */
+        #snakeOverlay::after {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: repeating-linear-gradient(0deg, 
+                transparent 0px,
+                transparent 2px,
+                rgba(0,255,80,0.03) 2px,
+                rgba(0,255,80,0.03) 4px);
+            pointer-events: none;
+            z-index: 99998;
+            animation: matrixRain 0.15s linear infinite;
+        }
+        @keyframes matrixRain {
+            0% { background-position: 0 0; }
+            100% { background-position: 0 12px; }
+        }
+
+        .snake-header {
+            width: 100%;
+            max-width: 480px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 14px 10px;
+            border-bottom: 2px solid #0f0;
+            background: #050508;
+            box-shadow: 0 0 20px rgba(0,255,0,0.3), inset 0 -2px 0 rgba(0,255,0,0.5);
+            position: relative;
+            flex-shrink: 0;
+        }
+        .snake-header::before {
+            content: '';
+            position: absolute; top: 0; left: 0; right: 0; height: 2px;
+            background: repeating-linear-gradient(90deg, #0f0 0px, #0f0 4px, transparent 4px, transparent 12px);
+            animation: blink 0.3s step-end infinite;
+        }
+        .snake-title {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 10px;
+            color: #0f0;
+            text-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 2px 2px 0 #000;
+            letter-spacing: 2px;
+            animation: textFlicker 0.1s step-end infinite;
+        }
+        @keyframes textFlicker {
+            0%, 100% { opacity: 1; text-shadow: 0 0 10px #0f0, 0 0 20px #0f0; }
+            50% { opacity: 0.9; text-shadow: 0 0 5px #0f0, 0 0 10px #0f0; }
+        }
+        .snake-home-btn {
+            background: #111118;
+            border: 2px solid #0f0;
+            color: #0f0;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 7px;
+            padding: 7px 10px;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0,255,0,0.3), inset 0 0 5px rgba(0,255,0,0.2);
+            display: flex; align-items: center; gap: 6px;
+            transition: all 0.05s linear;
+        }
+        .snake-home-btn:active { transform: scale(0.95); background: #0f0; color: #000; box-shadow: 0 0 20px #0f0; }
+
+        .snake-score-bar {
+            width: 100%; max-width: 480px;
+            display: grid; grid-template-columns: 1fr 1fr 1fr;
+            gap: 6px; padding: 10px 14px;
+            background: #050508;
+            border-bottom: 2px solid #0a0a0f;
+            flex-shrink: 0;
+        }
+        .snake-score-box {
+            background: #0a0a0f;
+            border: 1px solid #0f0;
+            padding: 8px 10px;
+            text-align: center;
+            box-shadow: inset 0 0 10px rgba(0,255,0,0.1), 0 0 5px rgba(0,255,0,0.2);
+        }
+        .snake-score-label {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 5px;
+            color: #0f0;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+            opacity: 0.7;
+        }
+        .snake-score-value {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 11px;
+            color: #0f0;
+            text-shadow: 0 0 8px #0f0;
+        }
+        .snake-score-box.hi .snake-score-value { color: #ff0; text-shadow: 0 0 10px #ff0; }
+        .snake-score-box.lvl .snake-score-value { color: #0f0; }
+
+        .snake-canvas-wrap {
+            width: 100%; max-width: 480px;
+            padding: 14px;
+            background: #050508;
+            border-bottom: 2px solid #0a0a0f;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            flex-shrink: 0;
+        }
+        #snakeCanvas {
+            border: 2px solid #0f0;
+            box-shadow: 0 0 30px rgba(0,255,0,0.4), inset 0 0 20px rgba(0,255,0,0.1);
+            background: #010102;
+            image-rendering: pixelated;
+            display: block;
+            animation: borderGlitch 0.2s step-end infinite;
+        }
+        @keyframes borderGlitch {
+            0%, 100% { border-color: #0f0; box-shadow: 0 0 30px rgba(0,255,0,0.4); }
+            25% { border-color: #f0f; box-shadow: 0 0 30px rgba(255,0,255,0.4); }
+            50% { border-color: #0f0; box-shadow: 0 0 30px rgba(0,255,0,0.4); }
+            75% { border-color: #ff0; box-shadow: 0 0 30px rgba(255,255,0,0.4); }
+        }
+
+        .snake-game-overlay {
+            position: absolute;
+            top: 14px; left: 14px; right: 14px; bottom: 14px;
+            background: rgba(0,0,0,0.95);
+            border: 2px solid #0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            z-index: 10;
+            backdrop-filter: blur(2px);
+            box-shadow: 0 0 50px rgba(0,255,0,0.2), inset 0 0 30px rgba(0,255,0,0.05);
+        }
+        .snake-game-overlay.hidden { display: none; }
+
+        .sgo-title {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 14px;
+            color: #0f0;
+            text-shadow: 0 0 10px #0f0, 2px 2px 0 #000;
+            text-align: center;
+            line-height: 1.6;
+            animation: glitchText 0.15s step-end infinite;
+        }
+        @keyframes glitchText {
+            0%, 100% { transform: skew(0deg); opacity: 1; }
+            95% { transform: skew(2deg); opacity: 0.9; text-shadow: -2px 0 #f0f, 2px 0 #0ff; }
+            96% { transform: skew(-1deg); opacity: 0.95; }
+        }
+        .sgo-sub {
+            font-family: 'VT323', monospace;
+            font-size: 16px;
+            color: #0a0;
+            text-align: center;
+            letter-spacing: 1px;
+            line-height: 1.5;
+        }
+        .sgo-score {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 18px;
+            color: #ff0;
+            text-shadow: 0 0 15px #ff0;
+        }
+        .sgo-btn-row { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+
+        .snake-pixel-btn {
+            background: #111118;
+            color: #0f0;
+            border: 2px solid #0f0;
+            padding: 10px 16px;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 7px;
+            cursor: pointer;
+            letter-spacing: 1px;
+            box-shadow: 0 0 8px rgba(0,255,0,0.3);
+            transition: all 0.05s linear;
+            text-transform: uppercase;
+        }
+        .snake-pixel-btn:active { transform: scale(0.95); background: #0f0; color: #000; box-shadow: 0 0 20px #0f0; }
+        .snake-pixel-btn.sec { border-color: #f0f; color: #f0f; box-shadow: 0 0 8px rgba(255,0,255,0.3); }
+        .snake-pixel-btn.sec:active { background: #f0f; color: #000; }
+
+        /* D-PAD — глитч-стиль */
+        .snake-controls {
+            width: 100%; max-width: 480px;
+            padding: 14px 14px 18px;
+            background: #050508;
+            border-bottom: 2px solid #0a0a0f;
+            flex-shrink: 0;
+        }
+        .snake-controls-label {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 5px;
+            color: #0a0;
+            text-align: center;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+            animation: pulse 1.5s step-end infinite;
+        }
+        .dpad {
+            width: 140px;
+            height: 140px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 4px;
+        }
+        .dpad-btn {
+            background: #0a0a0f;
+            border: 2px solid #0f0;
+            color: #0f0;
+            font-size: 18px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 5px rgba(0,255,0,0.3);
+            transition: all 0.03s linear;
+            user-select: none;
+        }
+        .dpad-btn:active, .dpad-btn.pressed {
+            background: #0f0;
+            color: #000;
+            box-shadow: 0 0 15px #0f0;
+            transform: scale(0.95);
+        }
+        .dpad-center {
+            background: #050508;
+            border: 2px solid #0a0a0f;
+            opacity: 0.5;
+            cursor: default;
+        }
+
+        /* INPUT — хакерский терминал */
+        .snake-name-input {
+            background: #010102;
+            border: 2px solid #0f0;
+            color: #0f0;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 9px;
+            padding: 10px 14px;
+            width: 190px;
+            text-align: center;
+            outline: none;
+            box-shadow: inset 0 0 10px rgba(0,255,0,0.1), 0 0 10px rgba(0,255,0,0.2);
+            text-transform: uppercase;
+        }
+        .snake-name-input:focus {
+            border-color: #ff0;
+            box-shadow: inset 0 0 15px rgba(255,255,0,0.2), 0 0 20px #0f0;
+        }
+        .snake-name-label {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 5px;
+            color: #0a0;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        /* LEADERBOARD — битые данные */
+        .snake-lb-wrap {
+            width: 100%; max-width: 480px;
+            padding: 14px;
+            background: #050508;
+            border-bottom: 2px solid #0a0a0f;
+            flex-shrink: 0;
+        }
+        .snake-lb-tabs { display: flex; gap: 6px; margin-bottom: 12px; }
+        .snake-lb-tab {
+            flex: 1;
+            background: #0a0a0f;
+            border: 1px solid #0a0;
+            color: #0a0;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 6px;
+            padding: 8px 4px;
+            cursor: pointer;
+            text-align: center;
+            letter-spacing: 0.5px;
+        }
+        .snake-lb-tab.active {
+            background: rgba(0,255,0,0.15);
+            border-color: #0f0;
+            color: #0f0;
+            text-shadow: 0 0 5px #0f0;
+        }
+        .snake-lb-header {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 7px;
+            color: #0f0;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+            text-align: center;
+            text-shadow: 0 0 8px #0f0;
+        }
+        .snake-lb-status {
+            font-family: 'VT323', monospace;
+            font-size: 16px;
+            color: #0a0;
+            text-align: center;
+            padding: 8px;
+        }
+        .snake-lb-row {
+            display: grid;
+            grid-template-columns: 30px 1fr auto;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 10px;
+            border: 1px solid #0a0;
+            margin-bottom: 6px;
+            background: #0a0a0f;
+            transition: all 0.05s linear;
+        }
+        .snake-lb-row.r1 { border-color: #ff0; box-shadow: 0 0 10px rgba(255,255,0,0.3); }
+        .snake-lb-row.r2 { border-color: #c0c0c0; }
+        .snake-lb-row.r3 { border-color: #cd7f32; }
+        .snake-lb-rank {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 7px;
+            color: #0a0;
+            text-align: center;
+        }
+        .snake-lb-row.r1 .snake-lb-rank { color: #ff0; }
+        .snake-lb-row.r2 .snake-lb-rank { color: #c0c0c0; }
+        .snake-lb-row.r3 .snake-lb-rank { color: #cd7f32; }
+        .snake-lb-name {
+            font-family: 'VT323', monospace;
+            font-size: 18px;
+            color: #0f0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .snake-lb-score {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 8px;
+            color: #0f0;
+        }
+        .snake-lb-empty {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 6px;
+            color: #0a0;
+            text-align: center;
+            padding: 24px;
+            letter-spacing: 1px;
+            line-height: 2;
+        }
+
+        /* TIPS */
+        .snake-tips {
+            width: 100%; max-width: 480px;
+            padding: 10px 14px 30px;
+            background: #050508;
+            flex-shrink: 0;
+        }
+        .snake-tip-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 6px 0;
+            border-bottom: 1px dashed #0a0;
+            font-family: 'VT323', monospace;
+            font-size: 16px;
+            color: #0a0;
+        }
+        .snake-tip-key {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 6px;
+            background: #0a0a0f;
+            border: 1px solid #0a0;
+            padding: 3px 6px;
+            color: #0f0;
+            flex-shrink: 0;
+        }
+
+        /* HINT */
+        #secretHint {
+            position: fixed;
+            bottom: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #000;
+            color: #0f0;
+            border: 2px solid #0f0;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 7px;
+            padding: 8px 14px;
+            box-shadow: 0 0 20px rgba(0,255,0,0.5), inset 0 0 10px rgba(0,255,0,0.2);
+            z-index: 99997;
+            white-space: nowrap;
+            animation: glitchHint 0.1s step-end infinite;
+            display: none;
+        }
+        @keyframes glitchHint {
+            0%, 100% { opacity: 1; letter-spacing: 0px; }
+            50% { opacity: 0.9; letter-spacing: 1px; text-shadow: -1px 0 #f0f, 1px 0 #0ff; }
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
     </style>
 </head>
 <body>
@@ -1199,9 +1015,15 @@
 
 <div class="closed-banner" id="closedBanner">🔒 Магазин временно закрыт. Напишите нам позже.</div>
 
+<!-- SECRET HINT -->
+<div id="secretHint">🐍 SNAKE UNLOCKED!</div>
+
 <div class="header">
     <div class="header-inner">
-        <div class="header-left"></div>
+        <!-- SECRET ZONE: нажми 5 раз за 3 сек -->
+        <div class="header-secret">
+            <div id="secretZone" onclick="secretTap()" title=""></div>
+        </div>
         <div class="header-center" style="text-align:center;">
             <div class="header-eyebrow">Premium Vape Shop</div>
             <h1>Paradise</h1>
@@ -1226,7 +1048,6 @@
     </div>
 </div>
 
-<!-- Кнопка музыки -->
 <button class="music-btn" id="musicBtn" onclick="toggleMusic()" title="8-bit музыка">
     <span class="music-icon" id="musicIcon">🎵</span>
 </button>
@@ -1236,7 +1057,6 @@
         <div id="lastOrderBlock"></div>
         <div class="search-results" id="searchResults"></div>
         <div class="products-grid" id="productsGrid">
-            <!-- CARDS_START -->
         <div class="product-card" onclick="openProduct('vaape')" data-badge="" data-stock="in">
                 <div class="product-image-wrap">
                     <img src="https://i.postimg.cc/8z7tS8kx/vaape-triple.png" alt="Vaape Triple 90K" class="product-image">
@@ -1314,7 +1134,6 @@
                     <div class="product-price">1 — 13€ | 2 — 25€<br>3 — 33€ | 5 — 50€</div>
                 </div>
             </div>
-        <!-- CARDS_END -->
         </div>
     </div>
 </div>
@@ -1337,11 +1156,10 @@
     </div>
     <div class="footer-copyright">© 2025-2026 CyberCold, Co-founder of Paradise.<br>All rights reserved.</div>
     <a class="copyrighted-badge" title="Copyrighted.com Registered &amp; Protected" target="_blank" href="https://app.copyrighted.com/website/IlAvgpW2fMHtKALg/"><img alt="Copyrighted.com Registered &amp; Protected" border="0" width="125" height="25" srcset="https://static.copyrighted.com/badges/125x25/01_2_2x.png 2x" src="https://static.copyrighted.com/badges/125x25/01_2.png"></a><script src="https://static.copyrighted.com/badges/helper.js"></script>
-    </a>
     <a href="//www.dmca.com/Protection/Status.aspx?ID=84722058-c2b8-45a3-a317-635e207aa920" title="DMCA.com Protection Status" class="dmca-badge"><img src="https://images.dmca.com/Badges/dmca_protected_sml_120n.png?ID=84722058-c2b8-45a3-a317-635e207aa920" alt="DMCA.com Protection Status"/></a><script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"></script>
 </div>
 
-<!-- PAGES_START -->
+<!-- PRODUCT PAGES -->
 <div class="product-page" id="product-vaape">
     <div class="product-header">
         <button class="back-button" onclick="closeProduct('vaape')"><span class="back-arrow">←</span> Назад</button>
@@ -1365,12 +1183,12 @@
         <div class="divider"></div>
         <div class="variants">
             <h3>Выберите вкус (3 в 1)</h3>
-                <div class="variant-option" onclick="selectVariant(this,'vaape')">Red Bull / Blueberry Watermelon / Monster Drink</div>
-                <div class="variant-option" onclick="selectVariant(this,'vaape')">Mixed Berries / Red Bull / Peach Ice</div>
-                <div class="variant-option" onclick="selectVariant(this,'vaape')">Strawberry Watermelon / Cola Ice / Peach Ice</div>
-                <div class="variant-option" onclick="selectVariant(this,'vaape')">Strawberry Raspberry Cherry / Kiwi Passion Fruit Guava / Blue Raspberry Ice</div>
-                <div class="variant-option" onclick="selectVariant(this,'vaape')">Double Apple Ice / Strawberry Dragonfruit / Red Bull</div>
-            </div>
+            <div class="variant-option" onclick="selectVariant(this,'vaape')">Red Bull / Blueberry Watermelon / Monster Drink</div>
+            <div class="variant-option" onclick="selectVariant(this,'vaape')">Mixed Berries / Red Bull / Peach Ice</div>
+            <div class="variant-option" onclick="selectVariant(this,'vaape')">Strawberry Watermelon / Cola Ice / Peach Ice</div>
+            <div class="variant-option" onclick="selectVariant(this,'vaape')">Strawberry Raspberry Cherry / Kiwi Passion Fruit Guava / Blue Raspberry Ice</div>
+            <div class="variant-option" onclick="selectVariant(this,'vaape')">Double Apple Ice / Strawberry Dragonfruit / Red Bull</div>
+        </div>
         <div class="quantity-section"><span class="quantity-label">Количество</span><div class="quantity-control"><button class="qty-btn" onclick="changeQty('vaape',-1)">−</button><span class="qty-value" id="qty-vaape">1</span><button class="qty-btn" onclick="changeQty('vaape',1)">+</button></div></div>
         <div class="detail-price"><span>15€</span> &nbsp;·&nbsp; Брак не меняем</div>
         <div class="error-message" id="error-vaape">Пожалуйста, выберите вкус</div>
@@ -1616,7 +1434,6 @@
         <button class="add-to-cart-button" onclick="addToCart('dk')"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>Добавить в корзину</button>
     </div>
 </div>
-<!-- PAGES_END -->
 
 <div class="fullscreen-overlay" id="fullscreen">
     <button class="fullscreen-close" onclick="closeFullscreen()">×</button>
@@ -1638,525 +1455,609 @@
         </div>
         <div class="cart-items" id="cartItems"></div>
         <div class="cart-footer">
-            <button class="cart-order-btn" id="cartOrderBtn" onclick="orderCartTelegram()" disabled>
-                Заказать в Telegram
-            </button>
+            <button class="cart-order-btn" id="cartOrderBtn" onclick="orderCartTelegram()" disabled>Заказать в Telegram</button>
         </div>
     </div>
 </div>
 
+<!-- ═══════════════════════════════════
+     SNAKE GAME OVERLAY (встроен в сайт)
+═══════════════════════════════════ -->
+<div id="snakeOverlay">
+
+    <div class="snake-header">
+        <div class="snake-title">🐍 SNAKE</div>
+        <button class="snake-home-btn" onclick="closeSnakeGame()">← ДОМОЙ</button>
+    </div>
+
+    <div class="snake-score-bar">
+        <div class="snake-score-box">
+            <div class="snake-score-label">Score</div>
+            <div class="snake-score-value" id="sn-score">0</div>
+        </div>
+        <div class="snake-score-box hi">
+            <div class="snake-score-label">Best</div>
+            <div class="snake-score-value" id="sn-hi">0</div>
+        </div>
+        <div class="snake-score-box lvl">
+            <div class="snake-score-label">Level</div>
+            <div class="snake-score-value" id="sn-lvl">1</div>
+        </div>
+    </div>
+
+    <div class="snake-canvas-wrap">
+        <canvas id="snakeCanvas" width="320" height="320"></canvas>
+
+        <!-- START -->
+        <div class="snake-game-overlay" id="sgo-start">
+            <div class="sgo-emoji">🐍</div>
+            <div class="sgo-title">SNAKE<br>16BIT</div>
+            <div class="sgo-sub">Paradise Edition<br>Нажми 5 раз на угол — нашёл!</div>
+            <div class="sgo-btn-row">
+                <button class="snake-pixel-btn" onclick="snakeStart()">▶ ИГРАТЬ</button>
+                <button class="snake-pixel-btn sec" onclick="snakeShowLB()">🏆 РЕКОРДЫ</button>
+            </div>
+        </div>
+
+        <!-- GAME OVER -->
+        <div class="snake-game-overlay hidden" id="sgo-dead">
+            <div class="sgo-title" style="font-size:14px;">GAME OVER</div>
+            <div class="sgo-score" id="sgo-dead-score">0 pts</div>
+            <div class="sgo-sub" id="sgo-dead-msg">Попробуй ещё!</div>
+            <div style="display:flex;flex-direction:column;align-items:center;gap:8px;">
+                <div class="snake-name-label">НИК ДЛЯ РЕКОРДОВ:</div>
+                <input class="snake-name-input" id="sn-name" maxlength="10" placeholder="PLAYER1">
+            </div>
+            <div class="sgo-btn-row">
+                <button class="snake-pixel-btn" onclick="snakeSaveRestart()">▶ ЕЩЁ РАЗ</button>
+                <button class="snake-pixel-btn sec" onclick="snakeShowLB()">🏆 РЕКОРДЫ</button>
+            </div>
+        </div>
+
+        <!-- LEADERBOARD OVERLAY -->
+        <div class="snake-game-overlay hidden" id="sgo-lb">
+            <div class="sgo-title" style="font-size:12px;">🏆 РЕКОРДЫ</div>
+            <div id="sgo-lb-content" style="width:100%;max-height:260px;overflow-y:auto;padding:0 6px;"></div>
+            <div class="sgo-btn-row">
+                <button class="snake-pixel-btn" onclick="snakeStart()">▶ ИГРАТЬ</button>
+                <button class="snake-pixel-btn sec" onclick="snakeShowStart()">← МЕНЮ</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- D-PAD -->
+    <div class="snake-controls">
+        <div class="snake-controls-label">УПРАВЛЕНИЕ · СВАЙП ПО ЭКРАНУ</div>
+        <div class="dpad">
+            <div></div>
+            <div class="dpad-btn" id="sn-up"    onpointerdown="snakeDpad('UP')"    onpointerup="snakeDpadOff('UP')">▲</div>
+            <div></div>
+            <div class="dpad-btn" id="sn-left"  onpointerdown="snakeDpad('LEFT')"  onpointerup="snakeDpadOff('LEFT')">◀</div>
+            <div class="dpad-center"></div>
+            <div class="dpad-btn" id="sn-right" onpointerdown="snakeDpad('RIGHT')" onpointerup="snakeDpadOff('RIGHT')">▶</div>
+            <div></div>
+            <div class="dpad-btn" id="sn-down"  onpointerdown="snakeDpad('DOWN')"  onpointerup="snakeDpadOff('DOWN')">▼</div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- LEADERBOARD SECTION -->
+    <div class="snake-lb-wrap">
+        <div class="snake-lb-tabs">
+            <div class="snake-lb-tab active" id="sn-tab-local"  onclick="snakeSwitchTab('local')">ЛОКАЛЬНЫЙ</div>
+            <div class="snake-lb-tab"        id="sn-tab-global" onclick="snakeSwitchTab('global')">ГЛОБАЛЬНЫЙ</div>
+        </div>
+        <div class="snake-lb-header">🏆 ТОП ИГРОКОВ</div>
+        <div id="sn-lb-section"></div>
+    </div>
+
+    <!-- TIPS -->
+    <div class="snake-tips">
+        <div class="snake-tip-row"><span class="snake-tip-key">↑↓←→</span>Управление змейкой</div>
+        <div class="snake-tip-row"><span class="snake-tip-key">WASD</span>Альтернативное управление</div>
+        <div class="snake-tip-row"><span class="snake-tip-key">🍎</span>+10 очков за яблоко</div>
+        <div class="snake-tip-row"><span class="snake-tip-key">💎</span>+50 очков, редкий бонус</div>
+        <div class="snake-tip-row"><span class="snake-tip-key">LVL</span>Каждые 50 очков — быстрее</div>
+    </div>
+
+</div><!-- /snakeOverlay -->
+
 <script>
+// ════════════════════════════════════════════════════════════
+//  SHOP CONFIG
+// ════════════════════════════════════════════════════════════
 const TG_BOT_TOKEN = 'ВАШ_BOT_TOKEN';
 const TG_ADMIN_ID  = 'ВАШ_TELEGRAM_ID';
 
-// ==================== 16-БИТНЫЕ ЗВУКИ ДЛЯ КАЖДОГО НАЖАТИЯ (ГРОМЧЕ) ====================
+// ════════════════════════════════════════════════════════════
+//  GITHUB CONFIG (читается из paradise.env на сервере,
+//  здесь заглушки — замени на реальные значения из твоего .env)
+// ════════════════════════════════════════════════════════════
+// paradise.env должен содержать:
+//   GH_USER=yourusername
+//   GH_REPO=paradise-lb
+//   GH_TOKEN=ghp_xxxxxxxxx
+// На сервере (Node/CF Worker) прочитай и подставь сюда при сборке.
+// Для Cloudflare Pages используй переменные окружения.
+const GH_USER  = 'CyberCold';
+const GH_REPO  = process.env.GITHUB_REPO;   // ← подхватит из .env
+const GH_TOKEN = process.env.GITHUB_TOKEN;  // ← подхватит из .env
+const GH_FILE  = 'leaderboard.json';
+const GH_RAW   = `https://raw.githubusercontent.com/${GH_USER}/${GH_REPO}/main/${GH_FILE}`;
+const GH_API   = `https://api.github.com/repos/${GH_USER}/${GH_REPO}/contents/${GH_FILE}`;
+
+// ════════════════════════════════════════════════════════════
+//  16-BIT CLICK SOUNDS
+// ════════════════════════════════════════════════════════════
 let clickAudioCtx = null;
 function getClickAudioCtx() {
     if (!clickAudioCtx) clickAudioCtx = new (window.AudioContext || window.webkitAudioContext)();
     return clickAudioCtx;
 }
-
-function play16BitClick(freq = 880, duration = 0.08, volume = 0.2, type = 'square') { // volume увеличен с 0.1 до 0.2
+function play16BitClick(freq=880, duration=0.08, volume=0.2, type='square') {
     const ctx = getClickAudioCtx();
     if (ctx.state === 'suspended') ctx.resume();
     const now = ctx.currentTime;
     const osc = ctx.createOscillator();
     const gain = ctx.createGain();
-    osc.type = type;
-    osc.frequency.value = freq;
+    osc.type = type; osc.frequency.value = freq;
     gain.gain.value = volume;
     gain.gain.exponentialRampToValueAtTime(0.0001, now + duration);
-    osc.connect(gain);
-    gain.connect(ctx.destination);
-    osc.start();
-    osc.stop(now + duration);
+    osc.connect(gain); gain.connect(ctx.destination);
+    osc.start(); osc.stop(now + duration);
 }
-
-// Перехват всех кликов с разными звуками под разные действия (громкость увеличена)
 document.body.addEventListener('click', (e) => {
-    if (e.target.closest('#musicBtn')) return;
-    
-    let freq = 880;
-    let duration = 0.07;
-    let volume = 0.22; // была 0.1-0.14, теперь 0.22-0.28
-    let type = 'square';
-    
-    if (e.target.closest('.order-button') || e.target.closest('.cart-order-btn')) {
-        freq = 660; duration = 0.12; volume = 0.28; type = 'square';
-    } else if (e.target.closest('.add-to-cart-button') || e.target.closest('.cart-btn')) {
-        freq = 523.25; duration = 0.1; volume = 0.26; type = 'triangle';
-    } else if (e.target.closest('.back-button') || e.target.closest('.cart-close-btn')) {
-        freq = 440; duration = 0.06; volume = 0.22; type = 'sine';
-    } else if (e.target.closest('.variant-option') || e.target.closest('.qty-btn') || e.target.closest('.cart-qty-btn')) {
-        freq = 783.99; duration = 0.05; volume = 0.24; type = 'square';
-    } else if (e.target.closest('.icon-btn') || e.target.closest('.product-card')) {
-        freq = 659.25; duration = 0.07; volume = 0.24; type = 'square';
-    } else if (e.target.closest('.sri-flavor') || e.target.closest('.lob-reorder')) {
-        freq = 987.77; duration = 0.09; volume = 0.26; type = 'sine';
-    } else if (e.target.closest('.cart-item-del')) {
-        freq = 311.13; duration = 0.1; volume = 0.25; type = 'sawtooth';
-    } else {
-        freq = 880; duration = 0.06; volume = 0.22; type = 'square';
-    }
+    if (e.target.closest('#musicBtn') || e.target.closest('#snakeOverlay')) return;
+    let freq=880, duration=0.07, volume=0.22, type='square';
+    if (e.target.closest('.order-button')||e.target.closest('.cart-order-btn'))        { freq=660;   duration=0.12; volume=0.28; type='square';   }
+    else if (e.target.closest('.add-to-cart-button')||e.target.closest('.cart-btn'))   { freq=523.25;duration=0.1;  volume=0.26; type='triangle'; }
+    else if (e.target.closest('.back-button')||e.target.closest('.cart-close-btn'))    { freq=440;   duration=0.06; volume=0.22; type='sine';      }
+    else if (e.target.closest('.variant-option')||e.target.closest('.qty-btn')||e.target.closest('.cart-qty-btn')) { freq=783.99; duration=0.05; volume=0.24; type='square'; }
+    else if (e.target.closest('.icon-btn')||e.target.closest('.product-card'))         { freq=659.25;duration=0.07; volume=0.24; type='square';   }
+    else if (e.target.closest('.cart-item-del'))                                        { freq=311.13;duration=0.1;  volume=0.25; type='sawtooth'; }
     play16BitClick(freq, duration, volume, type);
 });
 
-/* ══════════════════════════════════════════
-   8-BIT MUSIC ENGINE (ТИШЕ)
-   ══════════════════════════════════════════ */
-let audioCtx = null;
-let musicPlaying = false;
-let musicScheduleTimer = null;
-let musicStartTime = 0;
+// ════════════════════════════════════════════════════════════
+//  8-BIT MUSIC ENGINE
+// ════════════════════════════════════════════════════════════
+let audioCtx=null, musicPlaying=false, musicScheduleTimer=null, musicStartTime=0;
+const NOTE={C4:261.63,D4:293.66,E4:329.63,F4:349.23,G4:392.00,A4:440.00,B4:493.88,C5:523.25,D5:587.33,E5:659.25,F5:698.46,G5:783.99,A5:880.00,B5:987.77,C3:130.81,G3:196.00,A3:220.00,_:0};
+const MELODY=[[NOTE.E5,.5],[NOTE.E5,.5],[NOTE._,.5],[NOTE.E5,.5],[NOTE._,.5],[NOTE.C5,.5],[NOTE.E5,1],[NOTE.G5,1],[NOTE._,1],[NOTE.G4,1],[NOTE._,1],[NOTE.C5,1.5],[NOTE.G4,.5],[NOTE._,1],[NOTE.E4,1.5],[NOTE.A4,1],[NOTE.B4,1],[NOTE.A4*1.059,.5],[NOTE.A4,1],[NOTE.G4,.67],[NOTE.E5,.67],[NOTE.G5,.67],[NOTE.A5,1],[NOTE.F5,.5],[NOTE.G5,.5],[NOTE._,.5],[NOTE.E5,1],[NOTE.C5,.5],[NOTE.D5,.5],[NOTE.B4,1],[NOTE._,.5]];
+const BASS=[[NOTE.C3,2],[NOTE.G3,2],[NOTE.A3,2],[NOTE.F4/2,2],[NOTE.C3,2],[NOTE.G3,2],[NOTE.A3,2],[NOTE.G3,2]];
+const BPM=160, BEAT=60/BPM;
+function getAudioCtx(){ if(!audioCtx) audioCtx=new(window.AudioContext||window.webkitAudioContext)(); return audioCtx; }
+function playNote(ctx,freq,startTime,duration,type='square',gainVal=0.04){
+    if(!freq) return;
+    const osc=ctx.createOscillator(),gain=ctx.createGain();
+    osc.type=type; osc.frequency.setValueAtTime(freq,startTime);
+    gain.gain.setValueAtTime(gainVal,startTime);
+    gain.gain.exponentialRampToValueAtTime(0.001,startTime+duration*.9);
+    osc.connect(gain); gain.connect(ctx.destination);
+    osc.start(startTime); osc.stop(startTime+duration);
+}
+function scheduleMusic(){
+    const ctx=getAudioCtx(),now=ctx.currentTime,ahead=0.3;
+    let melTime=musicStartTime,mi=0;
+    for(let i=0;i<MELODY.length;i++){const dur=MELODY[i][1]*BEAT;if(melTime+dur<=now-.01){melTime+=dur;mi=(i+1)%MELODY.length;}else break;}
+    let t=melTime,mii=mi;
+    while(t<now+ahead+.5){const[freq,beats]=MELODY[mii%MELODY.length];const dur=beats*BEAT;if(t>=now-.01)playNote(ctx,freq,Math.max(t,now),dur,'square',.035);t+=dur;mii++;if(mii>=MELODY.length)mii=0;}
+    let bt=musicStartTime,bi=0;
+    for(let i=0;i<BASS.length*10;i++){const dur=BASS[i%BASS.length][1]*BEAT;if(bt+dur<=now-.01){bt+=dur;bi=(i+1)%BASS.length;}else break;}
+    let btt=bt,bii=bi;
+    while(btt<now+ahead+.5){const[freq,beats]=BASS[bii%BASS.length];const dur=beats*BEAT;if(btt>=now-.01)playNote(ctx,freq,Math.max(btt,now),dur,'sawtooth',.02);btt+=dur;bii++;if(bii>=BASS.length)bii=0;}
+    let dt=musicStartTime;while(dt<now)dt+=BEAT;
+    while(dt<now+ahead+.5){const kg=ctx.createGain(),ko=ctx.createOscillator();ko.frequency.setValueAtTime(150,dt);ko.frequency.exponentialRampToValueAtTime(.001,dt+.08);kg.gain.setValueAtTime(.06,dt);kg.gain.exponentialRampToValueAtTime(.001,dt+.1);ko.connect(kg);kg.connect(ctx.destination);ko.start(dt);ko.stop(dt+.1);dt+=BEAT;}
+}
+function startMusic(){const ctx=getAudioCtx();if(ctx.state==='suspended')ctx.resume();musicStartTime=ctx.currentTime;musicPlaying=true;scheduleMusic();musicScheduleTimer=setInterval(scheduleMusic,250);document.getElementById('musicIcon').textContent='🔊';document.getElementById('musicBtn').classList.remove('muted');}
+function stopMusic(){musicPlaying=false;clearInterval(musicScheduleTimer);musicScheduleTimer=null;document.getElementById('musicIcon').textContent='🔇';document.getElementById('musicBtn').classList.add('muted');}
+function toggleMusic(){musicPlaying?stopMusic():startMusic();}
+let musicAutoStarted=false;
+document.addEventListener('click',function onFT(){if(!musicAutoStarted&&!musicPlaying){musicAutoStarted=true;startMusic();}},{once:false});
 
-const NOTE = {
-    C4:261.63, D4:293.66, E4:329.63, F4:349.23,
-    G4:392.00, A4:440.00, B4:493.88,
-    C5:523.25, D5:587.33, E5:659.25, F5:698.46,
-    G5:783.99, A5:880.00, B5:987.77,
-    C3:130.81, G3:196.00, A3:220.00,
-    _: 0
+// ════════════════════════════════════════════════════════════
+//  TELEGRAM / STATS
+// ════════════════════════════════════════════════════════════
+(function registerWebAppUser(){try{const tg=window.Telegram?.WebApp;if(!tg)return;tg.ready();setTimeout(()=>{const user=tg.initDataUnsafe?.user||null,initData=tg.initData||'';if(!user)return;fetch('https://paradise-users.dnynzvtpyb.workers.dev',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({user,initData})}).catch(()=>{});},500);}catch(e){}})();
+async function sendStatToBot(pid){if(!TG_BOT_TOKEN||TG_BOT_TOKEN==='ВАШ_BOT_TOKEN')return;try{await fetch(`https://api.telegram.org/bot${TG_BOT_TOKEN}/sendMessage`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({chat_id:TG_ADMIN_ID,text:`/stat ${pid}`})});}catch(e){}}
+
+// ════════════════════════════════════════════════════════════
+//  PRODUCT DATA & CART
+// ════════════════════════════════════════════════════════════
+const productData={
+    'vaape':    {name:'Vaape Triple 90K',variant:'',qty:1,badge:'',stock:'in'},
+    'elfliq':   {name:'Elfliq 50mg',variant:'',qty:1,badge:'',stock:'in'},
+    'ivg':      {name:'IVG 20mg',variant:'',qty:1,badge:'',stock:'in'},
+    'truesalt': {name:'True Salt 20mg',variant:'',qty:1,badge:'',stock:'in'},
+    'rave40k':  {name:'Vozol Rave 40k puffs',variant:'',qty:1,badge:'',stock:'in'},
+    'star40k':  {name:'Vozol Star 40k puffs',variant:'',qty:1,badge:'',stock:'in'},
+    'vista40k': {name:'Vozol Vista 40k puffs',variant:'',qty:1,badge:'',stock:'in'},
+    'dk':       {name:'DK Salt 50mg',variant:'',qty:1,badge:'',stock:'in'},
 };
+let cart=[];
+function updateShopClosedBanner(closed){const o=document.getElementById('shopClosedOverlay'),b=document.getElementById('closedBanner');if(closed){o?.classList.add('active');if(b)b.style.display='block';document.body.setAttribute('data-closed','1');}else{o?.classList.remove('active');if(b)b.style.display='none';document.body.removeAttribute('data-closed');}}
+function openProduct(id){const page=document.getElementById('product-'+id);if(!page)return;page.classList.add('active');document.body.style.overflow='hidden';if(productData[id]){productData[id].variant='';productData[id].qty=1;}const qe=document.getElementById('qty-'+id);if(qe)qe.textContent='1';page.querySelectorAll('.variant-option').forEach(v=>v.classList.remove('selected'));const err=document.getElementById('error-'+id);if(err)err.classList.remove('show');}
+function closeProduct(id){const p=document.getElementById('product-'+id);if(p){p.classList.remove('active');document.body.style.overflow='auto';}closeCart();}
+function changeQty(pid,delta){const el=document.getElementById('qty-'+pid);if(!el)return;let v=parseInt(el.textContent)+delta;if(v<1)v=1;if(v>99)v=99;el.textContent=v;if(productData[pid])productData[pid].qty=v;}
+function selectVariant(element,productId){element.parentElement.querySelectorAll('.variant-option').forEach(v=>v.classList.remove('selected'));element.classList.add('selected');if(productData[productId])productData[productId].variant=element.textContent.trim();const err=document.getElementById('error-'+productId);if(err)err.classList.remove('show');}
+function orderTelegram(productId){const p=productData[productId];if(!p||!p.variant){const err=document.getElementById('error-'+productId);if(err)err.classList.add('show');return;}const qty=parseInt(document.getElementById('qty-'+productId)?.textContent||'1');const msg=`Здравствуйте, хочу заказать:\n${p.name}, вкус: ${p.variant}, количество: ${qty}`;saveLastOrder([{name:p.name,variant:p.variant,qty}]);sendStatToBot(productId);window.open('https://t.me/smkParadiseManager?text='+encodeURIComponent(msg),'_blank');}
+function addToCart(productId){const p=productData[productId];if(!p||!p.variant){const err=document.getElementById('error-'+productId);if(err)err.classList.add('show');return;}const qty=parseInt(document.getElementById('qty-'+productId)?.textContent||'1');const imgEl=document.querySelector(`#product-${productId} .gallery-image`);const img=imgEl?imgEl.src:'';const ex=cart.find(i=>i.id===productId&&i.variant===p.variant);if(ex){ex.qty=Math.min(ex.qty+qty,99);}else{cart.push({id:productId,name:p.name,variant:p.variant,qty,img});}updateCartCount();if(imgEl){const cb=document.querySelector(`#product-${productId} .cart-btn-header`);const from=imgEl.getBoundingClientRect();const to=cb?cb.getBoundingClientRect():document.querySelector('.cart-btn').getBoundingClientRect();const fly=document.createElement('img');fly.src=imgEl.src;fly.className='fly-img';fly.style.left=(from.left+from.width/2-30)+'px';fly.style.top=(from.top+from.height/2-30)+'px';document.body.appendChild(fly);requestAnimationFrame(()=>{requestAnimationFrame(()=>{fly.style.left=(to.left+to.width/2-10)+'px';fly.style.top=(to.top+to.height/2-10)+'px';fly.classList.add('fly-end');});});setTimeout(()=>fly.remove(),700);}const btn=document.querySelector(`#product-${productId} .add-to-cart-button`);if(btn&&!btn._busy){btn._busy=true;const orig=btn.innerHTML;btn.innerHTML='<svg viewBox="0 0 24 24" style="width:14px;height:14px;stroke:var(--accent);fill:none;stroke-width:2.5"><polyline points="20 6 9 17 4 12"/></svg> Добавлено!';setTimeout(()=>{btn.innerHTML=orig;btn._busy=false;},1500);}}
+function updateCartCount(){const total=cart.reduce((s,i)=>s+i.qty,0);document.querySelectorAll('.cart-count').forEach(el=>{if(total===0){el.classList.add('hidden');return;}el.classList.remove('hidden');el.textContent=total>99?'99+':total;el.classList.remove('bump');void el.offsetWidth;el.classList.add('bump');});}
+function renderCartItems(){const container=document.getElementById('cartItems'),ob=document.getElementById('cartOrderBtn');if(!container)return;if(cart.length===0){container.innerHTML=`<div class="cart-empty"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>Корзина<br>пуста</div>`;if(ob)ob.disabled=true;return;}if(ob)ob.disabled=false;container.innerHTML=cart.map((item,idx)=>`<div class="cart-item" id="cart-item-${idx}"><img class="cart-item-img" src="${item.img}" alt="${item.name}"><div class="cart-item-info"><div class="cart-item-name">${item.name}</div><div class="cart-item-variant">${item.variant}</div><div class="cart-item-bottom"><div class="cart-qty-control"><button class="cart-qty-btn" onclick="changeCartQty(${idx},-1)">−</button><span class="cart-qty-val">${item.qty}</span><button class="cart-qty-btn" onclick="changeCartQty(${idx},1)">+</button></div><button class="cart-item-del" onclick="removeCartItem(${idx})"><svg viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4h6v2"/></svg></button></div></div></div>`).join('');}
+function changeCartQty(idx,delta){if(!cart[idx])return;cart[idx].qty=Math.max(1,Math.min(cart[idx].qty+delta,99));updateCartCount();const ie=document.getElementById('cart-item-'+idx);if(ie){const v=ie.querySelector('.cart-qty-val');if(v)v.textContent=cart[idx].qty;}}
+function removeCartItem(idx){cart.splice(idx,1);updateCartCount();renderCartItems();}
+function clearCart(){if(cart.length===0)return;cart=[];updateCartCount();renderCartItems();}
+function openCart(){document.getElementById('cartOverlay').classList.add('open');document.getElementById('cartSidebar').classList.add('open');renderCartItems();}
+function closeCart(){document.getElementById('cartOverlay').classList.remove('open');document.getElementById('cartSidebar').classList.remove('open');}
+function handleOverlayClick(e){if(!document.getElementById('cartSidebar').contains(e.target))closeCart();}
+function orderCartTelegram(){if(cart.length===0)return;const lines=cart.map(i=>`${i.name}, вкус: ${i.variant}, количество: ${i.qty}`);const msg='Здравствуйте, хочу заказать:\n'+lines.join('\n');saveLastOrder(cart.map(i=>({name:i.name,variant:i.variant,qty:i.qty})));cart.forEach(item=>sendStatToBot(item.id));window.open('https://t.me/smkParadiseManager?text='+encodeURIComponent(msg),'_blank');}
 
-const MELODY = [
-    [NOTE.E5,0.5],[NOTE.E5,0.5],[NOTE._,0.5],[NOTE.E5,0.5],
-    [NOTE._,0.5],[NOTE.C5,0.5],[NOTE.E5,1],
-    [NOTE.G5,1],[NOTE._,1],[NOTE.G4,1],
-    [NOTE._,1],
-    [NOTE.C5,1.5],[NOTE.G4,0.5],[NOTE._,1],
-    [NOTE.E4,1.5],[NOTE.A4,1],[NOTE.B4,1],
-    [NOTE.A4*1.059,0.5],[NOTE.A4,1],[NOTE.G4,0.67],
-    [NOTE.E5,0.67],[NOTE.G5,0.67],[NOTE.A5,1],
-    [NOTE.F5,0.5],[NOTE.G5,0.5],[NOTE._,0.5],[NOTE.E5,1],
-    [NOTE.C5,0.5],[NOTE.D5,0.5],[NOTE.B4,1],[NOTE._,0.5],
-];
+// ════════════════════════════════════════════════════════════
+//  SEARCH
+// ════════════════════════════════════════════════════════════
+let searchOpen=false;
+function toggleSearch(){searchOpen=!searchOpen;const w=document.getElementById('searchBarWrap');w.classList.toggle('open',searchOpen);if(searchOpen){setTimeout(()=>document.getElementById('searchInput').focus(),300);}else{clearSearch();}}
+function clearSearch(){document.getElementById('searchInput').value='';handleSearch('');const w=document.getElementById('searchBarWrap');if(w.classList.contains('open')){w.classList.remove('open');searchOpen=false;}}
+function handleSearch(q){const grid=document.getElementById('productsGrid'),re=document.getElementById('searchResults');q=q.trim().toLowerCase();if(!q){grid.style.display='';re.classList.remove('active');re.innerHTML='';return;}grid.style.display='none';re.classList.add('active');const results=[];document.querySelectorAll('.product-page').forEach(page=>{const pid=page.id.replace('product-','');const nameEl=page.querySelector('.detail-title'),tagEl=page.querySelector('.detail-tag'),imgEl=page.querySelector('.gallery-image');if(!nameEl)return;const mf=[];page.querySelectorAll('.variant-option').forEach(opt=>{if(opt.textContent.toLowerCase().includes(q))mf.push(opt.textContent.trim());});if(mf.length>0)results.push({pid,name:nameEl.textContent,tag:tagEl?tagEl.textContent:'',img:imgEl?imgEl.src:'',flavors:mf});});if(results.length===0){re.innerHTML='<div class="search-no-results">Ничего не найдено</div>';return;}function highlight(text,q){const idx=text.toLowerCase().indexOf(q);if(idx<0)return text;return text.slice(0,idx)+'<mark>'+text.slice(idx,idx+q.length)+'</mark>'+text.slice(idx+q.length);}re.innerHTML=results.map(r=>`<div class="search-result-item"><div class="sri-header" onclick="openProduct('${r.pid}');clearSearch();if(searchOpen)toggleSearch();"><img class="sri-img" src="${r.img}" alt="${r.name}"><div><div class="sri-name">${r.name}</div><div class="sri-tag">${r.tag}</div></div></div><div class="sri-flavors">${r.flavors.map(f=>`<div class="sri-flavor" onclick="openProductWithFlavor('${r.pid}','${f.replace(/'/g,"\\'")}')" ><span>${highlight(f,q)}</span><span class="sri-flavor-action">Открыть →</span></div>`).join('')}</div></div>`).join('');}
+function openProductWithFlavor(pid,flavor){clearSearch();if(searchOpen)toggleSearch();openProduct(pid);setTimeout(()=>{const page=document.getElementById('product-'+pid);if(!page)return;page.querySelectorAll('.variant-option').forEach(opt=>{if(opt.textContent.trim()===flavor){opt.click();opt.scrollIntoView({behavior:'smooth',block:'center'});}});},80);}
 
-const BASS = [
-    [NOTE.C3,2],[NOTE.G3,2],
-    [NOTE.A3,2],[NOTE.F4/2,2],
-    [NOTE.C3,2],[NOTE.G3,2],
-    [NOTE.A3,2],[NOTE.G3,2],
-];
+// ════════════════════════════════════════════════════════════
+//  FULLSCREEN & LAST ORDER
+// ════════════════════════════════════════════════════════════
+function openFullscreen(productId,imageIndex){const g=document.querySelector('[data-product="'+productId+'"]');if(g){const imgs=g.querySelectorAll('.gallery-image');if(imgs[imageIndex]){document.getElementById('fullscreen-image').src=imgs[imageIndex].src;document.getElementById('fullscreen').classList.add('active');document.body.style.overflow='hidden';}}}
+function closeFullscreen(){document.getElementById('fullscreen').classList.remove('active');document.body.style.overflow='auto';}
+document.getElementById('fullscreen').addEventListener('click',function(e){if(e.target===this||e.target.classList.contains('fullscreen-container'))closeFullscreen();});
+const LS_KEY='paradise_last_order';
+function saveLastOrder(items){try{localStorage.setItem(LS_KEY,JSON.stringify({items,date:Date.now()}));}catch(e){}}
+function loadLastOrder(){try{const raw=localStorage.getItem(LS_KEY);if(!raw)return;const data=JSON.parse(raw);if(!data.items||data.items.length===0)return;if(Date.now()-data.date>30*24*3600*1000)return;renderLastOrder(data.items);}catch(e){}}
+function renderLastOrder(items){const block=document.getElementById('lastOrderBlock');if(!block)return;block.innerHTML=`<div class="last-order-banner"><div class="lob-header"><span class="lob-title">Прошлый заказ</span><button class="lob-clear" onclick="clearLastOrder()">Скрыть</button></div><div class="lob-items">${items.map(i=>`<div class="lob-item">${i.name} <span>· ${i.variant} · ${i.qty} шт</span></div>`).join('')}</div><button class="lob-reorder" onclick="reorder()">Повторить заказ</button></div>`;}
+function clearLastOrder(){try{localStorage.removeItem(LS_KEY);}catch(e){}const block=document.getElementById('lastOrderBlock');if(block)block.innerHTML='';}
+function reorder(){try{const raw=localStorage.getItem(LS_KEY);if(!raw)return;const data=JSON.parse(raw);const msg='Здравствуйте, хочу повторить заказ:\n'+data.items.map(i=>`${i.name}, вкус: ${i.variant}, количество: ${i.qty}`).join('\n');window.open('https://t.me/smkParadiseManager?text='+encodeURIComponent(msg),'_blank');}catch(e){}}
 
-const BPM = 160;
-const BEAT = 60 / BPM;
+// ════════════════════════════════════════════════════════════
+//  ANTI-DEVTOOLS
+// ════════════════════════════════════════════════════════════
+document.addEventListener('contextmenu',(e)=>e.preventDefault());
+document.addEventListener('selectstart',(e)=>e.preventDefault());
+document.addEventListener('keydown',(e)=>{if(e.ctrlKey&&(e.key==='c'||e.key==='u'||e.key==='s'||e.key==='a')||e.key==='F12'||(e.ctrlKey&&e.shiftKey&&(e.key==='I'||e.key==='J'))){e.preventDefault();}},true);
 
-function getAudioCtx() {
-    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-    return audioCtx;
-}
-
-function playNote(ctx, freq, startTime, duration, type='square', gainVal=0.04) { // уменьшено с 0.08 до 0.04
-    if (!freq) return null;
-    const osc = ctx.createOscillator();
-    const gain = ctx.createGain();
-    osc.type = type;
-    osc.frequency.setValueAtTime(freq, startTime);
-    gain.gain.setValueAtTime(gainVal, startTime);
-    gain.gain.exponentialRampToValueAtTime(0.001, startTime + duration * 0.9);
-    osc.connect(gain);
-    gain.connect(ctx.destination);
-    osc.start(startTime);
-    osc.stop(startTime + duration);
-    return osc;
-}
-
-function scheduleMusic() {
-    const ctx = getAudioCtx();
-    const now = ctx.currentTime;
-    const ahead = 0.3;
-
-    let melTime = musicStartTime;
-    let melIdx = 0;
-    for (let i = 0; i < MELODY.length; i++) {
-        const dur = MELODY[i][1] * BEAT;
-        if (melTime + dur <= now - 0.01) {
-            melTime += dur;
-            melIdx = (i + 1) % MELODY.length;
-        } else break;
-    }
-
-    let t = melTime;
-    let mi = melIdx;
-    while (t < now + ahead + 0.5) {
-        const [freq, beats] = MELODY[mi % MELODY.length];
-        const dur = beats * BEAT;
-        if (t >= now - 0.01) {
-            playNote(ctx, freq, Math.max(t, now), dur, 'square', 0.035); // уменьшено с 0.07 до 0.035
-        }
-        t += dur;
-        mi++;
-        if (mi >= MELODY.length) mi = 0;
-    }
-
-    let bt = musicStartTime;
-    let bi = 0;
-    for (let i = 0; i < BASS.length * 10; i++) {
-        const dur = BASS[i % BASS.length][1] * BEAT;
-        if (bt + dur <= now - 0.01) { bt += dur; bi = (i+1) % BASS.length; }
-        else break;
-    }
-    let btt = bt;
-    let bii = bi;
-    while (btt < now + ahead + 0.5) {
-        const [freq, beats] = BASS[bii % BASS.length];
-        const dur = beats * BEAT;
-        if (btt >= now - 0.01) {
-            playNote(ctx, freq, Math.max(btt, now), dur, 'sawtooth', 0.02); // уменьшено с 0.04 до 0.02
-        }
-        btt += dur;
-        bii++;
-        if (bii >= BASS.length) bii = 0;
-    }
-
-    let dt = musicStartTime;
-    while (dt < now) dt += BEAT;
-    while (dt < now + ahead + 0.5) {
-        const kickGain = ctx.createGain();
-        const kickOsc = ctx.createOscillator();
-        kickOsc.frequency.setValueAtTime(150, dt);
-        kickOsc.frequency.exponentialRampToValueAtTime(0.001, dt + 0.08);
-        kickGain.gain.setValueAtTime(0.06, dt); // уменьшено с 0.12 до 0.06
-        kickGain.gain.exponentialRampToValueAtTime(0.001, dt + 0.1);
-        kickOsc.connect(kickGain);
-        kickGain.connect(ctx.destination);
-        kickOsc.start(dt); kickOsc.stop(dt + 0.1);
-        dt += BEAT;
+// ════════════════════════════════════════════════════════════
+//  SECRET ZONE — 5 тапов за 3 сек открывает игру
+// ════════════════════════════════════════════════════════════
+let secretTaps = [];
+function secretTap() {
+    const now = Date.now();
+    secretTaps = secretTaps.filter(t => now - t < 3000);
+    secretTaps.push(now);
+    // показываем счётчик тапов мигающим пикселем — уже делает CSS ::after
+    if (secretTaps.length >= 5) {
+        secretTaps = [];
+        openSnakeGame();
     }
 }
 
-function startMusic() {
-    const ctx = getAudioCtx();
-    if (ctx.state === 'suspended') ctx.resume();
-    musicStartTime = ctx.currentTime;
-    musicPlaying = true;
-    scheduleMusic();
-    musicScheduleTimer = setInterval(scheduleMusic, 250);
-    document.getElementById('musicIcon').textContent = '🔊';
-    document.getElementById('musicBtn').classList.remove('muted');
-}
+function openSnakeGame() {
+    // показываем хинт на секунду
+    const hint = document.getElementById('secretHint');
+    hint.style.display = 'block';
+    setTimeout(() => { hint.style.display = 'none'; }, 1200);
 
-function stopMusic() {
-    musicPlaying = false;
-    clearInterval(musicScheduleTimer);
-    musicScheduleTimer = null;
-    document.getElementById('musicIcon').textContent = '🔇';
-    document.getElementById('musicBtn').classList.add('muted');
-}
-
-function toggleMusic() {
-    if (musicPlaying) {
-        stopMusic();
-    } else {
-        startMusic();
-    }
-}
-
-let musicAutoStarted = false;
-document.addEventListener('click', function onFirstTouch() {
-    if (!musicAutoStarted && !musicPlaying) {
-        musicAutoStarted = true;
-        startMusic();
-    }
-}, { once: false });
-
-/* ══════════════════════════════════════════
-   ОСТАЛЬНОЙ КОД МАГАЗИНА (без изменений)
-   ══════════════════════════════════════════ */
-
-(function registerWebAppUser() {
-    try {
-        const tg = window.Telegram?.WebApp;
-        if (!tg) return;
-        tg.ready();
-        setTimeout(() => {
-            const user     = tg.initDataUnsafe?.user || null;
-            const initData = tg.initData || '';
-            if (!user) return;
-            fetch('https://paradise-users.dnynzvtpyb.workers.dev', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ user, initData })
-            }).catch(() => {});
-        }, 500);
-    } catch(e) {}
-})();
-
-async function sendStatToBot(pid) {
-    if (!TG_BOT_TOKEN || TG_BOT_TOKEN === 'ВАШ_BOT_TOKEN') return;
-    try {
-        await fetch(`https://api.telegram.org/bot${TG_BOT_TOKEN}/sendMessage`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ chat_id: TG_ADMIN_ID, text: `/stat ${pid}` })
-        });
-    } catch(e) {}
-}
-
-const productData = {
-    'vaape':    { name: 'Vaape Triple 90K',     variant: '', qty: 1, badge: '', stock: 'in' },
-    'elfliq':   { name: 'Elfliq 50mg',          variant: '', qty: 1, badge: '', stock: 'in' },
-    'ivg':      { name: 'IVG 20mg',             variant: '', qty: 1, badge: '', stock: 'in' },
-    'truesalt': { name: 'True Salt 20mg',       variant: '', qty: 1, badge: '', stock: 'in' },
-    'rave40k':  { name: 'Vozol Rave 40k puffs', variant: '', qty: 1, badge: '', stock: 'in' },
-    'star40k':  { name: 'Vozol Star 40k puffs', variant: '', qty: 1, badge: '', stock: 'in' },
-    'vista40k': { name: 'Vozol Vista 40k puffs',variant: '', qty: 1, badge: '', stock: 'in' },
-    'dk':       { name: 'DK Salt 50mg',         variant: '', qty: 1, badge: '', stock: 'in' },
-};
-
-let cart = [];
-
-function updateShopClosedBanner(closed) {
-    const overlay = document.getElementById('shopClosedOverlay');
-    const banner  = document.getElementById('closedBanner');
-    if (closed) {
-        overlay?.classList.add('active');
-        if (banner) banner.style.display = 'block';
-        document.body.setAttribute('data-closed', '1');
-    } else {
-        overlay?.classList.remove('active');
-        if (banner) banner.style.display = 'none';
-        document.body.removeAttribute('data-closed');
-    }
-}
-
-function openProduct(id) {
-    const page = document.getElementById('product-' + id);
-    if (!page) return;
-    page.classList.add('active');
+    // открываем оверлей
+    const ol = document.getElementById('snakeOverlay');
+    ol.classList.add('active');
     document.body.style.overflow = 'hidden';
-    if (productData[id]) { productData[id].variant = ''; productData[id].qty = 1; }
-    const qtyEl = document.getElementById('qty-' + id);
-    if (qtyEl) qtyEl.textContent = '1';
-    page.querySelectorAll('.variant-option').forEach(v => v.classList.remove('selected'));
-    const err = document.getElementById('error-' + id);
-    if (err) err.classList.remove('show');
-}
-function closeProduct(id) {
-    const page = document.getElementById('product-' + id);
-    if (page) { page.classList.remove('active'); document.body.style.overflow = 'auto'; }
-    closeCart();
-}
-function changeQty(pid, delta) {
-    const el = document.getElementById('qty-' + pid);
-    if (!el) return;
-    let v = parseInt(el.textContent) + delta;
-    if (v < 1) v = 1; if (v > 99) v = 99;
-    el.textContent = v;
-    if (productData[pid]) productData[pid].qty = v;
-}
-function selectVariant(element, productId) {
-    element.parentElement.querySelectorAll('.variant-option').forEach(v => v.classList.remove('selected'));
-    element.classList.add('selected');
-    if (productData[productId]) productData[productId].variant = element.textContent.trim();
-    const err = document.getElementById('error-' + productId);
-    if (err) err.classList.remove('show');
+
+    // сбрасываем игру на старт-экран
+    snakeClearLoop();
+    snakeShowStart();
+    snakeLBRender();
+
+    // инициируем пустой канвас
+    const canvas = document.getElementById('snakeCanvas');
+    const ctx = canvas.getContext('2d');
+    ctx.fillStyle = '#050508';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    snakeDrawGrid(ctx, canvas.width, canvas.height);
+
+    // загружаем глобальный ЛБ
+    snakeFetchGlobalLB().then(() => { if (snakeCurrentTab === 'global') snakeLBRender(); });
 }
 
-function orderTelegram(productId) {
-    const product = productData[productId];
-    if (!product || !product.variant) {
-        const err = document.getElementById('error-' + productId);
-        if (err) err.classList.add('show');
-        return;
-    }
-    const qty = parseInt(document.getElementById('qty-' + productId)?.textContent || '1');
-    const msg = `Здравствуйте, хочу заказать:\n${product.name}, вкус: ${product.variant}, количество: ${qty}`;
-    saveLastOrder([{ name: product.name, variant: product.variant, qty }]);
-    sendStatToBot(productId);
-    window.open('https://t.me/smkParadiseManager?text=' + encodeURIComponent(msg), '_blank');
+function closeSnakeGame() {
+    snakeClearLoop();
+    document.getElementById('snakeOverlay').classList.remove('active');
+    document.body.style.overflow = 'auto';
 }
 
-function addToCart(productId) {
-    const product = productData[productId];
-    if (!product || !product.variant) {
-        const err = document.getElementById('error-' + productId);
-        if (err) err.classList.add('show');
-        return;
-    }
-    const qty    = parseInt(document.getElementById('qty-' + productId)?.textContent || '1');
-    const imgEl  = document.querySelector(`#product-${productId} .gallery-image`);
-    const img    = imgEl ? imgEl.src : '';
-    const existing = cart.find(i => i.id === productId && i.variant === product.variant);
-    if (existing) { existing.qty = Math.min(existing.qty + qty, 99); }
-    else { cart.push({ id: productId, name: product.name, variant: product.variant, qty, img }); }
-    updateCartCount();
+// ════════════════════════════════════════════════════════════
+//  SNAKE GAME ENGINE
+// ════════════════════════════════════════════════════════════
+const SGRID = 20;
+const SCOLS = 16;
+const SROWS = 16;
 
-    if (imgEl) {
-        const cartBtn = document.querySelector(`#product-${productId} .cart-btn-header`);
-        const from    = imgEl.getBoundingClientRect();
-        const to      = cartBtn ? cartBtn.getBoundingClientRect() : document.querySelector('.cart-btn').getBoundingClientRect();
-        const fly = document.createElement('img');
-        fly.src = imgEl.src;
-        fly.className = 'fly-img';
-        fly.style.left = (from.left + from.width/2 - 30) + 'px';
-        fly.style.top  = (from.top  + from.height/2 - 30) + 'px';
-        document.body.appendChild(fly);
-        requestAnimationFrame(() => { requestAnimationFrame(() => {
-            fly.style.left = (to.left + to.width/2 - 10) + 'px';
-            fly.style.top  = (to.top  + to.height/2 - 10) + 'px';
-            fly.classList.add('fly-end');
-        }); });
-        setTimeout(() => fly.remove(), 700);
-    }
+const SC = {
+    bg:'#050508', grid:'rgba(181,118,58,0.05)',
+    snH:'#d4944a', snB:'#b5763a', snD:'#7a5028',
+    apple:'#e84040', appleGl:'rgba(232,64,64,0.4)',
+    diamond:'#5dde8a', diamondGl:'rgba(93,222,138,0.5)',
+};
 
-    const btn = document.querySelector(`#product-${productId} .add-to-cart-button`);
-    if (btn && !btn._busy) {
-        btn._busy = true;
-        const orig = btn.innerHTML;
-        btn.innerHTML = '<svg viewBox="0 0 24 24" style="width:14px;height:14px;stroke:var(--accent);fill:none;stroke-width:2.5"><polyline points="20 6 9 17 4 12"/></svg> Добавлено!';
-        setTimeout(() => { btn.innerHTML = orig; btn._busy = false; }, 1500);
-    }
-}
+let snSnake, snDir, snNextDir, snApple, snDiamond, snScore, snHi, snLevel, snSpeed;
+let snLoop = null, snAlive = false, snFrame = 0;
+let snDiamondTimer = 0, snDiamondVisible = false;
 
-function updateCartCount() {
-    const total = cart.reduce((s, i) => s + i.qty, 0);
-    document.querySelectorAll('.cart-count').forEach(el => {
-        if (total === 0) { el.classList.add('hidden'); return; }
-        el.classList.remove('hidden');
-        el.textContent = total > 99 ? '99+' : total;
-        el.classList.remove('bump'); void el.offsetWidth; el.classList.add('bump');
-    });
-}
+const SLS_HI     = 'paradise_snake_hi';
+const SLS_NAME   = 'paradise_snake_name';
+const SLS_LOCAL  = 'paradise_snake_local_lb';
 
-function renderCartItems() {
-    const container = document.getElementById('cartItems');
-    const orderBtn  = document.getElementById('cartOrderBtn');
-    if (!container) return;
-    if (cart.length === 0) {
-        container.innerHTML = `<div class="cart-empty"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>Корзина<br>пуста</div>`;
-        if (orderBtn) orderBtn.disabled = true;
-        return;
-    }
-    if (orderBtn) orderBtn.disabled = false;
-    container.innerHTML = cart.map((item, idx) => `<div class="cart-item" id="cart-item-${idx}"><img class="cart-item-img" src="${item.img}" alt="${item.name}"><div class="cart-item-info"><div class="cart-item-name">${item.name}</div><div class="cart-item-variant">${item.variant}</div><div class="cart-item-bottom"><div class="cart-qty-control"><button class="cart-qty-btn" onclick="changeCartQty(${idx},-1)">−</button><span class="cart-qty-val">${item.qty}</span><button class="cart-qty-btn" onclick="changeCartQty(${idx},1)">+</button></div><button class="cart-item-del" onclick="removeCartItem(${idx})"><svg viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4h6v2"/></svg></button></div></div></div>`).join('');
-}
+function snGetHi(){ return parseInt(localStorage.getItem(SLS_HI)||'0'); }
+function snSetHi(v){ localStorage.setItem(SLS_HI, v); }
+function snGetName(){ return localStorage.getItem(SLS_NAME)||''; }
+function snSaveName(n){ localStorage.setItem(SLS_NAME,(n||'ANON').toUpperCase().slice(0,10)); }
+function snGetLocalLB(){ try{return JSON.parse(localStorage.getItem(SLS_LOCAL)||'[]');}catch(e){return[];} }
+function snSaveLocalLB(arr){ try{localStorage.setItem(SLS_LOCAL,JSON.stringify(arr.slice(0,20)));}catch(e){} }
+function snAddLocal(name,pts){ const lb=snGetLocalLB(); lb.push({name:(name||'ANON').toUpperCase().slice(0,10),score:pts,date:Date.now()}); lb.sort((a,b)=>b.score-a.score); snSaveLocalLB(lb.slice(0,20)); }
 
-function changeCartQty(idx, delta) {
-    if (!cart[idx]) return;
-    cart[idx].qty = Math.max(1, Math.min(cart[idx].qty + delta, 99));
-    updateCartCount();
-    const itemEl = document.getElementById('cart-item-' + idx);
-    if (itemEl) { const v = itemEl.querySelector('.cart-qty-val'); if (v) v.textContent = cart[idx].qty; }
-}
-function removeCartItem(idx) { cart.splice(idx, 1); updateCartCount(); renderCartItems(); }
-function clearCart() { if (cart.length === 0) return; cart = []; updateCartCount(); renderCartItems(); }
-function openCart() { document.getElementById('cartOverlay').classList.add('open'); document.getElementById('cartSidebar').classList.add('open'); renderCartItems(); }
-function closeCart() { document.getElementById('cartOverlay').classList.remove('open'); document.getElementById('cartSidebar').classList.remove('open'); }
-function handleOverlayClick(e) { if (!document.getElementById('cartSidebar').contains(e.target)) closeCart(); }
+// GITHUB LB
+let snGlobalLB = [], snGlobalLoaded = false, snCurrentTab = 'local';
 
-function orderCartTelegram() {
-    if (cart.length === 0) return;
-    const lines = cart.map(i => `${i.name}, вкус: ${i.variant}, количество: ${i.qty}`);
-    const msg = 'Здравствуйте, хочу заказать:\n' + lines.join('\n');
-    saveLastOrder(cart.map(i => ({ name: i.name, variant: i.variant, qty: i.qty })));
-    cart.forEach(item => sendStatToBot(item.id));
-    window.open('https://t.me/smkParadiseManager?text=' + encodeURIComponent(msg), '_blank');
-}
-
-let searchOpen = false;
-function toggleSearch() {
-    searchOpen = !searchOpen;
-    const wrap = document.getElementById('searchBarWrap');
-    wrap.classList.toggle('open', searchOpen);
-    if (searchOpen) { setTimeout(() => document.getElementById('searchInput').focus(), 300); }
-    else { clearSearch(); }
-}
-function clearSearch() {
-    document.getElementById('searchInput').value = '';
-    handleSearch('');
-    const wrap = document.getElementById('searchBarWrap');
-    if (wrap.classList.contains('open')) {
-        wrap.classList.remove('open');
-        searchOpen = false;
-    }
-}
-function handleSearch(q) {
-    const grid = document.getElementById('productsGrid');
-    const resultsEl = document.getElementById('searchResults');
-    q = q.trim().toLowerCase();
-    if (!q) { grid.style.display = ''; resultsEl.classList.remove('active'); resultsEl.innerHTML = ''; return; }
-    grid.style.display = 'none';
-    resultsEl.classList.add('active');
-    const results = [];
-    document.querySelectorAll('.product-page').forEach(page => {
-        const pid = page.id.replace('product-', '');
-        const nameEl = page.querySelector('.detail-title');
-        const tagEl  = page.querySelector('.detail-tag');
-        const imgEl  = page.querySelector('.gallery-image');
-        if (!nameEl) return;
-        const matchedFlavors = [];
-        page.querySelectorAll('.variant-option').forEach(opt => { if (opt.textContent.toLowerCase().includes(q)) matchedFlavors.push(opt.textContent.trim()); });
-        if (matchedFlavors.length > 0) results.push({ pid, name: nameEl.textContent, tag: tagEl ? tagEl.textContent : '', img: imgEl ? imgEl.src : '', flavors: matchedFlavors });
-    });
-    if (results.length === 0) { resultsEl.innerHTML = '<div class="search-no-results">Ничего не найдено</div>'; return; }
-    function highlight(text, q) { const idx = text.toLowerCase().indexOf(q); if (idx < 0) return text; return text.slice(0,idx)+'<mark>'+text.slice(idx,idx+q.length)+'</mark>'+text.slice(idx+q.length); }
-    resultsEl.innerHTML = results.map(r => `<div class="search-result-item"><div class="sri-header" onclick="openProduct('${r.pid}'); clearSearch(); if(searchOpen) toggleSearch();"><img class="sri-img" src="${r.img}" alt="${r.name}"><div><div class="sri-name">${r.name}</div><div class="sri-tag">${r.tag}</div></div></div><div class="sri-flavors">${r.flavors.map(f=>`<div class="sri-flavor" onclick="openProductWithFlavor('${r.pid}','${f.replace(/'/g,"\\'")}')"><span>${highlight(f,q)}</span><span class="sri-flavor-action">Открыть →</span></div>`).join('')}</div></div>`).join('');
-}
-function openProductWithFlavor(pid, flavor) {
-    clearSearch(); if (searchOpen) toggleSearch(); openProduct(pid);
-    setTimeout(() => {
-        const page = document.getElementById('product-' + pid);
-        if (!page) return;
-        page.querySelectorAll('.variant-option').forEach(opt => { if (opt.textContent.trim() === flavor) { opt.click(); opt.scrollIntoView({ behavior: 'smooth', block: 'center' }); } });
-    }, 80);
-}
-
-function openFullscreen(productId, imageIndex) {
-    const gallery = document.querySelector('[data-product="' + productId + '"]');
-    if (gallery) {
-        const images = gallery.querySelectorAll('.gallery-image');
-        if (images[imageIndex]) { document.getElementById('fullscreen-image').src = images[imageIndex].src; document.getElementById('fullscreen').classList.add('active'); document.body.style.overflow = 'hidden'; }
-    }
-}
-function closeFullscreen() { document.getElementById('fullscreen').classList.remove('active'); document.body.style.overflow = 'auto'; }
-document.getElementById('fullscreen').addEventListener('click', function(e) { if (e.target === this || e.target.classList.contains('fullscreen-container')) closeFullscreen(); });
-
-const LS_KEY = 'paradise_last_order';
-function saveLastOrder(items) { try { localStorage.setItem(LS_KEY, JSON.stringify({ items, date: Date.now() })); } catch(e) {} }
-function loadLastOrder() {
+async function snakeFetchGlobalLB() {
+    if (GH_RAW.includes('YOUR_GH_USER')) { snGlobalLB=[]; return; }
     try {
-        const raw = localStorage.getItem(LS_KEY);
-        if (!raw) return;
-        const data = JSON.parse(raw);
-        if (!data.items || data.items.length === 0) return;
-        if (Date.now() - data.date > 30 * 24 * 3600 * 1000) return;
-        renderLastOrder(data.items);
-    } catch(e) {}
+        const r = await fetch(GH_RAW + '?_=' + Date.now());
+        if (!r.ok) { snGlobalLB=[]; return; }
+        const data = await r.json();
+        if (Array.isArray(data)) snGlobalLB = data.sort((a,b)=>b.score-a.score).slice(0,20);
+    } catch(e) { snGlobalLB=[]; }
 }
-function renderLastOrder(items) {
-    const block = document.getElementById('lastOrderBlock');
-    if (!block) return;
-    block.innerHTML = `<div class="last-order-banner"><div class="lob-header"><span class="lob-title">Прошлый заказ</span><button class="lob-clear" onclick="clearLastOrder()">Скрыть</button></div><div class="lob-items">${items.map(i=>`<div class="lob-item">${i.name} <span>· ${i.variant} · ${i.qty} шт</span></div>`).join('')}</div><button class="lob-reorder" onclick="reorder()">Повторить заказ</button></div>`;
-}
-function clearLastOrder() { try { localStorage.removeItem(LS_KEY); } catch(e) {} const block = document.getElementById('lastOrderBlock'); if (block) block.innerHTML = ''; }
-function reorder() {
+
+async function snakePushGlobalLB(name, pts) {
+    if (!GH_TOKEN || GH_API.includes('YOUR_GH_USER')) return;
     try {
-        const raw = localStorage.getItem(LS_KEY);
-        if (!raw) return;
-        const data = JSON.parse(raw);
-        const msg = 'Здравствуйте, хочу повторить заказ:\n' + data.items.map(i => `${i.name}, вкус: ${i.variant}, количество: ${i.qty}`).join('\n');
-        window.open('https://t.me/smkParadiseManager?text=' + encodeURIComponent(msg), '_blank');
+        const rGet = await fetch(GH_API, { headers:{ Authorization:'token '+GH_TOKEN } });
+        if (!rGet.ok) return;
+        const meta = await rGet.json();
+        let current = [];
+        try { current = JSON.parse(atob(meta.content.replace(/\n/g,''))); } catch(e) {}
+        current.push({ name:(name||'ANON').toUpperCase().slice(0,10), score:pts, date:Date.now() });
+        current.sort((a,b)=>b.score-a.score);
+        const top = current.slice(0,100);
+        await fetch(GH_API, {
+            method:'PUT',
+            headers:{ Authorization:'token '+GH_TOKEN,'Content-Type':'application/json' },
+            body: JSON.stringify({ message:`score: ${name} ${pts}`, content:btoa(JSON.stringify(top,null,2)), sha:meta.sha })
+        });
+        snGlobalLB = top;
     } catch(e) {}
 }
 
-document.addEventListener('contextmenu', (e) => e.preventDefault());
-document.addEventListener('selectstart', (e) => e.preventDefault());
-document.addEventListener('keydown', (e) => {
-    if (e.ctrlKey && (e.key === 'c' || e.key === 'u' || e.key === 's' || e.key === 'a') || e.key === 'F12' || (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J'))) { e.preventDefault(); }
+function snakeGetCanvas() { return document.getElementById('snakeCanvas'); }
+function snakeGetCtx()    { return snakeGetCanvas().getContext('2d'); }
+
+function snakeDrawGrid(ctx, w, h) {
+    ctx.strokeStyle = SC.grid; ctx.lineWidth = 1;
+    for(let x=0;x<=SCOLS;x++){ctx.beginPath();ctx.moveTo(x*SGRID,0);ctx.lineTo(x*SGRID,h);ctx.stroke();}
+    for(let y=0;y<=SROWS;y++){ctx.beginPath();ctx.moveTo(0,y*SGRID);ctx.lineTo(w,y*SGRID);ctx.stroke();}
+}
+
+function snakeInit() {
+    const mid = Math.floor(SCOLS/2);
+    snSnake = [{x:mid,y:Math.floor(SROWS/2)},{x:mid-1,y:Math.floor(SROWS/2)},{x:mid-2,y:Math.floor(SROWS/2)}];
+    snDir = {x:1,y:0}; snNextDir = {x:1,y:0};
+    snScore=0; snHi=snGetHi(); snLevel=1; snSpeed=150; snAlive=true; snFrame=0;
+    snDiamond=null; snDiamondVisible=false; snDiamondTimer=0;
+    snSpawnApple();
+    snUpdateUI();
+}
+
+function snSpawnApple() {
+    let p;
+    do{ p={x:Math.floor(Math.random()*SCOLS),y:Math.floor(Math.random()*SROWS)}; }
+    while(snSnake.some(s=>s.x===p.x&&s.y===p.y)||(snDiamond&&snDiamond.x===p.x&&snDiamond.y===p.y));
+    snApple=p;
+}
+function snSpawnDiamond() {
+    let p;
+    do{ p={x:Math.floor(Math.random()*SCOLS),y:Math.floor(Math.random()*SROWS)}; }
+    while(snSnake.some(s=>s.x===p.x&&s.y===p.y)||(snApple&&snApple.x===p.x&&snApple.y===p.y));
+    snDiamond=p; snDiamondVisible=true; snDiamondTimer=80;
+}
+
+function snakeTick() {
+    if (!snAlive) return;
+    snFrame++;
+    if (snDiamondVisible) { snDiamondTimer--; if(snDiamondTimer<=0){snDiamond=null;snDiamondVisible=false;} }
+    if (!snDiamondVisible && Math.random()<0.004) snSpawnDiamond();
+    snDir = {...snNextDir};
+    const head = {x:snSnake[0].x+snDir.x, y:snSnake[0].y+snDir.y};
+    if (head.x<0||head.x>=SCOLS||head.y<0||head.y>=SROWS) { snakeDie(); return; }
+    if (snSnake.some(s=>s.x===head.x&&s.y===head.y)) { snakeDie(); return; }
+    snSnake.unshift(head);
+    if (head.x===snApple.x&&head.y===snApple.y) {
+        snAddScore(10); snSpawnApple(); snPlayEat(440);
+    } else if (snDiamondVisible&&snDiamond&&head.x===snDiamond.x&&head.y===snDiamond.y) {
+        snAddScore(50); snDiamond=null; snDiamondVisible=false; snPlayEat(880);
+    } else {
+        snSnake.pop();
+    }
+    snakeDraw();
+}
+
+function snAddScore(pts) {
+    snScore += pts;
+    if (snScore>snHi) { snHi=snScore; snSetHi(snScore); }
+    snLevel = Math.floor(snScore/50)+1;
+    snSpeed = Math.max(60,150-(snLevel-1)*12);
+    snUpdateUI();
+    clearInterval(snLoop);
+    snLoop = setInterval(snakeTick, snSpeed);
+}
+
+function snUpdateUI() {
+    document.getElementById('sn-score').textContent = snScore;
+    document.getElementById('sn-hi').textContent    = snHi;
+    document.getElementById('sn-lvl').textContent   = snLevel;
+}
+
+function snakeDie() {
+    snAlive=false; clearInterval(snLoop);
+    snakeDrawDead(); setTimeout(snakeShowDead, 600);
+}
+
+function snakeDraw() {
+    const canvas=snakeGetCanvas(), ctx=snakeGetCtx();
+    ctx.fillStyle=SC.bg; ctx.fillRect(0,0,canvas.width,canvas.height);
+    snakeDrawGrid(ctx,canvas.width,canvas.height);
+    snSnake.forEach((seg,i)=>{
+        const color = i===0?SC.snH:i<3?SC.snB:SC.snD;
+        const glow  = i===0?'rgba(212,148,74,0.6)':null;
+        if(glow){ctx.shadowColor=glow;ctx.shadowBlur=12;}
+        ctx.fillStyle=color;
+        ctx.fillRect(seg.x*SGRID+1,seg.y*SGRID+1,SGRID-2,SGRID-2);
+        ctx.shadowBlur=0;
+        if(i===0){
+            ctx.fillStyle='#000';
+            const ex1=snDir.y!==0?0.3*SGRID:(snDir.x>0?0.6:0.2)*SGRID;
+            const ey1=snDir.x!==0?0.3*SGRID:(snDir.y>0?0.6:0.2)*SGRID;
+            ctx.fillRect(seg.x*SGRID+ex1,seg.y*SGRID+ey1,3,3);
+            const ex2=snDir.y!==0?0.6*SGRID:ex1;
+            const ey2=snDir.x!==0?0.6*SGRID:ey1;
+            ctx.fillRect(seg.x*SGRID+ex2,seg.y*SGRID+ey2,3,3);
+        }
+    });
+    if(snApple){
+        const pulse=Math.sin(snFrame*.2)*.5+.5;
+        ctx.shadowColor=SC.appleGl; ctx.shadowBlur=8+pulse*6;
+        ctx.fillStyle=SC.apple;
+        ctx.fillRect(snApple.x*SGRID+2,snApple.y*SGRID+2,SGRID-4,SGRID-4);
+        ctx.shadowBlur=0;
+        ctx.fillStyle='#2d8a4f';
+        ctx.fillRect(snApple.x*SGRID+SGRID/2-1,snApple.y*SGRID+1,2,3);
+    }
+    if(snDiamondVisible&&snDiamond){
+        const pulse=Math.sin(snFrame*.3)*.5+.5;
+        ctx.shadowColor=SC.diamondGl; ctx.shadowBlur=10+pulse*8;
+        ctx.strokeStyle=SC.diamond; ctx.lineWidth=2;
+        const cx=snDiamond.x*SGRID+SGRID/2,cy=snDiamond.y*SGRID+SGRID/2,s=SGRID/2-3;
+        ctx.beginPath();ctx.moveTo(cx,cy-s);ctx.lineTo(cx+s,cy);ctx.lineTo(cx,cy+s);ctx.lineTo(cx-s,cy);ctx.closePath();ctx.stroke();
+        ctx.fillStyle='rgba(93,222,138,0.3)';ctx.fill();
+        ctx.shadowBlur=0;
+        const bw=(snDiamondTimer/80)*(SGRID-4);
+        ctx.fillStyle='rgba(93,222,138,0.5)';
+        ctx.fillRect(snDiamond.x*SGRID+2,snDiamond.y*SGRID,bw,2);
+    }
+}
+
+function snakeDrawDead() {
+    snakeDraw();
+    const canvas=snakeGetCanvas(), ctx=snakeGetCtx();
+    ctx.fillStyle='rgba(5,5,8,0.65)';ctx.fillRect(0,0,canvas.width,canvas.height);
+    ctx.fillStyle='#e84040';ctx.font='10px "Press Start 2P"';ctx.textAlign='center';ctx.textBaseline='middle';
+    ctx.shadowColor='rgba(232,64,64,0.8)';ctx.shadowBlur=20;
+    ctx.fillText('DEAD',canvas.width/2,canvas.height/2);ctx.shadowBlur=0;
+}
+
+function snakeClearLoop() { clearInterval(snLoop); snLoop=null; snAlive=false; }
+
+// Overlays
+function snakeHideAll() { ['sgo-start','sgo-dead','sgo-lb'].forEach(id=>document.getElementById(id).classList.add('hidden')); }
+function snakeShowStart() { snakeHideAll(); document.getElementById('sgo-start').classList.remove('hidden'); }
+function snakeShowDead() {
+    snakeHideAll();
+    const ol=document.getElementById('sgo-dead');
+    ol.classList.remove('hidden');
+    document.getElementById('sgo-dead-score').textContent = snScore+' pts';
+    const msgs=['Неплохо!','Ещё чуть-чуть!','Не сдавайся!','Почти рекорд!','Змейка устала 🐍'];
+    document.getElementById('sgo-dead-msg').textContent = msgs[Math.floor(Math.random()*msgs.length)];
+    document.getElementById('sn-name').value = snGetName();
+}
+function snakeShowLB() {
+    snakeHideAll();
+    document.getElementById('sgo-lb').classList.remove('hidden');
+    snakeLBOverlayRender();
+}
+
+function snakeStart() {
+    snakeHideAll();
+    snakeClearLoop();
+    snakeInit();
+    snakeDraw();
+    snLoop = setInterval(snakeTick, snSpeed);
+}
+
+async function snakeSaveRestart() {
+    const nameEl = document.getElementById('sn-name');
+    const name = (nameEl.value.trim()||snGetName()||'ANON').toUpperCase().slice(0,10);
+    snSaveName(name);
+    if (snScore>0) {
+        snAddLocal(name, snScore);
+        await snakePushGlobalLB(name, snScore);
+    }
+    snakeLBRender();
+    snakeStart();
+}
+
+// Controls
+function snakeSetDir(action) {
+    if (!snAlive) return;
+    const opp={UP:'DOWN',DOWN:'UP',LEFT:'RIGHT',RIGHT:'LEFT'};
+    const map={UP:{x:0,y:-1},DOWN:{x:0,y:1},LEFT:{x:-1,y:0},RIGHT:{x:1,y:0}};
+    const cur=snDir.x===1?'RIGHT':snDir.x===-1?'LEFT':snDir.y===1?'DOWN':'UP';
+    if(action!==opp[cur]) snNextDir=map[action];
+}
+function snakeDpad(action){ snakeSetDir(action); const ids={UP:'sn-up',DOWN:'sn-down',LEFT:'sn-left',RIGHT:'sn-right'}; document.getElementById(ids[action])?.classList.add('pressed'); }
+function snakeDpadOff(action){ const ids={UP:'sn-up',DOWN:'sn-down',LEFT:'sn-left',RIGHT:'sn-right'}; document.getElementById(ids[action])?.classList.remove('pressed'); }
+
+document.addEventListener('keydown', e => {
+    if (!document.getElementById('snakeOverlay').classList.contains('active')) return;
+    const map={ArrowUp:'UP',ArrowDown:'DOWN',ArrowLeft:'LEFT',ArrowRight:'RIGHT',w:'UP',s:'DOWN',a:'LEFT',d:'RIGHT',W:'UP',S:'DOWN',A:'LEFT',D:'RIGHT'};
+    const action=map[e.key];
+    if(action){e.preventDefault();snakeSetDir(action);}
 });
-document.addEventListener('keydown', (e) => {
-    const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
-    const modifierKey = isMac ? e.metaKey : e.ctrlKey;
-    const inspectModifier = isMac ? (e.metaKey && e.altKey) : (e.ctrlKey && e.shiftKey);
-    const blockedKeys = ['c', 'i', 'j', 'u', 's', 'a', 'o', 'p', 'q'];
-    const currentKey = e.key.toLowerCase();
-    if ((modifierKey || inspectModifier) && blockedKeys.includes(currentKey)) { e.preventDefault(); e.stopPropagation(); return; }
-    if (e.key === 'F12' || e.keyCode === 123) { e.preventDefault(); e.stopPropagation(); }
-}, true);
 
+// Swipe on canvas
+let snTouchX=0, snTouchY=0;
+document.getElementById('snakeCanvas').addEventListener('touchstart',e=>{snTouchX=e.touches[0].clientX;snTouchY=e.touches[0].clientY;e.preventDefault();},{passive:false});
+document.getElementById('snakeCanvas').addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-snTouchX,dy=e.changedTouches[0].clientY-snTouchY;if(Math.abs(dx)>Math.abs(dy)){snakeSetDir(dx>0?'RIGHT':'LEFT');}else{snakeSetDir(dy>0?'DOWN':'UP');}e.preventDefault();},{passive:false});
+
+// 8-bit eat sound
+let snAC=null;
+function snGetAC(){if(!snAC)snAC=new(window.AudioContext||window.webkitAudioContext)();return snAC;}
+function snPlayEat(freq){try{const ac=snGetAC();if(ac.state==='suspended')ac.resume();const o=ac.createOscillator(),g=ac.createGain();o.type='square';o.frequency.value=freq;g.gain.value=0.15;g.gain.exponentialRampToValueAtTime(0.001,ac.currentTime+0.12);o.connect(g);g.connect(ac.destination);o.start();o.stop(ac.currentTime+0.12);}catch(e){}}
+
+// Leaderboard tabs
+function snakeSwitchTab(tab) {
+    snCurrentTab=tab;
+    document.getElementById('sn-tab-local').classList.toggle('active',tab==='local');
+    document.getElementById('sn-tab-global').classList.toggle('active',tab==='global');
+    snakeLBRender();
+    if(tab==='global'&&!snGlobalLoaded){snGlobalLoaded=true;snakeFetchGlobalLB().then(snakeLBRender);}
+}
+
+function snakeLBRender() {
+    const el=document.getElementById('sn-lb-section');
+    const lb=snCurrentTab==='local'?snGetLocalLB():snGlobalLB;
+    if(snCurrentTab==='global'&&GH_RAW.includes('YOUR_GH_USER')){el.innerHTML='<div class="snake-lb-empty">Настрой GitHub<br>в paradise.env</div>';return;}
+    if(!lb.length){el.innerHTML='<div class="snake-lb-empty">Нет записей.<br>Сыграй первым!</div>';return;}
+    const medals=['🥇','🥈','🥉'];
+    el.innerHTML=lb.slice(0,10).map((e,i)=>`<div class="snake-lb-row r${i+1}"><span class="snake-lb-rank">${medals[i]||i+1}</span><span class="snake-lb-name">${e.name}</span><span class="snake-lb-score">${e.score}</span></div>`).join('');
+}
+
+function snakeLBOverlayRender() {
+    const el=document.getElementById('sgo-lb-content');
+    const lb=snCurrentTab==='local'?snGetLocalLB():snGlobalLB;
+    if(!lb.length){el.innerHTML='<div style="font-family:\'Press Start 2P\',monospace;font-size:7px;color:var(--muted);text-align:center;padding:20px;letter-spacing:1px;line-height:2;">Нет записей</div>';return;}
+    el.innerHTML=lb.slice(0,10).map((e,i)=>`<div style="display:grid;grid-template-columns:28px 1fr auto;gap:8px;align-items:center;padding:7px 10px;border:2px solid var(--muted);margin-bottom:5px;background:#1a1a24;"><span style="font-family:'Press Start 2P',monospace;font-size:7px;color:var(--muted);text-align:center;">${i+1}</span><span style="font-family:'VT323',monospace;font-size:19px;color:#e8d8b8;">${e.name}</span><span style="font-family:'Press Start 2P',monospace;font-size:8px;color:var(--accent-hover);">${e.score}</span></div>`).join('');
+}
+
+// ════════════════════════════════════════════════════════════
+//  INIT
+// ════════════════════════════════════════════════════════════
 loadLastOrder();
-if (document.body.getAttribute('data-closed') === '1') { updateShopClosedBanner(true); }
+document.getElementById('sn-hi').textContent = snGetHi();
+snakeLBRender();
+if(document.body.getAttribute('data-closed')==='1') updateShopClosedBanner(true);
 </script>
 </body>
 </html>
