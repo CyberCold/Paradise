@@ -1572,17 +1572,21 @@ const TG_ADMIN_ID  = 'ВАШ_TELEGRAM_ID';
 // ════════════════════════════════════════════════════════════
 //  GITHUB CONFIG — через Cloudflare Worker
 // ════════════════════════════════════════════════════════════
-const WORKER_URL = 'https://leaderbord.dnynzvtpyb.workers.dev/';
+const WORKER_URL = 'https://leaderbord.dnynzvtpyb.workers.dev';
 
+let snGlobalLB = [], snCurrentTab = 'global';
+    
 // Получение рекордов
 async function snakeFetchGlobalLB() {
     try {
         const response = await fetch(WORKER_URL);
-        if (!response.ok) throw new Error('Failed to fetch');
+        if (!response.ok) throw new Error();
         const data = await response.json();
         snGlobalLB = Array.isArray(data) ? data.sort((a,b)=>b.score-a.score).slice(0,20) : [];
-    } catch(e) {
-        snGlobalLB = [];
+        snakeLBRender();
+    } catch(e) { 
+        snGlobalLB = []; 
+        snakeLBRender();
     }
 }
 
@@ -1597,8 +1601,13 @@ async function snakePushGlobalLB(name, pts) {
         if (response.ok) {
             const data = await response.json();
             if (data.leaderboard) snGlobalLB = data.leaderboard.slice(0,20);
+            snakeLBRender();
+            return true;
         }
-    } catch(e) {}
+    } catch(e) {
+        console.error('Save error:', e);
+    }
+    return false;
 }
 
 // ════════════════════════════════════════════════════════════
@@ -1775,7 +1784,9 @@ function openSnakeGame() {
     snakeDrawGrid(ctx, canvas.width, canvas.height);
 
     // загружаем глобальный ЛБ
-    snakeFetchGlobalLB().then(() => { if (snakeCurrentTab === 'global') snakeLBRender(); });
+    snakeFetchGlobalLB();
+    const localTab = document.getElementById('sn-tab-local');
+    if (localTab) localTab.style.display = 'none';
 }
 
 function closeSnakeGame() {
@@ -1817,19 +1828,7 @@ function snGetName(){
     return localStorage.getItem(SLS_NAME) || 'ANON';
 }
 function snSaveName(n){ localStorage.setItem(SLS_NAME,(n||'ANON').toUpperCase().slice(0,10)); }
-function snGetLocalLB(){ try{return JSON.parse(localStorage.getItem(SLS_LOCAL)||'[]');}catch(e){return[];} }
-function snSaveLocalLB(arr){ try{localStorage.setItem(SLS_LOCAL,JSON.stringify(arr.slice(0,20)));}catch(e){} }
-function snAddLocal(name,pts){ 
-    const lb=snGetLocalLB(); 
-    const existing = lb.find(e => e.name === name);
-    if (existing) {
-        if (pts > existing.score) existing.score = pts;
-    } else {
-        lb.push({name:name, score:pts, date:Date.now()});
-    }
-    lb.sort((a,b)=>b.score-a.score); 
-    snSaveLocalLB(lb.slice(0,20)); 
-}
+
 
 // GITHUB через Worker
 let snGlobalLB = [], snGlobalLoaded = false, snCurrentTab = 'local';
@@ -1936,14 +1935,13 @@ function snUpdateUI() {
 }
 
 function snakeDie() {
-    if (gameOverFlag) return;  // уже сохранили рекорд
+    if (gameOverFlag) return;
     gameOverFlag = true;
-    snAlive=false; 
+    snAlive = false; 
     if (snLoop) clearInterval(snLoop);
     snLoop = null;
     snakeDrawDead(); 
     
-    // Сохраняем рекорд только один раз
     setTimeout(() => {
         const name = snGetName();
         if (snScore > 0) {
@@ -2089,28 +2087,45 @@ function snPlayEat(freq){try{const ac=snGetAC();if(ac.state==='suspended')ac.res
 
 // Leaderboard tabs
 function snakeSwitchTab(tab) {
-    snCurrentTab=tab;
-    document.getElementById('sn-tab-local').classList.toggle('active',tab==='local');
-    document.getElementById('sn-tab-global').classList.toggle('active',tab==='global');
-    snakeLBRender();
-    if(tab==='global'&&!snGlobalLoaded){snGlobalLoaded=true;snakeFetchGlobalLB().then(snakeLBRender);}
+    snCurrentTab = tab;
+    document.getElementById('sn-tab-local').classList.toggle('active', tab === 'local');
+    document.getElementById('sn-tab-global').classList.toggle('active', tab === 'global');
+    // Вторая вкладка (локальная) отключена — всегда показываем глобальную
+    if (tab === 'global') snakeLBRender();
 }
 
 function snakeLBRender() {
-    const el=document.getElementById('sn-lb-section');
-    const lb=snCurrentTab==='local'?snGetLocalLB():snGlobalLB;
-    if(!lb.length){el.innerHTML='<div class="snake-lb-empty">Нет записей.<br>Сыграй первым!</div>';return;}
-    const medals=['🥇','🥈','🥉'];
-    el.innerHTML=lb.slice(0,10).map((e,i)=>`<div class="snake-lb-row r${i+1}"><span class="snake-lb-rank">${medals[i]||i+1}</span><span class="snake-lb-name">${e.name}</span><span class="snake-lb-score">${e.score}</span></div>`).join('');
+    const el = document.getElementById('sn-lb-section');
+    if (!el) return;
+    if (!snGlobalLB.length) {
+        el.innerHTML = '<div class="snake-lb-empty">Нет записей.<br>Сыграй первым!</div>';
+        return;
+    }
+    const medals = ['🥇', '🥈', '🥉'];
+    el.innerHTML = snGlobalLB.slice(0,10).map((e,i) => `
+        <div class="snake-lb-row r${i+1}">
+            <span class="snake-lb-rank">${medals[i] || i+1}</span>
+            <span class="snake-lb-name">${e.name}</span>
+            <span class="snake-lb-score">${e.score}</span>
+        </div>
+    `).join('');
 }
 
 function snakeLBOverlayRender() {
-    const el=document.getElementById('sgo-lb-content');
-    const lb=snCurrentTab==='local'?snGetLocalLB():snGlobalLB;
-    if(!lb.length){el.innerHTML='<div style="font-family:\'Press Start 2P\',monospace;font-size:7px;color:var(--muted);text-align:center;padding:20px;letter-spacing:1px;line-height:2;">Нет записей</div>';return;}
-    el.innerHTML=lb.slice(0,10).map((e,i)=>`<div style="display:grid;grid-template-columns:28px 1fr auto;gap:8px;align-items:center;padding:7px 10px;border:2px solid var(--muted);margin-bottom:5px;background:#1a1a24;"><span style="font-family:\'Press Start 2P\',monospace;font-size:7px;color:var(--muted);text-align:center;">${i+1}</span><span style="font-family:\'VT323\',monospace;font-size:19px;color:#e8d8b8;">${e.name}</span><span style="font-family:\'Press Start 2P\',monospace;font-size:8px;color:var(--accent-hover);">${e.score}</span></div>`).join('');
+    const el = document.getElementById('sgo-lb-content');
+    if (!el) return;
+    if (!snGlobalLB.length) {
+        el.innerHTML = '<div style="font-family:\'Press Start 2P\',monospace;font-size:7px;color:var(--muted);text-align:center;padding:20px;">Нет записей</div>';
+        return;
+    }
+    el.innerHTML = snGlobalLB.slice(0,10).map((e,i) => `
+        <div style="display:grid;grid-template-columns:28px 1fr auto;gap:8px;align-items:center;padding:7px 10px;border:2px solid var(--muted);margin-bottom:5px;background:#1a1a24;">
+            <span style="font-family:\'Press Start 2P\',monospace;font-size:7px;color:var(--muted);text-align:center;">${i+1}</span>
+            <span style="font-family:\'VT323\',monospace;font-size:19px;color:#e8d8b8;">${e.name}</span>
+            <span style="font-family:\'Press Start 2P\',monospace;font-size:8px;color:var(--accent-hover);">${e.score}</span>
+        </div>
+    `).join('');
 }
-
 // Загружаем глобальные рекорды при открытии
 function initSnakeLeaderboard() {
     snakeFetchGlobalLB();
