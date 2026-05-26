@@ -1945,18 +1945,17 @@ function snUpdateUI() {
     document.getElementById('sn-lvl').textContent = snLevel;
 }
 
+let snLastScore = 0;
+
 function snakeDie() {
     if (gameOverFlag) return;
     gameOverFlag = true;
-    snAlive = false; 
+    snAlive = false;
     if (snLoop) clearInterval(snLoop);
     snLoop = null;
-    snakeDrawDead(); 
+    snLastScore = snScore;
+    snakeDrawDead();
     setTimeout(() => {
-        const name = snGetName();
-        if (snScore > 0) {
-            snakePushGlobalLB(name, snScore);
-        }
         snakeShowDead();
     }, 600);
 }
@@ -2020,16 +2019,39 @@ function snakeHideAll() { ['sgo-start','sgo-dead','sgo-lb'].forEach(id=>document
 function snakeShowStart() { snakeHideAll(); document.getElementById('sgo-start')?.classList.remove('hidden'); }
 function snakeShowDead() {
     snakeHideAll();
-    const ol=document.getElementById('sgo-dead');
-    if(ol) ol.classList.remove('hidden');
-    document.getElementById('sgo-dead-score').textContent = snScore+' pts';
-    const msgs=['Неплохо!','Ещё чуть-чуть!','Не сдавайся!','Почти рекорд!','Змейка устала 🐍'];
-    document.getElementById('sgo-dead-msg').textContent = msgs[Math.floor(Math.random()*msgs.length)];
-    document.getElementById('sn-name').value = snGetName();
+    const ol = document.getElementById('sgo-dead');
+    if (ol) ol.classList.remove('hidden');
+    document.getElementById('sgo-dead-score').textContent = snLastScore + ' pts';
+    const msgs = ['Неплохо!', 'Ещё чуть-чуть!', 'Не сдавайся!', 'Почти рекорд!', 'Змейка устала 🐍'];
+    document.getElementById('sgo-dead-msg').textContent = msgs[Math.floor(Math.random() * msgs.length)];
+    const savedName = localStorage.getItem(SLS_NAME) || '';
+    document.getElementById('sn-name').value = savedName;
 }
-function snakeShowLB() { snakeHideAll(); document.getElementById('sgo-lb')?.classList.remove('hidden'); snakeLBOverlayRender(); }
+function snakeShowLB() {
+    if (snLastScore > 0) {
+        const name = localStorage.getItem(SLS_NAME) || 'ANON';
+        snakePushGlobalLB(name, snLastScore);
+        snLastScore = 0;
+    }
+    snakeHideAll();
+    document.getElementById('sgo-lb')?.classList.remove('hidden');
+    snakeLBOverlayRender();
+}
 function snakeStart() { snakeClearLoop(); gameOverFlag=false; snakeInit(); snakeDraw(); if(snLoop) clearInterval(snLoop); snLoop = setInterval(snakeTick, snSpeed); snakeHideAll(); }
-async function snakeSaveRestart() { const nameEl=document.getElementById('sn-name'); let name=nameEl.value.trim().toUpperCase().slice(0,10); if(!name) name=snGetName(); if(name) snSaveName(name); snakeStart(); }
+async function snakeSaveRestart() {
+    const nameEl = document.getElementById('sn-name');
+    let name = nameEl.value.trim().toUpperCase().replace(/[^\x20-\x7E]/g, '').slice(0, 10);
+    if (!name) {
+        name = localStorage.getItem(SLS_NAME) || 'ANON';
+    }
+    localStorage.setItem(SLS_NAME, name);
+    nameEl.value = name;
+    if (snLastScore > 0) {
+        snakePushGlobalLB(name, snLastScore);
+    }
+    
+    snakeStart();
+}
 function snakeSetDir(action){ if(!snAlive) return; const opp={UP:'DOWN',DOWN:'UP',LEFT:'RIGHT',RIGHT:'LEFT'}; const map={UP:{x:0,y:-1},DOWN:{x:0,y:1},LEFT:{x:-1,y:0},RIGHT:{x:1,y:0}}; let cur; if(snDir.x===1) cur='RIGHT'; else if(snDir.x===-1) cur='LEFT'; else if(snDir.y===1) cur='DOWN'; else cur='UP'; if(action!==opp[cur]) snNextDir=map[action]; }
 function snakeDpad(action){ snakeSetDir(action); const ids={UP:'sn-up',DOWN:'sn-down',LEFT:'sn-left',RIGHT:'sn-right'}; document.getElementById(ids[action])?.classList.add('pressed'); }
 function snakeDpadOff(action){ const ids={UP:'sn-up',DOWN:'sn-down',LEFT:'sn-left',RIGHT:'sn-right'}; document.getElementById(ids[action])?.classList.remove('pressed'); }
