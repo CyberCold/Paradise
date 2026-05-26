@@ -1947,7 +1947,6 @@ function snakeDie() {
     setTimeout(() => {
         const name = snGetName();
         if (snScore > 0) {
-            snAddLocal(name, snScore);
             snakePushGlobalLB(name, snScore);
         }
         snakeShowDead();
