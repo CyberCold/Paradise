@@ -1785,7 +1785,7 @@ function closeSnakeGame() {
 }
 
 // ════════════════════════════════════════════════════════════
-//  SNAKE GAME ENGINE
+//  SNAKE GAME ENGINE — ИСПРАВЛЕННАЯ ВЕРСИЯ
 // ════════════════════════════════════════════════════════════
 const SGRID = 20;
 const SCOLS = 16;
@@ -1801,6 +1801,8 @@ const SC = {
 let snSnake, snDir, snNextDir, snApple, snDiamond, snScore, snHi, snLevel, snSpeed;
 let snLoop = null, snAlive = false, snFrame = 0;
 let snDiamondTimer = 0, snDiamondVisible = false;
+let gameOverFlag = false;           // флаг, чтобы не сохранять рекорд несколько раз
+let currentGameId = null;           // ID текущей игры
 
 const SLS_HI     = 'paradise_snake_hi';
 const SLS_NAME   = 'paradise_snake_name';
@@ -1808,42 +1810,58 @@ const SLS_LOCAL  = 'paradise_snake_local_lb';
 
 function snGetHi(){ return parseInt(localStorage.getItem(SLS_HI)||'0'); }
 function snSetHi(v){ localStorage.setItem(SLS_HI, v); }
-function snGetName(){ return localStorage.getItem(SLS_NAME)||''; }
+function snGetName(){ 
+    const tg = window.Telegram?.WebApp?.initDataUnsafe?.user;
+    if (tg && tg.username) return tg.username.toUpperCase().slice(0,10);
+    if (tg && tg.first_name) return tg.first_name.toUpperCase().slice(0,10);
+    return localStorage.getItem(SLS_NAME) || 'ANON';
+}
 function snSaveName(n){ localStorage.setItem(SLS_NAME,(n||'ANON').toUpperCase().slice(0,10)); }
 function snGetLocalLB(){ try{return JSON.parse(localStorage.getItem(SLS_LOCAL)||'[]');}catch(e){return[];} }
 function snSaveLocalLB(arr){ try{localStorage.setItem(SLS_LOCAL,JSON.stringify(arr.slice(0,20)));}catch(e){} }
-function snAddLocal(name,pts){ const lb=snGetLocalLB(); lb.push({name:(name||'ANON').toUpperCase().slice(0,10),score:pts,date:Date.now()}); lb.sort((a,b)=>b.score-a.score); snSaveLocalLB(lb.slice(0,20)); }
+function snAddLocal(name,pts){ 
+    const lb=snGetLocalLB(); 
+    const existing = lb.find(e => e.name === name);
+    if (existing) {
+        if (pts > existing.score) existing.score = pts;
+    } else {
+        lb.push({name:name, score:pts, date:Date.now()});
+    }
+    lb.sort((a,b)=>b.score-a.score); 
+    snSaveLocalLB(lb.slice(0,20)); 
+}
 
-// GITHUB LB
+// GITHUB через Worker
 let snGlobalLB = [], snGlobalLoaded = false, snCurrentTab = 'local';
 
 async function snakeFetchGlobalLB() {
-    if (GH_RAW.includes('YOUR_GH_USER')) { snGlobalLB=[]; return; }
+    if (!WORKER_URL) return;
     try {
-        const r = await fetch(GH_RAW + '?_=' + Date.now());
-        if (!r.ok) { snGlobalLB=[]; return; }
-        const data = await r.json();
-        if (Array.isArray(data)) snGlobalLB = data.sort((a,b)=>b.score-a.score).slice(0,20);
-    } catch(e) { snGlobalLB=[]; }
+        const response = await fetch(WORKER_URL);
+        if (!response.ok) throw new Error();
+        const data = await response.json();
+        snGlobalLB = Array.isArray(data) ? data.sort((a,b)=>b.score-a.score).slice(0,20) : [];
+    } catch(e) { snGlobalLB = []; }
 }
 
 async function snakePushGlobalLB(name, pts) {
-    if (!GH_TOKEN || GH_API.includes('YOUR_GH_USER')) return;
+    if (!WORKER_URL) return;
+    // Проверяем, не сохраняли ли уже этот рекорд
+    const gameKey = `saved_${currentGameId}`;
+    if (sessionStorage.getItem(gameKey)) return;
+    
     try {
-        const rGet = await fetch(GH_API, { headers:{ Authorization:'token '+GH_TOKEN } });
-        if (!rGet.ok) return;
-        const meta = await rGet.json();
-        let current = [];
-        try { current = JSON.parse(atob(meta.content.replace(/\n/g,''))); } catch(e) {}
-        current.push({ name:(name||'ANON').toUpperCase().slice(0,10), score:pts, date:Date.now() });
-        current.sort((a,b)=>b.score-a.score);
-        const top = current.slice(0,100);
-        await fetch(GH_API, {
-            method:'PUT',
-            headers:{ Authorization:'token '+GH_TOKEN,'Content-Type':'application/json' },
-            body: JSON.stringify({ message:`score: ${name} ${pts}`, content:btoa(JSON.stringify(top,null,2)), sha:meta.sha })
+        const response = await fetch(WORKER_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name: name, score: pts })
         });
-        snGlobalLB = top;
+        if (response.ok) {
+            sessionStorage.setItem(gameKey, 'true');
+            const data = await response.json();
+            if (data.leaderboard) snGlobalLB = data.leaderboard.slice(0,20);
+            snakeLBRender();
+        }
     } catch(e) {}
 }
 
@@ -1862,6 +1880,8 @@ function snakeInit() {
     snDir = {x:1,y:0}; snNextDir = {x:1,y:0};
     snScore=0; snHi=snGetHi(); snLevel=1; snSpeed=150; snAlive=true; snFrame=0;
     snDiamond=null; snDiamondVisible=false; snDiamondTimer=0;
+    gameOverFlag = false;
+    currentGameId = Date.now() + '_' + Math.random();
     snSpawnApple();
     snUpdateUI();
 }
@@ -1916,8 +1936,22 @@ function snUpdateUI() {
 }
 
 function snakeDie() {
-    snAlive=false; clearInterval(snLoop);
-    snakeDrawDead(); setTimeout(snakeShowDead, 600);
+    if (gameOverFlag) return;  // уже сохранили рекорд
+    gameOverFlag = true;
+    snAlive=false; 
+    if (snLoop) clearInterval(snLoop);
+    snLoop = null;
+    snakeDrawDead(); 
+    
+    // Сохраняем рекорд только один раз
+    setTimeout(() => {
+        const name = snGetName();
+        if (snScore > 0) {
+            snAddLocal(name, snScore);
+            snakePushGlobalLB(name, snScore);
+        }
+        snakeShowDead();
+    }, 600);
 }
 
 function snakeDraw() {
@@ -1973,7 +2007,7 @@ function snakeDrawDead() {
     ctx.fillText('DEAD',canvas.width/2,canvas.height/2);ctx.shadowBlur=0;
 }
 
-function snakeClearLoop() { clearInterval(snLoop); snLoop=null; snAlive=false; }
+function snakeClearLoop() { if (snLoop) { clearInterval(snLoop); snLoop=null; } snAlive=false; }
 
 // Overlays
 function snakeHideAll() { ['sgo-start','sgo-dead','sgo-lb'].forEach(id=>document.getElementById(id).classList.add('hidden')); }
@@ -1985,7 +2019,8 @@ function snakeShowDead() {
     document.getElementById('sgo-dead-score').textContent = snScore+' pts';
     const msgs=['Неплохо!','Ещё чуть-чуть!','Не сдавайся!','Почти рекорд!','Змейка устала 🐍'];
     document.getElementById('sgo-dead-msg').textContent = msgs[Math.floor(Math.random()*msgs.length)];
-    document.getElementById('sn-name').value = snGetName();
+    const currentName = snGetName();
+    document.getElementById('sn-name').value = currentName;
 }
 function snakeShowLB() {
     snakeHideAll();
@@ -1994,22 +2029,26 @@ function snakeShowLB() {
 }
 
 function snakeStart() {
-    snakeHideAll();
+    // Очищаем старый интервал
     snakeClearLoop();
+    // Сбрасываем флаги
+    gameOverFlag = false;
+    // Инициализируем новую игру
     snakeInit();
     snakeDraw();
+    // Запускаем новый интервал
+    if (snLoop) clearInterval(snLoop);
     snLoop = setInterval(snakeTick, snSpeed);
+    // Прячем все оверлеи
+    snakeHideAll();
 }
 
 async function snakeSaveRestart() {
     const nameEl = document.getElementById('sn-name');
-    const name = (nameEl.value.trim()||snGetName()||'ANON').toUpperCase().slice(0,10);
-    snSaveName(name);
-    if (snScore>0) {
-        snAddLocal(name, snScore);
-        await snakePushGlobalLB(name, snScore);
-    }
-    snakeLBRender();
+    let name = nameEl.value.trim().toUpperCase().slice(0,10);
+    if (!name) name = snGetName();
+    if (name) snSaveName(name);
+    // Запускаем новую игру
     snakeStart();
 }
 
@@ -2018,9 +2057,14 @@ function snakeSetDir(action) {
     if (!snAlive) return;
     const opp={UP:'DOWN',DOWN:'UP',LEFT:'RIGHT',RIGHT:'LEFT'};
     const map={UP:{x:0,y:-1},DOWN:{x:0,y:1},LEFT:{x:-1,y:0},RIGHT:{x:1,y:0}};
-    const cur=snDir.x===1?'RIGHT':snDir.x===-1?'LEFT':snDir.y===1?'DOWN':'UP';
-    if(action!==opp[cur]) snNextDir=map[action];
+    let cur;
+    if (snDir.x === 1) cur = 'RIGHT';
+    else if (snDir.x === -1) cur = 'LEFT';
+    else if (snDir.y === 1) cur = 'DOWN';
+    else cur = 'UP';
+    if(action !== opp[cur]) snNextDir = map[action];
 }
+
 function snakeDpad(action){ snakeSetDir(action); const ids={UP:'sn-up',DOWN:'sn-down',LEFT:'sn-left',RIGHT:'sn-right'}; document.getElementById(ids[action])?.classList.add('pressed'); }
 function snakeDpadOff(action){ const ids={UP:'sn-up',DOWN:'sn-down',LEFT:'sn-left',RIGHT:'sn-right'}; document.getElementById(ids[action])?.classList.remove('pressed'); }
 
@@ -2033,8 +2077,11 @@ document.addEventListener('keydown', e => {
 
 // Swipe on canvas
 let snTouchX=0, snTouchY=0;
-document.getElementById('snakeCanvas').addEventListener('touchstart',e=>{snTouchX=e.touches[0].clientX;snTouchY=e.touches[0].clientY;e.preventDefault();},{passive:false});
-document.getElementById('snakeCanvas').addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-snTouchX,dy=e.changedTouches[0].clientY-snTouchY;if(Math.abs(dx)>Math.abs(dy)){snakeSetDir(dx>0?'RIGHT':'LEFT');}else{snakeSetDir(dy>0?'DOWN':'UP');}e.preventDefault();},{passive:false});
+const snakeCanvasElem = document.getElementById('snakeCanvas');
+if (snakeCanvasElem) {
+    snakeCanvasElem.addEventListener('touchstart',e=>{snTouchX=e.touches[0].clientX;snTouchY=e.touches[0].clientY;e.preventDefault();},{passive:false});
+    snakeCanvasElem.addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-snTouchX,dy=e.changedTouches[0].clientY-snTouchY;if(Math.abs(dx)>Math.abs(dy)){snakeSetDir(dx>0?'RIGHT':'LEFT');}else{snakeSetDir(dy>0?'DOWN':'UP');}e.preventDefault();},{passive:false});
+}
 
 // 8-bit eat sound
 let snAC=null;
@@ -2053,7 +2100,6 @@ function snakeSwitchTab(tab) {
 function snakeLBRender() {
     const el=document.getElementById('sn-lb-section');
     const lb=snCurrentTab==='local'?snGetLocalLB():snGlobalLB;
-    if(snCurrentTab==='global'&&GH_RAW.includes('YOUR_GH_USER')){el.innerHTML='<div class="snake-lb-empty">Настрой GitHub<br>в paradise.env</div>';return;}
     if(!lb.length){el.innerHTML='<div class="snake-lb-empty">Нет записей.<br>Сыграй первым!</div>';return;}
     const medals=['🥇','🥈','🥉'];
     el.innerHTML=lb.slice(0,10).map((e,i)=>`<div class="snake-lb-row r${i+1}"><span class="snake-lb-rank">${medals[i]||i+1}</span><span class="snake-lb-name">${e.name}</span><span class="snake-lb-score">${e.score}</span></div>`).join('');
@@ -2063,7 +2109,13 @@ function snakeLBOverlayRender() {
     const el=document.getElementById('sgo-lb-content');
     const lb=snCurrentTab==='local'?snGetLocalLB():snGlobalLB;
     if(!lb.length){el.innerHTML='<div style="font-family:\'Press Start 2P\',monospace;font-size:7px;color:var(--muted);text-align:center;padding:20px;letter-spacing:1px;line-height:2;">Нет записей</div>';return;}
-    el.innerHTML=lb.slice(0,10).map((e,i)=>`<div style="display:grid;grid-template-columns:28px 1fr auto;gap:8px;align-items:center;padding:7px 10px;border:2px solid var(--muted);margin-bottom:5px;background:#1a1a24;"><span style="font-family:'Press Start 2P',monospace;font-size:7px;color:var(--muted);text-align:center;">${i+1}</span><span style="font-family:'VT323',monospace;font-size:19px;color:#e8d8b8;">${e.name}</span><span style="font-family:'Press Start 2P',monospace;font-size:8px;color:var(--accent-hover);">${e.score}</span></div>`).join('');
+    el.innerHTML=lb.slice(0,10).map((e,i)=>`<div style="display:grid;grid-template-columns:28px 1fr auto;gap:8px;align-items:center;padding:7px 10px;border:2px solid var(--muted);margin-bottom:5px;background:#1a1a24;"><span style="font-family:\'Press Start 2P\',monospace;font-size:7px;color:var(--muted);text-align:center;">${i+1}</span><span style="font-family:\'VT323\',monospace;font-size:19px;color:#e8d8b8;">${e.name}</span><span style="font-family:\'Press Start 2P\',monospace;font-size:8px;color:var(--accent-hover);">${e.score}</span></div>`).join('');
+}
+
+// Загружаем глобальные рекорды при открытии
+function initSnakeLeaderboard() {
+    snakeFetchGlobalLB();
+    snakeLBRender();
 }
 
 // ════════════════════════════════════════════════════════════
