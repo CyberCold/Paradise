@@ -248,5 +248,21 @@
     "username": "Aljona",
     "status": "new",
     "date": "26.05.2026 17:30"
+  },
+  "#0014": {
+    "oid": "#0014",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq 50mg",
+        "flavor": "не указан",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Привет хочу купить\nElfliq 50mg, Blue Razz Lemonade, 1 банку\nМожем встретиться примерно в 18:25-18:40 где-то в центре?",
+    "user_id": 6127676206,
+    "username": "syrnik",
+    "status": "new",
+    "date": "26.05.2026 17:59"
   }
 }
