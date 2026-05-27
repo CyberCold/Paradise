@@ -1,26 +1,18 @@
 {
-  "731373167": {
-    "id": 731373167,
-    "first_name": "Aqox",
-    "username": "Beijbik",
-    "source": "webapp",
-    "registered": "2026-05-27T21:04:29.926Z",
-    "last_seen": "2026-05-27T21:04:29.926Z"
-  },
-  "1089785237": {
-    "id": 1089785237,
-    "first_name": "rhz «!₽ snuff :* © #lowtier",
-    "username": "heroingore",
-    "source": "webapp",
-    "registered": "2026-05-27T21:05:45.316Z",
-    "last_seen": "2026-05-27T21:05:45.316Z"
-  },
   "7511735897": {
     "id": 7511735897,
-    "first_name": "Ã¡ÂÂ  Ã¡ÂÂ  Ã¡ÂÂ  Ã¡ÂÂ  Ã¡ÂÂ  Ã¡ÂÂ ",
+    "first_name": "ᅠ ᅠ ᅠ ᅠ ᅠ ᅠ",
     "username": "",
     "source": "webapp",
     "registered": "2026-05-27T20:58:40.512Z",
     "last_seen": "2026-05-27T20:58:40.512Z"
+  },
+  "731373167": {
+    "id": 731373167,
+    "first_name": "Aqox",
+    "username": "Beijbik",
+    "source": "bot_start",
+    "registered": "2026-05-28T00:06:38.069599",
+    "last_seen": "2026-05-28T00:06:38.069614"
   }
 }
