@@ -1941,7 +1941,7 @@ function snAddScore(pts) {
     snScore += pts;
     if (snScore>snHi) { snHi=snScore; snSetHi(snScore); }
     snLevel = Math.floor(snScore/50)+1;
-    snSpeed = Math.max(60,150-(snLevel-1)*12);
+    snSpeed = Math.max(80,150-(snLevel-1)*12);
     snUpdateUI();
     clearInterval(snLoop);
     snLoop = setInterval(snakeTick, snSpeed);
