@@ -1860,6 +1860,7 @@ function openSnakeGame() {
 
 function closeSnakeGame() {
     snakeClearLoop();
+    snakeStopMusic();
     document.getElementById('snakeOverlay')?.classList.remove('active');
     document.body.style.overflow = 'auto';
 }
@@ -1962,6 +1963,8 @@ function snakeDie() {
     if (snLoop) clearInterval(snLoop);
     snLoop = null;
     snLastScore = snScore;
+    snakeStopMusic();
+    snPlayDeath(); 
     snakeDrawDead();
     setTimeout(() => {
         snakeShowDead();
@@ -2045,7 +2048,7 @@ function snakeShowLB() {
     document.getElementById('sgo-lb')?.classList.remove('hidden');
     snakeLBOverlayRender();
 }
-function snakeStart() { snakeClearLoop(); gameOverFlag=false; snakeInit(); snakeDraw(); if(snLoop) clearInterval(snLoop); snLoop = setInterval(snakeTick, snSpeed); snakeHideAll(); }
+function snakeStart() { snakeClearLoop(); snakeStopMusic(); gameOverFlag=false; snakeInit(); snakeDraw(); if(snLoop) clearInterval(snLoop); snLoop = setInterval(snakeTick, snSpeed); snakeHideAll(); snakeStartMusic(); }
 async function snakeSaveRestart() {
     const nameEl = document.getElementById('sn-name');
     let name = nameEl.value.trim().toUpperCase().replace(/[^\x20-\x7E]/g, '').slice(0, 20);
@@ -2065,9 +2068,152 @@ function snakeDpad(action){ snakeSetDir(action); const ids={UP:'sn-up',DOWN:'sn-
 function snakeDpadOff(action){ const ids={UP:'sn-up',DOWN:'sn-down',LEFT:'sn-left',RIGHT:'sn-right'}; document.getElementById(ids[action])?.classList.remove('pressed'); }
 document.addEventListener('keydown', e=>{ if(!document.getElementById('snakeOverlay')?.classList.contains('active')) return; const map={ArrowUp:'UP',ArrowDown:'DOWN',ArrowLeft:'LEFT',ArrowRight:'RIGHT',w:'UP',s:'DOWN',a:'LEFT',d:'RIGHT',W:'UP',S:'DOWN',A:'LEFT',D:'RIGHT'}; const action=map[e.key]; if(action){e.preventDefault();snakeSetDir(action);}});
 let snTouchX=0,snTouchY=0; const snakeCanvasElem=document.getElementById('snakeCanvas'); if(snakeCanvasElem){ snakeCanvasElem.addEventListener('touchstart',e=>{snTouchX=e.touches[0].clientX;snTouchY=e.touches[0].clientY;e.preventDefault();},{passive:false}); snakeCanvasElem.addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-snTouchX,dy=e.changedTouches[0].clientY-snTouchY;if(Math.abs(dx)>Math.abs(dy)){snakeSetDir(dx>0?'RIGHT':'LEFT');}else{snakeSetDir(dy>0?'DOWN':'UP');}e.preventDefault();},{passive:false}); }
-let snAC=null; function snGetAC(){if(!snAC)snAC=new(window.AudioContext||window.webkitAudioContext)();return snAC;}
-function snPlayEat(freq){try{const ac=snGetAC();if(ac.state==='suspended')ac.resume();const o=ac.createOscillator(),g=ac.createGain();o.type='square';o.frequency.value=freq;g.gain.value=0.15;g.gain.exponentialRampToValueAtTime(0.001,ac.currentTime+0.12);o.connect(g);g.connect(ac.destination);o.start();o.stop(ac.currentTime+0.12);}catch(e){}}
+let snAC=null;
+function snGetAC(){
+    if(!snAC) snAC=new(window.AudioContext||window.webkitAudioContext)();
+    return snAC;
+}
+function snPlayEat(freq){
+    try{
+        const ac=snGetAC();
+        if(ac.state==='suspended') ac.resume();
+        const o=ac.createOscillator(), g=ac.createGain();
+        o.type='square';
+        o.frequency.setValueAtTime(freq, ac.currentTime);
+        o.frequency.setValueAtTime(freq*1.5, ac.currentTime+0.04);
+        g.gain.setValueAtTime(0.18, ac.currentTime);
+        g.gain.exponentialRampToValueAtTime(0.001, ac.currentTime+0.13);
+        o.connect(g); g.connect(ac.destination);
+        o.start(); o.stop(ac.currentTime+0.13);
+    }catch(e){}
+}
+/* ══════════════════════════════════════════════════
+   SNAKE GAME MUSIC — CORRUPTED / GLITCH 16-BIT
+   Баговая система, артефакты, искажённые тона
+══════════════════════════════════════════════════ */
+let snMusicAC=null, snMusicPlaying=false, snMusicTimer=null, snMusicStep=0;
 
+function snGetMusicAC(){
+    if(!snMusicAC) snMusicAC=new(window.AudioContext||window.webkitAudioContext)();
+    return snMusicAC;
+}
+
+// «Битые» ноты: нормальные частоты + глитч-смещения
+const SN_MELODY = [
+    // Фраза A — нормально начинаем...
+    [220.00, 0.12, 'square',  0.07],
+    [246.94, 0.12, 'square',  0.07],
+    [261.63, 0.15, 'square',  0.08],
+    [277.18, 0.10, 'sawtooth',0.05], // <-- артефакт, «не та» волна
+    [293.66, 0.12, 'square',  0.07],
+    [329.63, 0.18, 'square',  0.09],
+    // Глитч-пауза (0)
+    [0,      0.06, 'square',  0],
+    [329.63, 0.06, 'square',  0.12], // резкий повтор
+    [0,      0.03, 'square',  0],
+    [329.63, 0.06, 'square',  0.12],
+    // Фраза B — повышаемся
+    [349.23, 0.12, 'square',  0.07],
+    [392.00, 0.12, 'square',  0.07],
+    [415.30, 0.10, 'sawtooth',0.05], // ещё один «артефакт»
+    [440.00, 0.15, 'square',  0.08],
+    [493.88, 0.20, 'square',  0.09],
+    // Глитч-сбой — скачок вверх и обратно
+    [987.77, 0.04, 'sawtooth',0.10], // высокочастотный спайк
+    [0,      0.04, 'square',  0],
+    [246.94, 0.06, 'square',  0.06],
+    // Фраза C — нисходящая, «умирающая» тема
+    [440.00, 0.10, 'square',  0.07],
+    [415.30, 0.10, 'square',  0.07],
+    [392.00, 0.12, 'square',  0.07],
+    [349.23, 0.10, 'sawtooth',0.04],
+    [329.63, 0.14, 'square',  0.07],
+    [293.66, 0.10, 'square',  0.06],
+    [261.63, 0.10, 'square',  0.06],
+    [246.94, 0.18, 'square',  0.08],
+    // Двойной глитч-спайк в конце петли
+    [0,      0.05, 'square',  0],
+    [1046.50,0.03, 'sawtooth',0.08],
+    [0,      0.05, 'square',  0],
+    [523.25, 0.05, 'sawtooth',0.08],
+    [0,      0.08, 'square',  0],
+];
+
+// Бас-паттерн — тоже слегка «битый»
+const SN_BASS = [
+    [110.00, 0.24, 'sawtooth', 0.04],
+    [110.00, 0.24, 'sawtooth', 0.04],
+    [130.81, 0.24, 'sawtooth', 0.04],
+    [146.83, 0.12, 'sawtooth', 0.04],
+    [0,      0.06, 'square',   0],    // пауза-глитч
+    [146.83, 0.06, 'sawtooth', 0.06],
+    [123.47, 0.24, 'sawtooth', 0.04],
+    [110.00, 0.24, 'sawtooth', 0.04],
+    [98.00,  0.24, 'sawtooth', 0.04],
+    [0,      0.12, 'square',   0],
+];
+
+function snMusicNote(freq, dur, type, vol){
+    try{
+        const ac=snGetMusicAC();
+        const now=ac.currentTime;
+        if(!freq || vol===0) return;
+        const o=ac.createOscillator(), g=ac.createGain();
+        o.type=type;
+        o.frequency.setValueAtTime(freq, now);
+        // Иногда добавляем лёгкий питч-дрифт — имитация «плывущего» генератора
+        if(Math.random()<0.15){
+            o.frequency.linearRampToValueAtTime(freq*(0.97+Math.random()*0.06), now+dur);
+        }
+        g.gain.setValueAtTime(vol, now);
+        g.gain.exponentialRampToValueAtTime(0.001, now+dur*0.85);
+        o.connect(g); g.connect(ac.destination);
+        o.start(now); o.stop(now+dur);
+    }catch(e){}
+}
+
+function snMusicTick(){
+    if(!snMusicPlaying) return;
+    const ac=snGetMusicAC();
+    if(ac.state==='suspended') ac.resume();
+
+    const mel=SN_MELODY[snMusicStep % SN_MELODY.length];
+    const bas=SN_BASS[snMusicStep % SN_BASS.length];
+
+    snMusicNote(mel[0], mel[1], mel[2], mel[3]);
+    snMusicNote(bas[0]*0.5, bas[1], bas[2], bas[3]*0.6); // суббас
+
+    // Случайный глитч-шум (редко, ~4% шанс)
+    if(Math.random()<0.04){
+        try{
+            const bufLen=Math.floor(ac.sampleRate*0.025);
+            const buf=ac.createBuffer(1,bufLen,ac.sampleRate);
+            const data=buf.getChannelData(0);
+            for(let i=0;i<bufLen;i++) data[i]=(Math.random()*2-1)*0.08*(1-i/bufLen);
+            const src=ac.createBufferSource(), ng=ac.createGain();
+            ng.gain.value=0.08;
+            src.buffer=buf; src.connect(ng); ng.connect(ac.destination);
+            src.start(); src.stop(ac.currentTime+0.025);
+        }catch(e){}
+    }
+
+    const nextDelay=mel[1]*1000;
+    snMusicStep++;
+    snMusicTimer=setTimeout(snMusicTick, nextDelay);
+}
+
+function snakeStartMusic(){
+    if(snMusicPlaying) return;
+    snMusicPlaying=true; snMusicStep=0;
+    const ac=snGetMusicAC();
+    if(ac.state==='suspended') ac.resume();
+    snMusicTick();
+}
+
+function snakeStopMusic(){
+    snMusicPlaying=false;
+    if(snMusicTimer){ clearTimeout(snMusicTimer); snMusicTimer=null; }
+}
 // ════════════════════════════════════════════════════════════
 //  INIT
 // ════════════════════════════════════════════════════════════
