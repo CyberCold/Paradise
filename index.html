@@ -1845,10 +1845,16 @@ function secretTap() {
 function openSnakeGame() {
     const hint = document.getElementById('secretHint');
     if (hint) { hint.style.display = 'block'; setTimeout(() => { hint.style.display = 'none'; }, 1200); }
+    
+    // Останавливаем обычную музыку
     stopMusic();
+    
     const ol = document.getElementById('snakeOverlay');
     if (ol) { ol.classList.add('active'); document.body.style.overflow = 'hidden'; }
-    snakeClearLoop(); snakeShowStart();
+    
+    snakeClearLoop(); 
+    snakeShowStart();
+    
     const canvas = document.getElementById('snakeCanvas');
     if (canvas) {
         const ctx = canvas.getContext('2d');
@@ -1857,6 +1863,21 @@ function openSnakeGame() {
         snakeDrawGrid(ctx, canvas.width, canvas.height);
     }
     snakeFetchGlobalLB();
+    setTimeout(() => {
+        const ac = snGetMusicAC();
+        if (ac.state === 'suspended') {
+            ac.resume().then(() => {
+                snakeStartMusic();
+            }).catch(() => {
+                document.addEventListener('click', function initSnakeMusic() {
+                    snakeStartMusic();
+                    document.removeEventListener('click', initSnakeMusic);
+                }, { once: true });
+            });
+        } else {
+            snakeStartMusic();
+        }
+    }, 100);
 }
 
 function closeSnakeGame() {
@@ -1864,7 +1885,9 @@ function closeSnakeGame() {
     snakeStopMusic();
     document.getElementById('snakeOverlay')?.classList.remove('active');
     document.body.style.overflow = 'auto';
-    startMusic();
+    setTimeout(() => {
+        startMusic();
+    }, 50);
 }
 
 // ════════════════════════════════════════════════════════════
@@ -2118,131 +2141,245 @@ function snPlayDeath(){
     }catch(e){}
 }
 /* ══════════════════════════════════════════════════
-   SNAKE GAME MUSIC — CORRUPTED / GLITCH 16-BIT
-   Баговая система, артефакты, искажённые тона
+   SNAKE GAME MUSIC — CORRUPTED / GLITCH / BROKEN 16-BIT
 ══════════════════════════════════════════════════ */
-let snMusicAC=null, snMusicPlaying=false, snMusicTimer=null, snMusicStep=0;
+let snMusicAC=null, snMusicPlaying=false, snMusicTimer=null, snMusicStep=0, snGlitchTimer=null;
 
 function snGetMusicAC(){
     if(!snMusicAC) snMusicAC=new(window.AudioContext||window.webkitAudioContext)();
     return snMusicAC;
 }
 
-// «Битые» ноты: нормальные частоты + глитч-смещения
 const SN_MELODY = [
-    // Фраза A — нормально начинаем...
-    [220.00, 0.12, 'square',  0.07],
-    [246.94, 0.12, 'square',  0.07],
-    [261.63, 0.15, 'square',  0.08],
-    [277.18, 0.10, 'sawtooth',0.05], // <-- артефакт, «не та» волна
-    [293.66, 0.12, 'square',  0.07],
-    [329.63, 0.18, 'square',  0.09],
-    // Глитч-пауза (0)
-    [0,      0.06, 'square',  0],
-    [329.63, 0.06, 'square',  0.12], // резкий повтор
-    [0,      0.03, 'square',  0],
-    [329.63, 0.06, 'square',  0.12],
-    // Фраза B — повышаемся
-    [349.23, 0.12, 'square',  0.07],
-    [392.00, 0.12, 'square',  0.07],
-    [415.30, 0.10, 'sawtooth',0.05], // ещё один «артефакт»
-    [440.00, 0.15, 'square',  0.08],
-    [493.88, 0.20, 'square',  0.09],
-    // Глитч-сбой — скачок вверх и обратно
-    [987.77, 0.04, 'sawtooth',0.10], // высокочастотный спайк
-    [0,      0.04, 'square',  0],
-    [246.94, 0.06, 'square',  0.06],
-    // Фраза C — нисходящая, «умирающая» тема
-    [440.00, 0.10, 'square',  0.07],
-    [415.30, 0.10, 'square',  0.07],
-    [392.00, 0.12, 'square',  0.07],
-    [349.23, 0.10, 'sawtooth',0.04],
-    [329.63, 0.14, 'square',  0.07],
-    [293.66, 0.10, 'square',  0.06],
-    [261.63, 0.10, 'square',  0.06],
-    [246.94, 0.18, 'square',  0.08],
-    // Двойной глитч-спайк в конце петли
-    [0,      0.05, 'square',  0],
-    [1046.50,0.03, 'sawtooth',0.08],
-    [0,      0.05, 'square',  0],
-    [523.25, 0.05, 'sawtooth',0.08],
-    [0,      0.08, 'square',  0],
+    [293.66, 0.15, 'square',   0.09],
+    [0,       0.05, 'square',   0],
+    [293.66, 0.08, 'square',   0.07],
+    [261.63, 0.12, 'sawtooth', 0.08],
+    [0,       0.04, 'square',   0],
+    [329.63, 0.14, 'square',   0.08],
+    [659.25, 0.05, 'square',   0.12],
+    [0,       0.03, 'square',   0],
+    [349.23, 0.10, 'square',   0.08],
+    [392.00, 0.12, 'square',   0.08],
+    [415.30, 0.12, 'triangle', 0.06],
+    [440.00, 0.08, 'square',   0.09],
+    [466.16, 0.08, 'sawtooth', 0.10],
+    [493.88, 0.10, 'square',   0.08],
+    [246.94, 0.08, 'square',   0.10],
+    [0,       0.04, 'square',   0],
+    [220.00, 0.12, 'sawtooth', 0.07],
+    [523.25, 0.10, 'square',   0.09],
+    [493.88, 0.10, 'square',   0.08],
+    [440.00, 0.10, 'square',   0.08],
+    [392.00, 0.10, 'square',   0.07],
+    [349.23, 0.15, 'sawtooth', 0.06],
+    [329.63, 0.15, 'square',   0.07],
+    [0,       0.06, 'square',   0],
+    [1046.50, 0.04, 'sawtooth', 0.14],
+    [0,       0.04, 'square',   0],
+    [523.25,  0.06, 'square',   0.10],
+    [261.63, 0.12, 'square',   0.06],
+    [246.94, 0.12, 'triangle', 0.05],
+    [220.00, 0.14, 'sawtooth', 0.04],
+    [196.00, 0.20, 'square',   0.03],
+    [0,       0.08, 'square',   0],
+    [880.00,  0.03, 'sawtooth', 0.12],
+    [440.00,  0.05, 'square',   0.10],
+    [220.00,  0.08, 'square',   0.07],
+    [0,       0.20, 'square',   0],
 ];
 
-// Бас-паттерн — тоже слегка «битый»
 const SN_BASS = [
-    [110.00, 0.24, 'sawtooth', 0.04],
-    [110.00, 0.24, 'sawtooth', 0.04],
-    [130.81, 0.24, 'sawtooth', 0.04],
-    [146.83, 0.12, 'sawtooth', 0.04],
-    [0,      0.06, 'square',   0],    // пауза-глитч
-    [146.83, 0.06, 'sawtooth', 0.06],
-    [123.47, 0.24, 'sawtooth', 0.04],
-    [110.00, 0.24, 'sawtooth', 0.04],
-    [98.00,  0.24, 'sawtooth', 0.04],
-    [0,      0.12, 'square',   0],
+    [82.41,  0.25, 'sawtooth', 0.05],
+    [82.41,  0.25, 'sawtooth', 0.05],
+    [87.31,  0.12, 'sawtooth', 0.04],
+    [0,      0.06, 'square',   0],
+    [87.31,  0.06, 'sawtooth', 0.06],
+    [98.00,  0.25, 'sawtooth', 0.05],
+    [87.31,  0.25, 'sawtooth', 0.05],
+    [82.41,  0.25, 'sawtooth', 0.05],
+    [73.42,  0.20, 'sawtooth', 0.04],
+    [0,      0.10, 'square',   0],
+    [65.41,  0.15, 'sawtooth', 0.05],
+    [0,      0.20, 'square',   0],
 ];
 
 function snMusicNote(freq, dur, type, vol){
+    if(!freq || vol===0) return;
     try{
         const ac=snGetMusicAC();
         const now=ac.currentTime;
-        if(!freq || vol===0) return;
-        const o=ac.createOscillator(), g=ac.createGain();
+        
+        const o=ac.createOscillator();
+        const g=ac.createGain();
         o.type=type;
-        o.frequency.setValueAtTime(freq, now);
-        // Иногда добавляем лёгкий питч-дрифт — имитация «плывущего» генератора
-        if(Math.random()<0.15){
-            o.frequency.linearRampToValueAtTime(freq*(0.97+Math.random()*0.06), now+dur);
+        
+        if(Math.random()<0.3){
+            const modFreq = 30 + Math.random() * 70;
+            const modDepth = freq * (0.01 + Math.random() * 0.03);
+            const modulator = ac.createOscillator();
+            const modGain = ac.createGain();
+            modulator.type = 'sine';
+            modulator.frequency.value = modFreq;
+            modGain.gain.value = modDepth;
+            modulator.connect(modGain);
+            modGain.connect(o.frequency);
+            modulator.start();
+            modulator.stop(now + dur);
         }
+        
+        o.frequency.setValueAtTime(freq, now);
+        
+        if(Math.random()<0.25){
+            const glitchTime = now + Math.random() * dur;
+            const glitchFreq = freq * (0.5 + Math.random() * 1.5);
+            o.frequency.setValueAtTime(freq, glitchTime - 0.01);
+            o.frequency.linearRampToValueAtTime(glitchFreq, glitchTime);
+            o.frequency.linearRampToValueAtTime(freq, glitchTime + dur*0.1);
+        }
+        
         g.gain.setValueAtTime(vol, now);
-        g.gain.exponentialRampToValueAtTime(0.001, now+dur*0.85);
-        o.connect(g); g.connect(ac.destination);
-        o.start(now); o.stop(now+dur);
-    }catch(e){}
+        
+        if(Math.random()<0.2){
+            const dropTime = now + Math.random() * dur * 0.7;
+            g.gain.linearRampToValueAtTime(vol * 0.1, dropTime);
+            g.gain.linearRampToValueAtTime(vol, dropTime + dur*0.1);
+        }
+        
+        g.gain.exponentialRampToValueAtTime(0.001, now + dur * 0.85);
+        
+        o.connect(g);
+        g.connect(ac.destination);
+        o.start(now);
+        o.stop(now + dur);
+        
+    } catch(e){}
+}
+
+function snRandomGlitch(){
+    if(!snMusicPlaying) return;
+    const ac = snGetMusicAC();
+    if(ac.state !== 'running') return;
+    
+    const rand = Math.random();
+    
+    if(rand < 0.15){
+        try{
+            const now = ac.currentTime;
+            const duration = 0.02 + Math.random() * 0.08;
+            const bufLen = Math.floor(ac.sampleRate * duration);
+            const buf = ac.createBuffer(1, bufLen, ac.sampleRate);
+            const data = buf.getChannelData(0);
+            
+            if(Math.random() < 0.5){
+                for(let i=0; i<bufLen; i++) data[i] = (Math.random() * 2 - 1) * (0.2 + Math.random() * 0.3);
+            } else {
+                for(let i=0; i<bufLen; i++){
+                    data[i] = Math.sin(i * 0.05) * (Math.random() * 2 - 1) * 0.3;
+                }
+            }
+            
+            const src = ac.createBufferSource();
+            const ng = ac.createGain();
+            ng.gain.value = 0.08 + Math.random() * 0.12;
+            ng.gain.exponentialRampToValueAtTime(0.001, now + duration);
+            src.buffer = buf;
+            src.connect(ng);
+            ng.connect(ac.destination);
+            src.start(now);
+            src.stop(now + duration);
+        } catch(e){}
+    }
+    
+    if(Math.random() < 0.08){
+        try{
+            const now = ac.currentTime;
+            const o = ac.createOscillator();
+            const g = ac.createGain();
+            const glitchFreq = 200 + Math.random() * 2000;
+            o.type = Math.random() < 0.5 ? 'sawtooth' : 'square';
+            o.frequency.value = glitchFreq;
+            g.gain.value = 0.05 + Math.random() * 0.1;
+            g.gain.exponentialRampToValueAtTime(0.001, now + 0.05);
+            o.connect(g);
+            g.connect(ac.destination);
+            o.start(now);
+            o.stop(now + 0.05);
+        } catch(e){}
+    }
+    
+    if(Math.random() < 0.05){
+        try{
+            const now = ac.currentTime;
+            const o1 = ac.createOscillator();
+            const o2 = ac.createOscillator();
+            const g = ac.createGain();
+            o1.type = 'square';
+            o2.type = 'triangle';
+            o1.frequency.value = 440 + Math.random() * 300;
+            o2.frequency.value = o1.frequency.value * (0.99 + Math.random() * 0.02);
+            g.gain.value = 0.06;
+            g.gain.exponentialRampToValueAtTime(0.001, now + 0.04);
+            o1.connect(g);
+            o2.connect(g);
+            g.connect(ac.destination);
+            o1.start(now);
+            o2.start(now);
+            o1.stop(now + 0.04);
+            o2.stop(now + 0.04);
+        } catch(e){}
+    }
 }
 
 function snMusicTick(){
     if(!snMusicPlaying) return;
+    
     const ac=snGetMusicAC();
-    if(ac.state==='suspended') ac.resume();
-
-    const mel=SN_MELODY[snMusicStep % SN_MELODY.length];
-    const bas=SN_BASS[snMusicStep % SN_BASS.length];
-
-    snMusicNote(mel[0], mel[1], mel[2], mel[3]);
-    snMusicNote(bas[0]*0.5, bas[1], bas[2], bas[3]*0.6); // суббас
-
-    // Случайный глитч-шум (редко, ~4% шанс)
-    if(Math.random()<0.04){
-        try{
-            const bufLen=Math.floor(ac.sampleRate*0.025);
-            const buf=ac.createBuffer(1,bufLen,ac.sampleRate);
-            const data=buf.getChannelData(0);
-            for(let i=0;i<bufLen;i++) data[i]=(Math.random()*2-1)*0.08*(1-i/bufLen);
-            const src=ac.createBufferSource(), ng=ac.createGain();
-            ng.gain.value=0.08;
-            src.buffer=buf; src.connect(ng); ng.connect(ac.destination);
-            src.start(); src.stop(ac.currentTime+0.025);
-        }catch(e){}
+    if(ac.state !== 'running') {
+        ac.resume().catch(()=>{});
+        if(!snMusicPlaying) return;
     }
 
-    const nextDelay=mel[1]*1000;
+    const mel = SN_MELODY[snMusicStep % SN_MELODY.length];
+    const bas = SN_BASS[snMusicStep % SN_BASS.length];
+
+    snMusicNote(mel[0], mel[1], mel[2], mel[3]);
+    snMusicNote(bas[0]*0.5, bas[1], bas[2], bas[3]*0.6);
+    
+    snRandomGlitch();
+
+    const nextDelay = mel[1] * 1000;
     snMusicStep++;
-    snMusicTimer=setTimeout(snMusicTick, nextDelay);
+    snMusicTimer = setTimeout(snMusicTick, nextDelay);
 }
 
 function snakeStartMusic(){
     if(snMusicPlaying) return;
-    snMusicPlaying=true; snMusicStep=0;
-    const ac=snGetMusicAC();
-    if(ac.state==='suspended') ac.resume();
-    snMusicTick();
+    
+    const ac = snGetMusicAC();
+    if(ac.state === 'suspended') {
+        ac.resume().catch(e => console.log(e));
+    }
+    
+    snMusicPlaying = true;
+    snMusicStep = 0;
+    
+    if(snMusicTimer) {
+        clearTimeout(snMusicTimer);
+        snMusicTimer = null;
+    }
+    
+    setTimeout(() => {
+        if(snMusicPlaying) snMusicTick();
+    }, 50);
 }
 
 function snakeStopMusic(){
-    snMusicPlaying=false;
-    if(snMusicTimer){ clearTimeout(snMusicTimer); snMusicTimer=null; }
+    snMusicPlaying = false;
+    if(snMusicTimer) { 
+        clearTimeout(snMusicTimer); 
+        snMusicTimer = null; 
+    }
 }
 // ════════════════════════════════════════════════════════════
 //  INIT
