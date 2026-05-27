@@ -246,8 +246,9 @@
     "raw_text": "Здравствуйте, хочу заказать:\nVaape Triple 90K, вкус: Strawberry Raspberry Cherry / Kiwi Passion Fruit Guava / Blue Raspberry Ice, количество: 1",
     "user_id": 1260998353,
     "username": "Aljona",
-    "status": "new",
-    "date": "26.05.2026 17:30"
+    "status": "done",
+    "date": "26.05.2026 17:30",
+    "done_at": "2026-05-27T18:12:49.467768"
   },
   "#0014": {
     "oid": "#0014",
@@ -312,7 +313,7 @@
     "raw_text": "Здравствуйте, хочу заказать:\nVozol Vista 40k puffs, вкус: Melon Gum, количество: 1",
     "user_id": 978673335,
     "username": "pivNaja",
-    "status": "new",
+    "status": "cancelled",
     "date": "26.05.2026 22:58"
   }
 }
