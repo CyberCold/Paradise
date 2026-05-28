@@ -75,5 +75,49 @@
     "comment": null,
     "date": "28.05.2026 16:25",
     "sent_to_channel": false
+  },
+  "#0012_Vaape Triple 90K": {
+    "oid": "#0012",
+    "user_id": 6491742117,
+    "username": "Dontik",
+    "product_name": "Vaape Triple 90K",
+    "flavor": "Mixed Berries / Red Bull / Peach Ice",
+    "rating": 5,
+    "comment": null,
+    "date": "28.05.2026 16:25",
+    "sent_to_channel": false
+  },
+  "#0012_Vaape Triple 90K": {
+    "oid": "#0012",
+    "user_id": 6491742117,
+    "username": "Dontik",
+    "product_name": "Vaape Triple 90K",
+    "flavor": "Blueberry Ice / Black Dragon Ice / Red Bull",
+    "rating": 5,
+    "comment": null,
+    "date": "28.05.2026 16:25",
+    "sent_to_channel": false
+  },
+  "#0012_Vaape Triple 90K": {
+    "oid": "#0012",
+    "user_id": 6491742117,
+    "username": "Dontik",
+    "product_name": "Vaape Triple 90K",
+    "flavor": "Peach Mango Pineapple / Strawberry Ice / Raspberry Watermelon",
+    "rating": 5,
+    "comment": null,
+    "date": "28.05.2026 16:25",
+    "sent_to_channel": false
+  },
+  "#0012_Vaape Triple 90K": {
+    "oid": "#0013",
+    "user_id": 1260998353,
+    "username": "aljonacirkina",
+    "product_name": "Vaape Triple 90K",
+    "flavor": "Strawberry Raspberry Cherry / Kiwi Passion Fruit Guava / Blue Raspberry Ice",
+    "rating": 5,
+    "comment": null,
+    "date": "28.05.2026 16:25",
+    "sent_to_channel": false
   }
 }
