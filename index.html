@@ -1629,24 +1629,34 @@ async function snakePushGlobalLB(name, pts) {
     const userId = getTelegramUserId();
     if (!userId) return false;
     
+    const tg = window.Telegram?.WebApp;
+    const initData = tg?.initData || '';
+    
+    if (!initData) {
+        console.warn('No Telegram initData, score not submitted');
+        return false;
+    }
+
     try {
         const response = await fetch(WORKER_URL, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ 
-                userId: userId, 
-                name: (name || 'ANON').toUpperCase().slice(0,10), 
-                score: Number(pts) 
+                initData,
+                score: Number(pts),
+                replay: snReplayLog.slice(), 
+                apples: snAppleLog.slice(),
             })
         });
         
         const data = await response.json();
         if (response.ok && data.success) {
-            if (data.leaderboard) snGlobalLB = data.leaderboard.filter(entry => entry.userId).slice(0,20);
+            if (data.leaderboard) snGlobalLB = data.leaderboard.slice(0, 20);
             snakeLBRender();
             snakeLBOverlayRender();
             return true;
         }
+        console.warn('Score rejected:', data.error);
         return false;
     } catch(e) {
         return false;
@@ -1896,6 +1906,9 @@ function closeSnakeGame() {
 const SGRID = 20, SCOLS = 16, SROWS = 16;
 const SC = { bg:'#050508', grid:'rgba(181,118,58,0.05)', snH:'#d4944a', snB:'#b5763a', snD:'#7a5028', apple:'#e84040', appleGl:'rgba(232,64,64,0.4)', diamond:'#5dde8a', diamondGl:'rgba(93,222,138,0.5)' };
 let snSnake, snDir, snNextDir, snApple, snDiamond, snScore, snHi, snLevel, snSpeed, snLoop=null, snAlive=false, snFrame=0, snDiamondTimer=0, snDiamondVisible=false, gameOverFlag=false, currentGameId=null;
+let snReplayLog = [];
+let snAppleLog = [];
+let snStepCounter = 0;
 const SLS_HI='paradise_snake_hi', SLS_NAME='paradise_snake_name';
 
 function snGetHi(){ return parseInt(localStorage.getItem(SLS_HI)||'0'); }
@@ -1925,6 +1938,11 @@ function snakeInit() {
     snDiamond=null; snDiamondVisible=false; snDiamondTimer=0;
     gameOverFlag = false;
     currentGameId = Date.now() + '_' + Math.random();
+
+    snReplayLog = [];
+    snAppleLog = [];
+    snStepCounter = 0;
+
     snSpawnApple();
     snUpdateUI();
 }
@@ -1934,6 +1952,7 @@ function snSpawnApple() {
     do{ p={x:Math.floor(Math.random()*SCOLS),y:Math.floor(Math.random()*SROWS)}; }
     while(snSnake.some(s=>s.x===p.x&&s.y===p.y)||(snDiamond&&snDiamond.x===p.x&&snDiamond.y===p.y));
     snApple=p;
+    snAppleLog.push({ step: snStepCounter, x: p.x, y: p.y, type: 'apple' });
 }
 
 function snSpawnDiamond() {
@@ -1941,11 +1960,15 @@ function snSpawnDiamond() {
     do{ p={x:Math.floor(Math.random()*SCOLS),y:Math.floor(Math.random()*SROWS)}; }
     while(snSnake.some(s=>s.x===p.x&&s.y===p.y)||(snApple&&snApple.x===p.x&&snApple.y===p.y));
     snDiamond=p; snDiamondVisible=true; snDiamondTimer=80;
+    snAppleLog.push({ step: snStepCounter, x: p.x, y: p.y, type: 'diamond' });
 }
 
 function snakeTick() {
     if (!snAlive) return;
     snFrame++;
+    const dirName = snDir.x===1?'RIGHT':snDir.x===-1?'LEFT':snDir.y===1?'DOWN':'UP';
+    snReplayLog.push({ d: dirName, t: Date.now() });
+    snStepCounter++;
     if (snDiamondVisible) { snDiamondTimer--; if(snDiamondTimer<=0){snDiamond=null;snDiamondVisible=false;} }
     if (!snDiamondVisible && Math.random()<0.004) snSpawnDiamond();
     snDir = {...snNextDir};
