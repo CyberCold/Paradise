@@ -429,8 +429,9 @@
     "raw_text": "Здравствуйте, хочу заказать:\nDK Salt 50mg, вкус: Cherry Lime Fizz, количество: 1",
     "user_id": 1089785237,
     "username": "rhz «!₽ snuff :* © #lowtier",
-    "status": "new",
-    "date": "28.05.2026 14:48"
+    "status": "done",
+    "date": "28.05.2026 14:48",
+    "done_at": "2026-05-28T18:21:51.731812"
   },
   "#0024": {
     "oid": "#0024",
