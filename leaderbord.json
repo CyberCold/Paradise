@@ -30,6 +30,12 @@
     "date": 1779987547640
   },
   {
+    "userId": "993164577",
+    "name": "RIZHIK",
+    "score": 270,
+    "date": 1780000297201
+  },
+  {
     "userId": "930432979",
     "name": "GP4Y",
     "score": 260,
@@ -40,11 +46,5 @@
     "name": "UBIVATOR",
     "score": 260,
     "date": 1779983955979
-  },
-  {
-    "userId": "993164577",
-    "name": "RIZHIK",
-    "score": 250,
-    "date": 1779999883664
   }
 ]
