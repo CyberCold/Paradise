@@ -415,5 +415,21 @@
     "username": "Mr.Uwu",
     "status": "new",
     "date": "28.05.2026 14:45"
+  },
+  "#0023": {
+    "oid": "#0023",
+    "items": [
+      {
+        "pid": "dk",
+        "product_name": "DK Salt 50mg",
+        "flavor": "Cherry Lime Fizz",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nDK Salt 50mg, вкус: Cherry Lime Fizz, количество: 1",
+    "user_id": 1089785237,
+    "username": "rhz «!₽ snuff :* © #lowtier",
+    "status": "new",
+    "date": "28.05.2026 14:48"
   }
 }
