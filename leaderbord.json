@@ -1,11 +1,5 @@
 [
   {
-    "userId": "1395844397",
-    "name": "PODIK",
-    "score": 2150,
-    "date": 1780002553070
-  },
-  {
     "userId": "7511735897",
     "name": "CYBERCOLD",
     "score": 1250,
@@ -37,8 +31,8 @@
   },
   {
     "userId": "7682695094",
-    "name": "SMKPARADISEMANAGER",
-    "score": 380,
+    "name": "MINIM",
+    "score": 440,
     "date": 1780011353645
   },
   {
@@ -46,12 +40,6 @@
     "name": "RIZHIK",
     "score": 350,
     "date": 1780000297201
-  },
-  {
-    "userId": "local_1780002117118_501qawej5qg",
-    "name": "III",
-    "score": 300,
-    "date": 1780002155788
   },
   {
     "userId": "930432979",
@@ -70,11 +58,5 @@
     "name": "KRIK",
     "score": 230,
     "date": 1780010063461
-  },
-  {
-    "userId": "local_1779838414700_ku2ibybyk0k",
-    "name": "ANON",
-    "score": 10,
-    "date": 1780009509939
   }
 ]
