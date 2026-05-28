@@ -475,7 +475,8 @@
     "raw_text": "Здравствуйте, хочу заказать:\nIVG 20mg, вкус: Honey Dew, количество: 1\nIVG 20mg, вкус: Pink Fizz, количество: 1\nIVG 20mg, вкус: Iced Melonade, количество: 1тогда ещё их",
     "user_id": 5178665656,
     "username": "Mr.Uwu",
-    "status": "new",
-    "date": "28.05.2026 15:33"
+    "status": "done",
+    "date": "28.05.2026 15:33",
+    "done_at": "2026-05-28T19:24:41.691264"
   }
 }
