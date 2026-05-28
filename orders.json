@@ -431,5 +431,21 @@
     "username": "rhz «!₽ snuff :* © #lowtier",
     "status": "new",
     "date": "28.05.2026 14:48"
+  },
+  "#0024": {
+    "oid": "#0024",
+    "items": [
+      {
+        "pid": "ivg",
+        "product_name": "IVG 20mg",
+        "flavor": "Honey Dew",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nIVG 20mg, вкус: Honey Dew, количество: 1тогда ещё эти 3",
+    "user_id": 5178665656,
+    "username": "Mr.Uwu",
+    "status": "new",
+    "date": "28.05.2026 15:28"
   }
 }
