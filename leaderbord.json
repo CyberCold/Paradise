@@ -42,6 +42,12 @@
     "date": 1780000297201
   },
   {
+    "userId": "1135397601",
+    "name": "ANON",
+    "score": 340,
+    "date": 1780009070724
+  },
+  {
     "userId": "local_1780002117118_501qawej5qg",
     "name": "III",
     "score": 300,
@@ -58,11 +64,5 @@
     "name": "UBIVATOR",
     "score": 260,
     "date": 1779983955979
-  },
-  {
-    "userId": "1135397601",
-    "name": "ANON",
-    "score": 60,
-    "date": 1780008978910
   }
 ]
