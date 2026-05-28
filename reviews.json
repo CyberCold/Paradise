@@ -53,5 +53,16 @@
     "comment": null,
     "date": "27.05.2026 22:38",
     "sent_to_channel": false
+  },
+  "#0014_Elfliq 50mg": {
+    "oid": "#0014",
+    "user_id": 6127676206,
+    "username": "syrnik",
+    "product_name": "Elfliq 50mg",
+    "flavor": "не указан",
+    "rating": 5,
+    "comment": "cybercold",
+    "date": "28.05.2026 10:40",
+    "sent_to_channel": true
   }
 }
