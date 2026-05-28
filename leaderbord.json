@@ -36,6 +36,12 @@
     "date": 1780000297201
   },
   {
+    "userId": "local_1780002117118_501qawej5qg",
+    "name": "III",
+    "score": 300,
+    "date": 1780002155788
+  },
+  {
     "userId": "930432979",
     "name": "GP4Y",
     "score": 260,
@@ -46,11 +52,5 @@
     "name": "UBIVATOR",
     "score": 260,
     "date": 1779983955979
-  },
-  {
-    "userId": "local_1780002117118_501qawej5qg",
-    "name": "III",
-    "score": 20,
-    "date": 1780002117095
   }
 ]
