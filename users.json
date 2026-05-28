@@ -2782,5 +2782,13 @@
     "source": "webapp",
     "registered": "2026-05-28T07:58:06.242Z",
     "last_seen": "2026-05-28T07:58:06.242Z"
+  },
+  "930432979": {
+    "id": 930432979,
+    "first_name": "",
+    "username": "madarra_d",
+    "source": "bot_start",
+    "registered": "2026-05-28T12:54:42.882492",
+    "last_seen": "2026-05-28T12:54:42.882500"
   }
 }
