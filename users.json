@@ -33,7 +33,7 @@
   },
   "552298978": {
     "id": 552298978,
-    "first_name": "Ã§Â§ÂÃ£ÂÂ¯Ã£ÂÂ¯Ã£ÂÂ½Ã£ÂÂÃ£ÂÂ¨Ã£ÂÂ­Ã£ÂÂ ",
+    "first_name": "ÃÂ§ÃÂ§ÃÂÃÂ£ÃÂÃÂ¯ÃÂ£ÃÂÃÂ¯ÃÂ£ÃÂÃÂ½ÃÂ£ÃÂÃÂÃÂ£ÃÂÃÂ¨ÃÂ£ÃÂÃÂ­ÃÂ£ÃÂÃÂ ",
     "username": "netqm1",
     "source": "webapp",
     "registered": "2026-05-28T14:23:05.269Z",
@@ -201,7 +201,7 @@
   },
   "993164577": {
     "id": 993164577,
-    "first_name": "ÃÂÃÂ°ÃÂÃÂ½ÃÂÃÂ¶ÃÂÃÂÃÂÃÂ»ÃÂÃÂºÃÂÃÂ°",
+    "first_name": "ÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ½ÃÂÃÂÃÂÃÂ¶ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ°",
     "username": "andzelishaa",
     "source": "webapp",
     "registered": "2026-05-28T11:53:44.820Z",
@@ -241,7 +241,7 @@
   },
   "1093822167": {
     "id": 1093822167,
-    "first_name": "ÃÂÃÂÃÂ¸ÃÂÃÂÃÂ¸ÃÂ°ÃÂ½",
+    "first_name": "ÃÂÃÂÃÂÃÂÃÂÃÂ¸ÃÂÃÂÃÂÃÂÃÂÃÂ¸ÃÂÃÂ°ÃÂÃÂ½",
     "username": "PonPonchik19",
     "source": "webapp",
     "registered": "2026-05-28T22:29:40.346Z",
@@ -273,7 +273,7 @@
   },
   "1141788828": {
     "id": 1141788828,
-    "first_name": "ÃÂÃÂ¾ÃÂÃÂ¸ÃÂº",
+    "first_name": "ÃÂÃÂÃÂÃÂ¾ÃÂÃÂÃÂÃÂ¸ÃÂÃÂº",
     "username": "koshik_0",
     "source": "webapp",
     "registered": "2026-05-28T14:23:05.269Z",
@@ -2909,17 +2909,56 @@
     "username": "",
     "source": "webapp",
     "registered": "2026-05-29T13:00:45.682Z",
-    "last_seen": "2026-05-29T13:00:45.682Z",
+    "last_seen": "2026-05-29T13:02:07.368Z",
     "ips": [
       {
         "ip": "2a00:808:11a:eeed:b81e:b617:d3a3:310",
         "country": "LV",
         "first_seen": "2026-05-29T13:00:45.682Z",
-        "last_seen": "2026-05-29T13:00:45.682Z",
-        "visits": 1
+        "last_seen": "2026-05-29T13:02:07.368Z",
+        "visits": 2
       }
     ],
     "request_history": [
+      {
+        "timestamp": "2026-05-29T13:02:07.368Z",
+        "ip": "2a00:808:11a:eeed:b81e:b617:d3a3:310",
+        "country": "LV",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "method": "POST",
+        "headers": {
+          "accept": "*/*",
+          "accept-encoding": "gzip, br",
+          "accept-language": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+          "cf-connecting-ip": "2a00:808:11a:eeed:b81e:b617:d3a3:310",
+          "cf-ipcountry": "LV",
+          "cf-ray": "a035b10d2fcaa879",
+          "cf-visitor": "{\"scheme\":\"https\"}",
+          "connection": "Keep-Alive",
+          "content-length": "776",
+          "content-type": "application/json",
+          "host": "paradise-users.dnynzvtpyb.workers.dev",
+          "origin": "https://paradiseminiapp.pages.dev",
+          "priority": "u=1, i",
+          "referer": "https://paradiseminiapp.pages.dev/",
+          "sec-ch-ua": "\"Chromium\";v=\"148\", \"Android WebView\";v=\"148\", \"Not/A)Brand\";v=\"99\"",
+          "sec-ch-ua-mobile": "?1",
+          "sec-ch-ua-platform": "\"Android\"",
+          "sec-fetch-dest": "empty",
+          "sec-fetch-mode": "cors",
+          "sec-fetch-site": "cross-site",
+          "user-agent": "Mozilla/5.0 (Linux; Android 16; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.178 Mobile Safari/537.36 Telegram-Android/12.6.4 (Samsung SM-A366B; Android 16; SDK 36; HIGH)",
+          "x-forwarded-proto": "https",
+          "x-real-ip": "2a00:808:11a:eeed:b81e:b617:d3a3:310",
+          "x-requested-with": "org.telegram.messenger"
+        },
+        "initData": "query_id=AAEj9jEBBAAAACP2MQE30t2N&user=%7B%22id%22%3A8609986083%2C%22first_name%22%3A%22Why%3F%3F%3F%22%2C%22last_name%22%3A%22%22%2C%22language_code%22%3A%22ru%22%2C%22allows_write_to_pm%22%3Atrue%2C%22photo_url%22%3A%22https%3A%5C%2F%5C%2Ft.me%5C%2Fi%5C%2Fuserpic%5C%2F320%5C%2FzpS2N90LMtVYXT2vVdZ67-f-iL57yFXS1QEwaSrxDedWVIb7NV5haxOUYs5jwIUz.svg%22%7D&auth_date=1780059725&signature=firdTparBbdabjr2iVEAva2sa37MPyMdM1JDVG8xuCQAH4pP8EQfnufEh-Qs3IgieOaTcJ8dJK--USM1fHXDDg&hash=b6365070759267e00598fdaf7b753b2e969e6501d781ec8c8e487d1c7f7aff4d",
+        "user_agent": "Mozilla/5.0 (Linux; Android 16; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.178 Mobile Safari/537.36 Telegram-Android/12.6.4 (Samsung SM-A366B; Android 16; SDK 36; HIGH)",
+        "accept_language": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+        "cf_ray": "a035b10d2fcaa879",
+        "cf_visitor": "{\"scheme\":\"https\"}"
+      },
       {
         "timestamp": "2026-05-29T13:00:45.682Z",
         "ip": "2a00:808:11a:eeed:b81e:b617:d3a3:310",
@@ -2963,7 +3002,7 @@
   },
   "7511735897": {
     "id": 7511735897,
-    "first_name": "ᅠ ᅠ ᅠ ᅠ ᅠ ᅠ",
+    "first_name": "á  á  á  á  á  á ",
     "username": "",
     "source": "webapp",
     "registered": "2026-05-29T13:01:10.148Z",
