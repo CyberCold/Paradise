@@ -36,6 +36,12 @@
     "date": 1780012606697
   },
   {
+    "userId": "510557368",
+    "name": "S4W0K",
+    "score": 390,
+    "date": 1780041004553
+  },
+  {
     "userId": "993164577",
     "name": "RIZHIK",
     "score": 350,
@@ -64,11 +70,5 @@
     "name": "RESONANCEMGR",
     "score": 180,
     "date": 1780017632196
-  },
-  {
-    "userId": "510557368",
-    "name": "S4W0K",
-    "score": 170,
-    "date": 1780040884196
   }
 ]
