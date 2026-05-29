@@ -265,21 +265,59 @@
   },
   "7511735897": {
     "id": 7511735897,
-    "first_name": "ᅠ ᅠ ᅠ ᅠ ᅠ ᅠ",
+    "first_name": "á  á  á  á  á  á ",
     "username": "",
     "source": "webapp",
     "registered": "2026-05-29T01:06:23.163Z",
-    "last_seen": "2026-05-29T01:06:23.163Z",
+    "last_seen": "2026-05-29T01:14:12.518Z",
     "ips": [
       {
         "ip": "94.30.253.210",
         "country": "LV",
         "first_seen": "2026-05-29T01:06:23.163Z",
-        "last_seen": "2026-05-29T01:06:23.163Z",
-        "visits": 1
+        "last_seen": "2026-05-29T01:14:12.518Z",
+        "visits": 2
       }
     ],
     "request_history": [
+      {
+        "timestamp": "2026-05-29T01:14:12.518Z",
+        "ip": "94.30.253.210",
+        "country": "LV",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "method": "POST",
+        "headers": {
+          "accept": "*/*",
+          "accept-encoding": "gzip, br",
+          "accept-language": "ru,en;q=0.9,en-GB;q=0.8,en-US;q=0.7",
+          "cf-connecting-ip": "94.30.253.210",
+          "cf-ipcountry": "LV",
+          "cf-ray": "a031a411eb83a872",
+          "cf-visitor": "{\"scheme\":\"https\"}",
+          "connection": "Keep-Alive",
+          "content-length": "970",
+          "content-type": "application/json",
+          "host": "paradise-users.dnynzvtpyb.workers.dev",
+          "origin": "https://paradiseminiapp.pages.dev",
+          "priority": "u=1, i",
+          "referer": "https://paradiseminiapp.pages.dev/",
+          "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Microsoft Edge\";v=\"148\", \"Microsoft Edge WebView2\";v=\"148\", \"Chromium\";v=\"148\"",
+          "sec-ch-ua-mobile": "?0",
+          "sec-ch-ua-platform": "\"Windows\"",
+          "sec-fetch-dest": "empty",
+          "sec-fetch-mode": "cors",
+          "sec-fetch-site": "cross-site",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0",
+          "x-forwarded-proto": "https",
+          "x-real-ip": "94.30.253.210"
+        },
+        "initData": "query_id=AAFZ_rs_AwAAAFn-uz_TKy3m&user=%7B%22id%22%3A7511735897%2C%22first_name%22%3A%22%E1%85%A0%20%E1%85%A0%20%E1%85%A0%20%E1%85%A0%20%E1%85%A0%20%E1%85%A0%22%2C%22last_name%22%3A%22%E1%85%A0%20%E1%85%A0%20%E1%85%A0%20%E1%85%A0%20%E1%85%A0%22%2C%22language_code%22%3A%22ru%22%2C%22is_premium%22%3Atrue%2C%22allows_write_to_pm%22%3Atrue%2C%22photo_url%22%3A%22https%3A%5C%2F%5C%2Ft.me%5C%2Fi%5C%2Fuserpic%5C%2F320%5C%2FJroJ3eezYkUAJ-TDscwxLwIqH6slbBQOx2rO7bhXcL4F1jAUvG11nYt2DOlknhJ9.svg%22%7D&auth_date=1780017250&signature=-gkwV1Rv6VrnYyVnWZb_MtEsUjBA5N6o6uL07PmX1QZqI-yPIlzSRcOwSZ0N3faL472L-3bi0_3E4Iej6MU8AA&hash=d660d1126a7e19229da867a74756ec98d70a73f2c905bb9402a13ff5b97ad5b4",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0",
+        "accept_language": "ru,en;q=0.9,en-GB;q=0.8,en-US;q=0.7",
+        "cf_ray": "a031a411eb83a872",
+        "cf_visitor": "{\"scheme\":\"https\"}"
+      },
       {
         "timestamp": "2026-05-29T01:06:23.163Z",
         "ip": "94.30.253.210",
