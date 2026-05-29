@@ -1552,6 +1552,16 @@
 </div><!-- /snakeOverlay -->
 
 <script>
+    const tg = window.Telegram?.WebApp;
+if (!tg || !tg.initData || tg.initData === '') {
+    document.body.innerHTML = `
+        <div style="display:flex;align-items:center;justify-content:center;
+        height:100vh;background:#000;color:#0f0;
+        font-family:'Press Start 2P',monospace;font-size:12px;text-align:center;">
+            Открой через Telegram
+        </div>`;
+    throw new Error('Not in Telegram');
+}
 // ════════════════════════════════════════════════════════════
 //  SHOP CONFIG
 // ════════════════════════════════════════════════════════════
