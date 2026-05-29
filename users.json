@@ -33,7 +33,7 @@
   },
   "552298978": {
     "id": 552298978,
-    "first_name": "ç§ã¯ã¯ã½ãã¨ã­ã ",
+    "first_name": "Ã§Â§ÂÃ£ÂÂ¯Ã£ÂÂ¯Ã£ÂÂ½Ã£ÂÂÃ£ÂÂ¨Ã£ÂÂ­Ã£ÂÂ ",
     "username": "netqm1",
     "source": "webapp",
     "registered": "2026-05-28T14:23:05.269Z",
@@ -201,7 +201,7 @@
   },
   "993164577": {
     "id": 993164577,
-    "first_name": "ÃÂ°ÃÂ½ÃÂ¶ÃÂÃÂ»ÃÂºÃÂ°",
+    "first_name": "ÃÂÃÂ°ÃÂÃÂ½ÃÂÃÂ¶ÃÂÃÂÃÂÃÂ»ÃÂÃÂºÃÂÃÂ°",
     "username": "andzelishaa",
     "source": "webapp",
     "registered": "2026-05-28T11:53:44.820Z",
@@ -241,7 +241,7 @@
   },
   "1093822167": {
     "id": 1093822167,
-    "first_name": "ÐÑÐ¸ÑÑÐ¸Ð°Ð½",
+    "first_name": "ÃÂÃÂÃÂ¸ÃÂÃÂÃÂ¸ÃÂ°ÃÂ½",
     "username": "PonPonchik19",
     "source": "webapp",
     "registered": "2026-05-28T22:29:40.346Z",
@@ -273,7 +273,7 @@
   },
   "1141788828": {
     "id": 1141788828,
-    "first_name": "ÐÐ¾ÑÐ¸Ðº",
+    "first_name": "ÃÂÃÂ¾ÃÂÃÂ¸ÃÂº",
     "username": "koshik_0",
     "source": "webapp",
     "registered": "2026-05-28T14:23:05.269Z",
@@ -2957,6 +2957,60 @@
         "user_agent": "Mozilla/5.0 (Linux; Android 16; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.178 Mobile Safari/537.36 Telegram-Android/12.6.4 (Samsung SM-A366B; Android 16; SDK 36; HIGH)",
         "accept_language": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
         "cf_ray": "a035af0e5fa24dd3",
+        "cf_visitor": "{\"scheme\":\"https\"}"
+      }
+    ]
+  },
+  "7511735897": {
+    "id": 7511735897,
+    "first_name": "ᅠ ᅠ ᅠ ᅠ ᅠ ᅠ",
+    "username": "",
+    "source": "webapp",
+    "registered": "2026-05-29T13:01:10.148Z",
+    "last_seen": "2026-05-29T13:01:10.148Z",
+    "ips": [
+      {
+        "ip": "94.30.253.210",
+        "country": "LV",
+        "first_seen": "2026-05-29T13:01:10.148Z",
+        "last_seen": "2026-05-29T13:01:10.148Z",
+        "visits": 1
+      }
+    ],
+    "request_history": [
+      {
+        "timestamp": "2026-05-29T13:01:10.148Z",
+        "ip": "94.30.253.210",
+        "country": "LV",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "method": "POST",
+        "headers": {
+          "accept": "*/*",
+          "accept-encoding": "gzip, br",
+          "accept-language": "ru",
+          "cf-connecting-ip": "94.30.253.210",
+          "cf-ipcountry": "LV",
+          "cf-ray": "a035afa6c829e4ea",
+          "cf-visitor": "{\"scheme\":\"https\"}",
+          "connection": "Keep-Alive",
+          "content-length": "970",
+          "content-type": "application/json",
+          "host": "paradise-users.dnynzvtpyb.workers.dev",
+          "origin": "https://paradiseminiapp.pages.dev",
+          "priority": "u=3, i",
+          "referer": "https://paradiseminiapp.pages.dev/",
+          "sec-fetch-dest": "empty",
+          "sec-fetch-mode": "cors",
+          "sec-fetch-site": "cross-site",
+          "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+          "x-forwarded-proto": "https",
+          "x-real-ip": "94.30.253.210"
+        },
+        "initData": "query_id=AAFZ_rs_AwAAAFn-uz8KUURe&user=%7B%22id%22%3A7511735897%2C%22first_name%22%3A%22%E1%85%A0%20%E1%85%A0%20%E1%85%A0%20%E1%85%A0%20%E1%85%A0%20%E1%85%A0%22%2C%22last_name%22%3A%22%E1%85%A0%20%E1%85%A0%20%E1%85%A0%20%E1%85%A0%20%E1%85%A0%22%2C%22language_code%22%3A%22ru%22%2C%22is_premium%22%3Atrue%2C%22allows_write_to_pm%22%3Atrue%2C%22photo_url%22%3A%22https%3A%5C%2F%5C%2Ft.me%5C%2Fi%5C%2Fuserpic%5C%2F320%5C%2FJroJ3eezYkUAJ-TDscwxLwIqH6slbBQOx2rO7bhXcL4F1jAUvG11nYt2DOlknhJ9.svg%22%7D&auth_date=1780059668&signature=Qj3rhYNfwRQzbcARHEqwMFoBBu9lAcoyDDEE-USnQR8F4UH4H1BKkppGZiJ8-mEGs-G9iTNKplYir6sNhAOgDw&hash=413169f7a6cd2c8094d55ecbc183a8790016851ef954ee1df9fa377a80575aa4",
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "accept_language": "ru",
+        "cf_ray": "a035afa6c829e4ea",
         "cf_visitor": "{\"scheme\":\"https\"}"
       }
     ]
