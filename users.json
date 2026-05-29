@@ -1,7 +1,61 @@
 {
+  "765772657": {
+    "id": 765772657,
+    "first_name": "mzzzfk",
+    "username": "vrotmnennnogi",
+    "source": "webapp",
+    "registered": "2026-05-29T14:21:36.705Z",
+    "last_seen": "2026-05-29T14:21:36.705Z",
+    "ips": [
+      {
+        "ip": "2a03:ec00:b15a:6598:a9f1:496:1e2b:372e",
+        "country": "LV",
+        "first_seen": "2026-05-29T14:21:36.705Z",
+        "last_seen": "2026-05-29T14:21:36.705Z",
+        "visits": 1
+      }
+    ],
+    "request_history": [
+      {
+        "timestamp": "2026-05-29T14:21:36.705Z",
+        "ip": "2a03:ec00:b15a:6598:a9f1:496:1e2b:372e",
+        "country": "LV",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "method": "POST",
+        "headers": {
+          "accept": "*/*",
+          "accept-encoding": "gzip, br",
+          "accept-language": "ru",
+          "cf-connecting-ip": "2a03:ec00:b15a:6598:a9f1:496:1e2b:372e",
+          "cf-ipcountry": "LV",
+          "cf-ray": "a036257d3e03ef85",
+          "cf-visitor": "{\"scheme\":\"https\"}",
+          "connection": "Keep-Alive",
+          "content-length": "792",
+          "content-type": "application/json",
+          "host": "paradise-users.dnynzvtpyb.workers.dev",
+          "origin": "https://paradiseminiapp.pages.dev",
+          "priority": "u=3, i",
+          "referer": "https://paradiseminiapp.pages.dev/",
+          "sec-fetch-dest": "empty",
+          "sec-fetch-mode": "cors",
+          "sec-fetch-site": "cross-site",
+          "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+          "x-forwarded-proto": "https",
+          "x-real-ip": "2a03:ec00:b15a:6598:a9f1:496:1e2b:372e"
+        },
+        "initData": "query_id=AAFxw6QtAAAAAHHDpC3K5Pnr&user=%7B%22id%22%3A765772657%2C%22first_name%22%3A%22mzzzfk%22%2C%22last_name%22%3A%22%22%2C%22username%22%3A%22vrotmnennnogi%22%2C%22language_code%22%3A%22ru%22%2C%22allows_write_to_pm%22%3Atrue%2C%22photo_url%22%3A%22https%3A%5C%2F%5C%2Ft.me%5C%2Fi%5C%2Fuserpic%5C%2F320%5C%2FaCA2xDOYM9jkNBOBqDuuEYtFUyAZZgrug2ZuJzEHL3g.svg%22%7D&auth_date=1780064495&signature=dY7J8PJjdLHipzw6QBm5BAvW_KAWNS3ArrfbHj8RhrIJ_1vKmfX-ZtFtLlfmAED_vrpqJ_s6tmS2kPUBvePgDg&hash=fbc64e9484728a625fd59ab9a695ba0f86ec604b2f478dca46ef5940230285ef",
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "accept_language": "ru",
+        "cf_ray": "a036257d3e03ef85",
+        "cf_visitor": "{\"scheme\":\"https\"}"
+      }
+    ]
+  },
   "973082265": {
     "id": 973082265,
-    "first_name": "ÃÂÃÂ°ÃÂ½ÃÂ¸ÃÂ¸ÃÂ»",
+    "first_name": "ÃÂÃÂÃÂÃÂ°ÃÂÃÂ½ÃÂÃÂ¸ÃÂÃÂ¸ÃÂÃÂ»",
     "username": "Laufbursche0",
     "source": "webapp",
     "registered": "2026-05-29T14:20:16.518Z",
@@ -253,7 +307,7 @@
   },
   "7511735897": {
     "id": 7511735897,
-    "first_name": "á  á  á  á  á  á ",
+    "first_name": "Ã¡ÂÂ  Ã¡ÂÂ  Ã¡ÂÂ  Ã¡ÂÂ  Ã¡ÂÂ  Ã¡ÂÂ ",
     "username": "",
     "source": "webapp",
     "registered": "2026-05-29T14:20:19.899Z",
