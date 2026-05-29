@@ -265,21 +265,56 @@
   },
   "7511735897": {
     "id": 7511735897,
-    "first_name": "á  á  á  á  á  á ",
+    "first_name": "Ã¡ÂÂ  Ã¡ÂÂ  Ã¡ÂÂ  Ã¡ÂÂ  Ã¡ÂÂ  Ã¡ÂÂ ",
     "username": "",
     "source": "webapp",
     "registered": "2026-05-29T01:06:23.163Z",
-    "last_seen": "2026-05-29T01:14:12.518Z",
+    "last_seen": "2026-05-29T01:18:49.559Z",
     "ips": [
       {
         "ip": "94.30.253.210",
         "country": "LV",
         "first_seen": "2026-05-29T01:06:23.163Z",
-        "last_seen": "2026-05-29T01:14:12.518Z",
-        "visits": 2
+        "last_seen": "2026-05-29T01:18:49.559Z",
+        "visits": 3
       }
     ],
     "request_history": [
+      {
+        "timestamp": "2026-05-29T01:18:49.559Z",
+        "ip": "94.30.253.210",
+        "country": "LV",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "method": "POST",
+        "headers": {
+          "accept": "*/*",
+          "accept-encoding": "gzip, br",
+          "accept-language": "ru",
+          "cf-connecting-ip": "94.30.253.210",
+          "cf-ipcountry": "LV",
+          "cf-ray": "a031aad57eb0e4df",
+          "cf-visitor": "{\"scheme\":\"https\"}",
+          "connection": "Keep-Alive",
+          "content-length": "970",
+          "content-type": "application/json",
+          "host": "paradise-users.dnynzvtpyb.workers.dev",
+          "origin": "https://paradiseminiapp.pages.dev",
+          "priority": "u=3, i",
+          "referer": "https://paradiseminiapp.pages.dev/",
+          "sec-fetch-dest": "empty",
+          "sec-fetch-mode": "cors",
+          "sec-fetch-site": "cross-site",
+          "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+          "x-forwarded-proto": "https",
+          "x-real-ip": "94.30.253.210"
+        },
+        "initData": "query_id=AAFZ_rs_AwAAAFn-uz81McLy&user=%7B%22id%22%3A7511735897%2C%22first_name%22%3A%22%E1%85%A0%20%E1%85%A0%20%E1%85%A0%20%E1%85%A0%20%E1%85%A0%20%E1%85%A0%22%2C%22last_name%22%3A%22%E1%85%A0%20%E1%85%A0%20%E1%85%A0%20%E1%85%A0%20%E1%85%A0%22%2C%22language_code%22%3A%22ru%22%2C%22is_premium%22%3Atrue%2C%22allows_write_to_pm%22%3Atrue%2C%22photo_url%22%3A%22https%3A%5C%2F%5C%2Ft.me%5C%2Fi%5C%2Fuserpic%5C%2F320%5C%2FJroJ3eezYkUAJ-TDscwxLwIqH6slbBQOx2rO7bhXcL4F1jAUvG11nYt2DOlknhJ9.svg%22%7D&auth_date=1780017528&signature=IdmCzw3L5fl0fvevHmXHqp6_dWFsttBen4WnmI2mCLlUBNVi6DiU3UQC_4ZuRAZ_Yzw-4x4o4KSyDnNMrnXiBg&hash=2c581ffe03c0b70b2c92dc9ce619babf644acb2b892bc5dbd2b12f5e411b499a",
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "accept_language": "ru",
+        "cf_ray": "a031aad57eb0e4df",
+        "cf_visitor": "{\"scheme\":\"https\"}"
+      },
       {
         "timestamp": "2026-05-29T01:14:12.518Z",
         "ip": "94.30.253.210",
