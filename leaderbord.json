@@ -18,12 +18,6 @@
     "date": 1779987906130
   },
   {
-    "userId": "8482703228",
-    "name": "NOTHING",
-    "score": 10,
-    "date": 1779988514839
-  },
-  {
     "userId": "1369931246",
     "name": "ANON",
     "score": 490,
@@ -64,5 +58,11 @@
     "name": "UBIVATOR",
     "score": 260,
     "date": 1779983955979
+  },
+  {
+    "userId": "8482703228",
+    "name": "RESONANCEMGR",
+    "score": 80,
+    "date": 1780016289160
   }
 ]
