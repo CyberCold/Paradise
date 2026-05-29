@@ -55,7 +55,7 @@
   },
   "973082265": {
     "id": 973082265,
-    "first_name": "ÃÂÃÂÃÂÃÂ°ÃÂÃÂ½ÃÂÃÂ¸ÃÂÃÂ¸ÃÂÃÂ»",
+    "first_name": "ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ½ÃÂÃÂÃÂÃÂ¸ÃÂÃÂÃÂÃÂ¸ÃÂÃÂÃÂÃÂ»",
     "username": "Laufbursche0",
     "source": "webapp",
     "registered": "2026-05-29T14:20:16.518Z",
@@ -107,6 +107,64 @@
         "user_agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.22 Mobile Safari/537.36 Telegram-Android/12.7.3 (Huawei MAR-LX1A; Android 10; SDK 29; AVERAGE)",
         "accept_language": "ru,ru-LV;q=0.9,lv-LV;q=0.8,lv;q=0.7,en-US;q=0.6,en;q=0.5",
         "cf_ray": "a0362388a94ee4db",
+        "cf_visitor": "{\"scheme\":\"https\"}"
+      }
+    ]
+  },
+  "1438573041": {
+    "id": 1438573041,
+    "first_name": "Artem",
+    "username": "artem13607",
+    "source": "webapp",
+    "registered": "2026-05-29T14:21:53.668Z",
+    "last_seen": "2026-05-29T14:21:53.668Z",
+    "ips": [
+      {
+        "ip": "84.15.218.237",
+        "country": "LV",
+        "first_seen": "2026-05-29T14:21:53.668Z",
+        "last_seen": "2026-05-29T14:21:53.668Z",
+        "visits": 1
+      }
+    ],
+    "request_history": [
+      {
+        "timestamp": "2026-05-29T14:21:53.668Z",
+        "ip": "84.15.218.237",
+        "country": "LV",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "method": "POST",
+        "headers": {
+          "accept": "*/*",
+          "accept-encoding": "gzip, br",
+          "accept-language": "ru,ru-LV;q=0.9,en-US;q=0.8,en;q=0.7",
+          "cf-connecting-ip": "84.15.218.237",
+          "cf-ipcountry": "LV",
+          "cf-ray": "a03625e618398d2f",
+          "cf-visitor": "{\"scheme\":\"https\"}",
+          "connection": "Keep-Alive",
+          "content-length": "830",
+          "content-type": "application/json",
+          "host": "paradise-users.dnynzvtpyb.workers.dev",
+          "origin": "https://paradiseminiapp.pages.dev",
+          "priority": "u=1, i",
+          "referer": "https://paradiseminiapp.pages.dev/",
+          "sec-ch-ua": "\"Chromium\";v=\"148\", \"Android WebView\";v=\"148\", \"Not/A)Brand\";v=\"99\"",
+          "sec-ch-ua-mobile": "?1",
+          "sec-ch-ua-platform": "\"Android\"",
+          "sec-fetch-dest": "empty",
+          "sec-fetch-mode": "cors",
+          "sec-fetch-site": "cross-site",
+          "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.120 Mobile Safari/537.36 Telegram-Android/12.7.3 (Huawei POT-LX1; Android 10; SDK 29; AVERAGE)",
+          "x-forwarded-proto": "https",
+          "x-real-ip": "84.15.218.237",
+          "x-requested-with": "org.telegram.messenger"
+        },
+        "initData": "query_id=AAHx4b5VAAAAAPHhvlVHFbZ9&user=%7B%22id%22%3A1438573041%2C%22first_name%22%3A%22Artem%22%2C%22last_name%22%3A%22%22%2C%22username%22%3A%22artem13607%22%2C%22language_code%22%3A%22ru%22%2C%22is_premium%22%3Atrue%2C%22allows_write_to_pm%22%3Atrue%2C%22photo_url%22%3A%22https%3A%5C%2F%5C%2Ft.me%5C%2Fi%5C%2Fuserpic%5C%2F320%5C%2FGBJiqTFd5_TyV5JMXydtrTzmimPTugkcFvmu1wyJPGs.svg%22%7D&auth_date=1780064507&signature=7cyOdBoK7c1jm5t7hrd4kf1lGt-xQpRsVVz25lG62Yo2K0tLQs_b3mTvFVmu0geZXvJn3RUCv0b4pXzj5FKdCQ&hash=927fab1c30a23a07d2f733eea90e3ae57cb34692db48aeefdb5e3384165e467c",
+        "user_agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.120 Mobile Safari/537.36 Telegram-Android/12.7.3 (Huawei POT-LX1; Android 10; SDK 29; AVERAGE)",
+        "accept_language": "ru,ru-LV;q=0.9,en-US;q=0.8,en;q=0.7",
+        "cf_ray": "a03625e618398d2f",
         "cf_visitor": "{\"scheme\":\"https\"}"
       }
     ]
@@ -307,7 +365,7 @@
   },
   "7511735897": {
     "id": 7511735897,
-    "first_name": "Ã¡ÂÂ  Ã¡ÂÂ  Ã¡ÂÂ  Ã¡ÂÂ  Ã¡ÂÂ  Ã¡ÂÂ ",
+    "first_name": "ÃÂ¡ÃÂÃÂ  ÃÂ¡ÃÂÃÂ  ÃÂ¡ÃÂÃÂ  ÃÂ¡ÃÂÃÂ  ÃÂ¡ÃÂÃÂ  ÃÂ¡ÃÂÃÂ ",
     "username": "",
     "source": "webapp",
     "registered": "2026-05-29T14:20:19.899Z",
