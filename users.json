@@ -1,7 +1,7 @@
 {
   "999998505": {
     "id": 999998505,
-    "first_name": "ÐÐ¸Ð¾Ð»ÐµÑÑÐ°",
+    "first_name": "ÃÂÃÂ¸ÃÂ¾ÃÂ»ÃÂµÃÂÃÂÃÂ°",
     "username": "Violetta0q",
     "source": "webapp",
     "registered": "2026-05-29T13:08:55.472Z",
@@ -49,6 +49,63 @@
         "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
         "accept_language": "ru",
         "cf_ray": "a035bb047c38e4d1",
+        "cf_visitor": "{\"scheme\":\"https\"}"
+      }
+    ]
+  },
+  "1089785237": {
+    "id": 1089785237,
+    "first_name": "rhz «!₽ snuff :* © #lowtier",
+    "username": "heroingore",
+    "source": "webapp",
+    "registered": "2026-05-29T13:09:18.421Z",
+    "last_seen": "2026-05-29T13:09:18.421Z",
+    "ips": [
+      {
+        "ip": "84.15.221.92",
+        "country": "LV",
+        "first_seen": "2026-05-29T13:09:18.421Z",
+        "last_seen": "2026-05-29T13:09:18.421Z",
+        "visits": 1
+      }
+    ],
+    "request_history": [
+      {
+        "timestamp": "2026-05-29T13:09:18.421Z",
+        "ip": "84.15.221.92",
+        "country": "LV",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "method": "POST",
+        "headers": {
+          "accept": "*/*",
+          "accept-encoding": "gzip, br",
+          "accept-language": "ru,en;q=0.9,en-GB;q=0.8,en-US;q=0.7",
+          "cf-connecting-ip": "84.15.221.92",
+          "cf-ipcountry": "LV",
+          "cf-ray": "a035bb9418fd2aa2",
+          "cf-visitor": "{\"scheme\":\"https\"}",
+          "connection": "Keep-Alive",
+          "content-length": "870",
+          "content-type": "application/json",
+          "host": "paradise-users.dnynzvtpyb.workers.dev",
+          "origin": "https://paradiseminiapp.pages.dev",
+          "priority": "u=1, i",
+          "referer": "https://paradiseminiapp.pages.dev/",
+          "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Microsoft Edge\";v=\"148\", \"Microsoft Edge WebView2\";v=\"148\", \"Chromium\";v=\"148\"",
+          "sec-ch-ua-mobile": "?0",
+          "sec-ch-ua-platform": "\"Windows\"",
+          "sec-fetch-dest": "empty",
+          "sec-fetch-mode": "cors",
+          "sec-fetch-site": "cross-site",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0",
+          "x-forwarded-proto": "https",
+          "x-real-ip": "84.15.221.92"
+        },
+        "initData": "query_id=AAGVzfRAAAAAAJXN9ECnx10s&user=%7B%22id%22%3A1089785237%2C%22first_name%22%3A%22rhz%20%C2%AB%21%E2%82%BD%20snuff%20%3A%2A%20%C2%A9%20%23lowtier%22%2C%22last_name%22%3A%22%22%2C%22username%22%3A%22heroingore%22%2C%22language_code%22%3A%22ru%22%2C%22allows_write_to_pm%22%3Atrue%2C%22photo_url%22%3A%22https%3A%5C%2F%5C%2Ft.me%5C%2Fi%5C%2Fuserpic%5C%2F320%5C%2FSpVu4WE0Yj-C4Mq_JVrzoYQJ-4AQO6Xz0tP5OldGm1A.svg%22%7D&auth_date=1780060155&signature=ESlLSnMY5M2x5L26fncTKqa08GVw0s1IKnNkDmmMlmrtn4rwJSL0gGlaM4mwkSBJaBbwcYdM7HdpkUKo8Ri4Dw&hash=2a7ef9e6464f31cd7b53821b544b7e30dcfdaf4f22e4d0c7fef49ff50062c1a9",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0",
+        "accept_language": "ru,en;q=0.9,en-GB;q=0.8,en-US;q=0.7",
+        "cf_ray": "a035bb9418fd2aa2",
         "cf_visitor": "{\"scheme\":\"https\"}"
       }
     ]
