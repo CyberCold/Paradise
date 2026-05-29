@@ -1,7 +1,7 @@
 {
   "999998505": {
     "id": 999998505,
-    "first_name": "Виолетта",
+    "first_name": "ÐÐ¸Ð¾Ð»ÐµÑÑÐ°",
     "username": "Violetta0q",
     "source": "webapp",
     "registered": "2026-05-29T13:08:55.472Z",
@@ -49,6 +49,64 @@
         "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
         "accept_language": "ru",
         "cf_ray": "a035bb047c38e4d1",
+        "cf_visitor": "{\"scheme\":\"https\"}"
+      }
+    ]
+  },
+  "1326402069": {
+    "id": 1326402069,
+    "first_name": "Arsik",
+    "username": "Arsikikk",
+    "source": "webapp",
+    "registered": "2026-05-29T13:09:06.574Z",
+    "last_seen": "2026-05-29T13:09:06.574Z",
+    "ips": [
+      {
+        "ip": "5.241.134.39",
+        "country": "LV",
+        "first_seen": "2026-05-29T13:09:06.574Z",
+        "last_seen": "2026-05-29T13:09:06.574Z",
+        "visits": 1
+      }
+    ],
+    "request_history": [
+      {
+        "timestamp": "2026-05-29T13:09:06.574Z",
+        "ip": "5.241.134.39",
+        "country": "LV",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "method": "POST",
+        "headers": {
+          "accept": "*/*",
+          "accept-encoding": "gzip, br",
+          "accept-language": "ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7",
+          "cf-connecting-ip": "5.241.134.39",
+          "cf-ipcountry": "LV",
+          "cf-ray": "a035bb4abeebc7e7",
+          "cf-visitor": "{\"scheme\":\"https\"}",
+          "connection": "Keep-Alive",
+          "content-length": "782",
+          "content-type": "application/json",
+          "host": "paradise-users.dnynzvtpyb.workers.dev",
+          "origin": "https://paradiseminiapp.pages.dev",
+          "priority": "u=1, i",
+          "referer": "https://paradiseminiapp.pages.dev/",
+          "sec-ch-ua": "\"Chromium\";v=\"148\", \"Android WebView\";v=\"148\", \"Not/A)Brand\";v=\"99\"",
+          "sec-ch-ua-mobile": "?1",
+          "sec-ch-ua-platform": "\"Android\"",
+          "sec-fetch-dest": "empty",
+          "sec-fetch-mode": "cors",
+          "sec-fetch-site": "cross-site",
+          "user-agent": "Mozilla/5.0 (Linux; Android 13; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.120 Mobile Safari/537.36 Telegram-Android/12.7.3 (Xiaomi 2201117PG; Android 13; SDK 33; AVERAGE)",
+          "x-forwarded-proto": "https",
+          "x-real-ip": "5.241.134.39",
+          "x-requested-with": "org.telegram.messenger"
+        },
+        "initData": "query_id=AAEVSg9PAAAAABVKD08ZVwPV&user=%7B%22id%22%3A1326402069%2C%22first_name%22%3A%22Arsik%22%2C%22last_name%22%3A%22%22%2C%22username%22%3A%22Arsikikk%22%2C%22language_code%22%3A%22ru%22%2C%22allows_write_to_pm%22%3Atrue%2C%22photo_url%22%3A%22https%3A%5C%2F%5C%2Ft.me%5C%2Fi%5C%2Fuserpic%5C%2F320%5C%2F0YJPkJPlfwSXCe6cuctq5JSsmAUwgF_5SyeXjken--k.svg%22%7D&auth_date=1780060144&signature=mxwaOSWunfjJUU5oFmrZVpp62bEvsJybneHEQgjf4bVcrljehgxdCqq8LJGK1zC8Faa4LO7snWmwHJ3K4MolCg&hash=95a73b482ff56f01e71af3cea77350ecdfa37ccd780d9da5f68a55e4087bfb80",
+        "user_agent": "Mozilla/5.0 (Linux; Android 13; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.120 Mobile Safari/537.36 Telegram-Android/12.7.3 (Xiaomi 2201117PG; Android 13; SDK 33; AVERAGE)",
+        "accept_language": "ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7",
+        "cf_ray": "a035bb4abeebc7e7",
         "cf_visitor": "{\"scheme\":\"https\"}"
       }
     ]
