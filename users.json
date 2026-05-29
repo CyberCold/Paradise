@@ -5,17 +5,56 @@
     "username": "s4w0k",
     "source": "webapp",
     "registered": "2026-05-29T07:27:37.075Z",
-    "last_seen": "2026-05-29T07:27:37.075Z",
+    "last_seen": "2026-05-29T07:27:46.026Z",
     "ips": [
       {
         "ip": "5.241.138.25",
         "country": "LV",
         "first_seen": "2026-05-29T07:27:37.075Z",
-        "last_seen": "2026-05-29T07:27:37.075Z",
-        "visits": 1
+        "last_seen": "2026-05-29T07:27:46.026Z",
+        "visits": 2
       }
     ],
     "request_history": [
+      {
+        "timestamp": "2026-05-29T07:27:46.026Z",
+        "ip": "5.241.138.25",
+        "country": "LV",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "method": "POST",
+        "headers": {
+          "accept": "*/*",
+          "accept-encoding": "gzip, br",
+          "accept-language": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+          "cf-connecting-ip": "5.241.138.25",
+          "cf-ipcountry": "LV",
+          "cf-ray": "a033c7468d4ce4e7",
+          "cf-visitor": "{\"scheme\":\"https\"}",
+          "connection": "Keep-Alive",
+          "content-length": "774",
+          "content-type": "application/json",
+          "host": "paradise-users.dnynzvtpyb.workers.dev",
+          "origin": "https://paradiseminiapp.pages.dev",
+          "priority": "u=1, i",
+          "referer": "https://paradiseminiapp.pages.dev/",
+          "sec-ch-ua": "\"Chromium\";v=\"148\", \"Android WebView\";v=\"148\", \"Not/A)Brand\";v=\"99\"",
+          "sec-ch-ua-mobile": "?1",
+          "sec-ch-ua-platform": "\"Android\"",
+          "sec-fetch-dest": "empty",
+          "sec-fetch-mode": "cors",
+          "sec-fetch-site": "cross-site",
+          "user-agent": "Mozilla/5.0 (Linux; Android 14; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.178 Mobile Safari/537.36 Telegram-Android/12.7.3 (Samsung SM-A556B; Android 14; SDK 34; HIGH)",
+          "x-forwarded-proto": "https",
+          "x-real-ip": "5.241.138.25",
+          "x-requested-with": "org.telegram.messenger"
+        },
+        "initData": "query_id=AAG4fG4eAAAAALh8bh47RaCs&user=%7B%22id%22%3A510557368%2C%22first_name%22%3A%22Arman%22%2C%22last_name%22%3A%22%22%2C%22username%22%3A%22s4w0k%22%2C%22language_code%22%3A%22ru%22%2C%22allows_write_to_pm%22%3Atrue%2C%22photo_url%22%3A%22https%3A%5C%2F%5C%2Ft.me%5C%2Fi%5C%2Fuserpic%5C%2F320%5C%2F1zya9_UJqsOp_KSN89VF1fP9F3AjOV_WwJoKnmoihAc.svg%22%7D&auth_date=1780039654&signature=4Xr-MzLHTrpWzbzzrDTa6W-an_kp2ikj8KtuFwDCuXtHDtSd5b9BShf-_ldMq9HFGae3SGOq9cOcQCRP36ZWBQ&hash=debaa4a40914b24e8b1e2be983fe7f28a846e0149b4de7c7a99c47db27ae4254",
+        "user_agent": "Mozilla/5.0 (Linux; Android 14; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.178 Mobile Safari/537.36 Telegram-Android/12.7.3 (Samsung SM-A556B; Android 14; SDK 34; HIGH)",
+        "accept_language": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+        "cf_ray": "a033c7468d4ce4e7",
+        "cf_visitor": "{\"scheme\":\"https\"}"
+      },
       {
         "timestamp": "2026-05-29T07:27:37.075Z",
         "ip": "5.241.138.25",
@@ -59,7 +98,7 @@
   },
   "930432979": {
     "id": 930432979,
-    "first_name": "ÃÂ¢ÃÂÃÂÃÂªÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂ´ÃÂÃÂÃÂ¨ÃÂÃÂ²ÃÂÃÂ­ÃÂ¡ÃÂ´ÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂ´ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ£ÃÂÃÂ2ÃÂÃÂ«ÃÂÃÂ¦ÃÂÃÂÃÂÃÂ¦2ÃÂÃÂÃÂÃÂÃÂÃÂ¯ÃÂÃÂÃÂÃÂ«ÃÂÃÂªÃÂÃÂÃÂÃÂ£ÃÂÃÂÃÂÃÂ¹ÃÂÃÂºÃÂÃÂÃÂÃÂ±8ÃÂÃÂÃÂÃÂÃÂÃÂ¥ÃÂÃÂÃÂÃÂºÃÂ¢ÃÂÃÂ",
+    "first_name": "ÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂªÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂ´ÃÂÃÂÃÂÃÂÃÂÃÂ¨ÃÂÃÂÃÂÃÂ²ÃÂÃÂÃÂÃÂ­ÃÂÃÂ¡ÃÂÃÂ´ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂ´ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ£ÃÂÃÂÃÂÃÂ2ÃÂÃÂÃÂÃÂ«ÃÂÃÂÃÂÃÂ¦ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¦2ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¯ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ«ÃÂÃÂÃÂÃÂªÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ£ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¹ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ±8ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¥ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂºÃÂÃÂ¢ÃÂÃÂÃÂÃÂ",
     "username": "madarra_d",
     "source": "webapp",
     "registered": "2026-05-29T06:48:07.254Z",
@@ -148,7 +187,7 @@
   },
   "1369931246": {
     "id": 1369931246,
-    "first_name": "ÃÂÃÂÃÂÃÂ¾ÃÂÃÂÃÂÃÂ½ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¾ÃÂÃÂÃÂÃÂ½",
+    "first_name": "ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¾ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ½ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¾ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ½",
     "username": "o_nto_n",
     "source": "webapp",
     "registered": "2026-05-29T06:23:07.802Z",
