@@ -1,4 +1,61 @@
 {
+  "510557368": {
+    "id": 510557368,
+    "first_name": "Arman",
+    "username": "s4w0k",
+    "source": "webapp",
+    "registered": "2026-05-29T10:18:27.560Z",
+    "last_seen": "2026-05-29T10:18:27.560Z",
+    "ips": [
+      {
+        "ip": "77.38.142.95",
+        "country": "LV",
+        "first_seen": "2026-05-29T10:18:27.560Z",
+        "last_seen": "2026-05-29T10:18:27.560Z",
+        "visits": 1
+      }
+    ],
+    "request_history": [
+      {
+        "timestamp": "2026-05-29T10:18:27.560Z",
+        "ip": "77.38.142.95",
+        "country": "LV",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "method": "POST",
+        "headers": {
+          "accept": "*/*",
+          "accept-encoding": "gzip, br",
+          "accept-language": "ru,en-US;q=0.9,en;q=0.8,lv;q=0.7,lt;q=0.6",
+          "cf-connecting-ip": "77.38.142.95",
+          "cf-ipcountry": "LV",
+          "cf-ray": "a034c1504f63e4df",
+          "cf-visitor": "{\"scheme\":\"https\"}",
+          "connection": "Keep-Alive",
+          "content-length": "774",
+          "content-type": "application/json",
+          "host": "paradise-users.dnynzvtpyb.workers.dev",
+          "origin": "https://paradiseminiapp.pages.dev",
+          "priority": "u=1, i",
+          "referer": "https://paradiseminiapp.pages.dev/",
+          "sec-ch-ua": "\"Opera GX\";v=\"131\", \"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"147\"",
+          "sec-ch-ua-mobile": "?0",
+          "sec-ch-ua-platform": "\"Windows\"",
+          "sec-fetch-dest": "empty",
+          "sec-fetch-mode": "cors",
+          "sec-fetch-site": "cross-site",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 OPR/131.0.0.0",
+          "x-forwarded-proto": "https",
+          "x-real-ip": "77.38.142.95"
+        },
+        "initData": "query_id=AAG4fG4eAAAAALh8bh4dUQWr&user=%7B%22id%22%3A510557368%2C%22first_name%22%3A%22Arman%22%2C%22last_name%22%3A%22%22%2C%22username%22%3A%22s4w0k%22%2C%22language_code%22%3A%22ru%22%2C%22allows_write_to_pm%22%3Atrue%2C%22photo_url%22%3A%22https%3A%5C%2F%5C%2Ft.me%5C%2Fi%5C%2Fuserpic%5C%2F320%5C%2F1zya9_UJqsOp_KSN89VF1fP9F3AjOV_WwJoKnmoihAc.svg%22%7D&auth_date=1780049905&signature=UuTGlxuKM-u06C5yO8CEo9nME9D7YGtzJG9fSXDvlGrNB89lrgEA2PHmlPGglQumcXMziLTxMZ3M_WCG-4spCg&hash=6c09f0a85ca839752266fda992750d2023d3b51a9cdbef4080572b4b515c86f6",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 OPR/131.0.0.0",
+        "accept_language": "ru,en-US;q=0.9,en;q=0.8,lv;q=0.7,lt;q=0.6",
+        "cf_ray": "a034c1504f63e4df",
+        "cf_visitor": "{\"scheme\":\"https\"}"
+      }
+    ]
+  },
   "1135397601": {
     "id": 1135397601,
     "first_name": "Saphartron",
