@@ -70,39 +70,6 @@
     "user_id": 6491742117,
     "username": "Dontik",
     "product_name": "Vaape Triple 90K",
-    "flavor": "Red Bull / Blueberry Watermelon / Monster Drink",
-    "rating": 5,
-    "comment": null,
-    "date": "28.05.2026 16:25",
-    "sent_to_channel": true
-  },
-  "#0012_Vaape Triple 90K": {
-    "oid": "#0012",
-    "user_id": 6491742117,
-    "username": "Dontik",
-    "product_name": "Vaape Triple 90K",
-    "flavor": "Mixed Berries / Red Bull / Peach Ice",
-    "rating": 5,
-    "comment": null,
-    "date": "28.05.2026 16:25",
-    "sent_to_channel": true
-  },
-  "#0012_Vaape Triple 90K": {
-    "oid": "#0012",
-    "user_id": 6491742117,
-    "username": "Dontik",
-    "product_name": "Vaape Triple 90K",
-    "flavor": "Blueberry Ice / Black Dragon Ice / Red Bull",
-    "rating": 5,
-    "comment": null,
-    "date": "28.05.2026 16:25",
-    "sent_to_channel": true
-  },
-  "#0012_Vaape Triple 90K": {
-    "oid": "#0012",
-    "user_id": 6491742117,
-    "username": "Dontik",
-    "product_name": "Vaape Triple 90K",
     "flavor": "Peach Mango Pineapple / Strawberry Ice / Raspberry Watermelon",
     "rating": 5,
     "comment": null,
@@ -147,54 +114,21 @@
     "user_id": 5471367072,
     "username": "aonka_20",
     "product_name": "Elfliq 50mg",
-    "flavor": "Lemon Lime",
-    "rating": 5,
-    "comment": null,
-    "date": "25.05.2026 14:01",
-    "sent_to_channel": true
-  },
-  "#0010_Elfliq 50mg": {
-    "oid": "#0010",
-    "user_id": 5471367072,
-    "username": "aonka_20",
-    "product_name": "Elfliq 50mg",
-    "flavor": "Lemon Lime",
-    "rating": 5,
-    "comment": null,
-    "date": "25.05.2026 14:01",
-    "sent_to_channel": true
-  },
-  "#0010_Elfliq 50mg": {
-    "oid": "#0010",
-    "user_id": 5471367072,
-    "username": "aonka_20",
-    "product_name": "Elfliq 50mg",
-    "flavor": "Blue Razz Lemonade",
-    "rating": 5,
-    "comment": null,
-    "date": "25.05.2026 14:01",
-    "sent_to_channel": true
-  },
-  "#0010_Elfliq 50mg": {
-    "oid": "#0010",
-    "user_id": 5471367072,
-    "username": "aonka_20",
-    "product_name": "Elfliq 50mg",
     "flavor": "Blueberry",
     "rating": 5,
     "comment": null,
     "date": "25.05.2026 14:01",
     "sent_to_channel": true
   },
-  "#0010_Elfliq 50mg": {
-    "oid": "#0010",
-    "user_id": 5471367072,
-    "username": "aonka_20",
-    "product_name": "Elfliq 50mg",
-    "flavor": "Blueberry",
+  "#0023_DK Salt 50mg": {
+    "oid": "#0023",
+    "user_id": 1089785237,
+    "username": "rhz «!₽ snuff :* © #lowtier",
+    "product_name": "DK Salt 50mg",
+    "flavor": "Cherry Lime Fizz",
     "rating": 5,
     "comment": null,
-    "date": "25.05.2026 14:01",
+    "date": "29.05.2026 18:23",
     "sent_to_channel": true
   }
 }
