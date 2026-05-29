@@ -580,5 +580,27 @@
     "username": "Даниил",
     "status": "new",
     "date": "29.05.2026 16:26"
+  },
+  "#0032": {
+    "oid": "#0032",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq 50mg",
+        "flavor": "Lemon Lime",
+        "qty": 1
+      },
+      {
+        "pid": "vista40k",
+        "product_name": "Vozol Vista 40k puffs",
+        "flavor": "Watermelon Bubblegum",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nElfliq 50mg, вкус: Lemon Lime, количество: 1\nVozol Vista 40k puffs, вкус: Watermelon Bubblegum, количество: 1",
+    "user_id": 973082265,
+    "username": "Даниил",
+    "status": "new",
+    "date": "29.05.2026 16:27"
   }
 }
