@@ -8,8 +8,8 @@
     "is_premium": false,
     "source": "webapp",
     "registered": "2026-05-29T23:03:08.652Z",
-    "last_seen": "2026-05-29T23:03:51.590Z",
-    "visit_count": 2,
+    "last_seen": "2026-05-29T23:06:23.579Z",
+    "visit_count": 3,
     "ips": [
       {
         "ip": "77.38.237.169",
@@ -21,11 +21,38 @@
         "lat": "56.946",
         "lon": "24.10589",
         "first_seen": "2026-05-29T23:03:08.652Z",
-        "last_seen": "2026-05-29T23:03:51.590Z",
-        "visits": 2
+        "last_seen": "2026-05-29T23:06:23.579Z",
+        "visits": 3
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-05-29T23:06:23.579Z",
+        "ip": "77.38.237.169",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": null,
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a0392637aa14e4ce",
+        "screen": null,
+        "tz_client": null,
+        "color_depth": null,
+        "touch": null,
+        "platform": null,
+        "memory": null,
+        "cores": null,
+        "connection": null,
+        "webgl_vendor": null,
+        "languages": null
+      },
       {
         "timestamp": "2026-05-29T23:03:51.590Z",
         "ip": "77.38.237.169",
