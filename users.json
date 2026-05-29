@@ -96,7 +96,7 @@
   },
   "1093822167": {
     "id": 1093822167,
-    "first_name": "ÃÂÃÂÃÂÃÂÃÂÃÂ¸ÃÂÃÂÃÂÃÂÃÂÃÂ¸ÃÂÃÂ°ÃÂÃÂ½",
+    "first_name": "ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¸ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¸ÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ½",
     "username": "PonPonchik19",
     "source": "webapp",
     "registered": "2026-05-29T10:37:09.328Z",
@@ -245,6 +245,64 @@
         "user_agent": "Mozilla/5.0 (Linux; Android 16; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.120 Mobile Safari/537.36 Telegram-Android/12.7.3 (Samsung SM-S938B; Android 16; SDK 36; HIGH)",
         "accept_language": "en,en-GB;q=0.9,en-US;q=0.8",
         "cf_ray": "a034669e8ac05423",
+        "cf_visitor": "{\"scheme\":\"https\"}"
+      }
+    ]
+  },
+  "2039582824": {
+    "id": 2039582824,
+    "first_name": "Pablo",
+    "username": "Paad23645",
+    "source": "webapp",
+    "registered": "2026-05-29T11:37:39.025Z",
+    "last_seen": "2026-05-29T11:37:39.025Z",
+    "ips": [
+      {
+        "ip": "2a00:808:11c:c37c::7a76:f036",
+        "country": "LV",
+        "first_seen": "2026-05-29T11:37:39.025Z",
+        "last_seen": "2026-05-29T11:37:39.025Z",
+        "visits": 1
+      }
+    ],
+    "request_history": [
+      {
+        "timestamp": "2026-05-29T11:37:39.025Z",
+        "ip": "2a00:808:11c:c37c::7a76:f036",
+        "country": "LV",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "method": "POST",
+        "headers": {
+          "accept": "*/*",
+          "accept-encoding": "gzip, br",
+          "accept-language": "ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7",
+          "cf-connecting-ip": "2a00:808:11c:c37c::7a76:f036",
+          "cf-ipcountry": "LV",
+          "cf-ray": "a035354f8d22e4df",
+          "cf-visitor": "{\"scheme\":\"https\"}",
+          "connection": "Keep-Alive",
+          "content-length": "784",
+          "content-type": "application/json",
+          "host": "paradise-users.dnynzvtpyb.workers.dev",
+          "origin": "https://paradiseminiapp.pages.dev",
+          "priority": "u=1, i",
+          "referer": "https://paradiseminiapp.pages.dev/",
+          "sec-ch-ua": "\"Chromium\";v=\"148\", \"Android WebView\";v=\"148\", \"Not/A)Brand\";v=\"99\"",
+          "sec-ch-ua-mobile": "?1",
+          "sec-ch-ua-platform": "\"Android\"",
+          "sec-fetch-dest": "empty",
+          "sec-fetch-mode": "cors",
+          "sec-fetch-site": "cross-site",
+          "user-agent": "Mozilla/5.0 (Linux; Android 14; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.120 Mobile Safari/537.36 Telegram-Android/12.7.3 (Samsung SM-A135F; Android 14; SDK 34; LOW)",
+          "x-forwarded-proto": "https",
+          "x-real-ip": "2a00:808:11c:c37c::7a76:f036",
+          "x-requested-with": "org.telegram.messenger"
+        },
+        "initData": "query_id=AAFokJF5AAAAAGiQkXmzpvCZ&user=%7B%22id%22%3A2039582824%2C%22first_name%22%3A%22Pablo%22%2C%22last_name%22%3A%22%22%2C%22username%22%3A%22Paad23645%22%2C%22language_code%22%3A%22ru%22%2C%22allows_write_to_pm%22%3Atrue%2C%22photo_url%22%3A%22https%3A%5C%2F%5C%2Ft.me%5C%2Fi%5C%2Fuserpic%5C%2F320%5C%2FPO5WnKXyy9U4G0XNgWFuM7-YfG1N1iu21O5h1q0p8ic.svg%22%7D&auth_date=1780054654&signature=zFz8J6CXAi9sADboNT8x5eoJJWA0TpzGFimTwVs1rGEhpZ_yBSqNfVyvqn9zHpbrVi2iUT9MkkEZ-QnPIVavAw&hash=b21cf7507642ea332bfc59867be96ec26b75e991055044d7e3706d2ab2154ff9",
+        "user_agent": "Mozilla/5.0 (Linux; Android 14; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.120 Mobile Safari/537.36 Telegram-Android/12.7.3 (Samsung SM-A135F; Android 14; SDK 34; LOW)",
+        "accept_language": "ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7",
+        "cf_ray": "a035354f8d22e4df",
         "cf_visitor": "{\"scheme\":\"https\"}"
       }
     ]
