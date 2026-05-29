@@ -1,36 +1,4 @@
 {
-  "833582731": {
-    "id": 833582731,
-    "first_name": "-",
-    "username": "",
-    "source": "webapp",
-    "registered": "2026-05-28T21:33:21.988Z",
-    "last_seen": "2026-05-26T10:58:27.145Z"
-  },
-  "1093822167": {
-    "id": 1093822167,
-    "first_name": "Кристиан",
-    "username": "PonPonchik19",
-    "source": "webapp",
-    "registered": "2026-05-28T22:29:40.346Z",
-    "last_seen": "2026-05-29T01:28:52.713946"
-  },
-  "1395844397": {
-    "id": 1395844397,
-    "first_name": "podik",
-    "username": "firstlikelettera",
-    "source": "chat",
-    "registered": "2026-05-28T20:51:09.358Z",
-    "last_seen": "2026-05-29T02:56:33.725039"
-  },
-  "1438573041": {
-    "id": 1438573041,
-    "first_name": "Artem",
-    "username": "artem13607",
-    "source": "webapp",
-    "registered": "2026-05-28T21:15:24.109Z",
-    "last_seen": "2026-05-27T12:19:09.893227"
-  },
   "297126842": {
     "id": 297126842,
     "first_name": "Ry1nx",
@@ -63,6 +31,14 @@
     "registered": "2026-05-25T09:27:08.865Z",
     "last_seen": "2026-05-25T09:27:08.865Z"
   },
+  "552298978": {
+    "id": 552298978,
+    "first_name": "ç§ã¯ã¯ã½ãã¨ã­ã ",
+    "username": "netqm1",
+    "source": "webapp",
+    "registered": "2026-05-28T14:23:05.269Z",
+    "last_seen": "2026-05-28T14:23:05.269Z"
+  },
   "594474550": {
     "id": 594474550,
     "first_name": "anteneh",
@@ -70,6 +46,14 @@
     "source": "bot_start",
     "registered": "2026-05-24T15:48:16.080663",
     "last_seen": "2026-05-24T15:48:16.080668"
+  },
+  "701372234": {
+    "id": 701372234,
+    "first_name": "YANEX",
+    "username": "I_A_N_B_O_R_S",
+    "source": "webapp",
+    "registered": "2026-05-28T11:53:44.820Z",
+    "last_seen": "2026-05-28T11:53:44.820Z"
   },
   "731373167": {
     "id": 731373167,
@@ -134,6 +118,14 @@
     "source": "bot_start",
     "registered": "2026-05-27T12:19:09.893223",
     "last_seen": "2026-05-27T12:19:09.893227"
+  },
+  "833582731": {
+    "id": 833582731,
+    "first_name": "-",
+    "username": "",
+    "source": "webapp",
+    "registered": "2026-05-28T21:33:21.988Z",
+    "last_seen": "2026-05-26T10:58:27.145Z"
   },
   "840137114": {
     "id": 840137114,
@@ -207,6 +199,22 @@
     "registered": "2026-05-25T17:38:55.736Z",
     "last_seen": "2026-05-26T22:59:27.512402"
   },
+  "993164577": {
+    "id": 993164577,
+    "first_name": "ÃÂ°ÃÂ½ÃÂ¶ÃÂÃÂ»ÃÂºÃÂ°",
+    "username": "andzelishaa",
+    "source": "webapp",
+    "registered": "2026-05-28T11:53:44.820Z",
+    "last_seen": "2026-05-28T11:53:44.820Z"
+  },
+  "1015521306": {
+    "id": 1015521306,
+    "first_name": "agonyy",
+    "username": "xdanyiexx",
+    "source": "webapp",
+    "registered": "2026-05-28T11:53:44.820Z",
+    "last_seen": "2026-05-28T11:53:44.820Z"
+  },
   "1028237692": {
     "id": 1028237692,
     "first_name": "gena",
@@ -231,6 +239,14 @@
     "registered": "2026-05-27T12:19:09.893223",
     "last_seen": "2026-05-27T12:19:09.893227"
   },
+  "1093822167": {
+    "id": 1093822167,
+    "first_name": "ÐÑÐ¸ÑÑÐ¸Ð°Ð½",
+    "username": "PonPonchik19",
+    "source": "webapp",
+    "registered": "2026-05-28T22:29:40.346Z",
+    "last_seen": "2026-05-29T01:28:52.713946"
+  },
   "1120601971": {
     "id": 1120601971,
     "first_name": "chaatton",
@@ -254,6 +270,14 @@
     "source": "bot_start",
     "registered": "2026-05-27T12:19:09.893223",
     "last_seen": "2026-05-27T12:19:09.893227"
+  },
+  "1141788828": {
+    "id": 1141788828,
+    "first_name": "ÐÐ¾ÑÐ¸Ðº",
+    "username": "koshik_0",
+    "source": "webapp",
+    "registered": "2026-05-28T14:23:05.269Z",
+    "last_seen": "2026-05-28T14:23:05.269Z"
   },
   "1192130057": {
     "id": 1192130057,
@@ -343,6 +367,14 @@
     "registered": "2026-05-26T18:50:51.415970",
     "last_seen": "2026-05-26T21:37:20.583197"
   },
+  "1395844397": {
+    "id": 1395844397,
+    "first_name": "podik",
+    "username": "firstlikelettera",
+    "source": "chat",
+    "registered": "2026-05-28T20:51:09.358Z",
+    "last_seen": "2026-05-29T02:56:33.725039"
+  },
   "1418201672": {
     "id": 1418201672,
     "first_name": "howtokeepgoing.com",
@@ -350,6 +382,14 @@
     "source": "webapp",
     "registered": "2026-05-22T12:42:37.793Z",
     "last_seen": "2026-05-22T12:42:47.033Z"
+  },
+  "1438573041": {
+    "id": 1438573041,
+    "first_name": "Artem",
+    "username": "artem13607",
+    "source": "webapp",
+    "registered": "2026-05-28T21:15:24.109Z",
+    "last_seen": "2026-05-27T12:19:09.893227"
   },
   "1451394344": {
     "id": 1451394344,
@@ -2847,30 +2887,6 @@
     "registered": "2026-05-28T11:53:44.820Z",
     "last_seen": "2026-05-28T11:53:44.820Z"
   },
-  "1015521306": {
-    "id": 1015521306,
-    "first_name": "agonyy",
-    "username": "xdanyiexx",
-    "source": "webapp",
-    "registered": "2026-05-28T11:53:44.820Z",
-    "last_seen": "2026-05-28T11:53:44.820Z"
-  },
-  "993164577": {
-    "id": 993164577,
-    "first_name": "Ð°Ð½Ð¶ÑÐ»ÐºÐ°",
-    "username": "andzelishaa",
-    "source": "webapp",
-    "registered": "2026-05-28T11:53:44.820Z",
-    "last_seen": "2026-05-28T11:53:44.820Z"
-  },
-  "701372234": {
-    "id": 701372234,
-    "first_name": "YANEX",
-    "username": "I_A_N_B_O_R_S",
-    "source": "webapp",
-    "registered": "2026-05-28T11:53:44.820Z",
-    "last_seen": "2026-05-28T11:53:44.820Z"
-  },
   "5035724495": {
     "id": 5035724495,
     "first_name": "Tomass",
@@ -2879,22 +2895,6 @@
     "registered": "2026-05-28T11:53:44.820Z",
     "last_seen": "2026-05-28T11:53:44.820Z"
   },
-  "552298978": {
-    "id": 552298978,
-    "first_name": "私はクソピエロだ",
-    "username": "netqm1",
-    "source": "webapp",
-    "registered": "2026-05-28T14:23:05.269Z",
-    "last_seen": "2026-05-28T14:23:05.269Z"
-  },
-  "1141788828": {
-    "id": 1141788828,
-    "first_name": "Кошик",
-    "username": "koshik_0",
-    "source": "webapp",
-    "registered": "2026-05-28T14:23:05.269Z",
-    "last_seen": "2026-05-28T14:23:05.269Z"
-  },
   "8329796895": {
     "id": 8329796895,
     "first_name": "karate",
@@ -2902,5 +2902,63 @@
     "source": "bot_start",
     "registered": "2026-05-29T02:08:32.612008",
     "last_seen": "2026-05-29T02:08:32.612023"
+  },
+  "8609986083": {
+    "id": 8609986083,
+    "first_name": "Why???",
+    "username": "",
+    "source": "webapp",
+    "registered": "2026-05-29T13:00:45.682Z",
+    "last_seen": "2026-05-29T13:00:45.682Z",
+    "ips": [
+      {
+        "ip": "2a00:808:11a:eeed:b81e:b617:d3a3:310",
+        "country": "LV",
+        "first_seen": "2026-05-29T13:00:45.682Z",
+        "last_seen": "2026-05-29T13:00:45.682Z",
+        "visits": 1
+      }
+    ],
+    "request_history": [
+      {
+        "timestamp": "2026-05-29T13:00:45.682Z",
+        "ip": "2a00:808:11a:eeed:b81e:b617:d3a3:310",
+        "country": "LV",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "method": "POST",
+        "headers": {
+          "accept": "*/*",
+          "accept-encoding": "gzip, br",
+          "accept-language": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+          "cf-connecting-ip": "2a00:808:11a:eeed:b81e:b617:d3a3:310",
+          "cf-ipcountry": "LV",
+          "cf-ray": "a035af0e5fa24dd3",
+          "cf-visitor": "{\"scheme\":\"https\"}",
+          "connection": "Keep-Alive",
+          "content-length": "776",
+          "content-type": "application/json",
+          "host": "paradise-users.dnynzvtpyb.workers.dev",
+          "origin": "https://paradiseminiapp.pages.dev",
+          "priority": "u=1, i",
+          "referer": "https://paradiseminiapp.pages.dev/",
+          "sec-ch-ua": "\"Chromium\";v=\"148\", \"Android WebView\";v=\"148\", \"Not/A)Brand\";v=\"99\"",
+          "sec-ch-ua-mobile": "?1",
+          "sec-ch-ua-platform": "\"Android\"",
+          "sec-fetch-dest": "empty",
+          "sec-fetch-mode": "cors",
+          "sec-fetch-site": "cross-site",
+          "user-agent": "Mozilla/5.0 (Linux; Android 16; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.178 Mobile Safari/537.36 Telegram-Android/12.6.4 (Samsung SM-A366B; Android 16; SDK 36; HIGH)",
+          "x-forwarded-proto": "https",
+          "x-real-ip": "2a00:808:11a:eeed:b81e:b617:d3a3:310",
+          "x-requested-with": "org.telegram.messenger"
+        },
+        "initData": "query_id=AAEj9jEBBAAAACP2MQF5bryx&user=%7B%22id%22%3A8609986083%2C%22first_name%22%3A%22Why%3F%3F%3F%22%2C%22last_name%22%3A%22%22%2C%22language_code%22%3A%22ru%22%2C%22allows_write_to_pm%22%3Atrue%2C%22photo_url%22%3A%22https%3A%5C%2F%5C%2Ft.me%5C%2Fi%5C%2Fuserpic%5C%2F320%5C%2FzpS2N90LMtVYXT2vVdZ67-f-iL57yFXS1QEwaSrxDedWVIb7NV5haxOUYs5jwIUz.svg%22%7D&auth_date=1780059642&signature=vJXZtR4D19pO1P1rqR1kgFxXARVL4SbMSfwZIYIYPy6u4XsZeUWGg7oA-xXchmmATgMiF-Pkrv3yuDuJ6ttvAA&hash=03c56f3b8dc7433b036877a43a4f90a6b36b944f0105775bdf89d3e235bdc5dd",
+        "user_agent": "Mozilla/5.0 (Linux; Android 16; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.178 Mobile Safari/537.36 Telegram-Android/12.6.4 (Samsung SM-A366B; Android 16; SDK 36; HIGH)",
+        "accept_language": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+        "cf_ray": "a035af0e5fa24dd3",
+        "cf_visitor": "{\"scheme\":\"https\"}"
+      }
+    ]
   }
 }
