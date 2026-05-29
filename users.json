@@ -5,17 +5,52 @@
     "username": "resonancemgr",
     "source": "webapp",
     "registered": "2026-05-29T00:54:16.843Z",
-    "last_seen": "2026-05-29T00:55:25.939Z",
+    "last_seen": "2026-05-29T00:57:39.495Z",
     "ips": [
       {
         "ip": "94.30.253.210",
         "country": "LV",
         "first_seen": "2026-05-29T00:54:16.843Z",
-        "last_seen": "2026-05-29T00:55:25.939Z",
-        "visits": 2
+        "last_seen": "2026-05-29T00:57:39.495Z",
+        "visits": 3
       }
     ],
     "request_history": [
+      {
+        "timestamp": "2026-05-29T00:57:39.495Z",
+        "ip": "94.30.253.210",
+        "country": "LV",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradise.dnynzvtpyb.workers.dev/",
+        "method": "POST",
+        "headers": {
+          "accept": "*/*",
+          "accept-encoding": "gzip, br",
+          "accept-language": "ru",
+          "cf-connecting-ip": "94.30.253.210",
+          "cf-ipcountry": "LV",
+          "cf-ray": "a0318bd42ee7f582",
+          "cf-visitor": "{\"scheme\":\"https\"}",
+          "connection": "Keep-Alive",
+          "content-length": "840",
+          "content-type": "application/json",
+          "host": "paradise-users.dnynzvtpyb.workers.dev",
+          "origin": "https://paradise.dnynzvtpyb.workers.dev",
+          "priority": "u=3, i",
+          "referer": "https://paradise.dnynzvtpyb.workers.dev/",
+          "sec-fetch-dest": "empty",
+          "sec-fetch-mode": "cors",
+          "sec-fetch-site": "same-site",
+          "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+          "x-forwarded-proto": "https",
+          "x-real-ip": "94.30.253.210"
+        },
+        "initData": "query_id=AAF8x5t5AwAAAHzHm3m-mhdC&user=%7B%22id%22%3A8482703228%2C%22first_name%22%3A%22Resonance%22%2C%22last_name%22%3A%22%22%2C%22username%22%3A%22resonancemgr%22%2C%22language_code%22%3A%22ru%22%2C%22allows_write_to_pm%22%3Atrue%2C%22photo_url%22%3A%22https%3A%5C%2F%5C%2Ft.me%5C%2Fi%5C%2Fuserpic%5C%2F320%5C%2FBZYymto_ZQr35tY3c6a7UYHliawH7DoVOoWzy_XYOC7vpGyACbxQlHxadCfj2sek.svg%22%7D&auth_date=1780016258&signature=vTJyHhpeH3FOKuelYMZ6rhLTOkiT9bai9CbjXXJAZ2y3Q4HmHaKiC-Gk1T1jTDENvyShgX1tSb7UO9o6-GEFDA&hash=b08b307639022cf03d6d86dc66e59d02c13cd86195c24a722bf5b9ff23323a7a",
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "accept_language": "ru",
+        "cf_ray": "a0318bd42ee7f582",
+        "cf_visitor": "{\"scheme\":\"https\"}"
+      },
       {
         "timestamp": "2026-05-29T00:55:25.939Z",
         "ip": "94.30.253.210",
