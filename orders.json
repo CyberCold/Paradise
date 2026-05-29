@@ -526,5 +526,27 @@
     "username": "Pablo",
     "status": "new",
     "date": "29.05.2026 14:37"
+  },
+  "#0029": {
+    "oid": "#0029",
+    "items": [
+      {
+        "pid": "dk",
+        "product_name": "DK Salt 50mg",
+        "flavor": "Strawberry Kiwi",
+        "qty": 1
+      },
+      {
+        "pid": "dk",
+        "product_name": "DK Salt 50mg",
+        "flavor": "White Peach",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nDK Salt 50mg, вкус: Strawberry Kiwi, количество: 1\nDK Salt 50mg, вкус: White Peach, количество: 1",
+    "user_id": 924099147,
+    "username": "Evita",
+    "status": "new",
+    "date": "29.05.2026 15:09"
   }
 }
