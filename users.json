@@ -5,17 +5,52 @@
     "username": "resonancemgr",
     "source": "webapp",
     "registered": "2026-05-29T00:54:16.843Z",
-    "last_seen": "2026-05-29T01:02:05.731Z",
+    "last_seen": "2026-05-29T01:04:44.068Z",
     "ips": [
       {
         "ip": "94.30.253.210",
         "country": "LV",
         "first_seen": "2026-05-29T00:54:16.843Z",
-        "last_seen": "2026-05-29T01:02:05.731Z",
-        "visits": 6
+        "last_seen": "2026-05-29T01:04:44.068Z",
+        "visits": 7
       }
     ],
     "request_history": [
+      {
+        "timestamp": "2026-05-29T01:04:44.068Z",
+        "ip": "94.30.253.210",
+        "country": "LV",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "method": "POST",
+        "headers": {
+          "accept": "*/*",
+          "accept-encoding": "gzip, br",
+          "accept-language": "ru",
+          "cf-connecting-ip": "94.30.253.210",
+          "cf-ipcountry": "LV",
+          "cf-ray": "a03196318f85a875",
+          "cf-visitor": "{\"scheme\":\"https\"}",
+          "connection": "Keep-Alive",
+          "content-length": "840",
+          "content-type": "application/json",
+          "host": "paradise-users.dnynzvtpyb.workers.dev",
+          "origin": "https://paradiseminiapp.pages.dev",
+          "priority": "u=3, i",
+          "referer": "https://paradiseminiapp.pages.dev/",
+          "sec-fetch-dest": "empty",
+          "sec-fetch-mode": "cors",
+          "sec-fetch-site": "cross-site",
+          "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+          "x-forwarded-proto": "https",
+          "x-real-ip": "94.30.253.210"
+        },
+        "initData": "query_id=AAF8x5t5AwAAAHzHm3mDVkeB&user=%7B%22id%22%3A8482703228%2C%22first_name%22%3A%22Resonance%22%2C%22last_name%22%3A%22%22%2C%22username%22%3A%22resonancemgr%22%2C%22language_code%22%3A%22ru%22%2C%22allows_write_to_pm%22%3Atrue%2C%22photo_url%22%3A%22https%3A%5C%2F%5C%2Ft.me%5C%2Fi%5C%2Fuserpic%5C%2F320%5C%2FBZYymto_ZQr35tY3c6a7UYHliawH7DoVOoWzy_XYOC7vpGyACbxQlHxadCfj2sek.svg%22%7D&auth_date=1780016683&signature=W1BTqf9P0RdBvI0x5BOkR6e3BdWgRjtBRw_jcdz56PYbCGOB6hZJohX2C46mkPl03PlDeildCiCldhIJ_lcBAQ&hash=5e5c9eda1659e9d19e9ffabf04de5fbe27859d4c412d0a65da1a0c92cffe3990",
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "accept_language": "ru",
+        "cf_ray": "a03196318f85a875",
+        "cf_visitor": "{\"scheme\":\"https\"}"
+      },
       {
         "timestamp": "2026-05-29T01:02:05.731Z",
         "ip": "94.30.253.210",
