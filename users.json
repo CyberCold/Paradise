@@ -342,11 +342,11 @@
   },
   "7511735897": {
     "id": 7511735897,
-    "first_name": "ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ ",
+    "first_name": "ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ ",
     "username": "",
     "source": "webapp",
     "registered": "2026-05-29T01:06:23.163Z",
-    "last_seen": "2026-05-29T01:18:49.559Z",
+    "last_seen": "2026-05-29T01:26:44.819Z",
     "ips": [
       {
         "ip": "94.30.253.210",
@@ -354,9 +354,51 @@
         "first_seen": "2026-05-29T01:06:23.163Z",
         "last_seen": "2026-05-29T01:18:49.559Z",
         "visits": 3
+      },
+      {
+        "ip": "5.241.133.9",
+        "country": "LV",
+        "first_seen": "2026-05-29T01:26:44.819Z",
+        "last_seen": "2026-05-29T01:26:44.819Z",
+        "visits": 1
       }
     ],
     "request_history": [
+      {
+        "timestamp": "2026-05-29T01:26:44.819Z",
+        "ip": "5.241.133.9",
+        "country": "LV",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "method": "POST",
+        "headers": {
+          "accept": "*/*",
+          "accept-encoding": "gzip, br",
+          "accept-language": "ru",
+          "cf-connecting-ip": "5.241.133.9",
+          "cf-ipcountry": "LV",
+          "cf-ray": "a031b66fdbe713ba",
+          "cf-visitor": "{\"scheme\":\"https\"}",
+          "connection": "Keep-Alive",
+          "content-length": "970",
+          "content-type": "application/json",
+          "host": "paradise-users.dnynzvtpyb.workers.dev",
+          "origin": "https://paradiseminiapp.pages.dev",
+          "priority": "u=3, i",
+          "referer": "https://paradiseminiapp.pages.dev/",
+          "sec-fetch-dest": "empty",
+          "sec-fetch-mode": "cors",
+          "sec-fetch-site": "cross-site",
+          "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+          "x-forwarded-proto": "https",
+          "x-real-ip": "5.241.133.9"
+        },
+        "initData": "query_id=AAFZ_rs_AwAAAFn-uz8gV5n9&user=%7B%22id%22%3A7511735897%2C%22first_name%22%3A%22%E1%85%A0%20%E1%85%A0%20%E1%85%A0%20%E1%85%A0%20%E1%85%A0%20%E1%85%A0%22%2C%22last_name%22%3A%22%E1%85%A0%20%E1%85%A0%20%E1%85%A0%20%E1%85%A0%20%E1%85%A0%22%2C%22language_code%22%3A%22ru%22%2C%22is_premium%22%3Atrue%2C%22allows_write_to_pm%22%3Atrue%2C%22photo_url%22%3A%22https%3A%5C%2F%5C%2Ft.me%5C%2Fi%5C%2Fuserpic%5C%2F320%5C%2FJroJ3eezYkUAJ-TDscwxLwIqH6slbBQOx2rO7bhXcL4F1jAUvG11nYt2DOlknhJ9.svg%22%7D&auth_date=1780018003&signature=Vp205yoL8IBdBacKhgEwDlXslOYelUq8QZUL5wEcqZrzIB7OKwINNvtSzpumyfDgqJplaUh8apdsRJ1kl-IKDw&hash=c8842311b8fa5367d4a1d7ebe39d0694850bb67fc34ede4a7fd4e6bbf81871b6",
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "accept_language": "ru",
+        "cf_ray": "a031b66fdbe713ba",
+        "cf_visitor": "{\"scheme\":\"https\"}"
+      },
       {
         "timestamp": "2026-05-29T01:18:49.559Z",
         "ip": "94.30.253.210",
