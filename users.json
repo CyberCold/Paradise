@@ -1,21 +1,56 @@
 {
   "930432979": {
     "id": 930432979,
-    "first_name": "⌖ꜰ̝͚͙ʀ̎ᴇ̲̭ͨᴀ̄̀ᴋ̀͆̒ͣ͛2̦ͫͦ̋2̣̖̹̺̖̱̇̏ͯ͛ͫͪͅ8̺̇̄ͥ͂⌖",
+    "first_name": "âê°ÌÍÍÊÌá´Í¨Ì²Ì­á´ÌÌá´ÌÍÌÍ£Í2Í«Í¦ÌÌ¦2ÌÌÍ¯ÍÍ«ÍªÍÌ£ÌÌ¹ÌºÌÌ±8ÌÌÍ¥ÍÌºâ",
     "username": "madarra_d",
     "source": "webapp",
     "registered": "2026-05-29T06:48:07.254Z",
-    "last_seen": "2026-05-29T06:48:07.254Z",
+    "last_seen": "2026-05-29T06:54:29.851Z",
     "ips": [
       {
         "ip": "2a00:f503:270:f63a:94f9:c983:61b3:b15e",
         "country": "LV",
         "first_seen": "2026-05-29T06:48:07.254Z",
-        "last_seen": "2026-05-29T06:48:07.254Z",
-        "visits": 1
+        "last_seen": "2026-05-29T06:54:29.851Z",
+        "visits": 2
       }
     ],
     "request_history": [
+      {
+        "timestamp": "2026-05-29T06:54:29.851Z",
+        "ip": "2a00:f503:270:f63a:94f9:c983:61b3:b15e",
+        "country": "LV",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "method": "POST",
+        "headers": {
+          "accept": "*/*",
+          "accept-encoding": "gzip, br",
+          "accept-language": "ru",
+          "cf-connecting-ip": "2a00:f503:270:f63a:94f9:c983:61b3:b15e",
+          "cf-ipcountry": "LV",
+          "cf-ray": "a03396891d71ec3e",
+          "cf-visitor": "{\"scheme\":\"https\"}",
+          "connection": "Keep-Alive",
+          "content-length": "1146",
+          "content-type": "application/json",
+          "host": "paradise-users.dnynzvtpyb.workers.dev",
+          "origin": "https://paradiseminiapp.pages.dev",
+          "priority": "u=3, i",
+          "referer": "https://paradiseminiapp.pages.dev/",
+          "sec-fetch-dest": "empty",
+          "sec-fetch-mode": "cors",
+          "sec-fetch-site": "cross-site",
+          "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+          "x-forwarded-proto": "https",
+          "x-real-ip": "2a00:f503:270:f63a:94f9:c983:61b3:b15e"
+        },
+        "initData": "query_id=AAHTR3U3AAAAANNHdTcOAmN2&user=%7B%22id%22%3A930432979%2C%22first_name%22%3A%22%E2%8C%96%EA%9C%B0%CC%9D%CD%9A%CD%99%CA%80%CC%8E%E1%B4%87%CD%A8%CC%B2%CC%AD%E1%B4%80%CC%84%CC%80%E1%B4%8B%CC%80%CD%86%CC%92%CD%A3%CD%9B2%CD%AB%CD%A6%CC%8B%CC%A62%CC%87%CC%8F%CD%AF%CD%9B%CD%AB%CD%AA%CD%85%CC%A3%CC%96%CC%B9%CC%BA%CC%96%CC%B18%CC%87%CC%84%CD%A5%CD%82%CC%BA%E2%8C%96%22%2C%22last_name%22%3A%22%22%2C%22username%22%3A%22Jagerr228%22%2C%22language_code%22%3A%22ru%22%2C%22allows_write_to_pm%22%3Atrue%2C%22photo_url%22%3A%22https%3A%5C%2F%5C%2Ft.me%5C%2Fi%5C%2Fuserpic%5C%2F320%5C%2FuZbpAfeHYt-_5CNyi_7r_swO6zmQ0RAeN2LnrYhH-WA.svg%22%7D&auth_date=1780037667&signature=n_x29a5JDgRLJj-2Ul2HImlAitWDOpFe3Tf_quPoNkLfcL2iyUs-wvGyyRcs8ZLtvb9mk3rkcspmujEJXGn0Cg&hash=17380bcd9d4a2cf58356e4308d48656bf765eccbc1d5f7d6a0f5d60bbad2ffaf",
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "accept_language": "ru",
+        "cf_ray": "a03396891d71ec3e",
+        "cf_visitor": "{\"scheme\":\"https\"}"
+      },
       {
         "timestamp": "2026-05-29T06:48:07.254Z",
         "ip": "2a00:f503:270:f63a:94f9:c983:61b3:b15e",
@@ -55,7 +90,7 @@
   },
   "1369931246": {
     "id": 1369931246,
-    "first_name": "Ð¾Ð½ÑÐ¾Ð½",
+    "first_name": "ÃÂ¾ÃÂ½ÃÂÃÂ¾ÃÂ½",
     "username": "o_nto_n",
     "source": "webapp",
     "registered": "2026-05-29T06:23:07.802Z",
