@@ -8,8 +8,8 @@
     "is_premium": false,
     "source": "webapp",
     "registered": "2026-05-29T23:26:31.761Z",
-    "last_seen": "2026-05-29T23:26:31.761Z",
-    "visit_count": 1,
+    "last_seen": "2026-05-29T23:28:09.550Z",
+    "visit_count": 2,
     "ips": [
       {
         "ip": "2a00:808:12b:be50:84c9:efa1:b5a9:9606",
@@ -23,9 +23,49 @@
         "first_seen": "2026-05-29T23:26:31.761Z",
         "last_seen": "2026-05-29T23:26:31.761Z",
         "visits": 1
+      },
+      {
+        "ip": "2a00:808:112:8d9a:e9c4:72b:c61b:57d4",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Tele2 Latvia",
+        "asn": 1257,
+        "lat": "56.946",
+        "lon": "24.1059",
+        "first_seen": "2026-05-29T23:28:09.550Z",
+        "last_seen": "2026-05-29T23:28:09.550Z",
+        "visits": 1
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-05-29T23:28:09.550Z",
+        "ip": "2a00:808:112:8d9a:e9c4:72b:c61b:57d4",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 OPR/131.0.0.0",
+        "device": "Desktop",
+        "browser": "Opera",
+        "browser_version": "131",
+        "os": "Windows",
+        "os_version": "10",
+        "language": "en-US",
+        "cf_ray": "a039461a1e00e4cd",
+        "screen": null,
+        "tz_client": null,
+        "color_depth": null,
+        "touch": null,
+        "platform": null,
+        "memory": null,
+        "cores": null,
+        "connection": null,
+        "webgl_vendor": null,
+        "languages": null
+      },
       {
         "timestamp": "2026-05-29T23:26:31.761Z",
         "ip": "2a00:808:12b:be50:84c9:efa1:b5a9:9606",
@@ -171,8 +211,8 @@
   },
   "7511735897": {
     "id": 7511735897,
-    "first_name": "ᅠ ᅠ ᅠ ᅠ ᅠ ᅠ",
-    "last_name": "ᅠ ᅠ ᅠ ᅠ ᅠ",
+    "first_name": "á  á  á  á  á  á ",
+    "last_name": "á  á  á  á  á ",
     "username": "",
     "language_code": "ru",
     "is_premium": true,
