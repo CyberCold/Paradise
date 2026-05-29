@@ -58,7 +58,7 @@
   },
   "1093822167": {
     "id": 1093822167,
-    "first_name": "Кристиан",
+    "first_name": "ÐÑÐ¸ÑÑÐ¸Ð°Ð½",
     "username": "PonPonchik19",
     "source": "webapp",
     "registered": "2026-05-29T10:37:09.328Z",
@@ -222,6 +222,60 @@
         "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
         "accept_language": "ru",
         "cf_ray": "a034aeadea82cc2d",
+        "cf_visitor": "{\"scheme\":\"https\"}"
+      }
+    ]
+  },
+  "5930669861": {
+    "id": 5930669861,
+    "first_name": "Vrite",
+    "username": "vneeeeeee",
+    "source": "webapp",
+    "registered": "2026-05-29T10:46:42.526Z",
+    "last_seen": "2026-05-29T10:46:42.526Z",
+    "ips": [
+      {
+        "ip": "5.241.135.52",
+        "country": "LV",
+        "first_seen": "2026-05-29T10:46:42.526Z",
+        "last_seen": "2026-05-29T10:46:42.526Z",
+        "visits": 1
+      }
+    ],
+    "request_history": [
+      {
+        "timestamp": "2026-05-29T10:46:42.526Z",
+        "ip": "5.241.135.52",
+        "country": "LV",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "method": "POST",
+        "headers": {
+          "accept": "*/*",
+          "accept-encoding": "gzip, br",
+          "accept-language": "ru",
+          "cf-connecting-ip": "5.241.135.52",
+          "cf-ipcountry": "LV",
+          "cf-ray": "a034eab1c8c4e4cf",
+          "cf-visitor": "{\"scheme\":\"https\"}",
+          "connection": "Keep-Alive",
+          "content-length": "826",
+          "content-type": "application/json",
+          "host": "paradise-users.dnynzvtpyb.workers.dev",
+          "origin": "https://paradiseminiapp.pages.dev",
+          "priority": "u=3, i",
+          "referer": "https://paradiseminiapp.pages.dev/",
+          "sec-fetch-dest": "empty",
+          "sec-fetch-mode": "cors",
+          "sec-fetch-site": "cross-site",
+          "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+          "x-forwarded-proto": "https",
+          "x-real-ip": "5.241.135.52"
+        },
+        "initData": "query_id=AAEl135hAgAAACXXfmF8rRFd&user=%7B%22id%22%3A5930669861%2C%22first_name%22%3A%22Vrite%22%2C%22last_name%22%3A%22%22%2C%22username%22%3A%22vneeeeeee%22%2C%22language_code%22%3A%22ru%22%2C%22allows_write_to_pm%22%3Atrue%2C%22photo_url%22%3A%22https%3A%5C%2F%5C%2Ft.me%5C%2Fi%5C%2Fuserpic%5C%2F320%5C%2FUgRsSjyTljrC4bKD9CPdOjT-OcWF8i0N-EUbEINB3MiRIIeb2Jej1F9mA_FmhVBS.svg%22%7D&auth_date=1780051600&signature=o_zIBqRcz7wIEHLW72I9Pypx2Z2c8E8WalNj5mz0o2ExRNZLPhXLsnWhVu6DwrGv0lxlZ8YuGFS3vMT-VuxKBA&hash=3d5ee775640eb4a595fde0356a675484c668ff3c0e80873a7e000b06c2a7fc16",
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "accept_language": "ru",
+        "cf_ray": "a034eab1c8c4e4cf",
         "cf_visitor": "{\"scheme\":\"https\"}"
       }
     ]
