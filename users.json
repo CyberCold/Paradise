@@ -342,7 +342,7 @@
   },
   "7511735897": {
     "id": 7511735897,
-    "first_name": "ÃÂÃÂ¡ÃÂÃÂÃÂÃÂ  ÃÂÃÂ¡ÃÂÃÂÃÂÃÂ  ÃÂÃÂ¡ÃÂÃÂÃÂÃÂ  ÃÂÃÂ¡ÃÂÃÂÃÂÃÂ  ÃÂÃÂ¡ÃÂÃÂÃÂÃÂ  ÃÂÃÂ¡ÃÂÃÂÃÂÃÂ ",
+    "first_name": "ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ  ÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ ",
     "username": "",
     "source": "webapp",
     "registered": "2026-05-29T01:06:23.163Z",
@@ -466,6 +466,60 @@
         "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0",
         "accept_language": "ru,en;q=0.9,en-GB;q=0.8,en-US;q=0.7",
         "cf_ray": "a031989cb9bda890",
+        "cf_visitor": "{\"scheme\":\"https\"}"
+      }
+    ]
+  },
+  "7682695094": {
+    "id": 7682695094,
+    "first_name": "Paradise Manager",
+    "username": "smkParadiseManager",
+    "source": "webapp",
+    "registered": "2026-05-29T01:24:10.323Z",
+    "last_seen": "2026-05-29T01:24:10.323Z",
+    "ips": [
+      {
+        "ip": "5.241.133.9",
+        "country": "LV",
+        "first_seen": "2026-05-29T01:24:10.323Z",
+        "last_seen": "2026-05-29T01:24:10.323Z",
+        "visits": 1
+      }
+    ],
+    "request_history": [
+      {
+        "timestamp": "2026-05-29T01:24:10.323Z",
+        "ip": "5.241.133.9",
+        "country": "LV",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "method": "POST",
+        "headers": {
+          "accept": "*/*",
+          "accept-encoding": "gzip, br",
+          "accept-language": "ru",
+          "cf-connecting-ip": "5.241.133.9",
+          "cf-ipcountry": "LV",
+          "cf-ray": "a031b2aa08825433",
+          "cf-visitor": "{\"scheme\":\"https\"}",
+          "connection": "Keep-Alive",
+          "content-length": "868",
+          "content-type": "application/json",
+          "host": "paradise-users.dnynzvtpyb.workers.dev",
+          "origin": "https://paradiseminiapp.pages.dev",
+          "priority": "u=3, i",
+          "referer": "https://paradiseminiapp.pages.dev/",
+          "sec-fetch-dest": "empty",
+          "sec-fetch-mode": "cors",
+          "sec-fetch-site": "cross-site",
+          "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+          "x-forwarded-proto": "https",
+          "x-real-ip": "5.241.133.9"
+        },
+        "initData": "query_id=AAG2n-xJAwAAALaf7Ekjec3w&user=%7B%22id%22%3A7682695094%2C%22first_name%22%3A%22Paradise%20Manager%22%2C%22last_name%22%3A%22%22%2C%22username%22%3A%22smkParadiseManager%22%2C%22language_code%22%3A%22ru%22%2C%22allows_write_to_pm%22%3Atrue%2C%22photo_url%22%3A%22https%3A%5C%2F%5C%2Ft.me%5C%2Fi%5C%2Fuserpic%5C%2F320%5C%2F-9aBIvMSKSQv8XVU6t_hI89SDlBOj9ZzZQsGYpQaFYpBis7eKLZKL5uLEADpYR6Q.svg%22%7D&auth_date=1780017848&signature=ohovQyUpUv5nJpB6Zp5Y5CmTfnMr1hEfhYmWcNjOBt6BlODcu6r4Poa21kBSV8h1HWUU3GjVzffj72Ox_uzIBg&hash=8c3ca3f68426eea2824cc7e59ec0aab6c46ddcc84b79cabcc2a823dc8543a2aa",
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "accept_language": "ru",
+        "cf_ray": "a031b2aa08825433",
         "cf_visitor": "{\"scheme\":\"https\"}"
       }
     ]
