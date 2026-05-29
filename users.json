@@ -1,4 +1,58 @@
 {
+  "1089785237": {
+    "id": 1089785237,
+    "first_name": "rhz «!₽ snuff :* © #lowtier",
+    "username": "heroingore",
+    "source": "webapp",
+    "registered": "2026-05-29T15:29:55.567Z",
+    "last_seen": "2026-05-29T15:29:55.567Z",
+    "ips": [
+      {
+        "ip": "84.15.223.29",
+        "country": "LV",
+        "first_seen": "2026-05-29T15:29:55.567Z",
+        "last_seen": "2026-05-29T15:29:55.567Z",
+        "visits": 1
+      }
+    ],
+    "request_history": [
+      {
+        "timestamp": "2026-05-29T15:29:55.567Z",
+        "ip": "84.15.223.29",
+        "country": "LV",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "method": "POST",
+        "headers": {
+          "accept": "*/*",
+          "accept-encoding": "gzip, br",
+          "accept-language": "ru",
+          "cf-connecting-ip": "84.15.223.29",
+          "cf-ipcountry": "LV",
+          "cf-ray": "a03689908ad18d2f",
+          "cf-visitor": "{\"scheme\":\"https\"}",
+          "connection": "Keep-Alive",
+          "content-length": "887",
+          "content-type": "application/json",
+          "host": "paradise-users.dnynzvtpyb.workers.dev",
+          "origin": "https://paradiseminiapp.pages.dev",
+          "priority": "u=3, i",
+          "referer": "https://paradiseminiapp.pages.dev/",
+          "sec-fetch-dest": "empty",
+          "sec-fetch-mode": "cors",
+          "sec-fetch-site": "cross-site",
+          "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+          "x-forwarded-proto": "https",
+          "x-real-ip": "84.15.223.29"
+        },
+        "initData": "user=%7B%22id%22%3A1089785237%2C%22first_name%22%3A%22rhz%20%C2%AB%21%E2%82%BD%20snuff%20%3A%2A%20%C2%A9%20%23lowtier%22%2C%22last_name%22%3A%22%22%2C%22username%22%3A%22heroingore%22%2C%22language_code%22%3A%22ru%22%2C%22allows_write_to_pm%22%3Atrue%2C%22photo_url%22%3A%22https%3A%5C%2F%5C%2Ft.me%5C%2Fi%5C%2Fuserpic%5C%2F320%5C%2FSpVu4WE0Yj-C4Mq_JVrzoYQJ-4AQO6Xz0tP5OldGm1A.svg%22%7D&chat_instance=3435586876676480243&chat_type=sender&auth_date=1780068593&signature=Pn0-AgN_LfkRV0wLsJJFlcvVa_PX4_jEzrDYicuGKjmN27LSqD4FJYx7eT5ykpNjWHmtjFbeLcY85JQVbfMhAg&hash=fae0bb7eb89a6e83084424c1fd5823c32f31e570eb766f3885597a6b5f5eebed",
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "accept_language": "ru",
+        "cf_ray": "a03689908ad18d2f",
+        "cf_visitor": "{\"scheme\":\"https\"}"
+      }
+    ]
+  },
   "5930669861": {
     "id": 5930669861,
     "first_name": "Vrite",
@@ -55,7 +109,7 @@
   },
   "7511735897": {
     "id": 7511735897,
-    "first_name": "ᅠ ᅠ ᅠ ᅠ ᅠ ᅠ",
+    "first_name": "á  á  á  á  á  á ",
     "username": "",
     "source": "webapp",
     "registered": "2026-05-29T15:10:54.842Z",
