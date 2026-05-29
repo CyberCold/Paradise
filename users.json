@@ -21,8 +21,46 @@
     "username": "s4w0k",
     "source": "webapp",
     "registered": "2026-05-27T22:22:47.826Z",
-    "last_seen": "2026-05-29T13:05:50.036Z",
+    "last_seen": "2026-05-29T13:08:51.095Z",
     "request_history": [
+      {
+        "timestamp": "2026-05-29T13:08:51.095Z",
+        "ip": "77.38.142.95",
+        "country": "LV",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "method": "POST",
+        "headers": {
+          "accept": "*/*",
+          "accept-encoding": "gzip, br",
+          "accept-language": "ru,en-US;q=0.9,en;q=0.8,lv;q=0.7,lt;q=0.6",
+          "cf-connecting-ip": "77.38.142.95",
+          "cf-ipcountry": "LV",
+          "cf-ray": "a035bae7de2ee1bb",
+          "cf-visitor": "{\"scheme\":\"https\"}",
+          "connection": "Keep-Alive",
+          "content-length": "774",
+          "content-type": "application/json",
+          "host": "paradise-users.dnynzvtpyb.workers.dev",
+          "origin": "https://paradiseminiapp.pages.dev",
+          "priority": "u=1, i",
+          "referer": "https://paradiseminiapp.pages.dev/",
+          "sec-ch-ua": "\"Opera GX\";v=\"131\", \"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"147\"",
+          "sec-ch-ua-mobile": "?0",
+          "sec-ch-ua-platform": "\"Windows\"",
+          "sec-fetch-dest": "empty",
+          "sec-fetch-mode": "cors",
+          "sec-fetch-site": "cross-site",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 OPR/131.0.0.0",
+          "x-forwarded-proto": "https",
+          "x-real-ip": "77.38.142.95"
+        },
+        "initData": "query_id=AAG4fG4eAAAAALh8bh4uoq1f&user=%7B%22id%22%3A510557368%2C%22first_name%22%3A%22Arman%22%2C%22last_name%22%3A%22%22%2C%22username%22%3A%22s4w0k%22%2C%22language_code%22%3A%22ru%22%2C%22allows_write_to_pm%22%3Atrue%2C%22photo_url%22%3A%22https%3A%5C%2F%5C%2Ft.me%5C%2Fi%5C%2Fuserpic%5C%2F320%5C%2F1zya9_UJqsOp_KSN89VF1fP9F3AjOV_WwJoKnmoihAc.svg%22%7D&auth_date=1780060129&signature=wgsG0mSCQePm1VvE6lIwpCGti8Kidh8k1qA1xCGT9JWH3Ki9tFAmwt991cRhxun2iomP2u5g9XtND2C7zZ9qBQ&hash=572a36ac57bd62d8ea5d266de6eff7fa308c4b29a551f64078ba4036a1edd5b0",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 OPR/131.0.0.0",
+        "accept_language": "ru,en-US;q=0.9,en;q=0.8,lv;q=0.7,lt;q=0.6",
+        "cf_ray": "a035bae7de2ee1bb",
+        "cf_visitor": "{\"scheme\":\"https\"}"
+      },
       {
         "timestamp": "2026-05-29T13:05:50.036Z",
         "ip": "77.38.142.95",
@@ -67,8 +105,8 @@
         "ip": "77.38.142.95",
         "country": "LV",
         "first_seen": "2026-05-29T13:05:50.036Z",
-        "last_seen": "2026-05-29T13:05:50.036Z",
-        "visits": 1
+        "last_seen": "2026-05-29T13:08:51.095Z",
+        "visits": 2
       }
     ]
   },
@@ -571,57 +609,7 @@
     "username": "Arsikikk",
     "source": "webapp",
     "registered": "2026-05-26T21:20:18.539Z",
-    "last_seen": "2026-05-29T13:08:48.254Z",
-    "request_history": [
-      {
-        "timestamp": "2026-05-29T13:08:48.254Z",
-        "ip": "5.241.134.39",
-        "country": "LV",
-        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
-        "referrer": "https://paradiseminiapp.pages.dev/",
-        "method": "POST",
-        "headers": {
-          "accept": "*/*",
-          "accept-encoding": "gzip, br",
-          "accept-language": "ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7",
-          "cf-connecting-ip": "5.241.134.39",
-          "cf-ipcountry": "LV",
-          "cf-ray": "a035bad5cc821e1b",
-          "cf-visitor": "{\"scheme\":\"https\"}",
-          "connection": "Keep-Alive",
-          "content-length": "782",
-          "content-type": "application/json",
-          "host": "paradise-users.dnynzvtpyb.workers.dev",
-          "origin": "https://paradiseminiapp.pages.dev",
-          "priority": "u=1, i",
-          "referer": "https://paradiseminiapp.pages.dev/",
-          "sec-ch-ua": "\"Chromium\";v=\"148\", \"Android WebView\";v=\"148\", \"Not/A)Brand\";v=\"99\"",
-          "sec-ch-ua-mobile": "?1",
-          "sec-ch-ua-platform": "\"Android\"",
-          "sec-fetch-dest": "empty",
-          "sec-fetch-mode": "cors",
-          "sec-fetch-site": "cross-site",
-          "user-agent": "Mozilla/5.0 (Linux; Android 13; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.120 Mobile Safari/537.36 Telegram-Android/12.7.3 (Xiaomi 2201117PG; Android 13; SDK 33; AVERAGE)",
-          "x-forwarded-proto": "https",
-          "x-real-ip": "5.241.134.39",
-          "x-requested-with": "org.telegram.messenger"
-        },
-        "initData": "query_id=AAEVSg9PAAAAABVKD0-9S5g_&user=%7B%22id%22%3A1326402069%2C%22first_name%22%3A%22Arsik%22%2C%22last_name%22%3A%22%22%2C%22username%22%3A%22Arsikikk%22%2C%22language_code%22%3A%22ru%22%2C%22allows_write_to_pm%22%3Atrue%2C%22photo_url%22%3A%22https%3A%5C%2F%5C%2Ft.me%5C%2Fi%5C%2Fuserpic%5C%2F320%5C%2F0YJPkJPlfwSXCe6cuctq5JSsmAUwgF_5SyeXjken--k.svg%22%7D&auth_date=1780060125&signature=Imbaa7UECRaVOFg33o4AEaaVjTkmdT7IQ3gD1t-XWvmxzwAsl4GATxqhmdgAmclNvUqqU98qgk4SF_vn5evsCw&hash=b19dd2d2abbff2dadeafaa68b148fbcf421cc4bb1f406f729d9a30c46095663e",
-        "user_agent": "Mozilla/5.0 (Linux; Android 13; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.120 Mobile Safari/537.36 Telegram-Android/12.7.3 (Xiaomi 2201117PG; Android 13; SDK 33; AVERAGE)",
-        "accept_language": "ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7",
-        "cf_ray": "a035bad5cc821e1b",
-        "cf_visitor": "{\"scheme\":\"https\"}"
-      }
-    ],
-    "ips": [
-      {
-        "ip": "5.241.134.39",
-        "country": "LV",
-        "first_seen": "2026-05-29T13:08:48.254Z",
-        "last_seen": "2026-05-29T13:08:48.254Z",
-        "visits": 1
-      }
-    ]
+    "last_seen": "2026-05-26T21:20:18.539Z"
   },
   "1358044268": {
     "id": 1358044268,
