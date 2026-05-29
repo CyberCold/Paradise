@@ -1,7 +1,7 @@
 {
   "1382284598": {
     "id": 1382284598,
-    "first_name": "Эдгар",
+    "first_name": "Ð­Ð´Ð³Ð°Ñ",
     "username": "napavozuk",
     "source": "webapp",
     "registered": "2026-05-29T14:28:22.943Z",
@@ -49,6 +49,60 @@
         "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
         "accept_language": "ru",
         "cf_ray": "a0362f68da0b5435",
+        "cf_visitor": "{\"scheme\":\"https\"}"
+      }
+    ]
+  },
+  "1963002934": {
+    "id": 1963002934,
+    "first_name": "Nik",
+    "username": "",
+    "source": "webapp",
+    "registered": "2026-05-29T14:30:49.361Z",
+    "last_seen": "2026-05-29T14:30:49.361Z",
+    "ips": [
+      {
+        "ip": "185.65.50.90",
+        "country": "LT",
+        "first_seen": "2026-05-29T14:30:49.361Z",
+        "last_seen": "2026-05-29T14:30:49.361Z",
+        "visits": 1
+      }
+    ],
+    "request_history": [
+      {
+        "timestamp": "2026-05-29T14:30:49.361Z",
+        "ip": "185.65.50.90",
+        "country": "LT",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "method": "POST",
+        "headers": {
+          "accept": "*/*",
+          "accept-encoding": "gzip, br",
+          "accept-language": "ru",
+          "cf-connecting-ip": "185.65.50.90",
+          "cf-ipcountry": "LT",
+          "cf-ray": "a03632fbeb22ec3e",
+          "cf-visitor": "{\"scheme\":\"https\"}",
+          "connection": "Keep-Alive",
+          "content-length": "722",
+          "content-type": "application/json",
+          "host": "paradise-users.dnynzvtpyb.workers.dev",
+          "origin": "https://paradiseminiapp.pages.dev",
+          "priority": "u=3, i",
+          "referer": "https://paradiseminiapp.pages.dev/",
+          "sec-fetch-dest": "empty",
+          "sec-fetch-mode": "cors",
+          "sec-fetch-site": "cross-site",
+          "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+          "x-forwarded-proto": "https",
+          "x-real-ip": "185.65.50.90"
+        },
+        "initData": "query_id=AAE2DAF1AAAAADYMAXUVsebc&user=%7B%22id%22%3A1963002934%2C%22first_name%22%3A%22Nik%22%2C%22last_name%22%3A%22%22%2C%22language_code%22%3A%22ru%22%2C%22allows_write_to_pm%22%3Atrue%2C%22photo_url%22%3A%22https%3A%5C%2F%5C%2Ft.me%5C%2Fi%5C%2Fuserpic%5C%2F320%5C%2Frex6Hf8Jv1AzSXUM--3PveLzWSQcbFynikCEX3txifI.svg%22%7D&auth_date=1780065046&signature=6XM0WjCfmFOHW69kpJm0EhMqEu6F4X_D5-0Ublhtr6y6ufzdgx21wFAfb_E3kr5jkTy9-vnQQ-FFWy0c80tuDQ&hash=b6c1eb2757a1f103fe41a4249063a943110fd838d7a7cb06474b1f0c1930f7fd",
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "accept_language": "ru",
+        "cf_ray": "a03632fbeb22ec3e",
         "cf_visitor": "{\"scheme\":\"https\"}"
       }
     ]
