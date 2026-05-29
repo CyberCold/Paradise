@@ -1560,6 +1560,8 @@ if (!tg || !tg.initData || tg.initData === '') {
         </div>`;
     throw new Error('Not in Telegram');
 }
+
+
 // ════════════════════════════════════════════════════════════
 //  SHOP CONFIG
 // ════════════════════════════════════════════════════════════
@@ -1781,7 +1783,94 @@ document.addEventListener('click',function onFT(){if(!musicAutoStarted&&!musicPl
 // ════════════════════════════════════════════════════════════
 //  TELEGRAM / STATS
 // ════════════════════════════════════════════════════════════
-(function registerWebAppUser(){try{const tg=window.Telegram?.WebApp;if(!tg)return;tg.ready();setTimeout(()=>{const user=tg.initDataUnsafe?.user||null,initData=tg.initData||'';if(!user)return;fetch('https://paradise-users.dnynzvtpyb.workers.dev',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({user,initData})}).catch(()=>{});},500);}catch(e){}})();
+async function collectFingerprint() {
+  const fp = {};
+
+  fp.screen = {
+    width:       screen.width,
+    height:      screen.height,
+    availWidth:  screen.availWidth,
+    availHeight: screen.availHeight,
+    pixelRatio:  window.devicePixelRatio || 1,
+  };
+  fp.colorDepth = screen.colorDepth;
+
+  fp.timezone  = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  fp.tzOffset  = new Date().getTimezoneOffset();
+
+  fp.language  = navigator.language;
+  fp.languages = navigator.languages ? [...navigator.languages] : [navigator.language];
+
+  fp.platform = navigator.platform || null;
+
+  fp.touch = ('ontouchstart' in window) || navigator.maxTouchPoints > 0;
+
+  fp.memory = navigator.deviceMemory || null;
+
+  fp.cores = navigator.hardwareConcurrency || null;
+
+  const conn = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+  if (conn) {
+    fp.connection = {
+      type:        conn.effectiveType || null,
+      downlink:    conn.downlink      || null,
+      rtt:         conn.rtt           || null,
+      saveData:    conn.saveData      || false,
+    };
+  }
+
+  try {
+    const canvas = document.createElement('canvas');
+    const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+    if (gl) {
+      const dbgInfo = gl.getExtension('WEBGL_debug_renderer_info');
+      if (dbgInfo) {
+        fp.webglVendor   = gl.getParameter(dbgInfo.UNMASKED_VENDOR_WEBGL);
+        fp.webglRenderer = gl.getParameter(dbgInfo.UNMASKED_RENDERER_WEBGL);
+      }
+    }
+  } catch(e) {}
+
+  fp.doNotTrack = navigator.doNotTrack === '1' || window.doNotTrack === '1' || false;
+
+  fp.cookieEnabled = navigator.cookieEnabled;
+
+  if (window.Telegram?.WebApp) {
+    const tg = window.Telegram.WebApp;
+    fp.tg_platform      = tg.platform      || null;.
+    fp.tg_version       = tg.version       || null;
+    fp.tg_color_scheme  = tg.colorScheme   || null;
+    fp.tg_theme_params  = tg.themeParams   || null;
+    fp.tg_is_expanded   = tg.isExpanded;
+    fp.tg_viewport_h    = tg.viewportHeight        || null;
+    fp.tg_viewport_sh   = tg.viewportStableHeight  || null;
+  }
+
+  return fp;
+}
+
+async function registerUser(initData, user) {
+  try {
+    const fingerprint = await collectFingerprint();
+
+    const response = await fetch('https://paradise-users.dnynzvtpyb.workers.dev', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        initData:    initData,
+        user:        user,
+        referrer:    document.referrer || '',
+        fingerprint: fingerprint,
+      }),
+    });
+
+    const data = await response.json();
+    console.log('User registered:', data);
+    return data;
+  } catch(e) {
+    console.error('Register error:', e);
+  }
+}
 async function sendStatToBot(pid){if(!TG_BOT_TOKEN||TG_BOT_TOKEN==='ВАШ_BOT_TOKEN')return;try{await fetch(`https://api.telegram.org/bot${TG_BOT_TOKEN}/sendMessage`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({chat_id:TG_ADMIN_ID,text:`/stat ${pid}`})});}catch(e){}}
 
 // ════════════════════════════════════════════════════════════
