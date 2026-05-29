@@ -48,6 +48,12 @@
     "date": 1780000297201
   },
   {
+    "userId": "8329796895",
+    "name": "KALABANGACASH",
+    "score": 280,
+    "date": 1780013200310
+  },
+  {
     "userId": "930432979",
     "name": "GP4Y",
     "score": 260,
@@ -58,11 +64,5 @@
     "name": "UBIVATOR",
     "score": 260,
     "date": 1779983955979
-  },
-  {
-    "userId": "8329796895",
-    "name": "KRIK",
-    "score": 230,
-    "date": 1780010063461
   }
 ]
