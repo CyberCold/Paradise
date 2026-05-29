@@ -1,7 +1,7 @@
 {
   "840744310": {
     "id": 840744310,
-    "first_name": "Никита",
+    "first_name": "ÐÐ¸ÐºÐ¸ÑÐ°",
     "username": "CamipaMamaa",
     "source": "webapp",
     "registered": "2026-05-29T18:08:29.746Z",
@@ -53,9 +53,63 @@
       }
     ]
   },
+  "852388425": {
+    "id": 852388425,
+    "first_name": "._.",
+    "username": "moneumaker",
+    "source": "webapp",
+    "registered": "2026-05-29T18:31:24.099Z",
+    "last_seen": "2026-05-29T18:31:24.099Z",
+    "ips": [
+      {
+        "ip": "89.221.127.210",
+        "country": "LV",
+        "first_seen": "2026-05-29T18:31:24.099Z",
+        "last_seen": "2026-05-29T18:31:24.099Z",
+        "visits": 1
+      }
+    ],
+    "request_history": [
+      {
+        "timestamp": "2026-05-29T18:31:24.099Z",
+        "ip": "89.221.127.210",
+        "country": "LV",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "method": "POST",
+        "headers": {
+          "accept": "*/*",
+          "accept-encoding": "gzip, br",
+          "accept-language": "ru",
+          "cf-connecting-ip": "89.221.127.210",
+          "cf-ipcountry": "LV",
+          "cf-ray": "a0379365e9c1e4db",
+          "cf-visitor": "{\"scheme\":\"https\"}",
+          "connection": "Keep-Alive",
+          "content-length": "780",
+          "content-type": "application/json",
+          "host": "paradise-users.dnynzvtpyb.workers.dev",
+          "origin": "https://paradiseminiapp.pages.dev",
+          "priority": "u=3, i",
+          "referer": "https://paradiseminiapp.pages.dev/",
+          "sec-fetch-dest": "empty",
+          "sec-fetch-mode": "cors",
+          "sec-fetch-site": "cross-site",
+          "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+          "x-forwarded-proto": "https",
+          "x-real-ip": "89.221.127.210"
+        },
+        "initData": "query_id=AAFJas4yAAAAAElqzjI-oco6&user=%7B%22id%22%3A852388425%2C%22first_name%22%3A%22._.%22%2C%22last_name%22%3A%22%22%2C%22username%22%3A%22moneumaker%22%2C%22language_code%22%3A%22ru%22%2C%22allows_write_to_pm%22%3Atrue%2C%22photo_url%22%3A%22https%3A%5C%2F%5C%2Ft.me%5C%2Fi%5C%2Fuserpic%5C%2F320%5C%2F4aD1wKpWhoqltrXiIBtNq0mMiIRqnwDc7SWkv08QjtY.svg%22%7D&auth_date=1780079482&signature=uIR61bAkziztZ7lG947MzhSKIFTAwWxBOi4-tVmWPj3S94w4tQYvAZEG8BACD7t9Wfd7HNBpwSBQ_tDsKaUUAQ&hash=74ad37b9d8624e50bacf1da7644481135768ca2d7a7d311c779b55dbe6648d7f",
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "accept_language": "ru",
+        "cf_ray": "a0379365e9c1e4db",
+        "cf_visitor": "{\"scheme\":\"https\"}"
+      }
+    ]
+  },
   "7511735897": {
     "id": 7511735897,
-    "first_name": "Ã¡ÂÂ  Ã¡ÂÂ  Ã¡ÂÂ  Ã¡ÂÂ  Ã¡ÂÂ  Ã¡ÂÂ ",
+    "first_name": "ÃÂ¡ÃÂÃÂ  ÃÂ¡ÃÂÃÂ  ÃÂ¡ÃÂÃÂ  ÃÂ¡ÃÂÃÂ  ÃÂ¡ÃÂÃÂ  ÃÂ¡ÃÂÃÂ ",
     "username": "",
     "source": "webapp",
     "registered": "2026-05-29T17:52:03.435Z",
