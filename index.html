@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <script>
+    if (!window.Telegram?.WebApp?.initData) {
+        document.documentElement.innerHTML = '';
+        window.stop();
+    }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name='dmca-site-verification' content='RkZaMGR3NkxYMFFZZlJUeFdSdEh2eGNxMnJZRGtiYmVWbktoYzFVK2NERT01' />
@@ -1552,6 +1558,16 @@
 </div><!-- /snakeOverlay -->
 
 <script>
+    const tg = window.Telegram?.WebApp;
+if (!tg || !tg.initData || tg.initData === '') {
+    document.body.innerHTML = `
+        <div style="display:flex;align-items:center;justify-content:center;
+        height:100vh;background:#000;color:#0f0;
+        font-family:'Press Start 2P',monospace;font-size:12px;text-align:center;">
+            Открой через Telegram
+        </div>`;
+    throw new Error('Not in Telegram');
+}
 // ════════════════════════════════════════════════════════════
 //  SHOP CONFIG
 // ════════════════════════════════════════════════════════════
