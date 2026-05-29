@@ -78,6 +78,12 @@
     "date": 1780065207068
   },
   {
+    "userId": "6491742117",
+    "name": "ERROR_TEAMS",
+    "score": 60,
+    "date": 1780065361051
+  },
+  {
     "userId": "840744310",
     "name": "CAMIPAMAMAA",
     "score": 40,
@@ -88,11 +94,5 @@
     "name": "SKVIRKA",
     "score": 10,
     "date": 1780063189140
-  },
-  {
-    "userId": "6491742117",
-    "name": "ERROR_TEAMS",
-    "score": 10,
-    "date": 1780065337610
   }
 ]
