@@ -33,7 +33,7 @@
   },
   "552298978": {
     "id": 552298978,
-    "first_name": "ÃÂ§ÃÂ§ÃÂÃÂ£ÃÂÃÂ¯ÃÂ£ÃÂÃÂ¯ÃÂ£ÃÂÃÂ½ÃÂ£ÃÂÃÂÃÂ£ÃÂÃÂ¨ÃÂ£ÃÂÃÂ­ÃÂ£ÃÂÃÂ ",
+    "first_name": "ÃÂÃÂ§ÃÂÃÂ§ÃÂÃÂÃÂÃÂ£ÃÂÃÂÃÂÃÂ¯ÃÂÃÂ£ÃÂÃÂÃÂÃÂ¯ÃÂÃÂ£ÃÂÃÂÃÂÃÂ½ÃÂÃÂ£ÃÂÃÂÃÂÃÂÃÂÃÂ£ÃÂÃÂÃÂÃÂ¨ÃÂÃÂ£ÃÂÃÂÃÂÃÂ­ÃÂÃÂ£ÃÂÃÂÃÂÃÂ ",
     "username": "netqm1",
     "source": "webapp",
     "registered": "2026-05-28T14:23:05.269Z",
@@ -53,7 +53,53 @@
     "username": "I_A_N_B_O_R_S",
     "source": "webapp",
     "registered": "2026-05-28T11:53:44.820Z",
-    "last_seen": "2026-05-28T11:53:44.820Z"
+    "last_seen": "2026-05-29T13:03:09.550Z",
+    "request_history": [
+      {
+        "timestamp": "2026-05-29T13:03:09.550Z",
+        "ip": "93.177.235.118",
+        "country": "LV",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "method": "POST",
+        "headers": {
+          "accept": "*/*",
+          "accept-encoding": "gzip, br",
+          "accept-language": "ru",
+          "cf-connecting-ip": "93.177.235.118",
+          "cf-ipcountry": "LV",
+          "cf-ray": "a035b2924d83e4e8",
+          "cf-visitor": "{\"scheme\":\"https\"}",
+          "connection": "Keep-Alive",
+          "content-length": "807",
+          "content-type": "application/json",
+          "host": "paradise-users.dnynzvtpyb.workers.dev",
+          "origin": "https://paradiseminiapp.pages.dev",
+          "priority": "u=3, i",
+          "referer": "https://paradiseminiapp.pages.dev/",
+          "sec-fetch-dest": "empty",
+          "sec-fetch-mode": "cors",
+          "sec-fetch-site": "cross-site",
+          "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+          "x-forwarded-proto": "https",
+          "x-real-ip": "93.177.235.118"
+        },
+        "initData": "user=%7B%22id%22%3A701372234%2C%22first_name%22%3A%22YANEX%22%2C%22last_name%22%3A%22%22%2C%22username%22%3A%22I_A_N_B_O_R_S%22%2C%22language_code%22%3A%22ru%22%2C%22allows_write_to_pm%22%3Atrue%2C%22photo_url%22%3A%22https%3A%5C%2F%5C%2Ft.me%5C%2Fi%5C%2Fuserpic%5C%2F320%5C%2FuKScZ3gztxUrZbaTPoB1Z1-ANIFEVQTe1fL2rBLshUU.svg%22%7D&chat_instance=4120077095410352008&chat_type=sender&auth_date=1780059787&signature=NSjgffJSPBZTefj6YqHGTWL5hCRI1JiSO7izFZoT_GM5xVCGhIs4tf94Ew7NC25xOrehy7h40C33Y9Ruzx8IDg&hash=c1cfe7ff963564f94841a4535fb6e69cf7c84e336b08ca14a3109a2587d60089",
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "accept_language": "ru",
+        "cf_ray": "a035b2924d83e4e8",
+        "cf_visitor": "{\"scheme\":\"https\"}"
+      }
+    ],
+    "ips": [
+      {
+        "ip": "93.177.235.118",
+        "country": "LV",
+        "first_seen": "2026-05-29T13:03:09.550Z",
+        "last_seen": "2026-05-29T13:03:09.550Z",
+        "visits": 1
+      }
+    ]
   },
   "731373167": {
     "id": 731373167,
@@ -201,7 +247,7 @@
   },
   "993164577": {
     "id": 993164577,
-    "first_name": "ÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ½ÃÂÃÂÃÂÃÂ¶ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂ°",
+    "first_name": "ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ½ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¶ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ»ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂºÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°",
     "username": "andzelishaa",
     "source": "webapp",
     "registered": "2026-05-28T11:53:44.820Z",
@@ -241,7 +287,7 @@
   },
   "1093822167": {
     "id": 1093822167,
-    "first_name": "ÃÂÃÂÃÂÃÂÃÂÃÂ¸ÃÂÃÂÃÂÃÂÃÂÃÂ¸ÃÂÃÂ°ÃÂÃÂ½",
+    "first_name": "ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¸ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¸ÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ½",
     "username": "PonPonchik19",
     "source": "webapp",
     "registered": "2026-05-28T22:29:40.346Z",
@@ -273,7 +319,7 @@
   },
   "1141788828": {
     "id": 1141788828,
-    "first_name": "ÃÂÃÂÃÂÃÂ¾ÃÂÃÂÃÂÃÂ¸ÃÂÃÂº",
+    "first_name": "ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¾ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¸ÃÂÃÂÃÂÃÂº",
     "username": "koshik_0",
     "source": "webapp",
     "registered": "2026-05-28T14:23:05.269Z",
@@ -3002,7 +3048,7 @@
   },
   "7511735897": {
     "id": 7511735897,
-    "first_name": "á  á  á  á  á  á ",
+    "first_name": "Ã¡ÂÂ  Ã¡ÂÂ  Ã¡ÂÂ  Ã¡ÂÂ  Ã¡ÂÂ  Ã¡ÂÂ ",
     "username": "",
     "source": "webapp",
     "registered": "2026-05-29T13:01:10.148Z",
