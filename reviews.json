@@ -152,5 +152,16 @@
     "comment": null,
     "date": "31.05.2026 00:33",
     "sent_to_channel": true
+  },
+  "#0030_Elfliq 50mg": {
+    "oid": "#0030",
+    "user_id": 8609986083,
+    "username": "Why???",
+    "product_name": "Elfliq 50mg",
+    "flavor": "Lemon Lime",
+    "rating": 5,
+    "comment": null,
+    "date": "31.05.2026 01:45",
+    "sent_to_channel": true
   }
 }
