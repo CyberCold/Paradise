@@ -86,8 +86,8 @@
   },
   "1243391170": {
     "id": 1243391170,
-    "first_name": "ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ ÃÂÃÂÃÂÃÂ¡ÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ",
-    "last_name": "ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂ­ÃÂÃÂÃÂÃÂ",
+    "first_name": "ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ",
+    "last_name": "ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¡ÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ­ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ",
     "username": "MARSON_CHIK",
     "language_code": "ru",
     "is_premium": false,
@@ -171,15 +171,15 @@
   },
   "1382284598": {
     "id": 1382284598,
-    "first_name": "Ð­Ð´Ð³Ð°Ñ",
+    "first_name": "ÃÂ­ÃÂ´ÃÂ³ÃÂ°ÃÂ",
     "last_name": "",
     "username": "napavozuk",
     "language_code": "ru",
     "is_premium": false,
     "source": "webapp",
     "registered": "2026-05-30T11:06:10.260Z",
-    "last_seen": "2026-05-30T11:06:21.256Z",
-    "visit_count": 2,
+    "last_seen": "2026-05-30T11:09:28.003Z",
+    "visit_count": 3,
     "ips": [
       {
         "ip": "5.241.135.193",
@@ -191,11 +191,38 @@
         "lat": "56.946",
         "lon": "24.10589",
         "first_seen": "2026-05-30T11:06:10.260Z",
-        "last_seen": "2026-05-30T11:06:21.256Z",
-        "visits": 2
+        "last_seen": "2026-05-30T11:09:28.003Z",
+        "visits": 3
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-05-30T11:09:28.003Z",
+        "ip": "5.241.135.193",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": null,
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a03d49682d14c7f3",
+        "screen": null,
+        "tz_client": null,
+        "color_depth": null,
+        "touch": null,
+        "platform": null,
+        "memory": null,
+        "cores": null,
+        "connection": null,
+        "webgl_vendor": null,
+        "languages": null
+      },
       {
         "timestamp": "2026-05-30T11:06:21.256Z",
         "ip": "5.241.135.193",
@@ -368,7 +395,7 @@
   },
   "6448185188": {
     "id": 6448185188,
-    "first_name": "ÃÂ¢ÃÂÃÂ",
+    "first_name": "ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ",
     "last_name": "",
     "username": "hfhhgjhksksl",
     "language_code": "ru",
