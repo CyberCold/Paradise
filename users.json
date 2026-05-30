@@ -3275,5 +3275,13 @@
     "source": "bot_start",
     "registered": "2026-05-30T17:22:56.054507",
     "last_seen": "2026-05-30T17:22:56.054521"
+  },
+  "7147710833": {
+    "id": 7147710833,
+    "first_name": "Electric",
+    "username": "Eletric007",
+    "source": "chat",
+    "registered": "2026-05-30T18:08:40.631055",
+    "last_seen": "2026-05-30T18:08:45.661434"
   }
 }
