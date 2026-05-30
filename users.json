@@ -8,8 +8,8 @@
     "is_premium": false,
     "source": "webapp",
     "registered": "2026-05-30T12:52:39.549Z",
-    "last_seen": "2026-05-30T12:52:39.549Z",
-    "visit_count": 1,
+    "last_seen": "2026-05-30T12:53:56.063Z",
+    "visit_count": 2,
     "ips": [
       {
         "ip": "77.38.142.95",
@@ -21,11 +21,38 @@
         "lat": "56.946",
         "lon": "24.10589",
         "first_seen": "2026-05-30T12:52:39.549Z",
-        "last_seen": "2026-05-30T12:52:39.549Z",
-        "visits": 1
+        "last_seen": "2026-05-30T12:53:56.063Z",
+        "visits": 2
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-05-30T12:53:56.063Z",
+        "ip": "77.38.142.95",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 OPR/131.0.0.0",
+        "device": "Desktop",
+        "browser": "Opera",
+        "browser_version": "131",
+        "os": "Windows",
+        "os_version": "10",
+        "language": "ru",
+        "cf_ray": "a03de26fae1a13ba",
+        "screen": null,
+        "tz_client": null,
+        "color_depth": null,
+        "touch": null,
+        "platform": null,
+        "memory": null,
+        "cores": null,
+        "connection": null,
+        "webgl_vendor": null,
+        "languages": null
+      },
       {
         "timestamp": "2026-05-30T12:52:39.549Z",
         "ip": "77.38.142.95",
@@ -171,7 +198,7 @@
   },
   "6448185188": {
     "id": 6448185188,
-    "first_name": "Ã¢ÂÂ",
+    "first_name": "ÃÂ¢ÃÂÃÂ",
     "last_name": "",
     "username": "hfhhgjhksksl",
     "language_code": "ru",
