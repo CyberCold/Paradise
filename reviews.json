@@ -130,5 +130,16 @@
     "comment": null,
     "date": "29.05.2026 18:23",
     "sent_to_channel": true
+  },
+  "#0026_Vaape Triple 90K": {
+    "oid": "#0026",
+    "user_id": 5930669861,
+    "username": "Vrite",
+    "product_name": "Vaape Triple 90K",
+    "flavor": "Red Bull / Blueberry Watermelon / Monster Drink",
+    "rating": 5,
+    "comment": null,
+    "date": "30.05.2026 17:39",
+    "sent_to_channel": true
   }
 }
