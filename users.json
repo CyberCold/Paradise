@@ -111,6 +111,91 @@
       "lon": "24.10589"
     }
   },
+  "871181571": {
+    "id": 871181571,
+    "first_name": "Dimon",
+    "last_name": "",
+    "username": "Skvirka",
+    "language_code": "ru",
+    "is_premium": false,
+    "source": "webapp",
+    "registered": "2026-05-30T13:08:42.581Z",
+    "last_seen": "2026-05-30T13:08:42.581Z",
+    "visit_count": 1,
+    "ips": [
+      {
+        "ip": "80.89.76.53",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Latvijas Mobilais Telefons SIA",
+        "asn": 24921,
+        "lat": "56.946",
+        "lon": "24.10589",
+        "first_seen": "2026-05-30T13:08:42.581Z",
+        "last_seen": "2026-05-30T13:08:42.581Z",
+        "visits": 1
+      }
+    ],
+    "visits": [
+      {
+        "timestamp": "2026-05-30T13:08:42.581Z",
+        "ip": "80.89.76.53",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": null,
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.6",
+        "language": "ru",
+        "cf_ray": "a03df8140815e4e1",
+        "screen": null,
+        "tz_client": null,
+        "color_depth": null,
+        "touch": null,
+        "platform": null,
+        "memory": null,
+        "cores": null,
+        "connection": null,
+        "webgl_vendor": null,
+        "languages": null
+      }
+    ],
+    "fingerprint": {
+      "device": "iPhone",
+      "browser": null,
+      "browser_version": null,
+      "os": "iOS",
+      "os_version": "18.6",
+      "screen": null,
+      "color_depth": null,
+      "timezone": null,
+      "language": null,
+      "languages": null,
+      "platform": null,
+      "memory": null,
+      "cores": null,
+      "connection": null,
+      "webgl_vendor": null,
+      "do_not_track": null,
+      "updated_at": "2026-05-30T13:08:42.581Z"
+    },
+    "geo": {
+      "country": "LV",
+      "city": "Riga",
+      "region": "Riga",
+      "timezone": "Europe/Riga",
+      "asn": 24921,
+      "isp": "Latvijas Mobilais Telefons SIA",
+      "lat": "56.946",
+      "lon": "24.10589"
+    }
+  },
   "1120601971": {
     "id": 1120601971,
     "first_name": "chaatton",
@@ -198,7 +283,7 @@
   },
   "6448185188": {
     "id": 6448185188,
-    "first_name": "ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ",
+    "first_name": "ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ",
     "last_name": "",
     "username": "hfhhgjhksksl",
     "language_code": "ru",
@@ -283,8 +368,8 @@
   },
   "7511735897": {
     "id": 7511735897,
-    "first_name": "ᅠ ᅠ ᅠ ᅠ ᅠ ᅠ",
-    "last_name": "ᅠ ᅠ ᅠ ᅠ ᅠ",
+    "first_name": "á  á  á  á  á  á ",
+    "last_name": "á  á  á  á  á ",
     "username": "",
     "language_code": "ru",
     "is_premium": true,
