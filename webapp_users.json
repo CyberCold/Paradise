@@ -1,7 +1,92 @@
 {
+  "774425660": {
+    "id": 774425660,
+    "first_name": "MOLODOY",
+    "last_name": "",
+    "username": "mishanja2000",
+    "language_code": "ru",
+    "is_premium": false,
+    "source": "webapp",
+    "registered": "2026-05-30T13:40:29.786Z",
+    "last_seen": "2026-05-30T13:40:29.786Z",
+    "visit_count": 1,
+    "ips": [
+      {
+        "ip": "5.241.138.153",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Mobile Services Latvia",
+        "asn": 1257,
+        "lat": "56.946",
+        "lon": "24.10589",
+        "first_seen": "2026-05-30T13:40:29.786Z",
+        "last_seen": "2026-05-30T13:40:29.786Z",
+        "visits": 1
+      }
+    ],
+    "visits": [
+      {
+        "timestamp": "2026-05-30T13:40:29.786Z",
+        "ip": "5.241.138.153",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": null,
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a03e26a42b28a86f",
+        "screen": null,
+        "tz_client": null,
+        "color_depth": null,
+        "touch": null,
+        "platform": null,
+        "memory": null,
+        "cores": null,
+        "connection": null,
+        "webgl_vendor": null,
+        "languages": null
+      }
+    ],
+    "fingerprint": {
+      "device": "iPhone",
+      "browser": null,
+      "browser_version": null,
+      "os": "iOS",
+      "os_version": "18.7",
+      "screen": null,
+      "color_depth": null,
+      "timezone": null,
+      "language": null,
+      "languages": null,
+      "platform": null,
+      "memory": null,
+      "cores": null,
+      "connection": null,
+      "webgl_vendor": null,
+      "do_not_track": null,
+      "updated_at": "2026-05-30T13:40:29.786Z"
+    },
+    "geo": {
+      "country": "LV",
+      "city": "Riga",
+      "region": "Riga",
+      "timezone": "Europe/Riga",
+      "asn": 1257,
+      "isp": "Mobile Services Latvia",
+      "lat": "56.946",
+      "lon": "24.10589"
+    }
+  },
   "848178688": {
     "id": 848178688,
-    "first_name": "ÐÐ·Ñð",
+    "first_name": "ÃÂÃÂ·ÃÂÃ°ÂÂÂ",
     "last_name": "",
     "username": "sppapdpsospapa",
     "language_code": "ru",
@@ -86,8 +171,8 @@
   },
   "7511735897": {
     "id": 7511735897,
-    "first_name": "ᅠ ᅠ ᅠ ᅠ ᅠ ᅠ",
-    "last_name": "ᅠ ᅠ ᅠ ᅠ ᅠ",
+    "first_name": "á  á  á  á  á  á ",
+    "last_name": "á  á  á  á  á ",
     "username": "",
     "language_code": "ru",
     "is_premium": true,
