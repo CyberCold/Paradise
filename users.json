@@ -1,8 +1,8 @@
 {
   "1243391170": {
     "id": 1243391170,
-    "first_name": "МАРС🔞Н",
-    "last_name": "ПАТИС🚭Н",
+    "first_name": "ÐÐÐ Ð¡ðÐ",
+    "last_name": "ÐÐÐ¢ÐÐ¡ð­Ð",
     "username": "MARSON_CHIK",
     "language_code": "ru",
     "is_premium": false,
@@ -167,6 +167,91 @@
       "isp": "Bite Latvija",
       "lat": "56.946",
       "lon": "24.1059"
+    }
+  },
+  "6448185188": {
+    "id": 6448185188,
+    "first_name": "‘",
+    "last_name": "",
+    "username": "hfhhgjhksksl",
+    "language_code": "ru",
+    "is_premium": false,
+    "source": "webapp",
+    "registered": "2026-05-30T10:08:49.779Z",
+    "last_seen": "2026-05-30T10:08:49.779Z",
+    "visit_count": 1,
+    "ips": [
+      {
+        "ip": "77.38.154.203",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "BALTCOM Broadband Customers",
+        "asn": 20910,
+        "lat": "56.946",
+        "lon": "24.10589",
+        "first_seen": "2026-05-30T10:08:49.779Z",
+        "last_seen": "2026-05-30T10:08:49.779Z",
+        "visits": 1
+      }
+    ],
+    "visits": [
+      {
+        "timestamp": "2026-05-30T10:08:49.779Z",
+        "ip": "77.38.154.203",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": null,
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a03cf094eab6e4e9",
+        "screen": null,
+        "tz_client": null,
+        "color_depth": null,
+        "touch": null,
+        "platform": null,
+        "memory": null,
+        "cores": null,
+        "connection": null,
+        "webgl_vendor": null,
+        "languages": null
+      }
+    ],
+    "fingerprint": {
+      "device": "iPhone",
+      "browser": null,
+      "browser_version": null,
+      "os": "iOS",
+      "os_version": "18.7",
+      "screen": null,
+      "color_depth": null,
+      "timezone": null,
+      "language": null,
+      "languages": null,
+      "platform": null,
+      "memory": null,
+      "cores": null,
+      "connection": null,
+      "webgl_vendor": null,
+      "do_not_track": null,
+      "updated_at": "2026-05-30T10:08:49.779Z"
+    },
+    "geo": {
+      "country": "LV",
+      "city": "Riga",
+      "region": "Riga",
+      "timezone": "Europe/Riga",
+      "asn": 20910,
+      "isp": "BALTCOM Broadband Customers",
+      "lat": "56.946",
+      "lon": "24.10589"
     }
   }
 }
