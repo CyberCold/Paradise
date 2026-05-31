@@ -216,6 +216,12 @@
     "date": 1780168245159
   },
   {
+    "userId": "899861283",
+    "name": "ANON",
+    "score": 30,
+    "date": 1780252719579
+  },
+  {
     "userId": "1096534596",
     "name": "SPACEWID",
     "score": 20,
@@ -232,11 +238,5 @@
     "name": "GAVNONAPALO4KE8",
     "score": 10,
     "date": 1780065626537
-  },
-  {
-    "userId": "899861283",
-    "name": "ANON",
-    "score": 10,
-    "date": 1780252701902
   }
 ]
