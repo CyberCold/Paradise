@@ -657,8 +657,9 @@
     "raw_text": "Здравствуйте, хочу заказать:\nVaape Triple 90K, вкус: Mixed Berries / Red Bull / Peach Ice, количество: 1\nVaape Triple 90K, вкус: Strawberry Watermelon / Cola Ice / Peach Ice, количество: 1",
     "user_id": 6491742117,
     "username": "Dontik",
-    "status": "new",
-    "date": "30.05.2026 17:42"
+    "status": "done",
+    "date": "30.05.2026 17:42",
+    "done_at": "2026-05-31T21:45:03.937788"
   },
   "#0035": {
     "oid": "#0035",
