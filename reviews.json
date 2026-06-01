@@ -163,5 +163,16 @@
     "comment": null,
     "date": "31.05.2026 01:45",
     "sent_to_channel": true
+  },
+  "#0033_DK Salt 50mg": {
+    "oid": "#0033",
+    "user_id": 7147710833,
+    "username": "Electric",
+    "product_name": "DK Salt 50mg",
+    "flavor": "Strawberry Kiwi",
+    "rating": 5,
+    "comment": "IVG SALT 50Mg",
+    "date": "01.06.2026 12:02",
+    "sent_to_channel": true
   }
 }
