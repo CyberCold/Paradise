@@ -174,5 +174,16 @@
     "comment": "IVG SALT 50Mg",
     "date": "01.06.2026 12:02",
     "sent_to_channel": true
+  },
+  "#0027_Vozol Rave 40k puffs": {
+    "oid": "#0027",
+    "user_id": 8664592401,
+    "username": "drained",
+    "product_name": "Vozol Rave 40k puffs",
+    "flavor": "Strawberry Watermelon",
+    "rating": 5,
+    "comment": null,
+    "date": "01.06.2026 15:07",
+    "sent_to_channel": true
   }
 }
