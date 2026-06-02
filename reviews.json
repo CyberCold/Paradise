@@ -185,5 +185,16 @@
     "comment": null,
     "date": "01.06.2026 15:07",
     "sent_to_channel": true
+  },
+  "#0034_Vaape Triple 90K": {
+    "oid": "#0034",
+    "user_id": 6491742117,
+    "username": "Dontik",
+    "product_name": "Vaape Triple 90K",
+    "flavor": "Mixed Berries / Red Bull / Peach Ice",
+    "rating": 5,
+    "comment": null,
+    "date": "02.06.2026 12:04",
+    "sent_to_channel": true
   }
 }
