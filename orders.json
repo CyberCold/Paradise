@@ -677,5 +677,21 @@
     "status": "done",
     "date": "31.05.2026 15:43",
     "done_at": "2026-05-31T21:45:07.041866"
+  },
+  "#0036": {
+    "oid": "#0036",
+    "items": [
+      {
+        "pid": "ivg",
+        "product_name": "IVG 20mg",
+        "flavor": "Blackcurrant Mango",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nIVG 20mg, вкус: Blackcurrant Mango, количество: 1\nИ еще 2 любого вкуса",
+    "user_id": 5592062221,
+    "username": "Marija",
+    "status": "new",
+    "date": "02.06.2026 10:35"
   }
 }
