@@ -693,5 +693,21 @@
     "username": "Marija",
     "status": "new",
     "date": "02.06.2026 10:35"
+  },
+  "#0037": {
+    "oid": "#0037",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq 50mg",
+        "flavor": "Cool Mint",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nElfliq 50mg, вкус: Cool Mint, количество: 1",
+    "user_id": 5363595957,
+    "username": "yellow",
+    "status": "new",
+    "date": "02.06.2026 11:57"
   }
 }
