@@ -709,5 +709,21 @@
     "username": "yellow",
     "status": "new",
     "date": "02.06.2026 11:57"
+  },
+  "#0038": {
+    "oid": "#0038",
+    "items": [
+      {
+        "pid": "vaape",
+        "product_name": "Vaape Triple 90K",
+        "flavor": "Mixed Berries / Red Bull / Peach Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nVaape Triple 90K, вкус: Mixed Berries / Red Bull / Peach Ice, количество: 1",
+    "user_id": 7143750081,
+    "username": "Iljich",
+    "status": "new",
+    "date": "02.06.2026 13:28"
   }
 }
