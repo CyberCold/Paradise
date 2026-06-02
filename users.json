@@ -3347,5 +3347,13 @@
     "source": "chat",
     "registered": "2026-06-01T19:18:35.273140",
     "last_seen": "2026-06-01T19:35:18.396971"
+  },
+  "5592062221": {
+    "id": 5592062221,
+    "first_name": "Marija",
+    "username": "mariiagr9416",
+    "source": "bot_start",
+    "registered": "2026-06-02T10:33:12.715957",
+    "last_seen": "2026-06-02T10:33:12.715976"
   }
 }
