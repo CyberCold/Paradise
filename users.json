@@ -3411,5 +3411,13 @@
     "source": "chat",
     "registered": "2026-06-04T11:21:15.841775",
     "last_seen": "2026-06-04T11:21:15.841801"
+  },
+  "891152397": {
+    "id": 891152397,
+    "first_name": "",
+    "username": "scrxgod",
+    "source": "bot_start",
+    "registered": "2026-06-04T14:03:57.790018",
+    "last_seen": "2026-06-04T14:03:57.790102"
   }
 }
