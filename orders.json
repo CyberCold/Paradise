@@ -852,7 +852,8 @@
     "raw_text": "Здравствуйте, хочу заказать:\nVozol Rave 40k puffs, вкус: Strawberry Watermelon, количество: 1",
     "user_id": 5860027186,
     "username": "Санечка ",
-    "status": "new",
-    "date": "05.06.2026 14:28"
+    "status": "done",
+    "date": "05.06.2026 14:28",
+    "done_at": "2026-06-05T14:54:44.421638"
   }
 }
