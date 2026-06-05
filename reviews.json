@@ -196,5 +196,16 @@
     "comment": null,
     "date": "02.06.2026 12:04",
     "sent_to_channel": true
+  },
+  "#0042_DK Salt 50mg": {
+    "oid": "#0042",
+    "user_id": 891152397,
+    "username": "♰",
+    "product_name": "DK Salt 50mg",
+    "flavor": "Red Energy Ice",
+    "rating": 5,
+    "comment": null,
+    "date": "05.06.2026 17:08",
+    "sent_to_channel": true
   }
 }
