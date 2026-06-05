@@ -819,7 +819,24 @@
     "raw_text": "Здравствуйте, хочу заказать:\nDK Salt 50mg, вкус: Strawberry Kiwi, количество: 1",
     "user_id": 891152397,
     "username": "♰",
+    "status": "done",
+    "date": "04.06.2026 15:53",
+    "done_at": "2026-06-04T17:08:25.102776"
+  },
+  "#0044": {
+    "oid": "#0044",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq 50mg",
+        "flavor": "Pineapple Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nElfliq 50mg, вкус: Pineapple Ice, количество: 1",
+    "user_id": 5581672715,
+    "username": "Valerij",
     "status": "new",
-    "date": "04.06.2026 15:53"
+    "date": "05.06.2026 12:06"
   }
 }
