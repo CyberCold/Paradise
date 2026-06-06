@@ -871,5 +871,27 @@
     "username": "дом",
     "status": "new",
     "date": "06.06.2026 16:10"
+  },
+  "#0047": {
+    "oid": "#0047",
+    "items": [
+      {
+        "pid": "dk",
+        "product_name": "DK Salt 50mg",
+        "flavor": "Strawberry Kiwi",
+        "qty": 1
+      },
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq 50mg",
+        "flavor": "Pineapple Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nDK Salt 50mg, вкус: Strawberry Kiwi, количество: 1\nElfliq 50mg, вкус: Pineapple Ice, количество: 1 на завтра",
+    "user_id": 5363595957,
+    "username": "yellow",
+    "status": "new",
+    "date": "06.06.2026 20:00"
   }
 }
