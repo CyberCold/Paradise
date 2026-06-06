@@ -855,5 +855,21 @@
     "status": "done",
     "date": "05.06.2026 14:28",
     "done_at": "2026-06-05T14:54:44.421638"
+  },
+  "#0046": {
+    "oid": "#0046",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq 50mg",
+        "flavor": "Blue Razz Lemonade",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nElfliq 50mg, вкус: Blue Razz Lemonade, количество: 1",
+    "user_id": 778103940,
+    "username": "дом",
+    "status": "new",
+    "date": "06.06.2026 16:10"
   }
 }
