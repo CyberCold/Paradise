@@ -207,5 +207,16 @@
     "comment": null,
     "date": "05.06.2026 17:08",
     "sent_to_channel": true
+  },
+  "#0045_Vozol Rave 40k puffs": {
+    "oid": "#0045",
+    "user_id": 5860027186,
+    "username": "Санечка ",
+    "product_name": "Vozol Rave 40k puffs",
+    "flavor": "Strawberry Watermelon",
+    "rating": 5,
+    "comment": "Вкус вообще мягкий как жевачка все Гуд",
+    "date": "06.06.2026 14:57",
+    "sent_to_channel": true
   }
 }
