@@ -3531,5 +3531,13 @@
     "source": "chat",
     "registered": "2026-06-08T07:23:26.302952",
     "last_seen": "2026-06-08T11:54:17.063827"
+  },
+  "8018922274": {
+    "id": 8018922274,
+    "first_name": "Haval",
+    "username": "Havalbaget",
+    "source": "bot_start",
+    "registered": "2026-06-08T12:36:39.855301",
+    "last_seen": "2026-06-08T12:36:39.855324"
   }
 }
