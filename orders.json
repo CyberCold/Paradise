@@ -1046,5 +1046,21 @@
     "username": "Jolanta",
     "status": "cancelled",
     "date": "09.06.2026 13:38"
+  },
+  "#0056": {
+    "oid": "#0056",
+    "items": [
+      {
+        "pid": "ivg",
+        "product_name": "IVG 20mg",
+        "flavor": "Iced Melonade,pink fizz,iced melonade",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nIVG 20mg, вкус: Iced Melonade,pink fizz,iced melonade",
+    "user_id": 1519547948,
+    "username": "Danik",
+    "status": "new",
+    "date": "09.06.2026 16:02"
   }
 }
