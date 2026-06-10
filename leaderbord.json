@@ -228,6 +228,12 @@
     "date": 1780151080918
   },
   {
+    "userId": "766584545",
+    "name": "JADGUM",
+    "score": 100,
+    "date": 1781097336031
+  },
+  {
     "userId": "1382284598",
     "name": "NAPAVOZUK",
     "score": 90,
@@ -292,11 +298,5 @@
     "name": "SANECKA_WTF",
     "score": 20,
     "date": 1780327544902
-  },
-  {
-    "userId": "1033160991",
-    "name": "NIK777NUBAS",
-    "score": 20,
-    "date": 1780332018403
   }
 ]
