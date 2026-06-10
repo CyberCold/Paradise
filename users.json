@@ -200,7 +200,7 @@
     "username": "Sakataaa",
     "source": "webapp",
     "registered": "2026-05-27T09:31:32.632Z",
-    "last_seen": "2026-06-10T16:50:02.539370"
+    "last_seen": "2026-06-10T18:28:04.689458"
   },
   "800333557": {
     "id": 800333557,
@@ -3619,5 +3619,13 @@
     "source": "chat",
     "registered": "2026-06-10T17:16:48.014462",
     "last_seen": "2026-06-10T17:37:10.374583"
+  },
+  "349400151": {
+    "id": 349400151,
+    "first_name": "Ди",
+    "username": "dianabeikule",
+    "source": "bot_start",
+    "registered": "2026-06-10T18:27:54.156655",
+    "last_seen": "2026-06-10T18:27:54.156665"
   }
 }
