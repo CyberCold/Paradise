@@ -222,6 +222,12 @@
     "date": 1780320747492
   },
   {
+    "userId": "1963002934",
+    "name": "NIK",
+    "score": 120,
+    "date": 1781210447476
+  },
+  {
     "userId": "1629547925",
     "name": "BLJATJ",
     "score": 100,
@@ -292,11 +298,5 @@
     "name": "AXULENET",
     "score": 20,
     "date": 1780249329489
-  },
-  {
-    "userId": "5860027186",
-    "name": "SANECKA_WTF",
-    "score": 20,
-    "date": 1780327544902
   }
 ]
