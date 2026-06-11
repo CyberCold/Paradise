@@ -3635,5 +3635,13 @@
     "source": "chat",
     "registered": "2026-06-11T08:17:23.155493",
     "last_seen": "2026-06-11T08:26:34.550708"
+  },
+  "7231417428": {
+    "id": 7231417428,
+    "first_name": "NightEagle",
+    "username": "NightEagle2",
+    "source": "bot_start",
+    "registered": "2026-06-11T20:30:54.550355",
+    "last_seen": "2026-06-11T20:30:54.550364"
   }
 }
