@@ -229,5 +229,16 @@
     "comment": null,
     "date": "10.06.2026 15:46",
     "sent_to_channel": true
+  },
+  "#0029_DK Salt 50mg": {
+    "oid": "#0029",
+    "user_id": 924099147,
+    "username": "Evita",
+    "product_name": "DK Salt 50mg",
+    "flavor": "Strawberry Kiwi",
+    "rating": 3,
+    "comment": null,
+    "date": "12.06.2026 00:43",
+    "sent_to_channel": true
   }
 }
