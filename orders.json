@@ -1093,7 +1093,7 @@
     "raw_text": "Здравствуйте, хочу заказать:\nElfliq 50mg, вкус: Lemon Lime, количество: 1",
     "user_id": 7945029124,
     "username": "Kiril",
-    "status": "new",
+    "status": "cancelled",
     "date": "11.06.2026 08:17"
   },
   "#0059": {
@@ -1143,5 +1143,21 @@
     "username": "Kiril",
     "status": "cancelled",
     "date": "11.06.2026 08:26"
+  },
+  "#0062": {
+    "oid": "#0062",
+    "items": [
+      {
+        "pid": "star40k",
+        "product_name": "Vozol Star 40k puffs",
+        "flavor": "Watermelon Grape Boysenberry",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nVozol Star 40k puffs, вкус: Watermelon Grape Boysenberry, количество: 1",
+    "user_id": 973082265,
+    "username": "Даниил",
+    "status": "new",
+    "date": "12.06.2026 11:07"
   }
 }
