@@ -1224,5 +1224,21 @@
     "username": "Maris",
     "status": "new",
     "date": "12.06.2026 21:02"
+  },
+  "#0067": {
+    "oid": "#0067",
+    "items": [
+      {
+        "pid": "vaape",
+        "product_name": "Vaape Triple 90K",
+        "flavor": "Double Apple Ice / Strawberry Dragonfruit / Red Bull, можно сейчас встретиться?",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Привет, хочу заказать:\nVaape Triple 90K, вкус: Double Apple Ice / Strawberry Dragonfruit / Red Bull, можно сейчас встретиться?",
+    "user_id": 1345938654,
+    "username": "𝔻𝕚𝕒𝕟𝕒",
+    "status": "new",
+    "date": "13.06.2026 16:57"
   }
 }
