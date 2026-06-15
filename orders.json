@@ -1341,8 +1341,9 @@
     "raw_text": "Здравствуйте, хочу заказать:\nVozol Vista 40k puffs, вкус: Watermelon Bubblegum, количество: 1",
     "user_id": 1234898582,
     "username": "barsuchij",
-    "status": "new",
-    "date": "15.06.2026 16:35"
+    "status": "done",
+    "date": "15.06.2026 16:35",
+    "done_at": "2026-06-15T18:18:48.842748"
   },
   "#0074": {
     "oid": "#0074",
