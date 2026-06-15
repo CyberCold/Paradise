@@ -1327,5 +1327,21 @@
     "username": "barsuchij",
     "status": "new",
     "date": "15.06.2026 16:29"
+  },
+  "#0073": {
+    "oid": "#0073",
+    "items": [
+      {
+        "pid": "vista40k",
+        "product_name": "Vozol Vista 40k puffs",
+        "flavor": "Watermelon Bubblegum",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nVozol Vista 40k puffs, вкус: Watermelon Bubblegum, количество: 1",
+    "user_id": 1234898582,
+    "username": "barsuchij",
+    "status": "new",
+    "date": "15.06.2026 16:35"
   }
 }
