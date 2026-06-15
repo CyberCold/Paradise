@@ -1272,5 +1272,21 @@
     "username": "Даниил",
     "status": "cancelled",
     "date": "15.06.2026 12:48"
+  },
+  "#0070": {
+    "oid": "#0070",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq 50mg",
+        "flavor": "Cool Mint",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nElfliq 50mg, вкус: Cool Mint, количество: 1",
+    "user_id": 973082265,
+    "username": "Даниил",
+    "status": "new",
+    "date": "15.06.2026 13:01"
   }
 }
