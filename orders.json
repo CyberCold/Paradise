@@ -1256,5 +1256,21 @@
     "username": "Tomass",
     "status": "cancelled",
     "date": "13.06.2026 18:01"
+  },
+  "#0069": {
+    "oid": "#0069",
+    "items": [
+      {
+        "pid": "dk",
+        "product_name": "DK Salt 50mg",
+        "flavor": "Red Energy Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nDK Salt 50mg, вкус: Red Energy Ice, количество: 1",
+    "user_id": 973082265,
+    "username": "Даниил",
+    "status": "new",
+    "date": "15.06.2026 12:48"
   }
 }
