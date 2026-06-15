@@ -1309,8 +1309,9 @@
     "raw_text": "Здравствуйте, хочу заказать:\nVozol 50mg, вкус: Kiwi Passion Fruit Guava, количество: 2\nVozol 50mg, вкус: Lavafire, количество: 1\nDK Salt 50mg, вкус: Strawberry Kiwi, количество: 1\nDK Salt 50mg, вкус: White Peach, количество: 1",
     "user_id": 1350105420,
     "username": "Hammer",
-    "status": "new",
-    "date": "15.06.2026 15:03"
+    "status": "done",
+    "date": "15.06.2026 15:03",
+    "done_at": "2026-06-15T18:19:04.120339"
   },
   "#0072": {
     "oid": "#0072",
