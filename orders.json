@@ -1377,5 +1377,21 @@
     "username": "Да да!",
     "status": "cancelled",
     "date": "16.06.2026 14:16"
+  },
+  "#0076": {
+    "oid": "#0076",
+    "items": [
+      {
+        "pid": "dk",
+        "product_name": "DK Salt 50mg",
+        "flavor": "не указан",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Привет. Хочу взять жижку vozol - mexican mango ice и DK - cherry lime fizz.",
+    "user_id": 1243391170,
+    "username": "МАРС🔞Н",
+    "status": "new",
+    "date": "16.06.2026 18:51"
   }
 }
