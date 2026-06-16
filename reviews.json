@@ -251,5 +251,16 @@
     "comment": null,
     "date": "15.06.2026 12:08",
     "sent_to_channel": true
+  },
+  "#0073_Vozol Vista 40k puffs": {
+    "oid": "#0073",
+    "user_id": 1234898582,
+    "username": "barsuchij",
+    "product_name": "Vozol Vista 40k puffs",
+    "flavor": "Watermelon Bubblegum",
+    "rating": 5,
+    "comment": null,
+    "date": "16.06.2026 18:19",
+    "sent_to_channel": true
   }
 }
