@@ -3755,5 +3755,21 @@
     "source": "chat",
     "registered": "2026-06-16T18:39:34.314023",
     "last_seen": "2026-06-16T21:31:42.986493"
+  },
+  "1998574522": {
+    "id": 1998574522,
+    "first_name": "",
+    "username": "Undertakerqw",
+    "source": "bot_start",
+    "registered": "2026-06-20T13:20:29.116165",
+    "last_seen": "2026-06-20T13:20:29.116192"
+  },
+  "6543772308": {
+    "id": 6543772308,
+    "first_name": "Даник",
+    "username": "kkvashenij",
+    "source": "bot_start",
+    "registered": "2026-06-20T13:20:29.129891",
+    "last_seen": "2026-06-20T13:20:29.132214"
   }
 }
