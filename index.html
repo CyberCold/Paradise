@@ -441,15 +441,6 @@
                 <div class="product-price">1 - 10€</div>
             </div>
         </div>
-        <div class="product-card" onclick="openProduct('vaape')" data-badge="" data-stock="in">
-            <div class="product-image-wrap">
-                <img src="https://i.postimg.cc/8z7tS8kx/vaape-triple.png" alt="Vaape Triple 90K" class="product-image">
-            </div>
-            <div class="product-info">
-                <div class="product-name">Vaape Triple 90K</div>
-                <div class="product-price">15€</div>
-            </div>
-        </div>
         <div class="product-card" onclick="openProduct('elfliq')" data-badge="hit" data-stock="in">
             <div class="product-image-wrap">
                 <div class="product-badge badge-hit">Хит</div>
@@ -501,42 +492,7 @@
     <div class="footer-copyright">© 2025-2026 CyberCold, Co-founder of Paradise.<br>All rights reserved.</div>
 </div>
 
-<!-- PRODUCT PAGES -->
-<div class="product-page" id="product-vaape">
-    <div class="product-header">
-        <button class="back-button" onclick="closeProduct('vaape')"><span class="back-arrow">←</span> Назад</button>
-        <div class="product-header-right">
-            <span class="page-stock-badge stock-in" id="stockbadge-vaape">В наличии</span>
-            <button class="icon-btn cart-btn cart-btn-header" onclick="openCart()">
-                <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
-                <span class="cart-count hidden" id="cartCount-vaape">0</span>
-            </button>
-        </div>
-    </div>
-    <div class="image-gallery" data-product="vaape">
-        <div class="gallery-container">
-            <img src="https://i.postimg.cc/8z7tS8kx/vaape-triple.png" alt="Vaape Triple 90K" class="gallery-image" onclick="openFullscreen('vaape',0)">
-        </div>
-    </div>
-    <div class="detail-content">
-        <div class="detail-tag">Disposable</div>
-        <div class="detail-title">Vaape Triple 90K</div>
-        <div class="detail-subtitle">90 000 puffs · Triple Flavor</div>
-        <div class="divider"></div>
-        <div class="variants">
-            <h3>Выберите вкус (3 в 1)</h3>
-            <div class="variant-option" onclick="selectVariant(this,'vaape')">Mixed Berries / Red Bull / Peach Ice</div>
-            <div class="variant-option" onclick="selectVariant(this,'vaape')">Double Apple Ice / Strawberry Dragonfruit / Red Bull</div>
-        </div>
-        <div class="quantity-section"><span class="quantity-label">Количество</span><div class="quantity-control"><button class="qty-btn" onclick="changeQty('vaape',-1)">−</button><span class="qty-value" id="qty-vaape">1</span><button class="qty-btn" onclick="changeQty('vaape',1)">+</button></div></div>
-        <div class="detail-price"><span>15€</span> &nbsp;·&nbsp; Брак не меняем</div>
-        <div class="error-message" id="error-vaape">Пожалуйста, выберите вкус</div>
-        <button class="order-button" onclick="orderTelegram('vaape')">Заказать в Telegram</button>
-        <button class="add-to-cart-button" onclick="addToCart('vaape')"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>Добавить в корзину</button>
-    </div>
-</div>
-
-<div class="product-page" id="product-elfliq">
+<!-- PRODUCT PAGES --><div class="product-page" id="product-elfliq">
     <div class="product-header">
         <button class="back-button" onclick="closeProduct('elfliq')"><span class="back-arrow">←</span> Назад</button>
         <div class="product-header-right">
@@ -1000,7 +956,6 @@ document.addEventListener('click', function() {
 // ════════════ PRODUCT DATA ════════════
 const productData = {
     'vozolnew': { name: 'Vozol 50mg', variant: '', qty: 1, badge: '', stock: 'in' },
-    'vaape':    { name: 'Vaape Triple 90K', variant: '', qty: 1, badge: '', stock: 'in' },
     'elfliq':   { name: 'Elfliq 50mg', variant: '', qty: 1, badge: 'hit', stock: 'in' },
     'ivg':      { name: 'IVG 20mg', variant: '', qty: 1, badge: '', stock: 'in' },
     'truesalt': { name: 'True Salt 20mg', variant: '', qty: 1, badge: '', stock: 'in' },
