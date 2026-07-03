@@ -468,6 +468,15 @@
                 <div class="product-price">20€</div>
             </div>
         </div>
+                <div class="product-card" onclick="openProduct('vozolckick')" data-badge="" data-stock="in">
+            <div class="product-image-wrap">
+                <img src="https://i.postimg.cc/FsYGJzbY/IMG-5122.png" alt="Vozol Star Click 50k puffs" class="product-image">
+            </div>
+            <div class="product-info">
+                <div class="product-name">Vozol Star Click 50k puffs</div>
+                <div class="product-price">20€</div>
+            </div>
+        </div>
         <!-- CARDS_END -->
         </div>
     </div>
@@ -665,6 +674,60 @@
             <div class="error-message" id="error-vozolneon">Пожалуйста, выберите вкус</div>
             <button class="order-button" onclick="orderTelegram('vozolneon')">Заказать в Telegram</button>
             <button class="add-to-cart-button" onclick="addToCart('vozolneon')">
+                <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                Добавить в корзину
+            </button>
+        </div>
+    </div>
+    
+    
+    <div class="product-page" id="product-vozolckick">
+        <div class="product-header">
+            <button class="back-button" onclick="closeProduct('vozolckick')">
+                <span class="back-arrow">←</span> Назад
+            </button>
+            <div class="product-header-right">
+                <span class="page-stock-badge stock-in" id="stockbadge-vozolckick">В наличии</span>
+                <button class="icon-btn cart-btn cart-btn-header" onclick="openCart()" aria-label="Корзина">
+                    <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                    <span class="cart-count hidden" id="cartCount-vozolckick">0</span>
+                </button>
+            </div>
+        </div>
+        <div class="image-gallery" data-product="vozolckick">
+            <div class="gallery-container">
+                <img src="https://i.postimg.cc/FsYGJzbY/IMG-5122.png" alt="Vozol Star Click 50k puffs" class="gallery-image" onclick="openFullscreen('vozolckick', 0)">
+            </div>
+        </div>
+        <div class="detail-content">
+            <div class="detail-tag">Disposable</div>
+            <div class="detail-title">Vozol Star Click 50k puffs</div>
+            <div class="detail-subtitle">50 000 puffs • 50mg • salt nicotine</div>
+            <div class="divider"></div>
+            <div class="variants">
+                <h3>Выберите вкус</h3>
+                <div class="variant-option" onclick="selectVariant(this,'vozolckick')">Blackberry pomegranate cherry</div>
+                <div class="variant-option" onclick="selectVariant(this,'vozolckick')">Tropical fruit storm</div>
+                <div class="variant-option" onclick="selectVariant(this,'vozolckick')">Love 777</div>
+                <div class="variant-option" onclick="selectVariant(this,'vozolckick')">Orange molasses</div>
+                <div class="variant-option" onclick="selectVariant(this,'vozolckick')">Peach ice</div>
+                <div class="variant-option" onclick="selectVariant(this,'vozolckick')">Mixed berry</div>
+                <div class="variant-option" onclick="selectVariant(this,'vozolckick')">Blueberry energy</div>
+            </div>
+            <div class="quantity-section">
+                <span class="quantity-label">Количество</span>
+                <div class="quantity-control">
+                    <button class="qty-btn" onclick="changeQty('vozolckick',-1)">−</button>
+                    <span class="qty-value" id="qty-vozolckick">1</span>
+                    <button class="qty-btn" onclick="changeQty('vozolckick',1)">+</button>
+                </div>
+            </div>
+            <div class="detail-price">
+                <span>20€</span>
+            </div>
+            <div class="error-message" id="error-vozolckick">Пожалуйста, выберите вкус</div>
+            <button class="order-button" onclick="orderTelegram('vozolckick')">Заказать в Telegram</button>
+            <button class="add-to-cart-button" onclick="addToCart('vozolckick')">
                 <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
                 Добавить в корзину
             </button>
@@ -976,6 +1039,7 @@ document.addEventListener('click', function() {
 
 // ════════════ PRODUCT DATA ════════════
 const productData = {
+    'vozolckick': { name: 'Vozol Star Click 50k puffs', variant: '', qty: 1, badge: '', stock: 'in' },
     'vozolneon': { name: 'Vozol Neon 60k puffs', variant: '', qty: 1, badge: '', stock: 'in' },
     'vozolnew': { name: 'Vozol 50mg', variant: '', qty: 1, badge: '', stock: 'in' },
     'ivg':      { name: 'IVG 20mg', variant: '', qty: 1, badge: '', stock: 'in' },
