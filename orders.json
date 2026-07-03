@@ -1393,5 +1393,21 @@
     "username": "МАРС🔞Н",
     "status": "cancelled",
     "date": "16.06.2026 18:51"
+  },
+  "#0077": {
+    "oid": "#0077",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Strawberry watermelon",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nVozol 50mg, вкус: Strawberry watermelon, количество: 1",
+    "user_id": 1237982371,
+    "username": "Муза 🦋",
+    "status": "new",
+    "date": "03.07.2026 20:18"
   }
 }
