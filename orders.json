@@ -1409,5 +1409,21 @@
     "username": "Муза 🦋",
     "status": "new",
     "date": "03.07.2026 20:18"
+  },
+  "#0078": {
+    "oid": "#0078",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Purple candy",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nVozol 50mg, вкус: Purple candy, количество: 1",
+    "user_id": 627058333,
+    "username": "A N A S T A S I J A",
+    "status": "new",
+    "date": "03.07.2026 20:31"
   }
 }
