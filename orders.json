@@ -1442,5 +1442,21 @@
     "username": "CLS",
     "status": "new",
     "date": "04.07.2026 13:13"
+  },
+  "#0080": {
+    "oid": "#0080",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Mixed berries",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nVozol 50mg, вкус: Mixed berries, количество: 1",
+    "user_id": 7511735897,
+    "username": "ᅠ ᅠ ᅠ ᅠ ᅠ ᅠ",
+    "status": "new",
+    "date": "04.07.2026 15:34"
   }
 }
