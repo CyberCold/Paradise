@@ -1474,5 +1474,21 @@
     "username": "ᅠ ᅠ ᅠ ᅠ ᅠ ᅠ",
     "status": "cancelled",
     "date": "04.07.2026 15:34"
+  },
+  "#0082": {
+    "oid": "#0082",
+    "items": [
+      {
+        "pid": "vozolneon",
+        "product_name": "Vozol Neon 60k puffs",
+        "flavor": "Blue cotton candy",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nVozol 50mg, вкус: Blue cotton candy, количество: 1",
+    "user_id": 1636239325,
+    "username": "rob4ik",
+    "status": "new",
+    "date": "04.07.2026 15:56"
   }
 }
