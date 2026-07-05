@@ -1506,7 +1506,7 @@
     "raw_text": "Здравствуйте, хочу заказать:\nVozol 50mg, вкус: Love 777, количество: 1",
     "user_id": 1331893889,
     "username": "Veronika",
-    "status": "new",
+    "status": "cancelled",
     "date": "05.07.2026 11:25"
   },
   "#0084": {
@@ -1546,5 +1546,21 @@
     "username": "Бибизяна",
     "status": "cancelled",
     "date": "05.07.2026 16:23"
+  },
+  "#0086": {
+    "oid": "#0086",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Mixed berries",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу повторить заказ:\nVozol 50mg, вкус: Mixed berries, количество: 1",
+    "user_id": 7511735897,
+    "username": "ᅠ ᅠ ᅠ ᅠ ᅠ ᅠ",
+    "status": "new",
+    "date": "05.07.2026 16:36"
   }
 }
