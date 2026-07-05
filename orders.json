@@ -1492,5 +1492,21 @@
     "status": "done",
     "date": "04.07.2026 15:56",
     "done_at": "2026-07-04T18:22:54.543253"
+  },
+  "#0083": {
+    "oid": "#0083",
+    "items": [
+      {
+        "pid": "vozolneon",
+        "product_name": "Vozol Neon 60k puffs",
+        "flavor": "Love 777",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nVozol 50mg, вкус: Love 777, количество: 1",
+    "user_id": 1331893889,
+    "username": "Veronika",
+    "status": "new",
+    "date": "05.07.2026 11:25"
   }
 }
