@@ -1608,7 +1608,8 @@
     "raw_text": "Здравствуйте, хочу заказать:\nVozol Neon 60k puffs, вкус: Blackberry pomegranate cherry, количество: 1",
     "user_id": 1363009350,
     "username": "Устин",
-    "status": "new",
-    "date": "05.07.2026 18:31"
+    "status": "done",
+    "date": "05.07.2026 18:31",
+    "done_at": "2026-07-05T19:40:13.203922"
   }
 }
