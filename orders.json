@@ -1560,7 +1560,7 @@
     "raw_text": "Здравствуйте, хочу повторить заказ:\nVozol 50mg, вкус: Mixed berries, количество: 1",
     "user_id": 7511735897,
     "username": "ᅠ ᅠ ᅠ ᅠ ᅠ ᅠ",
-    "status": "new",
+    "status": "cancelled",
     "date": "05.07.2026 16:36"
   },
   "#0087": {
@@ -1576,7 +1576,7 @@
     "raw_text": "Здравствуйте, хочу заказать:\nVozol Neon 60k puffs, вкус: Cappuccino, количество: 1",
     "user_id": 7511735897,
     "username": "ᅠ ᅠ ᅠ ᅠ ᅠ ᅠ",
-    "status": "new",
+    "status": "cancelled",
     "date": "05.07.2026 16:36"
   },
   "#0088": {
@@ -1594,5 +1594,21 @@
     "username": "ᅠ ᅠ ᅠ ᅠ ᅠ ᅠ",
     "status": "cancelled",
     "date": "05.07.2026 16:37"
+  },
+  "#0089": {
+    "oid": "#0089",
+    "items": [
+      {
+        "pid": "vozolneon",
+        "product_name": "Vozol Neon 60k puffs",
+        "flavor": "Blackberry pomegranate cherry",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nVozol Neon 60k puffs, вкус: Blackberry pomegranate cherry, количество: 1",
+    "user_id": 1363009350,
+    "username": "Устин",
+    "status": "new",
+    "date": "05.07.2026 18:31"
   }
 }
