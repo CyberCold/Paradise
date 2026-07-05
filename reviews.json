@@ -262,5 +262,16 @@
     "comment": null,
     "date": "16.06.2026 18:19",
     "sent_to_channel": true
+  },
+  "#0082_Vozol Neon 60k puffs": {
+    "oid": "#0082",
+    "user_id": 1636239325,
+    "username": "rob4ik",
+    "product_name": "Vozol Neon 60k puffs",
+    "flavor": "Blue cotton candy",
+    "rating": 4,
+    "comment": null,
+    "date": "05.07.2026 18:24",
+    "sent_to_channel": true
   }
 }
