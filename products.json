@@ -1,1 +1,79 @@
-
+{
+  "ivg": {
+    "keywords": [
+      "ivg",
+      "blackcurrant mango",
+      "ice menthol"
+    ],
+    "full_name": "IVG"
+  },
+  "truesalt": {
+    "keywords": [
+      "truesalt",
+      "true salt",
+      "true",
+      "salt",
+      "banana ice"
+    ],
+    "full_name": "True Salt"
+  },
+  "vozolnew": {
+    "keywords": [
+      "vozolnew",
+      "vozol 50mg",
+      "vozol",
+      "50mg",
+      "mixed berries",
+      "cherry lemon peach",
+      "dragon fruit banana cherry",
+      "watermelon bubble gum",
+      "cola gummies",
+      "blue cotton candy",
+      "love 777",
+      "kiwi passion fruit guava",
+      "purple candy",
+      "mexican mango ice",
+      "berry peach",
+      "cherry vanilla cream"
+    ],
+    "full_name": "Vozol 50mg"
+  },
+  "vozolneon": {
+    "keywords": [
+      "vozolneon",
+      "vozol neon 60k puffs",
+      "vozol",
+      "neon",
+      "60k",
+      "puffs",
+      "strawberry gum",
+      "blackberry ice",
+      "mixed beries",
+      "cappuccino",
+      "date shake molasses",
+      "blueberry energy",
+      "iced mint tea",
+      "blackberry pomegranate cherry"
+    ],
+    "full_name": "Vozol Neon 60k puffs"
+  },
+  "vozolckick": {
+    "keywords": [
+      "vozolckick",
+      "vozol star click 50k puffs",
+      "vozol",
+      "star",
+      "click",
+      "50k",
+      "puffs",
+      "blackberry pomegranate cherry",
+      "tropical fruit storm",
+      "love 777",
+      "orange molasses",
+      "peach ice",
+      "mixed berry",
+      "blueberry energy"
+    ],
+    "full_name": "Vozol Star Click 50k puffs"
+  }
+}
