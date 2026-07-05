@@ -1524,5 +1524,27 @@
     "username": "pivNaja",
     "status": "new",
     "date": "05.07.2026 13:23"
+  },
+  "#0085": {
+    "oid": "#0085",
+    "items": [
+      {
+        "pid": "vozolneon",
+        "product_name": "Vozol Neon 60k puffs",
+        "flavor": "не указан",
+        "qty": 1
+      },
+      {
+        "pid": "vozolneon",
+        "product_name": "Vozol Neon 60k puffs",
+        "flavor": "не указан",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nVozol 50mg Watermelon Bubblegum  \nVozol 50mg Cherry Lemon Peach",
+    "user_id": 6338599725,
+    "username": "Бибизяна",
+    "status": "new",
+    "date": "05.07.2026 16:23"
   }
 }
