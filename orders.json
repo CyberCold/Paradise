@@ -1562,5 +1562,21 @@
     "username": "ᅠ ᅠ ᅠ ᅠ ᅠ ᅠ",
     "status": "new",
     "date": "05.07.2026 16:36"
+  },
+  "#0087": {
+    "oid": "#0087",
+    "items": [
+      {
+        "pid": "vozolneon",
+        "product_name": "Vozol Neon 60k puffs",
+        "flavor": "Cappuccino",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nVozol Neon 60k puffs, вкус: Cappuccino, количество: 1",
+    "user_id": 7511735897,
+    "username": "ᅠ ᅠ ᅠ ᅠ ᅠ ᅠ",
+    "status": "new",
+    "date": "05.07.2026 16:36"
   }
 }
