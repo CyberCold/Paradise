@@ -3883,5 +3883,13 @@
     "source": "chat",
     "registered": "2026-07-05T10:23:35.833873",
     "last_seen": "2026-07-05T10:23:35.833873"
+  },
+  "8008069612": {
+    "id": 8008069612,
+    "first_name": "Kaung Kaung",
+    "username": "",
+    "source": "bot_start",
+    "registered": "2026-07-05T10:48:36.979725",
+    "last_seen": "2026-07-05T10:48:36.979725"
   }
 }
