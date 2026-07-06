@@ -1627,5 +1627,21 @@
     "username": "barsuchij",
     "status": "cancelled",
     "date": "06.07.2026 14:43"
+  },
+  "#0091": {
+    "oid": "#0091",
+    "items": [
+      {
+        "pid": "vozolneon",
+        "product_name": "Vozol Neon 60k puffs",
+        "flavor": "Kiwi passion fruit guava",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nVozol 50mg, вкус: Kiwi passion fruit guava, количество: 1",
+    "user_id": 1234898582,
+    "username": "barsuchij",
+    "status": "new",
+    "date": "06.07.2026 14:49"
   }
 }
