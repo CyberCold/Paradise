@@ -1707,5 +1707,27 @@
     "username": "ᅠ ᅠ ᅠ ᅠ ᅠ ᅠ",
     "status": "cancelled",
     "date": "06.07.2026 16:04"
+  },
+  "#0096": {
+    "oid": "#0096",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Dragon fruit banana cherry",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Cherry vanilla cream",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nVozol 50mg, вкус: Dragon fruit banana cherry, количество: 1\nVozol 50mg, вкус: Cherry vanilla cream, количество: 1",
+    "user_id": 797355997,
+    "username": "Дима",
+    "status": "new",
+    "date": "08.07.2026 13:29"
   }
 }
