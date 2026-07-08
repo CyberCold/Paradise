@@ -1727,7 +1727,8 @@
     "raw_text": "Здравствуйте, хочу заказать:\nVozol 50mg, вкус: Dragon fruit banana cherry, количество: 1\nVozol 50mg, вкус: Cherry vanilla cream, количество: 1",
     "user_id": 797355997,
     "username": "Дима",
-    "status": "new",
-    "date": "08.07.2026 13:29"
+    "status": "done",
+    "date": "08.07.2026 13:29",
+    "done_at": "2026-07-08T15:42:23.736344"
   }
 }
