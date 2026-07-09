@@ -1752,5 +1752,27 @@
     "username": "Mr.Uwu",
     "status": "cancelled",
     "date": "08.07.2026 20:01"
+  },
+  "#0098": {
+    "oid": "#0098",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Cherry lemon peach",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Kiwi passion fruit guava",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nVozol 50mg, вкус: Cherry lemon peach, количество: 1\nVozol 50mg, вкус: Kiwi passion fruit guava, количество: 1",
+    "user_id": 748636930,
+    "username": "ᅠ",
+    "status": "new",
+    "date": "09.07.2026 03:49"
   }
 }
