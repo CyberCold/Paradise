@@ -1774,5 +1774,21 @@
     "username": "ᅠ",
     "status": "new",
     "date": "09.07.2026 03:49"
+  },
+  "#0099": {
+    "oid": "#0099",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Cherry vanilla cream",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nVozol 50mg, вкус: Cherry vanilla cream, количество: 1",
+    "user_id": 1382284598,
+    "username": "Эдгар",
+    "status": "new",
+    "date": "09.07.2026 17:56"
   }
 }
