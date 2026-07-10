@@ -273,5 +273,16 @@
     "comment": null,
     "date": "05.07.2026 18:24",
     "sent_to_channel": true
+  },
+  "#0098_Vozol 50mg": {
+    "oid": "#0098",
+    "user_id": 748636930,
+    "username": "ᅠ",
+    "product_name": "Vozol 50mg",
+    "flavor": "Cherry lemon peach",
+    "rating": 3,
+    "comment": "гавно со вкусом швепса три из жалости только",
+    "date": "10.07.2026 19:29",
+    "sent_to_channel": true
   }
 }
