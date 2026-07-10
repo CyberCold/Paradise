@@ -1858,5 +1858,21 @@
     "status": "done",
     "date": "10.07.2026 16:40",
     "done_at": "2026-07-10T18:16:03.585565"
+  },
+  "#0104": {
+    "oid": "#0104",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Mixed beries",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nVozol Neon 60k puffs, вкус: Mixed beries, количество: 1",
+    "user_id": 706514627,
+    "username": "Толяшын",
+    "status": "new",
+    "date": "10.07.2026 19:09"
   }
 }
