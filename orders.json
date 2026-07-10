@@ -1841,5 +1841,21 @@
     "username": "🗡️",
     "status": "new",
     "date": "10.07.2026 05:13"
+  },
+  "#0103": {
+    "oid": "#0103",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "не указан",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Привет, хочу взять сегодня 3 банки жижи, vozol: dragon fruit banana cherry, blue cotton candy, love 777",
+    "user_id": 6069639634,
+    "username": "СНЕ❄️АНА",
+    "status": "new",
+    "date": "10.07.2026 16:40"
   }
 }
