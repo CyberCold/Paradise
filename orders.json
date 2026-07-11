@@ -1923,5 +1923,21 @@
     "username": "Nigga Jones",
     "status": "new",
     "date": "11.07.2026 17:50"
+  },
+  "#0108": {
+    "oid": "#0108",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Kiwi passion fruit guava",
+        "qty": 4
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nVozol 50mg, вкус: Kiwi passion fruit guava, количество: 4",
+    "user_id": 8202961738,
+    "username": "Portul",
+    "status": "new",
+    "date": "11.07.2026 18:27"
   }
 }
