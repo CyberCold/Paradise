@@ -284,5 +284,16 @@
     "comment": "гавно со вкусом швепса три из жалости только",
     "date": "10.07.2026 19:29",
     "sent_to_channel": true
+  },
+  "#0100_Vozol 50mg": {
+    "oid": "#0100",
+    "user_id": 999151926,
+    "username": "Молли",
+    "product_name": "Vozol 50mg",
+    "flavor": "Kiwi passion fruit guava",
+    "rating": 5,
+    "comment": null,
+    "date": "11.07.2026 10:37",
+    "sent_to_channel": true
   }
 }
