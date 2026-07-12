@@ -4059,5 +4059,13 @@
     "source": "bot_start",
     "registered": "2026-07-12T13:02:15.423031",
     "last_seen": "2026-07-12T13:02:15.423031"
+  },
+  "1365242800": {
+    "id": 1365242800,
+    "first_name": "@Name",
+    "username": "Name_MeVB",
+    "source": "bot_start",
+    "registered": "2026-07-12T21:43:09.514708",
+    "last_seen": "2026-07-12T21:43:09.515710"
   }
 }
