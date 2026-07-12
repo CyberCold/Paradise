@@ -295,5 +295,16 @@
     "comment": null,
     "date": "11.07.2026 10:37",
     "sent_to_channel": true
+  },
+  "#0096_Vozol 50mg": {
+    "oid": "#0096",
+    "user_id": 797355997,
+    "username": "Дима",
+    "product_name": "Vozol 50mg",
+    "flavor": "Dragon fruit banana cherry",
+    "rating": 4,
+    "comment": null,
+    "date": "12.07.2026 16:38",
+    "sent_to_channel": true
   }
 }
