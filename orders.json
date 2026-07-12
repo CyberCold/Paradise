@@ -1937,7 +1937,8 @@
     "raw_text": "Здравствуйте, хочу заказать:\nVozol 50mg, вкус: Kiwi passion fruit guava, количество: 4",
     "user_id": 8202961738,
     "username": "Portul",
-    "status": "new",
-    "date": "11.07.2026 18:27"
+    "status": "done",
+    "date": "11.07.2026 18:27",
+    "done_at": "2026-07-12T18:51:02.674818"
   }
 }
