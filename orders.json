@@ -1905,7 +1905,7 @@
     "raw_text": "Здравствуйте, хочу заказать:\nVozol 50mg, вкус: Cherry vanilla cream, количество: 1",
     "user_id": 1089785237,
     "username": "rhz «!₽ 1512 :* © #lowtier",
-    "status": "new",
+    "status": "cancelled",
     "date": "11.07.2026 12:21"
   },
   "#0107": {
@@ -1940,5 +1940,21 @@
     "status": "done",
     "date": "11.07.2026 18:27",
     "done_at": "2026-07-12T18:51:02.674818"
+  },
+  "#0109": {
+    "oid": "#0109",
+    "items": [
+      {
+        "pid": "vozolckick",
+        "product_name": "Vozol Star Click 50k puffs",
+        "flavor": "Blueberry energy",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nVozol Neon 60k puffs, вкус: Blueberry energy, количество: 1\nVozol Neon 60k puffs, вкус: Mixed beries, количество: 1",
+    "user_id": 1365242800,
+    "username": "@Name",
+    "status": "new",
+    "date": "12.07.2026 21:43"
   }
 }
