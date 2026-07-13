@@ -1972,5 +1972,21 @@
     "username": "Hammer",
     "status": "new",
     "date": "13.07.2026 14:52"
+  },
+  "#0111": {
+    "oid": "#0111",
+    "items": [
+      {
+        "pid": "vozolckick",
+        "product_name": "Vozol Star Click 50k puffs",
+        "flavor": "Blueberry energy",
+        "qty": 1
+      }
+    ],
+    "raw_text": "привет, хочу заказать:\nVozol Neon 60k puffs, вкус: Blueberry energy",
+    "user_id": 1008160028,
+    "username": "erikaaa🐈‍⬛",
+    "status": "new",
+    "date": "13.07.2026 16:23"
   }
 }
