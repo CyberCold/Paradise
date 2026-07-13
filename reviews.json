@@ -306,5 +306,16 @@
     "comment": null,
     "date": "12.07.2026 16:38",
     "sent_to_channel": true
+  },
+  "#0108_Vozol 50mg": {
+    "oid": "#0108",
+    "user_id": 8202961738,
+    "username": "Portul",
+    "product_name": "Vozol 50mg",
+    "flavor": "Kiwi passion fruit guava",
+    "rating": 4,
+    "comment": null,
+    "date": "13.07.2026 19:40",
+    "sent_to_channel": true
   }
 }
