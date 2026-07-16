@@ -2021,5 +2021,21 @@
     "username": "🇱🇻",
     "status": "new",
     "date": "15.07.2026 16:43"
+  },
+  "#0114": {
+    "oid": "#0114",
+    "items": [
+      {
+        "pid": "vozolckick",
+        "product_name": "Vozol Star Click 50k puffs",
+        "flavor": "Love 777",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотела бы уточнить информацию по товару:\nVozol 50mg, вкус: Love 777, количество: 1\nС доставкой,если возможно.\nЯ буду на Bauskas 23",
+    "user_id": 1265640658,
+    "username": "Kris.",
+    "status": "new",
+    "date": "16.07.2026 13:41"
   }
 }
