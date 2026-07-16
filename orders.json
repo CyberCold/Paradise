@@ -2059,5 +2059,33 @@
     "username": "Sergey",
     "status": "new",
     "date": "16.07.2026 16:49"
+  },
+  "#0116": {
+    "oid": "#0116",
+    "items": [
+      {
+        "pid": "vozolckick",
+        "product_name": "Vozol Star Click 50k puffs",
+        "flavor": "Blackberry pomegranate cherry",
+        "qty": 1
+      },
+      {
+        "pid": "vozolckick",
+        "product_name": "Vozol Star Click 50k puffs",
+        "flavor": "Love 777",
+        "qty": 1
+      },
+      {
+        "pid": "vozolckick",
+        "product_name": "Vozol Star Click 50k puffs",
+        "flavor": "Love 777",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol Star Click 50k puffs, вкус: Blackberry pomegranate cherry, количество: 1\nVozol Star Click 50k puffs, вкус: Love 777, количество: 1\nVozol 50mg, вкус: Dragon fruit banana cherry, количество: 1\nVozol 50mg, вкус: Love 777, количество: 1",
+    "user_id": 568793227,
+    "username": "Sergey",
+    "status": "new",
+    "date": "16.07.2026 16:50"
   }
 }
