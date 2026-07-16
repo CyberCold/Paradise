@@ -7987,5 +7987,13 @@
     "source": "chat",
     "registered": "2026-07-14T22:27:59.510281",
     "last_seen": "2026-07-14T22:27:59.510281"
+  },
+  "1265640658": {
+    "id": 1265640658,
+    "first_name": "Kris.",
+    "username": "Dem0nta",
+    "source": "bot_start",
+    "registered": "2026-07-16T13:40:18.188941",
+    "last_seen": "2026-07-16T13:40:18.188941"
   }
 }
