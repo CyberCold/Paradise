@@ -2109,5 +2109,21 @@
     "username": "Mr.Uwu",
     "status": "new",
     "date": "16.07.2026 20:56"
+  },
+  "#0118": {
+    "oid": "#0118",
+    "items": [
+      {
+        "pid": "vozolckick",
+        "product_name": "Vozol Star Click 50k puffs",
+        "flavor": "Blueberry energy",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел бы уточнить информацию по товару:\nVozol Neon 60k puffs, вкус: Blueberry energy, количество: 1",
+    "user_id": 928475006,
+    "username": "scamlairryy 💵💸",
+    "status": "new",
+    "date": "17.07.2026 09:59"
   }
 }
