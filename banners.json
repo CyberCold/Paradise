@@ -2,10 +2,10 @@
   {
     "id": "welcome-paradise",
     "title": "НОВОСТИ PARADISE",
-    "text": "Теперь здесь будут поступления, акции и важные объявления.",
-    "image": "",
-    "button": "ОТКРЫТЬ TELEGRAM",
-    "url": "https://t.me/smkParadiseManager",
+    "text": "Тестовый баннер для проверки карусели.",
+    "image": "https://i.postimg.cc/RhZxW67c/IMG-4851.png",
+    "button": "",
+    "url": "",
     "active": true,
     "created_at": "2026-07-18T00:00:00Z"
   }
