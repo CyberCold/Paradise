@@ -1391,7 +1391,7 @@
     "username": "Laufbursche0",
     "source": "chat",
     "registered": "2026-05-27T11:37:40.588430",
-    "last_seen": "2026-07-18T17:05:47.624Z",
+    "last_seen": "2026-07-18T17:10:25.144Z",
     "last_name": "",
     "sources": [
       "chat",
@@ -1399,7 +1399,7 @@
     ],
     "language_code": "ru",
     "is_premium": false,
-    "visit_count": 1,
+    "visit_count": 2,
     "ips": [
       {
         "ip": "5.241.132.78",
@@ -1411,11 +1411,38 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-07-18T17:05:47.624Z",
-        "last_seen": "2026-07-18T17:05:47.624Z",
-        "visits": 1
+        "last_seen": "2026-07-18T17:10:25.144Z",
+        "visits": 2
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-07-18T17:10:25.144Z",
+        "ip": "5.241.132.78",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "user_agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.18 Mobile Safari/537.36 Telegram-Android/12.8.3 (Huawei MAR-LX1A; Android 10; SDK 29; AVERAGE)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "151.0.7922.18",
+        "os": "Android",
+        "os_version": "10",
+        "language": "ru",
+        "cf_ray": "a1d31986fab4543e",
+        "screen": null,
+        "tz_client": null,
+        "color_depth": null,
+        "touch": null,
+        "platform": null,
+        "memory": null,
+        "cores": null,
+        "connection": null,
+        "webgl_vendor": null,
+        "languages": []
+      },
       {
         "timestamp": "2026-07-18T17:05:47.624Z",
         "ip": "5.241.132.78",
@@ -1434,11 +1461,11 @@
         "cf_ray": "a1d312c09c11e4e0",
         "screen": null,
         "tz_client": null,
-        "color_depth": null,
-        "touch": null,
+        "color_depth": 0,
+        "touch": 0,
         "platform": null,
-        "memory": null,
-        "cores": null,
+        "memory": 0,
+        "cores": 0,
         "connection": null,
         "webgl_vendor": null,
         "languages": []
@@ -1448,17 +1475,17 @@
       "screen": null,
       "timezone": null,
       "color_depth": null,
-      "touch": null,
+      "touch": 0,
       "platform": null,
-      "memory": null,
-      "cores": null,
+      "memory": 0,
+      "cores": 0,
       "connection": null,
       "webgl_vendor": null,
       "languages": [],
       "device": "Android Phone",
       "browser": "Chrome",
       "os": "Android",
-      "updated_at": "2026-07-18T17:05:47.624Z"
+      "updated_at": "2026-07-18T17:10:25.144Z"
     },
     "geo": {
       "country": "LV",
