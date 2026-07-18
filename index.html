@@ -109,6 +109,23 @@
         .container{padding:18px 12px 40px;
             background-image:linear-gradient(rgba(181,118,58,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(181,118,58,.04) 1px,transparent 1px);
             background-size:24px 24px}
+        .promo-carousel{margin:0 0 18px;position:relative;overflow:hidden;border:3px solid var(--border);background:var(--surface);box-shadow:4px 4px 0 #000}
+        .promo-window{overflow:hidden;position:relative}
+        .promo-track{display:flex;transition:transform .42s steps(5,end)}
+        .promo-slide{min-width:100%;min-height:142px;display:flex;align-items:stretch;color:var(--text);text-decoration:none;background:var(--surface);position:relative}
+        .promo-slide::before,.promo-slide::after{content:'';position:absolute;width:9px;height:9px;background:var(--accent);z-index:2}
+        .promo-slide::before{top:0;left:0}.promo-slide::after{right:0;bottom:0}
+        .promo-copy{padding:16px 14px 13px;display:flex;flex:1;flex-direction:column;justify-content:center;min-width:0;position:relative;z-index:1}
+        .promo-label{font-family:'Press Start 2P',monospace;font-size:6px;color:var(--accent);letter-spacing:1px;margin-bottom:9px;text-transform:uppercase}
+        .promo-title{font-family:'Press Start 2P',monospace;font-size:11px;line-height:1.55;letter-spacing:1px;margin-bottom:7px;text-transform:uppercase}
+        .promo-text{font-size:18px;line-height:1.05;color:var(--muted);max-width:235px}
+        .promo-action{align-self:flex-start;margin-top:11px;background:var(--accent);border:2px solid #000;box-shadow:2px 2px 0 #000;padding:7px 8px;color:#000;font-family:'Press Start 2P',monospace;font-size:6px;letter-spacing:.4px}
+        .promo-visual{width:34%;min-width:108px;border-left:3px solid var(--border);background:linear-gradient(135deg,var(--accent-light),transparent 55%),repeating-linear-gradient(0deg,rgba(181,118,58,.12) 0 1px,transparent 1px 6px);display:flex;align-items:center;justify-content:center;overflow:hidden}
+        .promo-visual img{width:100%;height:100%;object-fit:cover;image-rendering:auto}.promo-pixel{font-family:'Press Start 2P',monospace;font-size:30px;color:var(--accent);text-shadow:3px 3px #000;animation:pixelJump 2.2s steps(5,end) infinite}
+        .promo-nav{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:26px;height:34px;background:var(--surface);border:2px solid var(--border);box-shadow:2px 2px 0 #000;color:var(--accent);font-family:'Press Start 2P',monospace;font-size:10px;cursor:pointer}.promo-nav:active{transform:translate(-2px,calc(-50% + 2px));box-shadow:none}.promo-prev{left:7px}.promo-next{right:7px}
+        .promo-dots{display:flex;justify-content:center;gap:6px;padding:9px;border-top:2px solid var(--border);background:var(--surface2)}.promo-dot{width:9px;height:9px;border:2px solid var(--border);background:var(--bg);cursor:pointer;padding:0}.promo-dot.active{background:var(--accent);box-shadow:1px 1px 0 #000}
+        @media(max-width:360px){.promo-title{font-size:9px}.promo-text{font-size:16px}.promo-visual{min-width:88px}.promo-copy{padding-left:13px}.promo-nav{display:none}}
+        @media(prefers-reduced-motion:reduce){.promo-track{transition:none}.promo-pixel{animation:none}}
         .products-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
         .search-results{display:none;padding:0}
         .search-results.active{display:block}
@@ -427,6 +444,14 @@
 
 <div class="main-content">
     <div class="container">
+        <section class="promo-carousel" id="promoCarousel" hidden aria-label="Новости и объявления">
+            <div class="promo-window">
+                <div class="promo-track" id="promoTrack"></div>
+                <button class="promo-nav promo-prev" id="promoPrev" type="button" aria-label="Предыдущий баннер">&lt;</button>
+                <button class="promo-nav promo-next" id="promoNext" type="button" aria-label="Следующий баннер">&gt;</button>
+            </div>
+            <div class="promo-dots" id="promoDots" aria-label="Переключение баннеров"></div>
+        </section>
         <div id="lastOrderBlock"></div>
         <div class="search-results" id="searchResults"></div>
         <div class="products-grid" id="productsGrid">
@@ -1812,7 +1837,41 @@ function snakeStopMusic(){
     if(snMusicTimer){clearTimeout(snMusicTimer);snMusicTimer=null;}
 }
 
+// ════════════ PROMO BANNERS ════════════
+let promoBanners=[],promoIndex=0,promoTimer=null;
+function promoEscape(value){return String(value||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function promoUrl(value){try{const url=new URL(String(value||''));return /^https?:$/.test(url.protocol)?url.href:'';}catch(e){return '';}}
+function promoShow(index){
+    if(!promoBanners.length)return;
+    promoIndex=(index+promoBanners.length)%promoBanners.length;
+    document.getElementById('promoTrack').style.transform=`translateX(-${promoIndex*100}%)`;
+    document.querySelectorAll('.promo-dot').forEach((dot,i)=>dot.classList.toggle('active',i===promoIndex));
+}
+function promoRestart(){
+    if(promoTimer)clearInterval(promoTimer);
+    if(promoBanners.length>1)promoTimer=setInterval(()=>promoShow(promoIndex+1),5500);
+}
+function renderPromoBanners(items){
+    promoBanners=items.filter(item=>item&&item.active!==false&&item.title);
+    const carousel=document.getElementById('promoCarousel');
+    const track=document.getElementById('promoTrack');
+    const dots=document.getElementById('promoDots');
+    if(!promoBanners.length){carousel.hidden=true;return;}
+    track.innerHTML=promoBanners.map(item=>{
+        const href=promoUrl(item.url),image=promoUrl(item.image);
+        const tag=href?'a':'div'; const link=href?` href="${promoEscape(href)}" target="_blank" rel="noopener"`:'';
+        return `<${tag} class="promo-slide"${link}><div class="promo-copy"><div class="promo-label">★ Paradise news</div><div class="promo-title">${promoEscape(item.title)}</div><div class="promo-text">${promoEscape(item.text)}</div>${href?`<span class="promo-action">${promoEscape(item.button||'ОТКРЫТЬ')}</span>`:''}</div><div class="promo-visual">${image?`<img src="${promoEscape(image)}" alt="">`:'<span class="promo-pixel">★</span>'}</div></${tag}>`;
+    }).join('');
+    dots.innerHTML=promoBanners.map((_,i)=>`<button class="promo-dot${i===0?' active':''}" type="button" aria-label="Баннер ${i+1}" data-promo="${i}"></button>`).join('');
+    carousel.hidden=false;promoIndex=0;promoShow(0);promoRestart();
+    dots.querySelectorAll('[data-promo]').forEach(dot=>dot.addEventListener('click',()=>{promoShow(Number(dot.dataset.promo));promoRestart();}));
+}
+async function loadPromoBanners(){
+    try{const response=await fetch(`banners.json?_=${Date.now()}`);if(!response.ok)throw new Error('banners');renderPromoBanners(await response.json());}catch(e){renderPromoBanners([]);}
+}
+
 // ════════════ INIT ════════════
+loadPromoBanners();
 loadLastOrder();
 document.getElementById('sn-hi').textContent=snGetHi();
 snakeLBRender();
