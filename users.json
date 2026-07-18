@@ -3403,11 +3403,11 @@
     "username": "smkParadiseManager",
     "source": "bot_start",
     "registered": "2026-05-22T14:22:22.431Z",
-    "last_seen": "2026-07-18T07:08:46.559Z",
+    "last_seen": "2026-07-18T07:10:36.527Z",
     "last_name": "",
     "language_code": "ru",
     "is_premium": true,
-    "visit_count": 2,
+    "visit_count": 3,
     "ips": [
       {
         "ip": "94.30.253.210",
@@ -3419,11 +3419,38 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-07-18T02:49:09.837Z",
-        "last_seen": "2026-07-18T07:08:46.559Z",
-        "visits": 2
+        "last_seen": "2026-07-18T07:10:36.527Z",
+        "visits": 3
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-07-18T07:10:36.527Z",
+        "ip": "94.30.253.210",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0",
+        "device": "Desktop",
+        "browser": "Edge",
+        "browser_version": "150.0.0.0",
+        "os": "Windows",
+        "os_version": null,
+        "language": "ru",
+        "cf_ray": "a1cfaae64b46e4e5",
+        "screen": null,
+        "tz_client": null,
+        "color_depth": null,
+        "touch": null,
+        "platform": null,
+        "memory": null,
+        "cores": null,
+        "connection": null,
+        "webgl_vendor": null,
+        "languages": []
+      },
       {
         "timestamp": "2026-07-18T07:08:46.559Z",
         "ip": "94.30.253.210",
@@ -3442,11 +3469,11 @@
         "cf_ray": "a1cfa836fa4c4580",
         "screen": null,
         "tz_client": null,
-        "color_depth": null,
-        "touch": null,
+        "color_depth": 0,
+        "touch": 0,
         "platform": null,
-        "memory": null,
-        "cores": null,
+        "memory": 0,
+        "cores": 0,
         "connection": null,
         "webgl_vendor": null,
         "languages": []
@@ -3493,7 +3520,7 @@
       "device": "Desktop",
       "browser": "Edge",
       "os": "Windows",
-      "updated_at": "2026-07-18T07:08:46.559Z"
+      "updated_at": "2026-07-18T07:10:36.527Z"
     },
     "geo": {
       "country": "LV",
