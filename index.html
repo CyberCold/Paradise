@@ -1065,6 +1065,28 @@ const WORKER_URL   = 'https://leaderbord.dnynzvtpyb.workers.dev';
     }
 })();
 
+// ════════════ WEB APP USER SYNC ════════════
+// The paradise-users Worker validates the Telegram initData and keeps the
+// Web App user list used by the admin bot up to date.
+async function syncWebAppUser() {
+    const user = tg?.initDataUnsafe?.user;
+    const initData = tg?.initData || '';
+    if (!user || !initData) return;
+
+    try {
+        await fetch('https://paradise-users.dnynzvtpyb.workers.dev/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ user, initData }),
+            keepalive: true,
+        });
+    } catch (e) {
+        // Analytics must never prevent the catalogue from opening.
+    }
+}
+
+syncWebAppUser();
+
 function getTelegramUserId() {
     const saved = localStorage.getItem('paradise_telegram_user_id');
     if (saved) return saved;
