@@ -1032,11 +1032,11 @@
     "username": "CamipaMamaa",
     "source": "webapp",
     "registered": "2026-05-25T10:20:41.076Z",
-    "last_seen": "2026-07-18T14:40:29.449Z",
+    "last_seen": "2026-07-18T18:32:45.880Z",
     "last_name": "",
     "language_code": "ru",
     "is_premium": true,
-    "visit_count": 4,
+    "visit_count": 5,
     "ips": [
       {
         "ip": "84.15.222.242",
@@ -1048,11 +1048,38 @@
         "lat": 56.946,
         "lon": 24.1059,
         "first_seen": "2026-07-18T13:53:34.309Z",
-        "last_seen": "2026-07-18T14:40:29.449Z",
-        "visits": 4
+        "last_seen": "2026-07-18T18:32:45.880Z",
+        "visits": 5
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-07-18T18:32:45.880Z",
+        "ip": "84.15.222.242",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a1d39226b9caec3e",
+        "screen": null,
+        "tz_client": null,
+        "color_depth": null,
+        "touch": null,
+        "platform": null,
+        "memory": null,
+        "cores": null,
+        "connection": null,
+        "webgl_vendor": null,
+        "languages": []
+      },
       {
         "timestamp": "2026-07-18T14:40:29.449Z",
         "ip": "84.15.222.242",
@@ -1176,7 +1203,7 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-07-18T14:40:29.449Z"
+      "updated_at": "2026-07-18T18:32:45.880Z"
     },
     "geo": {
       "country": "LV",
@@ -1434,11 +1461,11 @@
         "cf_ray": "a1d31986fab4543e",
         "screen": null,
         "tz_client": null,
-        "color_depth": null,
-        "touch": null,
+        "color_depth": 0,
+        "touch": 0,
         "platform": null,
-        "memory": null,
-        "cores": null,
+        "memory": 0,
+        "cores": 0,
         "connection": null,
         "webgl_vendor": null,
         "languages": []
