@@ -2086,8 +2086,8 @@
     "is_premium": true,
     "source": "webapp",
     "registered": "2026-07-18T03:05:22.603Z",
-    "last_seen": "2026-07-18T07:57:10.853Z",
-    "visit_count": 17,
+    "last_seen": "2026-07-18T07:58:03.374Z",
+    "visit_count": 18,
     "ips": [
       {
         "ip": "94.30.253.210",
@@ -2099,11 +2099,38 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-07-18T03:05:22.603Z",
-        "last_seen": "2026-07-18T07:57:10.853Z",
-        "visits": 17
+        "last_seen": "2026-07-18T07:58:03.374Z",
+        "visits": 18
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-07-18T07:58:03.374Z",
+        "ip": "94.30.253.210",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0",
+        "device": "Desktop",
+        "browser": "Edge",
+        "browser_version": "150.0.0.0",
+        "os": "Windows",
+        "os_version": null,
+        "language": "ru",
+        "cf_ray": "a1cff0671eabe4e1",
+        "screen": null,
+        "tz_client": null,
+        "color_depth": null,
+        "touch": null,
+        "platform": null,
+        "memory": null,
+        "cores": null,
+        "connection": null,
+        "webgl_vendor": null,
+        "languages": []
+      },
       {
         "timestamp": "2026-07-18T07:57:10.853Z",
         "ip": "94.30.253.210",
@@ -2122,11 +2149,11 @@
         "cf_ray": "a1cfef1edf8ce4e7",
         "screen": null,
         "tz_client": null,
-        "color_depth": null,
-        "touch": null,
+        "color_depth": 0,
+        "touch": 0,
         "platform": null,
-        "memory": null,
-        "cores": null,
+        "memory": 0,
+        "cores": 0,
         "connection": null,
         "webgl_vendor": null,
         "languages": []
@@ -2578,7 +2605,7 @@
       "device": "Desktop",
       "browser": "Edge",
       "os": "Windows",
-      "updated_at": "2026-07-18T07:57:10.853Z"
+      "updated_at": "2026-07-18T07:58:03.374Z"
     },
     "geo": {
       "country": "LV",
