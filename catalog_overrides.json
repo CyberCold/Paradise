@@ -1,5 +1,24 @@
 {
   "version": 1,
-  "products": {},
+  "products": {
+    "vozolneon": {
+      "id": "vozolneon",
+      "name": "Vozol Neon 60k puffs",
+      "tag": "Disposable",
+      "subtitle": "60 000 puffs • 50mg • salt nicotine",
+      "price": "23€",
+      "image": "https://i.postimg.cc/bwnrCHFN/IMG-4927.png",
+      "flavors": [
+        "Blackberry Ice",
+        "Iced Mint Tea",
+        "Cappuccino",
+        "Date Shake Molasses",
+        "Strawberry Gum"
+      ],
+      "stock": "in",
+      "badge": "",
+      "hidden": false
+    }
+  },
   "customProducts": []
 }
