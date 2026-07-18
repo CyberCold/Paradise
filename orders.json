@@ -2142,5 +2142,21 @@
     "username": "yulya",
     "status": "new",
     "date": "17.07.2026 18:11"
+  },
+  "#0120": {
+    "oid": "#0120",
+    "items": [
+      {
+        "pid": "elfbarlushkingpro",
+        "product_name": "ELFBAR Lush King Pro 40k puffs",
+        "flavor": "Sour Pineapple Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nELFBAR Lush King Pro 40k puffs, вкус: Sour Pineapple Ice, количество: 1",
+    "user_id": 5637938428,
+    "username": "пиздохряк",
+    "status": "new",
+    "date": "18.07.2026 11:47"
   }
 }
