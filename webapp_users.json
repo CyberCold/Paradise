@@ -41,7 +41,7 @@
   },
   "527067894": {
     "id": 527067894,
-    "first_name": "ÐÐ",
+    "first_name": "АК",
     "last_name": "",
     "username": "andrej1988888",
     "language_code": "ru",
@@ -123,7 +123,7 @@
   },
   "552298978": {
     "id": 552298978,
-    "first_name": "ç§ã¯ã¯ã½ãã¨ã­ã ",
+    "first_name": "私はクソピエロだ",
     "last_name": "",
     "username": "netqm1",
     "language_code": "",
@@ -579,7 +579,7 @@
   },
   "848178688": {
     "id": 848178688,
-    "first_name": "ÐÐ·Ñð",
+    "first_name": "Изя💋",
     "last_name": "",
     "username": "sppapdpsospapa",
     "language_code": "ru",
@@ -661,7 +661,7 @@
   },
   "993164577": {
     "id": 993164577,
-    "first_name": "Ð°Ð½Ð¶ÑÐ»ÐºÐ°",
+    "first_name": "анжэлка",
     "last_name": "",
     "username": "andzelishaa",
     "language_code": "",
@@ -781,7 +781,7 @@
   },
   "1093822167": {
     "id": 1093822167,
-    "first_name": "ÐÑÐ¸ÑÑÐ¸Ð°Ð½",
+    "first_name": "Кристиан",
     "last_name": "",
     "username": "PonPonchik19",
     "language_code": "",
@@ -838,8 +838,8 @@
         "region": "Riga",
         "isp": "Tele2 Latvia",
         "asn": 1257,
-        "lat": "56.946",
-        "lon": "24.1059",
+        "lat": 56.946,
+        "lon": 24.1059,
         "first_seen": "2026-07-18T05:57:56.449Z",
         "last_seen": "2026-07-18T05:57:56.449Z",
         "visits": 1
@@ -864,33 +864,30 @@
         "cf_ray": "a1cf40717ecc5433",
         "screen": null,
         "tz_client": null,
-        "color_depth": null,
-        "touch": null,
+        "color_depth": 0,
+        "touch": 0,
         "platform": null,
-        "memory": null,
-        "cores": null,
+        "memory": 0,
+        "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": null
+        "languages": []
       }
     ],
     "fingerprint": {
-      "device": "Android Phone",
-      "browser": "Chrome",
-      "browser_version": "150",
-      "os": "Android",
-      "os_version": "12",
       "screen": null,
-      "color_depth": null,
       "timezone": null,
-      "language": null,
-      "languages": null,
+      "color_depth": null,
+      "touch": null,
       "platform": null,
-      "memory": null,
-      "cores": null,
+      "memory": 0,
+      "cores": 0,
       "connection": null,
       "webgl_vendor": null,
-      "do_not_track": null,
+      "languages": [],
+      "device": "Android Phone",
+      "browser": "Chrome",
+      "os": "Android",
       "updated_at": "2026-07-18T05:57:56.449Z"
     },
     "geo": {
@@ -900,8 +897,8 @@
       "timezone": "Europe/Riga",
       "asn": 1257,
       "isp": "Tele2 Latvia",
-      "lat": "56.946",
-      "lon": "24.1059"
+      "lat": 56.946,
+      "lon": 24.1059
     }
   },
   "1120601971": {
@@ -946,7 +943,7 @@
   },
   "1141788828": {
     "id": 1141788828,
-    "first_name": "ÐÐ¾ÑÐ¸Ðº",
+    "first_name": "Кошик",
     "last_name": "",
     "username": "koshik_0",
     "language_code": "",
@@ -1808,8 +1805,8 @@
   },
   "7511735897": {
     "id": 7511735897,
-    "first_name": "á  á  á  á  á  á ",
-    "last_name": "á  á  á  á  á ",
+    "first_name": "ᅠ ᅠ ᅠ ᅠ ᅠ ᅠ",
+    "last_name": "ᅠ ᅠ ᅠ ᅠ ᅠ",
     "username": "",
     "language_code": "ru",
     "is_premium": true,

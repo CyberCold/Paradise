@@ -147,7 +147,7 @@
     "username": "andrej1988888",
     "source": "webapp",
     "registered": "2026-05-25T09:27:08.865Z",
-    "last_seen": "2026-05-25T09:27:08.865Z",
+    "last_seen": "2026-07-18T04:30:06.198Z",
     "last_name": "",
     "language_code": "ru",
     "is_premium": false,
@@ -908,7 +908,7 @@
     "username": "sppapdpsospapa",
     "source": "webapp",
     "registered": "2026-05-28T10:11:20.135Z",
-    "last_seen": "2026-05-28T10:11:20.135Z",
+    "last_seen": "2026-05-30T13:29:40.195Z",
     "last_name": "",
     "language_code": "ru",
     "is_premium": true,
@@ -1463,6 +1463,92 @@
       "lon": 0
     },
     "sources": [
+      "webapp"
+    ]
+  },
+  "1101432330": {
+    "id": 1101432330,
+    "first_name": "👾🎤",
+    "username": "malenkiy_zadira",
+    "source": "bot_start",
+    "registered": "2026-07-18T08:56:29.019386",
+    "last_seen": "2026-07-18T05:57:56.449Z",
+    "last_name": "задира",
+    "language_code": "ru",
+    "is_premium": false,
+    "visit_count": 1,
+    "ips": [
+      {
+        "ip": "2a00:808:118:e5f2:1b25:d5f6:3e0a:349",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Tele2 Latvia",
+        "asn": 1257,
+        "lat": 56.946,
+        "lon": 24.1059,
+        "first_seen": "2026-07-18T05:57:56.449Z",
+        "last_seen": "2026-07-18T05:57:56.449Z",
+        "visits": 1
+      }
+    ],
+    "visits": [
+      {
+        "timestamp": "2026-07-18T05:57:56.449Z",
+        "ip": "2a00:808:118:e5f2:1b25:d5f6:3e0a:349",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "user_agent": "Mozilla/5.0 (Linux; Android 12; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.47 Mobile Safari/537.36 Telegram-Android/12.9.0 (Xiaomi M2102J20SG; Android 12; SDK 31; HIGH)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "150",
+        "os": "Android",
+        "os_version": "12",
+        "language": "ru",
+        "cf_ray": "a1cf40717ecc5433",
+        "screen": null,
+        "tz_client": null,
+        "color_depth": 0,
+        "touch": 0,
+        "platform": null,
+        "memory": 0,
+        "cores": 0,
+        "connection": null,
+        "webgl_vendor": null,
+        "languages": []
+      }
+    ],
+    "fingerprint": {
+      "screen": null,
+      "timezone": null,
+      "color_depth": null,
+      "touch": null,
+      "platform": null,
+      "memory": 0,
+      "cores": 0,
+      "connection": null,
+      "webgl_vendor": null,
+      "languages": [],
+      "device": "Android Phone",
+      "browser": "Chrome",
+      "os": "Android",
+      "updated_at": "2026-07-18T05:57:56.449Z"
+    },
+    "geo": {
+      "country": "LV",
+      "city": "Riga",
+      "region": "Riga",
+      "timezone": "Europe/Riga",
+      "asn": 1257,
+      "isp": "Tele2 Latvia",
+      "lat": 56.946,
+      "lon": 24.1059
+    },
+    "sources": [
+      "bot_start",
       "webapp"
     ]
   },
@@ -2192,7 +2278,7 @@
     "username": "artem13607",
     "source": "webapp",
     "registered": "2026-05-28T21:15:24.109Z",
-    "last_seen": "2026-07-03T16:22:29.468525",
+    "last_seen": "2026-07-18T05:12:59.179Z",
     "last_name": "",
     "language_code": "ru",
     "is_premium": true,
@@ -2604,7 +2690,7 @@
     "username": "",
     "source": "webapp",
     "registered": "2026-05-25T18:30:45.045Z",
-    "last_seen": "2026-07-04T15:40:26.989776",
+    "last_seen": "2026-07-18T05:09:30.105Z",
     "last_name": "",
     "language_code": "ru",
     "is_premium": false,
@@ -2829,7 +2915,7 @@
     "username": "resonancemgr",
     "source": "chat",
     "registered": "2026-05-22T11:49:31.267Z",
-    "last_seen": "2026-06-07T23:01:51.485069",
+    "last_seen": "2026-07-18T02:48:33.063Z",
     "visits": [
       {
         "timestamp": "2026-07-18T02:48:33.063Z",
@@ -2915,7 +3001,7 @@
     "username": "smkParadiseManager",
     "source": "bot_start",
     "registered": "2026-05-22T14:22:22.431Z",
-    "last_seen": "2026-05-23T16:40:35.661109",
+    "last_seen": "2026-07-18T02:49:09.837Z",
     "last_name": "",
     "language_code": "ru",
     "is_premium": true,
@@ -6091,7 +6177,7 @@
     "username": "",
     "source": "webapp",
     "registered": "2026-05-29T13:01:10.148Z",
-    "last_seen": "2026-07-18T04:36:20.651432",
+    "last_seen": "2026-07-18T05:18:59.742Z",
     "ips": [
       {
         "ip": "94.30.253.210",
@@ -6357,7 +6443,7 @@
     "username": "yellow_pinng",
     "source": "chat",
     "registered": "2026-05-31T15:43:41.603631",
-    "last_seen": "2026-06-11T17:45:43.662373",
+    "last_seen": "2026-07-18T05:12:59.576Z",
     "last_name": "",
     "language_code": "ru",
     "is_premium": false,
@@ -6812,7 +6898,7 @@
     "username": "Portul_2",
     "source": "chat",
     "registered": "2026-07-11T18:27:39.154064",
-    "last_seen": "2026-07-11T20:42:51.388101",
+    "last_seen": "2026-07-18T03:57:35.722Z",
     "last_name": "",
     "language_code": "ru",
     "is_premium": false,
@@ -11229,13 +11315,5 @@
     "registered": "2026-07-14T22:27:59.510281",
     "last_seen": "2026-07-14T22:27:59.510281",
     "last_name": ""
-  },
-  "1101432330": {
-    "id": 1101432330,
-    "first_name": "",
-    "username": "malenkiy_zadira",
-    "source": "bot_start",
-    "registered": "2026-07-18T08:56:29.019386",
-    "last_seen": "2026-07-18T08:56:29.019386"
   }
 }
