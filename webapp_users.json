@@ -1690,8 +1690,8 @@
     "is_premium": false,
     "source": "webapp",
     "registered": "2026-07-18T02:48:33.063Z",
-    "last_seen": "2026-07-18T02:48:33.063Z",
-    "visit_count": 1,
+    "last_seen": "2026-07-18T06:38:18.003Z",
+    "visit_count": 2,
     "ips": [
       {
         "ip": "94.30.253.210",
@@ -1703,11 +1703,38 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-07-18T02:48:33.063Z",
-        "last_seen": "2026-07-18T02:48:33.063Z",
-        "visits": 1
+        "last_seen": "2026-07-18T06:38:18.003Z",
+        "visits": 2
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-07-18T06:38:18.003Z",
+        "ip": "94.30.253.210",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 OPR/133.0.0.0",
+        "device": "Desktop",
+        "browser": "Opera",
+        "browser_version": "133.0.0.0",
+        "os": "Windows",
+        "os_version": null,
+        "language": "ru-RU",
+        "cf_ray": "a1cf7b928fdee4d3",
+        "screen": null,
+        "tz_client": null,
+        "color_depth": null,
+        "touch": null,
+        "platform": null,
+        "memory": null,
+        "cores": null,
+        "connection": null,
+        "webgl_vendor": null,
+        "languages": []
+      },
       {
         "timestamp": "2026-07-18T02:48:33.063Z",
         "ip": "94.30.253.210",
@@ -1747,10 +1774,10 @@
       "connection": null,
       "webgl_vendor": null,
       "languages": [],
-      "device": "iPhone",
-      "browser": null,
-      "os": "iOS",
-      "updated_at": "2026-07-18T02:48:33.063Z"
+      "device": "Desktop",
+      "browser": "Opera",
+      "os": "Windows",
+      "updated_at": "2026-07-18T06:38:18.003Z"
     },
     "geo": {
       "country": "LV",
@@ -1890,11 +1917,11 @@
         "cf_ray": "a1cf79987fe2e4db",
         "screen": null,
         "tz_client": null,
-        "color_depth": null,
-        "touch": null,
+        "color_depth": 0,
+        "touch": 0,
         "platform": null,
-        "memory": null,
-        "cores": null,
+        "memory": 0,
+        "cores": 0,
         "connection": null,
         "webgl_vendor": null,
         "languages": []
