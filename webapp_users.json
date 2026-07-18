@@ -3340,8 +3340,8 @@
     "is_premium": true,
     "source": "webapp",
     "registered": "2026-07-18T07:28:24.041Z",
-    "last_seen": "2026-07-18T08:41:08.365Z",
-    "visit_count": 3,
+    "last_seen": "2026-07-18T08:45:58.460Z",
+    "visit_count": 4,
     "ips": [
       {
         "ip": "84.15.217.136",
@@ -3353,8 +3353,8 @@
         "lat": 56.946,
         "lon": 24.1059,
         "first_seen": "2026-07-18T08:41:08.365Z",
-        "last_seen": "2026-07-18T08:41:08.365Z",
-        "visits": 1
+        "last_seen": "2026-07-18T08:45:58.460Z",
+        "visits": 2
       },
       {
         "ip": "78.84.45.232",
@@ -3371,6 +3371,33 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-07-18T08:45:58.460Z",
+        "ip": "84.15.217.136",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a1d0369859d4f055",
+        "screen": null,
+        "tz_client": null,
+        "color_depth": null,
+        "touch": null,
+        "platform": null,
+        "memory": null,
+        "cores": null,
+        "connection": null,
+        "webgl_vendor": null,
+        "languages": []
+      },
       {
         "timestamp": "2026-07-18T08:41:08.365Z",
         "ip": "84.15.217.136",
@@ -3389,11 +3416,11 @@
         "cf_ray": "a1d02f834d9fec3e",
         "screen": null,
         "tz_client": null,
-        "color_depth": null,
-        "touch": null,
+        "color_depth": 0,
+        "touch": 0,
         "platform": null,
-        "memory": null,
-        "cores": null,
+        "memory": 0,
+        "cores": 0,
         "connection": null,
         "webgl_vendor": null,
         "languages": []
@@ -3467,7 +3494,7 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-07-18T08:41:08.365Z"
+      "updated_at": "2026-07-18T08:45:58.460Z"
     },
     "geo": {
       "country": "LV",
