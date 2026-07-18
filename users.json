@@ -8991,11 +8991,11 @@
         "cf_ray": "a1d0e964d925440a",
         "screen": null,
         "tz_client": null,
-        "color_depth": null,
-        "touch": null,
+        "color_depth": 0,
+        "touch": 0,
         "platform": null,
-        "memory": null,
-        "cores": null,
+        "memory": 0,
+        "cores": 0,
         "connection": null,
         "webgl_vendor": null,
         "languages": []
@@ -9005,10 +9005,10 @@
       "screen": null,
       "timezone": null,
       "color_depth": null,
-      "touch": null,
+      "touch": 0,
       "platform": null,
-      "memory": null,
-      "cores": null,
+      "memory": 0,
+      "cores": 0,
       "connection": null,
       "webgl_vendor": null,
       "languages": [],
@@ -15233,5 +15233,89 @@
     "sources": [
       "chat"
     ]
+  },
+  "1068648675": {
+    "id": 1068648675,
+    "first_name": "arturik",
+    "username": "yxmppy",
+    "language_code": "ru",
+    "is_premium": true,
+    "visit_count": 1,
+    "ips": [
+      {
+        "ip": "5.241.128.61",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Mobile Services Latvia",
+        "asn": 1257,
+        "lat": 56.946,
+        "lon": 24.10589,
+        "first_seen": "2026-07-18T11:00:49.025Z",
+        "last_seen": "2026-07-18T11:00:49.025Z",
+        "visits": 1
+      }
+    ],
+    "visits": [
+      {
+        "timestamp": "2026-07-18T11:00:49.025Z",
+        "ip": "5.241.128.61",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a1d0fc1e5d09dd68",
+        "screen": null,
+        "tz_client": null,
+        "color_depth": null,
+        "touch": null,
+        "platform": null,
+        "memory": null,
+        "cores": null,
+        "connection": null,
+        "webgl_vendor": null,
+        "languages": []
+      }
+    ],
+    "fingerprint": {
+      "screen": null,
+      "timezone": null,
+      "color_depth": null,
+      "touch": null,
+      "platform": null,
+      "memory": null,
+      "cores": null,
+      "connection": null,
+      "webgl_vendor": null,
+      "languages": [],
+      "device": "iPhone",
+      "browser": "unknown",
+      "os": "iOS",
+      "updated_at": "2026-07-18T11:00:49.025Z"
+    },
+    "geo": {
+      "country": "LV",
+      "city": "Riga",
+      "region": "Riga",
+      "timezone": "Europe/Riga",
+      "asn": 1257,
+      "isp": "Mobile Services Latvia",
+      "lat": 56.946,
+      "lon": 24.10589
+    },
+    "source": "webapp",
+    "sources": [
+      "webapp"
+    ],
+    "registered": "2026-07-18T11:00:49.025Z",
+    "last_seen": "2026-07-18T11:00:49.025Z"
   }
 }
