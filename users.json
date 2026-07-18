@@ -16026,7 +16026,7 @@
     "username": "lerch1kx",
     "language_code": "ru",
     "is_premium": false,
-    "visit_count": 1,
+    "visit_count": 2,
     "ips": [
       {
         "ip": "80.89.77.115",
@@ -16038,11 +16038,38 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-07-18T16:45:39.164Z",
-        "last_seen": "2026-07-18T16:45:39.164Z",
-        "visits": 1
+        "last_seen": "2026-07-18T16:46:44.770Z",
+        "visits": 2
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-07-18T16:46:44.770Z",
+        "ip": "80.89.77.115",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a1d2f6d9c878a887",
+        "screen": null,
+        "tz_client": null,
+        "color_depth": null,
+        "touch": null,
+        "platform": null,
+        "memory": null,
+        "cores": null,
+        "connection": null,
+        "webgl_vendor": null,
+        "languages": []
+      },
       {
         "timestamp": "2026-07-18T16:45:39.164Z",
         "ip": "80.89.77.115",
@@ -16061,11 +16088,11 @@
         "cf_ray": "a1d2f53fbdfda891",
         "screen": null,
         "tz_client": null,
-        "color_depth": null,
-        "touch": null,
+        "color_depth": 0,
+        "touch": 0,
         "platform": null,
-        "memory": null,
-        "cores": null,
+        "memory": 0,
+        "cores": 0,
         "connection": null,
         "webgl_vendor": null,
         "languages": []
@@ -16075,17 +16102,17 @@
       "screen": null,
       "timezone": null,
       "color_depth": null,
-      "touch": null,
+      "touch": 0,
       "platform": null,
-      "memory": null,
-      "cores": null,
+      "memory": 0,
+      "cores": 0,
       "connection": null,
       "webgl_vendor": null,
       "languages": [],
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-07-18T16:45:39.164Z"
+      "updated_at": "2026-07-18T16:46:44.770Z"
     },
     "geo": {
       "country": "LV",
@@ -16103,6 +16130,6 @@
       "webapp"
     ],
     "registered": "2026-07-18T19:44:12.523584",
-    "last_seen": "2026-07-18T16:45:39.164Z"
+    "last_seen": "2026-07-18T16:46:44.770Z"
   }
 }
