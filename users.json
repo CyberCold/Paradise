@@ -589,11 +589,11 @@
         "cf_ray": "a1cfbbb91871cb3b",
         "screen": null,
         "tz_client": null,
-        "color_depth": null,
-        "touch": null,
+        "color_depth": 0,
+        "touch": 0,
         "platform": null,
-        "memory": null,
-        "cores": null,
+        "memory": 0,
+        "cores": 0,
         "connection": null,
         "webgl_vendor": null,
         "languages": []
@@ -7979,11 +7979,85 @@
     "username": "",
     "source": "bot_start",
     "registered": "2026-05-29T13:03:39.111Z",
-    "last_seen": "2026-05-29T16:03:55.746884",
+    "last_seen": "2026-07-18T07:28:24.041Z",
     "last_name": "",
     "sources": [
-      "bot_start"
-    ]
+      "bot_start",
+      "webapp"
+    ],
+    "language_code": "ru",
+    "is_premium": true,
+    "visit_count": 1,
+    "ips": [
+      {
+        "ip": "78.84.45.232",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Address pool for LTC-HOME customers",
+        "asn": 12578,
+        "lat": 56.946,
+        "lon": 24.10589,
+        "first_seen": "2026-07-18T07:28:24.041Z",
+        "last_seen": "2026-07-18T07:28:24.041Z",
+        "visits": 1
+      }
+    ],
+    "visits": [
+      {
+        "timestamp": "2026-07-18T07:28:24.041Z",
+        "ip": "78.84.45.232",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a1cfc4f62ddfa88b",
+        "screen": null,
+        "tz_client": null,
+        "color_depth": null,
+        "touch": null,
+        "platform": null,
+        "memory": null,
+        "cores": null,
+        "connection": null,
+        "webgl_vendor": null,
+        "languages": []
+      }
+    ],
+    "fingerprint": {
+      "screen": null,
+      "timezone": null,
+      "color_depth": null,
+      "touch": null,
+      "platform": null,
+      "memory": null,
+      "cores": null,
+      "connection": null,
+      "webgl_vendor": null,
+      "languages": [],
+      "device": "iPhone",
+      "browser": "unknown",
+      "os": "iOS",
+      "updated_at": "2026-07-18T07:28:24.041Z"
+    },
+    "geo": {
+      "country": "LV",
+      "city": "Riga",
+      "region": "Riga",
+      "timezone": "Europe/Riga",
+      "asn": 12578,
+      "isp": "Address pool for LTC-HOME customers",
+      "lat": 56.946,
+      "lon": 24.10589
+    }
   },
   "5930669861": {
     "id": 5930669861,
