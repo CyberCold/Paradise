@@ -41,7 +41,7 @@
   },
   "527067894": {
     "id": 527067894,
-    "first_name": "АК",
+    "first_name": "ÐÐ",
     "last_name": "",
     "username": "andrej1988888",
     "language_code": "ru",
@@ -123,7 +123,7 @@
   },
   "552298978": {
     "id": 552298978,
-    "first_name": "私はクソピエロだ",
+    "first_name": "ç§ã¯ã¯ã½ãã¨ã­ã ",
     "last_name": "",
     "username": "netqm1",
     "language_code": "",
@@ -579,7 +579,7 @@
   },
   "848178688": {
     "id": 848178688,
-    "first_name": "Изя💋",
+    "first_name": "ÐÐ·Ñð",
     "last_name": "",
     "username": "sppapdpsospapa",
     "language_code": "ru",
@@ -661,7 +661,7 @@
   },
   "993164577": {
     "id": 993164577,
-    "first_name": "анжэлка",
+    "first_name": "Ð°Ð½Ð¶ÑÐ»ÐºÐ°",
     "last_name": "",
     "username": "andzelishaa",
     "language_code": "",
@@ -781,7 +781,7 @@
   },
   "1093822167": {
     "id": 1093822167,
-    "first_name": "Кристиан",
+    "first_name": "ÐÑÐ¸ÑÑÐ¸Ð°Ð½",
     "last_name": "",
     "username": "PonPonchik19",
     "language_code": "",
@@ -817,6 +817,91 @@
       "isp": null,
       "lat": 0,
       "lon": 0
+    }
+  },
+  "1101432330": {
+    "id": 1101432330,
+    "first_name": "👾🎤",
+    "last_name": "задира",
+    "username": "malenkiy_zadira",
+    "language_code": "ru",
+    "is_premium": false,
+    "source": "webapp",
+    "registered": "2026-07-18T05:57:56.449Z",
+    "last_seen": "2026-07-18T05:57:56.449Z",
+    "visit_count": 1,
+    "ips": [
+      {
+        "ip": "2a00:808:118:e5f2:1b25:d5f6:3e0a:349",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Tele2 Latvia",
+        "asn": 1257,
+        "lat": "56.946",
+        "lon": "24.1059",
+        "first_seen": "2026-07-18T05:57:56.449Z",
+        "last_seen": "2026-07-18T05:57:56.449Z",
+        "visits": 1
+      }
+    ],
+    "visits": [
+      {
+        "timestamp": "2026-07-18T05:57:56.449Z",
+        "ip": "2a00:808:118:e5f2:1b25:d5f6:3e0a:349",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "user_agent": "Mozilla/5.0 (Linux; Android 12; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.47 Mobile Safari/537.36 Telegram-Android/12.9.0 (Xiaomi M2102J20SG; Android 12; SDK 31; HIGH)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "150",
+        "os": "Android",
+        "os_version": "12",
+        "language": "ru",
+        "cf_ray": "a1cf40717ecc5433",
+        "screen": null,
+        "tz_client": null,
+        "color_depth": null,
+        "touch": null,
+        "platform": null,
+        "memory": null,
+        "cores": null,
+        "connection": null,
+        "webgl_vendor": null,
+        "languages": null
+      }
+    ],
+    "fingerprint": {
+      "device": "Android Phone",
+      "browser": "Chrome",
+      "browser_version": "150",
+      "os": "Android",
+      "os_version": "12",
+      "screen": null,
+      "color_depth": null,
+      "timezone": null,
+      "language": null,
+      "languages": null,
+      "platform": null,
+      "memory": null,
+      "cores": null,
+      "connection": null,
+      "webgl_vendor": null,
+      "do_not_track": null,
+      "updated_at": "2026-07-18T05:57:56.449Z"
+    },
+    "geo": {
+      "country": "LV",
+      "city": "Riga",
+      "region": "Riga",
+      "timezone": "Europe/Riga",
+      "asn": 1257,
+      "isp": "Tele2 Latvia",
+      "lat": "56.946",
+      "lon": "24.1059"
     }
   },
   "1120601971": {
@@ -861,7 +946,7 @@
   },
   "1141788828": {
     "id": 1141788828,
-    "first_name": "Кошик",
+    "first_name": "ÐÐ¾ÑÐ¸Ðº",
     "last_name": "",
     "username": "koshik_0",
     "language_code": "",
@@ -1723,8 +1808,8 @@
   },
   "7511735897": {
     "id": 7511735897,
-    "first_name": "ᅠ ᅠ ᅠ ᅠ ᅠ ᅠ",
-    "last_name": "ᅠ ᅠ ᅠ ᅠ ᅠ",
+    "first_name": "á  á  á  á  á  á ",
+    "last_name": "á  á  á  á  á ",
     "username": "",
     "language_code": "ru",
     "is_premium": true,
