@@ -146,6 +146,7 @@ async function githubRequest(env, path, options = {}) {
     headers: {
       Authorization: `Bearer ${env.GITHUB_TOKEN}`,
       Accept: "application/vnd.github+json",
+      "User-Agent": "Paradise-MiniApp-Admin/1.0",
       "X-GitHub-Api-Version": "2022-11-28",
       ...(options.headers || {}),
     },
@@ -153,10 +154,21 @@ async function githubRequest(env, path, options = {}) {
   return response;
 }
 
+async function githubFailureMessage(response, action) {
+  let detail = "";
+  try {
+    const payload = await response.json();
+    detail = trimText(payload?.message, 180);
+  } catch {
+    // Keep the status-only fallback when GitHub does not return JSON.
+  }
+  return `${action} (${response.status})${detail ? `: ${detail}` : ""}`;
+}
+
 async function readDataFile(env, descriptor) {
   const response = await githubRequest(env, descriptor.path);
   if (response.status === 404) return { data: descriptor.fallback, sha: "" };
-  if (!response.ok) throw new Error(`GitHub read failed (${response.status})`);
+  if (!response.ok) throw new Error(await githubFailureMessage(response, "GitHub read failed"));
   const payload = await response.json();
   return { data: JSON.parse(base64ToText(payload.content)), sha: payload.sha };
 }
@@ -175,7 +187,9 @@ async function writeDataFile(env, descriptor, data, message) {
       }),
     });
     if (response.ok) return;
-    if (response.status !== 409 && response.status !== 422) throw new Error(`GitHub write failed (${response.status})`);
+    if (response.status !== 409 && response.status !== 422) {
+      throw new Error(await githubFailureMessage(response, "GitHub write failed"));
+    }
   }
   throw new Error("GitHub file changed while saving. Try again.");
 }
