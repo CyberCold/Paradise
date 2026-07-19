@@ -106,45 +106,27 @@ async function parseJson(request) {
   return request.json();
 }
 
-async function verifyTelegramInitData(initData, botToken) {
+function telegramUserFromInitData(initData) {
   if (!initData || initData.length > 8192) return null;
-
-  const values = new URLSearchParams(initData);
-  const givenHash = values.get("hash");
-  const authDate = Number(values.get("auth_date"));
-  const userText = values.get("user");
-  values.delete("hash");
-  if (!givenHash || !authDate || !userText) return null;
-  if (Math.abs(Math.floor(Date.now() / 1000) - authDate) > 24 * 60 * 60) return null;
-
-  const dataCheckString = [...values.entries()]
-    .sort(([left], [right]) => left.localeCompare(right))
-    .map(([key, value]) => `${key}=${value}`)
-    .join("\n");
-  const webAppKey = await hmac(encoder.encode("WebAppData"), encoder.encode(botToken));
-  const expected = await hmac(webAppKey, encoder.encode(dataCheckString));
-  const supplied = Uint8Array.from(givenHash.match(/.{1,2}/g) || [], (pair) => Number.parseInt(pair, 16));
-  if (!constantTimeEqual(expected, supplied)) return null;
-
   try {
-    const user = JSON.parse(userText);
+    const user = JSON.parse(new URLSearchParams(initData).get("user") || "null");
     return user && Number.isSafeInteger(Number(user.id)) ? user : null;
   } catch {
     return null;
   }
 }
 
-async function createSession(userId, botToken) {
+async function createSession(userId, secret) {
   const payload = base64Url(encoder.encode(JSON.stringify({ id: String(userId), exp: Date.now() + 15 * 60 * 1000 })));
-  const signature = base64Url(await hmac(encoder.encode(`admin-session:${botToken}`), encoder.encode(payload)));
+  const signature = base64Url(await hmac(encoder.encode(`admin-session:${secret}`), encoder.encode(payload)));
   return `${payload}.${signature}`;
 }
 
-async function verifySession(request, botToken, adminIds) {
+async function verifySession(request, secret, adminIds) {
   const token = (request.headers.get("Authorization") || "").replace(/^Bearer\s+/i, "");
   const [payload, signature] = token.split(".");
   if (!payload || !signature) return null;
-  const expected = base64Url(await hmac(encoder.encode(`admin-session:${botToken}`), encoder.encode(payload)));
+  const expected = base64Url(await hmac(encoder.encode(`admin-session:${secret}`), encoder.encode(payload)));
   if (!constantTimeEqual(encoder.encode(expected), encoder.encode(signature))) return null;
 
   try {
@@ -554,6 +536,9 @@ async function mutateDataFile(env, descriptor, message, mutator) {
 }
 
 export const __test = {
+  telegramUserFromInitData,
+  createSession,
+  verifySession,
   normaliseUsers,
   normaliseBlacklist,
   hardwareSignatureFromRecord,
@@ -565,7 +550,7 @@ export default {
   async fetch(request, env) {
     const cors = originHeaders(request);
     if (request.method === "OPTIONS") return new Response(null, { status: 204, headers: cors });
-    if (!env.BOT_TOKEN || !env.GITHUB_TOKEN || !env.ADMIN_IDS || !env.BAN_SECRET) {
+    if (!env.GITHUB_TOKEN || !env.ADMIN_IDS || !env.BAN_SECRET || !env.PARADISE_USERS) {
       return json({ error: "Worker secrets are not configured" }, 503, cors);
     }
 
@@ -574,13 +559,26 @@ export default {
       const adminIds = new Set(String(env.ADMIN_IDS).split(",").map((id) => id.trim()).filter(Boolean));
 
       if (url.pathname === "/session" && request.method === "POST") {
+        const validationRequest = request.clone();
         const body = await parseJson(request);
-        const user = await verifyTelegramInitData(String(body?.initData || ""), env.BOT_TOKEN);
-        if (!user || !adminIds.has(String(user.id))) return json({ error: "Not authorised" }, 403, cors);
-        return json({ session: await createSession(user.id, env.BOT_TOKEN), user: { id: user.id, first_name: trimText(user.first_name, 70) } }, 200, cors);
+        let validationResponse;
+        try {
+          validationResponse = await env.PARADISE_USERS.fetch(validationRequest);
+        } catch {
+          return json({ error: "Telegram validation service is unavailable" }, 503, cors);
+        }
+        const validation = await validationResponse.json().catch(() => ({}));
+        if (!validationResponse.ok || validation?.access !== true) {
+          const status = validationResponse.status === 403 ? 403 : 401;
+          return json({ error: status === 403 ? "Access denied" : "Telegram session is invalid" }, status, cors);
+        }
+        const user = telegramUserFromInitData(String(body?.initData || ""));
+        if (!user) return json({ error: "Telegram session is invalid" }, 401, cors);
+        if (!adminIds.has(String(user.id))) return json({ error: `Not authorised (Telegram ID: ${user.id})` }, 403, cors);
+        return json({ session: await createSession(user.id, env.BAN_SECRET), user: { id: user.id, first_name: trimText(user.first_name, 70) } }, 200, cors);
       }
 
-      const session = await verifySession(request, env.BOT_TOKEN, adminIds);
+      const session = await verifySession(request, env.BAN_SECRET, adminIds);
       if (!session) return json({ error: "Session expired" }, 401, cors);
 
       if (url.pathname === "/blacklist/preview" && request.method === "POST") {

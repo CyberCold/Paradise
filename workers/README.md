@@ -4,10 +4,11 @@ Deploy `paradise-admin.js` as the Cloudflare Worker named `paradise-admin`.
 
 Add these **Secrets** in Cloudflare Worker Settings:
 
-- `BOT_TOKEN` — token of the Paradise Telegram bot;
 - `GITHUB_TOKEN` — GitHub fine-grained token with Contents read/write access to `CyberCold/Paradise`;
 - `ADMIN_IDS` — comma-separated Telegram user IDs allowed to use the web admin panel;
 - `BAN_SECRET` — a long random secret shared with `paradise-users` and used only for HMAC hashing of IP/device identifiers.
+
+Add a Service binding named `PARADISE_USERS` targeting the `paradise-users` Worker. Admin Telegram validation is delegated to that Worker so the bot token has only one source of truth. Admin sessions are signed with `BAN_SECRET`.
 
 The worker verifies Telegram Web App `initData` before it issues a 15-minute admin session. It serves user data only to that session, previews linked accounts, and writes hashed blacklist entries without exposing raw IP/device identifiers in `blacklist.json`.
 
