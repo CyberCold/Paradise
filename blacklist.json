@@ -1,20 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-07-19T11:01:22.151Z",
+  "updated_at": "2026-07-19T11:07:34.212Z",
   "entries": [
-    {
-      "id": "ban-1784458339830-6fd85f60",
-      "root_user_id": "8482703228",
-      "user_ids": [
-        "8482703228"
-      ],
-      "ip_hashes": [],
-      "device_hashes": [],
-      "reason": "",
-      "created_at": "2026-07-19T10:52:19.830Z",
-      "created_by": "dashboard",
-      "active": true
-    },
     {
       "id": "ban-1784458848382-1b2c9080",
       "root_user_id": "8575438989",
