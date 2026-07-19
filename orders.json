@@ -2272,5 +2272,21 @@
     "username": "Диана",
     "status": "cancelled",
     "date": "19.07.2026 18:48"
+  },
+  "#0128": {
+    "oid": "#0128",
+    "items": [
+      {
+        "pid": "vozolneon",
+        "product_name": "Vozol Neon 60k puffs",
+        "flavor": "Cherry Vanilla Cream",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Cherry Vanilla Cream, количество: 1",
+    "user_id": 1861398795,
+    "username": "Nigga Jones",
+    "status": "new",
+    "date": "20.07.2026 00:08"
   }
 }
