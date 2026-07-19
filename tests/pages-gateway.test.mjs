@@ -3,6 +3,7 @@ import fs from "node:fs/promises";
 import test from "node:test";
 
 import { onRequest as openApp } from "../functions/app.js";
+import { onRequest as openCatalog } from "../functions/catalog.js";
 import { onRequest as routeStatic } from "../functions/[[path]].js";
 import { onRequest as protectedRoute } from "../functions/protected/[[path]].js";
 import { createSessionCookie, telegramUserId, verifySessionCookie } from "../functions/_shared/session.js";
@@ -56,7 +57,7 @@ test("gateway never serves app assets when access is denied", async () => {
   assert.equal(assetReads, 0);
 });
 
-test("gateway serves protected HTML only after access succeeds", async () => {
+test("gateway creates a short session without streaming the protected HTML", async () => {
   let assetReads = 0;
   const response = await openApp({
     request: request(),
@@ -73,10 +74,46 @@ test("gateway serves protected HTML only after access succeeds", async () => {
     },
   });
   assert.equal(response.status, 200);
-  assert.equal(assetReads, 1);
-  assert.match(await response.text(), /catalogue/);
+  assert.equal(assetReads, 0);
+  assert.deepEqual(await response.json(), { ok: true, access: true, location: "/catalog" });
   assert.match(response.headers.get("Cache-Control"), /no-store/);
   assert.match(response.headers.get("Set-Cookie"), /__Host-paradise_session=/);
+});
+
+test("catalogue route serves protected HTML only with a valid session", async () => {
+  let assetReads = 0;
+  const cookie = await createSessionCookie(TEST_SECRET, "8482703228");
+  const response = await openCatalog({
+    request: new Request("https://paradiseminiapp.pages.dev/catalog", { headers: { Cookie: cookie } }),
+    env: {
+      BAN_SECRET: TEST_SECRET,
+      ASSETS: {
+        fetch: async (url) => {
+          assetReads += 1;
+          assert.equal(new URL(url).pathname, "/protected/index.html");
+          return new Response("<html><head><title>Paradise</title></head><body>catalogue</body></html>");
+        },
+      },
+    },
+  });
+  assert.equal(response.status, 200);
+  assert.equal(assetReads, 1);
+  const html = await response.text();
+  assert.match(html, /__PARADISE_GATE_GRANTED__=true/);
+  assert.match(html, /catalogue/);
+});
+
+test("catalogue route hides the protected asset without a session", async () => {
+  let assetReads = 0;
+  const response = await openCatalog({
+    request: new Request("https://paradiseminiapp.pages.dev/catalog"),
+    env: {
+      BAN_SECRET: TEST_SECRET,
+      ASSETS: { fetch: async () => { assetReads += 1; return new Response("secret"); } },
+    },
+  });
+  assert.equal(response.status, 404);
+  assert.equal(assetReads, 0);
 });
 
 test("session cookies are signed, expire, and preserve the Telegram ID", async () => {

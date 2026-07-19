@@ -1,15 +1,15 @@
 import { createSessionCookie, telegramUserId } from "./_shared/session.js";
 
-const USERS_WORKER_URL = "https://paradise-users.dnynzvtpyb.workers.dev/";
 const MAX_REQUEST_BYTES = 64 * 1024;
 
-function json(body, status) {
+function json(body, status, headers = {}) {
   return new Response(JSON.stringify(body), {
     status,
     headers: {
       "Content-Type": "application/json; charset=utf-8",
       "Cache-Control": "no-store, private",
       "X-Content-Type-Options": "nosniff",
+      ...headers,
     },
   });
 }
@@ -61,18 +61,9 @@ export async function onRequest(context) {
   }
   if (accessPayload?.access !== true) return json({ error: "Access was not granted" }, 502);
 
-  const assetUrl = new URL("/protected/", request.url);
-  const asset = await env.ASSETS.fetch(assetUrl);
-  if (!asset.ok) return json({ error: "Application payload unavailable" }, 503);
-  const headers = new Headers(asset.headers);
-  headers.set("Content-Type", "text/html; charset=utf-8");
-  headers.set("Cache-Control", "no-store, private, max-age=0");
-  headers.set("Pragma", "no-cache");
-  headers.set("X-Content-Type-Options", "nosniff");
-  headers.set("X-Frame-Options", "SAMEORIGIN");
-  headers.set("Referrer-Policy", "no-referrer");
-  headers.set("X-Robots-Tag", "noindex, nofollow, noarchive");
-  headers.append("Set-Cookie", await createSessionCookie(env.BAN_SECRET, userId));
-  headers.delete("ETag");
-  return new Response(asset.body, { status: 200, headers });
+  return json(
+    { ok: true, access: true, location: "/catalog" },
+    200,
+    { "Set-Cookie": await createSessionCookie(env.BAN_SECRET, userId) },
+  );
 }

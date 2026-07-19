@@ -135,12 +135,9 @@
                     return;
                 }
                 if (!response.ok) throw new Error(`HTTP ${response.status}`);
-                const html = await response.text();
-                if (!/<html[\s>]/i.test(html)) throw new Error("Invalid application payload");
-                const securedHtml = html.replace(/<head(\s[^>]*)?>/i, match => `${match}<script>window.__PARADISE_GATE_GRANTED__=true;<\/script>`);
-                document.open();
-                document.write(securedHtml);
-                document.close();
+                const result = await response.json().catch(() => ({}));
+                if (result.access !== true || result.location !== "/catalog") throw new Error("Invalid access response");
+                location.replace(result.location);
             } catch {
                 deny("СЕРВИС ВРЕМЕННО НЕДОСТУПЕН. ПОПРОБУЙТЕ ПОЗЖЕ.");
             } finally {
