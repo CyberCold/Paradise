@@ -44,6 +44,7 @@ test("merge keeps existing history and adds exactly one visit", () => {
     { id: 7, first_name: "Новое имя", username: "new_user" },
     visit,
     {},
+    ["a".repeat(64)],
     { device: "iPhone", browser: "Safari", os: "iOS" },
     { country: "LV", city: "Riga" },
     now,
@@ -56,6 +57,7 @@ test("merge keeps existing history and adds exactly one visit", () => {
   assert.equal(merged.visits.length, 2);
   assert.equal(merged.ips.length, 1);
   assert.equal(merged.ips[0].visits, 5);
+  assert.deepEqual(merged.device_keys, ["a".repeat(64)]);
 });
 
 test("UA parser keeps notification labels stable", () => {
@@ -63,4 +65,40 @@ test("UA parser keeps notification labels stable", () => {
   assert.equal(android.device, "Android Phone");
   assert.equal(android.os, "Android");
   assert.equal(android.browser, "Chrome");
+});
+
+test("device keys link Telegram accounts without storing the installation ID", async () => {
+  const fingerprint = {
+    install_id: "browser-installation-123456",
+    screen: "1179x2556@3",
+    timezone: "Europe/Riga",
+    colorDepth: 24,
+    touch: 5,
+    platform: "iPhone",
+    cores: 6,
+    languages: ["ru", "en"],
+  };
+  const first = await __test.deviceKeysForFingerprint("test-secret", fingerprint, { device: "iPhone", os: "iOS" });
+  const second = await __test.deviceKeysForFingerprint("test-secret", fingerprint, { device: "iPhone", os: "iOS" });
+  assert.deepEqual(first, second);
+  assert.equal(first.length, 2);
+  assert.ok(first.every((value) => /^[a-f0-9]{64}$/.test(value)));
+  assert.ok(!JSON.stringify(first).includes(fingerprint.install_id));
+});
+
+test("blacklist matches account, network, and device hashes", () => {
+  const blacklist = __test.normaliseBlacklist({
+    entries: [{
+      id: "ban-1",
+      root_user_id: "100",
+      user_ids: ["100", "101"],
+      ip_hashes: ["b".repeat(64)],
+      device_hashes: ["c".repeat(64)],
+      active: true,
+    }],
+  });
+  assert.equal(__test.findBlacklistMatch(blacklist, "101", "", [])?.matched_by, "account");
+  assert.equal(__test.findBlacklistMatch(blacklist, "200", "b".repeat(64), [])?.matched_by, "network");
+  assert.equal(__test.findBlacklistMatch(blacklist, "300", "", ["c".repeat(64)])?.matched_by, "device");
+  assert.equal(__test.findBlacklistMatch(blacklist, "400", "", []), null);
 });
