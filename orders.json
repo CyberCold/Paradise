@@ -2240,5 +2240,21 @@
     "username": "Arman",
     "status": "new",
     "date": "19.07.2026 15:19"
+  },
+  "#0126": {
+    "oid": "#0126",
+    "items": [
+      {
+        "pid": "vozolneon",
+        "product_name": "Vozol Neon 60k puffs",
+        "flavor": "не указан",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Привет, хочу купить\nVozol Lavafire 1шт",
+    "user_id": 510557368,
+    "username": "Arman",
+    "status": "new",
+    "date": "19.07.2026 16:16"
   }
 }
