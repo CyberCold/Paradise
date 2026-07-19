@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-import { __test } from "../workers/paradise-users.js";
+import paradiseUsersWorker, { __test } from "../workers/paradise-users.js";
 
 async function signedInitData(botToken, authDate, userId = 7511735897) {
   const values = new URLSearchParams({
@@ -145,4 +145,87 @@ test("blacklist matches account, network, and device hashes", () => {
   assert.equal(__test.findBlacklistMatch(blacklist, "200", "b".repeat(64), [])?.matched_by, "network");
   assert.equal(__test.findBlacklistMatch(blacklist, "300", "", ["c".repeat(64)])?.matched_by, "device");
   assert.equal(__test.findBlacklistMatch(blacklist, "400", "", []), null);
+});
+
+test("access decision is deny-only for active blacklist matches", () => {
+  const blacklist = __test.normaliseBlacklist({
+    entries: [{
+      id: "ban-active",
+      root_user_id: "100",
+      user_ids: ["100", "101"],
+      ip_hashes: ["b".repeat(64)],
+      device_hashes: ["c".repeat(64)],
+      active: true,
+    }, {
+      id: "ban-disabled",
+      root_user_id: "500",
+      user_ids: ["500"],
+      ip_hashes: ["d".repeat(64)],
+      device_hashes: ["e".repeat(64)],
+      active: false,
+    }],
+  });
+
+  assert.equal(__test.decideAccess(blacklist, "101", "", []).access, false);
+  assert.equal(__test.decideAccess(blacklist, "200", "b".repeat(64), []).access, false);
+  assert.equal(__test.decideAccess(blacklist, "300", "", ["c".repeat(64)]).access, false);
+  assert.equal(__test.decideAccess(blacklist, "400", "", []).access, true);
+  assert.equal(__test.decideAccess(blacklist, "500", "d".repeat(64), ["e".repeat(64)]).access, true);
+  assert.equal(__test.decideAccess(__test.normaliseBlacklist({}), "600", "", []).access, true);
+});
+
+test("tracking storage cannot delay an allowed access response", async () => {
+  const originalFetch = globalThis.fetch;
+  const backgroundTasks = [];
+  let trackingReadStarted = false;
+  const blacklist = JSON.stringify({ version: 1, updated_at: "", entries: [] });
+
+  globalThis.fetch = async (input) => {
+    const url = String(input);
+    if (url.includes("/contents/blacklist.json")) {
+      return new Response(JSON.stringify({
+        sha: "blacklist-sha",
+        encoding: "base64",
+        content: Buffer.from(blacklist, "utf8").toString("base64"),
+      }), { status: 200, headers: { "Content-Type": "application/json" } });
+    }
+    if (url.includes("/contents/webapp_users.json")) {
+      trackingReadStarted = true;
+      return new Promise(() => {});
+    }
+    throw new Error(`Unexpected test request: ${url}`);
+  };
+
+  try {
+    const initData = new URLSearchParams({
+      user: JSON.stringify({ id: 990001, first_name: "Allowed" }),
+      auth_date: "1",
+      hash: "not-required-for-access",
+    }).toString();
+    const request = new Request("https://paradiseminiapp.pages.dev/app", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "CF-Connecting-IP": "198.51.100.10",
+        "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X)",
+      },
+      body: JSON.stringify({ initData, fingerprint: {} }),
+    });
+    const response = await Promise.race([
+      paradiseUsersWorker.fetch(request, {
+        GITHUB_TOKEN: "test-token",
+        BAN_SECRET: "test-ban-secret",
+      }, {
+        waitUntil(promise) { backgroundTasks.push(promise); },
+      }),
+      new Promise((_, reject) => setTimeout(() => reject(new Error("Access response waited for tracking")), 500)),
+    ]);
+    const payload = await response.json();
+    assert.equal(response.status, 200);
+    assert.equal(payload.access, true);
+    assert.equal(trackingReadStarted, true);
+    assert.equal(backgroundTasks.length, 1);
+  } finally {
+    globalThis.fetch = originalFetch;
+  }
 });

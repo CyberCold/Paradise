@@ -128,6 +128,41 @@
             });
         }
 
+        function navigateToCatalog(rawLocation) {
+            const destination = new URL(rawLocation, location.origin);
+            if (
+                destination.origin !== location.origin ||
+                destination.pathname !== "/catalog" ||
+                !destination.searchParams.get("access")
+            ) {
+                throw new Error("Invalid catalogue location");
+            }
+
+            status.textContent = "ОТКРЫВАЮ КАТАЛОГ...";
+            const form = document.createElement("form");
+            form.method = "GET";
+            form.action = destination.pathname;
+            form.target = "_self";
+            for (const [name, value] of destination.searchParams) {
+                const input = document.createElement("input");
+                input.type = "hidden";
+                input.name = name;
+                input.value = value;
+                form.appendChild(input);
+            }
+            document.body.appendChild(form);
+            form.submit();
+
+            setTimeout(() => {
+                window.location.href = destination.href;
+            }, 500);
+            setTimeout(() => {
+                if (location.pathname !== "/catalog") {
+                    deny("НЕ УДАЛОСЬ ОТКРЫТЬ КАТАЛОГ. ЗАКРОЙТЕ И ОТКРОЙТЕ MINI APP ЗАНОВО.");
+                }
+            }, 5_000);
+        }
+
         async function openApplication() {
             window.Telegram?.WebApp?.ready?.();
             window.Telegram?.WebApp?.expand?.();
@@ -160,7 +195,7 @@
                 if (!response.ok) throw new Error(`HTTP ${response.status}`);
                 const result = await response.json().catch(() => ({}));
                 if (result.access !== true || !/^\/catalog\?access=/.test(result.location || "")) throw new Error("Invalid access response");
-                location.replace(result.location);
+                navigateToCatalog(result.location);
             } catch {
                 deny("СЕРВИС ВРЕМЕННО НЕДОСТУПЕН. ПОПРОБУЙТЕ ПОЗЖЕ.");
             } finally {

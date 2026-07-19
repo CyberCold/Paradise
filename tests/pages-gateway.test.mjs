@@ -36,6 +36,16 @@ test("public bootstrap cannot wait forever for optional device entropy", async (
   assert.doesNotMatch(publicHtml, /fingerprint:\s*await fingerprint\(\)/);
 });
 
+test("successful access uses WebView-safe catalogue navigation", async () => {
+  const publicHtml = await fs.readFile(new URL("../index.html", import.meta.url), "utf8");
+  assert.match(publicHtml, /function navigateToCatalog/);
+  assert.match(publicHtml, /form\.method = "GET"/);
+  assert.match(publicHtml, /form\.target = "_self"/);
+  assert.match(publicHtml, /form\.submit\(\)/);
+  assert.match(publicHtml, /window\.location\.href = destination\.href/);
+  assert.doesNotMatch(publicHtml, /location\.replace\(result\.location\)/);
+});
+
 test("public and protected inline scripts parse", async () => {
   for (const path of ["../index.html", "../protected/index.html"]) {
     const html = await fs.readFile(new URL(path, import.meta.url), "utf8");

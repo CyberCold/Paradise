@@ -641,6 +641,13 @@ function findBlacklistMatch(blacklist, userId, ipHash, deviceKeys) {
   return null;
 }
 
+function decideAccess(blacklist, userId, ipHash, deviceKeys) {
+  const blocked = findBlacklistMatch(blacklist, userId, ipHash, deviceKeys);
+  return blocked
+    ? { access: false, blocked: true, match: blocked }
+    : { access: true, blocked: false, match: null };
+}
+
 async function recordBlockedUser(env, entryId, userId) {
   const uid = String(userId);
   if (!/^\d+$/.test(uid)) return;
@@ -695,6 +702,7 @@ export const __test = {
   deviceKeysForFingerprint,
   normaliseBlacklist,
   findBlacklistMatch,
+  decideAccess,
   verifyTelegramInitData,
   telegramUserFromInitData,
 };
@@ -723,9 +731,15 @@ export default {
       const clientIp = request.headers.get("CF-Connecting-IP") || "unknown";
       const ipHash = clientIp === "unknown" ? "" : await identifierHash(env.BAN_SECRET, "ip", clientIp);
       const blacklist = await readBlacklistFile(env);
-      const blocked = findBlacklistMatch(blacklist.data, user.id, ipHash, deviceKeys);
-      if (blocked) {
-        if (ctx?.waitUntil) ctx.waitUntil(recordBlockedUser(env, blocked.entry.id, user.id).catch(() => {}));
+      const decision = decideAccess(blacklist.data, user.id, ipHash, deviceKeys);
+      console.log(JSON.stringify({
+        event: "access_decision",
+        user_id: String(user.id),
+        access: decision.access,
+        matched_by: decision.match?.matched_by || "none",
+      }));
+      if (!decision.access) {
+        if (ctx?.waitUntil) ctx.waitUntil(recordBlockedUser(env, decision.match.entry.id, user.id).catch(() => {}));
         return json({ ok: false, blocked: true, error: "Access denied" }, 403, cors);
       }
       const visit = createVisit(request, fingerprint, uaParsed, geo, now);
