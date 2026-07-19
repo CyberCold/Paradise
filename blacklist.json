@@ -1,5 +1,19 @@
 {
   "version": 1,
-  "updated_at": "",
-  "entries": []
+  "updated_at": "2026-07-19T10:52:19.830Z",
+  "entries": [
+    {
+      "id": "ban-1784458339830-6fd85f60",
+      "root_user_id": "8482703228",
+      "user_ids": [
+        "8482703228"
+      ],
+      "ip_hashes": [],
+      "device_hashes": [],
+      "reason": "",
+      "created_at": "2026-07-19T10:52:19.830Z",
+      "created_by": "dashboard",
+      "active": true
+    }
+  ]
 }
