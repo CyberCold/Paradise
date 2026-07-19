@@ -46,6 +46,15 @@ test("successful access uses WebView-safe catalogue navigation", async () => {
   assert.doesNotMatch(publicHtml, /location\.replace\(result\.location\)/);
 });
 
+test("server-granted catalogue removes its internal access overlay", async () => {
+  const protectedHtml = await fs.readFile(new URL("../protected/index.html", import.meta.url), "utf8");
+  const grantedBranch = protectedHtml.match(
+    /if \(window\.__PARADISE_GATE_GRANTED__ === true\) \{[\s\S]*?return true;\s*\}/,
+  )?.[0] || "";
+  assert.match(grantedBranch, /classList\.remove\('access-pending'\)/);
+  assert.match(grantedBranch, /getElementById\('accessGate'\)\?\.remove\(\)/);
+});
+
 test("public and protected inline scripts parse", async () => {
   for (const path of ["../index.html", "../protected/index.html"]) {
     const html = await fs.readFile(new URL(path, import.meta.url), "utf8");

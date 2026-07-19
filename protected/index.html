@@ -1196,6 +1196,7 @@ async function collectAccessFingerprint() {
 async function syncWebAppUser() {
     if (window.__PARADISE_GATE_GRANTED__ === true) {
         document.body.classList.remove('access-pending');
+        document.getElementById('accessGate')?.remove();
         return true;
     }
     const user = tg?.initDataUnsafe?.user;
