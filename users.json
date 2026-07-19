@@ -19551,7 +19551,8 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-07-19T18:47:11.233931",
     "last_seen": "2026-07-19T15:48:40.421Z"
