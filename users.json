@@ -4634,7 +4634,7 @@
         "cf_ray": "a1d838952d49e4d6",
         "screen": "2560x1440@1",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 0,
         "platform": "Win32",
         "memory": 32,
@@ -9284,7 +9284,7 @@
     "username": "",
     "source": "webapp",
     "registered": "2026-05-29T13:01:10.148Z",
-    "last_seen": "2026-07-19T07:51:43.907Z",
+    "last_seen": "2026-07-19T08:47:22.805Z",
     "ips": [
       {
         "ip": "94.30.253.210",
@@ -9296,8 +9296,8 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-07-18T03:05:22.603Z",
-        "last_seen": "2026-07-19T07:51:43.907Z",
-        "visits": 25
+        "last_seen": "2026-07-19T08:47:22.805Z",
+        "visits": 27
       }
     ],
     "request_history": [
@@ -9340,8 +9340,78 @@
     "last_name": "ᅠ ᅠ ᅠ ᅠ ᅠ",
     "language_code": "ru",
     "is_premium": true,
-    "visit_count": 25,
+    "visit_count": 27,
     "visits": [
+      {
+        "timestamp": "2026-07-19T08:47:22.805Z",
+        "ip": "94.30.253.210",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradise-admin.dnynzvtpyb.workers.dev/session",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a1d876077a46e4d1",
+        "screen": null,
+        "tz_client": null,
+        "color_depth": null,
+        "touch": null,
+        "platform": null,
+        "memory": null,
+        "cores": null,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
+      {
+        "timestamp": "2026-07-19T08:47:20.452Z",
+        "ip": "94.30.253.210",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a1d875f8cc2dabf3",
+        "screen": "420x912@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": 0,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-07-19T07:51:43.907Z",
         "ip": "94.30.253.210",
@@ -10194,17 +10264,19 @@
       }
     ],
     "fingerprint": {
-      "screen": null,
-      "timezone": null,
-      "color_depth": null,
-      "touch": 0,
-      "platform": null,
+      "screen": "420x912@3",
+      "timezone": "Europe/Riga",
+      "color_depth": 24,
+      "touch": 5,
+      "platform": "iPhone",
       "memory": 0,
-      "cores": 0,
+      "cores": 4,
       "connection": null,
-      "webgl_vendor": null,
-      "webgl_renderer": null,
-      "languages": [],
+      "webgl_vendor": "Apple Inc.",
+      "webgl_renderer": "Apple GPU",
+      "languages": [
+        "ru"
+      ],
       "ua_platform": null,
       "ua_platform_version": null,
       "ua_architecture": null,
@@ -10214,7 +10286,7 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-07-19T07:51:43.907Z"
+      "updated_at": "2026-07-19T08:47:22.805Z"
     },
     "geo": {
       "country": "LV",
@@ -10228,6 +10300,10 @@
     },
     "sources": [
       "webapp"
+    ],
+    "device_keys": [
+      "77c48f956ea7e54ee342a6b442842dc4d88b7d0fab3caedb7c8d525dd2203154",
+      "808e12e47877a4aae3af717f17de0de8b6cf3d9609178537f7c204b6b0f5a390"
     ]
   },
   "5637938428": {
