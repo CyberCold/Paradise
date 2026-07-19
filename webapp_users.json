@@ -2391,7 +2391,7 @@
         "cf_ray": "a1dad2a19f7dcc3f",
         "screen": "402x874@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -7971,6 +7971,112 @@
       "isp": "Lattelecom SIA",
       "lat": 56.946,
       "lon": 24.10589
+    }
+  },
+  "8018922274": {
+    "id": 8018922274,
+    "first_name": "Haval",
+    "last_name": "",
+    "username": "Havalbaget",
+    "language_code": "ru",
+    "is_premium": true,
+    "source": "webapp",
+    "registered": "2026-07-19T15:43:35.727Z",
+    "last_seen": "2026-07-19T15:43:35.727Z",
+    "visit_count": 1,
+    "ips": [
+      {
+        "ip": "2a00:808:136:cf3d::1004:3bd6",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Tele2 Latvia",
+        "asn": 1257,
+        "lat": 56.946,
+        "lon": 24.1059,
+        "first_seen": "2026-07-19T15:43:35.727Z",
+        "last_seen": "2026-07-19T15:43:35.727Z",
+        "visits": 1
+      }
+    ],
+    "visits": [
+      {
+        "timestamp": "2026-07-19T15:43:35.727Z",
+        "ip": "2a00:808:136:cf3d::1004:3bd6",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 15; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.46 Mobile Safari/537.36 Telegram-Android/12.9.0 (Samsung SM-A556B; Android 15; SDK 35; HIGH)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "150.0.7871.46",
+        "os": "Android",
+        "os_version": "15",
+        "language": "ru-RU",
+        "cf_ray": "a1dad7b83a1ba85d",
+        "screen": "384x832@2.8125",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 8,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru-RU",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      }
+    ],
+    "fingerprint": {
+      "screen": "384x832@2.8125",
+      "timezone": "Europe/Riga",
+      "color_depth": 24,
+      "touch": 5,
+      "platform": "Linux aarch64",
+      "memory": 8,
+      "cores": 8,
+      "connection": "4g",
+      "webgl_vendor": "Samsung Electronics Co., Ltd.",
+      "webgl_renderer": "ANGLE (Samsung Xclipse 530) on Vulkan 1.3.279",
+      "languages": [
+        "ru-RU",
+        "en-US"
+      ],
+      "ua_platform": "Android",
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": true,
+      "device": "Android Phone",
+      "browser": "Chrome",
+      "os": "Android",
+      "updated_at": "2026-07-19T15:43:35.727Z"
+    },
+    "device_keys": [
+      "3391bf2b2f20e1676b6f108291ac05dcc149fee4634298d8bd2fec0d7a3adf9d",
+      "9b8500e5d2775667d0373715c47d74d24f7c19becdaec9955f328deb733386be"
+    ],
+    "geo": {
+      "country": "LV",
+      "city": "Riga",
+      "region": "Riga",
+      "timezone": "Europe/Riga",
+      "asn": 1257,
+      "isp": "Tele2 Latvia",
+      "lat": 56.946,
+      "lon": 24.1059
     }
   }
 }
