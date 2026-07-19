@@ -28,6 +28,14 @@ test("public bootstrap does not contain the catalogue payload", async () => {
   assert.equal(publicHtml.includes("catalogOverrides"), false);
 });
 
+test("public bootstrap cannot wait forever for optional device entropy", async () => {
+  const publicHtml = await fs.readFile(new URL("../index.html", import.meta.url), "utf8");
+  assert.match(publicHtml, /getHighEntropyValues[\s\S]*after\(800, null\)/);
+  assert.match(publicHtml, /Promise\.race\(\[fingerprint\(\), after\(1_200, \{\}\)\]\)/);
+  assert.match(publicHtml, /Access check timed out/);
+  assert.doesNotMatch(publicHtml, /fingerprint:\s*await fingerprint\(\)/);
+});
+
 test("public and protected inline scripts parse", async () => {
   for (const path of ["../index.html", "../protected/index.html"]) {
     const html = await fs.readFile(new URL(path, import.meta.url), "utf8");

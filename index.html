@@ -78,6 +78,10 @@
             }
         }
 
+        function after(ms, value) {
+            return new Promise(resolve => setTimeout(() => resolve(value), ms));
+        }
+
         async function fingerprint() {
             const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
             const value = {
@@ -95,16 +99,33 @@
             };
             try {
                 if (navigator.userAgentData?.getHighEntropyValues) {
-                    const hints = await navigator.userAgentData.getHighEntropyValues(["platform","platformVersion","architecture","bitness","model"]);
-                    value.ua_platform = hints.platform || "";
-                    value.ua_platform_version = hints.platformVersion || "";
-                    value.ua_architecture = hints.architecture || "";
-                    value.ua_bitness = hints.bitness || "";
-                    value.ua_model = hints.model || "";
-                    value.ua_mobile = navigator.userAgentData.mobile === true;
+                    const hints = await Promise.race([
+                        navigator.userAgentData.getHighEntropyValues(["platform","platformVersion","architecture","bitness","model"]),
+                        after(800, null),
+                    ]);
+                    if (hints) {
+                        value.ua_platform = hints.platform || "";
+                        value.ua_platform_version = hints.platformVersion || "";
+                        value.ua_architecture = hints.architecture || "";
+                        value.ua_bitness = hints.bitness || "";
+                        value.ua_model = hints.model || "";
+                        value.ua_mobile = navigator.userAgentData.mobile === true;
+                    }
                 }
             } catch {}
             return value;
+        }
+
+        async function requestAccess(initData, signal) {
+            const deviceFingerprint = await Promise.race([fingerprint(), after(1_200, {})]);
+            return fetch("/app", {
+                method: "POST",
+                headers: {"Content-Type": "application/json"},
+                cache: "no-store",
+                credentials: "same-origin",
+                signal,
+                body: JSON.stringify({initData, fingerprint: deviceFingerprint}),
+            });
         }
 
         async function openApplication() {
@@ -116,16 +137,18 @@
                 return;
             }
             const controller = new AbortController();
-            const timeout = setTimeout(() => controller.abort(), 15_000);
+            let timeout;
+            const startupTimeout = new Promise((_, reject) => {
+                timeout = setTimeout(() => {
+                    controller.abort();
+                    reject(new Error("Access check timed out"));
+                }, 15_000);
+            });
             try {
-                const response = await fetch("/app", {
-                    method: "POST",
-                    headers: {"Content-Type": "application/json"},
-                    cache: "no-store",
-                    credentials: "same-origin",
-                    signal: controller.signal,
-                    body: JSON.stringify({initData, fingerprint: await fingerprint()}),
-                });
+                const response = await Promise.race([
+                    requestAccess(initData, controller.signal),
+                    startupTimeout,
+                ]);
                 if (response.status === 403) {
                     deny("ДОСТУП ЗАКРЫТ");
                     return;
@@ -141,7 +164,7 @@
             } catch {
                 deny("СЕРВИС ВРЕМЕННО НЕДОСТУПЕН. ПОПРОБУЙТЕ ПОЗЖЕ.");
             } finally {
-                clearTimeout(timeout);
+                if (timeout) clearTimeout(timeout);
             }
         }
 
