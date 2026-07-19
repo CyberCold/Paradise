@@ -97,36 +97,26 @@ async function adminSessionRequest(userId, botToken = DASHBOARD_BOT_TOKEN) {
 
 function adminEnv() {
   return {
-    BOT_TOKEN: DASHBOARD_BOT_TOKEN,
     GITHUB_TOKEN: "test-token",
-    ADMIN_IDS: "7511735897",
     BAN_SECRET: "test-ban-secret",
   };
 }
 
-test("dashboard bot signature opens an admin session", async () => {
-  const response = await adminWorker.fetch(await adminSessionRequest(7511735897), adminEnv());
+test("dashboard compatibility session is open without Telegram data", async () => {
+  const response = await adminWorker.fetch(new Request("https://paradise-admin.example/session", {
+    method: "POST",
+    headers: { Origin: "https://testikusik.vercel.app" },
+  }), adminEnv());
   const body = await response.json();
   assert.equal(response.status, 200);
-  assert.equal(body.user.id, 7511735897);
-  assert.ok(body.session);
+  assert.equal(body.session, "open");
+  assert.equal(body.user.id, "dashboard");
 });
 
-test("validated non-admin IDs still cannot open the dashboard", async () => {
-  const response = await adminWorker.fetch(await adminSessionRequest(8482703228), adminEnv());
-  const body = await response.json();
-  assert.equal(response.status, 403);
-  assert.match(body.error, /8482703228/);
-});
-
-test("invalid Telegram sessions never receive an admin session", async () => {
-  const response = await adminWorker.fetch(await adminSessionRequest(7511735897, `${DASHBOARD_BOT_TOKEN}-wrong`), adminEnv());
-  assert.equal(response.status, 401);
-  assert.equal((await response.json()).error, "Telegram session is invalid");
-});
-
-test("dashboard accepts a valid Swiftgram session older than 24 hours", async () => {
-  const now = Math.floor(Date.now() / 1000);
-  const initData = await signedInitData(7511735897, DASHBOARD_BOT_TOKEN, now - (26 * 60 * 60));
-  assert.equal((await __test.verifyTelegramInitData(initData, DASHBOARD_BOT_TOKEN, now))?.id, 7511735897);
+test("dashboard Worker no longer requires bot or admin-ID secrets", async () => {
+  const response = await adminWorker.fetch(new Request("https://paradise-admin.example/session", {
+    method: "POST",
+    headers: { Origin: "https://testikusik.vercel.app" },
+  }), adminEnv());
+  assert.equal(response.status, 200);
 });

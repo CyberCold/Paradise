@@ -571,24 +571,16 @@ export default {
   async fetch(request, env) {
     const cors = originHeaders(request);
     if (request.method === "OPTIONS") return new Response(null, { status: 204, headers: cors });
-    if (!env.BOT_TOKEN || !env.GITHUB_TOKEN || !env.ADMIN_IDS || !env.BAN_SECRET) {
+    if (!env.GITHUB_TOKEN || !env.BAN_SECRET) {
       return json({ error: "Worker secrets are not configured" }, 503, cors);
     }
 
     try {
       const url = new URL(request.url);
-      const adminIds = new Set(String(env.ADMIN_IDS).split(",").map((id) => id.trim()).filter(Boolean));
 
       if (url.pathname === "/session" && request.method === "POST") {
-        const body = await parseJson(request);
-        const user = await verifyTelegramInitData(String(body?.initData || ""), env.BOT_TOKEN);
-        if (!user) return json({ error: "Telegram session is invalid" }, 401, cors);
-        if (!adminIds.has(String(user.id))) return json({ error: `Not authorised (Telegram ID: ${user.id})` }, 403, cors);
-        return json({ session: await createSession(user.id, env.BAN_SECRET), user: { id: user.id, first_name: trimText(user.first_name, 70) } }, 200, cors);
+        return json({ session: "open", user: { id: "dashboard" } }, 200, cors);
       }
-
-      const session = await verifySession(request, env.BAN_SECRET, adminIds);
-      if (!session) return json({ error: "Session expired" }, 401, cors);
 
       if (url.pathname === "/blacklist/preview" && request.method === "POST") {
         const body = await parseJson(request);
@@ -619,7 +611,7 @@ export default {
           device_hashes: preview.device_hashes,
           reason: preview.request.reason,
           created_at: now,
-          created_by: String(session.id),
+          created_by: "dashboard",
           active: true,
         };
         const blacklist = await mutateDataFile(env, FILES.blacklist, "security: add blacklist entry", (currentValue) => {

@@ -6,7 +6,7 @@ import { onRequest as openApp } from "../functions/app.js";
 import { onRequest as openCatalog } from "../functions/catalog.js";
 import { onRequest as routeStatic } from "../functions/[[path]].js";
 import { onRequest as protectedRoute } from "../functions/protected/[[path]].js";
-import { createSessionCookie, telegramUserId, verifySessionCookie } from "../functions/_shared/session.js";
+import { createAccessToken, telegramUserId, verifyAccessToken } from "../functions/_shared/session.js";
 
 const TEST_SECRET = "test-secret-with-enough-entropy-for-hmac";
 const VALID_INIT_DATA = "user=%7B%22id%22%3A8482703228%2C%22first_name%22%3A%22Admin%22%7D&auth_date=1&hash=signed";
@@ -57,7 +57,7 @@ test("gateway never serves app assets when access is denied", async () => {
   assert.equal(assetReads, 0);
 });
 
-test("gateway creates a short session without streaming the protected HTML", async () => {
+test("gateway creates a short access URL without relying on WebView cookies", async () => {
   let assetReads = 0;
   const response = await openApp({
     request: request(),
@@ -75,16 +75,19 @@ test("gateway creates a short session without streaming the protected HTML", asy
   });
   assert.equal(response.status, 200);
   assert.equal(assetReads, 0);
-  assert.deepEqual(await response.json(), { ok: true, access: true, location: "/catalog" });
+  const body = await response.json();
+  assert.equal(body.ok, true);
+  assert.equal(body.access, true);
+  assert.match(body.location, /^\/catalog\?access=/);
   assert.match(response.headers.get("Cache-Control"), /no-store/);
-  assert.match(response.headers.get("Set-Cookie"), /__Host-paradise_session=/);
+  assert.equal(response.headers.get("Set-Cookie"), null);
 });
 
-test("catalogue route serves protected HTML only with a valid session", async () => {
+test("catalogue route serves protected HTML only with a valid access URL", async () => {
   let assetReads = 0;
-  const cookie = await createSessionCookie(TEST_SECRET, "8482703228");
+  const token = await createAccessToken(TEST_SECRET, "8482703228");
   const response = await openCatalog({
-    request: new Request("https://paradiseminiapp.pages.dev/catalog", { headers: { Cookie: cookie } }),
+    request: new Request(`https://paradiseminiapp.pages.dev/catalog?access=${encodeURIComponent(token)}`),
     env: {
       BAN_SECRET: TEST_SECRET,
       ASSETS: {
@@ -100,10 +103,11 @@ test("catalogue route serves protected HTML only with a valid session", async ()
   assert.equal(assetReads, 1);
   const html = await response.text();
   assert.match(html, /__PARADISE_GATE_GRANTED__=true/);
+  assert.match(html, /__PARADISE_ACCESS_TOKEN__/);
   assert.match(html, /catalogue/);
 });
 
-test("catalogue route hides the protected asset without a session", async () => {
+test("catalogue route hides the protected asset without an access URL", async () => {
   let assetReads = 0;
   const response = await openCatalog({
     request: new Request("https://paradiseminiapp.pages.dev/catalog"),
@@ -116,13 +120,13 @@ test("catalogue route hides the protected asset without a session", async () => 
   assert.equal(assetReads, 0);
 });
 
-test("session cookies are signed, expire, and preserve the Telegram ID", async () => {
+test("access URLs are signed, expire, and preserve the Telegram ID", async () => {
   assert.equal(telegramUserId(VALID_INIT_DATA), "8482703228");
   const now = Date.now();
-  const cookie = await createSessionCookie(TEST_SECRET, "8482703228", now);
-  assert.equal((await verifySessionCookie(TEST_SECRET, cookie, now))?.userId, "8482703228");
-  assert.equal(await verifySessionCookie(`${TEST_SECRET}-wrong`, cookie, now), null);
-  assert.equal(await verifySessionCookie(TEST_SECRET, cookie, now + 301_000), null);
+  const token = await createAccessToken(TEST_SECRET, "8482703228", now);
+  assert.equal((await verifyAccessToken(TEST_SECRET, token, now))?.userId, "8482703228");
+  assert.equal(await verifyAccessToken(`${TEST_SECRET}-wrong`, token, now), null);
+  assert.equal(await verifyAccessToken(TEST_SECRET, token, now + 301_000), null);
 });
 
 test("Pages routing hides source and data files from unauthenticated requests", async () => {
@@ -137,12 +141,12 @@ test("Pages routing hides source and data files from unauthenticated requests", 
   assert.equal(assetReads, 0);
 });
 
-test("only a valid short session can read catalogue JSON assets", async () => {
+test("only a valid short access URL can read catalogue JSON assets", async () => {
   let assetReads = 0;
-  const cookie = await createSessionCookie(TEST_SECRET, "8482703228");
+  const token = await createAccessToken(TEST_SECRET, "8482703228");
   const env = { BAN_SECRET: TEST_SECRET, ASSETS: { fetch: async () => { assetReads += 1; return new Response("[]"); } } };
   const response = await routeStatic({
-    request: new Request("https://example.test/banners.json", { headers: { Cookie: cookie } }),
+    request: new Request(`https://example.test/banners.json?access=${encodeURIComponent(token)}`),
     env,
   });
   assert.equal(response.status, 200);

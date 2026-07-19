@@ -1,4 +1,4 @@
-import { verifySessionCookie } from "./_shared/session.js";
+import { verifyAccessToken } from "./_shared/session.js";
 
 const PUBLIC_PATHS = new Set(["/", "/index.html"]);
 const SESSION_ASSETS = new Set(["/banners.json", "/catalog_overrides.json"]);
@@ -31,7 +31,7 @@ export async function onRequest(context) {
   }
 
   if (SESSION_ASSETS.has(url.pathname)) {
-    const session = await verifySessionCookie(env.BAN_SECRET, request.headers.get("Cookie"));
+    const session = await verifyAccessToken(env.BAN_SECRET, url.searchParams.get("access") || "");
     if (!session) return notFound();
     const asset = await env.ASSETS.fetch(request);
     const headers = new Headers(asset.headers);

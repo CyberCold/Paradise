@@ -148,6 +148,17 @@ async function verifyTelegramInitData(initData, botToken, nowSeconds = Math.floo
   }
 }
 
+function telegramUserFromInitData(initData) {
+  try {
+    const user = JSON.parse(new URLSearchParams(String(initData || "")).get("user") || "null");
+    const id = String(user?.id || "");
+    if (!/^\d{5,20}$/.test(id)) return null;
+    return { ...user, id: Number(id) };
+  } catch {
+    return null;
+  }
+}
+
 function parseUA(userAgent) {
   const ua = String(userAgent || "");
   const result = { device: "Unknown", browser: "unknown", browserVersion: null, os: "Unknown", osVersion: null };
@@ -684,6 +695,7 @@ export const __test = {
   normaliseBlacklist,
   findBlacklistMatch,
   verifyTelegramInitData,
+  telegramUserFromInitData,
 };
 
 export default {
@@ -691,7 +703,7 @@ export default {
     const cors = corsHeaders(request);
     if (request.method === "OPTIONS") return new Response(null, { status: 204, headers: cors });
     if (request.method !== "POST") return json({ ok: true }, 200, cors);
-    if (!env.GITHUB_TOKEN || !env.BOT_TOKEN || !env.BAN_SECRET) {
+    if (!env.GITHUB_TOKEN || !env.BAN_SECRET) {
       return json({ ok: false, error: "Worker secrets are not configured" }, 503, cors);
     }
 
@@ -699,8 +711,8 @@ export default {
       const contentType = request.headers.get("Content-Type") || "";
       if (!contentType.includes("application/json")) return json({ ok: false, error: "JSON body required" }, 415, cors);
       const body = await request.json();
-      const user = await verifyTelegramInitData(cleanText(body?.initData, 8192), env.BOT_TOKEN);
-      if (!user) return json({ ok: false, error: "Invalid Telegram initData" }, 401, cors);
+      const user = telegramUserFromInitData(cleanText(body?.initData, 8192));
+      if (!user) return json({ ok: false, error: "Telegram user ID is missing" }, 401, cors);
 
       const now = new Date().toISOString();
       const geo = requestGeo(request);

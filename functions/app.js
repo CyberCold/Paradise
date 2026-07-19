@@ -1,4 +1,4 @@
-import { createSessionCookie, telegramUserId } from "./_shared/session.js";
+import { createAccessToken, telegramUserId } from "./_shared/session.js";
 
 const MAX_REQUEST_BYTES = 64 * 1024;
 
@@ -61,9 +61,10 @@ export async function onRequest(context) {
   }
   if (accessPayload?.access !== true) return json({ error: "Access was not granted" }, 502);
 
-  return json(
-    { ok: true, access: true, location: "/catalog" },
-    200,
-    { "Set-Cookie": await createSessionCookie(env.BAN_SECRET, userId) },
-  );
+  const accessToken = await createAccessToken(env.BAN_SECRET, userId);
+  return json({
+    ok: true,
+    access: true,
+    location: `/catalog?access=${encodeURIComponent(accessToken)}`,
+  }, 200);
 }

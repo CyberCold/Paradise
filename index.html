@@ -136,7 +136,7 @@
                 }
                 if (!response.ok) throw new Error(`HTTP ${response.status}`);
                 const result = await response.json().catch(() => ({}));
-                if (result.access !== true || result.location !== "/catalog") throw new Error("Invalid access response");
+                if (result.access !== true || !/^\/catalog\?access=/.test(result.location || "")) throw new Error("Invalid access response");
                 location.replace(result.location);
             } catch {
                 deny("СЕРВИС ВРЕМЕННО НЕДОСТУПЕН. ПОПРОБУЙТЕ ПОЗЖЕ.");

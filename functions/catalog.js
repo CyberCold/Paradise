@@ -1,4 +1,4 @@
-import { verifySessionCookie } from "./_shared/session.js";
+import { verifyAccessToken } from "./_shared/session.js";
 
 function notFound() {
   return new Response("Not found", {
@@ -28,7 +28,9 @@ export async function onRequest(context) {
   if (!new Set(["GET", "HEAD"]).has(request.method)) return notFound();
   if (!env.BAN_SECRET || !env.ASSETS) return unavailable();
 
-  const session = await verifySessionCookie(env.BAN_SECRET, request.headers.get("Cookie"));
+  const url = new URL(request.url);
+  const accessToken = url.searchParams.get("access") || "";
+  const session = await verifyAccessToken(env.BAN_SECRET, accessToken);
   if (!session) return notFound();
 
   const assetUrl = new URL("/protected/index.html", request.url);
@@ -45,7 +47,7 @@ export async function onRequest(context) {
 
   const securedHtml = html.replace(
     /<head(\s[^>]*)?>/i,
-    match => `${match}<script>window.__PARADISE_GATE_GRANTED__=true;<\/script>`,
+    match => `${match}<script>window.__PARADISE_GATE_GRANTED__=true;window.__PARADISE_ACCESS_TOKEN__=${JSON.stringify(accessToken)};history.replaceState(null,"","/catalog");<\/script>`,
   );
   const headers = new Headers(asset.headers);
   headers.set("Content-Type", "text/html; charset=utf-8");

@@ -37,6 +37,16 @@ test("Telegram validation accepts Swiftgram sessions older than 24 hours but not
   assert.equal(await __test.verifyTelegramInitData(futureSession, botToken, now), null);
 });
 
+test("access gate extracts Telegram ID without depending on session signature", () => {
+  const initData = new URLSearchParams({
+    user: JSON.stringify({ id: 7511735897, first_name: "Admin" }),
+    auth_date: "1",
+    hash: "expired-or-unavailable",
+  }).toString();
+  assert.equal(__test.telegramUserFromInitData(initData)?.id, 7511735897);
+  assert.equal(__test.telegramUserFromInitData("user=broken"), null);
+});
+
 test("GitHub Base64 round-trip preserves UTF-8 names", () => {
   const original = JSON.stringify({
     first_name: "АК",

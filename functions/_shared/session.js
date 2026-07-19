@@ -1,5 +1,4 @@
-const SESSION_COOKIE = "__Host-paradise_session";
-const SESSION_TTL_SECONDS = 300;
+const ACCESS_TTL_SECONDS = 300;
 
 function bytesToBase64Url(bytes) {
   let binary = "";
@@ -35,15 +34,6 @@ function constantTimeEqual(left, right) {
   return difference === 0;
 }
 
-function cookieValue(header, name) {
-  for (const pair of String(header || "").split(";")) {
-    const separator = pair.indexOf("=");
-    if (separator < 0) continue;
-    if (pair.slice(0, separator).trim() === name) return pair.slice(separator + 1).trim();
-  }
-  return "";
-}
-
 export function telegramUserId(initData) {
   try {
     const user = JSON.parse(new URLSearchParams(String(initData || "")).get("user") || "null");
@@ -54,16 +44,17 @@ export function telegramUserId(initData) {
   }
 }
 
-export async function createSessionCookie(secret, userId, now = Date.now()) {
-  if (!secret || !/^\d{5,20}$/.test(String(userId || ""))) throw new Error("Session configuration is invalid");
-  const payload = textToBase64Url(JSON.stringify({ uid: String(userId), exp: Math.floor(now / 1000) + SESSION_TTL_SECONDS }));
-  const token = `${payload}.${await signature(secret, payload)}`;
-  return `${SESSION_COOKIE}=${token}; Path=/; Max-Age=${SESSION_TTL_SECONDS}; HttpOnly; Secure; SameSite=Strict`;
+export async function createAccessToken(secret, userId, now = Date.now()) {
+  if (!secret || !/^\d{5,20}$/.test(String(userId || ""))) throw new Error("Access token configuration is invalid");
+  const payload = textToBase64Url(JSON.stringify({
+    uid: String(userId),
+    exp: Math.floor(now / 1000) + ACCESS_TTL_SECONDS,
+  }));
+  return `${payload}.${await signature(secret, payload)}`;
 }
 
-export async function verifySessionCookie(secret, cookieHeader, now = Date.now()) {
-  if (!secret) return null;
-  const token = cookieValue(cookieHeader, SESSION_COOKIE);
+export async function verifyAccessToken(secret, token, now = Date.now()) {
+  if (!secret || typeof token !== "string" || token.length > 2048) return null;
   const separator = token.lastIndexOf(".");
   if (separator <= 0) return null;
   const payload = token.slice(0, separator);
