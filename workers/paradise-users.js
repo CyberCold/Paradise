@@ -11,6 +11,8 @@ const MAX_VISITS = 30;
 const MAX_IPS = 20;
 const MAX_DEVICE_KEYS = 8;
 const BLACKLIST_CACHE_MS = 10_000;
+const TELEGRAM_INIT_DATA_MAX_AGE_SECONDS = 7 * 24 * 60 * 60;
+const TELEGRAM_INIT_DATA_CLOCK_SKEW_SECONDS = 5 * 60;
 
 const encoder = new TextEncoder();
 const decoder = new TextDecoder("utf-8", { fatal: true });
@@ -117,7 +119,7 @@ function constantTimeEqual(left, right) {
   return difference === 0;
 }
 
-async function verifyTelegramInitData(initData, botToken) {
+async function verifyTelegramInitData(initData, botToken, nowSeconds = Math.floor(Date.now() / 1000)) {
   if (!initData || initData.length > 8192) return null;
   const values = new URLSearchParams(initData);
   const suppliedHash = values.get("hash") || "";
@@ -126,7 +128,8 @@ async function verifyTelegramInitData(initData, botToken) {
   values.delete("hash");
 
   if (!/^[a-f0-9]{64}$/i.test(suppliedHash) || !authDate || !userText) return null;
-  if (Math.abs(Math.floor(Date.now() / 1000) - authDate) > 24 * 60 * 60) return null;
+  if (authDate > nowSeconds + TELEGRAM_INIT_DATA_CLOCK_SKEW_SECONDS) return null;
+  if (nowSeconds - authDate > TELEGRAM_INIT_DATA_MAX_AGE_SECONDS) return null;
 
   const checkString = [...values.entries()]
     .sort(([left], [right]) => left.localeCompare(right))
@@ -680,6 +683,7 @@ export const __test = {
   deviceKeysForFingerprint,
   normaliseBlacklist,
   findBlacklistMatch,
+  verifyTelegramInitData,
 };
 
 export default {
@@ -712,19 +716,26 @@ export default {
         return json({ ok: false, blocked: true, error: "Access denied" }, 403, cors);
       }
       const visit = createVisit(request, fingerprint, uaParsed, geo, now);
-      const result = await upsertUser(env, user, visit, fingerprint, deviceKeys, uaParsed, geo, now);
-
-      if (result.hadConflict) {
-        await sendMessage(env, `🔄 Конфликт записи пользователя ${user.id} разрешён за ${result.attempts} попытки. Всего webapp-пользователей: ${result.count}`);
-      }
-      if (result.isNew) {
-        const location = [geo.city, geo.region, geo.country].filter(Boolean).join(", ");
-        await sendMessage(
-          env,
-          `👤 #new_user\n${cleanText(user.first_name, 70) || "—"} (@${cleanText(user.username, 40) || "—"})\nID: ${user.id}\n🌍 ${location || "unknown"}\n📱 ${uaParsed.device} · ${uaParsed.os} · ${uaParsed.browser}\n🕐 ${now.slice(0, 16).replace("T", " ")}`,
-        );
-      }
-      return json({ ok: true, access: true, new: result.isNew }, 200, cors);
+      const trackingTask = (async () => {
+        const result = await upsertUser(env, user, visit, fingerprint, deviceKeys, uaParsed, geo, now);
+        if (result.hadConflict) {
+          await sendMessage(env, `🔄 Конфликт записи пользователя ${user.id} разрешён за ${result.attempts} попытки. Всего webapp-пользователей: ${result.count}`);
+        }
+        if (result.isNew) {
+          const location = [geo.city, geo.region, geo.country].filter(Boolean).join(", ");
+          await sendMessage(
+            env,
+            `👤 #new_user\n${cleanText(user.first_name, 70) || "—"} (@${cleanText(user.username, 40) || "—"})\nID: ${user.id}\n🌍 ${location || "unknown"}\n📱 ${uaParsed.device} · ${uaParsed.os} · ${uaParsed.browser}\n🕐 ${now.slice(0, 16).replace("T", " ")}`,
+          );
+        }
+      })();
+      const reportTrackingFailure = async (error) => {
+        const message = cleanText(error instanceof Error ? error.message : "Unknown tracking error", 500);
+        await sendMessage(env, `User tracking failed for ${user.id}: ${message}`);
+      };
+      if (ctx?.waitUntil) ctx.waitUntil(trackingTask.catch(reportTrackingFailure));
+      else trackingTask.catch(reportTrackingFailure);
+      return json({ ok: true, access: true }, 200, cors);
     } catch (error) {
       const message = cleanText(error instanceof Error ? error.message : "Unknown error", 500);
       await sendMessage(env, `🐛 ❌ Ошибка paradise-users: ${message}`);

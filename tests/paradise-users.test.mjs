@@ -3,6 +3,40 @@ import test from "node:test";
 
 import { __test } from "../workers/paradise-users.js";
 
+async function signedInitData(botToken, authDate, userId = 7511735897) {
+  const values = new URLSearchParams({
+    auth_date: String(authDate),
+    query_id: "test-query",
+    user: JSON.stringify({ id: userId, first_name: "Admin" }),
+  });
+  const checkString = [...values.entries()]
+    .sort(([left], [right]) => left.localeCompare(right))
+    .map(([key, value]) => `${key}=${value}`)
+    .join("\n");
+  const encoder = new TextEncoder();
+  const sign = async (keyBytes, data) => {
+    const key = await crypto.subtle.importKey("raw", keyBytes, { name: "HMAC", hash: "SHA-256" }, false, ["sign"]);
+    return new Uint8Array(await crypto.subtle.sign("HMAC", key, encoder.encode(data)));
+  };
+  const secret = await sign(encoder.encode("WebAppData"), botToken);
+  const hash = await sign(secret, checkString);
+  values.set("hash", Buffer.from(hash).toString("hex"));
+  return values.toString();
+}
+
+test("Telegram validation accepts Swiftgram sessions older than 24 hours but not stale replays", async () => {
+  const botToken = "7554495209:test-token";
+  const now = 1_800_000_000;
+  const swiftgramSession = await signedInitData(botToken, now - (26 * 60 * 60));
+  assert.equal((await __test.verifyTelegramInitData(swiftgramSession, botToken, now))?.id, 7511735897);
+
+  const staleSession = await signedInitData(botToken, now - (8 * 24 * 60 * 60));
+  assert.equal(await __test.verifyTelegramInitData(staleSession, botToken, now), null);
+
+  const futureSession = await signedInitData(botToken, now + (10 * 60));
+  assert.equal(await __test.verifyTelegramInitData(futureSession, botToken, now), null);
+});
+
 test("GitHub Base64 round-trip preserves UTF-8 names", () => {
   const original = JSON.stringify({
     first_name: "АК",
