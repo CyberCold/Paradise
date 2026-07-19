@@ -22,12 +22,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": null,
       "browser": null,
       "os": null,
       "updated_at": ""
     },
+    "device_keys": [],
     "geo": {
       "country": "unknown",
       "city": null,
@@ -91,7 +99,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T16:02:19.790Z",
@@ -118,7 +133,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -131,12 +153,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": "Android Phone",
       "browser": "Chrome",
       "os": "Android",
       "updated_at": "2026-07-18T16:28:27.702Z"
     },
+    "device_keys": [],
     "geo": {
       "country": "LV",
       "city": "Riga",
@@ -200,7 +230,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -213,12 +250,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": "iPhone",
       "browser": null,
       "os": "iOS",
       "updated_at": "2026-07-18T04:30:06.198Z"
     },
+    "device_keys": [],
     "geo": {
       "country": "LV",
       "city": "Riga",
@@ -253,12 +298,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": null,
       "browser": null,
       "os": null,
       "updated_at": ""
     },
+    "device_keys": [],
     "geo": {
       "country": "unknown",
       "city": null,
@@ -322,7 +375,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -335,12 +395,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": "Desktop",
       "browser": "unknown",
       "os": "macOS",
       "updated_at": "2026-07-18T15:15:41.768Z"
     },
+    "device_keys": [],
     "geo": {
       "country": "LV",
       "city": "Riga",
@@ -389,12 +457,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": null,
       "browser": null,
       "os": null,
       "updated_at": ""
     },
+    "device_keys": [],
     "geo": {
       "country": "unknown",
       "city": null,
@@ -429,12 +505,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": null,
       "browser": null,
       "os": null,
       "updated_at": ""
     },
+    "device_keys": [],
     "geo": {
       "country": "unknown",
       "city": null,
@@ -498,7 +582,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -511,12 +602,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
       "updated_at": "2026-07-18T07:22:05.621Z"
     },
+    "device_keys": [],
     "geo": {
       "country": "LV",
       "city": "Riga",
@@ -551,12 +650,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": null,
       "browser": null,
       "os": null,
       "updated_at": ""
     },
+    "device_keys": [],
     "geo": {
       "country": "unknown",
       "city": null,
@@ -620,7 +727,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -633,12 +747,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": "iPhone",
       "browser": null,
       "os": "iOS",
       "updated_at": "2026-05-30T13:40:29.786Z"
     },
+    "device_keys": [],
     "geo": {
       "country": "LV",
       "city": "Riga",
@@ -673,12 +795,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": null,
       "browser": null,
       "os": null,
       "updated_at": ""
     },
+    "device_keys": [],
     "geo": {
       "country": "unknown",
       "city": null,
@@ -713,12 +843,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": null,
       "browser": null,
       "os": null,
       "updated_at": ""
     },
+    "device_keys": [],
     "geo": {
       "country": "unknown",
       "city": null,
@@ -753,12 +891,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": null,
       "browser": null,
       "os": null,
       "updated_at": ""
     },
+    "device_keys": [],
     "geo": {
       "country": "unknown",
       "city": null,
@@ -822,7 +968,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T14:40:29.449Z",
@@ -849,7 +1002,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T13:54:03.023Z",
@@ -876,7 +1036,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T13:53:54.346Z",
@@ -903,7 +1070,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T13:53:34.309Z",
@@ -930,7 +1104,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -943,12 +1124,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
       "updated_at": "2026-07-18T18:32:45.880Z"
     },
+    "device_keys": [],
     "geo": {
       "country": "LV",
       "city": "Riga",
@@ -1012,7 +1201,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -1025,12 +1221,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": "iPhone",
       "browser": null,
       "os": "iOS",
       "updated_at": "2026-05-30T13:29:40.195Z"
     },
+    "device_keys": [],
     "geo": {
       "country": "LV",
       "city": "Riga",
@@ -1094,7 +1298,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T17:05:47.624Z",
@@ -1121,7 +1332,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -1134,12 +1352,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": "Android Phone",
       "browser": "Chrome",
       "os": "Android",
       "updated_at": "2026-07-18T17:10:25.144Z"
     },
+    "device_keys": [],
     "geo": {
       "country": "LV",
       "city": "Riga",
@@ -1174,12 +1400,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": null,
       "browser": null,
       "os": null,
       "updated_at": ""
     },
+    "device_keys": [],
     "geo": {
       "country": "unknown",
       "city": null,
@@ -1214,12 +1448,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": null,
       "browser": null,
       "os": null,
       "updated_at": ""
     },
+    "device_keys": [],
     "geo": {
       "country": "unknown",
       "city": null,
@@ -1254,12 +1496,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": null,
       "browser": null,
       "os": null,
       "updated_at": ""
     },
+    "device_keys": [],
     "geo": {
       "country": "unknown",
       "city": null,
@@ -1323,7 +1573,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -1336,12 +1593,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
       "updated_at": "2026-07-18T11:00:49.025Z"
     },
+    "device_keys": [],
     "geo": {
       "country": "LV",
       "city": "Riga",
@@ -1376,12 +1641,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": null,
       "browser": null,
       "os": null,
       "updated_at": ""
     },
+    "device_keys": [],
     "geo": {
       "country": "unknown",
       "city": null,
@@ -1445,7 +1718,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -1458,12 +1738,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": "Android Phone",
       "browser": "Chrome",
       "os": "Android",
       "updated_at": "2026-07-18T05:57:56.449Z"
     },
+    "device_keys": [],
     "geo": {
       "country": "LV",
       "city": "Riga",
@@ -1527,7 +1815,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T21:10:36.074Z",
@@ -1554,7 +1849,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -1567,12 +1869,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
       "updated_at": "2026-07-18T21:10:48.629Z"
     },
+    "device_keys": [],
     "geo": {
       "country": "LV",
       "city": "Riga",
@@ -1607,12 +1917,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": null,
       "browser": null,
       "os": null,
       "updated_at": ""
     },
+    "device_keys": [],
     "geo": {
       "country": "unknown",
       "city": null,
@@ -1647,12 +1965,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": null,
       "browser": null,
       "os": null,
       "updated_at": ""
     },
+    "device_keys": [],
     "geo": {
       "country": "unknown",
       "city": null,
@@ -1716,7 +2042,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -1729,12 +2062,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": "Android Phone",
       "browser": "Chrome",
       "os": "Android",
       "updated_at": "2026-07-19T04:51:52.040Z"
     },
+    "device_keys": [],
     "geo": {
       "country": "LV",
       "city": "Riga",
@@ -1769,12 +2110,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": null,
       "browser": null,
       "os": null,
       "updated_at": ""
     },
+    "device_keys": [],
     "geo": {
       "country": "unknown",
       "city": null,
@@ -1838,7 +2187,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -1851,12 +2207,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
       "updated_at": "2026-07-18T09:04:45.923Z"
     },
+    "device_keys": [],
     "geo": {
       "country": "LV",
       "city": "Riga",
@@ -1920,7 +2284,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -1933,12 +2304,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": "Android Phone",
       "browser": "Chrome",
       "os": "Android",
       "updated_at": "2026-07-18T07:35:13.431Z"
     },
+    "device_keys": [],
     "geo": {
       "country": "LV",
       "city": "Riga",
@@ -1973,12 +2352,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": null,
       "browser": null,
       "os": null,
       "updated_at": ""
     },
+    "device_keys": [],
     "geo": {
       "country": "unknown",
       "city": null,
@@ -2013,12 +2400,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": null,
       "browser": null,
       "os": null,
       "updated_at": ""
     },
+    "device_keys": [],
     "geo": {
       "country": "unknown",
       "city": null,
@@ -2053,12 +2448,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": null,
       "browser": null,
       "os": null,
       "updated_at": ""
     },
+    "device_keys": [],
     "geo": {
       "country": "unknown",
       "city": null,
@@ -2107,12 +2510,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": null,
       "browser": null,
       "os": null,
       "updated_at": ""
     },
+    "device_keys": [],
     "geo": {
       "country": "unknown",
       "city": null,
@@ -2147,12 +2558,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": null,
       "browser": null,
       "os": null,
       "updated_at": ""
     },
+    "device_keys": [],
     "geo": {
       "country": "unknown",
       "city": null,
@@ -2216,7 +2635,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -2229,12 +2655,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": "Android Phone",
       "browser": "Chrome",
       "os": "Android",
       "updated_at": "2026-07-18T05:12:59.179Z"
     },
+    "device_keys": [],
     "geo": {
       "country": "LV",
       "city": "Riga",
@@ -2269,12 +2703,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": null,
       "browser": null,
       "os": null,
       "updated_at": ""
     },
+    "device_keys": [],
     "geo": {
       "country": "unknown",
       "city": null,
@@ -2338,7 +2780,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -2351,12 +2800,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
       "updated_at": "2026-07-18T16:45:00.015Z"
     },
+    "device_keys": [],
     "geo": {
       "country": "LV",
       "city": "Riga",
@@ -2391,12 +2848,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": null,
       "browser": null,
       "os": null,
       "updated_at": ""
     },
+    "device_keys": [],
     "geo": {
       "country": "unknown",
       "city": null,
@@ -2431,12 +2896,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": null,
       "browser": null,
       "os": null,
       "updated_at": ""
     },
+    "device_keys": [],
     "geo": {
       "country": "unknown",
       "city": null,
@@ -2500,7 +2973,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -2513,12 +2993,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
       "updated_at": "2026-07-18T14:33:38.175Z"
     },
+    "device_keys": [],
     "geo": {
       "country": "US",
       "city": "Fremont",
@@ -2582,7 +3070,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -2595,12 +3090,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": "iPhone",
       "browser": null,
       "os": "iOS",
       "updated_at": "2026-07-18T05:09:30.105Z"
     },
+    "device_keys": [],
     "geo": {
       "country": "LV",
       "city": "Riga",
@@ -2677,7 +3180,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T12:01:18.972Z",
@@ -2704,7 +3214,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T06:23:25.969Z",
@@ -2731,7 +3248,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -2744,12 +3268,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
       "updated_at": "2026-07-18T12:01:31.423Z"
     },
+    "device_keys": [],
     "geo": {
       "country": "LV",
       "city": "Riga",
@@ -2784,12 +3316,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": null,
       "browser": null,
       "os": null,
       "updated_at": ""
     },
+    "device_keys": [],
     "geo": {
       "country": "unknown",
       "city": null,
@@ -2853,7 +3393,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T02:48:33.063Z",
@@ -2880,7 +3427,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -2893,12 +3447,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": "Desktop",
       "browser": "Opera",
       "os": "Windows",
       "updated_at": "2026-07-18T06:38:18.003Z"
     },
+    "device_keys": [],
     "geo": {
       "country": "LV",
       "city": "Riga",
@@ -2962,7 +3524,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T07:10:36.527Z",
@@ -2989,7 +3558,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T07:08:46.559Z",
@@ -3016,7 +3592,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T02:49:09.837Z",
@@ -3043,7 +3626,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -3056,12 +3646,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": "Desktop",
       "browser": "Edge",
       "os": "Windows",
       "updated_at": "2026-07-18T07:11:01.257Z"
     },
+    "device_keys": [],
     "geo": {
       "country": "LV",
       "city": "Riga",
@@ -3082,8 +3680,8 @@
     "is_premium": true,
     "source": "webapp",
     "registered": "2026-07-18T03:05:22.603Z",
-    "last_seen": "2026-07-19T04:11:20.311Z",
-    "visit_count": 23,
+    "last_seen": "2026-07-19T07:47:44.866Z",
+    "visit_count": 24,
     "ips": [
       {
         "ip": "94.30.253.210",
@@ -3095,11 +3693,45 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-07-18T03:05:22.603Z",
-        "last_seen": "2026-07-19T04:11:20.311Z",
-        "visits": 23
+        "last_seen": "2026-07-19T07:47:44.866Z",
+        "visits": 24
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-07-19T07:47:44.866Z",
+        "ip": "94.30.253.210",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
+        "referrer": "https://paradiseminiapp.pages.dev/",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0",
+        "device": "Desktop",
+        "browser": "Edge",
+        "browser_version": "150.0.0.0",
+        "os": "Windows",
+        "os_version": null,
+        "language": "ru",
+        "cf_ray": "a1d81ead6beee4d3",
+        "screen": null,
+        "tz_client": null,
+        "color_depth": null,
+        "touch": null,
+        "platform": null,
+        "memory": null,
+        "cores": null,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-07-19T04:11:20.311Z",
         "ip": "94.30.253.210",
@@ -3125,7 +3757,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-19T04:07:04.899Z",
@@ -3152,7 +3791,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-19T04:06:52.445Z",
@@ -3179,7 +3825,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T14:37:19.038Z",
@@ -3206,7 +3859,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T07:59:39.987Z",
@@ -3233,7 +3893,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T07:58:03.374Z",
@@ -3260,7 +3927,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T07:57:10.853Z",
@@ -3287,7 +3961,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T07:56:38.521Z",
@@ -3314,7 +3995,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T07:56:09.951Z",
@@ -3341,7 +4029,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T07:55:05.027Z",
@@ -3368,7 +4063,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T07:53:11.230Z",
@@ -3395,7 +4097,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T07:08:16.458Z",
@@ -3422,7 +4131,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T07:06:42.299Z",
@@ -3449,7 +4165,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T07:00:42.507Z",
@@ -3476,7 +4199,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T06:36:57.035Z",
@@ -3503,7 +4233,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T06:35:45.757Z",
@@ -3530,7 +4267,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T06:32:13.159Z",
@@ -3557,7 +4301,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T06:15:48.248Z",
@@ -3584,7 +4335,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T05:18:59.742Z",
@@ -3611,7 +4369,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T03:09:24.494Z",
@@ -3638,7 +4403,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T03:07:41.393Z",
@@ -3665,7 +4437,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T03:05:25.060Z",
@@ -3692,7 +4471,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T03:05:22.603Z",
@@ -3719,7 +4505,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -3732,12 +4525,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
-      "device": "iPhone",
-      "browser": "unknown",
-      "os": "iOS",
-      "updated_at": "2026-07-19T04:11:20.311Z"
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
+      "device": "Desktop",
+      "browser": "Edge",
+      "os": "Windows",
+      "updated_at": "2026-07-19T07:47:44.866Z"
     },
+    "device_keys": [],
     "geo": {
       "country": "LV",
       "city": "Riga",
@@ -3801,7 +4602,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -3814,12 +4622,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": "Android Phone",
       "browser": "Chrome",
       "os": "Android",
       "updated_at": "2026-07-18T03:57:35.722Z"
     },
+    "device_keys": [],
     "geo": {
       "country": "LV",
       "city": "Riga",
@@ -3883,7 +4699,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -3896,12 +4719,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": "Android Phone",
       "browser": "Chrome",
       "os": "Android",
       "updated_at": "2026-07-18T05:12:59.576Z"
     },
+    "device_keys": [],
     "geo": {
       "country": "LV",
       "city": "Riga",
@@ -3936,12 +4767,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": null,
       "browser": null,
       "os": null,
       "updated_at": ""
     },
+    "device_keys": [],
     "geo": {
       "country": "unknown",
       "city": null,
@@ -4005,7 +4844,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -4018,12 +4864,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
       "updated_at": "2026-07-18T09:19:41.671Z"
     },
+    "device_keys": [],
     "geo": {
       "country": "LV",
       "city": "Riga",
@@ -4058,12 +4912,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": null,
       "browser": null,
       "os": null,
       "updated_at": ""
     },
+    "device_keys": [],
     "geo": {
       "country": "unknown",
       "city": null,
@@ -4098,12 +4960,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": null,
       "browser": null,
       "os": null,
       "updated_at": ""
     },
+    "device_keys": [],
     "geo": {
       "country": "unknown",
       "city": null,
@@ -4167,7 +5037,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -4180,12 +5057,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
       "updated_at": "2026-07-18T08:05:47.945Z"
     },
+    "device_keys": [],
     "geo": {
       "country": "LV",
       "city": "Riga",
@@ -4220,12 +5105,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": null,
       "browser": null,
       "os": null,
       "updated_at": ""
     },
+    "device_keys": [],
     "geo": {
       "country": "unknown",
       "city": null,
@@ -4260,12 +5153,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": null,
       "browser": null,
       "os": null,
       "updated_at": ""
     },
+    "device_keys": [],
     "geo": {
       "country": "unknown",
       "city": null,
@@ -4300,12 +5201,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": null,
       "browser": null,
       "os": null,
       "updated_at": ""
     },
+    "device_keys": [],
     "geo": {
       "country": "unknown",
       "city": null,
@@ -4340,12 +5249,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": null,
       "browser": null,
       "os": null,
       "updated_at": ""
     },
+    "device_keys": [],
     "geo": {
       "country": "unknown",
       "city": null,
@@ -4380,12 +5297,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": null,
       "browser": null,
       "os": null,
       "updated_at": ""
     },
+    "device_keys": [],
     "geo": {
       "country": "unknown",
       "city": null,
@@ -4420,12 +5345,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": null,
       "browser": null,
       "os": null,
       "updated_at": ""
     },
+    "device_keys": [],
     "geo": {
       "country": "unknown",
       "city": null,
@@ -4460,12 +5393,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": null,
       "browser": null,
       "os": null,
       "updated_at": ""
     },
+    "device_keys": [],
     "geo": {
       "country": "unknown",
       "city": null,
@@ -4542,7 +5483,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T08:41:08.365Z",
@@ -4569,7 +5517,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T07:28:33.150Z",
@@ -4596,7 +5551,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T07:28:24.041Z",
@@ -4623,7 +5585,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -4636,12 +5605,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
       "updated_at": "2026-07-18T08:45:58.460Z"
     },
+    "device_keys": [],
     "geo": {
       "country": "LV",
       "city": "Riga",
@@ -4705,7 +5682,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T08:25:40.617Z",
@@ -4732,7 +5716,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T08:25:29.677Z",
@@ -4759,7 +5750,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -4772,12 +5770,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
       "updated_at": "2026-07-18T12:15:36.264Z"
     },
+    "device_keys": [],
     "geo": {
       "country": "LV",
       "city": "Riga",
@@ -4841,7 +5847,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -4854,12 +5867,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
       "updated_at": "2026-07-18T10:48:02.062Z"
     },
+    "device_keys": [],
     "geo": {
       "country": "LV",
       "city": "Riga",
@@ -4923,7 +5944,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -4936,12 +5964,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
       "updated_at": "2026-07-18T14:51:23.294Z"
     },
+    "device_keys": [],
     "geo": {
       "country": "LV",
       "city": "Riga",
@@ -5005,7 +6041,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -5018,12 +6061,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
       "updated_at": "2026-07-18T15:16:18.552Z"
     },
+    "device_keys": [],
     "geo": {
       "country": "LV",
       "city": "Riga",
@@ -5087,7 +6138,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T16:46:44.770Z",
@@ -5114,7 +6172,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       },
       {
         "timestamp": "2026-07-18T16:45:39.164Z",
@@ -5141,7 +6206,14 @@
         "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -5154,12 +6226,20 @@
       "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
       "updated_at": "2026-07-18T16:47:54.736Z"
     },
+    "device_keys": [],
     "geo": {
       "country": "LV",
       "city": "Riga",
@@ -5216,32 +6296,47 @@
         "cf_ray": "a1d7cdec9811a860",
         "screen": null,
         "tz_client": null,
-        "color_depth": null,
-        "touch": null,
+        "color_depth": 0,
+        "touch": 0,
         "platform": null,
-        "memory": null,
-        "cores": null,
+        "memory": 0,
+        "cores": 0,
         "connection": null,
         "webgl_vendor": null,
-        "languages": []
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
       }
     ],
     "fingerprint": {
       "screen": null,
       "timezone": null,
       "color_depth": null,
-      "touch": null,
+      "touch": 0,
       "platform": null,
-      "memory": null,
-      "cores": null,
+      "memory": 0,
+      "cores": 0,
       "connection": null,
       "webgl_vendor": null,
+      "webgl_renderer": null,
       "languages": [],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
       "device": "Desktop",
       "browser": "unknown",
       "os": "macOS",
       "updated_at": "2026-07-19T06:52:37.222Z"
     },
+    "device_keys": [],
     "geo": {
       "country": "LT",
       "city": "Vilnius",
