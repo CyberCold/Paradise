@@ -99,6 +99,39 @@
       "stock": "in",
       "badge": "",
       "hidden": false
+    },
+    "vozolnew": {
+      "id": "vozolnew",
+      "name": "Vozol",
+      "tag": "Salt Nicotine",
+      "subtitle": "30ml • salt nicotine",
+      "price": "10€",
+      "image": "https://i.postimg.cc/RhZxW67c/IMG-4851.png",
+      "flavors": [
+        "Strawberry Watermelon",
+        "Sour Apple Ice",
+        "Kiwi Passion Fruit Guava",
+        "Blue Cotton Candy",
+        "Peach Mango Watermelon",
+        "Purple Candy",
+        "Strawberry Ice",
+        "Lavafire",
+        "Grape Ice",
+        "Cola Gummies",
+        "Blue Raspberry",
+        "Frozen Grape Soda",
+        "Strawberry Kiwi",
+        "Watermelon Bubble Gum",
+        "Love 777",
+        "Cherry Cola",
+        "Mexican Mango Ice",
+        "Berry Peach",
+        "Cherry Lemon Peach",
+        "Cherry Vanilla Cream"
+      ],
+      "stock": "in",
+      "badge": "hit",
+      "hidden": false
     }
   },
   "customProducts": []
