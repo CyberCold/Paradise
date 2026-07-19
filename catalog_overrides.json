@@ -79,6 +79,26 @@
       "stock": "in",
       "badge": "new",
       "hidden": false
+    },
+    "vozolckick": {
+      "id": "vozolckick",
+      "name": "Vozol Star Click 50k puffs",
+      "tag": "Disposable",
+      "subtitle": "50 000 puffs • salt nicotine",
+      "price": "20€",
+      "image": "https://i.postimg.cc/FsYGJzbY/IMG-5122.png",
+      "flavors": [
+        "Blackberry pomegranate cherry",
+        "Tropical fruit storm",
+        "Love 777",
+        "Orange molasses",
+        "Peach ice",
+        "Mixed berry",
+        "Blueberry energy"
+      ],
+      "stock": "in",
+      "badge": "",
+      "hidden": false
     }
   },
   "customProducts": []
