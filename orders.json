@@ -2254,7 +2254,23 @@
     "raw_text": "Привет, хочу купить\nVozol Lavafire 1шт",
     "user_id": 510557368,
     "username": "Arman",
-    "status": "new",
+    "status": "cancelled",
     "date": "19.07.2026 16:16"
+  },
+  "#0127": {
+    "oid": "#0127",
+    "items": [
+      {
+        "pid": "elfbarduke",
+        "product_name": "ELFBAR DUKE 30k puffs",
+        "flavor": "Strawberry Kiwi",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Strawberry Kiwi, количество: 1",
+    "user_id": 8403568004,
+    "username": "Диана",
+    "status": "new",
+    "date": "19.07.2026 18:48"
   }
 }
