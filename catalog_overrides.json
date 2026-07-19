@@ -62,6 +62,23 @@
       "stock": "in",
       "badge": "new",
       "hidden": false
+    },
+    "elfliq": {
+      "id": "elfliq",
+      "name": "Elfliq 50mg",
+      "tag": "Salt Nicotine",
+      "subtitle": "30ml• salt nicotine",
+      "price": "10€",
+      "image": "https://i.postimg.cc/zvZqbZZh/elfliq.png",
+      "flavors": [
+        "Blue Razz Ice",
+        "Blue Razz Lemonade",
+        "Blackberry Lemon",
+        "Strawberry Ice"
+      ],
+      "stock": "in",
+      "badge": "new",
+      "hidden": false
     }
   },
   "customProducts": []
