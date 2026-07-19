@@ -15,7 +15,7 @@ const TELEGRAM_INIT_DATA_MAX_AGE_SECONDS = 7 * 24 * 60 * 60;
 const TELEGRAM_INIT_DATA_CLOCK_SKEW_SECONDS = 5 * 60;
 
 const encoder = new TextEncoder();
-const decoder = new TextDecoder("utf-8", { fatal: true });
+const decoder = new TextDecoder("utf-8", { fatal: true, ignoreBOM: false });
 let blacklistCache = null;
 let blacklistCacheAt = 0;
 
@@ -187,6 +187,7 @@ function parseUA(userAgent) {
     result.os = "Linux";
   }
 
+  /** @type {Array<[RegExp, string]>} */
   const browsers = [
     [/EdgA?\/([\d.]+)/i, "Edge"],
     [/OPR\/([\d.]+)/i, "Opera"],
