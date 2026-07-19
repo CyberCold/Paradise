@@ -4614,8 +4614,47 @@
     "username": "resonancemgr",
     "source": "chat",
     "registered": "2026-05-22T11:49:31.267Z",
-    "last_seen": "2026-07-18T06:38:18.003Z",
+    "last_seen": "2026-07-19T08:05:25.958Z",
     "visits": [
+      {
+        "timestamp": "2026-07-19T08:05:25.958Z",
+        "ip": "94.30.253.210",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 OPR/133.0.0.0",
+        "device": "Desktop",
+        "browser": "Opera",
+        "browser_version": "133.0.0.0",
+        "os": "Windows",
+        "os_version": null,
+        "language": "ru-RU",
+        "cf_ray": "a1d838952d49e4d6",
+        "screen": "2560x1440@1",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 0,
+        "platform": "Win32",
+        "memory": 32,
+        "cores": 16,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru-RU",
+          "ru",
+          "en-US",
+          "en"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-07-18T06:38:18.003Z",
         "ip": "94.30.253.210",
@@ -4685,7 +4724,7 @@
         "ua_mobile": false
       }
     ],
-    "visit_count": 2,
+    "visit_count": 3,
     "ips": [
       {
         "ip": "94.30.253.210",
@@ -4697,35 +4736,40 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-07-18T02:48:33.063Z",
-        "last_seen": "2026-07-18T06:38:18.003Z",
-        "visits": 2
+        "last_seen": "2026-07-19T08:05:25.958Z",
+        "visits": 3
       }
     ],
     "last_name": "",
     "language_code": "ru",
     "is_premium": false,
     "fingerprint": {
-      "screen": null,
-      "timezone": null,
-      "color_depth": null,
+      "screen": "2560x1440@1",
+      "timezone": "Europe/Riga",
+      "color_depth": 32,
       "touch": 0,
-      "platform": null,
-      "memory": 0,
-      "cores": 0,
-      "connection": null,
-      "webgl_vendor": null,
-      "webgl_renderer": null,
-      "languages": [],
-      "ua_platform": null,
-      "ua_platform_version": null,
-      "ua_architecture": null,
-      "ua_bitness": null,
+      "platform": "Win32",
+      "memory": 32,
+      "cores": 16,
+      "connection": "4g",
+      "webgl_vendor": "Google Inc. (AMD)",
+      "webgl_renderer": "ANGLE (AMD, AMD Radeon RX 9070 XT (0x00007550) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "languages": [
+        "ru-RU",
+        "ru",
+        "en-US",
+        "en"
+      ],
+      "ua_platform": "Windows",
+      "ua_platform_version": "19.0.0",
+      "ua_architecture": "x86",
+      "ua_bitness": "64",
       "ua_model": null,
       "ua_mobile": false,
       "device": "Desktop",
       "browser": "Opera",
       "os": "Windows",
-      "updated_at": "2026-07-18T06:38:18.003Z"
+      "updated_at": "2026-07-19T08:05:25.958Z"
     },
     "geo": {
       "country": "LV",
@@ -4740,6 +4784,10 @@
     "sources": [
       "chat",
       "webapp"
+    ],
+    "device_keys": [
+      "a7360f3f061d1c0079128c58572d44379f8976fdabd19d6fb123793929e7f5f4",
+      "75fc1be3d097b761bc50ed8c38dc13c14f57f950232d83a1003c9559717a82c5"
     ]
   },
   "7682695094": {
@@ -9312,11 +9360,11 @@
         "cf_ray": "a1d824836fde340e",
         "screen": null,
         "tz_client": null,
-        "color_depth": null,
-        "touch": null,
+        "color_depth": 0,
+        "touch": 0,
         "platform": null,
-        "memory": null,
-        "cores": null,
+        "memory": 0,
+        "cores": 0,
         "connection": null,
         "webgl_vendor": null,
         "webgl_renderer": null,
