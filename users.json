@@ -9488,7 +9488,7 @@
     "username": "",
     "source": "webapp",
     "registered": "2026-05-29T13:01:10.148Z",
-    "last_seen": "2026-07-19T10:06:08.555Z",
+    "last_seen": "2026-07-19T10:06:41.012Z",
     "ips": [
       {
         "ip": "94.30.253.210",
@@ -9500,8 +9500,8 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-07-18T03:05:22.603Z",
-        "last_seen": "2026-07-19T10:06:08.555Z",
-        "visits": 44
+        "last_seen": "2026-07-19T10:06:41.012Z",
+        "visits": 45
       }
     ],
     "request_history": [
@@ -9544,8 +9544,47 @@
     "last_name": "ᅠ ᅠ ᅠ ᅠ ᅠ",
     "language_code": "ru",
     "is_premium": true,
-    "visit_count": 44,
+    "visit_count": 45,
     "visits": [
+      {
+        "timestamp": "2026-07-19T10:06:41.012Z",
+        "ip": "94.30.253.210",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0",
+        "device": "Desktop",
+        "browser": "Edge",
+        "browser_version": "150.0.0.0",
+        "os": "Windows",
+        "os_version": null,
+        "language": "ru",
+        "cf_ray": "a1d8ea324b71abf3",
+        "screen": "1080x1920@1",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 0,
+        "platform": "Win32",
+        "memory": 32,
+        "cores": 16,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru",
+          "en",
+          "en-GB",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-07-19T10:06:08.555Z",
         "ip": "94.30.253.210",
@@ -9564,7 +9603,7 @@
         "cf_ray": "a1d8e9676d91e4d5",
         "screen": "420x912@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -10562,55 +10601,24 @@
         "ua_bitness": null,
         "ua_model": null,
         "ua_mobile": false
-      },
-      {
-        "timestamp": "2026-07-18T07:56:09.951Z",
-        "ip": "94.30.253.210",
-        "country": "LV",
-        "city": "Riga",
-        "region": "Riga",
-        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
-        "referrer": "https://paradiseminiapp.pages.dev/",
-        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0",
-        "device": "Desktop",
-        "browser": "Edge",
-        "browser_version": "150.0.0.0",
-        "os": "Windows",
-        "os_version": null,
-        "language": "ru",
-        "cf_ray": "a1cfeda22cd1e4e2",
-        "screen": null,
-        "tz_client": null,
-        "color_depth": 0,
-        "touch": 0,
-        "platform": null,
-        "memory": 0,
-        "cores": 0,
-        "connection": null,
-        "webgl_vendor": null,
-        "webgl_renderer": null,
-        "languages": [],
-        "ua_platform": null,
-        "ua_platform_version": null,
-        "ua_architecture": null,
-        "ua_bitness": null,
-        "ua_model": null,
-        "ua_mobile": false
       }
     ],
     "fingerprint": {
-      "screen": "420x912@3",
+      "screen": "1080x1920@1",
       "timezone": "Europe/Riga",
       "color_depth": 24,
-      "touch": 5,
-      "platform": "iPhone",
-      "memory": 0,
-      "cores": 4,
-      "connection": null,
-      "webgl_vendor": "Apple Inc.",
-      "webgl_renderer": "Apple GPU",
+      "touch": 0,
+      "platform": "Win32",
+      "memory": 32,
+      "cores": 16,
+      "connection": "4g",
+      "webgl_vendor": "Google Inc. (AMD)",
+      "webgl_renderer": "ANGLE (AMD, AMD Radeon RX 9070 XT (0x00007550) Direct3D11 vs_5_0 ps_5_0, D3D11)",
       "languages": [
-        "ru"
+        "ru",
+        "en",
+        "en-GB",
+        "en-US"
       ],
       "ua_platform": "Windows",
       "ua_platform_version": "19.0.0",
@@ -10618,10 +10626,10 @@
       "ua_bitness": "64",
       "ua_model": null,
       "ua_mobile": false,
-      "device": "iPhone",
-      "browser": "unknown",
-      "os": "iOS",
-      "updated_at": "2026-07-19T10:06:08.555Z"
+      "device": "Desktop",
+      "browser": "Edge",
+      "os": "Windows",
+      "updated_at": "2026-07-19T10:06:41.012Z"
     },
     "geo": {
       "country": "LV",
@@ -10637,10 +10645,10 @@
       "webapp"
     ],
     "device_keys": [
-      "77c48f956ea7e54ee342a6b442842dc4d88b7d0fab3caedb7c8d525dd2203154",
-      "808e12e47877a4aae3af717f17de0de8b6cf3d9609178537f7c204b6b0f5a390",
       "48e5b81c29db43430f132415a875c62d2735f3ea597f3df18cdd4716975a9b21",
-      "9259d299569f299daf22284e8edc247b709f2c3641d06e7427027a9f52fe628b"
+      "9259d299569f299daf22284e8edc247b709f2c3641d06e7427027a9f52fe628b",
+      "77c48f956ea7e54ee342a6b442842dc4d88b7d0fab3caedb7c8d525dd2203154",
+      "808e12e47877a4aae3af717f17de0de8b6cf3d9609178537f7c204b6b0f5a390"
     ]
   },
   "5637938428": {
