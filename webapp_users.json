@@ -3727,8 +3727,8 @@
     "is_premium": true,
     "source": "webapp",
     "registered": "2026-07-18T03:05:22.603Z",
-    "last_seen": "2026-07-19T08:47:20.452Z",
-    "visit_count": 26,
+    "last_seen": "2026-07-19T08:47:22.805Z",
+    "visit_count": 27,
     "ips": [
       {
         "ip": "94.30.253.210",
@@ -3740,11 +3740,45 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-07-18T03:05:22.603Z",
-        "last_seen": "2026-07-19T08:47:20.452Z",
-        "visits": 26
+        "last_seen": "2026-07-19T08:47:22.805Z",
+        "visits": 27
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-07-19T08:47:22.805Z",
+        "ip": "94.30.253.210",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradise-admin.dnynzvtpyb.workers.dev/session",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a1d876077a46e4d1",
+        "screen": null,
+        "tz_client": null,
+        "color_depth": null,
+        "touch": null,
+        "platform": null,
+        "memory": null,
+        "cores": null,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-07-19T08:47:20.452Z",
         "ip": "94.30.253.210",
@@ -3763,7 +3797,7 @@
         "cf_ray": "a1d875f8cc2dabf3",
         "screen": "420x912@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -4655,7 +4689,7 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-07-19T08:47:20.452Z"
+      "updated_at": "2026-07-19T08:47:22.805Z"
     },
     "device_keys": [
       "77c48f956ea7e54ee342a6b442842dc4d88b7d0fab3caedb7c8d525dd2203154",
