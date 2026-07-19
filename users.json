@@ -4020,7 +4020,7 @@
     "username": "artem13607",
     "source": "webapp",
     "registered": "2026-05-28T21:15:24.109Z",
-    "last_seen": "2026-07-18T05:12:59.179Z",
+    "last_seen": "2026-07-19T21:26:49.611346",
     "last_name": "",
     "language_code": "ru",
     "is_premium": true,
@@ -4110,7 +4110,8 @@
       "lon": 24.1059
     },
     "sources": [
-      "webapp"
+      "webapp",
+      "chat"
     ]
   },
   "1451394344": {
