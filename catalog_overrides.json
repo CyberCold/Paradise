@@ -40,6 +40,28 @@
       "stock": "in",
       "badge": "new",
       "hidden": false
+    },
+    "elfbarduke": {
+      "id": "elfbarduke",
+      "name": "ELFBAR DUKE 30k puffs",
+      "tag": "Disposable",
+      "subtitle": "30 000 puffs • salt nicotine",
+      "price": "20€",
+      "image": "https://i.postimg.cc/ZqQ74pXy/7D084E71-EAFD-4052-8D1E-FA5E909472C5.png",
+      "flavors": [
+        "Blue Razz Ice",
+        "Cranberry Pineapple",
+        "Grape Pomegranate",
+        "Pineapple White Peach",
+        "Sour Grape Ice",
+        "Strawberry Kiwi",
+        "Sour Blackberry Ice",
+        "Cherry Lemon",
+        "Cherry Burst"
+      ],
+      "stock": "in",
+      "badge": "new",
+      "hidden": false
     }
   },
   "customProducts": []
