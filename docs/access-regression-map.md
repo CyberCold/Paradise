@@ -42,6 +42,7 @@ The large user databases are used to build the compact blacklist in the dashboar
 | Access request hangs | Visible service error after 15 seconds |
 | Access returns `200` on iOS WebView | GET form opens `/catalog`; `location.href` is fallback |
 | Protected catalogue receives the server grant marker | Internal `#accessGate` is removed and cannot cover the catalogue |
+| First interaction is a touch, pointer press, or click | Background music starts after Web Audio is unlocked |
 | Access returns `403` | Loading screen becomes access denied; no navigation |
 | `/catalog` token is absent, invalid, or expired | `404`; protected HTML is not served |
 | `/catalog` token is valid | Protected HTML is served with session markers |

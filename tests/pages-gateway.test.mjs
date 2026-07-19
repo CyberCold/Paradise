@@ -55,6 +55,16 @@ test("server-granted catalogue removes its internal access overlay", async () =>
   assert.match(grantedBranch, /getElementById\('accessGate'\)\?\.remove\(\)/);
 });
 
+test("catalogue music unlocks from touch and pointer interaction", async () => {
+  const protectedHtml = await fs.readFile(new URL("../protected/index.html", import.meta.url), "utf8");
+  assert.match(protectedHtml, /addEventListener\('pointerdown', startMusicFromInteraction/);
+  assert.match(protectedHtml, /addEventListener\('touchstart', startMusicFromInteraction/);
+  assert.match(protectedHtml, /addEventListener\('click', startMusicFromInteraction/);
+  assert.match(protectedHtml, /Promise\.race\(\[\s*ac\.resume\(\)/);
+  assert.match(protectedHtml, /if\(ac\.state!=='running'\) return false/);
+  assert.match(protectedHtml, /event\.target\?\.closest\?\.\('#musicBtn'\)/);
+});
+
 test("public and protected inline scripts parse", async () => {
   for (const path of ["../index.html", "../protected/index.html"]) {
     const html = await fs.readFile(new URL(path, import.meta.url), "utf8");
