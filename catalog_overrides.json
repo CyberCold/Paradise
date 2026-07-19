@@ -18,6 +18,28 @@
       "stock": "in",
       "badge": "",
       "hidden": false
+    },
+    "elfbarlushkingpro": {
+      "id": "elfbarlushkingpro",
+      "name": "ELFBAR Lush King Pro 40k puffs",
+      "tag": "Disposable",
+      "subtitle": "40 000 puffs • salt nicotine",
+      "price": "20€",
+      "image": "https://i.postimg.cc/pTNfsZwL/A7C1BD1E-DDA8-43A7-9829-328D0821F62F.png",
+      "flavors": [
+        "Cactus Lime",
+        "Pomegranate Burst",
+        "Starfruit Grape",
+        "Sour Strawberry Dragonfruit",
+        "Cherry Burst",
+        "Sour Pineapple Ice",
+        "Blue Razz Ice",
+        "Black Grape Ice",
+        "Black Currant Pineapple"
+      ],
+      "stock": "in",
+      "badge": "new",
+      "hidden": false
     }
   },
   "customProducts": []
