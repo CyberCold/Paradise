@@ -5418,8 +5418,8 @@
     "is_premium": true,
     "source": "webapp",
     "registered": "2026-07-18T02:49:09.837Z",
-    "last_seen": "2026-07-20T14:01:39.401Z",
-    "visit_count": 6,
+    "last_seen": "2026-07-20T14:20:15.944Z",
+    "visit_count": 7,
     "ips": [
       {
         "ip": "94.30.253.210",
@@ -5431,11 +5431,50 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-07-18T02:49:09.837Z",
-        "last_seen": "2026-07-20T14:01:39.401Z",
-        "visits": 6
+        "last_seen": "2026-07-20T14:20:15.944Z",
+        "visits": 7
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-07-20T14:20:15.944Z",
+        "ip": "94.30.253.210",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0",
+        "device": "Desktop",
+        "browser": "Edge",
+        "browser_version": "150.0.0.0",
+        "os": "Windows",
+        "os_version": null,
+        "language": "ru",
+        "cf_ray": "a1e29b079869ef85",
+        "screen": "1080x1920@1",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 0,
+        "platform": "Win32",
+        "memory": 32,
+        "cores": 16,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru",
+          "en",
+          "en-GB",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-07-20T14:01:39.401Z",
         "ip": "94.30.253.210",
@@ -5674,7 +5713,7 @@
       "device": "Desktop",
       "browser": "Edge",
       "os": "Windows",
-      "updated_at": "2026-07-20T14:01:39.401Z"
+      "updated_at": "2026-07-20T14:20:15.944Z"
     },
     "device_keys": [
       "843ab96bff1a41a1693ff08c93ef0767e8fbd50e694946d869dc31ae8ad06238",
@@ -5738,7 +5777,7 @@
         "cf_ray": "a1e29a7d39b5e4df",
         "screen": "420x912@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
