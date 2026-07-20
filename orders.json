@@ -2288,5 +2288,33 @@
     "username": "Nigga Jones",
     "status": "new",
     "date": "20.07.2026 00:08"
+  },
+  "#0129": {
+    "oid": "#0129",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq 50mg",
+        "flavor": "Strawberry Ice",
+        "qty": 1
+      },
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq 50mg",
+        "flavor": "Blackberry Lemon",
+        "qty": 1
+      },
+      {
+        "pid": "vozolneon",
+        "product_name": "Vozol Neon 60k puffs",
+        "flavor": "Kiwi Passion Fruit Guava",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Strawberry Ice, количество: 1\nElfliq, вкус: Blackberry Lemon, количество: 1\nVozol, вкус: Kiwi Passion Fruit Guava, количество: 1",
+    "user_id": 423746271,
+    "username": "Manynslensf1re 🐾",
+    "status": "new",
+    "date": "20.07.2026 16:57"
   }
 }
