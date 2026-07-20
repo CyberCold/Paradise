@@ -4124,6 +4124,114 @@
       "lon": 0
     }
   },
+  "1350105420": {
+    "id": 1350105420,
+    "first_name": "Hammer",
+    "last_name": "Lord",
+    "username": "HamerLord",
+    "language_code": "ru",
+    "is_premium": false,
+    "source": "webapp",
+    "registered": "2026-07-20T17:27:28.893Z",
+    "last_seen": "2026-07-20T17:27:28.893Z",
+    "visit_count": 1,
+    "ips": [
+      {
+        "ip": "2a03:ec00:b180:d337:f239:d675:9311:79fb",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Latvijas Mobilais Telefons SIA",
+        "asn": 24921,
+        "lat": 56.946,
+        "lon": 24.10589,
+        "first_seen": "2026-07-20T17:27:28.893Z",
+        "last_seen": "2026-07-20T17:27:28.893Z",
+        "visits": 1
+      }
+    ],
+    "visits": [
+      {
+        "timestamp": "2026-07-20T17:27:28.893Z",
+        "ip": "2a03:ec00:b180:d337:f239:d675:9311:79fb",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 16; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.46 Mobile Safari/537.36 Telegram-Android/12.9.0 (Samsung SM-A566B; Android 16; SDK 36; HIGH)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "150.0.7871.46",
+        "os": "Android",
+        "os_version": "16",
+        "language": "ru",
+        "cf_ray": "a1e3ad458dea719d",
+        "screen": "384x832@2.8125",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 8,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru",
+          "ru-RU",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      }
+    ],
+    "fingerprint": {
+      "screen": "384x832@2.8125",
+      "timezone": "Europe/Riga",
+      "color_depth": 24,
+      "touch": 5,
+      "platform": "Linux aarch64",
+      "memory": 8,
+      "cores": 8,
+      "connection": "4g",
+      "webgl_vendor": "Samsung Electronics Co., Ltd.",
+      "webgl_renderer": "ANGLE ((Samsung Xclipse 540) on Vulkan 1.3.279)",
+      "languages": [
+        "ru",
+        "ru-RU",
+        "en-US"
+      ],
+      "ua_platform": "Android",
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": true,
+      "device": "Android Phone",
+      "browser": "Chrome",
+      "os": "Android",
+      "updated_at": "2026-07-20T17:27:28.893Z"
+    },
+    "device_keys": [
+      "8ee9d60e504f930427f5d569fd8dc10e5a6bdb5f432ca745de9e7f3b9b5637a2",
+      "9688c7ca3cd1ec0eee186be88f94d29c5561541758af7281d38f253df1bf351c"
+    ],
+    "geo": {
+      "country": "LV",
+      "city": "Riga",
+      "region": "Riga",
+      "timezone": "Europe/Riga",
+      "asn": 24921,
+      "isp": "Latvijas Mobilais Telefons SIA",
+      "lat": 56.946,
+      "lon": 24.10589
+    }
+  },
   "1369931246": {
     "id": 1369931246,
     "first_name": "онтон",
@@ -8020,7 +8128,7 @@
         "cf_ray": "a1e329822e75abf3",
         "screen": "390x844@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
