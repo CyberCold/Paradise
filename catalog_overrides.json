@@ -134,5 +134,23 @@
       "hidden": false
     }
   },
-  "customProducts": []
+  "customProducts": [
+    {
+      "id": "dojo",
+      "name": "Dojo Sphere X",
+      "tag": "Disposable Vape",
+      "subtitle": "40 000 puffs • Salt Nicotine",
+      "price": "20€",
+      "image": "https://i.postimg.cc/hPn2KzV5/F0C6525B-86A8-4006-A782-5B008E394DDA.png",
+      "flavors": [
+        "Berry Blast Triad",
+        "Blue Razz Ice",
+        "Blue Star",
+        "Baja Splash MTD"
+      ],
+      "stock": "in",
+      "badge": "new",
+      "hidden": false
+    }
+  ]
 }
