@@ -2332,5 +2332,21 @@
     "username": "Тёма",
     "status": "new",
     "date": "21.07.2026 15:13"
+  },
+  "#0131": {
+    "oid": "#0131",
+    "items": [
+      {
+        "pid": "vozolneon",
+        "product_name": "Vozol Neon 60k puffs",
+        "flavor": "Blue Raspberry",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Blue Raspberry, количество: 1",
+    "user_id": 1576466068,
+    "username": "Майкл",
+    "status": "new",
+    "date": "21.07.2026 17:18"
   }
 }
