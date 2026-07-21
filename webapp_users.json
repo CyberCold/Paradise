@@ -5380,6 +5380,110 @@
       "lon": 24.10589
     }
   },
+  "1576466068": {
+    "id": 1576466068,
+    "first_name": "Майкл",
+    "last_name": "",
+    "username": "maikl_export3r",
+    "language_code": "ru",
+    "is_premium": false,
+    "source": "webapp",
+    "registered": "2026-07-21T14:18:43.382Z",
+    "last_seen": "2026-07-21T14:18:43.382Z",
+    "visit_count": 1,
+    "ips": [
+      {
+        "ip": "5.241.141.82",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Mobile Services Latvia",
+        "asn": 1257,
+        "lat": 56.946,
+        "lon": 24.10589,
+        "first_seen": "2026-07-21T14:18:43.382Z",
+        "last_seen": "2026-07-21T14:18:43.382Z",
+        "visits": 1
+      }
+    ],
+    "visits": [
+      {
+        "timestamp": "2026-07-21T14:18:43.382Z",
+        "ip": "5.241.141.82",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a1ead623ac94e1e2",
+        "screen": "402x874@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      }
+    ],
+    "fingerprint": {
+      "screen": "402x874@3",
+      "timezone": "Europe/Riga",
+      "color_depth": 24,
+      "touch": 5,
+      "platform": "iPhone",
+      "memory": 0,
+      "cores": 4,
+      "connection": null,
+      "webgl_vendor": "Apple Inc.",
+      "webgl_renderer": "Apple GPU",
+      "languages": [
+        "ru"
+      ],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
+      "device": "iPhone",
+      "browser": "unknown",
+      "os": "iOS",
+      "updated_at": "2026-07-21T14:18:43.382Z"
+    },
+    "device_keys": [
+      "0197449ae32d2528c75bd6e5fa85ba28e83cb733d9a76e055a414c1f37f28fd3",
+      "73a49f0c25a50dd0f851d763e6a0867cc99e57d87265fa0fdf67e0ae802a24cd"
+    ],
+    "geo": {
+      "country": "LV",
+      "city": "Riga",
+      "region": "Riga",
+      "timezone": "Europe/Riga",
+      "asn": 1257,
+      "isp": "Mobile Services Latvia",
+      "lat": 56.946,
+      "lon": 24.10589
+    }
+  },
   "1585532505": {
     "id": 1585532505,
     "first_name": "Афганка",
@@ -5639,7 +5743,7 @@
         "cf_ray": "a1eace746d64b807",
         "screen": "376x835@3.25",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "Linux aarch64",
         "memory": 8,
