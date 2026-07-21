@@ -2316,5 +2316,21 @@
     "username": "Manynslensf1re 🐾",
     "status": "new",
     "date": "20.07.2026 16:57"
+  },
+  "#0130": {
+    "oid": "#0130",
+    "items": [
+      {
+        "pid": "vozolckick",
+        "product_name": "Vozol Star Click 50k puffs",
+        "flavor": "Blue Star",
+        "qty": 2
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nDojo Sphere X, вкус: Blue Star, количество: 2",
+    "user_id": 1129207630,
+    "username": "Тёма",
+    "status": "new",
+    "date": "21.07.2026 15:13"
   }
 }
