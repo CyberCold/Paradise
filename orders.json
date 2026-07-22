@@ -2379,7 +2379,24 @@
     "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nELFBAR DUKE 30k puffs, вкус: Pineapple White Peach, количество: 1",
     "user_id": 1288420859,
     "username": "Мар",
+    "status": "done",
+    "date": "21.07.2026 20:11",
+    "done_at": "2026-07-21T20:52:25.385141"
+  },
+  "#0134": {
+    "oid": "#0134",
+    "items": [
+      {
+        "pid": "vozolckick",
+        "product_name": "Vozol Star Click 50k puffs",
+        "flavor": "Orange molasses",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol Star Click 50k puffs, вкус: Orange molasses, количество: 1",
+    "user_id": 7088406589,
+    "username": "Вадим",
     "status": "new",
-    "date": "21.07.2026 20:11"
+    "date": "22.07.2026 19:50"
   }
 }
