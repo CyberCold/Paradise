@@ -2398,5 +2398,21 @@
     "username": "Вадим",
     "status": "new",
     "date": "22.07.2026 19:50"
+  },
+  "#0135": {
+    "oid": "#0135",
+    "items": [
+      {
+        "pid": "vozolneon",
+        "product_name": "Vozol Neon 60k puffs",
+        "flavor": "Strawberry Watermelon",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Strawberry Watermelon, количество: 1",
+    "user_id": 7604547726,
+    "username": "🏍️",
+    "status": "new",
+    "date": "23.07.2026 00:59"
   }
 }
