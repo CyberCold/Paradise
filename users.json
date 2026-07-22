@@ -12106,7 +12106,7 @@
     "username": "Speed_drivee",
     "source": "webapp",
     "registered": "2026-05-28T06:24:39.853Z",
-    "last_seen": "2026-07-22T21:58:02.124Z",
+    "last_seen": "2026-07-23T00:59:30.012292",
     "last_name": "",
     "language_code": "ru",
     "is_premium": false,
@@ -12204,7 +12204,8 @@
       "lon": 24.10589
     },
     "sources": [
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "device_keys": [
       "be3ece80130593ebe361fd5de9b80258486a882820f2fa2c8b42015cd463b563",
