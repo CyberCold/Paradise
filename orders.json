@@ -2414,5 +2414,27 @@
     "username": "🏍️",
     "status": "new",
     "date": "23.07.2026 00:59"
+  },
+  "#0136": {
+    "oid": "#0136",
+    "items": [
+      {
+        "pid": "vozolneon",
+        "product_name": "Vozol Neon 60k puffs",
+        "flavor": "Kiwi Passion Fruit Guava",
+        "qty": 1
+      },
+      {
+        "pid": "vozolneon",
+        "product_name": "Vozol Neon 60k puffs",
+        "flavor": "Grape Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Kiwi Passion Fruit Guava, количество: 1\nVozol, вкус: Grape Ice, количество: 1",
+    "user_id": 561238700,
+    "username": "Andžejs",
+    "status": "new",
+    "date": "23.07.2026 11:31"
   }
 }
