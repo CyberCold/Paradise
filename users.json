@@ -6182,7 +6182,7 @@
         "cf_ray": "a1fde41c2d72e4d0",
         "screen": "440x956@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -13197,7 +13197,7 @@
     "username": "",
     "source": "webapp",
     "registered": "2026-05-29T13:01:10.148Z",
-    "last_seen": "2026-07-23T16:47:12.729Z",
+    "last_seen": "2026-07-23T22:28:43.327Z",
     "ips": [
       {
         "ip": "2a00:808:132:ae48:c03:16bd:62a:66b1",
@@ -13235,8 +13235,8 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-07-18T03:05:22.603Z",
-        "last_seen": "2026-07-23T11:00:46.980Z",
-        "visits": 77
+        "last_seen": "2026-07-23T22:28:43.327Z",
+        "visits": 78
       }
     ],
     "request_history": [
@@ -13279,8 +13279,44 @@
     "last_name": "ᅠ ᅠ ᅠ ᅠ ᅠ",
     "language_code": "ru",
     "is_premium": true,
-    "visit_count": 82,
+    "visit_count": 83,
     "visits": [
+      {
+        "timestamp": "2026-07-23T22:28:43.327Z",
+        "ip": "94.30.253.210",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a1fe1eaaba7aa87b",
+        "screen": "420x912@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-07-23T16:47:12.729Z",
         "ip": "2a00:808:132:ae48:c03:16bd:62a:66b1",
@@ -14360,42 +14396,6 @@
         "ua_bitness": null,
         "ua_model": null,
         "ua_mobile": false
-      },
-      {
-        "timestamp": "2026-07-19T10:42:38.218Z",
-        "ip": "94.30.253.210",
-        "country": "LV",
-        "city": "Riga",
-        "region": "Riga",
-        "url": "https://paradiseminiapp.pages.dev/app",
-        "referrer": null,
-        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
-        "device": "iPhone",
-        "browser": "unknown",
-        "browser_version": null,
-        "os": "iOS",
-        "os_version": "18.7",
-        "language": null,
-        "cf_ray": "a1d91edcad94fc65",
-        "screen": "420x912@3",
-        "tz_client": "Europe/Riga",
-        "color_depth": 0,
-        "touch": 5,
-        "platform": "iPhone",
-        "memory": 0,
-        "cores": 4,
-        "connection": null,
-        "webgl_vendor": null,
-        "webgl_renderer": null,
-        "languages": [
-          "ru"
-        ],
-        "ua_platform": null,
-        "ua_platform_version": null,
-        "ua_architecture": null,
-        "ua_bitness": null,
-        "ua_model": null,
-        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -14421,17 +14421,17 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-07-23T16:47:12.729Z"
+      "updated_at": "2026-07-23T22:28:43.327Z"
     },
     "geo": {
       "country": "LV",
       "city": "Riga",
       "region": "Riga",
       "timezone": "Europe/Riga",
-      "asn": 1257,
-      "isp": "Tele2 Latvia",
+      "asn": 20910,
+      "isp": "BALTCOM Broadband Customers",
       "lat": 56.946,
-      "lon": 24.1059
+      "lon": 24.10589
     },
     "sources": [
       "webapp"
