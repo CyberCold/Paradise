@@ -2468,5 +2468,21 @@
     "username": "🏍️",
     "status": "new",
     "date": "23.07.2026 12:56"
+  },
+  "#0139": {
+    "oid": "#0139",
+    "items": [
+      {
+        "pid": "elfbarduke",
+        "product_name": "ELFBAR DUKE 30k puffs",
+        "flavor": "Pineapple White Peach",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nELFBAR DUKE 30k puffs, вкус: Pineapple White Peach, количество: 1",
+    "user_id": 5637938428,
+    "username": "пиздохряк",
+    "status": "new",
+    "date": "23.07.2026 13:06"
   }
 }
