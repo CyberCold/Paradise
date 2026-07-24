@@ -1,4 +1,112 @@
 {
+  "260688351": {
+    "id": 260688351,
+    "first_name": "Айвар",
+    "last_name": "",
+    "username": "purpleblxd",
+    "language_code": "ru",
+    "is_premium": true,
+    "source": "webapp",
+    "registered": "2026-07-24T08:00:11.489Z",
+    "last_seen": "2026-07-24T08:00:11.489Z",
+    "visit_count": 1,
+    "ips": [
+      {
+        "ip": "93.177.244.244",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "BALTCOM Broadband Customers",
+        "asn": 20910,
+        "lat": 56.946,
+        "lon": 24.10589,
+        "first_seen": "2026-07-24T08:00:11.489Z",
+        "last_seen": "2026-07-24T08:00:11.489Z",
+        "visits": 1
+      }
+    ],
+    "visits": [
+      {
+        "timestamp": "2026-07-24T08:00:11.489Z",
+        "ip": "93.177.244.244",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 16; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.124 Mobile Safari/537.36 Telegram-Android/12.9.1 (Samsung SM-S901B; Android 16; SDK 36; HIGH)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "150.0.7871.124",
+        "os": "Android",
+        "os_version": "16",
+        "language": "ru",
+        "cf_ray": "a20163c7bd2a340e",
+        "screen": "360x780@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 8,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru",
+          "ru-RU",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      }
+    ],
+    "fingerprint": {
+      "screen": "360x780@3",
+      "timezone": "Europe/Riga",
+      "color_depth": 24,
+      "touch": 5,
+      "platform": "Linux aarch64",
+      "memory": 8,
+      "cores": 8,
+      "connection": "4g",
+      "webgl_vendor": "Samsung Electronics Co., Ltd.",
+      "webgl_renderer": "ANGLE ((Samsung Xclipse 920) on Vulkan 1.3.279)",
+      "languages": [
+        "ru",
+        "ru-RU",
+        "en-US"
+      ],
+      "ua_platform": "Android",
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": true,
+      "device": "Android Phone",
+      "browser": "Chrome",
+      "os": "Android",
+      "updated_at": "2026-07-24T08:00:11.489Z"
+    },
+    "device_keys": [
+      "16eba408694e434c6013e642979dc5e615fa193c7391aa568e7dd14da04f8825",
+      "0a67628dac837d71a098c21bdff9888fcda5ff8c8d75991ec9743f07419d68ca"
+    ],
+    "geo": {
+      "country": "LV",
+      "city": "Riga",
+      "region": "Riga",
+      "timezone": "Europe/Riga",
+      "asn": 20910,
+      "isp": "BALTCOM Broadband Customers",
+      "lat": 56.946,
+      "lon": 24.10589
+    }
+  },
   "297126842": {
     "id": 297126842,
     "first_name": "Ry1nx",
@@ -4050,7 +4158,7 @@
         "cf_ray": "a201451e2e45e4e7",
         "screen": "430x932@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
