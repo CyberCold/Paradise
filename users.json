@@ -13299,7 +13299,7 @@
         "cf_ray": "a1fe1eaaba7aa87b",
         "screen": "420x912@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -25918,5 +25918,116 @@
     ],
     "registered": "2026-07-23T18:45:49.840Z",
     "last_seen": "2026-07-23T18:45:49.840Z"
+  },
+  "7229273377": {
+    "id": 7229273377,
+    "first_name": "Jose",
+    "last_name": "Y.",
+    "language_code": "es",
+    "is_premium": false,
+    "visit_count": 1,
+    "ips": [
+      {
+        "ip": "2800:200:e960:433:a79f:ec35:282f:97f7",
+        "country": "PE",
+        "city": "Lima",
+        "region": "Lima Province",
+        "isp": "America Movil Peru S.A.C.",
+        "asn": 12252,
+        "lat": -12.04318,
+        "lon": -77.02824,
+        "first_seen": "2026-07-24T03:54:37.610Z",
+        "last_seen": "2026-07-24T03:54:37.610Z",
+        "visits": 1
+      }
+    ],
+    "visits": [
+      {
+        "timestamp": "2026-07-24T03:54:37.610Z",
+        "ip": "2800:200:e960:433:a79f:ec35:282f:97f7",
+        "country": "PE",
+        "city": "Lima",
+        "region": "Lima Province",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 15; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.124 Mobile Safari/537.36 Telegram-Android/12.9.1 (Samsung SM-S721B; Android 15; SDK 35; HIGH)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "150.0.7871.124",
+        "os": "Android",
+        "os_version": "15",
+        "language": "es",
+        "cf_ray": "a1fffc10b91ee1ca",
+        "screen": "384x832@2.8125",
+        "tz_client": "America/Lima",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 8,
+        "cores": 10,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "es",
+          "es-US",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      }
+    ],
+    "fingerprint": {
+      "screen": "384x832@2.8125",
+      "timezone": "America/Lima",
+      "color_depth": 24,
+      "touch": 5,
+      "platform": "Linux aarch64",
+      "memory": 8,
+      "cores": 10,
+      "connection": "4g",
+      "webgl_vendor": "Samsung Electronics Co., Ltd.",
+      "webgl_renderer": "ANGLE (Samsung Xclipse 940) on Vulkan 1.3.279",
+      "languages": [
+        "es",
+        "es-US",
+        "en-US"
+      ],
+      "ua_platform": "Android",
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": true,
+      "device": "Android Phone",
+      "browser": "Chrome",
+      "os": "Android",
+      "updated_at": "2026-07-24T03:54:37.610Z"
+    },
+    "device_keys": [
+      "d069900ed47f5563fa20a627d1bf630f608f875c4961702cf7d1e5d6988ca804",
+      "d371ffb3113956306e6ac0ff2e3b548ffa55a755c0d63c27b6de39280e92f0ff"
+    ],
+    "geo": {
+      "country": "PE",
+      "city": "Lima",
+      "region": "Lima Province",
+      "timezone": "America/Lima",
+      "asn": 12252,
+      "isp": "America Movil Peru S.A.C.",
+      "lat": -12.04318,
+      "lon": -77.02824
+    },
+    "source": "bot_start",
+    "sources": [
+      "bot_start",
+      "webapp"
+    ],
+    "registered": "2026-07-24T06:52:48.432594",
+    "last_seen": "2026-07-24T03:54:37.610Z"
   }
 }
