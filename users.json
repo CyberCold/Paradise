@@ -24222,7 +24222,8 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-07-21T09:36:59.642286",
     "last_seen": "2026-07-24T09:46:12.559Z",
