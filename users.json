@@ -3940,7 +3940,7 @@
     "username": "vikulja20",
     "source": "bot_start",
     "registered": "2026-07-03T20:17:26.640618",
-    "last_seen": "2026-07-24T17:57:38.893652",
+    "last_seen": "2026-07-24T17:57:59.266065",
     "last_name": "",
     "sources": [
       "bot_start",
@@ -6921,7 +6921,7 @@
     "username": "krevekti",
     "source": "chat",
     "registered": "2026-06-02T12:30:30.984589",
-    "last_seen": "2026-07-24T17:57:04.993060",
+    "last_seen": "2026-07-24T17:58:17.449630",
     "last_name": "",
     "sources": [
       "chat",
@@ -22221,10 +22221,11 @@
     "username": "Olenjka9",
     "source": "chat",
     "registered": "2026-07-14T11:29:43.323998",
-    "last_seen": "2026-07-24T09:10:48.503446",
+    "last_seen": "2026-07-24T17:58:18.205174",
     "last_name": "",
     "sources": [
-      "chat"
+      "chat",
+      "bot_start"
     ]
   },
   "5430864971": {
