@@ -2484,5 +2484,27 @@
     "username": "пиздохряк",
     "status": "new",
     "date": "23.07.2026 13:06"
+  },
+  "#0140": {
+    "oid": "#0140",
+    "items": [
+      {
+        "pid": "vozolneon",
+        "product_name": "Vozol Neon 60k puffs",
+        "flavor": "Sour Apple Ice",
+        "qty": 1
+      },
+      {
+        "pid": "vozolneon",
+        "product_name": "Vozol Neon 60k puffs",
+        "flavor": "Kiwi Passion Fruit Guava",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Sour Apple Ice, количество: 1\nVozol, вкус: Kiwi Passion Fruit Guava, количество: 1",
+    "user_id": 1008881675,
+    "username": "Сергей",
+    "status": "new",
+    "date": "24.07.2026 12:45"
   }
 }
