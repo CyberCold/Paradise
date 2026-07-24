@@ -26289,8 +26289,21 @@
     "username": "purpleblxd",
     "language_code": "ru",
     "is_premium": true,
-    "visit_count": 3,
+    "visit_count": 4,
     "ips": [
+      {
+        "ip": "80.89.77.48",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Latvijas Mobilais Telefons SIA",
+        "asn": 24921,
+        "lat": 56.946,
+        "lon": 24.10589,
+        "first_seen": "2026-07-24T09:18:06.046Z",
+        "last_seen": "2026-07-24T09:18:06.046Z",
+        "visits": 1
+      },
       {
         "ip": "93.177.244.244",
         "country": "LV",
@@ -26306,6 +26319,44 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-07-24T09:18:06.046Z",
+        "ip": "80.89.77.48",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 16; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.124 Mobile Safari/537.36 Telegram-Android/12.9.1 (Samsung SM-S901B; Android 16; SDK 36; HIGH)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "150.0.7871.124",
+        "os": "Android",
+        "os_version": "16",
+        "language": "ru",
+        "cf_ray": "a201d5e75fbce4cd",
+        "screen": "360x780@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 8,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru",
+          "ru-RU",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-07-24T08:01:29.108Z",
         "ip": "93.177.244.244",
@@ -26324,7 +26375,7 @@
         "cf_ray": "a20165acd94fb801",
         "screen": "360x780@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "Linux aarch64",
         "memory": 8,
@@ -26446,7 +26497,7 @@
       "device": "Android Phone",
       "browser": "Chrome",
       "os": "Android",
-      "updated_at": "2026-07-24T08:01:29.108Z"
+      "updated_at": "2026-07-24T09:18:06.046Z"
     },
     "device_keys": [
       "16eba408694e434c6013e642979dc5e615fa193c7391aa568e7dd14da04f8825",
@@ -26457,8 +26508,8 @@
       "city": "Riga",
       "region": "Riga",
       "timezone": "Europe/Riga",
-      "asn": 20910,
-      "isp": "BALTCOM Broadband Customers",
+      "asn": 24921,
+      "isp": "Latvijas Mobilais Telefons SIA",
       "lat": 56.946,
       "lon": 24.10589
     },
@@ -26467,6 +26518,6 @@
       "webapp"
     ],
     "registered": "2026-07-24T08:00:11.489Z",
-    "last_seen": "2026-07-24T08:01:29.108Z"
+    "last_seen": "2026-07-24T09:18:06.046Z"
   }
 }
