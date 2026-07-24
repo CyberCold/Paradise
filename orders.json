@@ -2522,5 +2522,21 @@
     "username": "Arman",
     "status": "new",
     "date": "24.07.2026 17:03"
+  },
+  "#0142": {
+    "oid": "#0142",
+    "items": [
+      {
+        "pid": "vozolneon",
+        "product_name": "Vozol Neon 60k puffs",
+        "flavor": "не указан",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Привет, хочу купить \nVozol Watermelon Bubblegum 1шт",
+    "user_id": 510557368,
+    "username": "Arman",
+    "status": "new",
+    "date": "24.07.2026 17:16"
   }
 }
