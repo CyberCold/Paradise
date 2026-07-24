@@ -2554,5 +2554,27 @@
     "username": "Оля",
     "status": "new",
     "date": "24.07.2026 18:02"
+  },
+  "#0144": {
+    "oid": "#0144",
+    "items": [
+      {
+        "pid": "ivg",
+        "product_name": "IVG",
+        "flavor": "Ice Menthol",
+        "qty": 2
+      },
+      {
+        "pid": "ivg",
+        "product_name": "IVG",
+        "flavor": "Blackcurrant Mango",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу повторить заказ:\nIVG 20mg, вкус: Ice Menthol, количество: 2\nIVG 20mg, вкус: Blackcurrant Mango, количество: 1",
+    "user_id": 5178665656,
+    "username": "Mr.Uwu",
+    "status": "new",
+    "date": "24.07.2026 21:24"
   }
 }
