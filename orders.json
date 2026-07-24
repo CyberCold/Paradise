@@ -2576,5 +2576,21 @@
     "username": "Mr.Uwu",
     "status": "new",
     "date": "24.07.2026 21:24"
+  },
+  "#0145": {
+    "oid": "#0145",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq 50mg",
+        "flavor": "Blue Razz Lemonade",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Blue Razz Lemonade, количество: 1",
+    "user_id": 5178665656,
+    "username": "Mr.Uwu",
+    "status": "new",
+    "date": "24.07.2026 21:57"
   }
 }
