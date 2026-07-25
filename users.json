@@ -27773,5 +27773,16 @@
     ],
     "registered": "2026-07-25T12:05:40.714809",
     "last_seen": "2026-07-25T12:10:10.276510"
+  },
+  "5920742754": {
+    "id": 5920742754,
+    "first_name": "Miss Ravager.",
+    "username": "MissRavager",
+    "source": "chat",
+    "sources": [
+      "chat"
+    ],
+    "registered": "2026-07-25T16:40:13.761792",
+    "last_seen": "2026-07-25T16:40:13.762796"
   }
 }
