@@ -27780,9 +27780,10 @@
     "username": "MissRavager",
     "source": "chat",
     "sources": [
-      "chat"
+      "chat",
+      "bot_start"
     ],
     "registered": "2026-07-25T16:40:13.761792",
-    "last_seen": "2026-07-25T16:40:13.762796"
+    "last_seen": "2026-07-25T16:41:42.004463"
   }
 }
