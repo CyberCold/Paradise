@@ -2594,5 +2594,21 @@
     "status": "done",
     "date": "24.07.2026 21:57",
     "done_at": "2026-07-24T22:09:25.961183"
+  },
+  "#0146": {
+    "oid": "#0146",
+    "items": [
+      {
+        "pid": "vozolckick",
+        "product_name": "Vozol Star Click 50k puffs",
+        "flavor": "Love 777",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Love 777, количество: 1",
+    "user_id": 5920742754,
+    "username": "Miss Ravager.",
+    "status": "new",
+    "date": "25.07.2026 16:43"
   }
 }
