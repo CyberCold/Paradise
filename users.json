@@ -6920,7 +6920,7 @@
     "username": "karmaa178",
     "source": "webapp",
     "registered": "2026-05-23T20:07:31.654Z",
-    "last_seen": "2026-07-25T11:46:17.675Z",
+    "last_seen": "2026-07-25T14:46:32.219530",
     "last_name": "",
     "language_code": "ru",
     "is_premium": false,
@@ -7099,7 +7099,8 @@
       "lon": 24.1059
     },
     "sources": [
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "device_keys": [
       "2f6f7c62fcc72b85db349957c7089c7534f4c964f0162bebe084d417e37bd549",
