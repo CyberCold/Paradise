@@ -2632,5 +2632,27 @@
     "username": "Jolanta",
     "status": "new",
     "date": "26.07.2026 13:01"
+  },
+  "#0148": {
+    "oid": "#0148",
+    "items": [
+      {
+        "pid": "elfbarduke",
+        "product_name": "ELFBAR DUKE 30k puffs",
+        "flavor": "Strawberry Kiwi",
+        "qty": 1
+      },
+      {
+        "pid": "vozolneon",
+        "product_name": "Vozol Neon 60k puffs",
+        "flavor": "Grape Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуй,хочу заказать :\nVozol, вкус: Strawberry Kiwi, количество: 1\nVozol, вкус: Grape Ice, количество: 1",
+    "user_id": 1331893889,
+    "username": "Veronika",
+    "status": "new",
+    "date": "26.07.2026 15:49"
   }
 }
