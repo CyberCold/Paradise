@@ -4845,11 +4845,12 @@
     "username": "",
     "source": "bot_start",
     "registered": "2026-07-05T11:23:59.753794",
-    "last_seen": "2026-07-26T12:46:56.188Z",
+    "last_seen": "2026-07-26T15:49:39.254807",
     "last_name": "",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "language_code": "ru",
     "is_premium": false,
