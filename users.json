@@ -28685,7 +28685,7 @@
     "username": "andrjuxa200",
     "language_code": "ru",
     "is_premium": false,
-    "visit_count": 1,
+    "visit_count": 2,
     "ips": [
       {
         "ip": "2a00:808:10f:c04a:4939:16ad:c935:d22c",
@@ -28697,11 +28697,47 @@
         "lat": 56.946,
         "lon": 24.1059,
         "first_seen": "2026-07-26T11:37:18.360Z",
-        "last_seen": "2026-07-26T11:37:18.360Z",
-        "visits": 1
+        "last_seen": "2026-07-26T11:38:10.803Z",
+        "visits": 2
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-07-26T11:38:10.803Z",
+        "ip": "2a00:808:10f:c04a:4939:16ad:c935:d22c",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a2131dd96dade4d7",
+        "screen": "393x852@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-07-26T11:37:18.360Z",
         "ip": "2a00:808:10f:c04a:4939:16ad:c935:d22c",
@@ -28720,7 +28756,7 @@
         "cf_ray": "a2131c91afe5e4d7",
         "screen": "393x852@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -28762,7 +28798,7 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-07-26T11:37:18.360Z"
+      "updated_at": "2026-07-26T11:38:10.803Z"
     },
     "device_keys": [
       "09596d6cfd133d81a9ca7a34e4a4cfc0c260dac06322e84d8a068f0fd577dc96",
@@ -28783,6 +28819,6 @@
       "webapp"
     ],
     "registered": "2026-07-26T11:37:18.360Z",
-    "last_seen": "2026-07-26T11:37:18.360Z"
+    "last_seen": "2026-07-26T11:38:10.803Z"
   }
 }
