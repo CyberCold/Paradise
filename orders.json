@@ -2610,5 +2610,27 @@
     "username": "Miss Ravager.",
     "status": "new",
     "date": "25.07.2026 16:43"
+  },
+  "#0147": {
+    "oid": "#0147",
+    "items": [
+      {
+        "pid": "elfbarduke",
+        "product_name": "ELFBAR DUKE 30k puffs",
+        "flavor": "Strawberry Kiwi",
+        "qty": 1
+      },
+      {
+        "pid": "vozolneon",
+        "product_name": "Vozol Neon 60k puffs",
+        "flavor": "Berry Peach",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Strawberry Kiwi, количество: 1\nVozol, вкус: Berry Peach, количество: 1",
+    "user_id": 1451394344,
+    "username": "Jolanta",
+    "status": "new",
+    "date": "26.07.2026 13:01"
   }
 }
