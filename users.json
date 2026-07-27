@@ -685,10 +685,11 @@
     "username": "jerofejeva140",
     "source": "bot_start",
     "registered": "2026-07-03T20:16:19.844797",
-    "last_seen": "2026-07-03T20:32:47.338181",
+    "last_seen": "2026-07-27T21:00:43.052922",
     "last_name": "",
     "sources": [
-      "bot_start"
+      "bot_start",
+      "chat"
     ]
   },
   "652241816": {
