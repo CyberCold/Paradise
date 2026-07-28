@@ -8030,7 +8030,7 @@
         "cf_ray": "a223f2f75ea7e4e2",
         "screen": "414x896@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -19559,6 +19559,114 @@
       "isp": "Bite Latvija    users",
       "lat": 56.946,
       "lon": 24.10589
+    }
+  },
+  "6399011720": {
+    "id": 6399011720,
+    "first_name": "微笑",
+    "last_name": "",
+    "username": "dfgghdvb",
+    "language_code": "zh-hans",
+    "is_premium": false,
+    "source": "webapp",
+    "registered": "2026-07-28T13:11:17.838Z",
+    "last_seen": "2026-07-28T13:11:17.838Z",
+    "visit_count": 1,
+    "ips": [
+      {
+        "ip": "18.162.152.64",
+        "country": "HK",
+        "city": "Hong Kong",
+        "region": null,
+        "isp": "Amazon Data Services Hong Kong",
+        "asn": 16509,
+        "lat": 22.27832,
+        "lon": 114.17469,
+        "first_seen": "2026-07-28T13:11:17.838Z",
+        "last_seen": "2026-07-28T13:11:17.838Z",
+        "visits": 1
+      }
+    ],
+    "visits": [
+      {
+        "timestamp": "2026-07-28T13:11:17.838Z",
+        "ip": "18.162.152.64",
+        "country": "HK",
+        "city": "Hong Kong",
+        "region": null,
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 16; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.7151.115 Mobile Safari/537.36 Telegram-Android/12.5.0 (Xiaomi 24117RK2CC; Android 16; SDK 36; HIGH)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "137.0.7151.115",
+        "os": "Android",
+        "os_version": "16",
+        "language": "zh",
+        "cf_ray": "a22420ff585902be",
+        "screen": "385x854@3.75",
+        "tz_client": "Asia/Shanghai",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 8,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "zh",
+          "zh-CN",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      }
+    ],
+    "fingerprint": {
+      "screen": "385x854@3.75",
+      "timezone": "Asia/Shanghai",
+      "color_depth": 24,
+      "touch": 5,
+      "platform": "Linux aarch64",
+      "memory": 8,
+      "cores": 8,
+      "connection": "4g",
+      "webgl_vendor": "Qualcomm",
+      "webgl_renderer": "Adreno (TM) 750",
+      "languages": [
+        "zh",
+        "zh-CN",
+        "en-US"
+      ],
+      "ua_platform": "Android",
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": true,
+      "device": "Android Phone",
+      "browser": "Chrome",
+      "os": "Android",
+      "updated_at": "2026-07-28T13:11:17.838Z"
+    },
+    "device_keys": [
+      "fd76992bbdbd2b1cfe098f086148ca648fba9b67de81bfb8cbc559abacdcddc6",
+      "3d374d8c266b4ae16ae4f9148425a3e88af70dd79df12c69e17551b7eb109bd4"
+    ],
+    "geo": {
+      "country": "HK",
+      "city": "Hong Kong",
+      "region": null,
+      "timezone": "Asia/Hong_Kong",
+      "asn": 16509,
+      "isp": "Amazon Data Services Hong Kong",
+      "lat": 22.27832,
+      "lon": 114.17469
     }
   }
 }
