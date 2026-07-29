@@ -2710,5 +2710,21 @@
     "username": "Artem",
     "status": "new",
     "date": "28.07.2026 14:04"
+  },
+  "#0151": {
+    "oid": "#0151",
+    "items": [
+      {
+        "pid": "vozolneon",
+        "product_name": "Vozol Neon 60k puffs",
+        "flavor": "Grape Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Grape Ice, количество: 1",
+    "user_id": 5165265182,
+    "username": "Uļjana",
+    "status": "new",
+    "date": "29.07.2026 12:50"
   }
 }
