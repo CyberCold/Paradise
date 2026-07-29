@@ -5015,7 +5015,7 @@
         "cf_ray": "a22aaa046b842aa2",
         "screen": "393x852@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -21172,6 +21172,112 @@
       "isp": "Bite Latvija    users",
       "lat": 56.946,
       "lon": 24.10589
+    }
+  },
+  "7949797048": {
+    "id": 7949797048,
+    "first_name": "起源",
+    "last_name": "",
+    "username": "",
+    "language_code": "zh-hans",
+    "is_premium": false,
+    "source": "webapp",
+    "registered": "2026-07-29T09:24:54.742Z",
+    "last_seen": "2026-07-29T09:24:54.742Z",
+    "visit_count": 1,
+    "ips": [
+      {
+        "ip": "60.249.91.205",
+        "country": "TW",
+        "city": "Taichung",
+        "region": "Taiwan",
+        "isp": "Chunghwa Telecom Data Communication Business Group",
+        "asn": 3462,
+        "lat": 24.1469,
+        "lon": 120.6839,
+        "first_seen": "2026-07-29T09:24:54.742Z",
+        "last_seen": "2026-07-29T09:24:54.742Z",
+        "visits": 1
+      }
+    ],
+    "visits": [
+      {
+        "timestamp": "2026-07-29T09:24:54.742Z",
+        "ip": "60.249.91.205",
+        "country": "TW",
+        "city": "Taichung",
+        "region": "Taiwan",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 15; K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/130.0.6723.58 Mobile Safari/537.36",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "130.0.6723.58",
+        "os": "Android",
+        "os_version": "15",
+        "language": "zh-CN",
+        "cf_ray": "a22b12c12daaf1fa",
+        "screen": "360x792@3",
+        "tz_client": "Asia/Shanghai",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 8,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "zh-CN",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      }
+    ],
+    "fingerprint": {
+      "screen": "360x792@3",
+      "timezone": "Asia/Shanghai",
+      "color_depth": 24,
+      "touch": 5,
+      "platform": "Linux aarch64",
+      "memory": 8,
+      "cores": 8,
+      "connection": "4g",
+      "webgl_vendor": "Qualcomm",
+      "webgl_renderer": "Adreno (TM) 830",
+      "languages": [
+        "zh-CN",
+        "en-US"
+      ],
+      "ua_platform": "Android",
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": true,
+      "device": "Android Phone",
+      "browser": "Chrome",
+      "os": "Android",
+      "updated_at": "2026-07-29T09:24:54.742Z"
+    },
+    "device_keys": [
+      "07cffaa5811dec8be58990c290f6697dea9bcffeacd4ae87fb325092e2d51c97",
+      "1685fb2933ec634bdbebd215740a17e818ed2fb99335813c4f368fa629f5a20e"
+    ],
+    "geo": {
+      "country": "TW",
+      "city": "Taichung",
+      "region": "Taiwan",
+      "timezone": "Asia/Taipei",
+      "asn": 3462,
+      "isp": "Chunghwa Telecom Data Communication Business Group",
+      "lat": 24.1469,
+      "lon": 120.6839
     }
   }
 }
