@@ -11151,7 +11151,7 @@
         "cf_ray": "a22cd5f67a51e4dc",
         "screen": "1920x1080@1",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 0,
         "platform": "Win32",
         "memory": 16,
@@ -18998,7 +18998,7 @@
     "username": "Penisssst",
     "source": "chat",
     "registered": "2026-06-13T15:40:00.925077",
-    "last_seen": "2026-07-29T12:48:40.820Z",
+    "last_seen": "2026-07-29T14:48:50.394Z",
     "last_name": "Khtulu",
     "sources": [
       "chat",
@@ -19006,8 +19006,21 @@
     ],
     "language_code": "ru",
     "is_premium": false,
-    "visit_count": 10,
+    "visit_count": 11,
     "ips": [
+      {
+        "ip": "5.20.25.161",
+        "country": "LT",
+        "city": "Visaginas",
+        "region": "Utena",
+        "isp": "Cgates, UAB",
+        "asn": 21412,
+        "lat": 55.59678,
+        "lon": 26.43984,
+        "first_seen": "2026-07-29T14:48:50.394Z",
+        "last_seen": "2026-07-29T14:48:50.394Z",
+        "visits": 1
+      },
       {
         "ip": "84.15.187.54",
         "country": "LT",
@@ -19036,6 +19049,44 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-07-29T14:48:50.394Z",
+        "ip": "5.20.25.161",
+        "country": "LT",
+        "city": "Visaginas",
+        "region": "Utena",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 16; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.124 Mobile Safari/537.36 Telegram-Android/12.9.1 (Xiaomi 23090RA98G; Android 16; SDK 36; HIGH)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "150.0.7871.124",
+        "os": "Android",
+        "os_version": "16",
+        "language": "ru",
+        "cf_ray": "a22ced42daa5c23e",
+        "screen": "407x904@3",
+        "tz_client": "Europe/Vilnius",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 8,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru",
+          "ru-RU",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-07-29T12:48:40.820Z",
         "ip": "84.15.187.54",
@@ -19428,6 +19479,7 @@
       "webgl_vendor": "ARM",
       "webgl_renderer": "Mali-G610 MC4",
       "languages": [
+        "ru",
         "ru-RU",
         "en-US"
       ],
@@ -19440,22 +19492,22 @@
       "device": "Android Phone",
       "browser": "Chrome",
       "os": "Android",
-      "updated_at": "2026-07-29T12:48:40.820Z"
+      "updated_at": "2026-07-29T14:48:50.394Z"
     },
     "device_keys": [
       "a482344889474fa6765661bbc17120fe105e2b9c5a8807acda7fe26f63bda35e",
-      "5ff2d0f7084b3346e27e0ebdc91c7e400383dc4a8e0266c6ace880ac77316f19",
-      "1d38a931786af62d8391fd7924b52b1bfaf04b4965901d003845441ccbb86567"
+      "1d38a931786af62d8391fd7924b52b1bfaf04b4965901d003845441ccbb86567",
+      "5ff2d0f7084b3346e27e0ebdc91c7e400383dc4a8e0266c6ace880ac77316f19"
     ],
     "geo": {
       "country": "LT",
-      "city": "Vilnius",
-      "region": "Vilnius",
+      "city": "Visaginas",
+      "region": "Utena",
       "timezone": "Europe/Vilnius",
-      "asn": 13194,
-      "isp": "Bite Lietuva",
-      "lat": 54.68916,
-      "lon": 25.2798
+      "asn": 21412,
+      "isp": "Cgates, UAB",
+      "lat": 55.59678,
+      "lon": 26.43984
     }
   },
   "6333110159": {
