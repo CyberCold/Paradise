@@ -2764,5 +2764,27 @@
     "username": "𝖓𝖊𝖛𝖊𝖗𝖆𝖌𝖆𝖎𝖓",
     "status": "new",
     "date": "30.07.2026 15:08"
+  },
+  "#0154": {
+    "oid": "#0154",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Frozen Grape Soda",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Lavafire",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Frozen Grape Soda, количество: 1\nVozol, вкус: Lavafire, количество: 1",
+    "user_id": 8146050086,
+    "username": "ANDROED",
+    "status": "new",
+    "date": "31.07.2026 12:59"
   }
 }
