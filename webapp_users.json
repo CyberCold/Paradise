@@ -11245,7 +11245,7 @@
         "cf_ray": "a23be6769c86bc1b",
         "screen": "440x956@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -22961,6 +22961,114 @@
       "isp": "Latvijas Mobilais Telefons SIA",
       "lat": 56.946,
       "lon": 24.10589
+    }
+  },
+  "8200776734": {
+    "id": 8200776734,
+    "first_name": ".",
+    "last_name": "",
+    "username": "",
+    "language_code": "id",
+    "is_premium": true,
+    "source": "webapp",
+    "registered": "2026-07-31T11:47:57.264Z",
+    "last_seen": "2026-07-31T11:47:57.264Z",
+    "visit_count": 1,
+    "ips": [
+      {
+        "ip": "36.70.2.133",
+        "country": "ID",
+        "city": "Jakarta",
+        "region": "Jakarta",
+        "isp": "PT TELKOM INDONESIA",
+        "asn": 7713,
+        "lat": -6.21462,
+        "lon": 106.84513,
+        "first_seen": "2026-07-31T11:47:57.264Z",
+        "last_seen": "2026-07-31T11:47:57.264Z",
+        "visits": 1
+      }
+    ],
+    "visits": [
+      {
+        "timestamp": "2026-07-31T11:47:57.264Z",
+        "ip": "36.70.2.133",
+        "country": "ID",
+        "city": "Jakarta",
+        "region": "Jakarta",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 16; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.181 Mobile Safari/537.36 Telegram-Android/12.9.1 (Samsung SM-A356E; Android 16; SDK 36; HIGH)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "150.0.7871.181",
+        "os": "Android",
+        "os_version": "16",
+        "language": "id",
+        "cf_ray": "a23c5f0a692c35aa",
+        "screen": "384x832@2.8125",
+        "tz_client": "Asia/Jakarta",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 8,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "id",
+          "id-ID",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      }
+    ],
+    "fingerprint": {
+      "screen": "384x832@2.8125",
+      "timezone": "Asia/Jakarta",
+      "color_depth": 24,
+      "touch": 5,
+      "platform": "Linux aarch64",
+      "memory": 8,
+      "cores": 8,
+      "connection": "4g",
+      "webgl_vendor": "ARM",
+      "webgl_renderer": "Mali-G68",
+      "languages": [
+        "id",
+        "id-ID",
+        "en-US"
+      ],
+      "ua_platform": "Android",
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": true,
+      "device": "Android Phone",
+      "browser": "Chrome",
+      "os": "Android",
+      "updated_at": "2026-07-31T11:47:57.264Z"
+    },
+    "device_keys": [
+      "fd2e97f92c1522c9d88e9c1de14b6e645baf4fc59c1a4d3a776d719154214d09",
+      "fff6e0ddbe025e2997a9460a3c09395716e639bfdac5b33c769bfc9c813dd898"
+    ],
+    "geo": {
+      "country": "ID",
+      "city": "Jakarta",
+      "region": "Jakarta",
+      "timezone": "Asia/Jakarta",
+      "asn": 7713,
+      "isp": "PT TELKOM INDONESIA",
+      "lat": -6.21462,
+      "lon": 106.84513
     }
   }
 }
