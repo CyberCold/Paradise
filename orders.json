@@ -2786,5 +2786,21 @@
     "username": "ANDROED",
     "status": "new",
     "date": "31.07.2026 12:59"
+  },
+  "#0155": {
+    "oid": "#0155",
+    "items": [
+      {
+        "pid": "elfbarlushkingpro",
+        "product_name": "ELFBAR Lush King Pro 40k puffs",
+        "flavor": "Cherry Burst",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nELFBAR Lush King Pro 40k puffs, вкус: Cherry Burst, количество: 1",
+    "user_id": 7581998178,
+    "username": "~",
+    "status": "new",
+    "date": "31.07.2026 21:58"
   }
 }
