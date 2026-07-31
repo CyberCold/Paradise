@@ -2629,7 +2629,7 @@
         "cf_ray": "a23e720e7a61bc0d",
         "screen": "390x844@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -23256,6 +23256,114 @@
       "isp": "PT TELKOM INDONESIA",
       "lat": -6.21462,
       "lon": 106.84513
+    }
+  },
+  "7581998178": {
+    "id": 7581998178,
+    "first_name": "~",
+    "last_name": "",
+    "username": "NormundsG93",
+    "language_code": "lv",
+    "is_premium": false,
+    "source": "webapp",
+    "registered": "2026-07-31T18:27:10.434Z",
+    "last_seen": "2026-07-31T18:27:10.434Z",
+    "visit_count": 1,
+    "ips": [
+      {
+        "ip": "84.15.223.60",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Bite Latvija",
+        "asn": 13194,
+        "lat": 56.946,
+        "lon": 24.1059,
+        "first_seen": "2026-07-31T18:27:10.434Z",
+        "last_seen": "2026-07-31T18:27:10.434Z",
+        "visits": 1
+      }
+    ],
+    "visits": [
+      {
+        "timestamp": "2026-07-31T18:27:10.434Z",
+        "ip": "84.15.223.60",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 16; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.124 Mobile Safari/537.36 Telegram-Android/12.9.0 (Xiaomi 2412DPC0AG; Android 16; SDK 36; HIGH)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "150.0.7871.124",
+        "os": "Android",
+        "os_version": "16",
+        "language": "en",
+        "cf_ray": "a23ea7d618fecc2e",
+        "screen": "376x835@3.25",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 8,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "en",
+          "lv-LV",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      }
+    ],
+    "fingerprint": {
+      "screen": "376x835@3.25",
+      "timezone": "Europe/Riga",
+      "color_depth": 24,
+      "touch": 5,
+      "platform": "Linux aarch64",
+      "memory": 8,
+      "cores": 8,
+      "connection": "4g",
+      "webgl_vendor": "ARM",
+      "webgl_renderer": "Mali-G720 MC7",
+      "languages": [
+        "en",
+        "lv-LV",
+        "en-US"
+      ],
+      "ua_platform": "Android",
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": true,
+      "device": "Android Phone",
+      "browser": "Chrome",
+      "os": "Android",
+      "updated_at": "2026-07-31T18:27:10.434Z"
+    },
+    "device_keys": [
+      "3c2b558774d3d4497da684fc6532dcd0b91d4192d44c43090fea4c110dd9aa30",
+      "ed6f859b33a8968cd0b440e2ce60b79db4248b4ef1a0ecab2cad62a7d1fd039c"
+    ],
+    "geo": {
+      "country": "LV",
+      "city": "Riga",
+      "region": "Riga",
+      "timezone": "Europe/Riga",
+      "asn": 13194,
+      "isp": "Bite Latvija",
+      "lat": 56.946,
+      "lon": 24.1059
     }
   }
 }
