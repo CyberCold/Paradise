@@ -2847,7 +2847,90 @@
     "source_message_id": 18803,
     "user_id": 7147710833,
     "username": "Electric",
+    "status": "done",
+    "date": "01.08.2026 12:05",
+    "done_at": "2026-08-01T17:51:13.079816"
+  },
+  "#0158": {
+    "oid": "#0158",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Cherry Cola",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Blue Cotton Candy",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Cherry Cola, количество: 1\nVozol, вкус: Blue Cotton Candy, количество: 1",
+    "source_key": "2039582824:18804",
+    "source_chat_id": 2039582824,
+    "source_message_id": 18804,
+    "user_id": 2039582824,
+    "username": "Pablo",
     "status": "new",
-    "date": "01.08.2026 12:05"
+    "date": "01.08.2026 14:48"
+  },
+  "#0159": {
+    "oid": "#0159",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Cherry Lemon Peach",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Cherry Lemon Peach, количество: 1",
+    "source_key": "1210151096:18826",
+    "source_chat_id": 1210151096,
+    "source_message_id": 18826,
+    "user_id": 1210151096,
+    "username": "🩵👼",
+    "status": "new",
+    "date": "01.08.2026 17:19"
+  },
+  "#0160": {
+    "oid": "#0160",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Blue Cotton Candy",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Blue Cotton Candy, количество: 1",
+    "source_key": "2144149419:18834",
+    "source_chat_id": 2144149419,
+    "source_message_id": 18834,
+    "user_id": 2144149419,
+    "username": "Артур",
+    "status": "new",
+    "date": "01.08.2026 17:28"
+  },
+  "#0161": {
+    "oid": "#0161",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Frozen Grape Soda",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Frozen Grape Soda, количество: 1",
+    "source_key": "2144149419:18835",
+    "source_chat_id": 2144149419,
+    "source_message_id": 18835,
+    "user_id": 2144149419,
+    "username": "Артур",
+    "status": "new",
+    "date": "01.08.2026 17:29"
   }
 }
