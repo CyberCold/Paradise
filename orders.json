@@ -2873,7 +2873,7 @@
     "source_message_id": 18804,
     "user_id": 2039582824,
     "username": "Pablo",
-    "status": "new",
+    "status": "cancelled",
     "date": "01.08.2026 14:48"
   },
   "#0159": {
@@ -2892,8 +2892,9 @@
     "source_message_id": 18826,
     "user_id": 1210151096,
     "username": "🩵👼",
-    "status": "new",
-    "date": "01.08.2026 17:19"
+    "status": "done",
+    "date": "01.08.2026 17:19",
+    "done_at": "2026-08-01T22:50:30.392416"
   },
   "#0160": {
     "oid": "#0160",
