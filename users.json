@@ -10492,7 +10492,7 @@
     "username": "Paad23645",
     "source": "chat",
     "registered": "2026-05-26T10:02:59.350Z",
-    "last_seen": "2026-08-01T11:47:42.521Z",
+    "last_seen": "2026-08-01T17:50:42.674743",
     "last_name": "",
     "sources": [
       "chat",
@@ -10976,7 +10976,7 @@
     "username": "Yrururu16",
     "source": "chat",
     "registered": "2026-05-24T16:17:47.873344",
-    "last_seen": "2026-08-01T14:28:58.527Z",
+    "last_seen": "2026-08-01T17:50:43.218306",
     "last_name": "",
     "sources": [
       "chat",
@@ -19725,7 +19725,7 @@
     "username": "Eletric007",
     "source": "chat",
     "registered": "2026-05-30T18:08:40.631055",
-    "last_seen": "2026-08-01T09:04:31.505Z",
+    "last_seen": "2026-08-01T17:50:42.411313",
     "last_name": "",
     "sources": [
       "chat",
@@ -36374,9 +36374,10 @@
     },
     "source": "webapp",
     "sources": [
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-08-01T14:13:07.185Z",
-    "last_seen": "2026-08-01T14:20:56.027Z"
+    "last_seen": "2026-08-01T17:50:42.872667"
   }
 }
