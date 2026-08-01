@@ -2824,5 +2824,30 @@
     "username": "Electric",
     "status": "new",
     "date": "01.08.2026 12:03"
+  },
+  "#0157": {
+    "oid": "#0157",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Blue Raspberry",
+        "qty": 2
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Kiwi Passion Fruit Guava",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Blue Raspberry, количество: 2\nVozol, вкус: Kiwi Passion Fruit Guava, количество: 1",
+    "source_key": "7147710833:18803",
+    "source_chat_id": 7147710833,
+    "source_message_id": 18803,
+    "user_id": 7147710833,
+    "username": "Electric",
+    "status": "new",
+    "date": "01.08.2026 12:05"
   }
 }
