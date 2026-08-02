@@ -12563,7 +12563,7 @@
     "username": "",
     "source": "webapp",
     "registered": "2026-05-22T00:00:00Z",
-    "last_seen": "2026-07-04T16:49:28.667469",
+    "last_seen": "2026-08-02T18:13:00.616199",
     "last_name": "",
     "language_code": "",
     "is_premium": false,
@@ -12604,7 +12604,8 @@
       "lon": 0
     },
     "sources": [
-      "webapp"
+      "webapp",
+      "chat"
     ]
   },
   "8075841158": {
