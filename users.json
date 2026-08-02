@@ -36861,9 +36861,10 @@
     "username": "gelikXd",
     "source": "chat",
     "sources": [
-      "chat"
+      "chat",
+      "bot_start"
     ],
     "registered": "2026-08-02T11:12:25.338660",
-    "last_seen": "2026-08-02T11:12:25.338660"
+    "last_seen": "2026-08-02T13:36:39.791341"
   }
 }
