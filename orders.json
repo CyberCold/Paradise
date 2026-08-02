@@ -2957,8 +2957,9 @@
     "source_message_id": 18933,
     "user_id": 1241581334,
     "username": "gelik",
-    "status": "new",
-    "date": "02.08.2026 14:02"
+    "status": "done",
+    "date": "02.08.2026 14:02",
+    "done_at": "2026-08-02T20:03:35.913237"
   },
   "#0163": {
     "oid": "#0163",
