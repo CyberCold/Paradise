@@ -4947,10 +4947,11 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-05-27T12:19:09.893223",
-    "last_seen": "2026-08-03T14:14:43.823Z"
+    "last_seen": "2026-08-03T17:19:03.378329"
   },
   "1141788828": {
     "id": 1141788828,
