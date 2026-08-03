@@ -6905,7 +6905,7 @@
         "cf_ray": "a253f92dea2bc23e",
         "screen": "360x780@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "Linux aarch64",
         "memory": 8,
@@ -36622,9 +36622,110 @@
     "first_name": "Vadim",
     "source": "bot_start",
     "sources": [
-      "bot_start"
+      "bot_start",
+      "webapp"
     ],
     "registered": "2026-08-03T12:03:18.573981",
-    "last_seen": "2026-08-03T12:03:18.573981"
+    "last_seen": "2026-08-03T09:07:14.799Z",
+    "last_name": "Rukmans",
+    "language_code": "ru",
+    "is_premium": false,
+    "visit_count": 1,
+    "ips": [
+      {
+        "ip": "89.8.74.133",
+        "country": "NO",
+        "city": "Oslo",
+        "region": "Oslo",
+        "isp": "Mobile end user terminals",
+        "asn": 25400,
+        "lat": 59.91273,
+        "lon": 10.74609,
+        "first_seen": "2026-08-03T09:07:14.799Z",
+        "last_seen": "2026-08-03T09:07:14.799Z",
+        "visits": 1
+      }
+    ],
+    "visits": [
+      {
+        "timestamp": "2026-08-03T09:07:14.799Z",
+        "ip": "89.8.74.133",
+        "country": "NO",
+        "city": "Oslo",
+        "region": "Oslo",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 16; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.181 Mobile Safari/537.36 Telegram-Android/12.9.1 (Honor BRP-NX1M; Android 16; SDK 36; AVERAGE)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "150.0.7871.181",
+        "os": "Android",
+        "os_version": "16",
+        "language": "ru",
+        "cf_ray": "a2542bc09a21b4f4",
+        "screen": "377x831@3.25",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 8,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru",
+          "ru-NO",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      }
+    ],
+    "fingerprint": {
+      "screen": "377x831@3.25",
+      "timezone": "Europe/Riga",
+      "color_depth": 24,
+      "touch": 5,
+      "platform": "Linux aarch64",
+      "memory": 8,
+      "cores": 8,
+      "connection": "4g",
+      "webgl_vendor": "Qualcomm",
+      "webgl_renderer": "Adreno (TM) 710",
+      "languages": [
+        "ru",
+        "ru-NO",
+        "en-US"
+      ],
+      "ua_platform": "Android",
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": true,
+      "device": "Android Phone",
+      "browser": "Chrome",
+      "os": "Android",
+      "updated_at": "2026-08-03T09:07:14.799Z"
+    },
+    "device_keys": [
+      "24c2431f7f805dbacc4fa53a487d65dd99307712b29349449a2a1492dc519552",
+      "98fb2fd372123382be959fcdb158797532333c992cdc83b0a7413911c5a066ee"
+    ],
+    "geo": {
+      "country": "NO",
+      "city": "Oslo",
+      "region": "Oslo",
+      "timezone": "Europe/Oslo",
+      "asn": 25400,
+      "isp": "Mobile end user terminals",
+      "lat": 59.91273,
+      "lon": 10.74609
+    }
   }
 }
