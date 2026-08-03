@@ -3106,5 +3106,24 @@
     "username": "Бибизяна",
     "status": "new",
     "date": "03.08.2026 17:20"
+  },
+  "#0169": {
+    "oid": "#0169",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Strawberry Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Strawberry Ice, количество: 1",
+    "source_key": "1135397601:19062",
+    "source_chat_id": 1135397601,
+    "source_message_id": 19062,
+    "user_id": 1135397601,
+    "username": "Saphartron",
+    "status": "new",
+    "date": "03.08.2026 17:20"
   }
 }
