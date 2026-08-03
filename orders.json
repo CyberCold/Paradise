@@ -3038,5 +3038,48 @@
     "username": "mzzzfk",
     "status": "new",
     "date": "03.08.2026 15:03"
+  },
+  "#0167": {
+    "oid": "#0167",
+    "items": [
+      {
+        "pid": "elfbarduke",
+        "product_name": "ELFBAR DUKE 30k puffs",
+        "flavor": "Cherry Lemon",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Blue Cotton Candy",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Watermelon Bubble Gum",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Strawberry Kiwi",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Frozen Grape Soda",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nELFBAR DUKE 30k puffs, вкус: Cherry Lemon, количество: 1\nVozol, вкус: Blue Cotton Candy, количество: 1\nVozol, вкус: Watermelon Bubble Gum, количество: 1\nVozol, вкус: Strawberry Kiwi, количество: 1\nVozol, вкус: Frozen Grape Soda, количество: 1",
+    "source_key": "797355997:19049",
+    "source_chat_id": 797355997,
+    "source_message_id": 19049,
+    "user_id": 797355997,
+    "username": "Дима",
+    "status": "new",
+    "date": "03.08.2026 15:30"
   }
 }
