@@ -3125,5 +3125,36 @@
     "username": "Saphartron",
     "status": "new",
     "date": "03.08.2026 17:20"
+  },
+  "#0170": {
+    "oid": "#0170",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Peach Mango Watermelon",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Grape Ice",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Frozen Grape Soda",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Peach Mango Watermelon, количество: 1\nVozol, вкус: Grape Ice, количество: 1\nVozol, вкус: Frozen Grape Soda, количество: 1",
+    "source_key": "1033160991:19084",
+    "source_chat_id": 1033160991,
+    "source_message_id": 19084,
+    "user_id": 1033160991,
+    "username": "Чебурек",
+    "status": "new",
+    "date": "03.08.2026 18:24"
   }
 }
