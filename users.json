@@ -2210,7 +2210,8 @@
     ],
     "source": "webapp",
     "sources": [
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-05-27T09:31:32.632Z",
     "last_seen": "2026-08-03T12:29:12.252Z"
