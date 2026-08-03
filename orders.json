@@ -3123,8 +3123,9 @@
     "source_message_id": 19062,
     "user_id": 1135397601,
     "username": "Saphartron",
-    "status": "new",
-    "date": "03.08.2026 17:20"
+    "status": "done",
+    "date": "03.08.2026 17:20",
+    "done_at": "2026-08-03T18:27:20.705888"
   },
   "#0170": {
     "oid": "#0170",
