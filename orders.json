@@ -3019,5 +3019,24 @@
     "username": "Vadim",
     "status": "new",
     "date": "03.08.2026 12:21"
+  },
+  "#0166": {
+    "oid": "#0166",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "не указан",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\n ElfLiq 50mg Strawberry ice, количество: 1",
+    "source_key": "765772657:19045",
+    "source_chat_id": 765772657,
+    "source_message_id": 19045,
+    "user_id": 765772657,
+    "username": "mzzzfk",
+    "status": "new",
+    "date": "03.08.2026 15:03"
   }
 }
