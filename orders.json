@@ -3159,5 +3159,24 @@
     "status": "done",
     "date": "03.08.2026 18:24",
     "done_at": "2026-08-03T20:53:01.479655"
+  },
+  "#0171": {
+    "oid": "#0171",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Cherry Cola",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Cherry Cola, количество: 1",
+    "source_key": "6623819066:19134",
+    "source_chat_id": 6623819066,
+    "source_message_id": 19134,
+    "user_id": 6623819066,
+    "username": "Котэ",
+    "status": "new",
+    "date": "04.08.2026 11:24"
   }
 }
