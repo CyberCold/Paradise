@@ -3178,5 +3178,30 @@
     "username": "Котэ",
     "status": "new",
     "date": "04.08.2026 11:24"
+  },
+  "#0172": {
+    "oid": "#0172",
+    "items": [
+      {
+        "pid": "elfbarlushkingpro",
+        "product_name": "ELFBAR Lush King Pro 40k puffs",
+        "flavor": "Cherry Burst",
+        "qty": 1
+      },
+      {
+        "pid": "elfbarlushkingpro",
+        "product_name": "ELFBAR Lush King Pro 40k puffs",
+        "flavor": "Sour Strawberry Dragonfruit",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nELFBAR Lush King Pro 40k puffs, вкус: Cherry Burst, количество: 1\nELFBAR Lush King Pro 40k puffs, вкус: Sour Strawberry Dragonfruit, количество: 1",
+    "source_key": "1312022580:19147",
+    "source_chat_id": 1312022580,
+    "source_message_id": 19147,
+    "user_id": 1312022580,
+    "username": "Alisa",
+    "status": "new",
+    "date": "04.08.2026 13:12"
   }
 }
