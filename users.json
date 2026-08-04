@@ -1425,10 +1425,11 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-05-27T12:19:09.893223",
-    "last_seen": "2026-08-04T14:06:24.289Z"
+    "last_seen": "2026-08-04T17:07:08.562211"
   },
   "759336808": {
     "id": 759336808,
