@@ -22169,10 +22169,11 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-06-09T15:13:57.765798",
-    "last_seen": "2026-08-04T08:22:21.334Z"
+    "last_seen": "2026-08-04T11:23:15.947269"
   },
   "7945029124": {
     "id": 7945029124,
