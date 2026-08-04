@@ -38743,5 +38743,38 @@
     ],
     "registered": "2026-08-03T15:21:30.876Z",
     "last_seen": "2026-08-03T15:21:30.876Z"
+  },
+  "7459879135": {
+    "id": 7459879135,
+    "first_name": "🔔 Сообщение от контакта",
+    "username": "SecretPoslaniyaBot",
+    "source": "chat",
+    "sources": [
+      "chat"
+    ],
+    "registered": "2026-08-04T12:53:13.950007",
+    "last_seen": "2026-08-04T12:53:13.950007"
+  },
+  "8315238578": {
+    "id": 8315238578,
+    "first_name": "Скачать песню | Поиск музыки",
+    "username": "NaytiMuzBot",
+    "source": "chat",
+    "sources": [
+      "chat"
+    ],
+    "registered": "2026-08-04T12:53:21.600395",
+    "last_seen": "2026-08-04T12:53:21.600395"
+  },
+  "8111608143": {
+    "id": 8111608143,
+    "first_name": "Бесплатный ChatGPT",
+    "username": "besplatni_gptbot",
+    "source": "chat",
+    "sources": [
+      "chat"
+    ],
+    "registered": "2026-08-04T12:53:33.473983",
+    "last_seen": "2026-08-04T12:53:33.473983"
   }
 }
