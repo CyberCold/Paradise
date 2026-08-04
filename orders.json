@@ -3228,5 +3228,30 @@
     "username": "Tepa",
     "status": "new",
     "date": "04.08.2026 15:08"
+  },
+  "#0174": {
+    "oid": "#0174",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Love 777",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Strawberry Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу повторить заказ:\nVozol, вкус: Love 777, количество: 1\nVozol, вкус: Strawberry Ice, количество: 1",
+    "source_key": "748636930:19217",
+    "source_chat_id": 748636930,
+    "source_message_id": 19217,
+    "user_id": 748636930,
+    "username": "mononoaware",
+    "status": "new",
+    "date": "04.08.2026 17:09"
   }
 }
