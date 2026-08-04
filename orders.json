@@ -3201,8 +3201,9 @@
     "source_message_id": 19147,
     "user_id": 1312022580,
     "username": "Alisa",
-    "status": "new",
-    "date": "04.08.2026 13:12"
+    "status": "done",
+    "date": "04.08.2026 13:12",
+    "done_at": "2026-08-04T20:13:23.901429"
   },
   "#0173": {
     "oid": "#0173",
