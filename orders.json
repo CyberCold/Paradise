@@ -3251,7 +3251,8 @@
     "source_message_id": 19217,
     "user_id": 748636930,
     "username": "mononoaware",
-    "status": "new",
-    "date": "04.08.2026 17:09"
+    "status": "done",
+    "date": "04.08.2026 17:09",
+    "done_at": "2026-08-04T20:13:19.579454"
   }
 }
