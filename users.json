@@ -39300,9 +39300,10 @@
     "username": "h6u9b",
     "source": "chat",
     "sources": [
-      "chat"
+      "chat",
+      "bot_start"
     ],
     "registered": "2026-08-04T16:32:58.270445",
-    "last_seen": "2026-08-04T16:32:58.270445"
+    "last_seen": "2026-08-04T16:33:42.911560"
   }
 }
