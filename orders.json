@@ -3203,5 +3203,30 @@
     "username": "Alisa",
     "status": "new",
     "date": "04.08.2026 13:12"
+  },
+  "#0173": {
+    "oid": "#0173",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Peach Mango Watermelon",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Lavafire",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Peach Mango Watermelon, количество: 1\nVozol, вкус: Lavafire, количество: 1",
+    "source_key": "1791610916:19156",
+    "source_chat_id": 1791610916,
+    "source_message_id": 19156,
+    "user_id": 1791610916,
+    "username": "Tepa",
+    "status": "new",
+    "date": "04.08.2026 15:08"
   }
 }
