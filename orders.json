@@ -3317,5 +3317,30 @@
     "username": "⋆˚࿔ otsukare 𝜗𝜚˚⋆",
     "status": "new",
     "date": "04.08.2026 20:37"
+  },
+  "#0178": {
+    "oid": "#0178",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Kiwi Passion Fruit Guava",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Cola Gummies",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Kiwi Passion Fruit Guava, количество: 1\nVozol, вкус: Cola Gummies, количество: 1",
+    "source_key": "973082265:19388",
+    "source_chat_id": 973082265,
+    "source_message_id": 19388,
+    "user_id": 973082265,
+    "username": "Даниил",
+    "status": "new",
+    "date": "05.08.2026 12:33"
   }
 }
