@@ -317,5 +317,16 @@
     "comment": null,
     "date": "13.07.2026 19:40",
     "sent_to_channel": true
+  },
+  "#0174_Vozol 50mg": {
+    "oid": "#0174",
+    "user_id": 748636930,
+    "username": "mononoaware",
+    "product_name": "Vozol 50mg",
+    "flavor": "Love 777",
+    "rating": 5,
+    "comment": "👍",
+    "date": "05.08.2026 20:15",
+    "sent_to_channel": true
   }
 }
