@@ -3378,7 +3378,8 @@
     "source_message_id": 19443,
     "user_id": 1437698107,
     "username": "Elias",
-    "status": "new",
-    "date": "05.08.2026 16:24"
+    "status": "done",
+    "date": "05.08.2026 16:24",
+    "done_at": "2026-08-05T17:18:28.187549"
   }
 }
