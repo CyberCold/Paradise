@@ -41300,5 +41300,17 @@
     ],
     "registered": "2026-08-05T11:30:28.255298",
     "last_seen": "2026-08-05T16:09:47.710804"
+  },
+  "1437698107": {
+    "id": 1437698107,
+    "first_name": "Elias",
+    "username": "BlackPrinceLV",
+    "source": "chat",
+    "sources": [
+      "chat",
+      "bot_start"
+    ],
+    "registered": "2026-08-05T16:20:38.768497",
+    "last_seen": "2026-08-05T16:21:07.417795"
   }
 }
