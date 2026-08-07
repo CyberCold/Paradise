@@ -34930,5 +34930,15 @@
       "lat": 56.946,
       "lon": 24.10589
     }
+  },
+  "927415351": {
+    "id": 927415351,
+    "username": "Nadya_Rutkovskaya",
+    "source": "chat",
+    "sources": [
+      "chat"
+    ],
+    "registered": "2026-08-07T21:17:46.061846",
+    "last_seen": "2026-08-07T21:17:46.061846"
   }
 }
