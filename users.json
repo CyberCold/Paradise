@@ -28025,7 +28025,7 @@
         "cf_ray": "a27700009fa0cc30",
         "screen": "402x874@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -33880,10 +33880,111 @@
     "source": "chat",
     "sources": [
       "chat",
-      "bot_start"
+      "bot_start",
+      "webapp"
     ],
     "registered": "2026-08-07T09:15:33.261969",
-    "last_seen": "2026-08-07T17:45:24.112544"
+    "last_seen": "2026-08-07T14:47:13.400Z",
+    "last_name": "Eikena",
+    "language_code": "lv",
+    "is_premium": false,
+    "visit_count": 1,
+    "ips": [
+      {
+        "ip": "78.84.32.232",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Address pool for LTC-HOME customers",
+        "asn": 12578,
+        "lat": 56.946,
+        "lon": 24.10589,
+        "first_seen": "2026-08-07T14:47:13.400Z",
+        "last_seen": "2026-08-07T14:47:13.400Z",
+        "visits": 1
+      }
+    ],
+    "visits": [
+      {
+        "timestamp": "2026-08-07T14:47:13.400Z",
+        "ip": "78.84.32.232",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 14; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.181 Mobile Safari/537.36 Telegram-Android/12.9.2 (Samsung SM-S711B; Android 14; SDK 34; HIGH)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "150.0.7871.181",
+        "os": "Android",
+        "os_version": "14",
+        "language": "en",
+        "cf_ray": "a2771344ac7ae4d6",
+        "screen": "320x694@3.375",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 8,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "en",
+          "lv-LV",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      }
+    ],
+    "fingerprint": {
+      "screen": "320x694@3.375",
+      "timezone": "Europe/Riga",
+      "color_depth": 24,
+      "touch": 5,
+      "platform": "Linux aarch64",
+      "memory": 8,
+      "cores": 8,
+      "connection": "4g",
+      "webgl_vendor": "Samsung Electronics Co., Ltd.",
+      "webgl_renderer": "ANGLE (Samsung Xclipse 920) on Vulkan 1.3.231",
+      "languages": [
+        "en",
+        "lv-LV",
+        "en-US"
+      ],
+      "ua_platform": "Android",
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": true,
+      "device": "Android Phone",
+      "browser": "Chrome",
+      "os": "Android",
+      "updated_at": "2026-08-07T14:47:13.400Z"
+    },
+    "device_keys": [
+      "dddfd7459b1baa97a249d1cd79b45b5fff263a65c6412484b559efd82d3be3d5",
+      "ffa07717a95207f65b413934bc8ae48da89c1dd3fc7752ba7949fe6e782ce01f"
+    ],
+    "geo": {
+      "country": "LV",
+      "city": "Riga",
+      "region": "Riga",
+      "timezone": "Europe/Riga",
+      "asn": 12578,
+      "isp": "Address pool for LTC-HOME customers",
+      "lat": 56.946,
+      "lon": 24.10589
+    }
   },
   "8716402981": {
     "id": 8716402981,
