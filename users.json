@@ -35110,5 +35110,16 @@
       "lat": 56.946,
       "lon": 24.10589
     }
+  },
+  "5507807695": {
+    "id": 5507807695,
+    "first_name": "Diego",
+    "username": "DieRomero2001",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-08-08T07:08:50.282834",
+    "last_seen": "2026-08-08T07:08:50.282834"
   }
 }
