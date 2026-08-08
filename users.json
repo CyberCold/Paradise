@@ -35121,5 +35121,16 @@
     ],
     "registered": "2026-08-08T07:08:50.282834",
     "last_seen": "2026-08-08T07:08:50.282834"
+  },
+  "8204298399": {
+    "id": 8204298399,
+    "first_name": "Faceless",
+    "username": "Joker599",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-08-08T09:31:09.609224",
+    "last_seen": "2026-08-08T09:31:09.609224"
   }
 }
