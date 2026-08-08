@@ -3462,5 +3462,24 @@
     "username": "Parad",
     "status": "new",
     "date": "08.08.2026 12:03"
+  },
+  "#0185": {
+    "oid": "#0185",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Kiwi Passion Fruit Guava",
+        "qty": 2
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Kiwi Passion Fruit Guava, количество: 2 есть в наличии на завтра?",
+    "source_key": "6347638514:19924",
+    "source_chat_id": 6347638514,
+    "source_message_id": 19924,
+    "user_id": 6347638514,
+    "username": "Кристофер",
+    "status": "new",
+    "date": "08.08.2026 16:03"
   }
 }
