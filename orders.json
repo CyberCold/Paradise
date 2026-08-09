@@ -3538,5 +3538,30 @@
     "username": "rhz «!₽ 1512 :* © #lowtier",
     "status": "new",
     "date": "09.08.2026 15:08"
+  },
+  "#0189": {
+    "oid": "#0189",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq 50mg",
+        "flavor": "не указан",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "не указан",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Хочу купить сегодня:\nElfliq- Blue Razz Ice \nVozol- Frozen Grape Soda; Cola Gummies; Mexican Mango Ice; Strawberry Kiwi\nВсего пять банок выходит",
+    "source_key": "6069639634:19955",
+    "source_chat_id": 6069639634,
+    "source_message_id": 19955,
+    "user_id": 6069639634,
+    "username": "СНЕ❄️АНА",
+    "status": "new",
+    "date": "09.08.2026 17:37"
   }
 }
