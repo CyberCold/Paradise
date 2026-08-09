@@ -3500,5 +3500,24 @@
     "username": "Valerij",
     "status": "new",
     "date": "09.08.2026 14:09"
+  },
+  "#0187": {
+    "oid": "#0187",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Mexican Mango Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Mexican Mango Ice, количество: 1",
+    "source_key": "1576466068:19933",
+    "source_chat_id": 1576466068,
+    "source_message_id": 19933,
+    "user_id": 1576466068,
+    "username": "Майкл",
+    "status": "new",
+    "date": "09.08.2026 14:56"
   }
 }
