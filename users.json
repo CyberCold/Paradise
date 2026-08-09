@@ -21044,17 +21044,17 @@
       "lat": 56.946,
       "lon": 24.10589
     },
+    "device_keys": [
+      "641c3dd48ea3754d4593bf4ef4679b43b085d3a3991fa337d9a2dee84538e507",
+      "7f21eae5ec5adcbc52f5f23e65d8b25cd2df344ada0895827418642d064ac8f7"
+    ],
     "source": "webapp",
     "sources": [
       "webapp",
       "chat"
     ],
     "registered": "2026-05-28T00:14:01.643Z",
-    "last_seen": "2026-08-09T08:25:01.044Z",
-    "device_keys": [
-      "641c3dd48ea3754d4593bf4ef4679b43b085d3a3991fa337d9a2dee84538e507",
-      "7f21eae5ec5adcbc52f5f23e65d8b25cd2df344ada0895827418642d064ac8f7"
-    ]
+    "last_seen": "2026-08-09T08:25:01.044Z"
   },
   "2103329309": {
     "id": 2103329309,
@@ -26564,16 +26564,16 @@
       "lat": 54.59682,
       "lon": -5.92541
     },
+    "device_keys": [
+      "ba9ad1d1198beb5ea6a523c2cdaae64f8745985eda840843aedb411528c48874",
+      "46723bf7da958f7e355c843ffb9a3a88d00432c6ab126db974f21f698e41c1f9"
+    ],
     "source": "webapp",
     "sources": [
       "webapp"
     ],
     "registered": "2026-07-18T15:16:18.552Z",
-    "last_seen": "2026-08-09T09:41:56.132Z",
-    "device_keys": [
-      "ba9ad1d1198beb5ea6a523c2cdaae64f8745985eda840843aedb411528c48874",
-      "46723bf7da958f7e355c843ffb9a3a88d00432c6ab126db974f21f698e41c1f9"
-    ]
+    "last_seen": "2026-08-09T09:41:56.132Z"
   },
   "5572337945": {
     "id": 5572337945,
@@ -34078,13 +34078,6 @@
     "id": 644652034,
     "first_name": "Карина",
     "username": "Xlopuwek",
-    "source": "chat",
-    "sources": [
-      "chat",
-      "webapp"
-    ],
-    "registered": "2026-08-06T19:07:03.347289",
-    "last_seen": "2026-08-06T21:19:49.823890",
     "language_code": "ru",
     "is_premium": false,
     "visit_count": 2,
@@ -34221,7 +34214,14 @@
       "isp": "Tele2 Latvia",
       "lat": 56.946,
       "lon": 24.1059
-    }
+    },
+    "source": "chat",
+    "sources": [
+      "chat",
+      "webapp"
+    ],
+    "registered": "2026-08-06T19:07:03.347289",
+    "last_seen": "2026-08-06T21:19:49.823890"
   },
   "7357009101": {
     "id": 7357009101,
@@ -34365,14 +34365,6 @@
   "1655714696": {
     "id": 1655714696,
     "first_name": "Laura",
-    "source": "chat",
-    "sources": [
-      "chat",
-      "bot_start",
-      "webapp"
-    ],
-    "registered": "2026-08-07T09:15:33.261969",
-    "last_seen": "2026-08-07T18:08:03.407896",
     "last_name": "Eikena",
     "language_code": "lv",
     "is_premium": false,
@@ -34586,7 +34578,15 @@
       "isp": "Address pool for LTC-HOME customers",
       "lat": 56.946,
       "lon": 24.10589
-    }
+    },
+    "source": "chat",
+    "sources": [
+      "chat",
+      "bot_start",
+      "webapp"
+    ],
+    "registered": "2026-08-07T09:15:33.261969",
+    "last_seen": "2026-08-07T18:08:03.407896"
   },
   "8716402981": {
     "id": 8716402981,
@@ -34906,14 +34906,6 @@
     "id": 1072342471,
     "first_name": "элли",
     "username": "nutipahzz",
-    "source": "chat",
-    "sources": [
-      "chat",
-      "bot_start",
-      "webapp"
-    ],
-    "registered": "2026-08-07T16:22:03.450760",
-    "last_seen": "2026-08-07T23:40:12.830785",
     "language_code": "ru",
     "is_premium": true,
     "visit_count": 3,
@@ -35093,7 +35085,15 @@
       "isp": "Bite Latvija    users",
       "lat": 56.946,
       "lon": 24.10589
-    }
+    },
+    "source": "chat",
+    "sources": [
+      "chat",
+      "bot_start",
+      "webapp"
+    ],
+    "registered": "2026-08-07T16:22:03.450760",
+    "last_seen": "2026-08-07T23:40:12.830785"
   },
   "1799522854": {
     "id": 1799522854,
@@ -35301,14 +35301,6 @@
     "id": 2075021137,
     "first_name": "Тёма",
     "username": "Tema378",
-    "source": "chat",
-    "sources": [
-      "chat",
-      "bot_start",
-      "webapp"
-    ],
-    "registered": "2026-08-07T20:08:47.985131",
-    "last_seen": "2026-08-07T17:24:15.650Z",
     "language_code": "ru",
     "is_premium": false,
     "visit_count": 1,
@@ -35403,19 +35395,19 @@
       "isp": "Mobile Services Latvia",
       "lat": 56.946,
       "lon": 24.10589
-    }
-  },
-  "927415351": {
-    "id": 927415351,
-    "username": "Nadya_Rutkovskaya",
+    },
     "source": "chat",
     "sources": [
       "chat",
       "bot_start",
       "webapp"
     ],
-    "registered": "2026-08-07T21:17:46.061846",
-    "last_seen": "2026-08-07T21:59:08.010602",
+    "registered": "2026-08-07T20:08:47.985131",
+    "last_seen": "2026-08-07T17:24:15.650Z"
+  },
+  "927415351": {
+    "id": 927415351,
+    "username": "Nadya_Rutkovskaya",
     "first_name": "ɴᴀᴅʏᴀ",
     "language_code": "ru",
     "is_premium": false,
@@ -35547,7 +35539,15 @@
       "isp": "BALTCOM Broadband Customers",
       "lat": 56.946,
       "lon": 24.10589
-    }
+    },
+    "source": "chat",
+    "sources": [
+      "chat",
+      "bot_start",
+      "webapp"
+    ],
+    "registered": "2026-08-07T21:17:46.061846",
+    "last_seen": "2026-08-07T21:59:08.010602"
   },
   "5507807695": {
     "id": 5507807695,
@@ -35952,7 +35952,7 @@
     "username": "Valera777k",
     "language_code": "ru",
     "is_premium": false,
-    "visit_count": 1,
+    "visit_count": 2,
     "ips": [
       {
         "ip": "81.198.255.178",
@@ -35964,11 +35964,49 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-08-09T10:55:11.724Z",
-        "last_seen": "2026-08-09T10:55:11.724Z",
-        "visits": 1
+        "last_seen": "2026-08-09T10:55:38.072Z",
+        "visits": 2
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-08-09T10:55:38.072Z",
+        "ip": "81.198.255.178",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 12; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.181 Mobile Safari/537.36 Telegram-Android/12.9.2 (Xiaomi M2007J20CG; Android 12; SDK 31; AVERAGE)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "150.0.7871.181",
+        "os": "Android",
+        "os_version": "12",
+        "language": "ru",
+        "cf_ray": "a2863ac6ef1ce4d9",
+        "screen": "393x873@2.75",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 4,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru",
+          "ru-RU",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-08-09T10:55:11.724Z",
         "ip": "81.198.255.178",
@@ -35987,7 +36025,7 @@
         "cf_ray": "a2863a222c7fe4cd",
         "screen": "393x873@2.75",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "Linux aarch64",
         "memory": 4,
@@ -36033,7 +36071,7 @@
       "device": "Android Phone",
       "browser": "Chrome",
       "os": "Android",
-      "updated_at": "2026-08-09T10:55:11.724Z"
+      "updated_at": "2026-08-09T10:55:38.072Z"
     },
     "device_keys": [
       "57631d96ba2a0adab448cd02fa91f3873d7d7075c36e659b3ce3a6895c5b6821",
@@ -36054,6 +36092,6 @@
       "webapp"
     ],
     "registered": "2026-08-09T10:55:11.724Z",
-    "last_seen": "2026-08-09T10:55:11.724Z"
+    "last_seen": "2026-08-09T10:55:38.072Z"
   }
 }
