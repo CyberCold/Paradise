@@ -20633,9 +20633,22 @@
     "is_premium": false,
     "source": "webapp",
     "registered": "2026-05-23T20:07:31.654Z",
-    "last_seen": "2026-07-25T11:46:17.675Z",
-    "visit_count": 3,
+    "last_seen": "2026-08-10T16:22:56.189Z",
+    "visit_count": 4,
     "ips": [
+      {
+        "ip": "150.228.123.175",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "SpaceX Services, Inc.",
+        "asn": 14593,
+        "lat": 56.946,
+        "lon": 24.10589,
+        "first_seen": "2026-08-10T16:22:56.189Z",
+        "last_seen": "2026-08-10T16:22:56.189Z",
+        "visits": 1
+      },
       {
         "ip": "84.15.216.7",
         "country": "LV",
@@ -20664,6 +20677,42 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-08-10T16:22:56.189Z",
+        "ip": "150.228.123.175",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a29057988b4e0258",
+        "screen": "393x852@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-07-25T11:46:17.675Z",
         "ip": "84.15.216.7",
@@ -20796,7 +20845,7 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-07-25T11:46:17.675Z"
+      "updated_at": "2026-08-10T16:22:56.189Z"
     },
     "device_keys": [
       "2f6f7c62fcc72b85db349957c7089c7534f4c964f0162bebe084d417e37bd549",
@@ -20807,10 +20856,10 @@
       "city": "Riga",
       "region": "Riga",
       "timezone": "Europe/Riga",
-      "asn": 13194,
-      "isp": "Bite Latvija",
+      "asn": 14593,
+      "isp": "SpaceX Services, Inc.",
       "lat": 56.946,
-      "lon": 24.1059
+      "lon": 24.10589
     }
   },
   "1790368631": {
@@ -25118,7 +25167,7 @@
         "cf_ray": "a29032bfc984e4e8",
         "screen": "420x912@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
