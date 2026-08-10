@@ -31,12 +31,12 @@
   },
   {
     "id": "stickers",
-    "title": "Stickera",
+    "title": "Stickers",
     "text": "",
     "image": "https://i.postimg.cc/fy8mfgTj/AB224ABF-D694-48AB-A311-FE068B22AD8B.png",
     "button": "",
     "url": "",
-    "active": true,
+    "active": false,
     "created_at": "2026-08-02T14:41:06.321Z"
   }
 ]
