@@ -3604,8 +3604,9 @@
     "source_message_id": 20032,
     "user_id": 1234898582,
     "username": "barsuchij",
-    "status": "new",
-    "date": "10.08.2026 11:44"
+    "status": "done",
+    "date": "10.08.2026 11:44",
+    "done_at": "2026-08-10T19:01:26.315790"
   },
   "#0192": {
     "oid": "#0192",
