@@ -3626,5 +3626,24 @@
     "username": "Толяшын",
     "status": "new",
     "date": "10.08.2026 17:03"
+  },
+  "#0193": {
+    "oid": "#0193",
+    "items": [
+      {
+        "pid": "vozolckick",
+        "product_name": "Vozol Star Click 50k puffs",
+        "flavor": "Love 777",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol Star Click 50k puffs, вкус: Love 777, количество: 1",
+    "source_key": "1028237692:20185",
+    "source_chat_id": 1028237692,
+    "source_message_id": 20185,
+    "user_id": 1028237692,
+    "username": "gena",
+    "status": "new",
+    "date": "10.08.2026 20:18"
   }
 }
