@@ -13298,7 +13298,7 @@
     "username": "karmaa178",
     "language_code": "ru",
     "is_premium": false,
-    "visit_count": 4,
+    "visit_count": 5,
     "ips": [
       {
         "ip": "150.228.123.175",
@@ -13310,8 +13310,8 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-08-10T16:22:56.189Z",
-        "last_seen": "2026-08-10T16:22:56.189Z",
-        "visits": 1
+        "last_seen": "2026-08-10T16:23:17.582Z",
+        "visits": 2
       },
       {
         "ip": "84.15.216.7",
@@ -13342,6 +13342,42 @@
     ],
     "visits": [
       {
+        "timestamp": "2026-08-10T16:23:17.582Z",
+        "ip": "150.228.123.175",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a290581ec9c10258",
+        "screen": "393x852@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
+      {
         "timestamp": "2026-08-10T16:22:56.189Z",
         "ip": "150.228.123.175",
         "country": "LV",
@@ -13359,7 +13395,7 @@
         "cf_ray": "a29057988b4e0258",
         "screen": "393x852@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -13509,7 +13545,7 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-08-10T16:22:56.189Z"
+      "updated_at": "2026-08-10T16:23:17.582Z"
     },
     "geo": {
       "country": "LV",
@@ -13532,7 +13568,7 @@
       "bot_start"
     ],
     "registered": "2026-05-23T20:07:31.654Z",
-    "last_seen": "2026-08-10T19:21:35.711799"
+    "last_seen": "2026-08-10T16:23:17.582Z"
   },
   "1790910230": {
     "id": 1790910230,
