@@ -15759,7 +15759,7 @@
         "cf_ray": "a28bea2f6fd0a14c",
         "screen": "376x835@3.25",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "Linux aarch64",
         "memory": 8,
@@ -21134,14 +21134,27 @@
     "id": 1861398795,
     "first_name": "Nigga Jones",
     "last_name": "",
-    "username": "zaics22",
+    "username": "zaics52",
     "language_code": "ru",
     "is_premium": false,
     "source": "webapp",
     "registered": "2026-07-19T21:04:13.316Z",
-    "last_seen": "2026-07-19T21:08:30.595Z",
-    "visit_count": 2,
+    "last_seen": "2026-08-10T04:46:16.722Z",
+    "visit_count": 3,
     "ips": [
+      {
+        "ip": "185.13.106.102",
+        "country": "GB",
+        "city": "London",
+        "region": "England",
+        "isp": "LYCATEL DISTRIBUTION UK LIMITED",
+        "asn": 31404,
+        "lat": 51.50853,
+        "lon": -0.12574,
+        "first_seen": "2026-08-10T04:46:16.722Z",
+        "last_seen": "2026-08-10T04:46:16.722Z",
+        "visits": 1
+      },
       {
         "ip": "2a03:ec00:b959:c284:80a8:2846:2d92:d137",
         "country": "LV",
@@ -21157,6 +21170,43 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-08-10T04:46:16.722Z",
+        "ip": "185.13.106.102",
+        "country": "GB",
+        "city": "London",
+        "region": "England",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 15; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.181 Mobile Safari/537.36 Telegram-Android/12.9.1 (Samsung SM-G991B; Android 15; SDK 35; HIGH)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "150.0.7871.181",
+        "os": "Android",
+        "os_version": "15",
+        "language": "ru-RU",
+        "cf_ray": "a28c5b19cf86d1fd",
+        "screen": "360x800@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 8,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru-RU",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-07-19T21:08:30.595Z",
         "ip": "2a03:ec00:b959:c284:80a8:2846:2d92:d137",
@@ -21246,7 +21296,6 @@
       "webgl_vendor": "ARM",
       "webgl_renderer": "Mali-G78",
       "languages": [
-        "ru",
         "ru-RU",
         "en-US"
       ],
@@ -21259,21 +21308,22 @@
       "device": "Android Phone",
       "browser": "Chrome",
       "os": "Android",
-      "updated_at": "2026-07-19T21:08:30.595Z"
+      "updated_at": "2026-08-10T04:46:16.722Z"
     },
     "device_keys": [
       "e7e50d1a31d9a729db0ecab658fc8d4b726fc684f28a2c9540b1bd0934bf663b",
+      "33be6ceae11304124fb3a9884a73a066a21140009512d6f683fe91b502befa1a",
       "610fba1419e5674d345541e994e64b5f0386111239c74b48dff306ea038c494e"
     ],
     "geo": {
-      "country": "LV",
-      "city": "Riga",
-      "region": "Riga",
-      "timezone": "Europe/Riga",
-      "asn": 24921,
-      "isp": "Latvijas Mobilais Telefons SIA",
-      "lat": 56.946,
-      "lon": 24.1059
+      "country": "GB",
+      "city": "London",
+      "region": "England",
+      "timezone": "Europe/London",
+      "asn": 31404,
+      "isp": "LYCATEL DISTRIBUTION UK LIMITED",
+      "lat": 51.50853,
+      "lon": -0.12574
     }
   },
   "1889960622": {
