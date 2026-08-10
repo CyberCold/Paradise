@@ -3643,7 +3643,8 @@
     "source_message_id": 20185,
     "user_id": 1028237692,
     "username": "gena",
-    "status": "new",
-    "date": "10.08.2026 20:18"
+    "status": "done",
+    "date": "10.08.2026 20:18",
+    "done_at": "2026-08-10T20:45:44.449825"
   }
 }
