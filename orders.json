@@ -3646,5 +3646,24 @@
     "status": "done",
     "date": "10.08.2026 20:18",
     "done_at": "2026-08-10T20:45:44.449825"
+  },
+  "#0194": {
+    "oid": "#0194",
+    "items": [
+      {
+        "pid": "vozolneon",
+        "product_name": "Vozol Neon 60k puffs",
+        "flavor": "Blackberry Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol Neon 60k puffs, вкус: Blackberry Ice, количество: 1",
+    "source_key": "1889960622:20221",
+    "source_chat_id": 1889960622,
+    "source_message_id": 20221,
+    "user_id": 1889960622,
+    "username": "Chmonja",
+    "status": "new",
+    "date": "11.08.2026 00:19"
   }
 }
