@@ -3604,5 +3604,24 @@
     "username": "barsuchij",
     "status": "new",
     "date": "10.08.2026 11:44"
+  },
+  "#0192": {
+    "oid": "#0192",
+    "items": [
+      {
+        "pid": "elfbarlushkingpro",
+        "product_name": "ELFBAR Lush King Pro 40k puffs",
+        "flavor": "Blue Razz Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nELFBAR Lush King Pro 40k puffs, вкус: Blue Razz Ice, количество: 1",
+    "source_key": "706514627:20089",
+    "source_chat_id": 706514627,
+    "source_message_id": 20089,
+    "user_id": 706514627,
+    "username": "Толяшын",
+    "status": "new",
+    "date": "10.08.2026 17:03"
   }
 }
