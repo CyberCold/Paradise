@@ -2327,49 +2327,109 @@
   },
   "766584545": {
     "id": 766584545,
-    "first_name": "-",
+    "first_name": "Ксюша",
     "username": "Jadgum",
     "is_premium": false,
-    "visit_count": 0,
+    "visit_count": 1,
     "fingerprint": {
-      "screen": null,
-      "timezone": null,
-      "color_depth": null,
-      "touch": 0,
-      "platform": null,
+      "screen": "390x844@3",
+      "timezone": "Europe/Riga",
+      "color_depth": 24,
+      "touch": 5,
+      "platform": "iPhone",
       "memory": 0,
-      "cores": 0,
+      "cores": 4,
       "connection": null,
-      "webgl_vendor": null,
-      "webgl_renderer": null,
-      "languages": [],
+      "webgl_vendor": "Apple Inc.",
+      "webgl_renderer": "Apple GPU",
+      "languages": [
+        "ru"
+      ],
       "ua_platform": null,
       "ua_platform_version": null,
       "ua_architecture": null,
       "ua_bitness": null,
       "ua_model": null,
       "ua_mobile": false,
-      "device": null,
-      "browser": null,
-      "os": null,
-      "updated_at": ""
+      "device": "iPhone",
+      "browser": "unknown",
+      "os": "iOS",
+      "updated_at": "2026-08-11T18:37:57.912Z"
     },
     "geo": {
-      "country": "unknown",
-      "city": null,
-      "region": null,
-      "timezone": null,
-      "asn": 0,
-      "isp": null,
-      "lat": 0,
-      "lon": 0
+      "country": "LV",
+      "city": "Riga",
+      "region": "Riga",
+      "timezone": "Europe/Riga",
+      "asn": 13194,
+      "isp": "Bite Latvija    users",
+      "lat": 56.946,
+      "lon": 24.10589
     },
+    "language_code": "ru",
+    "ips": [
+      {
+        "ip": "2a00:f503:250:6975:7dd3:6b4a:eddd:3d71",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Bite Latvija    users",
+        "asn": 13194,
+        "lat": 56.946,
+        "lon": 24.10589,
+        "first_seen": "2026-08-11T18:37:57.912Z",
+        "last_seen": "2026-08-11T18:37:57.912Z",
+        "visits": 1
+      }
+    ],
+    "visits": [
+      {
+        "timestamp": "2026-08-11T18:37:57.912Z",
+        "ip": "2a00:f503:250:6975:7dd3:6b4a:eddd:3d71",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a2995ac4da6df00d",
+        "screen": "390x844@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      }
+    ],
+    "device_keys": [
+      "93dd173d037433a723bbfca6add5a873a544d6a301a4d343ff6bef1f025c9d26",
+      "b93fe0a4ff9c7fc5084870b4edf7ff3cba087359d6c39d2a6318a8bfc989adf1"
+    ],
     "source": "webapp",
     "sources": [
       "webapp"
     ],
     "registered": "2026-05-28T11:53:02.236Z",
-    "last_seen": "2026-05-28T11:53:02.236Z"
+    "last_seen": "2026-08-11T18:37:57.912Z"
   },
   "770662267": {
     "id": 770662267,
@@ -3316,7 +3376,7 @@
         "cf_ray": "a2992d0459c1c5d3",
         "screen": "402x874@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
