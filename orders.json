@@ -3682,8 +3682,9 @@
     "source_message_id": 20231,
     "user_id": 5165265182,
     "username": "Uļjana",
-    "status": "new",
-    "date": "11.08.2026 13:32"
+    "status": "done",
+    "date": "11.08.2026 13:32",
+    "done_at": "2026-08-12T15:28:11.280538"
   },
   "#0196": {
     "oid": "#0196",
