@@ -3843,5 +3843,24 @@
     "username": ":;",
     "status": "new",
     "date": "12.08.2026 20:06"
+  },
+  "#0202": {
+    "oid": "#0202",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Watermelon Bubble Gum",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Watermelon Bubble Gum, количество: 1",
+    "source_key": "973399984:20395",
+    "source_chat_id": 973399984,
+    "source_message_id": 20395,
+    "user_id": 973399984,
+    "username": "-",
+    "status": "new",
+    "date": "12.08.2026 20:19"
   }
 }
