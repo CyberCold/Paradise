@@ -3736,5 +3736,30 @@
     "username": "Ks",
     "status": "new",
     "date": "12.08.2026 15:23"
+  },
+  "#0198": {
+    "oid": "#0198",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq 50mg",
+        "flavor": "не указан",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "не указан",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Привет, хочу купить \nElfliq Blue Razz Ice 1шт\nVozol Purple Candy 1шт",
+    "source_key": "510557368:20290",
+    "source_chat_id": 510557368,
+    "source_message_id": 20290,
+    "user_id": 510557368,
+    "username": "Arman",
+    "status": "new",
+    "date": "12.08.2026 18:19"
   }
 }
