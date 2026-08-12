@@ -48502,5 +48502,16 @@
     ],
     "registered": "2026-08-12T09:20:19.468748",
     "last_seen": "2026-08-12T09:20:19.468748"
+  },
+  "601909199": {
+    "id": 601909199,
+    "first_name": "Слава",
+    "username": "SlavaMultane",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-08-12T09:49:53.530177",
+    "last_seen": "2026-08-12T09:49:53.530177"
   }
 }
