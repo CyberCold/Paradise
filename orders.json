@@ -3800,5 +3800,48 @@
     "username": "CLS",
     "status": "new",
     "date": "12.08.2026 19:41"
+  },
+  "#0201": {
+    "oid": "#0201",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Berry Peach",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Cherry Cola",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Love 777",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Watermelon Bubble Gum",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Cola Gummies",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Berry Peach, количество: 1\nVozol, вкус: Cherry Cola, количество: 1\nVozol, вкус: Love 777, количество: 1\nVozol, вкус: Watermelon Bubble Gum, количество: 1\nVozol, вкус: Cola Gummies, количество: 1",
+    "source_key": "1953109886:20379",
+    "source_chat_id": 1953109886,
+    "source_message_id": 20379,
+    "user_id": 1953109886,
+    "username": ":;",
+    "status": "new",
+    "date": "12.08.2026 20:06"
   }
 }
