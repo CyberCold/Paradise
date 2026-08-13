@@ -3971,7 +3971,8 @@
     "source_message_id": 20490,
     "user_id": 8382327868,
     "username": ".",
-    "status": "new",
-    "date": "13.08.2026 17:39"
+    "status": "done",
+    "date": "13.08.2026 17:39",
+    "done_at": "2026-08-13T18:19:15.644596"
   }
 }
