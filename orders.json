@@ -3889,5 +3889,24 @@
     "username": ".k.",
     "status": "new",
     "date": "12.08.2026 21:18"
+  },
+  "#0204": {
+    "oid": "#0204",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Berry Peach",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Berry Peach, количество: 1",
+    "source_key": "5089947054:20448",
+    "source_chat_id": 5089947054,
+    "source_message_id": 20448,
+    "user_id": 5089947054,
+    "username": "Настя",
+    "status": "new",
+    "date": "13.08.2026 14:45"
   }
 }
