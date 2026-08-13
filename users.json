@@ -35525,7 +35525,7 @@
     "username": "Sofkabon",
     "language_code": "ru",
     "is_premium": false,
-    "visit_count": 3,
+    "visit_count": 4,
     "ips": [
       {
         "ip": "77.38.242.239",
@@ -35537,8 +35537,8 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-08-13T20:49:43.640Z",
-        "last_seen": "2026-08-13T20:50:53.490Z",
-        "visits": 2
+        "last_seen": "2026-08-13T20:52:56.602Z",
+        "visits": 3
       },
       {
         "ip": "2a03:ec00:b17d:8954:a112:d27b:f911:7e24",
@@ -35555,6 +35555,42 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-08-13T20:52:56.602Z",
+        "ip": "77.38.242.239",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a2aa9b3dbf5be4d0",
+        "screen": "390x844@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-08-13T20:50:53.490Z",
         "ip": "77.38.242.239",
@@ -35573,7 +35609,7 @@
         "cf_ray": "a2aa983c391fb80d",
         "screen": "390x844@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -35685,7 +35721,7 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-08-13T20:50:53.490Z"
+      "updated_at": "2026-08-13T20:52:56.602Z"
     },
     "geo": {
       "country": "LV",
@@ -35706,7 +35742,7 @@
       "webapp"
     ],
     "registered": "2026-07-18T14:51:23.294Z",
-    "last_seen": "2026-08-13T20:50:53.490Z"
+    "last_seen": "2026-08-13T20:52:56.602Z"
   },
   "659488899": {
     "id": 659488899,
