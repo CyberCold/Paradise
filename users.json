@@ -51615,5 +51615,16 @@
     ],
     "registered": "2026-08-13T14:39:15.098582",
     "last_seen": "2026-08-13T17:05:17.237456"
+  },
+  "5314653481": {
+    "id": 5314653481,
+    "first_name": "Premium Bot",
+    "username": "PremiumBot",
+    "source": "chat",
+    "sources": [
+      "chat"
+    ],
+    "registered": "2026-08-13T17:20:20.329021",
+    "last_seen": "2026-08-13T17:20:20.329021"
   }
 }
