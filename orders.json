@@ -3779,8 +3779,9 @@
     "source_message_id": 20318,
     "user_id": 1291814317,
     "username": "Aleksejs",
-    "status": "new",
-    "date": "12.08.2026 18:44"
+    "status": "done",
+    "date": "12.08.2026 18:44",
+    "done_at": "2026-08-13T17:29:08.556753"
   },
   "#0200": {
     "oid": "#0200",
