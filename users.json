@@ -52483,5 +52483,16 @@
     ],
     "registered": "2026-08-13T17:34:41.400398",
     "last_seen": "2026-08-13T15:17:50.687Z"
+  },
+  "7679911680": {
+    "id": 7679911680,
+    "first_name": "Chat",
+    "username": "plataOOplomo",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-08-13T19:16:17.787346",
+    "last_seen": "2026-08-13T19:16:17.787346"
   }
 }
