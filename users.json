@@ -52494,5 +52494,16 @@
     ],
     "registered": "2026-08-13T19:16:17.787346",
     "last_seen": "2026-08-13T19:16:17.787346"
+  },
+  "464899823": {
+    "id": 464899823,
+    "first_name": "Генри Вайт",
+    "username": "henrywhitee",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-08-13T19:16:56.299287",
+    "last_seen": "2026-08-13T19:16:56.299287"
   }
 }
