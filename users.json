@@ -51847,5 +51847,17 @@
     ],
     "registered": "2026-08-13T17:20:20.329021",
     "last_seen": "2026-08-13T17:20:20.329021"
+  },
+  "8382327868": {
+    "id": 8382327868,
+    "first_name": ".",
+    "username": "feel_beter",
+    "source": "chat",
+    "sources": [
+      "chat",
+      "bot_start"
+    ],
+    "registered": "2026-08-13T17:34:41.400398",
+    "last_seen": "2026-08-13T17:35:04.757297"
   }
 }
