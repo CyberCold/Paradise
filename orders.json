@@ -3954,5 +3954,24 @@
     "username": "n78brg89723gnr7283nbrbnm7yr823b7ht32rnb87hrt932nbh79t8r32hnmbt32",
     "status": "new",
     "date": "13.08.2026 17:34"
+  },
+  "#0207": {
+    "oid": "#0207",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq 50mg",
+        "flavor": "Blue Razz Ice",
+        "qty": 2
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Blue Razz Ice, количество: 2",
+    "source_key": "8382327868:20490",
+    "source_chat_id": 8382327868,
+    "source_message_id": 20490,
+    "user_id": 8382327868,
+    "username": ".",
+    "status": "new",
+    "date": "13.08.2026 17:39"
   }
 }
