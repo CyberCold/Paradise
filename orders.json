@@ -3929,5 +3929,30 @@
     "username": "Настя",
     "status": "new",
     "date": "13.08.2026 16:19"
+  },
+  "#0206": {
+    "oid": "#0206",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Kiwi Passion Fruit Guava",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Strawberry Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Kiwi Passion Fruit Guava, количество: 1\nVozol, вкус: Strawberry Ice, количество: 1",
+    "source_key": "2093008890:20486",
+    "source_chat_id": 2093008890,
+    "source_message_id": 20486,
+    "user_id": 2093008890,
+    "username": "n78brg89723gnr7283nbrbnm7yr823b7ht32rnb87hrt932nbh79t8r32hnmbt32",
+    "status": "new",
+    "date": "13.08.2026 17:34"
   }
 }
