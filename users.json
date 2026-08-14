@@ -19426,7 +19426,7 @@
         "cf_ray": "a2add80c1ff15d64",
         "screen": "393x873@2.75",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "Linux aarch64",
         "memory": 8,
@@ -52213,12 +52213,114 @@
   "6176796959": {
     "id": 6176796959,
     "first_name": "Вованчик",
+    "last_name": "Х)",
+    "language_code": "ru",
+    "is_premium": false,
+    "visit_count": 1,
+    "ips": [
+      {
+        "ip": "78.84.61.33",
+        "country": "LV",
+        "city": "Daugavpils",
+        "region": "Daugavpils",
+        "isp": "Address pool for LTC-HOME customers",
+        "asn": 12578,
+        "lat": 55.88333,
+        "lon": 26.53333,
+        "first_seen": "2026-08-14T06:35:18.671Z",
+        "last_seen": "2026-08-14T06:35:18.671Z",
+        "visits": 1
+      }
+    ],
+    "visits": [
+      {
+        "timestamp": "2026-08-14T06:35:18.671Z",
+        "ip": "78.84.61.33",
+        "country": "LV",
+        "city": "Daugavpils",
+        "region": "Daugavpils",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 16; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.181 Mobile Safari/537.36 Telegram-Android/12.9.2 (Samsung SM-S711B; Android 16; SDK 36; HIGH)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "150.0.7871.181",
+        "os": "Android",
+        "os_version": "16",
+        "language": "ru",
+        "cf_ray": "a2adf0519d52b80f",
+        "screen": "384x832@2.8125",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 8,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru",
+          "ru-RU",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      }
+    ],
+    "fingerprint": {
+      "screen": "384x832@2.8125",
+      "timezone": "Europe/Riga",
+      "color_depth": 24,
+      "touch": 5,
+      "platform": "Linux aarch64",
+      "memory": 8,
+      "cores": 8,
+      "connection": "4g",
+      "webgl_vendor": "Samsung Electronics Co., Ltd.",
+      "webgl_renderer": "ANGLE ((Samsung Xclipse 920) on Vulkan 1.3.279)",
+      "languages": [
+        "ru",
+        "ru-RU",
+        "en-US"
+      ],
+      "ua_platform": "Android",
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": true,
+      "device": "Android Phone",
+      "browser": "Chrome",
+      "os": "Android",
+      "updated_at": "2026-08-14T06:35:18.671Z"
+    },
+    "device_keys": [
+      "054fab3479344f10f92db886bc9c01294a8018df0e3e355a44d923f58ffcfb88",
+      "8fc2ff99dbe78d0de222e29820941fb79aed437f508894e9be5b9c1e0b6394b5"
+    ],
+    "geo": {
+      "country": "LV",
+      "city": "Daugavpils",
+      "region": "Daugavpils",
+      "timezone": "Europe/Riga",
+      "asn": 12578,
+      "isp": "Address pool for LTC-HOME customers",
+      "lat": 55.88333,
+      "lon": 26.53333
+    },
     "source": "chat",
     "sources": [
-      "chat"
+      "chat",
+      "bot_start",
+      "webapp"
     ],
     "registered": "2026-08-13T11:50:06.853345",
-    "last_seen": "2026-08-13T11:50:06.853345"
+    "last_seen": "2026-08-14T06:35:18.671Z"
   },
   "2093008890": {
     "id": 2093008890,
