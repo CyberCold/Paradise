@@ -4070,8 +4070,9 @@
     "source_message_id": 20580,
     "user_id": 1350105420,
     "username": "Hammer",
-    "status": "new",
-    "date": "14.08.2026 15:04"
+    "status": "done",
+    "date": "14.08.2026 15:04",
+    "done_at": "2026-08-14T17:23:07.092488"
   },
   "#0212": {
     "oid": "#0212",
