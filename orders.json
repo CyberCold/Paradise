@@ -4072,5 +4072,30 @@
     "username": "Hammer",
     "status": "new",
     "date": "14.08.2026 15:04"
+  },
+  "#0212": {
+    "oid": "#0212",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Purple Candy",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Strawberry Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Purple Candy, количество: 1\nVozol, вкус: Strawberry Ice, количество: 1",
+    "source_key": "797019214:20614",
+    "source_chat_id": 797019214,
+    "source_message_id": 20614,
+    "user_id": 797019214,
+    "username": "yulya",
+    "status": "new",
+    "date": "14.08.2026 15:40"
   }
 }
