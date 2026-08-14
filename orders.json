@@ -4035,5 +4035,42 @@
     "username": "gryaznyy<3",
     "status": "new",
     "date": "14.08.2026 12:16"
+  },
+  "#0211": {
+    "oid": "#0211",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Lavafire",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Cola Gummies",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Purple Candy",
+        "qty": 1
+      },
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq 50mg",
+        "flavor": "Blue Razz Lemonade",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Lavafire, количество: 1\nVozol, вкус: Cola Gummies, количество: 1\nVozol, вкус: Purple Candy, количество: 1\nElfliq, вкус: Blue Razz Lemonade, количество: 1",
+    "source_key": "1350105420:20580",
+    "source_chat_id": 1350105420,
+    "source_message_id": 20580,
+    "user_id": 1350105420,
+    "username": "Hammer",
+    "status": "new",
+    "date": "14.08.2026 15:04"
   }
 }
