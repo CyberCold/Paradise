@@ -3997,5 +3997,24 @@
     "status": "done",
     "date": "13.08.2026 19:42",
     "done_at": "2026-08-13T21:24:54.189938"
+  },
+  "#0209": {
+    "oid": "#0209",
+    "items": [
+      {
+        "pid": "elfbarlushkingpro",
+        "product_name": "ELFBAR Lush King Pro 40k puffs",
+        "flavor": "Sour Strawberry Dragonfruit",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nELFBAR Lush King Pro 40k puffs, вкус: Sour Strawberry Dragonfruit, количество: 1",
+    "source_key": "7581998178:20573",
+    "source_chat_id": 7581998178,
+    "source_message_id": 20573,
+    "user_id": 7581998178,
+    "username": "~",
+    "status": "new",
+    "date": "14.08.2026 11:45"
   }
 }
