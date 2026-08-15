@@ -4224,7 +4224,8 @@
     "source_message_id": 20787,
     "user_id": 1636239325,
     "username": "rob4ik",
-    "status": "new",
-    "date": "15.08.2026 18:05"
+    "status": "done",
+    "date": "15.08.2026 18:05",
+    "done_at": "2026-08-15T18:27:06.582545"
   }
 }
