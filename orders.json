@@ -4202,7 +4202,8 @@
     "source_message_id": 20762,
     "user_id": 5225162740,
     "username": "Оля",
-    "status": "new",
-    "date": "15.08.2026 17:40"
+    "status": "done",
+    "date": "15.08.2026 17:40",
+    "done_at": "2026-08-15T18:02:10.391806"
   }
 }
