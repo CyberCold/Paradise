@@ -4164,8 +4164,9 @@
     "source_message_id": 20722,
     "user_id": 383450122,
     "username": "Deniss",
-    "status": "new",
-    "date": "15.08.2026 16:37"
+    "status": "done",
+    "date": "15.08.2026 16:37",
+    "done_at": "2026-08-15T18:02:12.473348"
   },
   "#0216": {
     "oid": "#0216",
