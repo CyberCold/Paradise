@@ -4227,5 +4227,30 @@
     "status": "done",
     "date": "15.08.2026 18:05",
     "done_at": "2026-08-15T18:27:06.582545"
+  },
+  "#0219": {
+    "oid": "#0219",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Berry Peach",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Lavafire",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Berry Peach, количество: 1\nVozol, вкус: Lavafire, количество: 1",
+    "source_key": "8018922274:20795",
+    "source_chat_id": 8018922274,
+    "source_message_id": 20795,
+    "user_id": 8018922274,
+    "username": "Haval",
+    "status": "new",
+    "date": "15.08.2026 18:52"
   }
 }
