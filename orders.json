@@ -4145,5 +4145,24 @@
     "username": "🇱🇻",
     "status": "new",
     "date": "15.08.2026 14:31"
+  },
+  "#0215": {
+    "oid": "#0215",
+    "items": [
+      {
+        "pid": "elfbarlushkingpro",
+        "product_name": "ELFBAR Lush King Pro 40k puffs",
+        "flavor": "Cactus Lime",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nELFBAR Lush King Pro 40k puffs, вкус: Cactus Lime, количество: 1",
+    "source_key": "383450122:20722",
+    "source_chat_id": 383450122,
+    "source_message_id": 20722,
+    "user_id": 383450122,
+    "username": "Deniss",
+    "status": "new",
+    "date": "15.08.2026 16:37"
   }
 }
