@@ -28066,10 +28066,11 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-06-08T12:36:39.855301",
-    "last_seen": "2026-08-15T15:47:28.797Z"
+    "last_seen": "2026-08-15T18:50:21.654555"
   },
   "6922140645": {
     "id": 6922140645,
