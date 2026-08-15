@@ -4207,5 +4207,24 @@
     "status": "done",
     "date": "15.08.2026 17:40",
     "done_at": "2026-08-15T18:02:10.391806"
+  },
+  "#0218": {
+    "oid": "#0218",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Cola Gummies",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Cola Gummies, количество: 1",
+    "source_key": "1636239325:20787",
+    "source_chat_id": 1636239325,
+    "source_message_id": 20787,
+    "user_id": 1636239325,
+    "username": "rob4ik",
+    "status": "new",
+    "date": "15.08.2026 18:05"
   }
 }
