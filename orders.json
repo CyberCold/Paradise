@@ -4096,8 +4096,9 @@
     "source_message_id": 20614,
     "user_id": 797019214,
     "username": "yulya",
-    "status": "new",
-    "date": "14.08.2026 15:40"
+    "status": "done",
+    "date": "14.08.2026 15:40",
+    "done_at": "2026-08-15T03:10:23.495665"
   },
   "#0213": {
     "oid": "#0213",
