@@ -55310,5 +55310,27 @@
     ],
     "registered": "2026-08-16T13:46:18.279134",
     "last_seen": "2026-08-16T13:46:18.279134"
+  },
+  "8264386624": {
+    "id": 8264386624,
+    "first_name": "Анонимный Чат | Чат рулетка",
+    "username": "anonusrobot",
+    "source": "chat",
+    "sources": [
+      "chat"
+    ],
+    "registered": "2026-08-16T13:46:41.974104",
+    "last_seen": "2026-08-16T13:46:41.974104"
+  },
+  "5054003306": {
+    "id": 5054003306,
+    "first_name": "Анонимный ChatruIetkaBot — Общение, Знакомства, Рулетка",
+    "username": "chatruIetkabot",
+    "source": "chat",
+    "sources": [
+      "chat"
+    ],
+    "registered": "2026-08-16T13:46:43.657141",
+    "last_seen": "2026-08-16T13:46:43.657141"
   }
 }
