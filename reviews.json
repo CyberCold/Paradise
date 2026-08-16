@@ -338,6 +338,17 @@
     "rating": 5,
     "comment": null,
     "date": "16.08.2026 18:03",
-    "sent_to_channel": false
+    "sent_to_channel": true
+  },
+  "#0215_ELFBAR Lush King Pro 40k puffs": {
+    "oid": "#0215",
+    "user_id": 383450122,
+    "username": "Deniss",
+    "product_name": "ELFBAR Lush King Pro 40k puffs",
+    "flavor": "Cactus Lime",
+    "rating": 5,
+    "comment": null,
+    "date": "16.08.2026 18:34",
+    "sent_to_channel": true
   }
 }
