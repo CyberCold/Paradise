@@ -4347,5 +4347,24 @@
     "username": "Electric",
     "status": "new",
     "date": "16.08.2026 18:24"
+  },
+  "#0224": {
+    "oid": "#0224",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Lavafire",
+        "qty": 2
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Lavafire, количество: 2",
+    "source_key": "1063025930:20895",
+    "source_chat_id": 1063025930,
+    "source_message_id": 20895,
+    "user_id": 1063025930,
+    "username": "Никки",
+    "status": "new",
+    "date": "16.08.2026 18:47"
   }
 }
