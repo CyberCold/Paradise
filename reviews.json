@@ -328,5 +328,16 @@
     "comment": "👍",
     "date": "05.08.2026 20:15",
     "sent_to_channel": true
+  },
+  "#0214_Vozol 50mg": {
+    "oid": "#0214",
+    "user_id": 7978987338,
+    "username": "🇱🇻",
+    "product_name": "Vozol 50mg",
+    "flavor": "Mexican Mango Ice",
+    "rating": 5,
+    "comment": null,
+    "date": "16.08.2026 18:03",
+    "sent_to_channel": false
   }
 }
