@@ -4277,5 +4277,30 @@
     "username": "𝖘𝖕𝖊𝖊𝖉_𝖉𝖗𝖎𝖛𝖊𝖊",
     "status": "new",
     "date": "16.08.2026 10:19"
+  },
+  "#0221": {
+    "oid": "#0221",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Cola Gummies",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Purple Candy",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Cola Gummies, количество: 1\nVozol, вкус: Purple Candy, количество: 1",
+    "source_key": "6176796959:20800",
+    "source_chat_id": 6176796959,
+    "source_message_id": 20800,
+    "user_id": 6176796959,
+    "username": "Вованчик",
+    "status": "new",
+    "date": "16.08.2026 10:42"
   }
 }
