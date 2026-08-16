@@ -4302,5 +4302,30 @@
     "username": "Вованчик",
     "status": "new",
     "date": "16.08.2026 10:42"
+  },
+  "#0222": {
+    "oid": "#0222",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Lavafire",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Blue Cotton Candy",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Lavafire, количество: 1\nVozol, вкус: Blue Cotton Candy, количество: 1",
+    "source_key": "5471367072:20808",
+    "source_chat_id": 5471367072,
+    "source_message_id": 20808,
+    "user_id": 5471367072,
+    "username": "Aļoņčiks❤️",
+    "status": "new",
+    "date": "16.08.2026 13:37"
   }
 }
