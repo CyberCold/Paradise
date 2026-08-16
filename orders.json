@@ -4252,5 +4252,30 @@
     "username": "Haval",
     "status": "new",
     "date": "15.08.2026 18:52"
+  },
+  "#0220": {
+    "oid": "#0220",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Blue Cotton Candy",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Cola Gummies",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Blue Cotton Candy, количество: 1\nVozol, вкус: Cola Gummies, количество: 1",
+    "source_key": "7604547726:20799",
+    "source_chat_id": 7604547726,
+    "source_message_id": 20799,
+    "user_id": 7604547726,
+    "username": "𝖘𝖕𝖊𝖊𝖉_𝖉𝖗𝖎𝖛𝖊𝖊",
+    "status": "new",
+    "date": "16.08.2026 10:19"
   }
 }
