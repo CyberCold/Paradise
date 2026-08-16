@@ -4328,5 +4328,24 @@
     "username": "Aļoņčiks❤️",
     "status": "new",
     "date": "16.08.2026 13:37"
+  },
+  "#0223": {
+    "oid": "#0223",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq 50mg",
+        "flavor": "Blue Razz Lemonade",
+        "qty": 3
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Blue Razz Lemonade, количество: 3",
+    "source_key": "7147710833:20889",
+    "source_chat_id": 7147710833,
+    "source_message_id": 20889,
+    "user_id": 7147710833,
+    "username": "Electric",
+    "status": "new",
+    "date": "16.08.2026 18:24"
   }
 }
