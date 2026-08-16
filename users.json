@@ -6041,10 +6041,11 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-07-17T11:28:51.136521",
-    "last_seen": "2026-08-16T14:11:55.141Z"
+    "last_seen": "2026-08-16T17:12:08.991455"
   },
   "1015521306": {
     "id": 1015521306,
