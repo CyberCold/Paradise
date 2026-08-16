@@ -56246,7 +56246,8 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-08-16T18:44:32.271076",
     "last_seen": "2026-08-16T15:46:25.633Z"
