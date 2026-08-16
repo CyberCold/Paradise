@@ -4250,8 +4250,9 @@
     "source_message_id": 20795,
     "user_id": 8018922274,
     "username": "Haval",
-    "status": "new",
-    "date": "15.08.2026 18:52"
+    "status": "done",
+    "date": "15.08.2026 18:52",
+    "done_at": "2026-08-16T14:54:20.341315"
   },
   "#0220": {
     "oid": "#0220",
