@@ -55489,5 +55489,16 @@
     ],
     "registered": "2026-08-16T14:58:56.585425",
     "last_seen": "2026-08-16T12:00:52.064Z"
+  },
+  "8236041391": {
+    "id": 8236041391,
+    "first_name": "Mr Undress",
+    "username": "Mister_Undress_Robot",
+    "source": "chat",
+    "sources": [
+      "chat"
+    ],
+    "registered": "2026-08-16T16:13:56.737400",
+    "last_seen": "2026-08-16T16:13:56.737400"
   }
 }
