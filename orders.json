@@ -4408,5 +4408,24 @@
     "username": "qssa.",
     "status": "new",
     "date": "17.08.2026 17:20"
+  },
+  "#0227": {
+    "oid": "#0227",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Blue Cotton Candy",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Blue Cotton Candy, количество: 1",
+    "source_key": "999151926:21055",
+    "source_chat_id": 999151926,
+    "source_message_id": 21055,
+    "user_id": 999151926,
+    "username": "Молли",
+    "status": "new",
+    "date": "17.08.2026 18:32"
   }
 }
