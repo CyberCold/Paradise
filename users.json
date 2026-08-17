@@ -29583,7 +29583,8 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-06-09T15:13:57.765798",
     "last_seen": "2026-08-17T09:37:34.970Z"
