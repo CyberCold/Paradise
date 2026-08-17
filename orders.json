@@ -4406,8 +4406,9 @@
     "source_message_id": 21019,
     "user_id": 1127889333,
     "username": "qssa.",
-    "status": "new",
-    "date": "17.08.2026 17:20"
+    "status": "done",
+    "date": "17.08.2026 17:20",
+    "done_at": "2026-08-17T18:43:56.106572"
   },
   "#0227": {
     "oid": "#0227",
