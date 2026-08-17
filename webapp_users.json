@@ -2777,7 +2777,7 @@
         "cf_ray": "a2c703313d6ce4da",
         "screen": "384x832@2.8125",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "Linux aarch64",
         "memory": 8,
@@ -43182,8 +43182,8 @@
     "is_premium": true,
     "source": "webapp",
     "registered": "2026-08-04T08:22:21.334Z",
-    "last_seen": "2026-08-04T08:22:21.334Z",
-    "visit_count": 1,
+    "last_seen": "2026-08-17T09:37:34.970Z",
+    "visit_count": 2,
     "ips": [
       {
         "ip": "2a00:808:136:de5c::d9b:5205",
@@ -43195,11 +43195,48 @@
         "lat": 56.946,
         "lon": 24.1059,
         "first_seen": "2026-08-04T08:22:21.334Z",
-        "last_seen": "2026-08-04T08:22:21.334Z",
-        "visits": 1
+        "last_seen": "2026-08-17T09:37:34.970Z",
+        "visits": 2
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-08-17T09:37:34.970Z",
+        "ip": "2a00:808:136:de5c::d9b:5205",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 16; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.181 Mobile Safari/537.36 Telegram-Android/12.9.2 (Samsung SM-S731B; Android 16; SDK 36; HIGH)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "150.0.7871.181",
+        "os": "Android",
+        "os_version": "16",
+        "language": "ru-RU",
+        "cf_ray": "a2c7b3716fc4e4d1",
+        "screen": "360x780@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 8,
+        "cores": 10,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru-RU",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-08-04T08:22:21.334Z",
         "ip": "2a00:808:136:de5c::d9b:5205",
@@ -43262,7 +43299,7 @@
       "device": "Android Phone",
       "browser": "Chrome",
       "os": "Android",
-      "updated_at": "2026-08-04T08:22:21.334Z"
+      "updated_at": "2026-08-17T09:37:34.970Z"
     },
     "device_keys": [
       "659108590986e81de342ddc09daa5a7f8054d1c6a914154f21a632df6d57809b",
