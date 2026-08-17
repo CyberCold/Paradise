@@ -4426,7 +4426,8 @@
     "source_message_id": 21055,
     "user_id": 999151926,
     "username": "Молли",
-    "status": "new",
-    "date": "17.08.2026 18:32"
+    "status": "done",
+    "date": "17.08.2026 18:32",
+    "done_at": "2026-08-17T19:46:39.588918"
   }
 }
