@@ -15674,8 +15674,21 @@
     "last_name": "Eikena",
     "language_code": "lv",
     "is_premium": false,
-    "visit_count": 4,
+    "visit_count": 5,
     "ips": [
+      {
+        "ip": "5.241.155.139",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Mobile Services Latvia",
+        "asn": 1257,
+        "lat": 56.946,
+        "lon": 24.10589,
+        "first_seen": "2026-08-18T14:32:55.932Z",
+        "last_seen": "2026-08-18T14:32:55.932Z",
+        "visits": 1
+      },
       {
         "ip": "78.84.32.232",
         "country": "LV",
@@ -15691,6 +15704,44 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-08-18T14:32:55.932Z",
+        "ip": "5.241.155.139",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 14; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.181 Mobile Safari/537.36 Telegram-Android/12.9.2 (Samsung SM-S711B; Android 14; SDK 34; HIGH)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "150.0.7871.181",
+        "os": "Android",
+        "os_version": "14",
+        "language": "en",
+        "cf_ray": "a2d1a1756f147dfc",
+        "screen": "320x694@3.375",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 8,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "en",
+          "lv-LV",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-08-07T14:51:11.609Z",
         "ip": "78.84.32.232",
@@ -15869,7 +15920,7 @@
       "device": "Android Phone",
       "browser": "Chrome",
       "os": "Android",
-      "updated_at": "2026-08-07T14:51:11.609Z"
+      "updated_at": "2026-08-18T14:32:55.932Z"
     },
     "device_keys": [
       "dddfd7459b1baa97a249d1cd79b45b5fff263a65c6412484b559efd82d3be3d5",
@@ -15880,8 +15931,8 @@
       "city": "Riga",
       "region": "Riga",
       "timezone": "Europe/Riga",
-      "asn": 12578,
-      "isp": "Address pool for LTC-HOME customers",
+      "asn": 1257,
+      "isp": "Mobile Services Latvia",
       "lat": 56.946,
       "lon": 24.10589
     },
@@ -15891,7 +15942,7 @@
       "webapp"
     ],
     "registered": "2026-06-01T12:23:35.239043",
-    "last_seen": "2026-08-18T17:29:32.196767"
+    "last_seen": "2026-08-18T14:32:55.932Z"
   },
   "1717962187": {
     "id": 1717962187,
@@ -19238,7 +19289,7 @@
     "username": "smkParadiseManager",
     "language_code": "ru",
     "is_premium": true,
-    "visit_count": 17,
+    "visit_count": 18,
     "ips": [
       {
         "ip": "2a00:808:139:ea9a:2c80:4547:2ec2:4781",
@@ -19263,8 +19314,8 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-08-06T16:12:01.181Z",
-        "last_seen": "2026-08-18T14:32:15.459Z",
-        "visits": 5
+        "last_seen": "2026-08-18T14:32:31.579Z",
+        "visits": 6
       },
       {
         "ip": "94.30.253.210",
@@ -19281,6 +19332,45 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-08-18T14:32:31.579Z",
+        "ip": "94.30.232.243",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0",
+        "device": "Desktop",
+        "browser": "Edge",
+        "browser_version": "151.0.0.0",
+        "os": "Windows",
+        "os_version": null,
+        "language": "ru",
+        "cf_ray": "a2d1a0dd5b11e4de",
+        "screen": "1080x1920@1",
+        "tz_client": "Europe/Riga",
+        "color_depth": 0,
+        "touch": 0,
+        "platform": "Win32",
+        "memory": 32,
+        "cores": 16,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru",
+          "en",
+          "en-GB",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-08-18T14:32:15.459Z",
         "ip": "94.30.232.243",
@@ -19299,7 +19389,7 @@
         "cf_ray": "a2d1a0788fd5340e",
         "screen": "1080x1920@1",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 0,
         "platform": "Win32",
         "memory": 32,
@@ -19942,7 +20032,7 @@
       "device": "Desktop",
       "browser": "Edge",
       "os": "Windows",
-      "updated_at": "2026-08-18T14:32:15.459Z"
+      "updated_at": "2026-08-18T14:32:31.579Z"
     },
     "geo": {
       "country": "LV",
@@ -19967,7 +20057,7 @@
       "webapp"
     ],
     "registered": "2026-05-22T14:22:22.431Z",
-    "last_seen": "2026-08-18T14:32:15.459Z"
+    "last_seen": "2026-08-18T14:32:31.579Z"
   },
   "8468357797": {
     "id": 8468357797,
