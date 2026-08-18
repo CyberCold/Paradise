@@ -58086,9 +58086,10 @@
     "username": "plxscry",
     "source": "chat",
     "sources": [
-      "chat"
+      "chat",
+      "bot_start"
     ],
     "registered": "2026-08-18T16:00:31.027093",
-    "last_seen": "2026-08-18T16:00:31.027093"
+    "last_seen": "2026-08-18T16:01:25.230409"
   }
 }
