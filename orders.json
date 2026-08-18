@@ -4545,7 +4545,8 @@
     "source_message_id": 21217,
     "user_id": 5910089655,
     "username": "Denis",
-    "status": "new",
-    "date": "18.08.2026 16:58"
+    "status": "done",
+    "date": "18.08.2026 16:58",
+    "done_at": "2026-08-19T00:39:06.236882"
   }
 }
