@@ -7807,7 +7807,7 @@
         "cf_ray": "a2cb7e7a1923a88a",
         "screen": "414x896@2",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -47791,6 +47791,112 @@
       "isp": "Tele2 Latvia",
       "lat": 56.946,
       "lon": 24.1059
+    }
+  },
+  "6354950844": {
+    "id": 6354950844,
+    "first_name": "ko banyar",
+    "last_name": "",
+    "username": "",
+    "language_code": "en",
+    "is_premium": false,
+    "source": "webapp",
+    "registered": "2026-08-18T00:13:55.837Z",
+    "last_seen": "2026-08-18T00:13:55.837Z",
+    "visit_count": 1,
+    "ips": [
+      {
+        "ip": "124.217.135.104",
+        "country": "HK",
+        "city": "Hong Kong",
+        "region": null,
+        "isp": "DOMAIN FIVE ENTERPRISES LIMITED",
+        "asn": 10118,
+        "lat": 22.27832,
+        "lon": 114.17469,
+        "first_seen": "2026-08-18T00:13:55.837Z",
+        "last_seen": "2026-08-18T00:13:55.837Z",
+        "visits": 1
+      }
+    ],
+    "visits": [
+      {
+        "timestamp": "2026-08-18T00:13:55.837Z",
+        "ip": "124.217.135.104",
+        "country": "HK",
+        "city": "Hong Kong",
+        "region": null,
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 13; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.60 Mobile Safari/537.36 Telegram-Android/12.3.1 (Xiaomi 2107119DC; Android 13; SDK 33; HIGH)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "136.0.7103.60",
+        "os": "Android",
+        "os_version": "13",
+        "language": "en",
+        "cf_ray": "a2ccb7271bd5c313",
+        "screen": "393x873@2.75",
+        "tz_client": "Asia/Seoul",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 8,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "en",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      }
+    ],
+    "fingerprint": {
+      "screen": "393x873@2.75",
+      "timezone": "Asia/Seoul",
+      "color_depth": 24,
+      "touch": 5,
+      "platform": "Linux aarch64",
+      "memory": 8,
+      "cores": 8,
+      "connection": "4g",
+      "webgl_vendor": "Qualcomm",
+      "webgl_renderer": "Adreno (TM) 642L",
+      "languages": [
+        "en",
+        "en-US"
+      ],
+      "ua_platform": "Android",
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": true,
+      "device": "Android Phone",
+      "browser": "Chrome",
+      "os": "Android",
+      "updated_at": "2026-08-18T00:13:55.837Z"
+    },
+    "device_keys": [
+      "6f0f3e0a2be573d4bc522500c90acd09f8d9632fb75f49fd65347bb69bbe36fd",
+      "735f255054c049c98f537c01d28b94574e29598661c526fb21efe9d5b952aea6"
+    ],
+    "geo": {
+      "country": "HK",
+      "city": "Hong Kong",
+      "region": null,
+      "timezone": "Asia/Hong_Kong",
+      "asn": 10118,
+      "isp": "DOMAIN FIVE ENTERPRISES LIMITED",
+      "lat": 22.27832,
+      "lon": 114.17469
     }
   }
 }
