@@ -4468,5 +4468,42 @@
     "status": "done",
     "date": "17.08.2026 22:59",
     "done_at": "2026-08-18T00:35:19.342882"
+  },
+  "#0230": {
+    "oid": "#0230",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq 50mg",
+        "flavor": "Blackberry Lemon",
+        "qty": 1
+      },
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq 50mg",
+        "flavor": "Blue Razz Lemonade",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Lavafire",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Cola Gummies",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Blackberry Lemon, количество: 1\nElfliq, вкус: Blue Razz Lemonade, количество: 1\nVozol, вкус: Lavafire, количество: 1\nVozol, вкус: Cola Gummies, количество: 1",
+    "source_key": "260688351:21132",
+    "source_chat_id": 260688351,
+    "source_message_id": 21132,
+    "user_id": 260688351,
+    "username": "Айвар",
+    "status": "new",
+    "date": "18.08.2026 08:06"
   }
 }
