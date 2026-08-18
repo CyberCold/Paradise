@@ -4581,12 +4581,108 @@
     "id": 928475006,
     "first_name": "scamlairryy 💵💸",
     "username": "scamlairryy",
+    "language_code": "en",
+    "is_premium": false,
+    "visit_count": 1,
+    "ips": [
+      {
+        "ip": "77.38.215.195",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "BALTCOM Broadband Customers",
+        "asn": 20910,
+        "lat": 56.946,
+        "lon": 24.10589,
+        "first_seen": "2026-08-18T12:28:11.048Z",
+        "last_seen": "2026-08-18T12:28:11.048Z",
+        "visits": 1
+      }
+    ],
+    "visits": [
+      {
+        "timestamp": "2026-08-18T12:28:11.048Z",
+        "ip": "77.38.215.195",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "en-GB",
+        "cf_ray": "a2d0eab8ea33ef85",
+        "screen": "393x852@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "en-GB"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      }
+    ],
+    "fingerprint": {
+      "screen": "393x852@3",
+      "timezone": "Europe/Riga",
+      "color_depth": 24,
+      "touch": 5,
+      "platform": "iPhone",
+      "memory": 0,
+      "cores": 4,
+      "connection": null,
+      "webgl_vendor": "Apple Inc.",
+      "webgl_renderer": "Apple GPU",
+      "languages": [
+        "en-GB"
+      ],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
+      "device": "iPhone",
+      "browser": "unknown",
+      "os": "iOS",
+      "updated_at": "2026-08-18T12:28:11.048Z"
+    },
+    "device_keys": [
+      "1d9e3c66a41f6c4cfa4487dd05be4751fd9b9c33d3925835432bb313ae920551",
+      "446416469b1ba5200d4a49ab76263ec0cd743c1fc4482eb641c93755f843e948"
+    ],
+    "geo": {
+      "country": "LV",
+      "city": "Riga",
+      "region": "Riga",
+      "timezone": "Europe/Riga",
+      "asn": 20910,
+      "isp": "BALTCOM Broadband Customers",
+      "lat": 56.946,
+      "lon": 24.10589
+    },
     "source": "bot_start",
     "sources": [
-      "bot_start"
+      "bot_start",
+      "webapp"
     ],
     "registered": "2026-07-17T09:58:07.777207",
-    "last_seen": "2026-07-17T18:08:10.134011"
+    "last_seen": "2026-08-18T12:28:11.048Z"
   },
   "930432979": {
     "id": 930432979,
@@ -26863,7 +26959,7 @@
         "cf_ray": "a2d03f322979da03",
         "screen": "1080x1920@1",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 0,
         "platform": "Win32",
         "memory": 32,
