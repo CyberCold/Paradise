@@ -4505,5 +4505,24 @@
     "username": "Айвар",
     "status": "new",
     "date": "18.08.2026 08:06"
+  },
+  "#0231": {
+    "oid": "#0231",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq 50mg",
+        "flavor": "Blackberry Lemon",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Blackberry Lemon, количество: 1\nПривет во сколько можно было бы встретиться что бы купить ?",
+    "source_key": "1416047291:21156",
+    "source_chat_id": 1416047291,
+    "source_message_id": 21156,
+    "user_id": 1416047291,
+    "username": "™🐻🐻مرحبا أيتها الدمية🐻🐻 ™",
+    "status": "new",
+    "date": "18.08.2026 10:53"
   }
 }
