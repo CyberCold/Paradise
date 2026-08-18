@@ -28139,7 +28139,7 @@
     "first_name": "пиздохряк",
     "language_code": "ru",
     "is_premium": true,
-    "visit_count": 13,
+    "visit_count": 14,
     "ips": [
       {
         "ip": "2a00:f503:150:c65a:9892:cba2:d741:d785",
@@ -28190,11 +28190,47 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-07-18T07:28:24.041Z",
-        "last_seen": "2026-08-16T14:27:29.583Z",
-        "visits": 8
+        "last_seen": "2026-08-18T13:12:22.177Z",
+        "visits": 9
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-08-18T13:12:22.177Z",
+        "ip": "78.84.45.232",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a2d12b728b32e4e4",
+        "screen": "430x932@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-08-16T14:27:29.583Z",
         "ip": "78.84.45.232",
@@ -28679,7 +28715,7 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-08-16T14:27:29.583Z"
+      "updated_at": "2026-08-18T13:12:22.177Z"
     },
     "geo": {
       "country": "LV",
@@ -28702,7 +28738,7 @@
       "chat"
     ],
     "registered": "2026-05-29T13:03:39.111Z",
-    "last_seen": "2026-08-16T14:27:29.583Z"
+    "last_seen": "2026-08-18T13:12:22.177Z"
   },
   "5930669861": {
     "id": 5930669861,
@@ -58121,7 +58157,7 @@
         "cf_ray": "a2d11e595964e24d",
         "screen": "440x956@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
