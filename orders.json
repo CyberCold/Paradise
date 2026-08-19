@@ -4612,5 +4612,24 @@
     "status": "done",
     "date": "19.08.2026 15:27",
     "done_at": "2026-08-19T15:45:07.617041"
+  },
+  "#0236": {
+    "oid": "#0236",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Strawberry Ice",
+        "qty": 2
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Strawberry Ice, количество: 2",
+    "source_key": "8607097255:21343",
+    "source_chat_id": 8607097255,
+    "source_message_id": 21343,
+    "user_id": 8607097255,
+    "username": "shadow",
+    "status": "new",
+    "date": "19.08.2026 17:04"
   }
 }
