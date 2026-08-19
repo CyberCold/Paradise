@@ -4631,5 +4631,30 @@
     "username": "shadow",
     "status": "new",
     "date": "19.08.2026 17:04"
+  },
+  "#0237": {
+    "oid": "#0237",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Mexican Mango Ice",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Blue Cotton Candy",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Mexican Mango Ice, количество: 1\nVozol, вкус: Blue Cotton Candy, количество: 1",
+    "source_key": "5741391309:21377",
+    "source_chat_id": 5741391309,
+    "source_message_id": 21377,
+    "user_id": 5741391309,
+    "username": "Sadness",
+    "status": "new",
+    "date": "19.08.2026 18:36"
   }
 }
