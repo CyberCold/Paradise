@@ -4585,5 +4585,30 @@
     "username": "Jolanta",
     "status": "new",
     "date": "19.08.2026 12:55"
+  },
+  "#0235": {
+    "oid": "#0235",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Lavafire",
+        "qty": 1
+      },
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq 50mg",
+        "flavor": "Blue Razz Lemonade",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Lavafire, количество: 1\nElfliq, вкус: Blue Razz Lemonade, количество: 1",
+    "source_key": "973082265:21304",
+    "source_chat_id": 973082265,
+    "source_message_id": 21304,
+    "user_id": 973082265,
+    "username": "Даниил",
+    "status": "new",
+    "date": "19.08.2026 15:27"
   }
 }
