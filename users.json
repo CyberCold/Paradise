@@ -5282,7 +5282,7 @@
         "cf_ray": "a2d924766d15e4e8",
         "screen": "384x854@2.8125",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "Linux aarch64",
         "memory": 8,
@@ -59751,11 +59751,109 @@
   "8238206760": {
     "id": 8238206760,
     "first_name": ".",
+    "last_name": ".",
+    "language_code": "de",
+    "is_premium": false,
+    "visit_count": 1,
+    "ips": [
+      {
+        "ip": "2a00:fbc:e92a:64:3042:4877:2b95:5eff",
+        "country": "DE",
+        "city": "Karlsruhe",
+        "region": "Baden-Wurttemberg",
+        "isp": "1&1 Versatel GmbH",
+        "asn": 8881,
+        "lat": 49.00937,
+        "lon": 8.40444,
+        "first_seen": "2026-08-19T13:30:29.912Z",
+        "last_seen": "2026-08-19T13:30:29.912Z",
+        "visits": 1
+      }
+    ],
+    "visits": [
+      {
+        "timestamp": "2026-08-19T13:30:29.912Z",
+        "ip": "2a00:fbc:e92a:64:3042:4877:2b95:5eff",
+        "country": "DE",
+        "city": "Karlsruhe",
+        "region": "Baden-Wurttemberg",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "de-DE",
+        "cf_ray": "a2d983609f90c518",
+        "screen": "402x874@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "de-DE"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      }
+    ],
+    "fingerprint": {
+      "screen": "402x874@3",
+      "timezone": "Europe/Riga",
+      "color_depth": 24,
+      "touch": 5,
+      "platform": "iPhone",
+      "memory": 0,
+      "cores": 4,
+      "connection": null,
+      "webgl_vendor": "Apple Inc.",
+      "webgl_renderer": "Apple GPU",
+      "languages": [
+        "de-DE"
+      ],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
+      "device": "iPhone",
+      "browser": "unknown",
+      "os": "iOS",
+      "updated_at": "2026-08-19T13:30:29.912Z"
+    },
+    "device_keys": [
+      "ee25aabb417cb3bf21f298f871fcd8565a5996fa40910da5bae860bbacc72a0c",
+      "04426ee3e2efecf0b476168e35526eeab0c153bb2be1d22825377991bda7b68e"
+    ],
+    "geo": {
+      "country": "DE",
+      "city": "Karlsruhe",
+      "region": "Baden-Wurttemberg",
+      "timezone": "Europe/Berlin",
+      "asn": 8881,
+      "isp": "1&1 Versatel GmbH",
+      "lat": 49.00937,
+      "lon": 8.40444
+    },
     "source": "chat",
     "sources": [
-      "chat"
+      "chat",
+      "bot_start",
+      "webapp"
     ],
     "registered": "2026-08-19T16:27:16.318731",
-    "last_seen": "2026-08-19T16:27:16.318731"
+    "last_seen": "2026-08-19T13:30:29.912Z"
   }
 }
