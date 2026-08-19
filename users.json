@@ -33112,7 +33112,8 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-07-04T23:53:03.925786",
     "last_seen": "2026-08-19T14:04:18.080Z"
