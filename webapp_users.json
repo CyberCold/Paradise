@@ -12730,8 +12730,8 @@
     "is_premium": true,
     "source": "webapp",
     "registered": "2026-08-16T15:46:25.633Z",
-    "last_seen": "2026-08-16T16:18:22.006Z",
-    "visit_count": 4,
+    "last_seen": "2026-08-20T14:13:14.478Z",
+    "visit_count": 5,
     "ips": [
       {
         "ip": "93.177.247.7",
@@ -12743,11 +12743,47 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-08-16T15:46:25.633Z",
-        "last_seen": "2026-08-16T16:18:22.006Z",
-        "visits": 4
+        "last_seen": "2026-08-20T14:13:14.478Z",
+        "visits": 5
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-08-20T14:13:14.478Z",
+        "ip": "93.177.247.7",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a2e1ff5d6bdbe4db",
+        "screen": "402x874@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-08-16T16:18:22.006Z",
         "ip": "93.177.247.7",
@@ -12916,7 +12952,7 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-08-16T16:18:22.006Z"
+      "updated_at": "2026-08-20T14:13:14.478Z"
     },
     "device_keys": [
       "bb6da8f94ede48959f595f40db648063a18f938ef8ce0e923731332a9a496cf7",
@@ -14407,7 +14443,7 @@
         "cf_ray": "a2e1fb5a5edac9e2",
         "screen": "430x932@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
