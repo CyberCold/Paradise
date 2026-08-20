@@ -61136,9 +61136,10 @@
     "username": "manmar77",
     "source": "chat",
     "sources": [
-      "chat"
+      "chat",
+      "bot_start"
     ],
     "registered": "2026-08-20T17:59:53.938377",
-    "last_seen": "2026-08-20T18:05:48.681243"
+    "last_seen": "2026-08-20T18:06:15.070002"
   }
 }
