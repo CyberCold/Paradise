@@ -32389,8 +32389,8 @@
     "is_premium": true,
     "source": "webapp",
     "registered": "2026-07-18T02:49:09.837Z",
-    "last_seen": "2026-08-20T11:16:56.481Z",
-    "visit_count": 21,
+    "last_seen": "2026-08-20T15:09:02.534Z",
+    "visit_count": 22,
     "ips": [
       {
         "ip": "2a00:808:139:ea9a:2c80:4547:2ec2:4781",
@@ -32415,8 +32415,8 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-08-06T16:12:01.181Z",
-        "last_seen": "2026-08-20T11:16:56.481Z",
-        "visits": 9
+        "last_seen": "2026-08-20T15:09:02.534Z",
+        "visits": 10
       },
       {
         "ip": "94.30.253.210",
@@ -32433,6 +32433,45 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-08-20T15:09:02.534Z",
+        "ip": "94.30.232.243",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0",
+        "device": "Desktop",
+        "browser": "Edge",
+        "browser_version": "151.0.0.0",
+        "os": "Windows",
+        "os_version": null,
+        "language": "ru",
+        "cf_ray": "a2e2511abca0abf3",
+        "screen": "1080x1920@1",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 0,
+        "platform": "Win32",
+        "memory": 32,
+        "cores": 16,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru",
+          "en",
+          "en-GB",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-08-20T11:16:56.481Z",
         "ip": "94.30.232.243",
@@ -33250,7 +33289,7 @@
       "device": "Desktop",
       "browser": "Edge",
       "os": "Windows",
-      "updated_at": "2026-08-20T11:16:56.481Z"
+      "updated_at": "2026-08-20T15:09:02.534Z"
     },
     "device_keys": [
       "9400d6c2ce5cbd8237c843fc580ed1f3a9df634b441188d9c2d5a42dbc69eeb1",
@@ -39735,7 +39774,7 @@
         "cf_ray": "a2e2464979547dfc",
         "screen": "407x904@3",
         "tz_client": "Europe/Vilnius",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "Linux aarch64",
         "memory": 8,
