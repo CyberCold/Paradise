@@ -4630,8 +4630,9 @@
     "source_message_id": 21343,
     "user_id": 8607097255,
     "username": "shadow",
-    "status": "new",
-    "date": "19.08.2026 17:04"
+    "status": "done",
+    "date": "19.08.2026 17:04",
+    "done_at": "2026-08-20T17:38:03.975861"
   },
   "#0237": {
     "oid": "#0237",
