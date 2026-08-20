@@ -58397,8 +58397,21 @@
     "username": "ny7b0r2nby34578902ny8bu943bny89m",
     "language_code": "ru",
     "is_premium": false,
-    "visit_count": 4,
+    "visit_count": 5,
     "ips": [
+      {
+        "ip": "2a00:f503:260:6006:f552:8a67:eff3:616a",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Bite Latvija    users",
+        "asn": 13194,
+        "lat": 56.946,
+        "lon": 24.10589,
+        "first_seen": "2026-08-20T17:56:27.144Z",
+        "last_seen": "2026-08-20T17:56:27.144Z",
+        "visits": 1
+      },
       {
         "ip": "2a00:f503:160:981:ec18:99fa:2bbe:1163",
         "country": "LV",
@@ -58427,6 +58440,42 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-08-20T17:56:27.144Z",
+        "ip": "2a00:f503:260:6006:f552:8a67:eff3:616a",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)",
+        "device": "Desktop",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "macOS",
+        "os_version": "10.15.7",
+        "language": "ru",
+        "cf_ray": "a2e346559fc02aa2",
+        "screen": "1440x900@2",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 0,
+        "platform": "MacIntel",
+        "memory": 0,
+        "cores": 8,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-08-13T14:34:21.869Z",
         "ip": "2a00:f503:160:981:ec18:99fa:2bbe:1163",
@@ -58604,7 +58653,7 @@
       "device": "Desktop",
       "browser": "unknown",
       "os": "macOS",
-      "updated_at": "2026-08-13T14:34:21.869Z"
+      "updated_at": "2026-08-20T17:56:27.144Z"
     },
     "device_keys": [
       "b5a18b101cd9427b96128ae0b472ebfc18881c85a4798b511ac11e726eda6988",
@@ -58628,7 +58677,7 @@
       "chat"
     ],
     "registered": "2026-08-13T10:07:46.038Z",
-    "last_seen": "2026-08-13T17:59:06.994877"
+    "last_seen": "2026-08-20T17:56:27.144Z"
   },
   "5089947054": {
     "id": 5089947054,
@@ -61753,7 +61802,7 @@
         "cf_ray": "a2e344a30ae5ce1b",
         "screen": "402x874@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
