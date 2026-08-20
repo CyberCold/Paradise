@@ -20369,7 +20369,7 @@
     "username": "smkParadiseManager",
     "language_code": "ru",
     "is_premium": true,
-    "visit_count": 21,
+    "visit_count": 22,
     "ips": [
       {
         "ip": "2a00:808:139:ea9a:2c80:4547:2ec2:4781",
@@ -20394,8 +20394,8 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-08-06T16:12:01.181Z",
-        "last_seen": "2026-08-20T11:16:56.481Z",
-        "visits": 9
+        "last_seen": "2026-08-20T15:09:02.534Z",
+        "visits": 10
       },
       {
         "ip": "94.30.253.210",
@@ -20412,6 +20412,45 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-08-20T15:09:02.534Z",
+        "ip": "94.30.232.243",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0",
+        "device": "Desktop",
+        "browser": "Edge",
+        "browser_version": "151.0.0.0",
+        "os": "Windows",
+        "os_version": null,
+        "language": "ru",
+        "cf_ray": "a2e2511abca0abf3",
+        "screen": "1080x1920@1",
+        "tz_client": "Europe/Riga",
+        "color_depth": 0,
+        "touch": 0,
+        "platform": "Win32",
+        "memory": 32,
+        "cores": 16,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru",
+          "en",
+          "en-GB",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-08-20T11:16:56.481Z",
         "ip": "94.30.232.243",
@@ -21229,7 +21268,7 @@
       "device": "Desktop",
       "browser": "Edge",
       "os": "Windows",
-      "updated_at": "2026-08-20T11:16:56.481Z"
+      "updated_at": "2026-08-20T15:09:02.534Z"
     },
     "geo": {
       "country": "LV",
@@ -21254,7 +21293,7 @@
       "webapp"
     ],
     "registered": "2026-05-22T14:22:22.431Z",
-    "last_seen": "2026-08-20T11:16:56.481Z"
+    "last_seen": "2026-08-20T15:09:02.534Z"
   },
   "8468357797": {
     "id": 8468357797,
@@ -22570,7 +22609,7 @@
       "chat"
     ],
     "registered": "2026-05-23T16:40:36.855935",
-    "last_seen": "2026-08-11T01:42:42.694517"
+    "last_seen": "2026-08-20T18:07:08.987597"
   },
   "6941738218": {
     "id": 6941738218,
@@ -31990,7 +32029,7 @@
         "cf_ray": "a2e2464979547dfc",
         "screen": "407x904@3",
         "tz_client": "Europe/Vilnius",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "Linux aarch64",
         "memory": 8,
@@ -61142,5 +61181,119 @@
     ],
     "registered": "2026-08-20T17:59:53.938377",
     "last_seen": "2026-08-20T18:06:38.467677"
+  },
+  "5722175758": {
+    "id": 5722175758,
+    "first_name": "V",
+    "username": "CBV2036",
+    "last_name": "V",
+    "language_code": "ru",
+    "is_premium": false,
+    "visit_count": 1,
+    "ips": [
+      {
+        "ip": "2a00:808:120:e8b3::c31:11f8",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Tele2 Latvia",
+        "asn": 1257,
+        "lat": 56.946,
+        "lon": 24.1059,
+        "first_seen": "2026-08-20T15:09:07.279Z",
+        "last_seen": "2026-08-20T15:09:07.279Z",
+        "visits": 1
+      }
+    ],
+    "visits": [
+      {
+        "timestamp": "2026-08-20T15:09:07.279Z",
+        "ip": "2a00:808:120:e8b3::c31:11f8",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 16; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.184 Mobile Safari/537.36 Telegram-Android/12.9.2 (Samsung SM-A576B; Android 16; SDK 36; HIGH)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "150.0.7871.184",
+        "os": "Android",
+        "os_version": "16",
+        "language": "ru",
+        "cf_ray": "a2e251386c55c9e2",
+        "screen": "384x832@2.8125",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 8,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru",
+          "ru-RU",
+          "lv-LV",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      }
+    ],
+    "fingerprint": {
+      "screen": "384x832@2.8125",
+      "timezone": "Europe/Riga",
+      "color_depth": 24,
+      "touch": 5,
+      "platform": "Linux aarch64",
+      "memory": 8,
+      "cores": 8,
+      "connection": "4g",
+      "webgl_vendor": "Samsung Electronics Co., Ltd.",
+      "webgl_renderer": "ANGLE ((Samsung Xclipse 550) on Vulkan 1.4.304)",
+      "languages": [
+        "ru",
+        "ru-RU",
+        "lv-LV",
+        "en-US"
+      ],
+      "ua_platform": "Android",
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": true,
+      "device": "Android Phone",
+      "browser": "Chrome",
+      "os": "Android",
+      "updated_at": "2026-08-20T15:09:07.279Z"
+    },
+    "device_keys": [
+      "382da572d1906ea8bea10f10977218c54f2ed3f416f5658953077dcf6cb3175d",
+      "3eaddbfd64e47039ea4a1d7f855b454cb1a0fd62558954ecde01c73a25c2ff90"
+    ],
+    "geo": {
+      "country": "LV",
+      "city": "Riga",
+      "region": "Riga",
+      "timezone": "Europe/Riga",
+      "asn": 1257,
+      "isp": "Tele2 Latvia",
+      "lat": 56.946,
+      "lon": 24.1059
+    },
+    "source": "bot_start",
+    "sources": [
+      "bot_start",
+      "webapp"
+    ],
+    "registered": "2026-08-20T18:07:11.102659",
+    "last_seen": "2026-08-20T15:09:07.279Z"
   }
 }
