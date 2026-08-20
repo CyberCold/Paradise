@@ -4678,5 +4678,36 @@
     "username": "🩵👼",
     "status": "new",
     "date": "20.08.2026 18:45"
+  },
+  "#0239": {
+    "oid": "#0239",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "не указан",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "не указан",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "не указан",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкусы: Love 777, количество: 1\nStrawberry Watermelon , количество :1 \nKiwi Passion Fruit Guava ,количество :1",
+    "source_key": "1140372293:21509",
+    "source_chat_id": 1140372293,
+    "source_message_id": 21509,
+    "user_id": 1140372293,
+    "username": "Юля",
+    "status": "new",
+    "date": "20.08.2026 20:33"
   }
 }
