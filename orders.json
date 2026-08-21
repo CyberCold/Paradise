@@ -4731,5 +4731,30 @@
     "status": "done",
     "date": "20.08.2026 20:59",
     "done_at": "2026-08-21T11:08:31.007524"
+  },
+  "#0241": {
+    "oid": "#0241",
+    "items": [
+      {
+        "pid": "vozolneon",
+        "product_name": "Vozol Neon 60k puffs",
+        "flavor": "Mixed Berries",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Strawberry Watermelon",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Mixed Berries, количество: 1\nVozol, вкус: Strawberry Watermelon, количество: 1",
+    "source_key": "5616781113:21645",
+    "source_chat_id": 5616781113,
+    "source_message_id": 21645,
+    "user_id": 5616781113,
+    "username": "Doomka",
+    "status": "new",
+    "date": "22.08.2026 00:31"
   }
 }
