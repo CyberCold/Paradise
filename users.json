@@ -48847,7 +48847,7 @@
         "cf_ray": "a2e913dd9c11d7e4",
         "screen": "393x852@3",
         "tz_client": "Europe/Berlin",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -58686,8 +58686,21 @@
     "last_name": "Soe",
     "language_code": "en",
     "is_premium": false,
-    "visit_count": 1,
+    "visit_count": 2,
     "ips": [
+      {
+        "ip": "46.28.69.57",
+        "country": "DE",
+        "city": "Düsseldorf",
+        "region": "North Rhine-Westphalia",
+        "isp": "GREEN FLOID LLC",
+        "asn": 21100,
+        "lat": 51.22319,
+        "lon": 6.77927,
+        "first_seen": "2026-08-21T11:05:35.970Z",
+        "last_seen": "2026-08-21T11:05:35.970Z",
+        "visits": 1
+      },
       {
         "ip": "1.46.142.68",
         "country": "TH",
@@ -58703,6 +58716,42 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-08-21T11:05:35.970Z",
+        "ip": "46.28.69.57",
+        "country": "DE",
+        "city": "Düsseldorf",
+        "region": "North Rhine-Westphalia",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "en-US",
+        "cf_ray": "a2e929df0bf8c800",
+        "screen": "428x926@3",
+        "tz_client": "Asia/Rangoon",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-08-13T01:09:00.605Z",
         "ip": "1.46.142.68",
@@ -58742,7 +58791,7 @@
     ],
     "fingerprint": {
       "screen": "428x926@3",
-      "timezone": "Asia/Bangkok",
+      "timezone": "Asia/Rangoon",
       "color_depth": 24,
       "touch": 5,
       "platform": "iPhone",
@@ -58763,21 +58812,23 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-08-13T01:09:00.605Z"
+      "updated_at": "2026-08-21T11:05:35.970Z"
     },
     "device_keys": [
+      "1b47a3f93e749419b045397dd82e13500ff6dbff54fe35530f7775065bc7df9c",
+      "47159ec487cbd984965f561b1de77244581cb69c7d059d7d0066b532d7cf63b9",
       "714cf3247142a2f5952ad12837d8a8a0b8c31707caafe5de4ec3b9286ad3a8d9",
       "9b0d07bb53b6a9cb586da4e8cd0b2ffd988b0156e74d8d4cc46486051dda565e"
     ],
     "geo": {
-      "country": "TH",
-      "city": "Bangkok",
-      "region": "Bangkok",
-      "timezone": "Asia/Bangkok",
-      "asn": 24378,
-      "isp": "DTAC MOBILE AP01",
-      "lat": 13.75398,
-      "lon": 100.50144
+      "country": "DE",
+      "city": "Düsseldorf",
+      "region": "North Rhine-Westphalia",
+      "timezone": "Europe/Berlin",
+      "asn": 21100,
+      "isp": "GREEN FLOID LLC",
+      "lat": 51.22319,
+      "lon": 6.77927
     },
     "source": "webapp",
     "sources": [
@@ -58785,7 +58836,7 @@
       "bot_start"
     ],
     "registered": "2026-08-13T01:09:00.605Z",
-    "last_seen": "2026-08-21T14:02:59.616594"
+    "last_seen": "2026-08-21T11:05:35.970Z"
   },
   "6176796959": {
     "id": 6176796959,
