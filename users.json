@@ -52306,7 +52306,7 @@
         "cf_ray": "a2f1feddfbb3cc3b",
         "screen": "390x844@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -63740,5 +63740,114 @@
     ],
     "registered": "2026-08-21T21:28:52.016Z",
     "last_seen": "2026-08-22T15:22:20.708529"
+  },
+  "5670983898": {
+    "id": 5670983898,
+    "first_name": "Rahman",
+    "language_code": "id",
+    "is_premium": false,
+    "visit_count": 1,
+    "ips": [
+      {
+        "ip": "2400:9800:129:3786:18ce:21cf:2863:b38e",
+        "country": "ID",
+        "city": "Soreang",
+        "region": "West Java",
+        "isp": "PT XLSMART Telecom Sejahtera Tbk",
+        "asn": 24203,
+        "lat": -7.03306,
+        "lon": 107.51833,
+        "first_seen": "2026-08-22T13:33:16.054Z",
+        "last_seen": "2026-08-22T13:33:16.054Z",
+        "visits": 1
+      }
+    ],
+    "visits": [
+      {
+        "timestamp": "2026-08-22T13:33:16.054Z",
+        "ip": "2400:9800:129:3786:18ce:21cf:2863:b38e",
+        "country": "ID",
+        "city": "Soreang",
+        "region": "West Java",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 16; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.83 Mobile Safari/537.36 Telegram-Android/12.9.2 (Xiaomi 2406APNFAG; Android 16; SDK 36; HIGH)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "151.0.7922.83",
+        "os": "Android",
+        "os_version": "16",
+        "language": "id",
+        "cf_ray": "a2f23f8dd8970fad",
+        "screen": "376x835@3.25",
+        "tz_client": "Asia/Jakarta",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 8,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "id",
+          "id-ID",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      }
+    ],
+    "fingerprint": {
+      "screen": "376x835@3.25",
+      "timezone": "Asia/Jakarta",
+      "color_depth": 24,
+      "touch": 5,
+      "platform": "Linux aarch64",
+      "memory": 8,
+      "cores": 8,
+      "connection": "4g",
+      "webgl_vendor": "ARM",
+      "webgl_renderer": "Mali-G615 MC6",
+      "languages": [
+        "id",
+        "id-ID",
+        "en-US"
+      ],
+      "ua_platform": "Android",
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": true,
+      "device": "Android Phone",
+      "browser": "Chrome",
+      "os": "Android",
+      "updated_at": "2026-08-22T13:33:16.054Z"
+    },
+    "device_keys": [
+      "6fc4d643d4dbd0351f749e053c525e4a600b6bec0016324519b7adf79a0b2438",
+      "5a2dc1ff4589dfbfe2ca6254887e6887965290ddfc2d16ecdbc518811caa293f"
+    ],
+    "geo": {
+      "country": "ID",
+      "city": "Soreang",
+      "region": "West Java",
+      "timezone": "Asia/Jakarta",
+      "asn": 24203,
+      "isp": "PT XLSMART Telecom Sejahtera Tbk",
+      "lat": -7.03306,
+      "lon": 107.51833
+    },
+    "source": "webapp",
+    "sources": [
+      "webapp"
+    ],
+    "registered": "2026-08-22T13:33:16.054Z",
+    "last_seen": "2026-08-22T13:33:16.054Z"
   }
 }
