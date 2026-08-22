@@ -4819,5 +4819,24 @@
     "username": "Arman",
     "status": "cancelled",
     "date": "22.08.2026 16:55"
+  },
+  "#0245": {
+    "oid": "#0245",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq 50mg",
+        "flavor": "Blackberry Lemon",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Привет! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Blackberry Lemon, количество: 1",
+    "source_key": "1345938654:21695",
+    "source_chat_id": 1345938654,
+    "source_message_id": 21695,
+    "user_id": 1345938654,
+    "username": "𝔻𝕚𝕒𝕟𝕒",
+    "status": "new",
+    "date": "22.08.2026 19:15"
   }
 }
