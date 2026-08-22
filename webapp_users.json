@@ -4384,9 +4384,22 @@
     "is_premium": false,
     "source": "webapp",
     "registered": "2026-05-23T04:31:39.517Z",
-    "last_seen": "2026-08-21T06:18:22.534Z",
-    "visit_count": 16,
+    "last_seen": "2026-08-22T06:03:40.984Z",
+    "visit_count": 17,
     "ips": [
+      {
+        "ip": "2a03:ec00:b97a:6e05:103d:6fe6:8b34:f23b",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Latvijas Mobilais Telefons SIA",
+        "asn": 24921,
+        "lat": 56.946,
+        "lon": 24.1059,
+        "first_seen": "2026-08-22T06:03:40.984Z",
+        "last_seen": "2026-08-22T06:03:40.984Z",
+        "visits": 1
+      },
       {
         "ip": "2a03:ec00:b97a:6e05:2570:6df3:e2c8:bf0b",
         "country": "LV",
@@ -4571,6 +4584,42 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-08-22T06:03:40.984Z",
+        "ip": "2a03:ec00:b97a:6e05:103d:6fe6:8b34:f23b",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a2efacfcffaae4de",
+        "screen": "393x852@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-08-21T06:18:22.534Z",
         "ip": "2a03:ec00:b97a:6e05:2570:6df3:e2c8:bf0b",
@@ -5169,7 +5218,7 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-08-21T06:18:22.534Z"
+      "updated_at": "2026-08-22T06:03:40.984Z"
     },
     "device_keys": [
       "73f1f03761f640865c8addfc4cfb9b8bb1889a3069c0ae8137918fc0dc1c2d3b",
@@ -5336,7 +5385,7 @@
         "cf_ray": "a2ecd259beea8d2f",
         "screen": "402x874@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
