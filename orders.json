@@ -4800,5 +4800,24 @@
     "username": "диана",
     "status": "new",
     "date": "22.08.2026 15:50"
+  },
+  "#0244": {
+    "oid": "#0244",
+    "items": [
+      {
+        "pid": "vozolckick",
+        "product_name": "Vozol Star Click 50k puffs",
+        "flavor": "peach ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Привет. Хочу купить один vozol peach ice",
+    "source_key": "510557368:21660",
+    "source_chat_id": 510557368,
+    "source_message_id": 21660,
+    "user_id": 510557368,
+    "username": "Arman",
+    "status": "new",
+    "date": "22.08.2026 16:55"
   }
 }
