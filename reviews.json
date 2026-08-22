@@ -350,5 +350,16 @@
     "comment": null,
     "date": "16.08.2026 18:34",
     "sent_to_channel": true
+  },
+  "#0238_Elfliq 50mg": {
+    "oid": "#0238",
+    "user_id": 1210151096,
+    "username": "🩵👼",
+    "product_name": "Elfliq 50mg",
+    "flavor": "Blue Razz Lemonade",
+    "rating": 4,
+    "comment": null,
+    "date": "22.08.2026 11:23",
+    "sent_to_channel": true
   }
 }
