@@ -4856,8 +4856,9 @@
     "source_message_id": 21723,
     "user_id": 924846698,
     "username": "dian444ik",
-    "status": "new",
-    "date": "23.08.2026 13:34"
+    "status": "done",
+    "date": "23.08.2026 13:34",
+    "done_at": "2026-08-23T17:09:53.609763"
   },
   "#0247": {
     "oid": "#0247",
