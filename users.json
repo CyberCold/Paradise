@@ -63963,7 +63963,8 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-08-21T23:55:26.265364",
     "last_seen": "2026-08-23T10:33:53.892Z"
