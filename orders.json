@@ -4917,5 +4917,30 @@
     "username": "Terty",
     "status": "new",
     "date": "24.08.2026 16:48"
+  },
+  "#0250": {
+    "oid": "#0250",
+    "items": [
+      {
+        "pid": "vozolneon",
+        "product_name": "Vozol Neon 60k puffs",
+        "flavor": "Mixed Berries",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Love 777",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Mixed Berries, количество: 1\nVozol, вкус: Love 777, количество: 1",
+    "source_key": "6623819066:21828",
+    "source_chat_id": 6623819066,
+    "source_message_id": 21828,
+    "user_id": 6623819066,
+    "username": "Котэ",
+    "status": "new",
+    "date": "24.08.2026 17:39"
   }
 }
