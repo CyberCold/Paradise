@@ -64888,5 +64888,16 @@
     ],
     "registered": "2026-08-24T15:30:01.638288",
     "last_seen": "2026-08-24T12:32:08.228Z"
+  },
+  "6068324076": {
+    "id": 6068324076,
+    "first_name": "77",
+    "username": "wccda",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-08-24T16:23:24.432984",
+    "last_seen": "2026-08-24T16:23:24.432984"
   }
 }
