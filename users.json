@@ -64646,5 +64646,16 @@
     ],
     "registered": "2026-08-23T16:02:52.345468",
     "last_seen": "2026-08-23T17:02:24.705155"
+  },
+  "7356571416": {
+    "id": 7356571416,
+    "first_name": "Freddie",
+    "username": "freddie666999",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-08-24T14:02:42.109514",
+    "last_seen": "2026-08-24T14:02:42.109514"
   }
 }
