@@ -4915,8 +4915,9 @@
     "source_message_id": 21825,
     "user_id": 946275127,
     "username": "Terty",
-    "status": "new",
-    "date": "24.08.2026 16:48"
+    "status": "done",
+    "date": "24.08.2026 16:48",
+    "done_at": "2026-08-25T00:55:32.047287"
   },
   "#0250": {
     "oid": "#0250",
