@@ -65123,5 +65123,16 @@
     ],
     "registered": "2026-08-24T16:23:24.432984",
     "last_seen": "2026-08-24T16:23:24.432984"
+  },
+  "1726102040": {
+    "id": 1726102040,
+    "first_name": "Naing Oo",
+    "username": "sisepagana2",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-08-24T19:39:14.426340",
+    "last_seen": "2026-08-24T19:39:14.426340"
   }
 }
