@@ -50984,7 +50984,7 @@
     "username": "mjauvie",
     "language_code": "en",
     "is_premium": false,
-    "visit_count": 14,
+    "visit_count": 16,
     "ips": [
       {
         "ip": "2a00:f503:150:cf1e:3828:3308:d491:47d5",
@@ -50996,8 +50996,8 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-08-24T11:29:25.152Z",
-        "last_seen": "2026-08-24T11:29:25.152Z",
-        "visits": 1
+        "last_seen": "2026-08-24T11:42:23.101Z",
+        "visits": 3
       },
       {
         "ip": "2a00:f503:250:79da:5dc:464c:bdd6:41ba",
@@ -51054,6 +51054,78 @@
     ],
     "visits": [
       {
+        "timestamp": "2026-08-24T11:42:23.101Z",
+        "ip": "2a00:f503:150:cf1e:3828:3308:d491:47d5",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "en-GB",
+        "cf_ray": "a30217e24c10cc37",
+        "screen": "393x852@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "en-GB"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
+      {
+        "timestamp": "2026-08-24T11:41:55.199Z",
+        "ip": "2a00:f503:150:cf1e:3828:3308:d491:47d5",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "en-GB",
+        "cf_ray": "a3021733e95ecc37",
+        "screen": "393x852@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": 0,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "en-GB"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
+      {
         "timestamp": "2026-08-24T11:29:25.152Z",
         "ip": "2a00:f503:150:cf1e:3828:3308:d491:47d5",
         "country": "LV",
@@ -51071,7 +51143,7 @@
         "cf_ray": "a30204e40d4dcc2c",
         "screen": "393x852@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -51581,7 +51653,7 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-08-24T11:29:25.152Z"
+      "updated_at": "2026-08-24T11:42:23.101Z"
     },
     "device_keys": [
       "7992e1f2d100486dea65f7a4dabc48aff2683fc2c6a2cc50e97acd2b44a55dd8",
@@ -51605,7 +51677,7 @@
       "chat"
     ],
     "registered": "2026-07-28T16:37:05.290Z",
-    "last_seen": "2026-08-24T11:29:25.152Z"
+    "last_seen": "2026-08-24T11:42:23.101Z"
   },
   "7949797048": {
     "id": 7949797048,
