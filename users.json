@@ -65481,5 +65481,16 @@
     ],
     "registered": "2026-08-25T05:57:21.232155",
     "last_seen": "2026-08-25T03:05:16.100Z"
+  },
+  "7263256497": {
+    "id": 7263256497,
+    "first_name": "小小",
+    "username": "XJJABC",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-08-25T08:22:27.661279",
+    "last_seen": "2026-08-25T08:22:27.661279"
   }
 }
