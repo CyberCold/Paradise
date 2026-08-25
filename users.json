@@ -62745,7 +62745,7 @@
         "cf_ray": "a30add457999b801",
         "screen": "402x874@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -65835,5 +65835,116 @@
     ],
     "registered": "2026-08-25T09:49:30.554627",
     "last_seen": "2026-08-25T09:49:30.555127"
+  },
+  "6481233286": {
+    "id": 6481233286,
+    "first_name": "阿",
+    "last_name": "水",
+    "username": "tg88888loj",
+    "language_code": "zh-hans",
+    "is_premium": false,
+    "visit_count": 1,
+    "ips": [
+      {
+        "ip": "2401:3bc0:800:36:ae1f:6bff:fe2d:cfca",
+        "country": "JP",
+        "city": "Tokyo",
+        "region": "Tokyo",
+        "isp": "KEY STONE CORPORATE TRUSTEE LIMITED - Tokyo",
+        "asn": 137409,
+        "lat": 35.6895,
+        "lon": 139.69171,
+        "first_seen": "2026-08-25T13:25:29.661Z",
+        "last_seen": "2026-08-25T13:25:29.661Z",
+        "visits": 1
+      }
+    ],
+    "visits": [
+      {
+        "timestamp": "2026-08-25T13:25:29.661Z",
+        "ip": "2401:3bc0:800:36:ae1f:6bff:fe2d:cfca",
+        "country": "JP",
+        "city": "Tokyo",
+        "region": "Tokyo",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 16; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.7151.115 Mobile Safari/537.36 Telegram-Android/12.9.2 (Xiaomi 24117RK2CC; Android 16; SDK 36; HIGH)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "137.0.7151.115",
+        "os": "Android",
+        "os_version": "16",
+        "language": "zh",
+        "cf_ray": "a30aec4a3a742da1",
+        "screen": "385x854@3.75",
+        "tz_client": "Asia/Shanghai",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 8,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "zh",
+          "zh-CN",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      }
+    ],
+    "fingerprint": {
+      "screen": "385x854@3.75",
+      "timezone": "Asia/Shanghai",
+      "color_depth": 24,
+      "touch": 5,
+      "platform": "Linux aarch64",
+      "memory": 8,
+      "cores": 8,
+      "connection": "4g",
+      "webgl_vendor": "Qualcomm",
+      "webgl_renderer": "Adreno (TM) 750",
+      "languages": [
+        "zh",
+        "zh-CN",
+        "en-US"
+      ],
+      "ua_platform": "Android",
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": true,
+      "device": "Android Phone",
+      "browser": "Chrome",
+      "os": "Android",
+      "updated_at": "2026-08-25T13:25:29.661Z"
+    },
+    "device_keys": [
+      "add5e8ed4b5d3117a11adc52279841985ea11a24c860a3d2a4b3ff32fd982d9f",
+      "3d374d8c266b4ae16ae4f9148425a3e88af70dd79df12c69e17551b7eb109bd4"
+    ],
+    "geo": {
+      "country": "JP",
+      "city": "Tokyo",
+      "region": "Tokyo",
+      "timezone": "Asia/Tokyo",
+      "asn": 137409,
+      "isp": "KEY STONE CORPORATE TRUSTEE LIMITED - Tokyo",
+      "lat": 35.6895,
+      "lon": 139.69171
+    },
+    "source": "webapp",
+    "sources": [
+      "webapp"
+    ],
+    "registered": "2026-08-25T13:25:29.661Z",
+    "last_seen": "2026-08-25T13:25:29.661Z"
   }
 }
