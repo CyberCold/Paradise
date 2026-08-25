@@ -42649,7 +42649,7 @@
         "cf_ray": "a30c3a8ddec3a8a2",
         "screen": "430x932@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -56664,6 +56664,114 @@
       "isp": "Address pool for LTC-HOME customers",
       "lat": 56.946,
       "lon": 24.10589
+    }
+  },
+  "8554125451": {
+    "id": 8554125451,
+    "first_name": "春初有雪",
+    "last_name": "",
+    "username": "ccyx666",
+    "language_code": "zh-hans",
+    "is_premium": false,
+    "source": "webapp",
+    "registered": "2026-08-25T19:34:19.036Z",
+    "last_seen": "2026-08-25T19:34:19.036Z",
+    "visit_count": 1,
+    "ips": [
+      {
+        "ip": "2a02:6ea0:5601:6306::13",
+        "country": "NO",
+        "city": "Oslo",
+        "region": "Oslo",
+        "isp": "Datacamp Limited",
+        "asn": 212238,
+        "lat": 59.91273,
+        "lon": 10.74609,
+        "first_seen": "2026-08-25T19:34:19.036Z",
+        "last_seen": "2026-08-25T19:34:19.036Z",
+        "visits": 1
+      }
+    ],
+    "visits": [
+      {
+        "timestamp": "2026-08-25T19:34:19.036Z",
+        "ip": "2a02:6ea0:5601:6306::13",
+        "country": "NO",
+        "city": "Oslo",
+        "region": "Oslo",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 12; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.105 Safari/537.36 Telegram-Android/12.9.2 (Honor HEY-W09; Android 12; SDK 31; HIGH)",
+        "device": "Android Tablet",
+        "browser": "Chrome",
+        "browser_version": "92.0.4515.105",
+        "os": "Android",
+        "os_version": "12",
+        "language": "zh",
+        "cf_ray": "a30d08901c38569f",
+        "screen": "1143x686@1.75",
+        "tz_client": "Asia/Shanghai",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux armv8l",
+        "memory": 4,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "zh",
+          "zh-CN",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      }
+    ],
+    "fingerprint": {
+      "screen": "1143x686@1.75",
+      "timezone": "Asia/Shanghai",
+      "color_depth": 24,
+      "touch": 5,
+      "platform": "Linux armv8l",
+      "memory": 4,
+      "cores": 8,
+      "connection": "4g",
+      "webgl_vendor": "Qualcomm",
+      "webgl_renderer": "Adreno (TM) 610",
+      "languages": [
+        "zh",
+        "zh-CN",
+        "en-US"
+      ],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
+      "device": "Android Tablet",
+      "browser": "Chrome",
+      "os": "Android",
+      "updated_at": "2026-08-25T19:34:19.036Z"
+    },
+    "device_keys": [
+      "c599ebf83e5ce37b0f0fa0f0750cc0c6570b88c250d50b6fb92c5360493d2561",
+      "c34ca05e7a2412e8559edc288cb074e3c7a35beee27b6394d74e059e5cfad278"
+    ],
+    "geo": {
+      "country": "NO",
+      "city": "Oslo",
+      "region": "Oslo",
+      "timezone": "Europe/Oslo",
+      "asn": 212238,
+      "isp": "Datacamp Limited",
+      "lat": 59.91273,
+      "lon": 10.74609
     }
   }
 }
