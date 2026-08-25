@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-08-25T20:15:14.554Z",
+  "updated_at": "2026-08-25T20:16:15.866Z",
   "entries": [
     {
       "id": "ban-1784458848382-1b2c9080",
@@ -54,6 +54,21 @@
       "device_hashes": [],
       "reason": "",
       "created_at": "2026-08-25T20:15:14.554Z",
+      "created_by": "dashboard",
+      "active": true
+    },
+    {
+      "id": "ban-1787688975866-4e8261d0",
+      "root_user_id": "6481233286",
+      "user_ids": [
+        "6481233286"
+      ],
+      "ip_hashes": [
+        "c6b446809f3370a32dca1c3a6993b60d1937b0f8af56cc8833b017d6358d6918"
+      ],
+      "device_hashes": [],
+      "reason": "",
+      "created_at": "2026-08-25T20:16:15.866Z",
       "created_by": "dashboard",
       "active": true
     }
