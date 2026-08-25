@@ -4960,8 +4960,9 @@
     "source_message_id": 21922,
     "user_id": 5581672715,
     "username": "Valerij",
-    "status": "new",
-    "date": "25.08.2026 16:47"
+    "status": "done",
+    "date": "25.08.2026 16:47",
+    "done_at": "2026-08-25T18:46:05.230211"
   },
   "#0252": {
     "oid": "#0252",
