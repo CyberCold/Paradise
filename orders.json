@@ -4962,5 +4962,24 @@
     "username": "Valerij",
     "status": "new",
     "date": "25.08.2026 16:47"
+  },
+  "#0252": {
+    "oid": "#0252",
+    "items": [
+      {
+        "pid": "vozolckick",
+        "product_name": "Vozol Star Click 50k puffs",
+        "flavor": "Tropical fruit storm",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol Star Click 50k puffs, вкус: Tropical fruit storm, количество: 1",
+    "source_key": "706514627:21925",
+    "source_chat_id": 706514627,
+    "source_message_id": 21925,
+    "user_id": 706514627,
+    "username": "Толяшын",
+    "status": "new",
+    "date": "25.08.2026 17:01"
   }
 }
