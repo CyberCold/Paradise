@@ -4983,5 +4983,42 @@
     "status": "done",
     "date": "25.08.2026 17:01",
     "done_at": "2026-08-25T19:27:26.437816"
+  },
+  "#0253": {
+    "oid": "#0253",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Mixed Berries",
+        "qty": 3
+      },
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq 50mg",
+        "flavor": "Blackberry Lemon",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Frozen Grape Soda",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Kiwi Passion Fruit Guava",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Mixed Berries, количество: 3\nElfliq, вкус: Blackberry Lemon, количество: 1\nVozol, вкус: Frozen Grape Soda, количество: 1\nVozol, вкус: Kiwi Passion Fruit Guava, количество: 1",
+    "source_key": "1451394344:22018",
+    "source_chat_id": 1451394344,
+    "source_message_id": 22018,
+    "user_id": 1451394344,
+    "username": "Jolanta",
+    "status": "new",
+    "date": "26.08.2026 16:58"
   }
 }
