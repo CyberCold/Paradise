@@ -33955,8 +33955,21 @@
     "last_name": "Khtulu",
     "language_code": "ru",
     "is_premium": false,
-    "visit_count": 18,
+    "visit_count": 19,
     "ips": [
+      {
+        "ip": "84.15.188.84",
+        "country": "LT",
+        "city": "Vilnius",
+        "region": "Vilnius",
+        "isp": "Bite Lietuva",
+        "asn": 13194,
+        "lat": 54.68916,
+        "lon": 25.2798,
+        "first_seen": "2026-08-26T03:30:05.731Z",
+        "last_seen": "2026-08-26T03:30:05.731Z",
+        "visits": 1
+      },
       {
         "ip": "84.15.176.193",
         "country": "LT",
@@ -34011,6 +34024,44 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-08-26T03:30:05.731Z",
+        "ip": "84.15.188.84",
+        "country": "LT",
+        "city": "Vilnius",
+        "region": "Vilnius",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 16; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.199 Mobile Safari/537.36 Telegram-Android/12.10.0 (Xiaomi 23090RA98G; Android 16; SDK 36; HIGH)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "151.0.7922.199",
+        "os": "Android",
+        "os_version": "16",
+        "language": "ru",
+        "cf_ray": "a30fc181abc18d2f",
+        "screen": "407x904@3",
+        "tz_client": "Europe/Vilnius",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 8,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru",
+          "ru-RU",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-08-20T15:01:39.456Z",
         "ip": "5.20.25.161",
@@ -34720,7 +34771,7 @@
       "device": "Android Phone",
       "browser": "Chrome",
       "os": "Android",
-      "updated_at": "2026-08-20T15:01:39.456Z"
+      "updated_at": "2026-08-26T03:30:05.731Z"
     },
     "device_keys": [
       "a482344889474fa6765661bbc17120fe105e2b9c5a8807acda7fe26f63bda35e",
@@ -34732,10 +34783,10 @@
       "city": "Vilnius",
       "region": "Vilnius",
       "timezone": "Europe/Vilnius",
-      "asn": 21412,
-      "isp": "Cgates, UAB",
-      "lat": 54.706,
-      "lon": 25.253
+      "asn": 13194,
+      "isp": "Bite Lietuva",
+      "lat": 54.68916,
+      "lon": 25.2798
     },
     "source": "chat",
     "sources": [
@@ -34743,7 +34794,7 @@
       "webapp"
     ],
     "registered": "2026-06-13T15:40:00.925077",
-    "last_seen": "2026-08-20T15:01:39.456Z"
+    "last_seen": "2026-08-26T03:30:05.731Z"
   },
   "6333110159": {
     "id": 6333110159,
@@ -51338,7 +51389,7 @@
         "cf_ray": "a30d28f72f41c037",
         "screen": "430x932@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
