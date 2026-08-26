@@ -135,6 +135,28 @@
       "stock": "in",
       "badge": "new",
       "hidden": false
+    },
+    {
+      "id": "vozolmagic500000",
+      "name": "Vozol Magic 50000",
+      "tag": "Salt Nicotine",
+      "subtitle": "Salt Nicotine • 50000 Puffs",
+      "price": "20€",
+      "image": "https://i.postimg.cc/t4H3BB2L/2F6ECB2D-860F-41A0-8260-79EF3487F5B8.png",
+      "flavors": [
+        "Watermelon Bubblegum",
+        "Cool Mint",
+        "Cherry Strazz",
+        "Blue Razz Ice",
+        "Cherry Cola",
+        "Vzbull",
+        "Strawmelon Peach",
+        "Strawberry Margarita",
+        "Grape Ice"
+      ],
+      "stock": "in",
+      "badge": "new",
+      "hidden": false
     }
   ]
 }
