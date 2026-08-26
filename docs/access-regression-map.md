@@ -14,9 +14,11 @@ blacklist.json
           |
           v
 Mini App -> POST /app -> paradise-users
+                         | require Cloudflare country = LV
+                         | reject known hosting/VPN network signals
                          | hash current IP/device
                          | compare with active blacklist entries
-                         +-- match -> 403, catalogue stays protected
+                         +-- geo/network/blacklist match -> 403, catalogue stays protected
                          +-- no match -> 200, signed /catalog URL
                                            |
                                            v
@@ -31,7 +33,11 @@ The large user databases are used to build the compact blacklist in the dashboar
 
 | Case | Expected result |
 |---|---|
-| Telegram ID is in an active entry | `403`, no catalogue token |
+| Cloudflare country is LV on a normal residential/mobile network | Continue to blacklist check |
+| Cloudflare country is not LV, is unknown, or is Tor (T1) | 403, no catalogue token |
+| Latvian network organisation matches a hosting/VPN marker | 403, no catalogue token |
+| Latvian ASN is present in VPN_DENY_ASNS | 403, no catalogue token |
+| Telegram ID is in an active entry | 403, no catalogue token |
 | Current IP hash is in an active entry | `403`, account is attached to the entry in background |
 | Current device hash is in an active entry | `403`, account is attached to the entry in background |
 | Entry is inactive | `200`, signed catalogue URL |
@@ -47,3 +53,7 @@ The large user databases are used to build the compact blacklist in the dashboar
 | `/catalog` token is absent, invalid, or expired | `404`; protected HTML is not served |
 | `/catalog` token is valid | Protected HTML is served with session markers |
 | Direct request for protected JSON/source | `404` without a valid token |
+
+## VPN detection boundary
+
+Country blocking uses Cloudflare's request country and is deterministic. VPN detection on the current non-Enterprise setup is intentionally layered: known hosting/VPN organisation markers plus optional VPN_DENY_ASNS and VPN_ORG_DENYLIST Worker variables. This blocks common datacentre VPN exits, but a residential proxy can look identical to an ordinary Latvian household. Guaranteed classification requires Cloudflare Enterprise managed VPN/anonymizer lists or a maintained third-party IP intelligence source.

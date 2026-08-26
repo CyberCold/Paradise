@@ -6,7 +6,7 @@ const FILES = {
   blacklist: { path: "blacklist.json", fallback: { version: 1, updated_at: "", entries: [] } },
   catalog: {
     path: "catalog_overrides.json",
-    fallback: { version: 1, products: {}, customProducts: [] },
+    fallback: { version: 1, products: {}, customProducts: [], order: [] },
   },
 };
 const ALLOWED_ORIGINS = new Set([
@@ -312,7 +312,18 @@ function normaliseCatalog(value) {
     if (ids.has(product.id)) throw new Error("Custom product IDs must be unique");
     ids.add(product.id);
   }
-  return { version: 1, products, customProducts };
+  const order = [];
+  const seenOrder = new Set();
+  const sourceOrder = Array.isArray(value?.order) ? value.order : [];
+  if (sourceOrder.length > 140) throw new Error("Too many product order entries");
+  for (const rawId of sourceOrder) {
+    const id = trimText(rawId, 70).toLowerCase().replace(/[^a-z0-9_-]/g, "-").replace(/-+/g, "-");
+    if (id && !seenOrder.has(id)) {
+      seenOrder.add(id);
+      order.push(id);
+    }
+  }
+  return { version: 1, products, customProducts, order };
 }
 
 function cleanStringArray(value, limit = 20, itemLength = 120) {
@@ -561,6 +572,7 @@ export const __test = {
   verifySession,
   normaliseUsers,
   normaliseBlacklist,
+  normaliseCatalog,
   hardwareSignatureFromRecord,
   userIps,
   buildBanPreview,

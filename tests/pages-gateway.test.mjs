@@ -65,6 +65,26 @@ test("catalogue music unlocks from touch and pointer interaction", async () => {
   assert.match(protectedHtml, /event\.target\?\.closest\?\.\('#musicBtn'\)/);
 });
 
+test("catalogue order mixes static and custom products and is admin-editable", async () => {
+  const protectedHtml = await fs.readFile(new URL("../protected/index.html", import.meta.url), "utf8");
+  const catalogue = JSON.parse(await fs.readFile(new URL("../catalog_overrides.json", import.meta.url), "utf8"));
+  assert.deepEqual(catalogue.order, [
+    "vozolnew",
+    "vozolmagic500000",
+    "elfliq",
+    "vozolckick",
+    "ivg",
+    "elfbarduke",
+    "truesalt",
+    "elfbarlushkingpro",
+    "dojo",
+    "vozolneon",
+  ]);
+  assert.match(protectedHtml, /id="adminMoveProductUp"/);
+  assert.match(protectedHtml, /id="adminMoveProductDown"/);
+  assert.match(protectedHtml, /function adminMoveSelectedProduct/);
+  assert.match(protectedHtml, /adminApplyProductOrder\(\)/);
+});
 test("public and protected inline scripts parse", async () => {
   for (const path of ["../index.html", "../protected/index.html"]) {
     const html = await fs.readFile(new URL(path, import.meta.url), "utf8");

@@ -174,6 +174,41 @@ test("access decision is deny-only for active blacklist matches", () => {
   assert.equal(__test.decideAccess(__test.normaliseBlacklist({}), "600", "", []).access, true);
 });
 
+test("geo gate allows Latvia and denies every other Cloudflare country", () => {
+  assert.equal(__test.decideGeoAccess({ country: "LV", isp: "SIA Tet" }).access, true);
+  assert.deepEqual(__test.decideGeoAccess({ country: "NL", isp: "Residential ISP" }), { access: false, reason: "country" });
+  assert.deepEqual(__test.decideGeoAccess({ country: "T1", isp: "Tor network" }), { access: false, reason: "country" });
+  assert.deepEqual(__test.decideGeoAccess({ country: "unknown", isp: "" }), { access: false, reason: "country" });
+});
+
+test("geo gate blocks Latvian hosting and configured VPN networks", () => {
+  assert.deepEqual(__test.decideGeoAccess({ country: "LV", isp: "M247 Europe SRL", asn: 9009 }), { access: false, reason: "vpn_or_hosting" });
+  assert.deepEqual(__test.decideGeoAccess({ country: "LV", isp: "Residential ISP", asn: 64512 }, { VPN_DENY_ASNS: "64512, 64513" }), { access: false, reason: "vpn_asn" });
+  assert.deepEqual(__test.decideGeoAccess({ country: "LV", isp: "Example Tunnel Network" }, { VPN_ORG_DENYLIST: "tunnel" }), { access: false, reason: "vpn_or_hosting" });
+});
+
+test("non-Latvian request is rejected before GitHub data is read", async () => {
+  const initData = new URLSearchParams({
+    user: JSON.stringify({ id: 990002, first_name: "Blocked" }),
+    auth_date: "1",
+    hash: "not-required-for-access",
+  }).toString();
+  const request = new Request("https://paradiseminiapp.pages.dev/app", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "CF-IPCountry": "NL",
+      "CF-Connecting-IP": "198.51.100.11",
+    },
+    body: JSON.stringify({ initData, fingerprint: {} }),
+  });
+  const response = await paradiseUsersWorker.fetch(request, {
+    GITHUB_TOKEN: "test-token",
+    BAN_SECRET: "test-ban-secret",
+  });
+  assert.equal(response.status, 403);
+  assert.deepEqual(await response.json(), { ok: false, blocked: true, error: "Access denied" });
+});
 test("tracking storage cannot delay an allowed access response", async () => {
   const originalFetch = globalThis.fetch;
   const backgroundTasks = [];
@@ -207,6 +242,7 @@ test("tracking storage cannot delay an allowed access response", async () => {
       headers: {
         "Content-Type": "application/json",
         "CF-Connecting-IP": "198.51.100.10",
+        "CF-IPCountry": "LV",
         "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X)",
       },
       body: JSON.stringify({ initData, fingerprint: {} }),

@@ -432,6 +432,57 @@ function requestGeo(request) {
   });
 }
 
+const VPN_OR_HOSTING_MARKERS = [
+  " vpn",
+  "vpn ",
+  "proxy",
+  "hosting",
+  "hostinger",
+  "datacenter",
+  "data center",
+  "data camp",
+  "datacamp",
+  "digitalocean",
+  "amazon technologies",
+  "amazon data",
+  "google cloud",
+  "microsoft azure",
+  "oracle cloud",
+  "hetzner",
+  "ovh",
+  "leaseweb",
+  "m247",
+  "serverius",
+  "contabo",
+  "vultr",
+  "linode",
+  "colo",
+];
+
+function decideGeoAccess(geo, env = {}) {
+  const country = String(geo?.country || "unknown").trim().toUpperCase();
+  if (country !== "LV") return { access: false, reason: "country" };
+
+  const deniedAsns = new Set(
+    String(env.VPN_DENY_ASNS || "")
+      .split(",")
+      .map((value) => Number.parseInt(value.trim(), 10))
+      .filter(Number.isFinite),
+  );
+  if (Number.isFinite(geo?.asn) && deniedAsns.has(geo.asn)) {
+    return { access: false, reason: "vpn_asn" };
+  }
+
+  const extraMarkers = String(env.VPN_ORG_DENYLIST || "")
+    .split(",")
+    .map((value) => value.trim().toLowerCase())
+    .filter(Boolean);
+  const organisation = ` ${String(geo?.isp || "").toLowerCase()} `;
+  const marker = [...VPN_OR_HOSTING_MARKERS, ...extraMarkers].find((value) => organisation.includes(value));
+  if (marker) return { access: false, reason: "vpn_or_hosting" };
+
+  return { access: true, reason: "allowed" };
+}
 function mergeUser(previousValue, user, visit, fingerprint, deviceKeys, uaParsed, geo, now) {
   const uid = String(user.id);
   const previous = previousValue ? cleanRecord(previousValue, uid) : null;
@@ -705,6 +756,7 @@ export const __test = {
   decideAccess,
   verifyTelegramInitData,
   telegramUserFromInitData,
+  decideGeoAccess,
 };
 
 export default {
@@ -725,6 +777,18 @@ export default {
 
       const now = new Date().toISOString();
       const geo = requestGeo(request);
+      const geoDecision = decideGeoAccess(geo, env);
+      if (!geoDecision.access) {
+        console.log(JSON.stringify({
+          event: "access_decision",
+          user_id: String(user.id),
+          access: false,
+          matched_by: geoDecision.reason,
+          country: geo.country,
+          asn: geo.asn,
+        }));
+        return json({ ok: false, blocked: true, error: "Access denied" }, 403, cors);
+      }
       const uaParsed = parseUA(request.headers.get("User-Agent") || "");
       const fingerprint = body?.fingerprint && typeof body.fingerprint === "object" ? body.fingerprint : {};
       const deviceKeys = await deviceKeysForFingerprint(env.BAN_SECRET, fingerprint, uaParsed);

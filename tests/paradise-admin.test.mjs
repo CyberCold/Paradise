@@ -51,6 +51,15 @@ test("manual related IDs are included even when automatic scopes are disabled", 
   assert.equal(preview.device_hashes.length, 0);
 });
 
+test("catalogue normalisation preserves a safe unique product order", () => {
+  const data = __test.normaliseCatalog({
+    products: {},
+    customProducts: [{ id: "magic", name: "Magic" }],
+    order: ["vozolnew", "magic", "magic", " BAD ID "],
+  });
+  assert.deepEqual(data.order, ["vozolnew", "magic", "bad-id"]);
+  assert.deepEqual(__test.normaliseCatalog({}).order, []);
+});
 test("blacklist normalisation never keeps invalid hashes or duplicate IDs", () => {
   const data = __test.normaliseBlacklist({
     entries: [{

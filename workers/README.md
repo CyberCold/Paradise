@@ -22,7 +22,12 @@ Add these **Secrets** in Cloudflare Worker Settings:
 - `GITHUB_TOKEN` — GitHub fine-grained token with Contents read/write access to `CyberCold/Paradise`;
 - `BAN_SECRET` — exactly the same secret as on `paradise-admin`.
 
-The worker verifies signed Telegram Web App `initData`, checks Telegram ID, exact IP, and HMAC device keys before granting access, stores a bounded visit history, and updates `webapp_users.json` with SHA-based conflict retries. Existing GitHub data is never replaced when a read or JSON parse fails.
+Optional plain Worker variables for maintained VPN rules:
+
+- `VPN_DENY_ASNS` — comma-separated ASNs to reject even when Cloudflare reports Latvia;
+- `VPN_ORG_DENYLIST` — comma-separated additional network-organisation fragments.
+
+The worker first allows only Cloudflare country `LV` and rejects known VPN/hosting network signals. It then verifies Telegram Web App `initData`, checks Telegram ID, exact IP, and HMAC device keys before granting access, stores a bounded visit history, and updates `webapp_users.json` with SHA-based conflict retries. Existing GitHub data is never replaced when a read or JSON parse fails.
 
 # Paradise Pages gateway
 
