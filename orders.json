@@ -5122,5 +5122,36 @@
     "username": "Чебурек",
     "status": "new",
     "date": "27.08.2026 18:02"
+  },
+  "#0258": {
+    "oid": "#0258",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Mixed Berries",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Grape Ice",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Strawberry Watermelon",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Mixed Berries, количество: 1\nVozol, вкус: Grape Ice, количество: 1\nVozol, вкус: Strawberry Watermelon, количество: 1",
+    "source_key": "924846698:22141",
+    "source_chat_id": 924846698,
+    "source_message_id": 22141,
+    "user_id": 924846698,
+    "username": "dian444ik",
+    "status": "new",
+    "date": "28.08.2026 00:20"
   }
 }
