@@ -5090,5 +5090,36 @@
     "username": "Aqox",
     "status": "new",
     "date": "27.08.2026 17:37"
+  },
+  "#0257": {
+    "oid": "#0257",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Frozen Grape Soda",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Lavafire",
+        "qty": 1
+      },
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq 50mg",
+        "flavor": "Blue Razz Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Frozen Grape Soda, количество: 1\nVozol, вкус: Lavafire, количество: 1\nElfliq, вкус: Blue Razz Ice, количество: 1",
+    "source_key": "1033160991:22088",
+    "source_chat_id": 1033160991,
+    "source_message_id": 22088,
+    "user_id": 1033160991,
+    "username": "Чебурек",
+    "status": "new",
+    "date": "27.08.2026 18:02"
   }
 }
