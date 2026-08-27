@@ -8235,7 +8235,7 @@
     "last_name": "Eliseev",
     "language_code": "ru",
     "is_premium": false,
-    "visit_count": 15,
+    "visit_count": 16,
     "ips": [
       {
         "ip": "2a03:ec00:b18c:ea57:90e7:374b:c11b:5540",
@@ -8247,8 +8247,8 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-08-27T12:29:41.721Z",
-        "last_seen": "2026-08-27T12:29:41.721Z",
-        "visits": 1
+        "last_seen": "2026-08-27T12:37:05.159Z",
+        "visits": 2
       },
       {
         "ip": "2a03:ec00:b986:f882:8439:ed9c:ddf2:98e9",
@@ -8331,6 +8331,42 @@
     ],
     "visits": [
       {
+        "timestamp": "2026-08-27T12:37:05.159Z",
+        "ip": "2a03:ec00:b18c:ea57:90e7:374b:c11b:5540",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a31b2023280713ba",
+        "screen": "390x844@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": 0,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
+      {
         "timestamp": "2026-08-27T12:29:41.721Z",
         "ip": "2a03:ec00:b18c:ea57:90e7:374b:c11b:5540",
         "country": "LV",
@@ -8348,7 +8384,7 @@
         "cf_ray": "a31b154f8855dd68",
         "screen": "390x844@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -8894,7 +8930,7 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-08-27T12:29:41.721Z"
+      "updated_at": "2026-08-27T12:37:05.159Z"
     },
     "device_keys": [
       "65fd011e1b42cec94cdf3dccdf1986b4f638d0ba9020ea32f7d0e6d54a2b97a7",
@@ -8916,7 +8952,7 @@
       "webapp"
     ],
     "registered": "2026-06-01T19:18:35.273140",
-    "last_seen": "2026-08-27T12:29:41.721Z"
+    "last_seen": "2026-08-27T12:37:05.159Z"
   },
   "1047832128": {
     "id": 1047832128,
@@ -31502,8 +31538,8 @@
         "lat": 56.946,
         "lon": 24.1059,
         "first_seen": "2026-08-26T17:14:56.081Z",
-        "last_seen": "2026-08-27T09:14:50.050Z",
-        "visits": 10
+        "last_seen": "2026-08-27T12:37:30.577Z",
+        "visits": 11
       },
       {
         "ip": "2a00:808:112:c926:7d70:7ecc:52d6:d253",
@@ -31780,8 +31816,44 @@
     "last_name": "ᅠ ᅠ ᅠ ᅠ ᅠ",
     "language_code": "ru",
     "is_premium": true,
-    "visit_count": 165,
+    "visit_count": 166,
     "visits": [
+      {
+        "timestamp": "2026-08-27T12:37:30.577Z",
+        "ip": "2a00:808:112:c926:987c:2603:c02:b969",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a31b20c20a21a87e",
+        "screen": "420x912@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-08-27T09:14:50.050Z",
         "ip": "2a00:808:112:c926:987c:2603:c02:b969",
@@ -32861,42 +32933,6 @@
         "ua_bitness": null,
         "ua_model": null,
         "ua_mobile": false
-      },
-      {
-        "timestamp": "2026-08-17T12:18:44.096Z",
-        "ip": "2a00:808:112:c926:c0bb:5ed6:ed5c:bb98",
-        "country": "LV",
-        "city": "Riga",
-        "region": "Riga",
-        "url": "https://paradiseminiapp.pages.dev/app",
-        "referrer": null,
-        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
-        "device": "iPhone",
-        "browser": "unknown",
-        "browser_version": null,
-        "os": "iOS",
-        "os_version": "18.7",
-        "language": "ru",
-        "cf_ray": "a2c89f815ff7446a",
-        "screen": "420x912@3",
-        "tz_client": "Europe/Riga",
-        "color_depth": 0,
-        "touch": 5,
-        "platform": "iPhone",
-        "memory": 0,
-        "cores": 4,
-        "connection": null,
-        "webgl_vendor": null,
-        "webgl_renderer": null,
-        "languages": [
-          "ru"
-        ],
-        "ua_platform": null,
-        "ua_platform_version": null,
-        "ua_architecture": null,
-        "ua_bitness": null,
-        "ua_model": null,
-        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -32922,7 +32958,7 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-08-27T09:14:50.050Z"
+      "updated_at": "2026-08-27T12:37:30.577Z"
     },
     "geo": {
       "country": "LV",
@@ -32949,7 +32985,7 @@
       "chat"
     ],
     "registered": "2026-05-29T13:01:10.148Z",
-    "last_seen": "2026-08-27T09:14:50.050Z"
+    "last_seen": "2026-08-27T12:37:30.577Z"
   },
   "5637938428": {
     "id": 5637938428,
