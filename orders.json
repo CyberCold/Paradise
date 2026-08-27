@@ -5071,5 +5071,24 @@
     "username": "Miss Ravager.",
     "status": "new",
     "date": "27.08.2026 14:20"
+  },
+  "#0256": {
+    "oid": "#0256",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Strawberry Kiwi",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Strawberry Kiwi, количество: 1",
+    "source_key": "731373167:22087",
+    "source_chat_id": 731373167,
+    "source_message_id": 22087,
+    "user_id": 731373167,
+    "username": "Aqox",
+    "status": "new",
+    "date": "27.08.2026 17:37"
   }
 }
