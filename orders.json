@@ -5021,5 +5021,30 @@
     "status": "done",
     "date": "26.08.2026 16:58",
     "done_at": "2026-08-27T07:51:48.024847"
+  },
+  "#0254": {
+    "oid": "#0254",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Strawberry Kiwi",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Grape Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Strawberry Kiwi, количество: 1\nVozol, вкус: Grape Ice, количество: 1",
+    "source_key": "1188327039:22046",
+    "source_chat_id": 1188327039,
+    "source_message_id": 22046,
+    "user_id": 1188327039,
+    "username": "Александр",
+    "status": "new",
+    "date": "27.08.2026 13:20"
   }
 }
