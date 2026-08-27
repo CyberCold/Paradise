@@ -5089,8 +5089,9 @@
     "source_message_id": 22087,
     "user_id": 731373167,
     "username": "Aqox",
-    "status": "new",
-    "date": "27.08.2026 17:37"
+    "status": "done",
+    "date": "27.08.2026 17:37",
+    "done_at": "2026-08-28T02:26:33.997005"
   },
   "#0257": {
     "oid": "#0257",
