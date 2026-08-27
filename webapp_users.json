@@ -4640,7 +4640,7 @@
         "cf_ray": "a31bcf402a49340e",
         "screen": "384x832@2.8125",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "Linux aarch64",
         "memory": 8,
@@ -13894,12 +13894,25 @@
     "last_name": "",
     "username": "nik777nubas",
     "language_code": "ru",
-    "is_premium": false,
+    "is_premium": true,
     "source": "webapp",
     "registered": "2026-08-03T15:17:52.260Z",
-    "last_seen": "2026-08-03T15:17:52.260Z",
-    "visit_count": 1,
+    "last_seen": "2026-08-27T15:01:06.931Z",
+    "visit_count": 2,
     "ips": [
+      {
+        "ip": "2a00:f503:160:7030:3c9e:1997:7065:8c52",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Bite Latvija    users",
+        "asn": 13194,
+        "lat": 56.946,
+        "lon": 24.10589,
+        "first_seen": "2026-08-27T15:01:06.931Z",
+        "last_seen": "2026-08-27T15:01:06.931Z",
+        "visits": 1
+      },
       {
         "ip": "2a00:f503:160:6f14:d049:6e3b:6cfe:b7bc",
         "country": "LV",
@@ -13915,6 +13928,44 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-08-27T15:01:06.931Z",
+        "ip": "2a00:f503:160:7030:3c9e:1997:7065:8c52",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 16; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.170 Mobile Safari/537.36 Telegram-Android/12.5.1 (Samsung SM-G990B2; Android 16; SDK 36; HIGH)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "151.0.7922.170",
+        "os": "Android",
+        "os_version": "16",
+        "language": "ru",
+        "cf_ray": "a31bf31e2daec5d3",
+        "screen": "412x892@2.625",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 8,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru",
+          "ru-RU",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-08-03T15:17:52.260Z",
         "ip": "2a00:f503:160:6f14:d049:6e3b:6cfe:b7bc",
@@ -13979,7 +14030,7 @@
       "device": "Android Phone",
       "browser": "Chrome",
       "os": "Android",
-      "updated_at": "2026-08-03T15:17:52.260Z"
+      "updated_at": "2026-08-27T15:01:06.931Z"
     },
     "device_keys": [
       "cb526247a2853b533282ff19fabe0592eb533887aaadd6a44a5e51b6a84a8807",
