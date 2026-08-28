@@ -5175,5 +5175,24 @@
     "username": "rob4ik",
     "status": "new",
     "date": "28.08.2026 16:23"
+  },
+  "#0260": {
+    "oid": "#0260",
+    "items": [
+      {
+        "pid": "vozolneon",
+        "product_name": "Vozol Neon 60k puffs",
+        "flavor": "Vzbull",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol Magic 50000, вкус: Vzbull, количество: 1",
+    "source_key": "5704178591:22207",
+    "source_chat_id": 5704178591,
+    "source_message_id": 22207,
+    "user_id": 5704178591,
+    "username": "︎︎ ︎ ︎︎︎ ︎ ︎ ︎ ︎ ︎ ︎︎ ︎ ︎ ︎",
+    "status": "new",
+    "date": "28.08.2026 16:49"
   }
 }
