@@ -5154,5 +5154,24 @@
     "username": "dian444ik",
     "status": "new",
     "date": "28.08.2026 00:20"
+  },
+  "#0259": {
+    "oid": "#0259",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol 50mg",
+        "flavor": "Frozen Grape Soda",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Frozen Grape Soda, количество: 1",
+    "source_key": "1636239325:22187",
+    "source_chat_id": 1636239325,
+    "source_message_id": 22187,
+    "user_id": 1636239325,
+    "username": "rob4ik",
+    "status": "new",
+    "date": "28.08.2026 16:23"
   }
 }
