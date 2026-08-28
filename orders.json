@@ -5213,7 +5213,8 @@
     "source_message_id": 22155,
     "user_id": 1556737559,
     "username": "Влад",
-    "status": "new",
-    "date": "28.08.2026 12:47"
+    "status": "done",
+    "date": "28.08.2026 12:47",
+    "done_at": "2026-08-28T20:06:40.225937"
   }
 }
