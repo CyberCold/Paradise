@@ -4673,7 +4673,7 @@
         "cf_ray": "a3214fd529be5d64",
         "screen": "428x926@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -11117,7 +11117,7 @@
     "username": "prosto_aar",
     "language_code": "ru",
     "is_premium": false,
-    "visit_count": 3,
+    "visit_count": 4,
     "ips": [
       {
         "ip": "2a00:808:134:fd3a::1d54:f0b7",
@@ -11129,8 +11129,8 @@
         "lat": 56.946,
         "lon": 24.1059,
         "first_seen": "2026-08-19T19:32:36.178Z",
-        "last_seen": "2026-08-20T07:30:21.728Z",
-        "visits": 2
+        "last_seen": "2026-08-28T07:02:12.573Z",
+        "visits": 3
       },
       {
         "ip": "2a00:808:101:a0ea::112e:a78d",
@@ -11147,6 +11147,44 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-08-28T07:02:12.573Z",
+        "ip": "2a00:808:134:fd3a::1d54:f0b7",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 16; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.200 Mobile Safari/537.36 Telegram-Android/12.9.2 (Samsung SM-A556B; Android 16; SDK 36; HIGH)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "151.0.7922.200",
+        "os": "Android",
+        "os_version": "16",
+        "language": "ru",
+        "cf_ray": "a32172f88fc9e4e1",
+        "screen": "384x832@2.8125",
+        "tz_client": "Europe/Riga",
+        "color_depth": 0,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 8,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru",
+          "ru-RU",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-08-20T07:30:21.728Z",
         "ip": "2a00:808:134:fd3a::1d54:f0b7",
@@ -11269,6 +11307,7 @@
       "webgl_vendor": "Samsung Electronics Co., Ltd.",
       "webgl_renderer": "ANGLE ((Samsung Xclipse 530) on Vulkan 1.3.279)",
       "languages": [
+        "ru",
         "ru-RU",
         "en-US"
       ],
@@ -11281,7 +11320,7 @@
       "device": "Android Phone",
       "browser": "Chrome",
       "os": "Android",
-      "updated_at": "2026-08-20T07:30:21.728Z"
+      "updated_at": "2026-08-28T07:02:12.573Z"
     },
     "geo": {
       "country": "LV",
@@ -11295,8 +11334,8 @@
     },
     "device_keys": [
       "9e7c6251a4b1d999ebfac1efb17347283fcc6481c0d0de8d4cce68346293fd30",
-      "85f0165d49dfc5ba33556920ecaacd78800c6fc9ddfcad15677c1ba2bf451c32",
-      "d56a62ca898025daf768e499aa58c2f2fc4680582f73b56c58f4b670ece653e6"
+      "d56a62ca898025daf768e499aa58c2f2fc4680582f73b56c58f4b670ece653e6",
+      "85f0165d49dfc5ba33556920ecaacd78800c6fc9ddfcad15677c1ba2bf451c32"
     ],
     "source": "bot_start",
     "sources": [
@@ -11304,7 +11343,7 @@
       "webapp"
     ],
     "registered": "2026-06-16T14:12:08.228139",
-    "last_seen": "2026-08-20T07:30:21.728Z"
+    "last_seen": "2026-08-28T07:02:12.573Z"
   },
   "1229091921": {
     "id": 1229091921,
@@ -67971,8 +68010,21 @@
     "username": "drakulans",
     "language_code": "en",
     "is_premium": false,
-    "visit_count": 4,
+    "visit_count": 5,
     "ips": [
+      {
+        "ip": "2a03:ec00:b15c:5acd::2",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Latvijas Mobilais Telefons SIA",
+        "asn": 24921,
+        "lat": 56.946,
+        "lon": 24.10589,
+        "first_seen": "2026-08-28T07:02:22.392Z",
+        "last_seen": "2026-08-28T07:02:22.392Z",
+        "visits": 1
+      },
       {
         "ip": "2a03:ec00:b958:f4d0::2",
         "country": "LV",
@@ -67988,6 +68040,44 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-08-28T07:02:22.392Z",
+        "ip": "2a03:ec00:b15c:5acd::2",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 16; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.137 Mobile Safari/537.36 Telegram-Android/12.10.0 (Xiaomi 24095PCADG; Android 16; SDK 36; HIGH)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "151.0.7922.137",
+        "os": "Android",
+        "os_version": "16",
+        "language": "en",
+        "cf_ray": "a3217335eb4de4d5",
+        "screen": "376x835@3.25",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 8,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "en",
+          "en-GB",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-08-22T11:04:01.633Z",
         "ip": "2a03:ec00:b958:f4d0::2",
@@ -68166,7 +68256,7 @@
       "device": "Android Phone",
       "browser": "Chrome",
       "os": "Android",
-      "updated_at": "2026-08-22T11:04:01.633Z"
+      "updated_at": "2026-08-28T07:02:22.392Z"
     },
     "device_keys": [
       "9fcb5bcd93e3ec0694a222799e51f321d2506f5d07477d2799aadaabe56515fc",
@@ -68180,7 +68270,7 @@
       "asn": 24921,
       "isp": "Latvijas Mobilais Telefons SIA",
       "lat": 56.946,
-      "lon": 24.1059
+      "lon": 24.10589
     },
     "source": "webapp",
     "sources": [
@@ -68188,7 +68278,7 @@
       "chat"
     ],
     "registered": "2026-08-21T21:28:52.016Z",
-    "last_seen": "2026-08-23T17:22:47.914046"
+    "last_seen": "2026-08-28T07:02:22.392Z"
   },
   "5670983898": {
     "id": 5670983898,
