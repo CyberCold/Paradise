@@ -20003,8 +20003,8 @@
     "is_premium": false,
     "source": "webapp",
     "registered": "2026-07-19T04:51:52.040Z",
-    "last_seen": "2026-08-28T07:02:12.573Z",
-    "visit_count": 4,
+    "last_seen": "2026-08-28T15:33:39.442Z",
+    "visit_count": 5,
     "ips": [
       {
         "ip": "2a00:808:134:fd3a::1d54:f0b7",
@@ -20016,8 +20016,8 @@
         "lat": 56.946,
         "lon": 24.1059,
         "first_seen": "2026-08-19T19:32:36.178Z",
-        "last_seen": "2026-08-28T07:02:12.573Z",
-        "visits": 3
+        "last_seen": "2026-08-28T15:33:39.442Z",
+        "visits": 4
       },
       {
         "ip": "2a00:808:101:a0ea::112e:a78d",
@@ -20034,6 +20034,44 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-08-28T15:33:39.442Z",
+        "ip": "2a00:808:134:fd3a::1d54:f0b7",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 16; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.200 Mobile Safari/537.36 Telegram-Android/12.9.2 (Samsung SM-A556B; Android 16; SDK 36; HIGH)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "151.0.7922.200",
+        "os": "Android",
+        "os_version": "16",
+        "language": "ru",
+        "cf_ray": "a32460297bd1e4e7",
+        "screen": "384x832@2.8125",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 8,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru",
+          "ru-RU",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-08-28T07:02:12.573Z",
         "ip": "2a00:808:134:fd3a::1d54:f0b7",
@@ -20207,7 +20245,7 @@
       "device": "Android Phone",
       "browser": "Chrome",
       "os": "Android",
-      "updated_at": "2026-08-28T07:02:12.573Z"
+      "updated_at": "2026-08-28T15:33:39.442Z"
     },
     "device_keys": [
       "9e7c6251a4b1d999ebfac1efb17347283fcc6481c0d0de8d4cce68346293fd30",
@@ -42463,7 +42501,7 @@
         "cf_ray": "a32430d32aa0f582",
         "screen": "430x932@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
