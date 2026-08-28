@@ -11340,10 +11340,11 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-06-16T14:12:08.228139",
-    "last_seen": "2026-08-28T07:02:12.573Z"
+    "last_seen": "2026-08-28T18:22:46.654758"
   },
   "1229091921": {
     "id": 1229091921,
