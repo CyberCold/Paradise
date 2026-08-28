@@ -5173,8 +5173,9 @@
     "source_message_id": 22187,
     "user_id": 1636239325,
     "username": "rob4ik",
-    "status": "new",
-    "date": "28.08.2026 16:23"
+    "status": "done",
+    "date": "28.08.2026 16:23",
+    "done_at": "2026-08-28T16:48:35.975996"
   },
   "#0260": {
     "oid": "#0260",
