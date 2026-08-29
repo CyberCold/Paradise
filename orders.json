@@ -5216,5 +5216,24 @@
     "status": "done",
     "date": "28.08.2026 12:47",
     "done_at": "2026-08-28T20:06:40.225937"
+  },
+  "#0262": {
+    "oid": "#0262",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Blackberry Lemon",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Blackberry Lemon, количество: 1",
+    "source_key": "8530167965:22321",
+    "source_chat_id": 8530167965,
+    "source_message_id": 22321,
+    "user_id": 8530167965,
+    "username": "Parad",
+    "status": "new",
+    "date": "29.08.2026 11:35"
   }
 }
