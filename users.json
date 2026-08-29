@@ -70962,9 +70962,10 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-08-29T17:49:33.526943",
-    "last_seen": "2026-08-29T14:51:40.397Z"
+    "last_seen": "2026-08-29T17:51:10.801507"
   }
 }
