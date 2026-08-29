@@ -5255,5 +5255,24 @@
     "status": "done",
     "date": "29.08.2026 17:20",
     "done_at": "2026-08-29T17:32:20.636196"
+  },
+  "#0264": {
+    "oid": "#0264",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Strawberry Watermelon",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Strawberry Watermelon, количество: 1",
+    "source_key": "1126462144:22338",
+    "source_chat_id": 1126462144,
+    "source_message_id": 22338,
+    "user_id": 1126462144,
+    "username": "Jana",
+    "status": "new",
+    "date": "29.08.2026 17:52"
   }
 }
