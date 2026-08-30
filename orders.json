@@ -5337,7 +5337,8 @@
     "source_message_id": 22353,
     "user_id": 2047923395,
     "username": "Rik.",
-    "status": "new",
-    "date": "30.08.2026 11:36"
+    "status": "done",
+    "date": "30.08.2026 11:36",
+    "done_at": "2026-08-30T18:13:25.423884"
   }
 }
