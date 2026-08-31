@@ -5415,8 +5415,9 @@
     "source_message_id": 22507,
     "user_id": 2022346220,
     "username": "Aleksios",
-    "status": "new",
-    "date": "31.08.2026 15:34"
+    "status": "done",
+    "date": "31.08.2026 15:34",
+    "done_at": "2026-08-31T21:38:51.510208"
   },
   "#0271": {
     "oid": "#0271",
