@@ -5472,7 +5472,8 @@
     "source_message_id": 22546,
     "user_id": 8716402981,
     "username": "guakamoli",
-    "status": "new",
-    "date": "31.08.2026 18:15"
+    "status": "done",
+    "date": "31.08.2026 18:15",
+    "done_at": "2026-08-31T21:38:50.020482"
   }
 }
