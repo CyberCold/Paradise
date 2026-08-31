@@ -5434,8 +5434,9 @@
     "source_message_id": 22542,
     "user_id": 6127676206,
     "username": "syrnik",
-    "status": "new",
-    "date": "31.08.2026 18:07"
+    "status": "done",
+    "date": "31.08.2026 18:07",
+    "done_at": "2026-08-31T20:23:57.389407"
   },
   "#0272": {
     "oid": "#0272",
