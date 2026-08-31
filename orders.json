@@ -5436,5 +5436,42 @@
     "username": "syrnik",
     "status": "new",
     "date": "31.08.2026 18:07"
+  },
+  "#0272": {
+    "oid": "#0272",
+    "items": [
+      {
+        "pid": "vozolneon",
+        "product_name": "Vozol Neon 60k puffs",
+        "flavor": "Cappuccino",
+        "qty": 1
+      },
+      {
+        "pid": "vozolmagic500000",
+        "product_name": "Vozol Magic 50000",
+        "flavor": "Watermelon Bubblegum",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Kiwi Passion Fruit Guava",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Mexican Mango Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol Neon 60k puffs, вкус: Cappuccino, количество: 1\nVozol Magic 50000, вкус: Watermelon Bubblegum, количество: 1\nVozol, вкус: Kiwi Passion Fruit Guava, количество: 1\nVozol, вкус: Mexican Mango Ice, количество: 1",
+    "source_key": "8716402981:22546",
+    "source_chat_id": 8716402981,
+    "source_message_id": 22546,
+    "user_id": 8716402981,
+    "username": "guakamoli",
+    "status": "new",
+    "date": "31.08.2026 18:15"
   }
 }
