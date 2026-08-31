@@ -5417,5 +5417,24 @@
     "username": "Aleksios",
     "status": "new",
     "date": "31.08.2026 15:34"
+  },
+  "#0271": {
+    "oid": "#0271",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Berry Peach",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Привет. Хочу Berry Peach Vozol 30ml 50mg, 1 банку, во сколько можем встретиться? Можем как обычно у том дворе",
+    "source_key": "6127676206:22542",
+    "source_chat_id": 6127676206,
+    "source_message_id": 22542,
+    "user_id": 6127676206,
+    "username": "syrnik",
+    "status": "new",
+    "date": "31.08.2026 18:07"
   }
 }
