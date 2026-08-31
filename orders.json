@@ -5365,5 +5365,30 @@
     "username": "Даниил",
     "status": "new",
     "date": "31.08.2026 12:16"
+  },
+  "#0269": {
+    "oid": "#0269",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Strawberry Kiwi",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Berry Peach",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Strawberry Kiwi, количество: 1\nVozol, вкус: Berry Peach, количество: 1",
+    "source_key": "1380966145:22480",
+    "source_chat_id": 1380966145,
+    "source_message_id": 22480,
+    "user_id": 1380966145,
+    "username": "Виталий",
+    "status": "new",
+    "date": "31.08.2026 13:39"
   }
 }
