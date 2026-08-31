@@ -15859,8 +15859,21 @@
     "username": "napavozuk",
     "language_code": "ru",
     "is_premium": false,
-    "visit_count": 2,
+    "visit_count": 3,
     "ips": [
+      {
+        "ip": "5.241.151.229",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Mobile Services Latvia",
+        "asn": 1257,
+        "lat": 56.946,
+        "lon": 24.10589,
+        "first_seen": "2026-08-31T13:15:10.720Z",
+        "last_seen": "2026-08-31T13:15:10.720Z",
+        "visits": 1
+      },
       {
         "ip": "87.110.76.33",
         "country": "LV",
@@ -15876,6 +15889,42 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-08-31T13:15:10.720Z",
+        "ip": "5.241.151.229",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a33c4d6fef6de4cd",
+        "screen": "414x896@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-07-28T12:39:52.240Z",
         "ip": "87.110.76.33",
@@ -15972,7 +16021,7 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-07-28T12:39:52.240Z"
+      "updated_at": "2026-08-31T13:15:10.720Z"
     },
     "device_keys": [
       "d3c2a0de1530a891b55fa3829d5ae832b4d75e56e8be24dcddf64be26f2340fd",
@@ -15983,8 +16032,8 @@
       "city": "Riga",
       "region": "Riga",
       "timezone": "Europe/Riga",
-      "asn": 12578,
-      "isp": "Address pool for LTC-HOME customers",
+      "asn": 1257,
+      "isp": "Mobile Services Latvia",
       "lat": 56.946,
       "lon": 24.10589
     },
@@ -15994,7 +16043,7 @@
       "webapp"
     ],
     "registered": "2026-05-26T18:50:51.415970",
-    "last_seen": "2026-07-28T12:39:52.240Z"
+    "last_seen": "2026-08-31T13:15:10.720Z"
   },
   "1395844397": {
     "id": 1395844397,
@@ -72299,7 +72348,7 @@
         "cf_ray": "a33c11206cd8a89f",
         "screen": "428x926@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
