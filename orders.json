@@ -5391,5 +5391,30 @@
     "username": "Виталий",
     "status": "new",
     "date": "31.08.2026 13:39"
+  },
+  "#0270": {
+    "oid": "#0270",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Kiwi Passion Fruit Guava",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Peach Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Kiwi Passion Fruit Guava, количество: 1\nVozol, вкус: Peach Ice, количество: 1",
+    "source_key": "2022346220:22507",
+    "source_chat_id": 2022346220,
+    "source_message_id": 22507,
+    "user_id": 2022346220,
+    "username": "Aleksios",
+    "status": "new",
+    "date": "31.08.2026 15:34"
   }
 }
