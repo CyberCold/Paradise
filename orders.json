@@ -5520,5 +5520,24 @@
     "username": "Кристофер",
     "status": "new",
     "date": "01.09.2026 17:08"
+  },
+  "#0275": {
+    "oid": "#0275",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Peach Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Peach Ice, количество: 1",
+    "source_key": "889317251:22612",
+    "source_chat_id": 889317251,
+    "source_message_id": 22612,
+    "user_id": 889317251,
+    "username": "ksussaa",
+    "status": "new",
+    "date": "01.09.2026 17:34"
   }
 }
