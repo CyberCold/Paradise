@@ -6286,10 +6286,11 @@
     "source": "webapp",
     "sources": [
       "webapp",
-      "bot_start"
+      "bot_start",
+      "chat"
     ],
     "registered": "2026-05-25T10:20:41.076Z",
-    "last_seen": "2026-09-01T21:13:49.670Z"
+    "last_seen": "2026-09-02T00:15:01.140727"
   },
   "848178688": {
     "id": 848178688,
