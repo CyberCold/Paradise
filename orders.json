@@ -5539,5 +5539,24 @@
     "username": "ksussaa",
     "status": "new",
     "date": "01.09.2026 17:34"
+  },
+  "#0276": {
+    "oid": "#0276",
+    "items": [
+      {
+        "pid": "vozolmagic500000",
+        "product_name": "Vozol Magic 50000",
+        "flavor": "Watermelon Bubblegum",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol Magic 50000, вкус: Watermelon Bubblegum, количество: 1",
+    "source_key": "5428316045:22621",
+    "source_chat_id": 5428316045,
+    "source_message_id": 22621,
+    "user_id": 5428316045,
+    "username": "noir",
+    "status": "new",
+    "date": "01.09.2026 17:50"
   }
 }
