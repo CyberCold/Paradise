@@ -5580,5 +5580,30 @@
     "username": "Saphartron",
     "status": "cancelled",
     "date": "01.09.2026 19:59"
+  },
+  "#0278": {
+    "oid": "#0278",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Blue Razz Ice",
+        "qty": 1
+      },
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Blackberry Lemon",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Blue Razz Ice, количество: 1\nElfliq, вкус: Blackberry Lemon, количество: 1",
+    "source_key": "5471367072:22682",
+    "source_chat_id": 5471367072,
+    "source_message_id": 22682,
+    "user_id": 5471367072,
+    "username": "Aļoņčiks❤️",
+    "status": "new",
+    "date": "01.09.2026 21:37"
   }
 }
