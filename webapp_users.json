@@ -63995,8 +63995,8 @@
     "is_premium": true,
     "source": "webapp",
     "registered": "2026-09-01T14:41:10.171Z",
-    "last_seen": "2026-09-01T14:41:10.171Z",
-    "visit_count": 1,
+    "last_seen": "2026-09-01T14:41:28.549Z",
+    "visit_count": 2,
     "ips": [
       {
         "ip": "77.38.237.42",
@@ -64008,11 +64008,50 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-09-01T14:41:10.171Z",
-        "last_seen": "2026-09-01T14:41:10.171Z",
-        "visits": 1
+        "last_seen": "2026-09-01T14:41:28.549Z",
+        "visits": 2
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-09-01T14:41:28.549Z",
+        "ip": "77.38.237.42",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0",
+        "device": "Desktop",
+        "browser": "Edge",
+        "browser_version": "151.0.0.0",
+        "os": "Windows",
+        "os_version": null,
+        "language": "ru",
+        "cf_ray": "a34509396dd7e4df",
+        "screen": "1920x1080@1",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 0,
+        "platform": "Win32",
+        "memory": 32,
+        "cores": 12,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru",
+          "en",
+          "en-GB",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-09-01T14:41:10.171Z",
         "ip": "77.38.237.42",
@@ -64031,7 +64070,7 @@
         "cf_ray": "a34508c66be4a89f",
         "screen": "1920x1080@1",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 0,
         "platform": "Win32",
         "memory": 32,
@@ -64079,7 +64118,7 @@
       "device": "Desktop",
       "browser": "Edge",
       "os": "Windows",
-      "updated_at": "2026-09-01T14:41:10.171Z"
+      "updated_at": "2026-09-01T14:41:28.549Z"
     },
     "device_keys": [
       "043cf9b4895c33d8df6c9df3c80ed74c2247a6082cfd364cb92264e7479dbdfe",
