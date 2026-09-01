@@ -5605,5 +5605,24 @@
     "username": "Aļoņčiks❤️",
     "status": "new",
     "date": "01.09.2026 21:37"
+  },
+  "#0279": {
+    "oid": "#0279",
+    "items": [
+      {
+        "pid": "dojo",
+        "product_name": "Dojo Sphere X",
+        "flavor": "Berry Blast Triad",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nDojo Sphere X, вкус: Berry Blast Triad, количество: 1",
+    "source_key": "7646481551:22690",
+    "source_chat_id": 7646481551,
+    "source_message_id": 22690,
+    "user_id": 7646481551,
+    "username": "Викусик 👼🏻",
+    "status": "new",
+    "date": "01.09.2026 23:31"
   }
 }
