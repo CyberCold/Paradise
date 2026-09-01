@@ -5557,8 +5557,9 @@
     "source_message_id": 22621,
     "user_id": 5428316045,
     "username": "noir",
-    "status": "new",
-    "date": "01.09.2026 17:50"
+    "status": "done",
+    "date": "01.09.2026 17:50",
+    "done_at": "2026-09-01T20:49:11.625425"
   },
   "#0277": {
     "oid": "#0277",
