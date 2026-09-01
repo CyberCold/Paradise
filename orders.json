@@ -5559,5 +5559,24 @@
     "username": "noir",
     "status": "new",
     "date": "01.09.2026 17:50"
+  },
+  "#0277": {
+    "oid": "#0277",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Blackberry Lemon",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Blackberry Lemon, количество: 1",
+    "source_key": "1135397601:22681",
+    "source_chat_id": 1135397601,
+    "source_message_id": 22681,
+    "user_id": 1135397601,
+    "username": "Saphartron",
+    "status": "new",
+    "date": "01.09.2026 19:59"
   }
 }
