@@ -39640,10 +39640,11 @@
     "first_name": "Inga",
     "source": "chat",
     "sources": [
-      "chat"
+      "chat",
+      "bot_start"
     ],
     "registered": "2026-07-10T20:02:55.050199",
-    "last_seen": "2026-09-01T08:10:48.821840"
+    "last_seen": "2026-09-01T09:45:41.689631"
   },
   "7214624638": {
     "id": 7214624638,
