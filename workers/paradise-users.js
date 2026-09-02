@@ -459,9 +459,23 @@ const VPN_OR_HOSTING_MARKERS = [
   "colo",
 ];
 
-function decideGeoAccess(geo, env = {}) {
+const LATVIAN_MOBILE_ASNS = new Set([1257, 13194, 24921]);
+const LATVIAN_MOBILE_ORG_MARKERS = [
+  "tele2 latvia",
+  "mobile services latvia",
+  "bite latvija",
+  "latvijas mobilais telefons",
+];
+
+function isLatvianMobileCarrier(geo) {
+  const asn = Number(geo?.asn);
+  if (Number.isFinite(asn) && LATVIAN_MOBILE_ASNS.has(asn)) return true;
+  const organisation = String(geo?.isp || "").trim().toLowerCase();
+  return LATVIAN_MOBILE_ORG_MARKERS.some((marker) => organisation.includes(marker));
+}
+
+function decideGeoAccess(geo, env = {}, fingerprint = {}) {
   const country = String(geo?.country || "unknown").trim().toUpperCase();
-  if (country !== "LV") return { access: false, reason: "country" };
 
   const deniedAsns = new Set(
     String(env.VPN_DENY_ASNS || "")
@@ -481,7 +495,15 @@ function decideGeoAccess(geo, env = {}) {
   const marker = [...VPN_OR_HOSTING_MARKERS, ...extraMarkers].find((value) => organisation.includes(value));
   if (marker) return { access: false, reason: "vpn_or_hosting" };
 
-  return { access: true, reason: "allowed" };
+  if (country === "LV") return { access: true, reason: "allowed" };
+  if (country === "T1" || country === "UNKNOWN" || !country) return { access: false, reason: "country" };
+
+  const clientTimezone = String(fingerprint?.timezone || "").trim();
+  if (clientTimezone === "Europe/Riga" && isLatvianMobileCarrier(geo)) {
+    return { access: true, reason: "latvian_mobile_geo_fallback" };
+  }
+
+  return { access: false, reason: "country" };
 }
 function mergeUser(previousValue, user, visit, fingerprint, deviceKeys, uaParsed, geo, now) {
   const uid = String(user.id);
@@ -699,6 +721,22 @@ function decideAccess(blacklist, userId, ipHash, deviceKeys) {
     : { access: true, blocked: false, match: null };
 }
 
+function decideRequestAccess(blacklist, userId, ipHash, deviceKeys, geo) {
+  const decision = decideAccess(blacklist, userId, ipHash, deviceKeys);
+  if (decision.access || decision.match?.matched_by !== "network" || !isLatvianMobileCarrier(geo)) {
+    return decision;
+  }
+
+  const strongIdentityDecision = decideAccess(blacklist, userId, "", deviceKeys);
+  if (!strongIdentityDecision.access) return strongIdentityDecision;
+  return {
+    access: true,
+    blocked: false,
+    match: null,
+    bypassed: "shared_mobile_network",
+  };
+}
+
 async function recordBlockedUser(env, entryId, userId) {
   const uid = String(userId);
   if (!/^\d+$/.test(uid)) return;
@@ -754,9 +792,11 @@ export const __test = {
   normaliseBlacklist,
   findBlacklistMatch,
   decideAccess,
+  decideRequestAccess,
   verifyTelegramInitData,
   telegramUserFromInitData,
   decideGeoAccess,
+  isLatvianMobileCarrier,
 };
 
 export default {
@@ -777,7 +817,8 @@ export default {
 
       const now = new Date().toISOString();
       const geo = requestGeo(request);
-      const geoDecision = decideGeoAccess(geo, env);
+      const fingerprint = body?.fingerprint && typeof body.fingerprint === "object" ? body.fingerprint : {};
+      const geoDecision = decideGeoAccess(geo, env, fingerprint);
       if (!geoDecision.access) {
         console.log(JSON.stringify({
           event: "access_decision",
@@ -786,21 +827,26 @@ export default {
           matched_by: geoDecision.reason,
           country: geo.country,
           asn: geo.asn,
+          isp: geo.isp,
+          tz_client: cleanText(fingerprint.timezone, 80) || null,
         }));
         return json({ ok: false, blocked: true, error: "Access denied" }, 403, cors);
       }
       const uaParsed = parseUA(request.headers.get("User-Agent") || "");
-      const fingerprint = body?.fingerprint && typeof body.fingerprint === "object" ? body.fingerprint : {};
       const deviceKeys = await deviceKeysForFingerprint(env.BAN_SECRET, fingerprint, uaParsed);
       const clientIp = request.headers.get("CF-Connecting-IP") || "unknown";
       const ipHash = clientIp === "unknown" ? "" : await identifierHash(env.BAN_SECRET, "ip", clientIp);
       const blacklist = await readBlacklistFile(env);
-      const decision = decideAccess(blacklist.data, user.id, ipHash, deviceKeys);
+      const decision = decideRequestAccess(blacklist.data, user.id, ipHash, deviceKeys, geo);
       console.log(JSON.stringify({
         event: "access_decision",
         user_id: String(user.id),
         access: decision.access,
         matched_by: decision.match?.matched_by || "none",
+        bypassed: decision.bypassed || "none",
+        country: geo.country,
+        asn: geo.asn,
+        isp: geo.isp,
       }));
       if (!decision.access) {
         if (ctx?.waitUntil) ctx.waitUntil(recordBlockedUser(env, decision.match.entry.id, user.id).catch(() => {}));

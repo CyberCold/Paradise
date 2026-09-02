@@ -174,17 +174,56 @@ test("access decision is deny-only for active blacklist matches", () => {
   assert.equal(__test.decideAccess(__test.normaliseBlacklist({}), "600", "", []).access, true);
 });
 
-test("geo gate allows Latvia and denies every other Cloudflare country", () => {
+test("geo gate allows Latvia and denies ordinary foreign, Tor, and unknown networks", () => {
   assert.equal(__test.decideGeoAccess({ country: "LV", isp: "SIA Tet" }).access, true);
   assert.deepEqual(__test.decideGeoAccess({ country: "NL", isp: "Residential ISP" }), { access: false, reason: "country" });
   assert.deepEqual(__test.decideGeoAccess({ country: "T1", isp: "Tor network" }), { access: false, reason: "country" });
   assert.deepEqual(__test.decideGeoAccess({ country: "unknown", isp: "" }), { access: false, reason: "country" });
 });
 
+test("geo gate tolerates a mobile geolocation miss only for a Latvian carrier in Riga timezone", () => {
+  assert.deepEqual(
+    __test.decideGeoAccess({ country: "LT", isp: "Tele2 Latvia", asn: 1257 }, {}, { timezone: "Europe/Riga" }),
+    { access: true, reason: "latvian_mobile_geo_fallback" },
+  );
+  assert.deepEqual(
+    __test.decideGeoAccess({ country: "LT", isp: "Bite Latvija", asn: 13194 }, {}, { timezone: "Europe/Vilnius" }),
+    { access: false, reason: "country" },
+  );
+  assert.deepEqual(
+    __test.decideGeoAccess({ country: "T1", isp: "Tele2 Latvia", asn: 1257 }, {}, { timezone: "Europe/Riga" }),
+    { access: false, reason: "country" },
+  );
+});
+
 test("geo gate blocks Latvian hosting and configured VPN networks", () => {
   assert.deepEqual(__test.decideGeoAccess({ country: "LV", isp: "M247 Europe SRL", asn: 9009 }), { access: false, reason: "vpn_or_hosting" });
   assert.deepEqual(__test.decideGeoAccess({ country: "LV", isp: "Residential ISP", asn: 64512 }, { VPN_DENY_ASNS: "64512, 64513" }), { access: false, reason: "vpn_asn" });
   assert.deepEqual(__test.decideGeoAccess({ country: "LV", isp: "Example Tunnel Network" }, { VPN_ORG_DENYLIST: "tunnel" }), { access: false, reason: "vpn_or_hosting" });
+});
+
+test("shared Latvian mobile IP cannot block another account, but account and device bans still apply", () => {
+  const mobileIp = "b".repeat(64);
+  const bannedDevice = "c".repeat(64);
+  const blacklist = __test.normaliseBlacklist({
+    entries: [{
+      id: "ban-mobile",
+      root_user_id: "100",
+      user_ids: ["100"],
+      ip_hashes: [mobileIp],
+      device_hashes: [bannedDevice],
+      active: true,
+    }],
+  });
+  const mobileGeo = { country: "LV", isp: "Latvijas Mobilais Telefons SIA", asn: 24921 };
+
+  assert.equal(__test.decideRequestAccess(blacklist, "200", mobileIp, [], mobileGeo).access, true);
+  assert.equal(__test.decideRequestAccess(blacklist, "100", mobileIp, [], mobileGeo).access, false);
+  assert.equal(__test.decideRequestAccess(blacklist, "200", mobileIp, [bannedDevice], mobileGeo).access, false);
+  assert.equal(
+    __test.decideRequestAccess(blacklist, "200", mobileIp, [], { country: "LV", isp: "SIA Tet", asn: 12578 }).access,
+    false,
+  );
 });
 
 test("non-Latvian request is rejected before GitHub data is read", async () => {

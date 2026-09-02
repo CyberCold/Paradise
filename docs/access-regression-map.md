@@ -34,11 +34,14 @@ The large user databases are used to build the compact blacklist in the dashboar
 | Case | Expected result |
 |---|---|
 | Cloudflare country is LV on a normal residential/mobile network | Continue to blacklist check |
-| Cloudflare country is not LV, is unknown, or is Tor (T1) | 403, no catalogue token |
+| Cloudflare reports a neighbouring country, but the ASN/organisation is a known Latvian mobile carrier and the client timezone is Europe/Riga | Continue to blacklist check; log `latvian_mobile_geo_fallback` |
+| Cloudflare country is not LV without the strict mobile-carrier fallback, is unknown, or is Tor (T1) | 403, no catalogue token |
 | Latvian network organisation matches a hosting/VPN marker | 403, no catalogue token |
 | Latvian ASN is present in VPN_DENY_ASNS | 403, no catalogue token |
 | Telegram ID is in an active entry | 403, no catalogue token |
-| Current IP hash is in an active entry | `403`, account is attached to the entry in background |
+| Current IP hash is in an active entry on a fixed/residential network | `403`, account is attached to the entry in background |
+| Only the current IP hash matches on Tele2 Latvia, Bite Latvija, or LMT mobile networks | `200`; CGNAT IPs are shared and cannot identify one subscriber |
+| Telegram ID or device hash matches on a Latvian mobile network | `403`; the CGNAT exception never overrides strong identity matches |
 | Current device hash is in an active entry | `403`, account is attached to the entry in background |
 | Entry is inactive | `200`, signed catalogue URL |
 | Empty blacklist | `200`, signed catalogue URL |
