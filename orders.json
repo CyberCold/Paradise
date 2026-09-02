@@ -5661,7 +5661,8 @@
     "source_message_id": 22735,
     "user_id": 999151926,
     "username": "Молли",
-    "status": "new",
-    "date": "02.09.2026 14:23"
+    "status": "done",
+    "date": "02.09.2026 14:23",
+    "done_at": "2026-09-02T16:44:37.087229"
   }
 }
