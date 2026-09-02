@@ -5683,5 +5683,24 @@
     "username": "™",
     "status": "new",
     "date": "02.09.2026 20:08"
+  },
+  "#0283": {
+    "oid": "#0283",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Love 777",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Love 777, количество: 1",
+    "source_key": "1357708699:22804",
+    "source_chat_id": 1357708699,
+    "source_message_id": 22804,
+    "user_id": 1357708699,
+    "username": "###",
+    "status": "new",
+    "date": "02.09.2026 20:15"
   }
 }
