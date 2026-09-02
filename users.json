@@ -76796,9 +76796,10 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-09-02T19:35:17.622984",
-    "last_seen": "2026-09-02T17:08:12.466Z"
+    "last_seen": "2026-09-02T20:07:07.759398"
   }
 }
