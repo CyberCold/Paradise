@@ -5766,7 +5766,8 @@
     "source_message_id": 22928,
     "user_id": 890349579,
     "username": ".k.",
-    "status": "new",
-    "date": "03.09.2026 19:10"
+    "status": "done",
+    "date": "03.09.2026 19:10",
+    "done_at": "2026-09-03T20:00:15.573848"
   }
 }
