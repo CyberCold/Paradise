@@ -76646,7 +76646,7 @@
     "username": "katarinnkka",
     "language_code": "ru",
     "is_premium": true,
-    "visit_count": 2,
+    "visit_count": 3,
     "ips": [
       {
         "ip": "5.241.152.42",
@@ -76658,11 +76658,47 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-09-02T07:07:41.715Z",
-        "last_seen": "2026-09-02T15:29:05.431Z",
-        "visits": 2
+        "last_seen": "2026-09-03T12:03:55.783Z",
+        "visits": 3
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-09-03T12:03:55.783Z",
+        "ip": "5.241.152.42",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a3549d318ad3e4ce",
+        "screen": "393x852@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-09-02T15:29:05.431Z",
         "ip": "5.241.152.42",
@@ -76759,7 +76795,7 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-09-02T15:29:05.431Z"
+      "updated_at": "2026-09-03T12:03:55.783Z"
     },
     "device_keys": [
       "ff91c7533f4dc9e57ea11039af770b95b3e355cddb807b8df9087daa0da60c7d",
@@ -76780,7 +76816,7 @@
       "webapp"
     ],
     "registered": "2026-09-02T07:07:41.715Z",
-    "last_seen": "2026-09-02T15:29:05.431Z"
+    "last_seen": "2026-09-03T12:03:55.783Z"
   },
   "1037048075": {
     "id": 1037048075,
@@ -77791,7 +77827,7 @@
         "cf_ray": "a35489d56fe0b11b",
         "screen": "384x854@2.8125",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "Linux aarch64",
         "memory": 8,
