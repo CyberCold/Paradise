@@ -79555,9 +79555,10 @@
     "username": "vhokfi",
     "source": "chat",
     "sources": [
-      "chat"
+      "chat",
+      "bot_start"
     ],
     "registered": "2026-09-04T12:34:50.627004",
-    "last_seen": "2026-09-04T12:34:50.627004"
+    "last_seen": "2026-09-04T12:35:57.434571"
   }
 }
