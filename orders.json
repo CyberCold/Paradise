@@ -5809,5 +5809,30 @@
     "status": "done",
     "date": "04.09.2026 15:27",
     "done_at": "2026-09-04T16:27:45.394091"
+  },
+  "#0289": {
+    "oid": "#0289",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Love 777",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Berry Peach",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Love 777, количество: 1\nVozol, вкус: Berry Peach, количество: 1",
+    "source_key": "6338599725:23008",
+    "source_chat_id": 6338599725,
+    "source_message_id": 23008,
+    "user_id": 6338599725,
+    "username": "Бибизяна",
+    "status": "new",
+    "date": "04.09.2026 20:09"
   }
 }
