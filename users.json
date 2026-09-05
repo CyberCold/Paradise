@@ -28935,7 +28935,7 @@
         "cf_ray": "a364ee8ce82d0429",
         "screen": "360x820@2",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "Linux aarch64",
         "memory": 4,
@@ -80733,7 +80733,7 @@
     "first_name": "Арина",
     "language_code": "ru",
     "is_premium": false,
-    "visit_count": 1,
+    "visit_count": 2,
     "ips": [
       {
         "ip": "2a00:808:135:f694:c8d0:8809:b31a:c324",
@@ -80745,11 +80745,47 @@
         "lat": 56.946,
         "lon": 24.1059,
         "first_seen": "2026-09-05T11:32:34.542Z",
-        "last_seen": "2026-09-05T11:32:34.542Z",
-        "visits": 1
+        "last_seen": "2026-09-05T11:48:41.431Z",
+        "visits": 2
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-09-05T11:48:41.431Z",
+        "ip": "2a00:808:135:f694:c8d0:8809:b31a:c324",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a365019eeb87ef85",
+        "screen": "390x844@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-09-05T11:32:34.542Z",
         "ip": "2a00:808:135:f694:c8d0:8809:b31a:c324",
@@ -80810,7 +80846,7 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-09-05T11:32:34.542Z"
+      "updated_at": "2026-09-05T11:48:41.431Z"
     },
     "device_keys": [
       "ece8692c9d3bfa13a2d74080df3756c784c46279843229375963aefb417ee40a",
@@ -80833,6 +80869,6 @@
       "chat"
     ],
     "registered": "2026-09-05T14:30:30.604298",
-    "last_seen": "2026-09-05T14:45:00.158131"
+    "last_seen": "2026-09-05T11:48:41.431Z"
   }
 }
