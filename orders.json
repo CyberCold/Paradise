@@ -5914,5 +5914,30 @@
     "username": "qssa.",
     "status": "new",
     "date": "05.09.2026 17:34"
+  },
+  "#0294": {
+    "oid": "#0294",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Blackberry Lemon",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Berry Peach",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Blackberry Lemon, количество: 1\nVozol, вкус: Berry Peach, количество: 1",
+    "source_key": "5616781113:23152",
+    "source_chat_id": 5616781113,
+    "source_message_id": 23152,
+    "user_id": 5616781113,
+    "username": "Doomka",
+    "status": "new",
+    "date": "05.09.2026 18:04"
   }
 }
