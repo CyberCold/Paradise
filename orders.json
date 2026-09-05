@@ -5853,5 +5853,24 @@
     "username": "Муза 🦋",
     "status": "new",
     "date": "04.09.2026 21:24"
+  },
+  "#0291": {
+    "oid": "#0291",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Blue Razz Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Blue Razz Ice, количество: 1",
+    "source_key": "6347638514:23032",
+    "source_chat_id": 6347638514,
+    "source_message_id": 23032,
+    "user_id": 6347638514,
+    "username": "Кристофер",
+    "status": "new",
+    "date": "05.09.2026 14:06"
   }
 }
