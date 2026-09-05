@@ -107,6 +107,20 @@
       "stock": "in",
       "badge": "hit",
       "hidden": false
+    },
+    "ivg": {
+      "id": "ivg",
+      "name": "IVG 20mg",
+      "tag": "Salt Nicotine",
+      "subtitle": "10ml · 20mg · Salt Nicotine",
+      "price": "5€ · 1 шт13€ · 3 шт",
+      "image": "https://i.postimg.cc/BvdzySxb/ivg.png",
+      "flavors": [
+        "Ice Menthol"
+      ],
+      "stock": "in",
+      "badge": "",
+      "hidden": false
     }
   },
   "customProducts": [
