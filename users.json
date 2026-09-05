@@ -80791,9 +80791,10 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-09-05T14:30:30.604298",
-    "last_seen": "2026-09-05T11:32:34.542Z"
+    "last_seen": "2026-09-05T14:32:50.044887"
   }
 }
