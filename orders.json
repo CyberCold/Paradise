@@ -5939,5 +5939,24 @@
     "username": "Doomka",
     "status": "cancelled",
     "date": "05.09.2026 18:04"
+  },
+  "#0295": {
+    "oid": "#0295",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Berry Peach",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Berry Peach, количество: 1",
+    "source_key": "1636239325:23169",
+    "source_chat_id": 1636239325,
+    "source_message_id": 23169,
+    "user_id": 1636239325,
+    "username": "rob4ik",
+    "status": "new",
+    "date": "05.09.2026 18:48"
   }
 }
