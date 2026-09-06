@@ -5997,5 +5997,24 @@
     "username": "креветка",
     "status": "new",
     "date": "06.09.2026 18:36"
+  },
+  "#0298": {
+    "oid": "#0298",
+    "items": [
+      {
+        "pid": "vozolmagic500000",
+        "product_name": "Vozol Magic 50000",
+        "flavor": "Cherry Cola",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol Magic 50000, вкус: Cherry Cola, количество: 1",
+    "source_key": "1031926611:23320",
+    "source_chat_id": 1031926611,
+    "source_message_id": 23320,
+    "user_id": 1031926611,
+    "username": "Marija👅",
+    "status": "new",
+    "date": "06.09.2026 19:39"
   }
 }
