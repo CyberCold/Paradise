@@ -5958,5 +5958,24 @@
     "username": "rob4ik",
     "status": "cancelled",
     "date": "05.09.2026 18:48"
+  },
+  "#0296": {
+    "oid": "#0296",
+    "items": [
+      {
+        "pid": "vozolckick",
+        "product_name": "Vozol Star Click 50k puffs",
+        "flavor": "Mixed berry",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol Star Click 50k puffs, вкус: Mixed berry, количество: 1",
+    "source_key": "928475006:23296",
+    "source_chat_id": 928475006,
+    "source_message_id": 23296,
+    "user_id": 928475006,
+    "username": "scamlairryy 💵💸",
+    "status": "new",
+    "date": "06.09.2026 17:20"
   }
 }
