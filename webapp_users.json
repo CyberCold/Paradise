@@ -41518,7 +41518,7 @@
         "cf_ray": "a3750598a82ce4d7",
         "screen": "384x854@2.8125",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "Linux aarch64",
         "memory": 8,
@@ -45898,13 +45898,26 @@
     "first_name": "Nonemad",
     "last_name": "",
     "username": "nonemzerh",
-    "language_code": "ru",
+    "language_code": "en",
     "is_premium": false,
     "source": "webapp",
     "registered": "2026-05-28T07:58:06.242Z",
-    "last_seen": "2026-07-26T09:59:46.523Z",
-    "visit_count": 1,
+    "last_seen": "2026-09-07T10:53:23.189Z",
+    "visit_count": 2,
     "ips": [
+      {
+        "ip": "84.15.222.163",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Bite Latvija",
+        "asn": 13194,
+        "lat": 56.946,
+        "lon": 24.1059,
+        "first_seen": "2026-09-07T10:53:23.189Z",
+        "last_seen": "2026-09-07T10:53:23.189Z",
+        "visits": 1
+      },
       {
         "ip": "5.241.137.89",
         "country": "LV",
@@ -45920,6 +45933,43 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-09-07T10:53:23.189Z",
+        "ip": "84.15.222.163",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36 Edg/152.0.0.0",
+        "device": "Desktop",
+        "browser": "Edge",
+        "browser_version": "152.0.0.0",
+        "os": "Windows",
+        "os_version": null,
+        "language": "en-US",
+        "cf_ray": "a3752b5bddb60429",
+        "screen": "1920x1080@1",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 0,
+        "platform": "Win32",
+        "memory": 16,
+        "cores": 12,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "en-US",
+          "en"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-07-26T09:59:46.523Z",
         "ip": "5.241.137.89",
@@ -45958,31 +46008,34 @@
       }
     ],
     "fingerprint": {
-      "screen": "393x852@3",
+      "screen": "1920x1080@1",
       "timezone": "Europe/Riga",
       "color_depth": 24,
-      "touch": 5,
-      "platform": "iPhone",
-      "memory": 0,
-      "cores": 4,
-      "connection": null,
-      "webgl_vendor": "Apple Inc.",
-      "webgl_renderer": "Apple GPU",
+      "touch": 0,
+      "platform": "Win32",
+      "memory": 16,
+      "cores": 12,
+      "connection": "4g",
+      "webgl_vendor": "Google Inc. (Intel)",
+      "webgl_renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x0000A7A8) Direct3D11 vs_5_0 ps_5_0, D3D11)",
       "languages": [
-        "ru"
+        "en-US",
+        "en"
       ],
-      "ua_platform": null,
-      "ua_platform_version": null,
-      "ua_architecture": null,
-      "ua_bitness": null,
+      "ua_platform": "Windows",
+      "ua_platform_version": "19.0.0",
+      "ua_architecture": "x86",
+      "ua_bitness": "64",
       "ua_model": null,
       "ua_mobile": false,
-      "device": "iPhone",
-      "browser": "unknown",
-      "os": "iOS",
-      "updated_at": "2026-07-26T09:59:46.523Z"
+      "device": "Desktop",
+      "browser": "Edge",
+      "os": "Windows",
+      "updated_at": "2026-09-07T10:53:23.189Z"
     },
     "device_keys": [
+      "d9c010e51c3d5c6003d02cb44ef54dd0b0fc47924ee67c632657ad9bf10ac97b",
+      "67f6a8cdc8844bc7354a0411d8256003b53b83f9d3ac13f01efd3a9c7cdd1ea5",
       "3609c9fd1ca64873c4d8bf0b63d809f1540295df3b9e64e0caaf7392c8c83c71",
       "7d439c9bd1294211dee455a8eda11f4b50f4ad1fc3f8af28332ca282fedca7e1"
     ],
@@ -45991,10 +46044,10 @@
       "city": "Riga",
       "region": "Riga",
       "timezone": "Europe/Riga",
-      "asn": 1257,
-      "isp": "Mobile Services Latvia",
+      "asn": 13194,
+      "isp": "Bite Latvija",
       "lat": 56.946,
-      "lon": 24.10589
+      "lon": 24.1059
     }
   },
   "2144149419": {
