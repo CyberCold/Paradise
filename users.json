@@ -33847,7 +33847,7 @@
         "cf_ray": "a3719f1b5bdfe4e5",
         "screen": "393x852@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -71144,7 +71144,7 @@
     "username": "ny7b0r2nby34578902ny8bu943bny89m",
     "language_code": "ru",
     "is_premium": false,
-    "visit_count": 6,
+    "visit_count": 7,
     "ips": [
       {
         "ip": "2a00:f503:260:6006:f552:8a67:eff3:616a",
@@ -71182,11 +71182,50 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-08-13T10:07:46.038Z",
-        "last_seen": "2026-08-13T10:11:10.072Z",
-        "visits": 3
+        "last_seen": "2026-09-07T01:58:23.547Z",
+        "visits": 4
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-09-07T01:58:23.547Z",
+        "ip": "78.84.40.202",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36 Edg/152.0.0.0",
+        "device": "Desktop",
+        "browser": "Edge",
+        "browser_version": "152.0.0.0",
+        "os": "Windows",
+        "os_version": null,
+        "language": "ru",
+        "cf_ray": "a3721bacfa9bb80a",
+        "screen": "1920x1080@1",
+        "tz_client": "Europe/Kiev",
+        "color_depth": null,
+        "touch": 0,
+        "platform": "Win32",
+        "memory": 32,
+        "cores": 12,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru",
+          "en",
+          "en-GB",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-08-20T17:59:02.285Z",
         "ip": "2a00:f503:260:6006:f552:8a67:eff3:616a",
@@ -71414,18 +71453,21 @@
       }
     ],
     "fingerprint": {
-      "screen": "1440x900@2",
-      "timezone": "Europe/Riga",
+      "screen": "1920x1080@1",
+      "timezone": "Europe/Kiev",
       "color_depth": 24,
       "touch": 0,
-      "platform": "MacIntel",
-      "memory": 0,
-      "cores": 8,
-      "connection": null,
-      "webgl_vendor": "Apple Inc.",
-      "webgl_renderer": "Apple GPU",
+      "platform": "Win32",
+      "memory": 32,
+      "cores": 12,
+      "connection": "4g",
+      "webgl_vendor": "Google Inc. (NVIDIA)",
+      "webgl_renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3060 Ti (0x00002489) Direct3D11 vs_5_0 ps_5_0, D3D11)",
       "languages": [
-        "ru"
+        "ru",
+        "en",
+        "en-GB",
+        "en-US"
       ],
       "ua_platform": "Windows",
       "ua_platform_version": "10.0.0",
@@ -71434,23 +71476,23 @@
       "ua_model": null,
       "ua_mobile": false,
       "device": "Desktop",
-      "browser": "unknown",
-      "os": "macOS",
-      "updated_at": "2026-08-20T17:59:02.285Z"
+      "browser": "Edge",
+      "os": "Windows",
+      "updated_at": "2026-09-07T01:58:23.547Z"
     },
     "device_keys": [
-      "b5a18b101cd9427b96128ae0b472ebfc18881c85a4798b511ac11e726eda6988",
-      "a639968b43c0160788e1de3ff0cd637f03f0859b5e2496003d3fb465ea1f82b4",
       "e3e933ba129867e646691d51164a1d77d95e13e7c2b1c5302cbd55abebe4a813",
-      "31e08a888da0d5e78874ea160138dfa388b3b7a557708b2a171efba1b84ae4c5"
+      "31e08a888da0d5e78874ea160138dfa388b3b7a557708b2a171efba1b84ae4c5",
+      "b5a18b101cd9427b96128ae0b472ebfc18881c85a4798b511ac11e726eda6988",
+      "a639968b43c0160788e1de3ff0cd637f03f0859b5e2496003d3fb465ea1f82b4"
     ],
     "geo": {
       "country": "LV",
       "city": "Riga",
       "region": "Riga",
       "timezone": "Europe/Riga",
-      "asn": 13194,
-      "isp": "Bite Latvija    users",
+      "asn": 12578,
+      "isp": "Address pool for LTC-HOME customers",
       "lat": 56.946,
       "lon": 24.10589
     },
@@ -71460,7 +71502,7 @@
       "chat"
     ],
     "registered": "2026-08-13T10:07:46.038Z",
-    "last_seen": "2026-08-20T23:09:56.368925"
+    "last_seen": "2026-09-07T01:58:23.547Z"
   },
   "5089947054": {
     "id": 5089947054,
