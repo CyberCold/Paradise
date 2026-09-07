@@ -6094,5 +6094,30 @@
     "username": "Terty",
     "status": "new",
     "date": "07.09.2026 14:26"
+  },
+  "#0303": {
+    "oid": "#0303",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Love 777",
+        "qty": 1
+      },
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Blackberry Lemon",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Love 777, количество: 1\nElfliq, вкус: Blackberry Lemon, количество: 1",
+    "source_key": "1135397601:23372",
+    "source_chat_id": 1135397601,
+    "source_message_id": 23372,
+    "user_id": 1135397601,
+    "username": "Saphartron",
+    "status": "new",
+    "date": "07.09.2026 19:20"
   }
 }
