@@ -6207,5 +6207,24 @@
     "username": "Александр",
     "status": "new",
     "date": "08.09.2026 14:48"
+  },
+  "#0308": {
+    "oid": "#0308",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Blackberry Lemon",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Blackberry Lemon, количество: 1\nПолучится сегодня купить в центре и со скольки?",
+    "source_key": "1256781169:23390",
+    "source_chat_id": 1256781169,
+    "source_message_id": 23390,
+    "user_id": 1256781169,
+    "username": "Настя",
+    "status": "new",
+    "date": "08.09.2026 15:15"
   }
 }
