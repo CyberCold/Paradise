@@ -6157,5 +6157,36 @@
     "username": "™🐻🐻مرحبا أيتها الدمية🐻🐻 ™",
     "status": "new",
     "date": "07.09.2026 21:46"
+  },
+  "#0306": {
+    "oid": "#0306",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Berry Peach",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Love 777",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Blue Cotton Candy",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Berry Peach, количество: 1\nVozol, вкус: Love 777, количество: 1\nVozol, вкус: Blue Cotton Candy, количество: 1",
+    "source_key": "8080938020:23381",
+    "source_chat_id": 8080938020,
+    "source_message_id": 23381,
+    "user_id": 8080938020,
+    "username": "Grimus",
+    "status": "new",
+    "date": "08.09.2026 13:32"
   }
 }
