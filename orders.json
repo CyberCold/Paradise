@@ -6352,5 +6352,42 @@
     "username": "Hammer",
     "status": "cancelled",
     "date": "09.09.2026 15:58"
+  },
+  "#0315": {
+    "oid": "#0315",
+    "items": [
+      {
+        "pid": "elfbarlushkingpro",
+        "product_name": "ELFBAR Lush King Pro 40k puffs",
+        "flavor": "Black Grape Ice",
+        "qty": 1
+      },
+      {
+        "pid": "vozolmagic500000",
+        "product_name": "Vozol Magic 50000",
+        "flavor": "Cherry Cola",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Peach Ice",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Love 777",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nELFBAR Lush King Pro 40k puffs, вкус: Black Grape Ice, количество: 1\nVozol Magic 50000, вкус: Cherry Cola, количество: 1\nVozol, вкус: Peach Ice, количество: 1\nVozol, вкус: Love 777, количество: 1",
+    "source_key": "593978432:23585",
+    "source_chat_id": 593978432,
+    "source_message_id": 23585,
+    "user_id": 593978432,
+    "username": "Igors",
+    "status": "new",
+    "date": "09.09.2026 18:00"
   }
 }
