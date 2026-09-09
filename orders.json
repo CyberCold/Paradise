@@ -6327,5 +6327,30 @@
     "username": "♡",
     "status": "cancelled",
     "date": "09.09.2026 14:40"
+  },
+  "#0314": {
+    "oid": "#0314",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Blue Cotton Candy",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Berry Peach",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Blue Cotton Candy, количество: 1\nVozol, вкус: Berry Peach, количество: 1",
+    "source_key": "1350105420:23548",
+    "source_chat_id": 1350105420,
+    "source_message_id": 23548,
+    "user_id": 1350105420,
+    "username": "Hammer",
+    "status": "new",
+    "date": "09.09.2026 15:58"
   }
 }
