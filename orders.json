@@ -6389,5 +6389,30 @@
     "username": "Igors",
     "status": "new",
     "date": "09.09.2026 18:00"
+  },
+  "#0316": {
+    "oid": "#0316",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "не указан",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Peach Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Привет, хочу купить\nЖижу\nVozol Cotton Candy\nVozol Peach Ice",
+    "source_key": "510557368:23591",
+    "source_chat_id": 510557368,
+    "source_message_id": 23591,
+    "user_id": 510557368,
+    "username": "Arman",
+    "status": "new",
+    "date": "09.09.2026 18:08"
   }
 }
