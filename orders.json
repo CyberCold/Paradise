@@ -6251,5 +6251,24 @@
     "username": "Никита",
     "status": "cancelled",
     "date": "08.09.2026 18:01"
+  },
+  "#0310": {
+    "oid": "#0310",
+    "items": [
+      {
+        "pid": "vozolckick",
+        "product_name": "Vozol Star Click 50k puffs",
+        "flavor": "Blackberry pomegranate cherry",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol Star Click 50k puffs, вкус: Blackberry pomegranate cherry, количество: 1",
+    "source_key": "833582731:23511",
+    "source_chat_id": 833582731,
+    "source_message_id": 23511,
+    "user_id": 833582731,
+    "username": "Никита",
+    "status": "new",
+    "date": "09.09.2026 11:48"
   }
 }
