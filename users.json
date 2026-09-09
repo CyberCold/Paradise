@@ -87123,5 +87123,16 @@
     ],
     "registered": "2026-09-09T16:49:13.342869",
     "last_seen": "2026-09-09T16:52:38.849089"
+  },
+  "7512238298": {
+    "id": 7512238298,
+    "first_name": "Sandi",
+    "username": "Diki_arisandi88",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-09-09T17:07:59.176918",
+    "last_seen": "2026-09-09T17:07:59.176918"
   }
 }
