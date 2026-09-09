@@ -87064,5 +87064,16 @@
     ],
     "registered": "2026-09-08T22:03:43.871904",
     "last_seen": "2026-09-08T22:03:43.872403"
+  },
+  "593978432": {
+    "id": 593978432,
+    "first_name": "Igors",
+    "username": "igorjewa",
+    "source": "chat",
+    "sources": [
+      "chat"
+    ],
+    "registered": "2026-09-09T16:06:24.688817",
+    "last_seen": "2026-09-09T16:06:24.688817"
   }
 }
