@@ -87444,5 +87444,16 @@
     ],
     "registered": "2026-09-09T17:07:59.176918",
     "last_seen": "2026-09-09T17:07:59.176918"
+  },
+  "5266923505": {
+    "id": 5266923505,
+    "first_name": "Natalia",
+    "username": "natellaleo",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-09-09T17:58:15.782649",
+    "last_seen": "2026-09-09T17:58:15.782649"
   }
 }
