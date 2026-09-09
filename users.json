@@ -87107,9 +87107,10 @@
     "username": "igorjewa",
     "source": "chat",
     "sources": [
-      "chat"
+      "chat",
+      "bot_start"
     ],
     "registered": "2026-09-09T16:06:24.688817",
-    "last_seen": "2026-09-09T16:06:24.688817"
+    "last_seen": "2026-09-09T16:38:55.805841"
   }
 }
