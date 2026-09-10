@@ -6415,5 +6415,30 @@
     "username": "Arman",
     "status": "cancelled",
     "date": "09.09.2026 18:08"
+  },
+  "#0317": {
+    "oid": "#0317",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Peach Ice",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Berry Peach",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Peach Ice, количество: 1\nVozol, вкус: Berry Peach, количество: 1",
+    "source_key": "2039582824:23709",
+    "source_chat_id": 2039582824,
+    "source_message_id": 23709,
+    "user_id": 2039582824,
+    "username": "Pablo",
+    "status": "new",
+    "date": "10.09.2026 12:57"
   }
 }
