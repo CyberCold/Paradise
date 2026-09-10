@@ -6457,8 +6457,9 @@
     "source_message_id": 23714,
     "user_id": 5428316045,
     "username": "noir",
-    "status": "new",
-    "date": "10.09.2026 13:34"
+    "status": "done",
+    "date": "10.09.2026 13:34",
+    "done_at": "2026-09-10T23:51:22.586476"
   },
   "#0319": {
     "oid": "#0319",
