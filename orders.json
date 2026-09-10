@@ -6459,5 +6459,30 @@
     "username": "noir",
     "status": "new",
     "date": "10.09.2026 13:34"
+  },
+  "#0319": {
+    "oid": "#0319",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Love 777",
+        "qty": 1
+      },
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Blue Razz Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Love 777, количество: 1\nElfliq, вкус: Blue Razz Ice, количество: 1",
+    "source_key": "797019214:23723",
+    "source_chat_id": 797019214,
+    "source_message_id": 23723,
+    "user_id": 797019214,
+    "username": "yulya",
+    "status": "new",
+    "date": "10.09.2026 15:43"
   }
 }
