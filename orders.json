@@ -6440,5 +6440,24 @@
     "username": "Pablo",
     "status": "new",
     "date": "10.09.2026 12:57"
+  },
+  "#0318": {
+    "oid": "#0318",
+    "items": [
+      {
+        "pid": "vozolmagic500000",
+        "product_name": "Vozol Magic 50000",
+        "flavor": "Strawberry Margarita",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol Magic 50000, вкус: Strawberry Margarita, количество: 1",
+    "source_key": "5428316045:23714",
+    "source_chat_id": 5428316045,
+    "source_message_id": 23714,
+    "user_id": 5428316045,
+    "username": "noir",
+    "status": "new",
+    "date": "10.09.2026 13:34"
   }
 }
