@@ -6501,8 +6501,9 @@
     "source_message_id": 23809,
     "user_id": 1889960622,
     "username": "Chmonja",
-    "status": "new",
-    "date": "10.09.2026 18:35"
+    "status": "done",
+    "date": "10.09.2026 18:35",
+    "done_at": "2026-09-10T20:44:10.302978"
   },
   "#0321": {
     "oid": "#0321",
