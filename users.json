@@ -88260,5 +88260,16 @@
     ],
     "registered": "2026-09-10T07:50:01.205Z",
     "last_seen": "2026-09-10T07:50:01.205Z"
+  },
+  "1016752456": {
+    "id": 1016752456,
+    "first_name": "panda",
+    "username": "eshendoss",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-09-10T17:26:34.208118",
+    "last_seen": "2026-09-10T17:26:34.208118"
   }
 }
