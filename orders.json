@@ -6738,8 +6738,9 @@
     "source_message_id": 23954,
     "user_id": 765203119,
     "username": "Anneta",
-    "status": "new",
-    "date": "11.09.2026 16:03"
+    "status": "done",
+    "date": "11.09.2026 16:03",
+    "done_at": "2026-09-11T18:17:48.906678"
   },
   "#0332": {
     "oid": "#0332",
