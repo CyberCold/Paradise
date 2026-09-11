@@ -91325,5 +91325,16 @@
     ],
     "registered": "2026-09-11T19:03:20.838698",
     "last_seen": "2026-09-11T16:05:35.757Z"
+  },
+  "7592774768": {
+    "id": 7592774768,
+    "first_name": "vayzey_god",
+    "username": "CHOCEP_AKOB",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-09-11T19:49:47.076778",
+    "last_seen": "2026-09-11T19:49:47.076778"
   }
 }
