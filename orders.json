@@ -6701,8 +6701,9 @@
     "source_message_id": 23936,
     "user_id": 1350105420,
     "username": "Hammer",
-    "status": "new",
-    "date": "11.09.2026 14:07"
+    "status": "done",
+    "date": "11.09.2026 14:07",
+    "done_at": "2026-09-11T19:03:10.638244"
   },
   "#0330": {
     "oid": "#0330",
