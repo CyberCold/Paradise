@@ -6740,5 +6740,24 @@
     "username": "Anneta",
     "status": "new",
     "date": "11.09.2026 16:03"
+  },
+  "#0332": {
+    "oid": "#0332",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Grape Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Grape Ice, количество: 1",
+    "source_key": "5089947054:23987",
+    "source_chat_id": 5089947054,
+    "source_message_id": 23987,
+    "user_id": 5089947054,
+    "username": "Настя",
+    "status": "new",
+    "date": "11.09.2026 17:27"
   }
 }
