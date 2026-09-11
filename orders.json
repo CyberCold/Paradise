@@ -6606,5 +6606,24 @@
     "username": "panda",
     "status": "new",
     "date": "11.09.2026 12:37"
+  },
+  "#0326": {
+    "oid": "#0326",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Berry Peach",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Berry Peach, количество: 1",
+    "source_key": "7604547726:23868",
+    "source_chat_id": 7604547726,
+    "source_message_id": 23868,
+    "user_id": 7604547726,
+    "username": "𝖘𝖕𝖊𝖊𝖉_𝖉𝖗𝖎𝖛𝖊𝖊",
+    "status": "new",
+    "date": "11.09.2026 12:57"
   }
 }
