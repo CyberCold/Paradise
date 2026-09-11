@@ -90353,9 +90353,10 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-09-11T15:55:44.364063",
-    "last_seen": "2026-09-11T12:58:47.244Z"
+    "last_seen": "2026-09-11T15:59:57.328466"
   }
 }
