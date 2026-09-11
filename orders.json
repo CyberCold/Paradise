@@ -6568,5 +6568,24 @@
     "username": "Котэ",
     "status": "new",
     "date": "11.09.2026 12:10"
+  },
+  "#0324": {
+    "oid": "#0324",
+    "items": [
+      {
+        "pid": "vozolmagic500000",
+        "product_name": "Vozol Magic 50000",
+        "flavor": "Strawmelon Peach",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol Magic 50000, вкус: Strawmelon Peach, количество: 1",
+    "source_key": "1437698107:23849",
+    "source_chat_id": 1437698107,
+    "source_message_id": 23849,
+    "user_id": 1437698107,
+    "username": "Elias",
+    "status": "new",
+    "date": "11.09.2026 12:16"
   }
 }
