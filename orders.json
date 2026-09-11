@@ -6702,5 +6702,24 @@
     "username": "Hammer",
     "status": "new",
     "date": "11.09.2026 14:07"
+  },
+  "#0330": {
+    "oid": "#0330",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "не указан",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Добрый день, можно заказать жижу, vozol, pomegranate lemonade?",
+    "source_key": "765203119:23953",
+    "source_chat_id": 765203119,
+    "source_message_id": 23953,
+    "user_id": 765203119,
+    "username": "Anneta",
+    "status": "new",
+    "date": "11.09.2026 16:02"
   }
 }
