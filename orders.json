@@ -6586,8 +6586,9 @@
     "source_message_id": 23849,
     "user_id": 1437698107,
     "username": "Elias",
-    "status": "new",
-    "date": "11.09.2026 12:16"
+    "status": "done",
+    "date": "11.09.2026 12:16",
+    "done_at": "2026-09-11T15:44:33.539101"
   },
   "#0325": {
     "oid": "#0325",
