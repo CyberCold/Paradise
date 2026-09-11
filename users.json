@@ -90053,5 +90053,16 @@
     ],
     "registered": "2026-09-11T14:38:06.891241",
     "last_seen": "2026-09-11T11:40:18.240Z"
+  },
+  "8923820294": {
+    "id": 8923820294,
+    "first_name": "Купи пива",
+    "username": "Pivkopivasikk",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-09-11T15:06:41.224406",
+    "last_seen": "2026-09-11T15:06:41.224406"
   }
 }
