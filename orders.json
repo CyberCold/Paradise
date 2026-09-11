@@ -6799,7 +6799,8 @@
     "source_message_id": 24121,
     "user_id": 5343367585,
     "username": "Guntis",
-    "status": "new",
-    "date": "11.09.2026 19:20"
+    "status": "done",
+    "date": "11.09.2026 19:20",
+    "done_at": "2026-09-11T20:01:50.847137"
   }
 }
