@@ -6670,5 +6670,36 @@
     "username": "⋆˚࿔ otsukare 𝜗𝜚˚⋆",
     "status": "new",
     "date": "11.09.2026 13:49"
+  },
+  "#0329": {
+    "oid": "#0329",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Kiwi Passion Fruit Guava",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Purple Candy",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Strawberry Kiwi",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Kiwi Passion Fruit Guava, количество: 1\nVozol, вкус: Purple Candy, количество: 1\nVozol, вкус: Strawberry Kiwi, количество: 1",
+    "source_key": "1350105420:23936",
+    "source_chat_id": 1350105420,
+    "source_message_id": 23936,
+    "user_id": 1350105420,
+    "username": "Hammer",
+    "status": "new",
+    "date": "11.09.2026 14:07"
   }
 }
