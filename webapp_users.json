@@ -34947,9 +34947,22 @@
     "is_premium": false,
     "source": "webapp",
     "registered": "2026-07-23T14:26:55.903Z",
-    "last_seen": "2026-09-09T19:27:57.057Z",
-    "visit_count": 14,
+    "last_seen": "2026-09-11T16:16:32.288Z",
+    "visit_count": 15,
     "ips": [
+      {
+        "ip": "5.241.132.135",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Mobile Services Latvia",
+        "asn": 1257,
+        "lat": 56.946,
+        "lon": 24.10589,
+        "first_seen": "2026-09-11T16:16:32.288Z",
+        "last_seen": "2026-09-11T16:16:32.288Z",
+        "visits": 1
+      },
       {
         "ip": "2a00:808:109:c64c::2e03:dc16",
         "country": "LV",
@@ -35069,6 +35082,43 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-09-11T16:16:32.288Z",
+        "ip": "5.241.132.135",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 16; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.199 Mobile Safari/537.36 Telegram-Android/12.10.1 (Samsung SM-S921B; Android 16; SDK 36; HIGH)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "151.0.7922.199",
+        "os": "Android",
+        "os_version": "16",
+        "language": "ru-RU",
+        "cf_ray": "a397fa39ad1e340e",
+        "screen": "360x780@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 8,
+        "cores": 10,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru-RU",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-09-09T19:27:57.057Z",
         "ip": "2a00:808:109:c64c::2e03:dc16",
@@ -35608,7 +35658,6 @@
       "webgl_vendor": "Samsung Electronics Co., Ltd.",
       "webgl_renderer": "ANGLE ((Samsung Xclipse 940) on Vulkan 1.3.279)",
       "languages": [
-        "ru",
         "ru-RU",
         "en-US"
       ],
@@ -35621,10 +35670,11 @@
       "device": "Android Phone",
       "browser": "Chrome",
       "os": "Android",
-      "updated_at": "2026-09-09T19:27:57.057Z"
+      "updated_at": "2026-09-11T16:16:32.288Z"
     },
     "device_keys": [
       "878bd8507c9bedeb86dc1a5aa1c0ca2514a3d21a89115dee475fe16c877900cc",
+      "0d0422897bf9ea28324653791da4ae257cd3b3aacb7abf4ed1464b0314ccffd2",
       "d6747fd2d896c1dbf9132bed57f4437dd46ef4d4276312c41a5cc0a2e0741859",
       "c8916436641cbc4f253007c3b6e335d34bf9350bab66ebef67c9090c36427b9a",
       "de9760565b2e56a0f091a2ead4a7e23772b1c79bd21efc14659ad89a22108b6d",
@@ -35636,9 +35686,9 @@
       "region": "Riga",
       "timezone": "Europe/Riga",
       "asn": 1257,
-      "isp": "Tele2 Latvia",
+      "isp": "Mobile Services Latvia",
       "lat": 56.946,
-      "lon": 24.1059
+      "lon": 24.10589
     }
   },
   "1350105420": {
@@ -80734,7 +80784,7 @@
         "cf_ray": "a397ed1e4c3ac5d3",
         "screen": "384x832@2.8125",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "Linux aarch64",
         "memory": 8,
