@@ -84302,10 +84302,11 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-08-31T16:34:34.780205",
-    "last_seen": "2026-08-31T13:36:39.110Z"
+    "last_seen": "2026-09-11T16:47:15.297625"
   },
   "2084814089": {
     "id": 2084814089,
