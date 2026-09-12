@@ -2920,7 +2920,8 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-05-27T12:19:09.893223",
     "last_seen": "2026-09-12T11:37:55.587Z"
