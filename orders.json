@@ -6822,5 +6822,24 @@
     "username": "Elias",
     "status": "new",
     "date": "12.09.2026 09:58"
+  },
+  "#0336": {
+    "oid": "#0336",
+    "items": [
+      {
+        "pid": "vozolckick",
+        "product_name": "Vozol Star Click 50k puffs",
+        "flavor": "Mixed berry",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте. Хочу купить vozol star click, вкус mixed berry. Можно будет сегодня примерно в 19?",
+    "source_key": "1176410338:24150",
+    "source_chat_id": 1176410338,
+    "source_message_id": 24150,
+    "user_id": 1176410338,
+    "username": "Ri",
+    "status": "new",
+    "date": "12.09.2026 10:13"
   }
 }
