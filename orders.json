@@ -6976,7 +6976,8 @@
     "source_message_id": 24257,
     "user_id": 1636239325,
     "username": "rob4ik",
-    "status": "new",
-    "date": "12.09.2026 17:43"
+    "status": "done",
+    "date": "12.09.2026 17:43",
+    "done_at": "2026-09-12T18:45:54.264050"
   }
 }
