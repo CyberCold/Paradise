@@ -92380,5 +92380,16 @@
     ],
     "registered": "2026-09-12T14:34:55.598490",
     "last_seen": "2026-09-12T17:02:17.176145"
+  },
+  "7841534473": {
+    "id": 7841534473,
+    "first_name": "Kia McLaren pro",
+    "username": "siadeb22",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-09-12T18:10:55.864319",
+    "last_seen": "2026-09-12T18:10:55.864319"
   }
 }
