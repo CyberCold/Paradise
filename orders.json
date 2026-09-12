@@ -6860,5 +6860,24 @@
     "username": "Haval",
     "status": "new",
     "date": "12.09.2026 12:55"
+  },
+  "#0338": {
+    "oid": "#0338",
+    "items": [
+      {
+        "pid": "vozolmagic500000",
+        "product_name": "Vozol Magic 50000",
+        "flavor": "Cherry Strazz",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol Magic 50000, вкус: Cherry Strazz, количество: 1",
+    "source_key": "1437698107:24161",
+    "source_chat_id": 1437698107,
+    "source_message_id": 24161,
+    "user_id": 1437698107,
+    "username": "Elias",
+    "status": "new",
+    "date": "12.09.2026 13:39"
   }
 }
