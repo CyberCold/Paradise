@@ -361,5 +361,16 @@
     "comment": null,
     "date": "22.08.2026 11:23",
     "sent_to_channel": true
+  },
+  "#0329_Vozol": {
+    "oid": "#0329",
+    "user_id": 1350105420,
+    "username": "Hammer",
+    "product_name": "Vozol",
+    "flavor": "Kiwi Passion Fruit Guava",
+    "rating": 5,
+    "comment": null,
+    "date": "12.09.2026 19:07",
+    "sent_to_channel": true
   }
 }
