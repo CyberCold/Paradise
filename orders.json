@@ -7050,5 +7050,30 @@
     "username": "Молли",
     "status": "new",
     "date": "13.09.2026 12:06"
+  },
+  "#0347": {
+    "oid": "#0347",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Mixed Berries",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Frozen Grape Soda",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Mixed Berries, количество: 1\nVozol, вкус: Frozen Grape Soda, количество: 1",
+    "source_key": "1027661184:24305",
+    "source_chat_id": 1027661184,
+    "source_message_id": 24305,
+    "user_id": 1027661184,
+    "username": "Лиза ×>×",
+    "status": "new",
+    "date": "13.09.2026 13:29"
   }
 }
