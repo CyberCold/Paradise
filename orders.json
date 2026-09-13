@@ -7142,8 +7142,9 @@
     "source_message_id": 24339,
     "user_id": 2098039782,
     "username": "Amanda",
-    "status": "new",
-    "date": "13.09.2026 14:48"
+    "status": "done",
+    "date": "13.09.2026 14:48",
+    "done_at": "2026-09-13T18:49:47.760302"
   },
   "#0351": {
     "oid": "#0351",
