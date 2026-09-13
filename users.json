@@ -93746,6 +93746,17 @@
       "chat"
     ],
     "registered": "2026-09-13T14:25:45.258687",
-    "last_seen": "2026-09-13T14:34:07.211714"
+    "last_seen": "2026-09-13T14:35:34.810667"
+  },
+  "2098039782": {
+    "id": 2098039782,
+    "first_name": "Amanda",
+    "username": "amimo3",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-09-13T14:35:24.240231",
+    "last_seen": "2026-09-13T14:35:24.240231"
   }
 }
