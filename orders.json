@@ -7184,5 +7184,24 @@
     "username": "Эрик",
     "status": "new",
     "date": "13.09.2026 18:51"
+  },
+  "#0353": {
+    "oid": "#0353",
+    "items": [
+      {
+        "pid": "vozolckick",
+        "product_name": "Vozol Star Click 50k puffs",
+        "flavor": "Blueberry energy",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol Star Click 50k puffs, вкус: Blueberry energy, количество: 1",
+    "source_key": "8176873894:24516",
+    "source_chat_id": 8176873894,
+    "source_message_id": 24516,
+    "user_id": 8176873894,
+    "username": "Эрик",
+    "status": "new",
+    "date": "13.09.2026 20:08"
   }
 }
