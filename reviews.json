@@ -394,5 +394,16 @@
     "comment": null,
     "date": "13.09.2026 17:03",
     "sent_to_channel": true
+  },
+  "#0341_Vozol": {
+    "oid": "#0341",
+    "user_id": 2065941330,
+    "username": "Андрик",
+    "product_name": "Vozol",
+    "flavor": "Strawberry Watermelon",
+    "rating": 4,
+    "comment": null,
+    "date": "13.09.2026 17:47",
+    "sent_to_channel": true
   }
 }
