@@ -93922,7 +93922,8 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-09-13T14:35:24.240231",
     "last_seen": "2026-09-13T11:47:33.985Z"
