@@ -372,5 +372,16 @@
     "comment": null,
     "date": "12.09.2026 19:07",
     "sent_to_channel": true
+  },
+  "#0333_Vozol": {
+    "oid": "#0333",
+    "user_id": 1345938654,
+    "username": "𝔻𝕚𝕒𝕟𝕒",
+    "product_name": "Vozol",
+    "flavor": "Cherry Cola",
+    "rating": 5,
+    "comment": null,
+    "date": "13.09.2026 08:20",
+    "sent_to_channel": true
   }
 }
