@@ -7119,5 +7119,24 @@
     "username": "Akula geng",
     "status": "new",
     "date": "13.09.2026 14:29"
+  },
+  "#0350": {
+    "oid": "#0350",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Pomegranate Lemonade",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Pomegranate Lemonade, количество: 1",
+    "source_key": "2098039782:24339",
+    "source_chat_id": 2098039782,
+    "source_message_id": 24339,
+    "user_id": 2098039782,
+    "username": "Amanda",
+    "status": "new",
+    "date": "13.09.2026 14:48"
   }
 }
