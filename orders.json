@@ -7025,5 +7025,30 @@
     "username": "dian444ik",
     "status": "new",
     "date": "13.09.2026 12:03"
+  },
+  "#0346": {
+    "oid": "#0346",
+    "items": [
+      {
+        "pid": "elfbarlushkingpro",
+        "product_name": "ELFBAR Lush King Pro 40k puffs",
+        "flavor": "Sour Strawberry Dragonfruit",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Peach Mango Watermelon",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nELFBAR Lush King Pro 40k puffs, вкус: Sour Strawberry Dragonfruit, количество: 1\nVozol, вкус: Peach Mango Watermelon, количество: 1",
+    "source_key": "999151926:24297",
+    "source_chat_id": 999151926,
+    "source_message_id": 24297,
+    "user_id": 999151926,
+    "username": "Молли",
+    "status": "new",
+    "date": "13.09.2026 12:06"
   }
 }
