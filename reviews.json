@@ -405,5 +405,16 @@
     "comment": null,
     "date": "13.09.2026 17:47",
     "sent_to_channel": true
+  },
+  "#0343_Vozol": {
+    "oid": "#0343",
+    "user_id": 1636239325,
+    "username": "rob4ik",
+    "product_name": "Vozol",
+    "flavor": "Dragon Fruit Banana Cherry",
+    "rating": 5,
+    "comment": null,
+    "date": "13.09.2026 18:46",
+    "sent_to_channel": true
   }
 }
