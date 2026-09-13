@@ -13525,6 +13525,116 @@
       "lon": 24.10589
     }
   },
+  "891152397": {
+    "id": 891152397,
+    "first_name": "♰",
+    "last_name": "",
+    "username": "sxxxgxd",
+    "language_code": "ru",
+    "is_premium": true,
+    "source": "webapp",
+    "registered": "2026-09-13T21:56:32.496Z",
+    "last_seen": "2026-09-13T21:56:32.496Z",
+    "visit_count": 1,
+    "ips": [
+      {
+        "ip": "2a00:808:15b:64cf:a552:ca7f:8e01:66a1",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Tele2 Latvia",
+        "asn": 1257,
+        "lat": 56.946,
+        "lon": 24.1059,
+        "first_seen": "2026-09-13T21:56:32.496Z",
+        "last_seen": "2026-09-13T21:56:32.496Z",
+        "visits": 1
+      }
+    ],
+    "visits": [
+      {
+        "timestamp": "2026-09-13T21:56:32.496Z",
+        "ip": "2a00:808:15b:64cf:a552:ca7f:8e01:66a1",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36 Edg/152.0.0.0",
+        "device": "Desktop",
+        "browser": "Edge",
+        "browser_version": "152.0.0.0",
+        "os": "Windows",
+        "os_version": null,
+        "language": "ru",
+        "cf_ray": "a3aa6706a89cce1a",
+        "screen": "1920x1080@1",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 0,
+        "platform": "Win32",
+        "memory": 32,
+        "cores": 16,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru",
+          "en",
+          "en-GB",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      }
+    ],
+    "fingerprint": {
+      "screen": "1920x1080@1",
+      "timezone": "Europe/Riga",
+      "color_depth": 24,
+      "touch": 0,
+      "platform": "Win32",
+      "memory": 32,
+      "cores": 16,
+      "connection": "4g",
+      "webgl_vendor": "Google Inc. (NVIDIA)",
+      "webgl_renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002207) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "languages": [
+        "ru",
+        "en",
+        "en-GB",
+        "en-US"
+      ],
+      "ua_platform": "Windows",
+      "ua_platform_version": "19.0.0",
+      "ua_architecture": "x86",
+      "ua_bitness": "64",
+      "ua_model": null,
+      "ua_mobile": false,
+      "device": "Desktop",
+      "browser": "Edge",
+      "os": "Windows",
+      "updated_at": "2026-09-13T21:56:32.496Z"
+    },
+    "device_keys": [
+      "c35ff4563cac058997f36c58adffcfb5b21e060e36e4521b7dc7130b04d10fbc",
+      "5285c680d47ce5943b23d9c8687f006887eb7a46d7881a9987b6dc30c11b1f75"
+    ],
+    "geo": {
+      "country": "LV",
+      "city": "Riga",
+      "region": "Riga",
+      "timezone": "Europe/Riga",
+      "asn": 1257,
+      "isp": "Tele2 Latvia",
+      "lat": 56.946,
+      "lon": 24.1059
+    }
+  },
   "909283188": {
     "id": 909283188,
     "first_name": "Yuga",
@@ -83528,7 +83638,7 @@
         "cf_ray": "a3a9904719e0cb3b",
         "screen": "384x832@2.8125",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "Linux aarch64",
         "memory": 8,
