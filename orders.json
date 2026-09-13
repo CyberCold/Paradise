@@ -7122,8 +7122,9 @@
     "source_message_id": 24329,
     "user_id": 1157241519,
     "username": "Akula geng",
-    "status": "new",
-    "date": "13.09.2026 14:29"
+    "status": "done",
+    "date": "13.09.2026 14:29",
+    "done_at": "2026-09-13T18:49:47.755297"
   },
   "#0350": {
     "oid": "#0350",
