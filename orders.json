@@ -7242,5 +7242,36 @@
     "username": "ﾠ",
     "status": "cancelled",
     "date": "15.09.2026 16:00"
+  },
+  "#0356": {
+    "oid": "#0356",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Blueberry Watermelon",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Pomegranate Lemonade",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Strawberry Watermelon",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу повторить заказ:\nVozol, вкус: Blueberry Watermelon, количество: 1\nVozol, вкус: Pomegranate Lemonade, количество: 1\nVozol, вкус: Strawberry Watermelon, количество: 1",
+    "source_key": "2093008890:24616",
+    "source_chat_id": 2093008890,
+    "source_message_id": 24616,
+    "user_id": 2093008890,
+    "username": "n78brg89723gnr7283nbrbnm7yr823b7ht32rnb87hrt932nbh79t8r32hnmbt32",
+    "status": "new",
+    "date": "15.09.2026 16:40"
   }
 }
