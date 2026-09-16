@@ -7292,5 +7292,24 @@
     "username": "Why???",
     "status": "new",
     "date": "16.09.2026 10:59"
+  },
+  "#0358": {
+    "oid": "#0358",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Dragon Fruit Banana Cherry",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Dragon Fruit Banana Cherry, количество: 1",
+    "source_key": "8609986083:24644",
+    "source_chat_id": 8609986083,
+    "source_message_id": 24644,
+    "user_id": 8609986083,
+    "username": "Why???",
+    "status": "new",
+    "date": "16.09.2026 11:00"
   }
 }
