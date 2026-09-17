@@ -7368,5 +7368,36 @@
     "username": "Никита",
     "status": "new",
     "date": "17.09.2026 16:49"
+  },
+  "#0362": {
+    "oid": "#0362",
+    "items": [
+      {
+        "pid": "vozolckick",
+        "product_name": "Vozol Star Click 50k puffs",
+        "flavor": "Love 777",
+        "qty": 3
+      },
+      {
+        "pid": "vozolckick",
+        "product_name": "Vozol Star Click 50k puffs",
+        "flavor": "Peach ice",
+        "qty": 6
+      },
+      {
+        "pid": "vozolckick",
+        "product_name": "Vozol Star Click 50k puffs",
+        "flavor": "Blueberry energy",
+        "qty": 30
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol Star Click 50k puffs, вкус: Love 777, количество: 3\nVozol Star Click 50k puffs, вкус: Peach ice, количество: 6\nVozol Star Click 50k puffs, вкус: Blueberry energy, количество: 30",
+    "source_key": "840744310:24825",
+    "source_chat_id": 840744310,
+    "source_message_id": 24825,
+    "user_id": 840744310,
+    "username": "Никита",
+    "status": "new",
+    "date": "17.09.2026 16:49"
   }
 }
