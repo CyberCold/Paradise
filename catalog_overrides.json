@@ -170,6 +170,40 @@
       "stock": "in",
       "badge": "new",
       "hidden": false
+    },
+    {
+      "id": "yami",
+      "name": "Yami",
+      "tag": "Salt Nicotine",
+      "subtitle": "30ml • salt nicotine",
+      "price": "10€",
+      "image": "https://i.postimg.cc/43MSQF7N/0AE194A5-9C51-4A54-B12E-5ACC9AF269C1.png",
+      "flavors": [
+        "Apple Peach",
+        "Blue Razz Lemonade",
+        "Blueberry Sour Raspberry",
+        "Cherry Cola",
+        "Cherry Ice",
+        "Coconut Candy",
+        "Dragon Fruit Banana Cherry",
+        "Energy Ice",
+        "Grape Energy",
+        "Jasmine Raspberry",
+        "Lemon Lime",
+        "Love 777",
+        "Mixed Berries",
+        "Pink Lemonade",
+        "Pistachio Cream",
+        "Red Mojito",
+        "Spearmint",
+        "Strawberry Banana",
+        "Strawberry Raspberry Cherry Ice",
+        "Watermelon Bubblegum",
+        "Watermelon Cherry"
+      ],
+      "stock": "in",
+      "badge": "new",
+      "hidden": false
     }
   ],
   "order": [
@@ -182,6 +216,7 @@
     "truesalt",
     "elfbarlushkingpro",
     "dojo",
-    "vozolneon"
+    "vozolneon",
+    "yami"
   ]
 }
