@@ -42737,6 +42737,19 @@
     "first_name": "ﾠ",
     "ips": [
       {
+        "ip": "5.241.136.144",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Mobile Services Latvia",
+        "asn": 1257,
+        "lat": 56.946,
+        "lon": 24.10589,
+        "first_seen": "2026-09-17T18:17:49.180Z",
+        "last_seen": "2026-09-17T18:17:49.180Z",
+        "visits": 1
+      },
+      {
         "ip": "2a00:808:107:b256:8d42:238c:206d:b6f",
         "country": "LV",
         "city": "Riga",
@@ -42982,19 +42995,6 @@
         "first_seen": "2026-08-07T01:21:40.094Z",
         "last_seen": "2026-08-08T04:28:13.836Z",
         "visits": 4
-      },
-      {
-        "ip": "94.30.232.243",
-        "country": "LV",
-        "city": "Riga",
-        "region": "Riga",
-        "isp": "BALTCOM Broadband Customers",
-        "asn": 20910,
-        "lat": 56.946,
-        "lon": 24.10589,
-        "first_seen": "2026-08-06T14:56:22.419Z",
-        "last_seen": "2026-09-13T17:11:29.121Z",
-        "visits": 41
       }
     ],
     "request_history": [
@@ -43037,8 +43037,44 @@
     "last_name": "ᅠ ᅠ ᅠ ᅠ ᅠ",
     "language_code": "ru",
     "is_premium": true,
-    "visit_count": 196,
+    "visit_count": 197,
     "visits": [
+      {
+        "timestamp": "2026-09-17T18:17:49.180Z",
+        "ip": "5.241.136.144",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a3ca1c220e79e4e7",
+        "screen": "420x912@3",
+        "tz_client": "Europe/Minsk",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-09-13T22:24:18.661Z",
         "ip": "2a00:808:107:b256:8d42:238c:206d:b6f",
@@ -44115,42 +44151,6 @@
         "ua_bitness": null,
         "ua_model": null,
         "ua_mobile": false
-      },
-      {
-        "timestamp": "2026-08-30T11:45:10.001Z",
-        "ip": "2a00:808:132:b6cf:15d9:47b4:2cc8:3651",
-        "country": "LV",
-        "city": "Riga",
-        "region": "Riga",
-        "url": "https://paradiseminiapp.pages.dev/app",
-        "referrer": null,
-        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
-        "device": "iPhone",
-        "browser": "unknown",
-        "browser_version": null,
-        "os": "iOS",
-        "os_version": "18.7",
-        "language": "ru",
-        "cf_ray": "a3338c351daece1b",
-        "screen": "420x912@3",
-        "tz_client": "Europe/Riga",
-        "color_depth": 0,
-        "touch": 5,
-        "platform": "iPhone",
-        "memory": 0,
-        "cores": 4,
-        "connection": null,
-        "webgl_vendor": null,
-        "webgl_renderer": null,
-        "languages": [
-          "ru"
-        ],
-        "ua_platform": null,
-        "ua_platform_version": null,
-        "ua_architecture": null,
-        "ua_bitness": null,
-        "ua_model": null,
-        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -44176,7 +44176,7 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-09-13T22:24:18.661Z"
+      "updated_at": "2026-09-17T18:17:49.180Z"
     },
     "geo": {
       "country": "LV",
@@ -44184,9 +44184,9 @@
       "region": "Riga",
       "timezone": "Europe/Riga",
       "asn": 1257,
-      "isp": "Tele2 Latvia",
+      "isp": "Mobile Services Latvia",
       "lat": 56.946,
-      "lon": 24.1059
+      "lon": 24.10589
     },
     "device_keys": [
       "77c48f956ea7e54ee342a6b442842dc4d88b7d0fab3caedb7c8d525dd2203154",
@@ -44204,7 +44204,7 @@
       "chat"
     ],
     "registered": "2026-05-29T13:01:10.148Z",
-    "last_seen": "2026-09-15T15:58:40.667965"
+    "last_seen": "2026-09-17T18:17:49.180Z"
   },
   "5637938428": {
     "id": 5637938428,
@@ -91764,7 +91764,7 @@
         "cf_ray": "a3c97d8d784fe4cb",
         "screen": "393x852@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
