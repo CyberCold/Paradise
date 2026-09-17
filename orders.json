@@ -7401,5 +7401,24 @@
     "username": "Никита",
     "status": "cancelled",
     "date": "17.09.2026 16:49"
+  },
+  "#0363": {
+    "oid": "#0363",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Mixed Berries",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Mixed Berries, количество: 1",
+    "source_key": "1357708699:24880",
+    "source_chat_id": 1357708699,
+    "source_message_id": 24880,
+    "user_id": 1357708699,
+    "username": "###",
+    "status": "new",
+    "date": "17.09.2026 19:30"
   }
 }
