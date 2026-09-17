@@ -133,6 +133,20 @@
       "stock": "in",
       "badge": "",
       "hidden": false
+    },
+    "truesalt": {
+      "id": "truesalt",
+      "name": "True Salt 20mg",
+      "tag": "Salt Nicotine",
+      "subtitle": "10ml · 20mg · Salt Nicotine",
+      "price": "5€ · 1 шт13€ · 3 шт",
+      "image": "https://i.postimg.cc/63rMmdWF/true-salt.png",
+      "flavors": [
+        "Banana Ice"
+      ],
+      "stock": "in",
+      "badge": "",
+      "hidden": false
     }
   },
   "customProducts": [
