@@ -15616,12 +15616,108 @@
     "id": 1175612690,
     "first_name": "Алёна",
     "username": "kakskazes",
+    "language_code": "ru",
+    "is_premium": false,
+    "visit_count": 1,
+    "ips": [
+      {
+        "ip": "159.148.144.173",
+        "country": "LV",
+        "city": "Daugavpils",
+        "region": "Daugavpils",
+        "isp": "Daugavpils Universitate",
+        "asn": 6832,
+        "lat": 55.88333,
+        "lon": 26.53333,
+        "first_seen": "2026-09-17T14:21:56.608Z",
+        "last_seen": "2026-09-17T14:21:56.608Z",
+        "visits": 1
+      }
+    ],
+    "visits": [
+      {
+        "timestamp": "2026-09-17T14:21:56.608Z",
+        "ip": "159.148.144.173",
+        "country": "LV",
+        "city": "Daugavpils",
+        "region": "Daugavpils",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a3c8c29c9a31e4d1",
+        "screen": "414x896@2",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      }
+    ],
+    "fingerprint": {
+      "screen": "414x896@2",
+      "timezone": "Europe/Riga",
+      "color_depth": 24,
+      "touch": 5,
+      "platform": "iPhone",
+      "memory": 0,
+      "cores": 4,
+      "connection": null,
+      "webgl_vendor": "Apple Inc.",
+      "webgl_renderer": "Apple GPU",
+      "languages": [
+        "ru"
+      ],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
+      "device": "iPhone",
+      "browser": "unknown",
+      "os": "iOS",
+      "updated_at": "2026-09-17T14:21:56.608Z"
+    },
+    "device_keys": [
+      "0dd39d09dbcff7fcbfe0c2678b8df5f5c34336bb46354dafee765359d8aa1035",
+      "11320b6d622c1375efb93ed1d61d383b71ab194ae879e1f1615625d9b5c21d70"
+    ],
+    "geo": {
+      "country": "LV",
+      "city": "Daugavpils",
+      "region": "Daugavpils",
+      "timezone": "Europe/Riga",
+      "asn": 6832,
+      "isp": "Daugavpils Universitate",
+      "lat": 55.88333,
+      "lon": 26.53333
+    },
     "source": "bot_start",
     "sources": [
-      "bot_start"
+      "bot_start",
+      "webapp"
     ],
     "registered": "2026-07-10T00:23:21.994173",
-    "last_seen": "2026-07-10T00:23:21.994173"
+    "last_seen": "2026-09-17T14:21:56.608Z"
   },
   "1188327039": {
     "id": 1188327039,
@@ -66820,7 +66916,7 @@
         "cf_ray": "a3c8b3dd1c91e4d2",
         "screen": "390x844@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
