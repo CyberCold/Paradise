@@ -7420,5 +7420,24 @@
     "username": "###",
     "status": "cancelled",
     "date": "17.09.2026 19:30"
+  },
+  "#0364": {
+    "oid": "#0364",
+    "items": [
+      {
+        "pid": "ivg",
+        "product_name": "IVG 20mg",
+        "flavor": "Ice Menthol",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nIVG 20mg, вкус: Ice Menthol, количество: 1",
+    "source_key": "1630328018:24911",
+    "source_chat_id": 1630328018,
+    "source_message_id": 24911,
+    "user_id": 1630328018,
+    "username": "ᅠ ︎ ︎",
+    "status": "new",
+    "date": "18.09.2026 08:20"
   }
 }
