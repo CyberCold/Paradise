@@ -7439,5 +7439,24 @@
     "username": "ᅠ ︎ ︎",
     "status": "new",
     "date": "18.09.2026 08:20"
+  },
+  "#0365": {
+    "oid": "#0365",
+    "items": [
+      {
+        "pid": "vozolckick",
+        "product_name": "Vozol Star Click 50k puffs",
+        "flavor": "Peach ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol Star Click 50k puffs, вкус: Peach ice, количество: 1",
+    "source_key": "5225162740:24941",
+    "source_chat_id": 5225162740,
+    "source_message_id": 24941,
+    "user_id": 5225162740,
+    "username": "Оля",
+    "status": "new",
+    "date": "18.09.2026 15:50"
   }
 }
