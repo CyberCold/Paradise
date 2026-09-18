@@ -7540,8 +7540,9 @@
     "source_message_id": 25011,
     "user_id": 5923754131,
     "username": "ariana",
-    "status": "new",
-    "date": "18.09.2026 17:20"
+    "status": "done",
+    "date": "18.09.2026 17:20",
+    "done_at": "2026-09-18T19:42:49.042462"
   },
   "#0369": {
     "oid": "#0369",
