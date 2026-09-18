@@ -6758,7 +6758,7 @@
     "username": "CamipaMamaa",
     "language_code": "ru",
     "is_premium": true,
-    "visit_count": 34,
+    "visit_count": 35,
     "ips": [
       {
         "ip": "2a00:f503:250:85fe:5170:28da:3b9:aed2",
@@ -6770,8 +6770,8 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-09-18T09:56:57.375Z",
-        "last_seen": "2026-09-18T13:20:12.514Z",
-        "visits": 2
+        "last_seen": "2026-09-18T15:08:09.651Z",
+        "visits": 3
       },
       {
         "ip": "2a00:f503:250:222:2dcf:df15:40d0:7c08",
@@ -7022,6 +7022,42 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-09-18T15:08:09.651Z",
+        "ip": "2a00:f503:250:85fe:5170:28da:3b9:aed2",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a3d143b00f632aa2",
+        "screen": "402x874@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-09-18T13:20:12.514Z",
         "ip": "2a00:f503:250:85fe:5170:28da:3b9:aed2",
@@ -8065,40 +8101,6 @@
         "ua_bitness": null,
         "ua_model": null,
         "ua_mobile": false
-      },
-      {
-        "timestamp": "2026-07-18T18:32:45.880Z",
-        "ip": "84.15.222.242",
-        "country": "LV",
-        "city": "Riga",
-        "region": "Riga",
-        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
-        "referrer": "https://paradiseminiapp.pages.dev/",
-        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
-        "device": "iPhone",
-        "browser": "unknown",
-        "browser_version": null,
-        "os": "iOS",
-        "os_version": "18.7",
-        "language": "ru",
-        "cf_ray": "a1d39226b9caec3e",
-        "screen": null,
-        "tz_client": null,
-        "color_depth": 0,
-        "touch": 0,
-        "platform": null,
-        "memory": 0,
-        "cores": 0,
-        "connection": null,
-        "webgl_vendor": null,
-        "webgl_renderer": null,
-        "languages": [],
-        "ua_platform": null,
-        "ua_platform_version": null,
-        "ua_architecture": null,
-        "ua_bitness": null,
-        "ua_model": null,
-        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -8124,7 +8126,7 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-09-18T13:20:12.514Z"
+      "updated_at": "2026-09-18T15:08:09.651Z"
     },
     "geo": {
       "country": "LV",
@@ -8148,7 +8150,7 @@
       "chat"
     ],
     "registered": "2026-05-25T10:20:41.076Z",
-    "last_seen": "2026-09-18T13:20:12.514Z"
+    "last_seen": "2026-09-18T15:08:09.651Z"
   },
   "848178688": {
     "id": 848178688,
@@ -62287,7 +62289,7 @@
         "cf_ray": "a3d10c022adece1b",
         "screen": "1920x1080@1",
         "tz_client": "Europe/Kiev",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 0,
         "platform": "Win32",
         "memory": 16,
@@ -100371,5 +100373,16 @@
     ],
     "registered": "2026-09-18T10:54:10.934Z",
     "last_seen": "2026-09-18T10:54:10.934Z"
+  },
+  "1580960537": {
+    "id": 1580960537,
+    "first_name": "Эвелина",
+    "username": "evelinkaaa69",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-09-18T18:06:00.966315",
+    "last_seen": "2026-09-18T18:06:00.966315"
   }
 }
