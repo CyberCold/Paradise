@@ -7542,5 +7542,24 @@
     "username": "ariana",
     "status": "new",
     "date": "18.09.2026 17:20"
+  },
+  "#0369": {
+    "oid": "#0369",
+    "items": [
+      {
+        "pid": "elfbarduke",
+        "product_name": "ELFBAR DUKE 30k puffs",
+        "flavor": "Cherry Lemon",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nELFBAR DUKE 30k puffs, вкус: Cherry Lemon, количество: 1",
+    "source_key": "840744310:25035",
+    "source_chat_id": 840744310,
+    "source_message_id": 25035,
+    "user_id": 840744310,
+    "username": "Никита",
+    "status": "new",
+    "date": "18.09.2026 18:12"
   }
 }
