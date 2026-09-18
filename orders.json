@@ -7475,8 +7475,9 @@
     "source_message_id": 24951,
     "user_id": 6127676206,
     "username": "syrnik",
-    "status": "new",
-    "date": "18.09.2026 15:52"
+    "status": "done",
+    "date": "18.09.2026 15:52",
+    "done_at": "2026-09-18T16:53:27.069142"
   },
   "#0367": {
     "oid": "#0367",
