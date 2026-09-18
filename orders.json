@@ -7477,5 +7477,36 @@
     "username": "syrnik",
     "status": "new",
     "date": "18.09.2026 15:52"
+  },
+  "#0367": {
+    "oid": "#0367",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Frozen Grape Soda",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Grape Ice",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Peach Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Frozen Grape Soda, количество: 1\nVozol, вкус: Grape Ice, количество: 1\nVozol, вкус: Peach Ice, количество: 1",
+    "source_key": "1461630683:24960",
+    "source_chat_id": 1461630683,
+    "source_message_id": 24960,
+    "user_id": 1461630683,
+    "username": "тима",
+    "status": "new",
+    "date": "18.09.2026 16:33"
   }
 }
