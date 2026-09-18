@@ -7510,5 +7510,36 @@
     "username": "тима",
     "status": "new",
     "date": "18.09.2026 16:33"
+  },
+  "#0368": {
+    "oid": "#0368",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Strawberry Kiwi",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Mixed Berries",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Dragon Fruit Banana Cherry",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Strawberry Kiwi, количество: 1\nVozol, вкус: Mixed Berries, количество: 1\nVozol, вкус: Dragon Fruit Banana Cherry, количество: 1",
+    "source_key": "5923754131:25011",
+    "source_chat_id": 5923754131,
+    "source_message_id": 25011,
+    "user_id": 5923754131,
+    "username": "ariana",
+    "status": "new",
+    "date": "18.09.2026 17:20"
   }
 }
