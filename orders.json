@@ -7706,5 +7706,24 @@
     "status": "done",
     "date": "19.09.2026 19:57",
     "done_at": "2026-09-19T20:30:49.643191"
+  },
+  "#0377": {
+    "oid": "#0377",
+    "items": [
+      {
+        "pid": "elfbarlushkingpro",
+        "product_name": "ELFBAR Lush King Pro 40k puffs",
+        "flavor": "Starfruit Grape",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nELFBAR Lush King Pro 40k puffs, вкус: Starfruit Grape, количество: 1",
+    "source_key": "5969841852:25273",
+    "source_chat_id": 5969841852,
+    "source_message_id": 25273,
+    "user_id": 5969841852,
+    "username": "CLS",
+    "status": "new",
+    "date": "19.09.2026 20:44"
   }
 }
