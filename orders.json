@@ -7703,7 +7703,8 @@
     "source_message_id": 25230,
     "user_id": 8080938020,
     "username": "Grimus",
-    "status": "new",
-    "date": "19.09.2026 19:57"
+    "status": "done",
+    "date": "19.09.2026 19:57",
+    "done_at": "2026-09-19T20:30:49.643191"
   }
 }
