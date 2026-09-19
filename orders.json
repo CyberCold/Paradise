@@ -7723,7 +7723,8 @@
     "source_message_id": 25273,
     "user_id": 5969841852,
     "username": "CLS",
-    "status": "new",
-    "date": "19.09.2026 20:44"
+    "status": "done",
+    "date": "19.09.2026 20:44",
+    "done_at": "2026-09-19T21:02:04.371200"
   }
 }
