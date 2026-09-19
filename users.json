@@ -100809,5 +100809,16 @@
     ],
     "registered": "2026-09-18T18:10:32.481644",
     "last_seen": "2026-09-18T15:12:43.344Z"
+  },
+  "594415373": {
+    "id": 594415373,
+    "first_name": "F@CE£E$$",
+    "username": "metttad0n4ik",
+    "source": "chat",
+    "sources": [
+      "chat"
+    ],
+    "registered": "2026-09-19T10:14:00.745559",
+    "last_seen": "2026-09-19T10:14:00.745559"
   }
 }
