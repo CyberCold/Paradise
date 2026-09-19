@@ -427,5 +427,16 @@
     "comment": "zaebis'",
     "date": "13.09.2026 20:05",
     "sent_to_channel": true
+  },
+  "#0367_Vozol": {
+    "oid": "#0367",
+    "user_id": 1461630683,
+    "username": "тима",
+    "product_name": "Vozol",
+    "flavor": "Frozen Grape Soda",
+    "rating": 5,
+    "comment": null,
+    "date": "19.09.2026 21:59",
+    "sent_to_channel": true
   }
 }
