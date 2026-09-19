@@ -7680,5 +7680,30 @@
     "username": "Влад",
     "status": "new",
     "date": "19.09.2026 18:57"
+  },
+  "#0376": {
+    "oid": "#0376",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Cherry Cola",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Dragon Fruit Banana Cherry",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Cherry Cola, количество: 1\nVozol, вкус: Dragon Fruit Banana Cherry, количество: 1",
+    "source_key": "8080938020:25230",
+    "source_chat_id": 8080938020,
+    "source_message_id": 25230,
+    "user_id": 8080938020,
+    "username": "Grimus",
+    "status": "new",
+    "date": "19.09.2026 19:57"
   }
 }
