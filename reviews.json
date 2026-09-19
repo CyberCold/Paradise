@@ -438,5 +438,16 @@
     "comment": null,
     "date": "19.09.2026 21:59",
     "sent_to_channel": true
+  },
+  "#0365_Vozol Star Click 50k puffs": {
+    "oid": "#0365",
+    "user_id": 5225162740,
+    "username": "Оля",
+    "product_name": "Vozol Star Click 50k puffs",
+    "flavor": "Peach ice",
+    "rating": 5,
+    "comment": null,
+    "date": "20.09.2026 00:05",
+    "sent_to_channel": true
   }
 }
