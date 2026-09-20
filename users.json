@@ -103351,5 +103351,17 @@
     ],
     "registered": "2026-09-20T11:38:24.801Z",
     "last_seen": "2026-09-20T14:41:36.536778"
+  },
+  "1314989246": {
+    "id": 1314989246,
+    "first_name": "sinčuks ❤",
+    "username": "sincuks23",
+    "source": "chat",
+    "sources": [
+      "chat",
+      "bot_start"
+    ],
+    "registered": "2026-09-20T14:50:29.968027",
+    "last_seen": "2026-09-20T14:50:48.734336"
   }
 }
