@@ -7851,8 +7851,9 @@
     "source_message_id": 25450,
     "user_id": 5166507064,
     "username": "SAMANTA",
-    "status": "new",
-    "date": "20.09.2026 15:09"
+    "status": "done",
+    "date": "20.09.2026 15:09",
+    "done_at": "2026-09-20T17:34:03.084386"
   },
   "#0384": {
     "oid": "#0384",
