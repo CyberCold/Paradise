@@ -7877,5 +7877,30 @@
     "status": "done",
     "date": "20.09.2026 15:43",
     "done_at": "2026-09-20T18:24:21.795615"
+  },
+  "#0385": {
+    "oid": "#0385",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Mixed Berries",
+        "qty": 1
+      },
+      {
+        "pid": "ivg",
+        "product_name": "IVG 20mg",
+        "flavor": "Ice Menthol",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хочу заказать\nVozol, вкус: Mixed Berries, количество: 1\nIVG 20mg, вкус: Ice Menthol, количество: 1",
+    "source_key": "1630328018:25625",
+    "source_chat_id": 1630328018,
+    "source_message_id": 25625,
+    "user_id": 1630328018,
+    "username": "ᅠ ︎ ︎",
+    "status": "new",
+    "date": "20.09.2026 18:47"
   }
 }
