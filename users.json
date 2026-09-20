@@ -103581,9 +103581,10 @@
     "first_name": "SAMANTA",
     "source": "bot_start",
     "sources": [
-      "bot_start"
+      "bot_start",
+      "chat"
     ],
     "registered": "2026-09-20T15:02:10.037543",
-    "last_seen": "2026-09-20T15:02:10.037543"
+    "last_seen": "2026-09-20T15:07:48.393204"
   }
 }
