@@ -7902,5 +7902,24 @@
     "username": "ᅠ ︎ ︎",
     "status": "new",
     "date": "20.09.2026 18:47"
+  },
+  "#0386": {
+    "oid": "#0386",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Pineapple Passion Fruit Lime",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Pineapple Passion Fruit Lime, количество: 1",
+    "source_key": "1369931246:25626",
+    "source_chat_id": 1369931246,
+    "source_message_id": 25626,
+    "user_id": 1369931246,
+    "username": "онтон",
+    "status": "new",
+    "date": "20.09.2026 19:32"
   }
 }
