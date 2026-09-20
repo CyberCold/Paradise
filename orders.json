@@ -7789,5 +7789,24 @@
     "username": "Таня",
     "status": "new",
     "date": "20.09.2026 12:28"
+  },
+  "#0381": {
+    "oid": "#0381",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Dragon Fruit Banana Cherry",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Dragon Fruit Banana Cherry, количество: 1",
+    "source_key": "1019015732:25386",
+    "source_chat_id": 1019015732,
+    "source_message_id": 25386,
+    "user_id": 1019015732,
+    "username": "Таня",
+    "status": "new",
+    "date": "20.09.2026 12:34"
   }
 }
