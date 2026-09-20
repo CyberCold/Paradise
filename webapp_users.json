@@ -15047,9 +15047,22 @@
     "is_premium": false,
     "source": "webapp",
     "registered": "2026-09-04T15:06:50.767Z",
-    "last_seen": "2026-09-19T14:21:01.948Z",
-    "visit_count": 7,
+    "last_seen": "2026-09-20T18:06:48.819Z",
+    "visit_count": 8,
     "ips": [
+      {
+        "ip": "81.198.69.213",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "BRIDGE GROUP BUSINESS CUSTOMERS",
+        "asn": 12578,
+        "lat": 56.946,
+        "lon": 24.10589,
+        "first_seen": "2026-09-20T18:06:48.819Z",
+        "last_seen": "2026-09-20T18:06:48.819Z",
+        "visits": 1
+      },
       {
         "ip": "2a00:808:130:a84a:9d3e:4673:a688:4b78",
         "country": "LV",
@@ -15117,6 +15130,42 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-09-20T18:06:48.819Z",
+        "ip": "81.198.69.213",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a3e2c422bc79a899",
+        "screen": "393x852@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-09-19T14:21:01.948Z",
         "ip": "2a00:808:130:a84a:9d3e:4673:a688:4b78",
@@ -15393,7 +15442,7 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-09-19T14:21:01.948Z"
+      "updated_at": "2026-09-20T18:06:48.819Z"
     },
     "device_keys": [
       "9023a2ecff557cd779fa51f9791bd35d67887e031adfe61a669cfea6c2085e2e",
@@ -15404,10 +15453,10 @@
       "city": "Riga",
       "region": "Riga",
       "timezone": "Europe/Riga",
-      "asn": 1257,
-      "isp": "Tele2 Latvia",
+      "asn": 12578,
+      "isp": "BRIDGE GROUP BUSINESS CUSTOMERS",
       "lat": 56.946,
-      "lon": 24.1059
+      "lon": 24.10589
     }
   },
   "915338082": {
@@ -84335,7 +84384,7 @@
         "cf_ray": "a3e277fffcbccc32",
         "screen": "393x852@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
