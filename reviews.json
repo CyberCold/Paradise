@@ -449,5 +449,16 @@
     "comment": null,
     "date": "20.09.2026 00:05",
     "sent_to_channel": true
+  },
+  "#0373_Vozol": {
+    "oid": "#0373",
+    "user_id": 1274205327,
+    "username": "ゼロツー𒉭",
+    "product_name": "Vozol",
+    "flavor": "Watermelon Bubble Gum",
+    "rating": 5,
+    "comment": "Очень вкусная жижа",
+    "date": "20.09.2026 17:32",
+    "sent_to_channel": true
   }
 }
