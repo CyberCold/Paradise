@@ -460,5 +460,16 @@
     "comment": "Очень вкусная жижа",
     "date": "20.09.2026 17:32",
     "sent_to_channel": true
+  },
+  "#0372_Vozol": {
+    "oid": "#0372",
+    "user_id": 594415373,
+    "username": "F@CE£E$$",
+    "product_name": "Vozol",
+    "flavor": "Love 777",
+    "rating": 5,
+    "comment": "великолепно, прекрасно, невероятно",
+    "date": "20.09.2026 18:28",
+    "sent_to_channel": true
   }
 }
