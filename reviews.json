@@ -471,5 +471,16 @@
     "comment": "великолепно, прекрасно, невероятно",
     "date": "20.09.2026 18:28",
     "sent_to_channel": true
+  },
+  "#0374_Vozol": {
+    "oid": "#0374",
+    "user_id": 1210151096,
+    "username": "🩵👼",
+    "product_name": "Vozol",
+    "flavor": "Berry Peach",
+    "rating": 4,
+    "comment": null,
+    "date": "20.09.2026 20:37",
+    "sent_to_channel": true
   }
 }
