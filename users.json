@@ -104607,9 +104607,10 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-09-21T10:38:48.213640",
-    "last_seen": "2026-09-21T07:40:59.615Z"
+    "last_seen": "2026-09-21T10:41:51.673035"
   }
 }
