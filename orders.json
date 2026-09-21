@@ -7951,8 +7951,9 @@
     "source_message_id": 25679,
     "user_id": 2022346220,
     "username": "Aleksios",
-    "status": "new",
-    "date": "21.09.2026 10:02"
+    "status": "done",
+    "date": "21.09.2026 10:02",
+    "done_at": "2026-09-21T21:59:52.387666"
   },
   "#0388": {
     "oid": "#0388",
