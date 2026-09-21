@@ -7922,5 +7922,36 @@
     "status": "done",
     "date": "20.09.2026 19:32",
     "done_at": "2026-09-20T21:38:26.670341"
+  },
+  "#0387": {
+    "oid": "#0387",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Cherry Cola",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Peach Mango Watermelon",
+        "qty": 1
+      },
+      {
+        "pid": "elfbarlushkingpro",
+        "product_name": "ELFBAR Lush King Pro 40k puffs",
+        "flavor": "Starfruit Grape",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Cherry Cola, количество: 1\nVozol, вкус: Peach Mango Watermelon, количество: 1\nELFBAR Lush King Pro 40k puffs, вкус: Starfruit Grape, количество: 1",
+    "source_key": "2022346220:25679",
+    "source_chat_id": 2022346220,
+    "source_message_id": 25679,
+    "user_id": 2022346220,
+    "username": "Aleksios",
+    "status": "new",
+    "date": "21.09.2026 10:02"
   }
 }
