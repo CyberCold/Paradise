@@ -8015,5 +8015,24 @@
     "username": "Terty",
     "status": "new",
     "date": "21.09.2026 10:29"
+  },
+  "#0390": {
+    "oid": "#0390",
+    "items": [
+      {
+        "pid": "vozolmagic500000",
+        "product_name": "Vozol Magic 50000",
+        "flavor": "Cool Mint",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol Magic 50000, вкус: Cool Mint, количество: 1",
+    "source_key": "5004801952:25685",
+    "source_chat_id": 5004801952,
+    "source_message_id": 25685,
+    "user_id": 5004801952,
+    "username": "holottacheese",
+    "status": "new",
+    "date": "21.09.2026 10:43"
   }
 }
