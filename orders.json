@@ -8161,5 +8161,24 @@
     "username": "Никитос ",
     "status": "new",
     "date": "21.09.2026 17:23"
+  },
+  "#0397": {
+    "oid": "#0397",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Blueberry Watermelon",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Blueberry Watermelon, количество: 1",
+    "source_key": "1192130057:25844",
+    "source_chat_id": 1192130057,
+    "source_message_id": 25844,
+    "user_id": 1192130057,
+    "username": "СЫН",
+    "status": "new",
+    "date": "21.09.2026 18:23"
   }
 }
