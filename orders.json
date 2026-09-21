@@ -7978,5 +7978,42 @@
     "username": "-",
     "status": "new",
     "date": "21.09.2026 10:05"
+  },
+  "#0389": {
+    "oid": "#0389",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Watermelon Bubble Gum",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Frozen Grape Soda",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Mixed Berries",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Grape Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Watermelon Bubble Gum, количество: 1\nVozol, вкус: Frozen Grape Soda, количество: 1\nVozol, вкус: Mixed Berries, количество: 1\nVozol, вкус: Grape Ice, количество: 1",
+    "source_key": "946275127:25682",
+    "source_chat_id": 946275127,
+    "source_message_id": 25682,
+    "user_id": 946275127,
+    "username": "Terty",
+    "status": "new",
+    "date": "21.09.2026 10:29"
   }
 }
