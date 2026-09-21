@@ -8053,5 +8053,30 @@
     "username": "🇱🇻",
     "status": "new",
     "date": "21.09.2026 12:47"
+  },
+  "#0392": {
+    "oid": "#0392",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Watermelon Bubble Gum",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Pomegranate Lemonade",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Watermelon Bubble Gum, количество: 1\nVozol, вкус: Pomegranate Lemonade, количество: 1",
+    "source_key": "6347638514:25690",
+    "source_chat_id": 6347638514,
+    "source_message_id": 25690,
+    "user_id": 6347638514,
+    "username": "Кристофер",
+    "status": "new",
+    "date": "21.09.2026 13:46"
   }
 }
