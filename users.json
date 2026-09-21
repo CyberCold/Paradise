@@ -106028,5 +106028,16 @@
     ],
     "registered": "2026-09-21T11:00:51.210Z",
     "last_seen": "2026-09-21T16:04:28.950691"
+  },
+  "1204741319": {
+    "id": 1204741319,
+    "first_name": "Korsar",
+    "username": "korssarik",
+    "source": "chat",
+    "sources": [
+      "chat"
+    ],
+    "registered": "2026-09-21T21:32:27.051365",
+    "last_seen": "2026-09-21T21:32:37.453610"
   }
 }
