@@ -8032,8 +8032,9 @@
     "source_message_id": 25685,
     "user_id": 5004801952,
     "username": "holottacheese",
-    "status": "new",
-    "date": "21.09.2026 10:43"
+    "status": "done",
+    "date": "21.09.2026 10:43",
+    "done_at": "2026-09-21T18:39:46.788239"
   },
   "#0391": {
     "oid": "#0391",
