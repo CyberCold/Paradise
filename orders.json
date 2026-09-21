@@ -8097,5 +8097,30 @@
     "username": "диана",
     "status": "new",
     "date": "21.09.2026 13:53"
+  },
+  "#0394": {
+    "oid": "#0394",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Love 777",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Pineapple Passion Fruit Lime",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Love 777, количество: 1\nVozol, вкус: Pineapple Passion Fruit Lime, количество: 1",
+    "source_key": "1380966145:25734",
+    "source_chat_id": 1380966145,
+    "source_message_id": 25734,
+    "user_id": 1380966145,
+    "username": "Виталий",
+    "status": "new",
+    "date": "21.09.2026 15:17"
   }
 }
