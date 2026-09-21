@@ -8013,8 +8013,9 @@
     "source_message_id": 25682,
     "user_id": 946275127,
     "username": "Terty",
-    "status": "new",
-    "date": "21.09.2026 10:29"
+    "status": "done",
+    "date": "21.09.2026 10:29",
+    "done_at": "2026-09-21T21:59:52.346129"
   },
   "#0390": {
     "oid": "#0390",
