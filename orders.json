@@ -8263,5 +8263,24 @@
     "username": "Вадим",
     "status": "new",
     "date": "22.09.2026 18:10"
+  },
+  "#0402": {
+    "oid": "#0402",
+    "items": [
+      {
+        "pid": "elfbarlushkingpro",
+        "product_name": "ELFBAR Lush King Pro 40k puffs",
+        "flavor": "Pomegranate Burst",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nELFBAR Lush King Pro 40k puffs, вкус: Pomegranate Burst, количество: 1",
+    "source_key": "5428316045:25970",
+    "source_chat_id": 5428316045,
+    "source_message_id": 25970,
+    "user_id": 5428316045,
+    "username": "noir",
+    "status": "new",
+    "date": "22.09.2026 19:27"
   }
 }
