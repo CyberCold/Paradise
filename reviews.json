@@ -493,5 +493,16 @@
     "comment": null,
     "date": "21.09.2026 17:35",
     "sent_to_channel": true
+  },
+  "#0390_Vozol Magic 50000": {
+    "oid": "#0390",
+    "user_id": 5004801952,
+    "username": "holottacheese",
+    "product_name": "Vozol Magic 50000",
+    "flavor": "Cool Mint",
+    "rating": 5,
+    "comment": null,
+    "date": "22.09.2026 18:45",
+    "sent_to_channel": true
   }
 }
