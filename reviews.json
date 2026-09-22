@@ -526,5 +526,16 @@
     "comment": null,
     "date": "22.09.2026 21:48",
     "sent_to_channel": true
+  },
+  "#0387_ELFBAR Lush King Pro 40k puffs": {
+    "oid": "#0387",
+    "user_id": 2022346220,
+    "username": "Aleksios",
+    "product_name": "ELFBAR Lush King Pro 40k puffs",
+    "flavor": "Starfruit Grape",
+    "rating": 3,
+    "comment": "Слабая тяга",
+    "date": "22.09.2026 22:00",
+    "sent_to_channel": true
   }
 }
