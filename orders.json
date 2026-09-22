@@ -8282,7 +8282,8 @@
     "source_message_id": 25970,
     "user_id": 5428316045,
     "username": "noir",
-    "status": "new",
-    "date": "22.09.2026 19:27"
+    "status": "done",
+    "date": "22.09.2026 19:27",
+    "done_at": "2026-09-22T23:19:17.551005"
   }
 }
