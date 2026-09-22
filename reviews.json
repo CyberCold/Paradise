@@ -504,5 +504,16 @@
     "comment": null,
     "date": "22.09.2026 18:45",
     "sent_to_channel": true
+  },
+  "#0397_Vozol": {
+    "oid": "#0397",
+    "user_id": 1192130057,
+    "username": "СЫН",
+    "product_name": "Vozol",
+    "flavor": "Blueberry Watermelon",
+    "rating": 5,
+    "comment": "Отличный вкус, советую всем",
+    "date": "22.09.2026 19:01",
+    "sent_to_channel": true
   }
 }
