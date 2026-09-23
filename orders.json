@@ -8365,5 +8365,42 @@
     "username": "Арина",
     "status": "new",
     "date": "23.09.2026 19:55"
+  },
+  "#0405": {
+    "oid": "#0405",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Blue Cotton Candy",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Cola Gummies",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Lavafire",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Blueberry Watermelon",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Blue Cotton Candy, количество: 1\nVozol, вкус: Cola Gummies, количество: 1\nVozol, вкус: Lavafire, количество: 1\nVozol, вкус: Blueberry Watermelon, количество: 1",
+    "source_key": "893025467:26104",
+    "source_chat_id": 893025467,
+    "source_message_id": 26104,
+    "user_id": 893025467,
+    "username": "Эрвин👾",
+    "status": "new",
+    "date": "23.09.2026 19:57"
   }
 }
