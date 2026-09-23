@@ -8310,5 +8310,60 @@
     "username": "nastek v ahue",
     "status": "new",
     "date": "23.09.2026 15:42"
+  },
+  "#0404": {
+    "oid": "#0404",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Purple Candy",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Love 777",
+        "qty": 2
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Blueberry Watermelon",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Pomegranate Lemonade",
+        "qty": 2
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Frozen Grape Soda",
+        "qty": 1
+      },
+      {
+        "pid": "vozolckick",
+        "product_name": "Vozol Star Click 50k puffs",
+        "flavor": "Orange molasses",
+        "qty": 1
+      },
+      {
+        "pid": "elfbarduke",
+        "product_name": "ELFBAR DUKE 30k puffs",
+        "flavor": "Strawberry Kiwi",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Purple Candy, количество: 1\nVozol, вкус: Love 777, количество: 2\nVozol, вкус: Blueberry Watermelon, количество: 1\nVozol, вкус: Pomegranate Lemonade, количество: 2\nVozol, вкус: Frozen Grape Soda, количество: 1\nVozol Star Click 50k puffs, вкус: Orange molasses, количество: 1\nELFBAR DUKE 30k puffs, вкус: Strawberry Kiwi, количество: 1",
+    "source_key": "919335374:26089",
+    "source_chat_id": 919335374,
+    "source_message_id": 26089,
+    "user_id": 919335374,
+    "username": "Арина",
+    "status": "new",
+    "date": "23.09.2026 19:55"
   }
 }
