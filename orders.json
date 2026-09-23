@@ -8402,5 +8402,30 @@
     "username": "Эрвин👾",
     "status": "new",
     "date": "23.09.2026 19:57"
+  },
+  "#0406": {
+    "oid": "#0406",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Peach Mango Watermelon",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Blueberry Watermelon",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Peach Mango Watermelon, количество: 1\nVozol, вкус: Blueberry Watermelon, количество: 1",
+    "source_key": "7147710833:26123",
+    "source_chat_id": 7147710833,
+    "source_message_id": 26123,
+    "user_id": 7147710833,
+    "username": "Electric",
+    "status": "new",
+    "date": "23.09.2026 21:07"
   }
 }
