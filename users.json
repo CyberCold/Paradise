@@ -108974,5 +108974,16 @@
     ],
     "registered": "2026-09-23T19:46:31.666498",
     "last_seen": "2026-09-23T22:34:17.924830"
+  },
+  "8196646587": {
+    "id": 8196646587,
+    "first_name": "Mac",
+    "username": "omacmaco",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-09-24T17:01:28.341734",
+    "last_seen": "2026-09-24T17:01:28.341734"
   }
 }
