@@ -8445,7 +8445,8 @@
     "source_message_id": 26145,
     "user_id": 5343367585,
     "username": "Guntis",
-    "status": "new",
-    "date": "24.09.2026 17:46"
+    "status": "done",
+    "date": "24.09.2026 17:46",
+    "done_at": "2026-09-24T19:14:14.507307"
   }
 }
