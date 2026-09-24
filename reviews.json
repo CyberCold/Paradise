@@ -537,5 +537,16 @@
     "comment": "Слабая тяга",
     "date": "22.09.2026 22:00",
     "sent_to_channel": true
+  },
+  "#0376_Vozol": {
+    "oid": "#0376",
+    "user_id": 8080938020,
+    "username": "Grimus",
+    "product_name": "Vozol",
+    "flavor": "Cherry Cola",
+    "rating": 5,
+    "comment": null,
+    "date": "20.09.2026 20:32",
+    "sent_to_channel": true
   }
 }
