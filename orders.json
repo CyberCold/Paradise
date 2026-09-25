@@ -8551,7 +8551,8 @@
     "source_message_id": 26310,
     "user_id": 890349579,
     "username": ".k.",
-    "status": "new",
-    "date": "25.09.2026 18:00"
+    "status": "done",
+    "date": "25.09.2026 18:00",
+    "done_at": "2026-09-25T18:47:06.552887"
   }
 }
