@@ -8554,5 +8554,24 @@
     "status": "done",
     "date": "25.09.2026 18:00",
     "done_at": "2026-09-25T18:47:06.552887"
+  },
+  "#0413": {
+    "oid": "#0413",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Watermelon Bubble Gum",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Можно заказать новую yami вкус watermelon bubble gum",
+    "source_key": "1237982371:26354",
+    "source_chat_id": 1237982371,
+    "source_message_id": 26354,
+    "user_id": 1237982371,
+    "username": "Муза 🦋",
+    "status": "new",
+    "date": "25.09.2026 22:53"
   }
 }
