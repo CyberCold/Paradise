@@ -8467,8 +8467,9 @@
     "source_message_id": 26228,
     "user_id": 1126462144,
     "username": "Jana",
-    "status": "new",
-    "date": "24.09.2026 20:33"
+    "status": "done",
+    "date": "24.09.2026 20:33",
+    "done_at": "2026-09-25T15:48:32.182427"
   },
   "#0409": {
     "oid": "#0409",
