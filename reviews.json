@@ -548,5 +548,16 @@
     "comment": null,
     "date": "20.09.2026 20:32",
     "sent_to_channel": true
+  },
+  "#0407_ELFBAR Lush King Pro 40k puffs": {
+    "oid": "#0407",
+    "user_id": 5343367585,
+    "username": "Guntis",
+    "product_name": "ELFBAR Lush King Pro 40k puffs",
+    "flavor": "Black Currant Pineapple",
+    "rating": 3,
+    "comment": "Не насыщенный вкус и слабая тяга",
+    "date": "25.09.2026 19:15",
+    "sent_to_channel": true
   }
 }
