@@ -8528,5 +8528,30 @@
     "username": "Влад",
     "status": "new",
     "date": "25.09.2026 16:41"
+  },
+  "#0412": {
+    "oid": "#0412",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Frozen Grape Soda",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Blue Cotton Candy",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел бы уточнить информацию по товару:\nVozol, вкус: Frozen Grape Soda, количество: 1\nVozol, вкус: Blue Cotton Candy, количество: 1\nС доставкой",
+    "source_key": "890349579:26310",
+    "source_chat_id": 890349579,
+    "source_message_id": 26310,
+    "user_id": 890349579,
+    "username": ".k.",
+    "status": "new",
+    "date": "25.09.2026 18:00"
   }
 }
