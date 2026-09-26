@@ -559,5 +559,16 @@
     "comment": "Не насыщенный вкус и слабая тяга",
     "date": "25.09.2026 19:15",
     "sent_to_channel": true
+  },
+  "#0412_Vozol": {
+    "oid": "#0412",
+    "user_id": 890349579,
+    "username": ".k.",
+    "product_name": "Vozol",
+    "flavor": "Frozen Grape Soda",
+    "rating": 5,
+    "comment": null,
+    "date": "26.09.2026 18:48",
+    "sent_to_channel": true
   }
 }
