@@ -22633,8 +22633,8 @@
     "is_premium": false,
     "source": "webapp",
     "registered": "2026-07-26T11:22:54.498Z",
-    "last_seen": "2026-09-26T12:48:10.963Z",
-    "visit_count": 8,
+    "last_seen": "2026-09-26T15:12:51.282Z",
+    "visit_count": 9,
     "ips": [
       {
         "ip": "5.241.138.68",
@@ -22646,8 +22646,8 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-09-26T12:48:10.963Z",
-        "last_seen": "2026-09-26T12:48:10.963Z",
-        "visits": 1
+        "last_seen": "2026-09-26T15:12:51.282Z",
+        "visits": 2
       },
       {
         "ip": "81.198.169.100",
@@ -22716,6 +22716,42 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-09-26T15:12:51.282Z",
+        "ip": "5.241.138.68",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.5",
+        "language": "ru",
+        "cf_ray": "a41335901d8dce1b",
+        "screen": "390x844@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-09-26T12:48:10.963Z",
         "ip": "5.241.138.68",
@@ -23028,7 +23064,7 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-09-26T12:48:10.963Z"
+      "updated_at": "2026-09-26T15:12:51.282Z"
     },
     "device_keys": [
       "2f0dd54393d75cac1a92d5016ff9c02afb9b1f965c339b276b4bd5c6a5f2a632",
@@ -93486,7 +93522,7 @@
         "cf_ray": "a412fd197a05340e",
         "screen": "376x835@3.25",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "Linux aarch64",
         "memory": 8,
