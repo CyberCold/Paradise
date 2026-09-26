@@ -46740,7 +46740,7 @@
         "cf_ray": "a410c7104d72e4d6",
         "screen": "384x832@2.8125",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "Linux aarch64",
         "memory": 8,
@@ -106895,8 +106895,21 @@
     "username": "Archibaldt1",
     "language_code": "ru",
     "is_premium": false,
-    "visit_count": 1,
+    "visit_count": 2,
     "ips": [
+      {
+        "ip": "2a00:808:134:f54d::307e:fbcd",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Tele2 Latvia",
+        "asn": 1257,
+        "lat": 56.946,
+        "lon": 24.1059,
+        "first_seen": "2026-09-26T08:17:10.543Z",
+        "last_seen": "2026-09-26T08:17:10.543Z",
+        "visits": 1
+      },
       {
         "ip": "2a00:808:107:b441::2a72:f548",
         "country": "LV",
@@ -106912,6 +106925,43 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-09-26T08:17:10.543Z",
+        "ip": "2a00:808:134:f54d::307e:fbcd",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 14; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.178 Mobile Safari/537.36 Telegram-Android/12.10.1 (Samsung SM-A145R; Android 14; SDK 34; AVERAGE)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "148.0.7778.178",
+        "os": "Android",
+        "os_version": "14",
+        "language": "ru-RU",
+        "cf_ray": "a410d4a86e33bc0d",
+        "screen": "360x803@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 4,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru-RU",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-09-17T13:02:18.234Z",
         "ip": "2a00:808:107:b441::2a72:f548",
@@ -106963,7 +107013,6 @@
       "webgl_vendor": "ARM",
       "webgl_renderer": "Mali-G52 MC2",
       "languages": [
-        "ru",
         "ru-RU",
         "en-US"
       ],
@@ -106976,10 +107025,11 @@
       "device": "Android Phone",
       "browser": "Chrome",
       "os": "Android",
-      "updated_at": "2026-09-17T13:02:18.234Z"
+      "updated_at": "2026-09-26T08:17:10.543Z"
     },
     "device_keys": [
       "81c70f1c7638270fdf31ca13658fdf0956f785d67aced2dd399f42ba10bf4b6d",
+      "aa000db683469154062ca2e7f22675a4d41d4a34f563290c2366f4d7824afd21",
       "fdd45a214c2126139da275638536bfe57f2f2ea70a1aa85d143db9003ee8e6cd"
     ],
     "geo": {
@@ -106997,7 +107047,7 @@
       "webapp"
     ],
     "registered": "2026-09-17T13:02:18.234Z",
-    "last_seen": "2026-09-17T13:02:18.234Z"
+    "last_seen": "2026-09-26T08:17:10.543Z"
   },
   "8232699561": {
     "id": 8232699561,
