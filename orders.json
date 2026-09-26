@@ -8592,5 +8592,24 @@
     "username": "Doomka",
     "status": "new",
     "date": "26.09.2026 12:33"
+  },
+  "#0415": {
+    "oid": "#0415",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Cherry Cola",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Cherry Cola, количество: 1",
+    "source_key": "1556737559:26379",
+    "source_chat_id": 1556737559,
+    "source_message_id": 26379,
+    "user_id": 1556737559,
+    "username": "Влад",
+    "status": "new",
+    "date": "26.09.2026 12:41"
   }
 }
