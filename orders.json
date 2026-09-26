@@ -8573,5 +8573,24 @@
     "username": "Муза 🦋",
     "status": "new",
     "date": "25.09.2026 22:53"
+  },
+  "#0414": {
+    "oid": "#0414",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Lavafire",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Lavafire, количество: 1",
+    "source_key": "5616781113:26378",
+    "source_chat_id": 5616781113,
+    "source_message_id": 26378,
+    "user_id": 5616781113,
+    "username": "Doomka",
+    "status": "new",
+    "date": "26.09.2026 12:33"
   }
 }
