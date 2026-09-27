@@ -8742,5 +8742,24 @@
     "username": "Jolanta",
     "status": "new",
     "date": "27.09.2026 16:53"
+  },
+  "#0419": {
+    "oid": "#0419",
+    "items": [
+      {
+        "pid": "elfbarlushkingpro",
+        "product_name": "ELFBAR Lush King Pro 40k puffs",
+        "flavor": "Black Currant Pineapple",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nELFBAR Lush King Pro 40k puffs, вкус: Black Currant Pineapple, количество: 1",
+    "source_key": "1157241519:26660",
+    "source_chat_id": 1157241519,
+    "source_message_id": 26660,
+    "user_id": 1157241519,
+    "username": "Akula geng",
+    "status": "new",
+    "date": "27.09.2026 19:10"
   }
 }
