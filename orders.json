@@ -8702,8 +8702,9 @@
     "source_message_id": 26639,
     "user_id": 5035724495,
     "username": "Tomass",
-    "status": "new",
-    "date": "27.09.2026 15:04"
+    "status": "done",
+    "date": "27.09.2026 15:04",
+    "done_at": "2026-09-27T18:27:51.847882"
   },
   "#0418": {
     "oid": "#0418",
