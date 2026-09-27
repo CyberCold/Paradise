@@ -8631,5 +8631,78 @@
     "username": "Doomka",
     "status": "new",
     "date": "26.09.2026 17:34"
+  },
+  "#0417": {
+    "oid": "#0417",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Jasmine Raspberry",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Grape Energy",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Watermelon Cherry",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Apple Peach",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Watermelon Bubblegum",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Lemon Lime",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Energy Ice",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Mixed Berries",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Blue Razz Lemonade",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Strawberry Raspberry Cherry Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел бы уточнить информацию по товару:\nYami, вкус: Jasmine Raspberry, количество: 1\nYami, вкус: Grape Energy, количество: 1\nYami, вкус: Watermelon Cherry, количество: 1\nYami, вкус: Apple Peach, количество: 1\nYami, вкус: Watermelon Bubblegum, количество: 1\nYami, вкус: Lemon Lime, количество: 1\nYami, вкус: Energy Ice, количество: 1\nYami, вкус: Mixed Berries, количество: 1\nYami, вкус: Blue Razz Lemonade, количество: 1\nYami, вкус: Strawberry Raspberry Cherry Ice, количество: 1",
+    "source_key": "5035724495:26639",
+    "source_chat_id": 5035724495,
+    "source_message_id": 26639,
+    "user_id": 5035724495,
+    "username": "Tomass",
+    "status": "new",
+    "date": "27.09.2026 15:04"
   }
 }
