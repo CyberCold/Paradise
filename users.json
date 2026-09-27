@@ -34130,7 +34130,7 @@
         "cf_ray": "a41b1f5e6fa3cc2f",
         "screen": "430x932@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -107075,8 +107075,21 @@
     "last_name": "🦈",
     "language_code": "ru",
     "is_premium": false,
-    "visit_count": 2,
+    "visit_count": 4,
     "ips": [
+      {
+        "ip": "5.241.132.73",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Mobile Services Latvia",
+        "asn": 1257,
+        "lat": 56.946,
+        "lon": 24.10589,
+        "first_seen": "2026-09-27T16:09:36.519Z",
+        "last_seen": "2026-09-27T16:09:40.834Z",
+        "visits": 2
+      },
       {
         "ip": "5.241.134.104",
         "country": "LV",
@@ -107105,6 +107118,80 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-09-27T16:09:40.834Z",
+        "ip": "5.241.132.73",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 14; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.36 Mobile Safari/537.36 Telegram-Android/12.10.1 (Samsung SM-A528B; Android 14; SDK 34; HIGH)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "153.0.8010.36",
+        "os": "Android",
+        "os_version": "14",
+        "language": "ru-RU",
+        "cf_ray": "a41bc62deee4e4cb",
+        "screen": "384x854@2.8125",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 4,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru-RU",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
+      {
+        "timestamp": "2026-09-27T16:09:36.519Z",
+        "ip": "5.241.132.73",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 14; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.36 Mobile Safari/537.36 Telegram-Android/12.10.1 (Samsung SM-A528B; Android 14; SDK 34; HIGH)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "153.0.8010.36",
+        "os": "Android",
+        "os_version": "14",
+        "language": "ru-RU",
+        "cf_ray": "a41bc612f95ca87b",
+        "screen": "384x854@2.8125",
+        "tz_client": "Europe/Riga",
+        "color_depth": 0,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 4,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru-RU",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-09-15T06:49:22.000Z",
         "ip": "5.241.134.104",
@@ -107205,7 +107292,7 @@
       "device": "Android Phone",
       "browser": "Chrome",
       "os": "Android",
-      "updated_at": "2026-09-15T06:49:22.000Z"
+      "updated_at": "2026-09-27T16:09:40.834Z"
     },
     "device_keys": [
       "21e1ce32e20e70fb88c2c62ca6f410c5edc71c111eec3305d74ee8ec059a6f7c",
@@ -107229,7 +107316,7 @@
       "chat"
     ],
     "registered": "2026-09-13T14:25:45.258687",
-    "last_seen": "2026-09-15T06:49:22.000Z"
+    "last_seen": "2026-09-27T16:09:40.834Z"
   },
   "2098039782": {
     "id": 2098039782,
