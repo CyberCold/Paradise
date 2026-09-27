@@ -8704,5 +8704,42 @@
     "username": "Tomass",
     "status": "new",
     "date": "27.09.2026 15:04"
+  },
+  "#0418": {
+    "oid": "#0418",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Dragon Fruit Banana Cherry",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Mixed Berries",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Blue Razz Lemonade",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Pink Lemonade",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Dragon Fruit Banana Cherry, количество: 1\nYami, вкус: Mixed Berries, количество: 1\nYami, вкус: Blue Razz Lemonade, количество: 1\nYami, вкус: Pink Lemonade, количество: 1",
+    "source_key": "1451394344:26646",
+    "source_chat_id": 1451394344,
+    "source_message_id": 26646,
+    "user_id": 1451394344,
+    "username": "Jolanta",
+    "status": "new",
+    "date": "27.09.2026 16:53"
   }
 }
