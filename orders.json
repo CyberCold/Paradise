@@ -8787,5 +8787,24 @@
     "username": "𝕵𝖊𝖛𝖌𝖊𝖓𝖎𝖏",
     "status": "new",
     "date": "28.09.2026 15:12"
+  },
+  "#0421": {
+    "oid": "#0421",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Spearmint",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Spearmint, количество: 1",
+    "source_key": "1382284598:26683",
+    "source_chat_id": 1382284598,
+    "source_message_id": 26683,
+    "user_id": 1382284598,
+    "username": "Эдгар",
+    "status": "new",
+    "date": "28.09.2026 15:14"
   }
 }
