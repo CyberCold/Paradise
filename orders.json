@@ -8762,5 +8762,30 @@
     "username": "Akula geng",
     "status": "new",
     "date": "27.09.2026 19:10"
+  },
+  "#0420": {
+    "oid": "#0420",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Apple Peach",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Pistachio Cream",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Apple Peach, количество: 1\nYami, вкус: Pistachio Cream, количество: 1",
+    "source_key": "325400266:26682",
+    "source_chat_id": 325400266,
+    "source_message_id": 26682,
+    "user_id": 325400266,
+    "username": "𝕵𝖊𝖛𝖌𝖊𝖓𝖎𝖏",
+    "status": "new",
+    "date": "28.09.2026 15:12"
   }
 }
