@@ -570,5 +570,16 @@
     "comment": null,
     "date": "26.09.2026 18:48",
     "sent_to_channel": true
+  },
+  "#0417_Yami": {
+    "oid": "#0417",
+    "user_id": 5035724495,
+    "username": "Tomass",
+    "product_name": "Yami",
+    "flavor": "Jasmine Raspberry",
+    "rating": 5,
+    "comment": "вкус уникальный но вкусный 👍🏼",
+    "date": "28.09.2026 18:36",
+    "sent_to_channel": true
   }
 }
