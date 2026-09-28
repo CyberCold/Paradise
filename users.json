@@ -113563,5 +113563,16 @@
     ],
     "registered": "2026-09-28T18:09:04.206355",
     "last_seen": "2026-09-28T19:52:30.673Z"
+  },
+  "1482744758": {
+    "id": 1482744758,
+    "first_name": "Nary",
+    "username": "Tenso_0",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-09-28T23:31:44.022467",
+    "last_seen": "2026-09-28T23:31:44.022467"
   }
 }
