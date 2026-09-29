@@ -66584,8 +66584,21 @@
     "username": "manynlensf1re",
     "language_code": "ru",
     "is_premium": false,
-    "visit_count": 12,
+    "visit_count": 13,
     "ips": [
+      {
+        "ip": "2a00:808:10a:bceb:5fb:c55a:16ea:cb96",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Tele2 Latvia",
+        "asn": 1257,
+        "lat": 56.946,
+        "lon": 24.1059,
+        "first_seen": "2026-09-29T18:36:18.052Z",
+        "last_seen": "2026-09-29T18:36:18.052Z",
+        "visits": 1
+      },
       {
         "ip": "84.237.154.106",
         "country": "LV",
@@ -66640,6 +66653,42 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-09-29T18:36:18.052Z",
+        "ip": "2a00:808:10a:bceb:5fb:c55a:16ea:cb96",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a42d17b48ad3e4cc",
+        "screen": "402x874@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-09-29T13:20:51.657Z",
         "ip": "84.237.154.106",
@@ -67096,7 +67145,7 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-09-29T13:20:51.657Z"
+      "updated_at": "2026-09-29T18:36:18.052Z"
     },
     "device_keys": [
       "8952fabacd525e336ddf038c1977902fe83ee61ee5724b75d0d481aea90d7d46",
@@ -67107,10 +67156,10 @@
       "city": "Riga",
       "region": "Riga",
       "timezone": "Europe/Riga",
-      "asn": 12578,
-      "isp": "Address pool for LTC-HOME customers",
+      "asn": 1257,
+      "isp": "Tele2 Latvia",
       "lat": 56.946,
-      "lon": 24.10589
+      "lon": 24.1059
     },
     "source": "chat",
     "sources": [
@@ -67119,7 +67168,7 @@
       "webapp"
     ],
     "registered": "2026-07-20T16:07:53.610003",
-    "last_seen": "2026-09-29T17:33:24.088874"
+    "last_seen": "2026-09-29T18:36:18.052Z"
   },
   "542840215": {
     "id": 542840215,
@@ -76728,7 +76777,7 @@
         "cf_ray": "a42d09274c35c5d3",
         "screen": "393x852@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
