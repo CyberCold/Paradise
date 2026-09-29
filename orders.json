@@ -8889,5 +8889,30 @@
     "username": "Maris",
     "status": "new",
     "date": "29.09.2026 11:59"
+  },
+  "#0426": {
+    "oid": "#0426",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Purple Candy",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Lavafire",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Purple Candy, количество: 1\nVozol, вкус: Lavafire, количество: 1",
+    "source_key": "2039582824:26780",
+    "source_chat_id": 2039582824,
+    "source_message_id": 26780,
+    "user_id": 2039582824,
+    "username": "Pablo",
+    "status": "new",
+    "date": "29.09.2026 13:30"
   }
 }
