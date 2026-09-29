@@ -57047,9 +57047,22 @@
     "is_premium": true,
     "source": "webapp",
     "registered": "2026-09-20T08:46:01.325Z",
-    "last_seen": "2026-09-29T08:43:44.780Z",
-    "visit_count": 6,
+    "last_seen": "2026-09-29T13:09:00.423Z",
+    "visit_count": 7,
     "ips": [
+      {
+        "ip": "2a03:ec00:b17a:b681:684a:6b3d:da73:c159",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Latvijas Mobilais Telefons SIA",
+        "asn": 24921,
+        "lat": 56.946,
+        "lon": 24.10589,
+        "first_seen": "2026-09-29T13:09:00.423Z",
+        "last_seen": "2026-09-29T13:09:00.423Z",
+        "visits": 1
+      },
       {
         "ip": "2a03:ec00:b989:e2f9:68f1:576c:97c4:881d",
         "country": "LV",
@@ -57091,6 +57104,42 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-09-29T13:09:00.423Z",
+        "ip": "2a03:ec00:b17a:b681:684a:6b3d:da73:c159",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a42b384589ef74f5",
+        "screen": "430x932@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-09-29T08:43:44.780Z",
         "ip": "2a03:ec00:b989:e2f9:68f1:576c:97c4:881d",
@@ -57331,7 +57380,7 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-09-29T08:43:44.780Z"
+      "updated_at": "2026-09-29T13:09:00.423Z"
     },
     "device_keys": [
       "c9065c43510c5557dd4e5c8433059d88154ee9e4e216e7672d6d626410eb1213",
@@ -57345,7 +57394,7 @@
       "asn": 24921,
       "isp": "Latvijas Mobilais Telefons SIA",
       "lat": 56.946,
-      "lon": 24.1059
+      "lon": 24.10589
     }
   },
   "1758793464": {
@@ -99714,7 +99763,7 @@
         "cf_ray": "a42af9815e3fa866",
         "screen": "402x874@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
