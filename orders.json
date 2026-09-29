@@ -8889,8 +8889,9 @@
     "source_message_id": 26776,
     "user_id": 983322395,
     "username": "Maris",
-    "status": "new",
-    "date": "29.09.2026 11:59"
+    "status": "done",
+    "date": "29.09.2026 11:59",
+    "done_at": "2026-09-29T18:19:13.474360"
   },
   "#0426": {
     "oid": "#0426",
