@@ -8935,5 +8935,24 @@
     "username": "nastek v ahue",
     "status": "cancelled",
     "date": "29.09.2026 16:09"
+  },
+  "#0428": {
+    "oid": "#0428",
+    "items": [
+      {
+        "pid": "vozolmagic500000",
+        "product_name": "Vozol Magic 50000",
+        "flavor": "Vzbull",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol Magic 50000, вкус: Vzbull, количество: 1",
+    "source_key": "1031926611:26881",
+    "source_chat_id": 1031926611,
+    "source_message_id": 26881,
+    "user_id": 1031926611,
+    "username": "Marija👅",
+    "status": "new",
+    "date": "29.09.2026 17:47"
   }
 }
