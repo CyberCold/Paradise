@@ -16246,7 +16246,7 @@
         "cf_ray": "a4290deaddd8a890",
         "screen": "390x844@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -90163,8 +90163,21 @@
     "username": "anastasiapovysheva",
     "language_code": "ru",
     "is_premium": false,
-    "visit_count": 7,
+    "visit_count": 8,
     "ips": [
+      {
+        "ip": "212.3.197.148",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Latvijas Mobilais Telefons SIA",
+        "asn": 24921,
+        "lat": 56.946,
+        "lon": 24.10589,
+        "first_seen": "2026-09-29T07:09:45.385Z",
+        "last_seen": "2026-09-29T07:09:45.385Z",
+        "visits": 1
+      },
       {
         "ip": "81.198.169.236",
         "country": "LV",
@@ -90206,6 +90219,45 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-09-29T07:09:45.385Z",
+        "ip": "212.3.197.148",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 16; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.8037.57 Mobile Safari/537.36 Telegram-Android/12.10.5 (Samsung SM-A546B; Android 16; SDK 36; HIGH)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "154.0.8037.57",
+        "os": "Android",
+        "os_version": "16",
+        "language": "ru",
+        "cf_ray": "a4292a068b74e4d9",
+        "screen": "384x832@2.8125",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 8,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru",
+          "ru-RU",
+          "en-IN",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-09-08T12:32:34.336Z",
         "ip": "81.198.169.236",
@@ -90487,6 +90539,7 @@
       "webgl_vendor": "ARM",
       "webgl_renderer": "Mali-G68",
       "languages": [
+        "ru",
         "ru-RU",
         "en-IN",
         "en-US"
@@ -90500,20 +90553,20 @@
       "device": "Android Phone",
       "browser": "Chrome",
       "os": "Android",
-      "updated_at": "2026-09-08T12:32:34.336Z"
+      "updated_at": "2026-09-29T07:09:45.385Z"
     },
     "device_keys": [
       "53e89f95d252a0c4b1c6ae72f26c37063a3d699679334cae674524ce6d13edbc",
-      "5322abaed3560fb5ad29fd76f1bbfb60cfe32517030664a69d5bc37c9aafaea6",
-      "dddd7082cf2027f9aa1c5491528e97dc5a8cd4eb1528e12f375191f66703465b"
+      "dddd7082cf2027f9aa1c5491528e97dc5a8cd4eb1528e12f375191f66703465b",
+      "5322abaed3560fb5ad29fd76f1bbfb60cfe32517030664a69d5bc37c9aafaea6"
     ],
     "geo": {
       "country": "LV",
       "city": "Riga",
       "region": "Riga",
       "timezone": "Europe/Riga",
-      "asn": 12578,
-      "isp": "Lattelecom SIA",
+      "asn": 24921,
+      "isp": "Latvijas Mobilais Telefons SIA",
       "lat": 56.946,
       "lon": 24.10589
     },
@@ -90523,7 +90576,7 @@
       "chat"
     ],
     "registered": "2026-08-16T14:07:37.868Z",
-    "last_seen": "2026-09-08T17:05:53.449982"
+    "last_seen": "2026-09-29T07:09:45.385Z"
   },
   "1063025930": {
     "id": 1063025930,
