@@ -8868,8 +8868,9 @@
     "source_message_id": 26772,
     "user_id": 1753532437,
     "username": "nastek v ahue",
-    "status": "new",
-    "date": "29.09.2026 11:44"
+    "status": "done",
+    "date": "29.09.2026 11:44",
+    "done_at": "2026-09-29T16:46:46.896808"
   },
   "#0425": {
     "oid": "#0425",
