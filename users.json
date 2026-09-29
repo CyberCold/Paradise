@@ -10834,7 +10834,7 @@
     "first_name": "Maris",
     "language_code": "ru",
     "is_premium": false,
-    "visit_count": 1,
+    "visit_count": 2,
     "ips": [
       {
         "ip": "2a00:f503:250:c4a2:68f2:6bd8:c85b:1978",
@@ -10846,11 +10846,47 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-09-29T08:55:58.545Z",
-        "last_seen": "2026-09-29T08:55:58.545Z",
-        "visits": 1
+        "last_seen": "2026-09-29T08:56:40.464Z",
+        "visits": 2
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-09-29T08:56:40.464Z",
+        "ip": "2a00:f503:250:c4a2:68f2:6bd8:c85b:1978",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a429c6a4db948d2f",
+        "screen": "428x926@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-09-29T08:55:58.545Z",
         "ip": "2a00:f503:250:c4a2:68f2:6bd8:c85b:1978",
@@ -10869,7 +10905,7 @@
         "cf_ray": "a429c59e9a5e8d2f",
         "screen": "428x926@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -10911,7 +10947,7 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-09-29T08:55:58.545Z"
+      "updated_at": "2026-09-29T08:56:40.464Z"
     },
     "device_keys": [
       "caf4a5c68484065ce3cc26df01105377bac002b2f056013e148f2115c8fd3583",
@@ -10934,7 +10970,7 @@
       "webapp"
     ],
     "registered": "2026-06-12T20:59:50.152408",
-    "last_seen": "2026-09-29T08:55:58.545Z"
+    "last_seen": "2026-09-29T08:56:40.464Z"
   },
   "985096035": {
     "id": 985096035,
