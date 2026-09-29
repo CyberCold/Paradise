@@ -8845,5 +8845,30 @@
     "username": "Nary",
     "status": "new",
     "date": "28.09.2026 23:34"
+  },
+  "#0424": {
+    "oid": "#0424",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Lavafire",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Cola Gummies",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Lavafire, количество: 1\nVozol, вкус: Cola Gummies, количество: 1",
+    "source_key": "1753532437:26772",
+    "source_chat_id": 1753532437,
+    "source_message_id": 26772,
+    "user_id": 1753532437,
+    "username": "nastek v ahue",
+    "status": "new",
+    "date": "29.09.2026 11:44"
   }
 }
