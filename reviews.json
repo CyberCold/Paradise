@@ -581,5 +581,16 @@
     "comment": "вкус уникальный но вкусный 👍🏼",
     "date": "28.09.2026 18:36",
     "sent_to_channel": true
+  },
+  "#0420_Yami": {
+    "oid": "#0420",
+    "user_id": 325400266,
+    "username": "𝕵𝖊𝖛𝖌𝖊𝖓𝖎𝖏",
+    "product_name": "Yami",
+    "flavor": "Apple Peach",
+    "rating": 5,
+    "comment": "По вкусу вкусно. 💪",
+    "date": "30.09.2026 21:21",
+    "sent_to_channel": true
   }
 }
