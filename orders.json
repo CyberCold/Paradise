@@ -9017,5 +9017,24 @@
     "status": "done",
     "date": "30.09.2026 17:50",
     "done_at": "2026-09-30T18:25:15.984922"
+  },
+  "#0432": {
+    "oid": "#0432",
+    "items": [
+      {
+        "pid": "vozolmagic500000",
+        "product_name": "Vozol Magic 50000",
+        "flavor": "Grape Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol Magic 50000, вкус: Grape Ice, количество: 1",
+    "source_key": "929516345:27107",
+    "source_chat_id": 929516345,
+    "source_message_id": 27107,
+    "user_id": 929516345,
+    "username": "Дин",
+    "status": "new",
+    "date": "30.09.2026 22:41"
   }
 }
