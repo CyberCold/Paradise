@@ -60,11 +60,31 @@
       "price": "10€",
       "image": "https://i.postimg.cc/zvZqbZZh/elfliq.png",
       "flavors": [
-        "Blackberry Lemon"
+        "Jasmine Raspberry",
+        "Green Grape Rose",
+        "Pink Lemonade",
+        "Pineapple Colada",
+        "Blueberry Sour Raspberry",
+        "Kiwi Passion Fruit Guava",
+        "Blueberry Raspberry Pomegranate",
+        "Blueberry Rose Mint",
+        "Elf Jack",
+        "Cherry Sour Raspberry",
+        "Grape Cherry",
+        "Blueberry Cherry Cranberry",
+        "Cherry",
+        "Blue Razz Cherry",
+        "Blue Razz Lemonade",
+        "Blackberry Lemon",
+        "Mr Blue",
+        "Lemon Sherbet",
+        "Apple Pear",
+        "Blackcurrant Menthol",
+        "Blue Razz Cherry"
       ],
       "stock": "in",
       "badge": "new",
-      "hidden": true
+      "hidden": false
     },
     "vozolckick": {
       "id": "vozolckick",
