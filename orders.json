@@ -8957,5 +8957,24 @@
     "status": "done",
     "date": "29.09.2026 17:47",
     "done_at": "2026-09-29T18:19:06.719362"
+  },
+  "#0429": {
+    "oid": "#0429",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Lavafire",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Lavafire, количество: 1",
+    "source_key": "797019214:26962",
+    "source_chat_id": 797019214,
+    "source_message_id": 26962,
+    "user_id": 797019214,
+    "username": "yulya",
+    "status": "new",
+    "date": "30.09.2026 16:13"
   }
 }
