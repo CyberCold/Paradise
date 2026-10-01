@@ -13958,9 +13958,22 @@
     "is_premium": true,
     "source": "webapp",
     "registered": "2026-05-25T10:20:41.076Z",
-    "last_seen": "2026-09-23T07:29:10.399Z",
-    "visit_count": 44,
+    "last_seen": "2026-10-01T18:31:16.739Z",
+    "visit_count": 45,
     "ips": [
+      {
+        "ip": "2a00:f503:150:deca:75be:7545:85f6:7351",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Bite Latvija    users",
+        "asn": 13194,
+        "lat": 56.946,
+        "lon": 24.10589,
+        "first_seen": "2026-10-01T18:31:16.739Z",
+        "last_seen": "2026-10-01T18:31:16.739Z",
+        "visits": 1
+      },
       {
         "ip": "77.38.143.68",
         "country": "LV",
@@ -14207,22 +14220,45 @@
         "first_seen": "2026-08-09T11:57:58.791Z",
         "last_seen": "2026-08-09T11:57:58.791Z",
         "visits": 1
-      },
-      {
-        "ip": "2a00:f503:250:70dc:1430:543c:ad0f:4c34",
-        "country": "LV",
-        "city": "Riga",
-        "region": "Riga",
-        "isp": "Bite Latvija    users",
-        "asn": 13194,
-        "lat": 56.946,
-        "lon": 24.10589,
-        "first_seen": "2026-08-06T18:16:51.743Z",
-        "last_seen": "2026-08-06T18:16:51.743Z",
-        "visits": 1
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-10-01T18:31:16.739Z",
+        "ip": "2a00:f503:150:deca:75be:7545:85f6:7351",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a43d8b197c73cc31",
+        "screen": "402x874@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-09-23T07:29:10.399Z",
         "ip": "77.38.143.68",
@@ -15266,42 +15302,6 @@
         "ua_bitness": null,
         "ua_model": null,
         "ua_mobile": false
-      },
-      {
-        "timestamp": "2026-08-25T14:05:58.747Z",
-        "ip": "2a00:f503:250:5056:297e:fa7c:9c9d:1e9c",
-        "country": "LV",
-        "city": "Riga",
-        "region": "Riga",
-        "url": "https://paradiseminiapp.pages.dev/app",
-        "referrer": null,
-        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
-        "device": "iPhone",
-        "browser": "unknown",
-        "browser_version": null,
-        "os": "iOS",
-        "os_version": "18.7",
-        "language": "ru",
-        "cf_ray": "a30b279a1bb6cc2e",
-        "screen": "402x874@3",
-        "tz_client": "Europe/Riga",
-        "color_depth": 0,
-        "touch": 5,
-        "platform": "iPhone",
-        "memory": 0,
-        "cores": 4,
-        "connection": null,
-        "webgl_vendor": null,
-        "webgl_renderer": null,
-        "languages": [
-          "ru"
-        ],
-        "ua_platform": null,
-        "ua_platform_version": null,
-        "ua_architecture": null,
-        "ua_bitness": null,
-        "ua_model": null,
-        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -15327,7 +15327,7 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-09-23T07:29:10.399Z"
+      "updated_at": "2026-10-01T18:31:16.739Z"
     },
     "device_keys": [
       "c8b7ea8017f2df52f556d73c02e7b5bfacb61a7da7349470eee38f626a8e2f45",
@@ -15339,8 +15339,8 @@
       "city": "Riga",
       "region": "Riga",
       "timezone": "Europe/Riga",
-      "asn": 20910,
-      "isp": "BALTCOM Broadband Customers",
+      "asn": 13194,
+      "isp": "Bite Latvija    users",
       "lat": 56.946,
       "lon": 24.10589
     }
@@ -69619,7 +69619,7 @@
         "cf_ray": "a43d01ca3895b803",
         "screen": "420x912@3",
         "tz_client": "Europe/Minsk",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
