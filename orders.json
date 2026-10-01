@@ -9099,5 +9099,24 @@
     "username": "Влад",
     "status": "new",
     "date": "01.10.2026 17:52"
+  },
+  "#0436": {
+    "oid": "#0436",
+    "items": [
+      {
+        "pid": "truesalt",
+        "product_name": "True Salt 20mg",
+        "flavor": "Banana Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nTrue Salt 20mg, вкус: Banana Ice, количество: 1",
+    "source_key": "8884983173:27190",
+    "source_chat_id": 8884983173,
+    "source_message_id": 27190,
+    "user_id": 8884983173,
+    "username": "Олегыыч",
+    "status": "new",
+    "date": "01.10.2026 19:00"
   }
 }
