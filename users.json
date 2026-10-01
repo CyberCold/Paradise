@@ -117195,10 +117195,11 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-10-01T17:54:54.782269",
-    "last_seen": "2026-10-01T14:56:50.390Z"
+    "last_seen": "2026-10-01T19:16:36.850341"
   },
   "8884983173": {
     "id": 8884983173,
