@@ -116207,7 +116207,8 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-09-28T23:31:44.022467",
     "last_seen": "2026-10-01T06:18:12.247Z"
