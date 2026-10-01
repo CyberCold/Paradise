@@ -592,5 +592,16 @@
     "comment": "По вкусу вкусно. 💪",
     "date": "30.09.2026 21:21",
     "sent_to_channel": true
+  },
+  "#0430_Vozol": {
+    "oid": "#0430",
+    "user_id": 1357708699,
+    "username": "###",
+    "product_name": "Vozol",
+    "flavor": "Purple Candy",
+    "rating": 5,
+    "comment": null,
+    "date": "01.10.2026 16:49",
+    "sent_to_channel": true
   }
 }
