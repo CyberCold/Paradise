@@ -9156,5 +9156,24 @@
     "username": "syrnik",
     "status": "new",
     "date": "01.10.2026 19:56"
+  },
+  "#0439": {
+    "oid": "#0439",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Blackcurrant Menthol",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Blackcurrant Menthol, количество: 1",
+    "source_key": "349400151:27242",
+    "source_chat_id": 349400151,
+    "source_message_id": 27242,
+    "user_id": 349400151,
+    "username": "Ди🧘‍♀️",
+    "status": "new",
+    "date": "01.10.2026 20:33"
   }
 }
