@@ -9054,8 +9054,9 @@
     "source_message_id": 27116,
     "user_id": 1482744758,
     "username": "Nary",
-    "status": "new",
-    "date": "01.10.2026 09:18"
+    "status": "done",
+    "date": "01.10.2026 09:18",
+    "done_at": "2026-10-01T21:36:29.910246"
   },
   "#0434": {
     "oid": "#0434",
