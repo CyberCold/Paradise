@@ -9309,5 +9309,30 @@
     "username": "Сергей",
     "status": "new",
     "date": "02.10.2026 18:32"
+  },
+  "#0446": {
+    "oid": "#0446",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Blackcurrant Menthol",
+        "qty": 1
+      },
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Pink Lemonade",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Blackcurrant Menthol, количество: 1\nElfliq, вкус: Pink Lemonade, количество: 1",
+    "source_key": "1027661184:27487",
+    "source_chat_id": 1027661184,
+    "source_message_id": 27487,
+    "user_id": 1027661184,
+    "username": "Лиза ×>×",
+    "status": "new",
+    "date": "02.10.2026 18:57"
   }
 }
