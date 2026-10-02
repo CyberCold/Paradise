@@ -603,5 +603,16 @@
     "comment": null,
     "date": "01.10.2026 16:49",
     "sent_to_channel": true
+  },
+  "#0433_Vozol": {
+    "oid": "#0433",
+    "user_id": 1482744758,
+    "username": "Nary",
+    "product_name": "Vozol",
+    "flavor": "Cherry Vanilla Cream",
+    "rating": 5,
+    "comment": "На любителя. Если вам нравится ваниль берите.\nОтзыв ставлю хороший, лучшие и администратор и курьер🙈",
+    "date": "02.10.2026 21:37",
+    "sent_to_channel": true
   }
 }
