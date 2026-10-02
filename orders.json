@@ -9196,8 +9196,9 @@
     "source_message_id": 27257,
     "user_id": 5704178591,
     "username": "terumikami",
-    "status": "new",
-    "date": "02.10.2026 09:13"
+    "status": "done",
+    "date": "02.10.2026 09:13",
+    "done_at": "2026-10-02T12:56:15.439519"
   },
   "#0441": {
     "oid": "#0441",
