@@ -61,8 +61,21 @@
     "username": "dianabeikule",
     "language_code": "ru",
     "is_premium": false,
-    "visit_count": 5,
+    "visit_count": 6,
     "ips": [
+      {
+        "ip": "2a00:f503:250:3c7e:d4f8:2032:d80e:9f40",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Bite Latvija    users",
+        "asn": 13194,
+        "lat": 56.946,
+        "lon": 24.10589,
+        "first_seen": "2026-10-02T13:26:24.864Z",
+        "last_seen": "2026-10-02T13:26:24.864Z",
+        "visits": 1
+      },
       {
         "ip": "77.38.195.100",
         "country": "LV",
@@ -91,6 +104,42 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-10-02T13:26:24.864Z",
+        "ip": "2a00:f503:250:3c7e:d4f8:2032:d80e:9f40",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a44409e55bc3cb3b",
+        "screen": "390x844@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-09-24T13:33:21.478Z",
         "ip": "77.38.195.100",
@@ -295,7 +344,7 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-09-24T13:33:21.478Z"
+      "updated_at": "2026-10-02T13:26:24.864Z"
     },
     "device_keys": [
       "b1a6292ef62370f8f75f4681094c81cc4c7a80546b25e925678fd5418aeacc98",
@@ -306,8 +355,8 @@
       "city": "Riga",
       "region": "Riga",
       "timezone": "Europe/Riga",
-      "asn": 20910,
-      "isp": "BALTCOM Broadband Customers",
+      "asn": 13194,
+      "isp": "Bite Latvija    users",
       "lat": 56.946,
       "lon": 24.10589
     },
@@ -318,7 +367,7 @@
       "chat"
     ],
     "registered": "2026-06-10T18:27:54.156655",
-    "last_seen": "2026-10-02T16:08:12.318791"
+    "last_seen": "2026-10-02T13:26:24.864Z"
   },
   "403103258": {
     "id": 403103258,
@@ -32876,7 +32925,7 @@
       "webapp"
     ],
     "registered": "2026-06-02T12:30:30.984589",
-    "last_seen": "2026-10-02T16:20:39.314457"
+    "last_seen": "2026-10-02T16:24:19.613030"
   },
   "1827221221": {
     "id": 1827221221,
@@ -93730,7 +93779,7 @@
         "cf_ray": "a443e962ddce2aa2",
         "screen": "391x849@3.25",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "Linux aarch64",
         "memory": 8,
