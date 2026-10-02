@@ -9198,5 +9198,24 @@
     "username": "terumikami",
     "status": "new",
     "date": "02.10.2026 09:13"
+  },
+  "#0441": {
+    "oid": "#0441",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Pink Lemonade",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Pink Lemonade, количество: 1",
+    "source_key": "5704178591:27300",
+    "source_chat_id": 5704178591,
+    "source_message_id": 27300,
+    "user_id": 5704178591,
+    "username": "terumikami",
+    "status": "new",
+    "date": "02.10.2026 12:26"
   }
 }
