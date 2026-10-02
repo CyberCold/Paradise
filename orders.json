@@ -9278,5 +9278,36 @@
     "username": "Эрвин👾",
     "status": "new",
     "date": "02.10.2026 18:01"
+  },
+  "#0445": {
+    "oid": "#0445",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Pink Lemonade",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Energy Ice",
+        "qty": 1
+      },
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Grape Cherry",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Pink Lemonade, количество: 1\nYami, вкус: Energy Ice, количество: 1\nElfliq, вкус: Grape Cherry, количество: 1",
+    "source_key": "1008881675:27472",
+    "source_chat_id": 1008881675,
+    "source_message_id": 27472,
+    "user_id": 1008881675,
+    "username": "Сергей",
+    "status": "new",
+    "date": "02.10.2026 18:32"
   }
 }
