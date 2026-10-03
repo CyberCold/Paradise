@@ -9382,5 +9382,24 @@
     "username": "Тёма AK-47",
     "status": "new",
     "date": "03.10.2026 10:33"
+  },
+  "#0449": {
+    "oid": "#0449",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Peach Mango Watermelon",
+        "qty": 2
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Peach Mango Watermelon, количество: 2",
+    "source_key": "2047923395:27579",
+    "source_chat_id": 2047923395,
+    "source_message_id": 27579,
+    "user_id": 2047923395,
+    "username": "Rik.",
+    "status": "new",
+    "date": "03.10.2026 14:40"
   }
 }
