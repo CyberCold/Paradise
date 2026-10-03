@@ -9418,8 +9418,9 @@
     "source_message_id": 27601,
     "user_id": 597224613,
     "username": "Dainis",
-    "status": "new",
-    "date": "03.10.2026 15:56"
+    "status": "done",
+    "date": "03.10.2026 15:56",
+    "done_at": "2026-10-03T17:48:17.985521"
   },
   "#0451": {
     "oid": "#0451",
