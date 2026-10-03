@@ -9531,5 +9531,24 @@
     "username": "Вадим",
     "status": "cancelled",
     "date": "03.10.2026 20:18"
+  },
+  "#0456": {
+    "oid": "#0456",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Blueberry Watermelon",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Blueberry Watermelon, количество: 1",
+    "source_key": "1482744758:27717",
+    "source_chat_id": 1482744758,
+    "source_message_id": 27717,
+    "user_id": 1482744758,
+    "username": "Nary",
+    "status": "new",
+    "date": "03.10.2026 22:48"
   }
 }
