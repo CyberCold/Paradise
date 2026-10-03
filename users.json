@@ -120207,12 +120207,113 @@
     "id": 597224613,
     "first_name": "Dainis",
     "username": "DainisOff",
+    "language_code": "ru",
+    "is_premium": true,
+    "visit_count": 1,
+    "ips": [
+      {
+        "ip": "94.30.234.136",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "BALTCOM Broadband Customers",
+        "asn": 20910,
+        "lat": 56.946,
+        "lon": 24.10589,
+        "first_seen": "2026-10-03T12:45:18.013Z",
+        "last_seen": "2026-10-03T12:45:18.013Z",
+        "visits": 1
+      }
+    ],
+    "visits": [
+      {
+        "timestamp": "2026-10-03T12:45:18.013Z",
+        "ip": "94.30.234.136",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 16; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.36 Mobile Safari/537.36 Telegram-Android/12.10.6 (Xiaomi 24030PN60G; Android 16; SDK 36; HIGH)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "153.0.8010.36",
+        "os": "Android",
+        "os_version": "16",
+        "language": "ru",
+        "cf_ray": "a44c0b0b6efce4d1",
+        "screen": "412x915@2.625",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 8,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru",
+          "ru-RU",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      }
+    ],
+    "fingerprint": {
+      "screen": "412x915@2.625",
+      "timezone": "Europe/Riga",
+      "color_depth": 24,
+      "touch": 5,
+      "platform": "Linux aarch64",
+      "memory": 8,
+      "cores": 8,
+      "connection": "4g",
+      "webgl_vendor": "Qualcomm",
+      "webgl_renderer": "Adreno (TM) 750",
+      "languages": [
+        "ru",
+        "ru-RU",
+        "en-US"
+      ],
+      "ua_platform": "Android",
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": true,
+      "device": "Android Phone",
+      "browser": "Chrome",
+      "os": "Android",
+      "updated_at": "2026-10-03T12:45:18.013Z"
+    },
+    "device_keys": [
+      "01909688abaf719bc22abe2e3d457c0d4853959d4445c1a84c01e81cc22e724e",
+      "24830d869c097fe06f0ef09f7188a1d00a0260415f64feb6cf946b48bcd58887"
+    ],
+    "geo": {
+      "country": "LV",
+      "city": "Riga",
+      "region": "Riga",
+      "timezone": "Europe/Riga",
+      "asn": 20910,
+      "isp": "BALTCOM Broadband Customers",
+      "lat": 56.946,
+      "lon": 24.10589
+    },
     "source": "chat",
     "sources": [
-      "chat"
+      "chat",
+      "bot_start",
+      "webapp"
     ],
     "registered": "2026-10-03T12:31:14.876053",
-    "last_seen": "2026-10-03T12:31:14.876053"
+    "last_seen": "2026-10-03T12:45:18.013Z"
   },
   "1359570952": {
     "id": 1359570952,
@@ -120254,7 +120355,7 @@
         "cf_ray": "a44bf3d3e966fc65",
         "screen": "384x832@2.8125",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "Linux aarch64",
         "memory": 8,
