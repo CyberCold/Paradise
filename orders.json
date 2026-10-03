@@ -9464,5 +9464,30 @@
     "username": "𝔞𝔫𝔡𝔢𝔤𝔬𝔯𝔲𝔰",
     "status": "new",
     "date": "03.10.2026 16:47"
+  },
+  "#0453": {
+    "oid": "#0453",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Cherry Vanilla Cream",
+        "qty": 1
+      },
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Kiwi Passion Fruit Guava",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Cherry Vanilla Cream, количество: 1\nElfliq, вкус: Kiwi Passion Fruit Guava, количество: 1",
+    "source_key": "325400266:27630",
+    "source_chat_id": 325400266,
+    "source_message_id": 27630,
+    "user_id": 325400266,
+    "username": "𝕵𝖊𝖛𝖌𝖊𝖓𝖎𝖏",
+    "status": "new",
+    "date": "03.10.2026 16:54"
   }
 }
