@@ -120466,9 +120466,10 @@
     "username": "andegorus",
     "source": "chat",
     "sources": [
-      "chat"
+      "chat",
+      "bot_start"
     ],
     "registered": "2026-10-03T16:36:28.477384",
-    "last_seen": "2026-10-03T16:36:28.477384"
+    "last_seen": "2026-10-03T16:40:00.221039"
   }
 }
