@@ -9420,5 +9420,30 @@
     "username": "Dainis",
     "status": "new",
     "date": "03.10.2026 15:56"
+  },
+  "#0451": {
+    "oid": "#0451",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Cherry Vanilla Cream",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Lavafire",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Хотел бы уточнить информацию по товару:\nVozol, вкус: Cherry Vanilla Cream, количество: 1\nVozol, вкус: Lavafire, количество: 1",
+    "source_key": "5027338604:27613",
+    "source_chat_id": 5027338604,
+    "source_message_id": 27613,
+    "user_id": 5027338604,
+    "username": "𝔞𝔫𝔡𝔢𝔤𝔬𝔯𝔲𝔰",
+    "status": "new",
+    "date": "03.10.2026 16:44"
   }
 }
