@@ -120015,5 +120015,16 @@
     ],
     "registered": "2026-10-03T10:29:12.455535",
     "last_seen": "2026-10-03T08:03:06.571Z"
+  },
+  "597224613": {
+    "id": 597224613,
+    "first_name": "Dainis",
+    "username": "DainisOff",
+    "source": "chat",
+    "sources": [
+      "chat"
+    ],
+    "registered": "2026-10-03T12:31:14.876053",
+    "last_seen": "2026-10-03T12:31:14.876053"
   }
 }
