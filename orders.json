@@ -9357,5 +9357,30 @@
     "status": "done",
     "date": "02.10.2026 22:32",
     "done_at": "2026-10-02T22:51:28.837657"
+  },
+  "#0448": {
+    "oid": "#0448",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Cola Gummies",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Strawberry Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Cola Gummies, количество: 1\nVozol, вкус: Strawberry Ice, количество: 1",
+    "source_key": "7332589088:27576",
+    "source_chat_id": 7332589088,
+    "source_message_id": 27576,
+    "user_id": 7332589088,
+    "username": "Тёма AK-47",
+    "status": "new",
+    "date": "03.10.2026 10:33"
   }
 }
