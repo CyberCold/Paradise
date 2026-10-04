@@ -9624,8 +9624,9 @@
     "source_message_id": 27764,
     "user_id": 5581672715,
     "username": "Valerij",
-    "status": "new",
-    "date": "04.10.2026 16:50"
+    "status": "done",
+    "date": "04.10.2026 16:50",
+    "done_at": "2026-10-04T23:23:17.906033"
   },
   "#0461": {
     "oid": "#0461",
