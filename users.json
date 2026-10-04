@@ -19146,7 +19146,7 @@
         "cf_ray": "a4562e414fbba879",
         "screen": "393x852@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -88319,8 +88319,21 @@
     "first_name": "Parad",
     "language_code": "ru",
     "is_premium": false,
-    "visit_count": 14,
+    "visit_count": 15,
     "ips": [
+      {
+        "ip": "2a03:ec00:b95d:81fe::2",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Latvijas Mobilais Telefons SIA",
+        "asn": 24921,
+        "lat": 56.946,
+        "lon": 24.1059,
+        "first_seen": "2026-10-04T18:51:47.606Z",
+        "last_seen": "2026-10-04T18:51:47.606Z",
+        "visits": 1
+      },
       {
         "ip": "2a03:ec00:b15b:9a23:844f:3812:19ea:10bf",
         "country": "LV",
@@ -88427,6 +88440,44 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-10-04T18:51:47.606Z",
+        "ip": "2a03:ec00:b95d:81fe::2",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 14; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.36 Mobile Safari/537.36 Telegram-Android/12.10.6 (Xiaomi 22126RN91Y; Android 14; SDK 34; AVERAGE)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "153.0.8010.36",
+        "os": "Android",
+        "os_version": "14",
+        "language": "ru",
+        "cf_ray": "a45661465bc0a878",
+        "screen": "360x825@2",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 4,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru",
+          "ru-RU",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-10-01T20:34:29.414Z",
         "ip": "2a03:ec00:b15b:9a23:844f:3812:19ea:10bf",
@@ -88959,17 +89010,18 @@
       }
     ],
     "fingerprint": {
-      "screen": "385x854@1.875",
+      "screen": "360x825@2",
       "timezone": "Europe/Riga",
       "color_depth": 24,
       "touch": 5,
-      "platform": "Linux armv8l",
-      "memory": 2,
+      "platform": "Linux aarch64",
+      "memory": 4,
       "cores": 8,
       "connection": "4g",
-      "webgl_vendor": "Imagination Technologies",
-      "webgl_renderer": "PowerVR SGX Doma",
+      "webgl_vendor": "ARM",
+      "webgl_renderer": "Mali-G52 MC2",
       "languages": [
+        "ru",
         "ru-RU",
         "en-US"
       ],
@@ -88982,13 +89034,13 @@
       "device": "Android Phone",
       "browser": "Chrome",
       "os": "Android",
-      "updated_at": "2026-10-01T20:34:29.414Z"
+      "updated_at": "2026-10-04T18:51:47.606Z"
     },
     "device_keys": [
-      "e3983cc9cace5a53b5474a4614f72871e0e423209a9699556975783104829e33",
-      "9b3c58afb430b48da94f1f7d5823b83dc726bf81dbafaa04947a2611a2446e23",
       "ad970ddf570ff7340065dbe0e03680810332b97b79d7ed9ddff8e87a62ed0ffb",
       "2fc11ac453fadc83343d126f1aec66e3a56079ee85f7bbd00e894713be6cb048",
+      "e3983cc9cace5a53b5474a4614f72871e0e423209a9699556975783104829e33",
+      "9b3c58afb430b48da94f1f7d5823b83dc726bf81dbafaa04947a2611a2446e23",
       "d052b4e84a83ac39f8398597b9199d31cffe0cd0ae367276da142acc172df293"
     ],
     "geo": {
@@ -88999,7 +89051,7 @@
       "asn": 24921,
       "isp": "Latvijas Mobilais Telefons SIA",
       "lat": 56.946,
-      "lon": 24.10589
+      "lon": 24.1059
     },
     "source": "webapp",
     "sources": [
@@ -89007,7 +89059,7 @@
       "chat"
     ],
     "registered": "2026-08-08T08:55:47.825Z",
-    "last_seen": "2026-10-01T20:34:29.414Z"
+    "last_seen": "2026-10-04T18:51:47.606Z"
   },
   "2052020377": {
     "id": 2052020377,
