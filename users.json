@@ -121734,7 +121734,7 @@
     "username": "getn3737",
     "language_code": "ru",
     "is_premium": false,
-    "visit_count": 1,
+    "visit_count": 2,
     "ips": [
       {
         "ip": "85.203.39.231",
@@ -121746,11 +121746,48 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-10-04T17:18:31.823Z",
-        "last_seen": "2026-10-04T17:18:31.823Z",
-        "visits": 1
+        "last_seen": "2026-10-04T17:22:52.818Z",
+        "visits": 2
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-10-04T17:22:52.818Z",
+        "ip": "85.203.39.231",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 16; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.39 Mobile Safari/537.36 Telegram-Android/12.10.1 (Samsung SM-S926B; Android 16; SDK 36; HIGH)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "153.0.8010.39",
+        "os": "Android",
+        "os_version": "16",
+        "language": "ru-RU",
+        "cf_ray": "a455df07ecefacd4",
+        "screen": "384x832@2.8125",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 8,
+        "cores": 10,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru-RU",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-10-04T17:18:31.823Z",
         "ip": "85.203.39.231",
@@ -121813,7 +121850,7 @@
       "device": "Android Phone",
       "browser": "Chrome",
       "os": "Android",
-      "updated_at": "2026-10-04T17:18:31.823Z"
+      "updated_at": "2026-10-04T17:22:52.818Z"
     },
     "device_keys": [
       "db73d4d3cd87ee3f70f748efd9567345f05f1ebdc5065edfa237a175b0a18502",
@@ -121835,7 +121872,7 @@
       "webapp"
     ],
     "registered": "2026-10-04T20:16:41.000739",
-    "last_seen": "2026-10-04T17:18:31.823Z"
+    "last_seen": "2026-10-04T17:22:52.818Z"
   },
   "7627218264": {
     "id": 7627218264,
@@ -121878,7 +121915,7 @@
         "cf_ray": "a455dd803aefa87b",
         "screen": "393x852@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
