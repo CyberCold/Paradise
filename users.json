@@ -121558,7 +121558,8 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-10-04T13:33:41.661621",
     "last_seen": "2026-10-04T10:46:16.127Z"
