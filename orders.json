@@ -9684,8 +9684,9 @@
     "source_message_id": 27777,
     "user_id": 5363595957,
     "username": "yellow",
-    "status": "new",
-    "date": "04.10.2026 16:56"
+    "status": "done",
+    "date": "04.10.2026 16:56",
+    "done_at": "2026-10-04T23:24:21.519525"
   },
   "#0464": {
     "oid": "#0464",
