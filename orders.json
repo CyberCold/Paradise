@@ -9645,5 +9645,24 @@
     "username": "yellow",
     "status": "new",
     "date": "04.10.2026 16:51"
+  },
+  "#0462": {
+    "oid": "#0462",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Watermelon Bubblegum",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Watermelon Bubblegum, количество: 1",
+    "source_key": "5363595957:27769",
+    "source_chat_id": 5363595957,
+    "source_message_id": 27769,
+    "user_id": 5363595957,
+    "username": "yellow",
+    "status": "new",
+    "date": "04.10.2026 16:52"
   }
 }
