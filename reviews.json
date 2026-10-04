@@ -625,5 +625,16 @@
     "comment": "Для любителей ментола будет маловато.",
     "date": "04.10.2026 13:59",
     "sent_to_channel": true
+  },
+  "#0453_Vozol": {
+    "oid": "#0453",
+    "user_id": 325400266,
+    "username": "𝕵𝖊𝖛𝖌𝖊𝖓𝖎𝖏",
+    "product_name": "Vozol",
+    "flavor": "Cherry Vanilla Cream",
+    "rating": 5,
+    "comment": "Вкусная вишня с кремом.",
+    "date": "04.10.2026 21:16",
+    "sent_to_channel": true
   }
 }
