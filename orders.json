@@ -9510,8 +9510,9 @@
     "source_message_id": 27674,
     "user_id": 5363595957,
     "username": "yellow",
-    "status": "new",
-    "date": "03.10.2026 19:46"
+    "status": "done",
+    "date": "03.10.2026 19:46",
+    "done_at": "2026-10-04T23:24:05.224857"
   },
   "#0455": {
     "oid": "#0455",
