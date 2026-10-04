@@ -9607,5 +9607,24 @@
     "username": "онтон",
     "status": "new",
     "date": "04.10.2026 14:34"
+  },
+  "#0460": {
+    "oid": "#0460",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Jasmine Raspberry",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Jasmine Raspberry, количество: 1",
+    "source_key": "5581672715:27764",
+    "source_chat_id": 5581672715,
+    "source_message_id": 27764,
+    "user_id": 5581672715,
+    "username": "Valerij",
+    "status": "new",
+    "date": "04.10.2026 16:50"
   }
 }
