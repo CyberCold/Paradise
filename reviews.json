@@ -614,5 +614,16 @@
     "comment": "На любителя. Если вам нравится ваниль берите.\nОтзыв ставлю хороший, лучшие и администратор и курьер🙈",
     "date": "02.10.2026 21:37",
     "sent_to_channel": true
+  },
+  "#0439_Elfliq": {
+    "oid": "#0439",
+    "user_id": 349400151,
+    "username": "Ди🧘‍♀️",
+    "product_name": "Elfliq",
+    "flavor": "Blackcurrant Menthol",
+    "rating": 3,
+    "comment": "Для любителей ментола будет маловато.",
+    "date": "04.10.2026 13:59",
+    "sent_to_channel": true
   }
 }
