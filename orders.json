@@ -9725,5 +9725,24 @@
     "username": "pitxrd",
     "status": "new",
     "date": "05.10.2026 16:48"
+  },
+  "#0466": {
+    "oid": "#0466",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Cherry",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Cherry, количество: 1",
+    "source_key": "1104617277:27868",
+    "source_chat_id": 1104617277,
+    "source_message_id": 27868,
+    "user_id": 1104617277,
+    "username": "pitxrd",
+    "status": "new",
+    "date": "05.10.2026 16:48"
   }
 }
