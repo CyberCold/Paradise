@@ -108475,10 +108475,11 @@
     "username": "pitxrd",
     "source": "chat",
     "sources": [
-      "chat"
+      "chat",
+      "bot_start"
     ],
     "registered": "2026-09-06T10:51:46.357952",
-    "last_seen": "2026-10-05T16:43:45.491125"
+    "last_seen": "2026-10-05T16:44:42.393538"
   },
   "1031926611": {
     "id": 1031926611,
