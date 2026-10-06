@@ -9782,5 +9782,24 @@
     "username": "Дин",
     "status": "new",
     "date": "06.10.2026 08:47"
+  },
+  "#0469": {
+    "oid": "#0469",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Coconut Candy",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Привет, хочу купить\nYami Coconut Candy 1шт\nГде то около 19:00 если есть возможность",
+    "source_key": "510557368:27950",
+    "source_chat_id": 510557368,
+    "source_message_id": 27950,
+    "user_id": 510557368,
+    "username": "Arman",
+    "status": "new",
+    "date": "06.10.2026 09:22"
   }
 }
