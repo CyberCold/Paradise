@@ -636,5 +636,16 @@
     "comment": "Вкусная вишня с кремом.",
     "date": "04.10.2026 21:16",
     "sent_to_channel": true
+  },
+  "#0447_Vozol Magic 50000": {
+    "oid": "#0447",
+    "user_id": 5343367585,
+    "username": "Гунтис",
+    "product_name": "Vozol Magic 50000",
+    "flavor": "Vzbull",
+    "rating": 5,
+    "comment": null,
+    "date": "06.10.2026 03:17",
+    "sent_to_channel": true
   }
 }
