@@ -9937,8 +9937,9 @@
     "source_message_id": 27990,
     "user_id": 5428316045,
     "username": "noir",
-    "status": "new",
-    "date": "06.10.2026 15:06"
+    "status": "done",
+    "date": "06.10.2026 15:06",
+    "done_at": "2026-10-06T18:12:10.790333"
   },
   "#0477": {
     "oid": "#0477",
