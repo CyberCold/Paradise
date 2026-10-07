@@ -658,5 +658,16 @@
     "comment": "ахуенааа",
     "date": "07.10.2026 17:34",
     "sent_to_channel": true
+  },
+  "#0470_Vozol Magic 50000": {
+    "oid": "#0470",
+    "user_id": 1256781169,
+    "username": "Настя",
+    "product_name": "Vozol Magic 50000",
+    "flavor": "Vzbull",
+    "rating": 4,
+    "comment": null,
+    "date": "07.10.2026 19:20",
+    "sent_to_channel": true
   }
 }
