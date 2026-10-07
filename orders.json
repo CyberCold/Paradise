@@ -10070,5 +10070,24 @@
     "username": "Молли",
     "status": "cancelled",
     "date": "07.10.2026 14:58"
+  },
+  "#0483": {
+    "oid": "#0483",
+    "items": [
+      {
+        "pid": "elfbarduke",
+        "product_name": "ELFBAR DUKE 30k puffs",
+        "flavor": "Strawberry Kiwi",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nELFBAR DUKE 30k puffs, вкус: Strawberry Kiwi, количество: 1",
+    "source_key": "999151926:28287",
+    "source_chat_id": 999151926,
+    "source_message_id": 28287,
+    "user_id": 999151926,
+    "username": "Молли",
+    "status": "new",
+    "date": "07.10.2026 15:00"
   }
 }
