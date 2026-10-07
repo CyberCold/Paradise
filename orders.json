@@ -10001,5 +10001,24 @@
     "status": "done",
     "date": "06.10.2026 17:20",
     "done_at": "2026-10-06T20:14:30.647527"
+  },
+  "#0480": {
+    "oid": "#0480",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Kiwi Passion Fruit Guava",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Kiwi Passion Fruit Guava, количество: 1",
+    "source_key": "8146050086:28270",
+    "source_chat_id": 8146050086,
+    "source_message_id": 28270,
+    "user_id": 8146050086,
+    "username": "ANDROED",
+    "status": "new",
+    "date": "07.10.2026 09:13"
   }
 }
