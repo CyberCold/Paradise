@@ -50772,8 +50772,8 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-09-27T08:41:55.715Z",
-        "last_seen": "2026-10-07T02:05:03.870Z",
-        "visits": 10
+        "last_seen": "2026-10-07T02:16:50.726Z",
+        "visits": 11
       },
       {
         "ip": "5.241.128.2",
@@ -51050,8 +51050,47 @@
     "last_name": "ᅠ ᅠ ᅠ ᅠ ᅠ",
     "language_code": "ru",
     "is_premium": true,
-    "visit_count": 230,
+    "visit_count": 231,
     "visits": [
+      {
+        "timestamp": "2026-10-07T02:16:50.726Z",
+        "ip": "94.30.253.210",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0",
+        "device": "Desktop",
+        "browser": "Edge",
+        "browser_version": "154.0.0.0",
+        "os": "Windows",
+        "os_version": null,
+        "language": "ru",
+        "cf_ray": "a46967f4febfef85",
+        "screen": "1080x1920@1",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 0,
+        "platform": "Win32",
+        "memory": 32,
+        "cores": 16,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru",
+          "en",
+          "en-GB",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-10-07T02:05:03.870Z",
         "ip": "94.30.253.210",
@@ -51070,7 +51109,7 @@
         "cf_ray": "a46956b2ee2fe4ce",
         "screen": "1080x1920@1",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 0,
         "platform": "Win32",
         "memory": 32,
@@ -52140,45 +52179,6 @@
         "ua_bitness": null,
         "ua_model": null,
         "ua_mobile": false
-      },
-      {
-        "timestamp": "2026-09-18T11:46:59.537Z",
-        "ip": "94.30.232.243",
-        "country": "LV",
-        "city": "Riga",
-        "region": "Riga",
-        "url": "https://paradiseminiapp.pages.dev/app",
-        "referrer": null,
-        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36 Edg/153.0.0.0",
-        "device": "Desktop",
-        "browser": "Edge",
-        "browser_version": "153.0.0.0",
-        "os": "Windows",
-        "os_version": null,
-        "language": "ru",
-        "cf_ray": "a3d01d01fa26e4cb",
-        "screen": "1080x1920@1",
-        "tz_client": "Europe/Riga",
-        "color_depth": 0,
-        "touch": 0,
-        "platform": "Win32",
-        "memory": 32,
-        "cores": 16,
-        "connection": "4g",
-        "webgl_vendor": null,
-        "webgl_renderer": null,
-        "languages": [
-          "ru",
-          "en",
-          "en-GB",
-          "en-US"
-        ],
-        "ua_platform": null,
-        "ua_platform_version": null,
-        "ua_architecture": null,
-        "ua_bitness": null,
-        "ua_model": null,
-        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -52207,7 +52207,7 @@
       "device": "Desktop",
       "browser": "Edge",
       "os": "Windows",
-      "updated_at": "2026-10-07T02:05:03.870Z"
+      "updated_at": "2026-10-07T02:16:50.726Z"
     },
     "geo": {
       "country": "LV",
@@ -52235,7 +52235,7 @@
       "chat"
     ],
     "registered": "2026-05-29T13:01:10.148Z",
-    "last_seen": "2026-10-07T02:05:03.870Z"
+    "last_seen": "2026-10-07T02:16:50.726Z"
   },
   "5637938428": {
     "id": 5637938428,
