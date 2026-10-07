@@ -10089,5 +10089,30 @@
     "username": "Молли",
     "status": "new",
     "date": "07.10.2026 15:00"
+  },
+  "#0484": {
+    "oid": "#0484",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Purple Candy",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Cola Gummies",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Purple Candy, количество: 1\nVozol, вкус: Cola Gummies, количество: 1",
+    "source_key": "1380966145:28314",
+    "source_chat_id": 1380966145,
+    "source_message_id": 28314,
+    "user_id": 1380966145,
+    "username": "Виталий",
+    "status": "new",
+    "date": "07.10.2026 16:46"
   }
 }
