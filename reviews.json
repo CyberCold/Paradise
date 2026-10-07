@@ -669,5 +669,16 @@
     "comment": null,
     "date": "07.10.2026 19:20",
     "sent_to_channel": true
+  },
+  "#0479_Vozol": {
+    "oid": "#0479",
+    "user_id": 2065941330,
+    "username": "Андрик",
+    "product_name": "Vozol",
+    "flavor": "Purple Candy",
+    "rating": 3,
+    "comment": null,
+    "date": "08.10.2026 01:32",
+    "sent_to_channel": true
   }
 }
