@@ -126046,5 +126046,16 @@
     ],
     "registered": "2026-10-07T17:35:07.270567",
     "last_seen": "2026-10-07T18:22:25.242463"
+  },
+  "5830603415": {
+    "id": 5830603415,
+    "first_name": "sh",
+    "username": "dkvqxet",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-10-07T21:14:23.429385",
+    "last_seen": "2026-10-07T21:14:23.429385"
   }
 }
