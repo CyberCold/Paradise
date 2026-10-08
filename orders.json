@@ -10116,5 +10116,36 @@
     "username": "Виталий",
     "status": "new",
     "date": "07.10.2026 16:46"
+  },
+  "#0485": {
+    "oid": "#0485",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Cherry Vanilla Cream",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Mexican Mango Ice",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Peach Mango Watermelon",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Cherry Vanilla Cream, количество: 1\nVozol, вкус: Mexican Mango Ice, количество: 1\nVozol, вкус: Peach Mango Watermelon, количество: 1",
+    "source_key": "5616781113:28381",
+    "source_chat_id": 5616781113,
+    "source_message_id": 28381,
+    "user_id": 5616781113,
+    "username": "Doomka",
+    "status": "new",
+    "date": "08.10.2026 10:51"
   }
 }
