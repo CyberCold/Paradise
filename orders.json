@@ -10186,8 +10186,9 @@
     "source_message_id": 28426,
     "user_id": 8530167965,
     "username": "Parad",
-    "status": "new",
-    "date": "08.10.2026 18:22"
+    "status": "done",
+    "date": "08.10.2026 18:22",
+    "done_at": "2026-10-08T20:06:19.367922"
   },
   "#0488": {
     "oid": "#0488",
