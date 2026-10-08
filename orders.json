@@ -10018,8 +10018,9 @@
     "source_message_id": 28270,
     "user_id": 8146050086,
     "username": "ANDROED",
-    "status": "new",
-    "date": "07.10.2026 09:13"
+    "status": "done",
+    "date": "07.10.2026 09:13",
+    "done_at": "2026-10-08T17:24:30.804410"
   },
   "#0481": {
     "oid": "#0481",
