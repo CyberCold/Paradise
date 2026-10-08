@@ -9802,8 +9802,9 @@
     "source_message_id": 27950,
     "user_id": 510557368,
     "username": "Arman",
-    "status": "new",
-    "date": "06.10.2026 09:22"
+    "status": "done",
+    "date": "06.10.2026 09:22",
+    "done_at": "2026-10-08T17:24:46.702246"
   },
   "#0470": {
     "oid": "#0470",
