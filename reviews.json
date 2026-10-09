@@ -680,5 +680,16 @@
     "comment": null,
     "date": "08.10.2026 01:32",
     "sent_to_channel": true
+  },
+  "#0469_Yami": {
+    "oid": "#0469",
+    "user_id": 510557368,
+    "username": "Arman",
+    "product_name": "Yami",
+    "flavor": "Coconut Candy",
+    "rating": 4,
+    "comment": null,
+    "date": "09.10.2026 17:26",
+    "sent_to_channel": true
   }
 }
