@@ -10347,8 +10347,9 @@
     "source_message_id": 28552,
     "user_id": 919731227,
     "username": "Juritis",
-    "status": "new",
-    "date": "09.10.2026 13:37"
+    "status": "done",
+    "date": "09.10.2026 13:37",
+    "done_at": "2026-10-09T18:31:12.952797"
   },
   "#0496": {
     "oid": "#0496",
