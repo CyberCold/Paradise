@@ -10368,5 +10368,30 @@
     "username": "Кристофер",
     "status": "new",
     "date": "09.10.2026 16:00"
+  },
+  "#0497": {
+    "oid": "#0497",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Purple Candy",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Blue Cotton Candy",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Можно тогда заказать \nMexican mango ice\npeach mango watermelon\nPurple candy\nBlue cotton candy",
+    "source_key": "1636239325:28589",
+    "source_chat_id": 1636239325,
+    "source_message_id": 28589,
+    "user_id": 1636239325,
+    "username": "rob4ik",
+    "status": "new",
+    "date": "09.10.2026 16:11"
   }
 }
