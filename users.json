@@ -126566,10 +126566,11 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-10-05T16:57:13.553310",
-    "last_seen": "2026-10-09T07:20:06.772Z"
+    "last_seen": "2026-10-09T10:20:30.307352"
   },
   "5150492939": {
     "id": 5150492939,
