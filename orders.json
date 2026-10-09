@@ -10210,5 +10210,24 @@
     "username": ")))",
     "status": "cancelled",
     "date": "08.10.2026 20:04"
+  },
+  "#0489": {
+    "oid": "#0489",
+    "items": [
+      {
+        "pid": "dojo",
+        "product_name": "Dojo Sphere X",
+        "flavor": "Blue Star",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nDojo Sphere X, вкус: Blue Star, количество: 1",
+    "source_key": "1497974867:28514",
+    "source_chat_id": 1497974867,
+    "source_message_id": 28514,
+    "user_id": 1497974867,
+    "username": "okosov",
+    "status": "new",
+    "date": "09.10.2026 10:20"
   }
 }
