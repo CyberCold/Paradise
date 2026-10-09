@@ -10311,5 +10311,24 @@
     "username": "Elias",
     "status": "new",
     "date": "09.10.2026 13:00"
+  },
+  "#0494": {
+    "oid": "#0494",
+    "items": [
+      {
+        "pid": "vozolmagic500000",
+        "product_name": "Vozol Magic 50000",
+        "flavor": "Blue Razz Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol Magic 50000, вкус: Blue Razz Ice, количество: 1",
+    "source_key": "1437698107:28550",
+    "source_chat_id": 1437698107,
+    "source_message_id": 28550,
+    "user_id": 1437698107,
+    "username": "Elias",
+    "status": "new",
+    "date": "09.10.2026 13:29"
   }
 }
