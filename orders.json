@@ -10393,8 +10393,9 @@
     "source_message_id": 28589,
     "user_id": 1636239325,
     "username": "rob4ik",
-    "status": "new",
-    "date": "09.10.2026 16:11"
+    "status": "done",
+    "date": "09.10.2026 16:11",
+    "done_at": "2026-10-09T18:31:27.495277"
   },
   "#0498": {
     "oid": "#0498",
