@@ -10349,5 +10349,24 @@
     "username": "Juritis",
     "status": "new",
     "date": "09.10.2026 13:37"
+  },
+  "#0496": {
+    "oid": "#0496",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Mr Blue",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Mr Blue, количество: 1",
+    "source_key": "6347638514:28573",
+    "source_chat_id": 6347638514,
+    "source_message_id": 28573,
+    "user_id": 6347638514,
+    "username": "Кристофер",
+    "status": "new",
+    "date": "09.10.2026 16:00"
   }
 }
