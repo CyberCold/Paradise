@@ -10292,5 +10292,24 @@
     "username": "Кристофер",
     "status": "new",
     "date": "09.10.2026 12:31"
+  },
+  "#0493": {
+    "oid": "#0493",
+    "items": [
+      {
+        "pid": "vozolckick",
+        "product_name": "Vozol Star Click 50k puffs",
+        "flavor": "Orange molasses",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol Star Click 50k puffs, вкус: Orange molasses, количество: 1",
+    "source_key": "1437698107:28547",
+    "source_chat_id": 1437698107,
+    "source_message_id": 28547,
+    "user_id": 1437698107,
+    "username": "Elias",
+    "status": "new",
+    "date": "09.10.2026 13:00"
   }
 }
