@@ -691,5 +691,16 @@
     "comment": null,
     "date": "09.10.2026 17:26",
     "sent_to_channel": true
+  },
+  "#0486_Elfliq": {
+    "oid": "#0486",
+    "user_id": 1345938654,
+    "username": "𝔻𝕚𝕒𝕟𝕒",
+    "product_name": "Elfliq",
+    "flavor": "Blackcurrant Menthol",
+    "rating": 5,
+    "comment": null,
+    "date": "09.10.2026 20:16",
+    "sent_to_channel": false
   }
 }
