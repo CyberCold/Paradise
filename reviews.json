@@ -701,6 +701,17 @@
     "rating": 5,
     "comment": null,
     "date": "09.10.2026 20:16",
-    "sent_to_channel": false
+    "sent_to_channel": true
+  },
+  "#0497_Vozol": {
+    "oid": "#0497",
+    "user_id": 1636239325,
+    "username": "rob4ik",
+    "product_name": "Vozol",
+    "flavor": "Purple Candy",
+    "rating": 5,
+    "comment": null,
+    "date": "10.10.2026 18:32",
+    "sent_to_channel": true
   }
 }
