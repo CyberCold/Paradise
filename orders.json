@@ -10328,8 +10328,9 @@
     "source_message_id": 28550,
     "user_id": 1437698107,
     "username": "Elias",
-    "status": "new",
-    "date": "09.10.2026 13:29"
+    "status": "done",
+    "date": "09.10.2026 13:29",
+    "done_at": "2026-10-10T17:20:20.419494"
   },
   "#0495": {
     "oid": "#0495",
