@@ -10452,8 +10452,9 @@
     "source_message_id": 28838,
     "user_id": 8202961738,
     "username": "Portul",
-    "status": "new",
-    "date": "11.10.2026 14:25"
+    "status": "done",
+    "date": "11.10.2026 14:25",
+    "done_at": "2026-10-11T17:09:20.760442"
   },
   "#0501": {
     "oid": "#0501",
