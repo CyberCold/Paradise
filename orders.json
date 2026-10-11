@@ -10454,5 +10454,30 @@
     "username": "Portul",
     "status": "new",
     "date": "11.10.2026 14:25"
+  },
+  "#0501": {
+    "oid": "#0501",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Cherry Vanilla Cream",
+        "qty": 1
+      },
+      {
+        "pid": "vozolmagic500000",
+        "product_name": "Vozol Magic 50000",
+        "flavor": "Blue Razz Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Cherry Vanilla Cream, количество: 1\nVozol Magic 50000, вкус: Blue Razz Ice, количество: 1",
+    "source_key": "1636419479:28839",
+    "source_chat_id": 1636419479,
+    "source_message_id": 28839,
+    "user_id": 1636419479,
+    "username": "Ростик",
+    "status": "new",
+    "date": "11.10.2026 15:01"
   }
 }
