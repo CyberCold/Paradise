@@ -10416,5 +10416,24 @@
     "username": "v1rzon",
     "status": "cancelled",
     "date": "09.10.2026 17:44"
+  },
+  "#0499": {
+    "oid": "#0499",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Watermelon Cherry",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Watermelon Cherry, количество: 1",
+    "source_key": "1206933426:28804",
+    "source_chat_id": 1206933426,
+    "source_message_id": 28804,
+    "user_id": 1206933426,
+    "username": "Качерга | RTP 997% +_+",
+    "status": "new",
+    "date": "11.10.2026 10:42"
   }
 }
