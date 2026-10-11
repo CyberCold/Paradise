@@ -129246,9 +129246,10 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-10-11T07:41:32.061Z",
-    "last_seen": "2026-10-11T10:41:36.163344"
+    "last_seen": "2026-10-11T10:42:23.083772"
   }
 }
