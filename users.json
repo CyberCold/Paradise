@@ -127549,10 +127549,11 @@
     "username": "mayraxxx",
     "source": "chat",
     "sources": [
-      "chat"
+      "chat",
+      "bot_start"
     ],
     "registered": "2026-10-05T13:16:20.944248",
-    "last_seen": "2026-10-05T13:17:40.992818"
+    "last_seen": "2026-10-11T15:02:05.500601"
   },
   "1289757491": {
     "id": 1289757491,
