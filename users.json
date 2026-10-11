@@ -72564,7 +72564,7 @@
         "cf_ray": "a48ba8575ee4f00d",
         "screen": "390x844@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -129143,5 +129143,112 @@
     ],
     "registered": "2026-10-10T15:28:48.132114",
     "last_seen": "2026-10-10T15:28:48.132114"
+  },
+  "1206933426": {
+    "id": 1206933426,
+    "first_name": "Качерга | RTP 997% +_+",
+    "username": "ka4erga997",
+    "language_code": "en",
+    "is_premium": true,
+    "visit_count": 1,
+    "ips": [
+      {
+        "ip": "2a03:ec00:b979:38fc:289b:b3cc:69e7:71a5",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Latvijas Mobilais Telefons SIA",
+        "asn": 24921,
+        "lat": 56.946,
+        "lon": 24.1059,
+        "first_seen": "2026-10-11T07:41:32.061Z",
+        "last_seen": "2026-10-11T07:41:32.061Z",
+        "visits": 1
+      }
+    ],
+    "visits": [
+      {
+        "timestamp": "2026-10-11T07:41:32.061Z",
+        "ip": "2a03:ec00:b979:38fc:289b:b3cc:69e7:71a5",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "en-GB",
+        "cf_ray": "a48c39132b96e4df",
+        "screen": "375x812@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "en-GB"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      }
+    ],
+    "fingerprint": {
+      "screen": "375x812@3",
+      "timezone": "Europe/Riga",
+      "color_depth": 24,
+      "touch": 5,
+      "platform": "iPhone",
+      "memory": 0,
+      "cores": 4,
+      "connection": null,
+      "webgl_vendor": "Apple Inc.",
+      "webgl_renderer": "Apple GPU",
+      "languages": [
+        "en-GB"
+      ],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
+      "device": "iPhone",
+      "browser": "unknown",
+      "os": "iOS",
+      "updated_at": "2026-10-11T07:41:32.061Z"
+    },
+    "device_keys": [
+      "1fa2572be530f7d0f1759c1992b30a540fa888312895c7fbe5a7fbe0899e0288",
+      "8ce49ed0816b0aa454af635db0379579a0d018375309cd8fa9088e48f4576c5f"
+    ],
+    "geo": {
+      "country": "LV",
+      "city": "Riga",
+      "region": "Riga",
+      "timezone": "Europe/Riga",
+      "asn": 24921,
+      "isp": "Latvijas Mobilais Telefons SIA",
+      "lat": 56.946,
+      "lon": 24.1059
+    },
+    "source": "bot_start",
+    "sources": [
+      "bot_start",
+      "webapp"
+    ],
+    "registered": "2026-10-11T07:41:32.061Z",
+    "last_seen": "2026-10-11T10:41:36.163344"
   }
 }
