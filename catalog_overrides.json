@@ -96,7 +96,7 @@
       ],
       "stock": "in",
       "badge": "",
-      "hidden": false
+      "hidden": true
     },
     "vozolnew": {
       "id": "vozolnew",
