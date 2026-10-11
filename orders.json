@@ -10435,5 +10435,24 @@
     "username": "Качерга | RTP 997% +_+",
     "status": "new",
     "date": "11.10.2026 10:42"
+  },
+  "#0500": {
+    "oid": "#0500",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Strawberry Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Strawberry Ice, количество: 1\nПо купону",
+    "source_key": "8202961738:28838",
+    "source_chat_id": 8202961738,
+    "source_message_id": 28838,
+    "user_id": 8202961738,
+    "username": "Portul",
+    "status": "new",
+    "date": "11.10.2026 14:25"
   }
 }
