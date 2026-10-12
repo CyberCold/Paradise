@@ -41967,10 +41967,11 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-05-22T14:22:22.431Z",
-    "last_seen": "2026-10-07T15:16:47.889Z"
+    "last_seen": "2026-10-12T17:53:28.590773"
   },
   "8468357797": {
     "id": 8468357797,
