@@ -10518,5 +10518,24 @@
     "username": "Ростик",
     "status": "new",
     "date": "12.10.2026 14:20"
+  },
+  "#0504": {
+    "oid": "#0504",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Jasmine Raspberry",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Jasmine Raspberry, количество: 1",
+    "source_key": "1636419479:28981",
+    "source_chat_id": 1636419479,
+    "source_message_id": 28981,
+    "user_id": 1636419479,
+    "username": "Ростик",
+    "status": "new",
+    "date": "12.10.2026 14:40"
   }
 }
