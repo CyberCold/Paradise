@@ -133105,9 +133105,10 @@
     "username": "Edinarofka",
     "source": "bot_start",
     "sources": [
-      "bot_start"
+      "bot_start",
+      "chat"
     ],
     "registered": "2026-10-13T20:17:41.859298",
-    "last_seen": "2026-10-13T20:17:41.859298"
+    "last_seen": "2026-10-13T20:22:30.299600"
   }
 }
