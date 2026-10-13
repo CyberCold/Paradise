@@ -10644,5 +10644,24 @@
     "username": ".",
     "status": "new",
     "date": "12.10.2026 22:53"
+  },
+  "#0510": {
+    "oid": "#0510",
+    "items": [
+      {
+        "pid": "elfbarlushkingpro",
+        "product_name": "ELFBAR Lush King Pro 40k puffs",
+        "flavor": "Black Grape Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nELFBAR Lush King Pro 40k puffs, вкус: Black Grape Ice, количество: 1",
+    "source_key": "840137114:29196",
+    "source_chat_id": 840137114,
+    "source_message_id": 29196,
+    "user_id": 840137114,
+    "username": "💕ɴᴀsᴛʏᴀ.ᴀᴀ🌿",
+    "status": "new",
+    "date": "13.10.2026 10:36"
   }
 }
