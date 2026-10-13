@@ -10706,7 +10706,8 @@
     "source_message_id": 29266,
     "user_id": 973399984,
     "username": ".",
-    "status": "new",
-    "date": "13.10.2026 15:30"
+    "status": "done",
+    "date": "13.10.2026 15:30",
+    "done_at": "2026-10-13T19:43:30.397138"
   }
 }
