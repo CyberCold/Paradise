@@ -133098,5 +133098,16 @@
     ],
     "registered": "2026-10-13T17:08:16.526Z",
     "last_seen": "2026-10-13T17:09:12.458Z"
+  },
+  "1064994836": {
+    "id": 1064994836,
+    "first_name": "✨Persik✨",
+    "username": "Edinarofka",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-10-13T20:17:41.859298",
+    "last_seen": "2026-10-13T20:17:41.859298"
   }
 }
