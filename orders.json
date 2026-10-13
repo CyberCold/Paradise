@@ -10682,5 +10682,30 @@
     "username": "Jana",
     "status": "new",
     "date": "13.10.2026 14:48"
+  },
+  "#0512": {
+    "oid": "#0512",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Green Grape Rose",
+        "qty": 2
+      },
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Apple Pear",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Green Grape Rose, количество: 2\nElfliq, вкус: Apple Pear, количество: 1",
+    "source_key": "973399984:29266",
+    "source_chat_id": 973399984,
+    "source_message_id": 29266,
+    "user_id": 973399984,
+    "username": ".",
+    "status": "new",
+    "date": "13.10.2026 15:30"
   }
 }
