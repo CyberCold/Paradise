@@ -10772,7 +10772,8 @@
     "source_message_id": 29382,
     "user_id": 5581672715,
     "username": "Valerij",
-    "status": "new",
-    "date": "14.10.2026 18:28"
+    "status": "done",
+    "date": "14.10.2026 18:28",
+    "done_at": "2026-10-15T00:05:37.053269"
   }
 }
