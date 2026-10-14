@@ -133822,5 +133822,16 @@
     ],
     "registered": "2026-10-13T20:17:41.859298",
     "last_seen": "2026-10-13T22:33:29.565761"
+  },
+  "5971858782": {
+    "id": 5971858782,
+    "first_name": "ha",
+    "username": "xlskzrqe",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-10-15T01:29:37.358760",
+    "last_seen": "2026-10-15T01:29:37.358760"
   }
 }
