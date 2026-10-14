@@ -10726,8 +10726,9 @@
     "source_message_id": 29317,
     "user_id": 1064994836,
     "username": "✨Persik✨",
-    "status": "new",
-    "date": "13.10.2026 20:22"
+    "status": "done",
+    "date": "13.10.2026 20:22",
+    "done_at": "2026-10-14T16:05:25.944214"
   },
   "#0514": {
     "oid": "#0514",
