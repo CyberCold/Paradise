@@ -10755,5 +10755,24 @@
     "status": "done",
     "date": "14.10.2026 12:18",
     "done_at": "2026-10-14T18:24:29.481941"
+  },
+  "#0515": {
+    "oid": "#0515",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Blueberry Sour Raspberry",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Blueberry Sour Raspberry, количество: 1",
+    "source_key": "5581672715:29382",
+    "source_chat_id": 5581672715,
+    "source_message_id": 29382,
+    "user_id": 5581672715,
+    "username": "Valerij",
+    "status": "new",
+    "date": "14.10.2026 18:28"
   }
 }
