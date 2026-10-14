@@ -10728,5 +10728,30 @@
     "username": "✨Persik✨",
     "status": "new",
     "date": "13.10.2026 20:22"
+  },
+  "#0514": {
+    "oid": "#0514",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Grape Cherry",
+        "qty": 1
+      },
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Kiwi Passion Fruit Guava",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Grape Cherry, количество: 1\nElfliq, вкус: Kiwi Passion Fruit Guava, количество: 1",
+    "source_key": "7872473935:29347",
+    "source_chat_id": 7872473935,
+    "source_message_id": 29347,
+    "user_id": 7872473935,
+    "username": "Artur🪽🌛",
+    "status": "new",
+    "date": "14.10.2026 12:18"
   }
 }
