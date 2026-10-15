@@ -94449,7 +94449,7 @@
         "cf_ray": "a4acc3a3c8a6e4d6",
         "screen": "393x852@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -133487,8 +133487,21 @@
     "username": "codmZEUSS",
     "language_code": "ru",
     "is_premium": false,
-    "visit_count": 3,
+    "visit_count": 5,
     "ips": [
+      {
+        "ip": "2a03:ec00:b15b:e50a:3dc0:3de9:29a4:17bf",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Latvijas Mobilais Telefons SIA",
+        "asn": 24921,
+        "lat": 56.946,
+        "lon": 24.10589,
+        "first_seen": "2026-10-15T07:00:34.975Z",
+        "last_seen": "2026-10-15T07:00:57.904Z",
+        "visits": 2
+      },
       {
         "ip": "93.177.234.182",
         "country": "LV",
@@ -133517,6 +133530,78 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-10-15T07:00:57.904Z",
+        "ip": "2a03:ec00:b15b:e50a:3dc0:3de9:29a4:17bf",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a4acf325df1d13ba",
+        "screen": "393x852@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
+      {
+        "timestamp": "2026-10-15T07:00:34.975Z",
+        "ip": "2a03:ec00:b15b:e50a:3dc0:3de9:29a4:17bf",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a4acf2966ee013ba",
+        "screen": "393x852@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": 0,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-10-14T18:36:27.320Z",
         "ip": "93.177.234.182",
@@ -133649,7 +133734,7 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-10-14T18:36:27.320Z"
+      "updated_at": "2026-10-15T07:00:57.904Z"
     },
     "device_keys": [
       "3e61d41bb087e90093f33374f07bf9dd8ba426d44f07647493bd524e88be9ae5",
@@ -133660,8 +133745,8 @@
       "city": "Riga",
       "region": "Riga",
       "timezone": "Europe/Riga",
-      "asn": 20910,
-      "isp": "BALTCOM Broadband Customers",
+      "asn": 24921,
+      "isp": "Latvijas Mobilais Telefons SIA",
       "lat": 56.946,
       "lon": 24.10589
     },
@@ -133672,7 +133757,7 @@
       "webapp"
     ],
     "registered": "2026-10-13T15:44:30.770829",
-    "last_seen": "2026-10-14T18:36:27.320Z"
+    "last_seen": "2026-10-15T07:00:57.904Z"
   },
   "6662912317": {
     "id": 6662912317,
