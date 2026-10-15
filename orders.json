@@ -10920,5 +10920,30 @@
     "username": "Никки",
     "status": "new",
     "date": "15.10.2026 13:54"
+  },
+  "#0523": {
+    "oid": "#0523",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Cola Gummies",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Peach Mango Watermelon",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Cola Gummies, количество: 1\nVozol, вкус: Peach Mango Watermelon, количество: 1",
+    "source_key": "801568631:29549",
+    "source_chat_id": 801568631,
+    "source_message_id": 29549,
+    "user_id": 801568631,
+    "username": "Danik",
+    "status": "new",
+    "date": "15.10.2026 14:04"
   }
 }
