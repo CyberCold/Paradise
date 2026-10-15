@@ -10775,5 +10775,24 @@
     "status": "done",
     "date": "14.10.2026 18:28",
     "done_at": "2026-10-15T00:05:37.053269"
+  },
+  "#0516": {
+    "oid": "#0516",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Pink Lemonade",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Pink Lemonade, количество: 1",
+    "source_key": "5923754131:29424",
+    "source_chat_id": 5923754131,
+    "source_message_id": 29424,
+    "user_id": 5923754131,
+    "username": "ariana",
+    "status": "new",
+    "date": "15.10.2026 09:28"
   }
 }
