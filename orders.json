@@ -11052,5 +11052,24 @@
     "username": "qssa.",
     "status": "new",
     "date": "15.10.2026 20:26"
+  },
+  "#0529": {
+    "oid": "#0529",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Cherry Vanilla Cream",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Cherry Vanilla Cream, количество: 1",
+    "source_key": "1982320447:29748",
+    "source_chat_id": 1982320447,
+    "source_message_id": 29748,
+    "user_id": 1982320447,
+    "username": ".",
+    "status": "new",
+    "date": "15.10.2026 20:50"
   }
 }
