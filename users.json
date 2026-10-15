@@ -135677,9 +135677,10 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-10-15T20:36:51.978714",
-    "last_seen": "2026-10-15T17:39:22.164Z"
+    "last_seen": "2026-10-15T20:50:43.635214"
   }
 }
