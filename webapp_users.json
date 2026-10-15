@@ -16331,8 +16331,8 @@
     "is_premium": true,
     "source": "webapp",
     "registered": "2026-05-25T10:20:41.076Z",
-    "last_seen": "2026-10-15T15:20:06.275Z",
-    "visit_count": 55,
+    "last_seen": "2026-10-15T15:25:10.385Z",
+    "visit_count": 56,
     "ips": [
       {
         "ip": "2a00:f503:150:4b29:c92e:cb3e:5d:859e",
@@ -16344,8 +16344,8 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-10-15T15:20:06.275Z",
-        "last_seen": "2026-10-15T15:20:06.275Z",
-        "visits": 1
+        "last_seen": "2026-10-15T15:25:10.385Z",
+        "visits": 2
       },
       {
         "ip": "2a00:f503:150:4b29:b085:68e7:30c4:e975",
@@ -16597,6 +16597,42 @@
     ],
     "visits": [
       {
+        "timestamp": "2026-10-15T15:25:10.385Z",
+        "ip": "2a00:f503:150:4b29:c92e:cb3e:5d:859e",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a4afd5bbde25ec3e",
+        "screen": "402x874@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
+      {
         "timestamp": "2026-10-15T15:20:06.275Z",
         "ip": "2a00:f503:150:4b29:c92e:cb3e:5d:859e",
         "country": "LV",
@@ -16614,7 +16650,7 @@
         "cf_ray": "a4afce4f08f1f00d",
         "screen": "402x874@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -17639,42 +17675,6 @@
         "ua_bitness": null,
         "ua_model": null,
         "ua_mobile": false
-      },
-      {
-        "timestamp": "2026-09-11T11:02:09.245Z",
-        "ip": "2a00:f503:250:fabe:2190:77:2dbc:2c86",
-        "country": "LV",
-        "city": "Riga",
-        "region": "Riga",
-        "url": "https://paradiseminiapp.pages.dev/app",
-        "referrer": null,
-        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
-        "device": "iPhone",
-        "browser": "unknown",
-        "browser_version": null,
-        "os": "iOS",
-        "os_version": "18.7",
-        "language": "ru",
-        "cf_ray": "a3962db3ac0d0429",
-        "screen": "402x874@3",
-        "tz_client": "Europe/Riga",
-        "color_depth": 0,
-        "touch": 5,
-        "platform": "iPhone",
-        "memory": 0,
-        "cores": 4,
-        "connection": null,
-        "webgl_vendor": null,
-        "webgl_renderer": null,
-        "languages": [
-          "ru"
-        ],
-        "ua_platform": null,
-        "ua_platform_version": null,
-        "ua_architecture": null,
-        "ua_bitness": null,
-        "ua_model": null,
-        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -17700,7 +17700,7 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-10-15T15:20:06.275Z"
+      "updated_at": "2026-10-15T15:25:10.385Z"
     },
     "device_keys": [
       "c8b7ea8017f2df52f556d73c02e7b5bfacb61a7da7349470eee38f626a8e2f45",
