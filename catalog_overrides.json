@@ -126,7 +126,7 @@
       ],
       "stock": "in",
       "badge": "",
-      "hidden": false
+      "hidden": true
     },
     "truesalt": {
       "id": "truesalt",
