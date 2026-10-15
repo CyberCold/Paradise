@@ -10844,5 +10844,24 @@
     "username": "Бибизяна",
     "status": "new",
     "date": "15.10.2026 10:43"
+  },
+  "#0519": {
+    "oid": "#0519",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Grape Cherry",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Grape Cherry, количество: 1",
+    "source_key": "797019214:29434",
+    "source_chat_id": 797019214,
+    "source_message_id": 29434,
+    "user_id": 797019214,
+    "username": "yulya",
+    "status": "new",
+    "date": "15.10.2026 11:08"
   }
 }
