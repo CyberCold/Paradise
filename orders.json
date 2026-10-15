@@ -10813,5 +10813,36 @@
     "username": "ariana",
     "status": "new",
     "date": "15.10.2026 10:05"
+  },
+  "#0518": {
+    "oid": "#0518",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Jasmine Raspberry",
+        "qty": 1
+      },
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Kiwi Passion Fruit Guava",
+        "qty": 1
+      },
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Blueberry Sour Raspberry",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Jasmine Raspberry, количество: 1\nElfliq, вкус: Kiwi Passion Fruit Guava, количество: 1\nElfliq, вкус: Blueberry Sour Raspberry, количество: 1",
+    "source_key": "6338599725:29432",
+    "source_chat_id": 6338599725,
+    "source_message_id": 29432,
+    "user_id": 6338599725,
+    "username": "Бибизяна",
+    "status": "new",
+    "date": "15.10.2026 10:43"
   }
 }
