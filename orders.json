@@ -11116,5 +11116,24 @@
     "status": "done",
     "date": "16.10.2026 15:54",
     "done_at": "2026-10-16T17:35:55.344923"
+  },
+  "#0532": {
+    "oid": "#0532",
+    "items": [
+      {
+        "pid": "dojo",
+        "product_name": "Dojo Sphere X",
+        "flavor": "Baja Splash MTD",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nDojo Sphere X, вкус: Baja Splash MTD, количество: 1",
+    "source_key": "1064994836:29815",
+    "source_chat_id": 1064994836,
+    "source_message_id": 29815,
+    "user_id": 1064994836,
+    "username": "✨Persik✨",
+    "status": "new",
+    "date": "16.10.2026 18:40"
   }
 }
