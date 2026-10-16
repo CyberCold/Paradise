@@ -11071,5 +11071,30 @@
     "username": ".",
     "status": "new",
     "date": "15.10.2026 20:50"
+  },
+  "#0530": {
+    "oid": "#0530",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Pink Lemonade",
+        "qty": 1
+      },
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Grape Cherry",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Pink Lemonade, количество: 1\nElfliq, вкус: Grape Cherry, количество: 1",
+    "source_key": "1127889333:29751",
+    "source_chat_id": 1127889333,
+    "source_message_id": 29751,
+    "user_id": 1127889333,
+    "username": "qssa.",
+    "status": "new",
+    "date": "16.10.2026 12:03"
   }
 }
