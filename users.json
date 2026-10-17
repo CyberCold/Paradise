@@ -138384,5 +138384,16 @@
     ],
     "registered": "2026-10-17T09:30:29.799Z",
     "last_seen": "2026-10-17T14:14:48.799712"
+  },
+  "6172350036": {
+    "id": 6172350036,
+    "first_name": "Никита",
+    "username": "Likebosspro228",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-10-17T18:39:47.286297",
+    "last_seen": "2026-10-17T18:39:47.286297"
   }
 }
