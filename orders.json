@@ -11160,5 +11160,24 @@
     "username": "Veronika",
     "status": "new",
     "date": "17.10.2026 14:08"
+  },
+  "#0534": {
+    "oid": "#0534",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Pineapple Colada",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Pineapple Colada, количество: 1",
+    "source_key": "5843060922:29851",
+    "source_chat_id": 5843060922,
+    "source_message_id": 29851,
+    "user_id": 5843060922,
+    "username": "💓",
+    "status": "new",
+    "date": "17.10.2026 16:33"
   }
 }
