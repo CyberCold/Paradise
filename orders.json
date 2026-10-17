@@ -11158,8 +11158,9 @@
     "source_message_id": 29837,
     "user_id": 1331893889,
     "username": "Veronika",
-    "status": "new",
-    "date": "17.10.2026 14:08"
+    "status": "done",
+    "date": "17.10.2026 14:08",
+    "done_at": "2026-10-17T18:35:05.362744"
   },
   "#0534": {
     "oid": "#0534",
