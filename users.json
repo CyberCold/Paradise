@@ -59751,10 +59751,11 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-06-05T15:17:05.247564",
-    "last_seen": "2026-10-17T13:31:38.816Z"
+    "last_seen": "2026-10-17T16:33:29.137834"
   },
   "5778852193": {
     "id": 5778852193,
