@@ -11263,7 +11263,8 @@
     "source_message_id": 30008,
     "user_id": 890349579,
     "username": ".k.",
-    "status": "new",
-    "date": "17.10.2026 20:24"
+    "status": "done",
+    "date": "17.10.2026 20:24",
+    "done_at": "2026-10-17T22:58:56.216029"
   }
 }
