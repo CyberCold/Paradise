@@ -11179,5 +11179,24 @@
     "username": "💓",
     "status": "cancelled",
     "date": "17.10.2026 16:33"
+  },
+  "#0535": {
+    "oid": "#0535",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Blackberry Lemon",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Blackberry Lemon, количество: 1",
+    "source_key": "7627218264:29894",
+    "source_chat_id": 7627218264,
+    "source_message_id": 29894,
+    "user_id": 7627218264,
+    "username": "w҉͛͆̃ͅ ̲͕͉i҉̦̤̦͍̭͑̽̄z̷ ̖͓̄̂̀ ̘ͅḭ̵̙̑̐͒̑͌x҉̗̪͈͊̇̂1̵͚̟̘̰͆̅̑",
+    "status": "new",
+    "date": "17.10.2026 16:49"
   }
 }
