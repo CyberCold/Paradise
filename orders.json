@@ -11135,5 +11135,30 @@
     "username": "✨Persik✨",
     "status": "new",
     "date": "16.10.2026 18:40"
+  },
+  "#0533": {
+    "oid": "#0533",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Cherry Vanilla Cream",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Strawberry Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Cherry Vanilla Cream, количество: 1\nVozol, вкус: Strawberry Ice, количество: 1",
+    "source_key": "1331893889:29837",
+    "source_chat_id": 1331893889,
+    "source_message_id": 29837,
+    "user_id": 1331893889,
+    "username": "Veronika",
+    "status": "new",
+    "date": "17.10.2026 14:08"
   }
 }
