@@ -11198,5 +11198,24 @@
     "username": "w҉͛͆̃ͅ ̲͕͉i҉̦̤̦͍̭͑̽̄z̷ ̖͓̄̂̀ ̘ͅḭ̵̙̑̐͒̑͌x҉̗̪͈͊̇̂1̵͚̟̘̰͆̅̑",
     "status": "new",
     "date": "17.10.2026 16:49"
+  },
+  "#0536": {
+    "oid": "#0536",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Blue Razz Cherry",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Blue Razz Cherry, количество: 1",
+    "source_key": "1210151096:29928",
+    "source_chat_id": 1210151096,
+    "source_message_id": 29928,
+    "user_id": 1210151096,
+    "username": "🩵👼",
+    "status": "new",
+    "date": "17.10.2026 17:25"
   }
 }
