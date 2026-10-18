@@ -11336,5 +11336,24 @@
     "status": "done",
     "date": "18.10.2026 14:17",
     "done_at": "2026-10-18T15:18:50.774902"
+  },
+  "#0541": {
+    "oid": "#0541",
+    "items": [
+      {
+        "pid": "elfbarduke",
+        "product_name": "ELFBAR DUKE 30k puffs",
+        "flavor": "Cherry Burst",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nELFBAR DUKE 30k puffs, вкус: Cherry Burst, количество: 1",
+    "source_key": "1267539172:30148",
+    "source_chat_id": 1267539172,
+    "source_message_id": 30148,
+    "user_id": 1267539172,
+    "username": "викс (:(",
+    "status": "new",
+    "date": "18.10.2026 17:23"
   }
 }
