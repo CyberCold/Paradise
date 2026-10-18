@@ -11304,5 +11304,36 @@
     "status": "done",
     "date": "18.10.2026 11:55",
     "done_at": "2026-10-18T13:32:09.148322"
+  },
+  "#0540": {
+    "oid": "#0540",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Strawberry Raspberry Cherry Ice",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Cherry Ice",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Cola Gummies",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Strawberry Raspberry Cherry Ice, количество: 1\nYami, вкус: Cherry Ice, количество: 1\nVozol, вкус: Cola Gummies, количество: 1",
+    "source_key": "1027661184:30111",
+    "source_chat_id": 1027661184,
+    "source_message_id": 30111,
+    "user_id": 1027661184,
+    "username": "Лиза ×>×",
+    "status": "new",
+    "date": "18.10.2026 14:17"
   }
 }
