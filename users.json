@@ -11109,10 +11109,11 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-05-28T12:54:42.882492",
-    "last_seen": "2026-10-18T15:53:40.754Z"
+    "last_seen": "2026-10-18T18:54:26.574200"
   },
   "941574676": {
     "id": 941574676,
