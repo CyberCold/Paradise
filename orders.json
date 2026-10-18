@@ -11266,5 +11266,42 @@
     "status": "done",
     "date": "17.10.2026 20:24",
     "done_at": "2026-10-17T22:58:56.216029"
+  },
+  "#0539": {
+    "oid": "#0539",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Blackberry Lemon",
+        "qty": 1
+      },
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Blueberry Raspberry Pomegranate",
+        "qty": 1
+      },
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Blackcurrant Menthol",
+        "qty": 1
+      },
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Blueberry Sour Raspberry",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Blackberry Lemon, количество: 1\nElfliq, вкус: Blueberry Raspberry Pomegranate, количество: 1\nElfliq, вкус: Blackcurrant Menthol, количество: 1\nElfliq, вкус: Blueberry Sour Raspberry, количество: 1",
+    "source_key": "924846698:30055",
+    "source_chat_id": 924846698,
+    "source_message_id": 30055,
+    "user_id": 924846698,
+    "username": "dian444ik",
+    "status": "new",
+    "date": "18.10.2026 11:55"
   }
 }
