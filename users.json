@@ -11012,7 +11012,7 @@
         "cf_ray": "a4c8b79dac93340e",
         "screen": "414x896@2",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -51693,11 +51693,24 @@
   "8664592401": {
     "id": 8664592401,
     "first_name": "drained",
-    "username": "bladeblooddeath",
+    "username": "blooddbladee",
     "language_code": "ru",
     "is_premium": true,
-    "visit_count": 23,
+    "visit_count": 24,
     "ips": [
+      {
+        "ip": "2a00:f503:260:170c:c1c8:d6ae:615:f19e",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Bite Latvija    users",
+        "asn": 13194,
+        "lat": 56.946,
+        "lon": 24.10589,
+        "first_seen": "2026-10-18T20:48:39.696Z",
+        "last_seen": "2026-10-18T20:48:39.696Z",
+        "visits": 1
+      },
       {
         "ip": "2a00:f503:260:5d1f:c98:279d:b8c9:8d48",
         "country": "LV",
@@ -51944,22 +51957,45 @@
         "first_seen": "2026-07-20T17:31:29.533Z",
         "last_seen": "2026-07-20T17:31:29.533Z",
         "visits": 1
-      },
-      {
-        "ip": "84.15.218.207",
-        "country": "LV",
-        "city": "Riga",
-        "region": "Riga",
-        "isp": "Bite Latvija",
-        "asn": 13194,
-        "lat": 56.946,
-        "lon": 24.1059,
-        "first_seen": "2026-07-18T08:25:29.677Z",
-        "last_seen": "2026-07-18T12:15:36.264Z",
-        "visits": 3
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-10-18T20:48:39.696Z",
+        "ip": "2a00:f503:260:170c:c1c8:d6ae:615:f19e",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "en-GB",
+        "cf_ray": "a4ca67b7faf3440a",
+        "screen": "402x874@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "en-GB"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-10-11T14:18:43.850Z",
         "ip": "2a00:f503:260:5d1f:c98:279d:b8c9:8d48",
@@ -52806,7 +52842,7 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-10-11T14:18:43.850Z"
+      "updated_at": "2026-10-18T20:48:39.696Z"
     },
     "geo": {
       "country": "LV",
@@ -52830,7 +52866,7 @@
       "webapp"
     ],
     "registered": "2026-05-27T12:19:09.893223",
-    "last_seen": "2026-10-11T14:18:43.850Z"
+    "last_seen": "2026-10-18T20:48:39.696Z"
   },
   "5187563254": {
     "id": 5187563254,
