@@ -11375,5 +11375,24 @@
     "username": "⌖ꜰ̝͚͙ʀ̎ᴇ̲̭ͨᴀ̄̀ᴋ̀͆̒ͣ͛2̦ͫͦ̋2̣̖̹̺̖̱̇̏ͯ͛ͫͪͅ8̺̇̄ͥ͂⌖",
     "status": "cancelled",
     "date": "18.10.2026 18:54"
+  },
+  "#0543": {
+    "oid": "#0543",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Pistachio Cream",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Pistachio Cream, количество: 1",
+    "source_key": "8530167965:30264",
+    "source_chat_id": 8530167965,
+    "source_message_id": 30264,
+    "user_id": 8530167965,
+    "username": "Parad",
+    "status": "new",
+    "date": "19.10.2026 15:49"
   }
 }
