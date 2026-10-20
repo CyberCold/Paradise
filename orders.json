@@ -11432,5 +11432,24 @@
     "username": "noir",
     "status": "new",
     "date": "19.10.2026 18:22"
+  },
+  "#0546": {
+    "oid": "#0546",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "не указан",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Добрый день!\nХотелось бы заказать жижу , vozol",
+    "source_key": "765203119:30362",
+    "source_chat_id": 765203119,
+    "source_message_id": 30362,
+    "user_id": 765203119,
+    "username": "Anneta",
+    "status": "new",
+    "date": "20.10.2026 10:27"
   }
 }
