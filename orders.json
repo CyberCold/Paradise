@@ -11470,5 +11470,48 @@
     "username": "™🐻🐻مرحبا أيتها الدمية🐻🐻 ™",
     "status": "new",
     "date": "20.10.2026 11:31"
+  },
+  "#0548": {
+    "oid": "#0548",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Peach Mango Watermelon",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Cherry Vanilla Cream",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Mexican Mango Ice",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Strawberry Ice",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Purple Candy",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу заказать:\nVozol, вкус: Peach Mango Watermelon, количество: 1\nVozol, вкус: Cherry Vanilla Cream, количество: 1\nVozol, вкус: Mexican Mango Ice, количество: 1\nVozol, вкус: Strawberry Ice, количество: 1\nVozol, вкус: Purple Candy, количество: 1",
+    "source_key": "986449213:30378",
+    "source_chat_id": 986449213,
+    "source_message_id": 30378,
+    "user_id": 986449213,
+    "username": "Kolpnev",
+    "status": "new",
+    "date": "20.10.2026 13:06"
   }
 }
