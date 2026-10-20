@@ -11515,5 +11515,24 @@
     "username": "Kolpnev",
     "status": "new",
     "date": "20.10.2026 13:06"
+  },
+  "#0549": {
+    "oid": "#0549",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Blue Cotton Candy",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Blue Cotton Candy, количество: 1",
+    "source_key": "1204741319:30407",
+    "source_chat_id": 1204741319,
+    "source_message_id": 30407,
+    "user_id": 1204741319,
+    "username": "Korsar",
+    "status": "new",
+    "date": "20.10.2026 15:23"
   }
 }
