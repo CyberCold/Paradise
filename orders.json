@@ -11533,7 +11533,8 @@
     "source_message_id": 30407,
     "user_id": 1204741319,
     "username": "Korsar",
-    "status": "new",
-    "date": "20.10.2026 15:23"
+    "status": "done",
+    "date": "20.10.2026 15:23",
+    "done_at": "2026-10-20T16:46:33.083978"
   }
 }
