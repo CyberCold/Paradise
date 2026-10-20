@@ -141110,5 +141110,16 @@
     ],
     "registered": "2026-10-19T14:10:19.389550",
     "last_seen": "2026-10-19T11:10:25.526Z"
+  },
+  "986449213": {
+    "id": 986449213,
+    "first_name": "Kolpnev",
+    "username": "kolpneev",
+    "source": "chat",
+    "sources": [
+      "chat"
+    ],
+    "registered": "2026-10-20T13:06:47.949445",
+    "last_seen": "2026-10-20T13:06:47.949445"
   }
 }
