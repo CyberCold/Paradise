@@ -11513,8 +11513,9 @@
     "source_message_id": 30378,
     "user_id": 986449213,
     "username": "Kolpnev",
-    "status": "new",
-    "date": "20.10.2026 13:06"
+    "status": "done",
+    "date": "20.10.2026 13:06",
+    "done_at": "2026-10-20T16:14:50.707920"
   },
   "#0549": {
     "oid": "#0549",
