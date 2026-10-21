@@ -724,5 +724,16 @@
     "comment": "Вкус мяхко говоря не очень 😅",
     "date": "21.10.2026 13:47",
     "sent_to_channel": true
+  },
+  "#0553_ELFBAR DUKE 30k puffs": {
+    "oid": "#0553",
+    "user_id": 5343367585,
+    "username": "Гунтис",
+    "product_name": "ELFBAR DUKE 30k puffs",
+    "flavor": "Sour Blackberry Ice",
+    "rating": 5,
+    "comment": null,
+    "date": "21.10.2026 21:26",
+    "sent_to_channel": true
   }
 }
