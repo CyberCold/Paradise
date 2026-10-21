@@ -11613,5 +11613,24 @@
     "status": "done",
     "date": "20.10.2026 20:58",
     "done_at": "2026-10-20T21:21:07.906354"
+  },
+  "#0554": {
+    "oid": "#0554",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Jasmine Raspberry",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Jasmine Raspberry, количество: 1",
+    "source_key": "1256781169:30622",
+    "source_chat_id": 1256781169,
+    "source_message_id": 30622,
+    "user_id": 1256781169,
+    "username": "Настя",
+    "status": "new",
+    "date": "21.10.2026 08:56"
   }
 }
