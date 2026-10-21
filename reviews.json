@@ -713,5 +713,16 @@
     "comment": null,
     "date": "10.10.2026 18:32",
     "sent_to_channel": true
+  },
+  "#0544_Yami": {
+    "oid": "#0544",
+    "user_id": 8530167965,
+    "username": "Parad",
+    "product_name": "Yami",
+    "flavor": "Pistachio Cream",
+    "rating": 3,
+    "comment": "Вкус мяхко говоря не очень 😅",
+    "date": "21.10.2026 13:47",
+    "sent_to_channel": true
   }
 }
