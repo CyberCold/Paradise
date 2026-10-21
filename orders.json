@@ -11632,5 +11632,42 @@
     "username": "Настя",
     "status": "new",
     "date": "21.10.2026 08:56"
+  },
+  "#0555": {
+    "oid": "#0555",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Blue Razz Lemonade",
+        "qty": 1
+      },
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Blackberry Lemon",
+        "qty": 1
+      },
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Mr Blue",
+        "qty": 1
+      },
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Elf Jack",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Blue Razz Lemonade, количество: 1\nElfliq, вкус: Blackberry Lemon, количество: 1\nElfliq, вкус: Mr Blue, количество: 1\nElfliq, вкус: Elf Jack, количество: 1",
+    "source_key": "5471367072:30624",
+    "source_chat_id": 5471367072,
+    "source_message_id": 30624,
+    "user_id": 5471367072,
+    "username": "Aļoņčiks❤️",
+    "status": "new",
+    "date": "21.10.2026 10:04"
   }
 }
