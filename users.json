@@ -68028,12 +68028,114 @@
     "id": 7214624638,
     "first_name": "OлегиС",
     "username": "Wm1ga",
+    "language_code": "ru",
+    "is_premium": false,
+    "visit_count": 1,
+    "ips": [
+      {
+        "ip": "77.38.235.144",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "BALTCOM Broadband Customers",
+        "asn": 20910,
+        "lat": 56.946,
+        "lon": 24.10589,
+        "first_seen": "2026-10-22T18:17:06.863Z",
+        "last_seen": "2026-10-22T18:17:06.863Z",
+        "visits": 1
+      }
+    ],
+    "visits": [
+      {
+        "timestamp": "2026-10-22T18:17:06.863Z",
+        "ip": "77.38.235.144",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+        "device": "Desktop",
+        "browser": "Edge",
+        "browser_version": "155.0.0.0",
+        "os": "Windows",
+        "os_version": null,
+        "language": "ru",
+        "cf_ray": "a4ea7f39a898e4d1",
+        "screen": "2048x1152@1.25",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 0,
+        "platform": "Win32",
+        "memory": 32,
+        "cores": 20,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru",
+          "en",
+          "en-GB",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      }
+    ],
+    "fingerprint": {
+      "screen": "2048x1152@1.25",
+      "timezone": "Europe/Riga",
+      "color_depth": 24,
+      "touch": 0,
+      "platform": "Win32",
+      "memory": 32,
+      "cores": 20,
+      "connection": "4g",
+      "webgl_vendor": "Google Inc. (NVIDIA)",
+      "webgl_renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 5070 (0x00002F04) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "languages": [
+        "ru",
+        "en",
+        "en-GB",
+        "en-US"
+      ],
+      "ua_platform": "Windows",
+      "ua_platform_version": "10.0.0",
+      "ua_architecture": "x86",
+      "ua_bitness": "64",
+      "ua_model": null,
+      "ua_mobile": false,
+      "device": "Desktop",
+      "browser": "Edge",
+      "os": "Windows",
+      "updated_at": "2026-10-22T18:17:06.863Z"
+    },
+    "device_keys": [
+      "7b58d620bd3cf997ee7f1a1cddbf1bd2a5c11d2d37f1297194a0e22ed479e4af",
+      "7981d5d91c8facb2012d06f4caadfd7122c717d5b1103f697fbfa1e3ea250efe"
+    ],
+    "geo": {
+      "country": "LV",
+      "city": "Riga",
+      "region": "Riga",
+      "timezone": "Europe/Riga",
+      "asn": 20910,
+      "isp": "BALTCOM Broadband Customers",
+      "lat": 56.946,
+      "lon": 24.10589
+    },
     "source": "chat",
     "sources": [
-      "chat"
+      "chat",
+      "webapp"
     ],
     "registered": "2026-07-10T23:11:18.077613",
-    "last_seen": "2026-07-11T20:39:30.216848"
+    "last_seen": "2026-10-22T18:17:06.863Z"
   },
   "8202961738": {
     "id": 8202961738,
@@ -144044,7 +144146,7 @@
         "cf_ray": "a4ea37ee4a1b5007",
         "screen": "393x852@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
