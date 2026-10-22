@@ -144009,9 +144009,10 @@
     "username": "lerrrinja",
     "source": "chat",
     "sources": [
-      "chat"
+      "chat",
+      "bot_start"
     ],
     "registered": "2026-10-22T20:27:42.115240",
-    "last_seen": "2026-10-22T20:27:44.861669"
+    "last_seen": "2026-10-22T20:28:25.048837"
   }
 }
