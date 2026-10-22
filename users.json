@@ -143237,5 +143237,16 @@
     ],
     "registered": "2026-10-21T20:22:34.955966",
     "last_seen": "2026-10-21T17:22:38.730Z"
+  },
+  "5642989488": {
+    "id": 5642989488,
+    "first_name": "Faustian Bargain",
+    "username": "shinemonarchhtrd66666666",
+    "source": "chat",
+    "sources": [
+      "chat"
+    ],
+    "registered": "2026-10-22T13:05:11.066684",
+    "last_seen": "2026-10-22T13:05:15.795418"
   }
 }
