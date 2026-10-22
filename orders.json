@@ -11725,7 +11725,8 @@
     "source_message_id": 30692,
     "user_id": 1636239325,
     "username": "rob4ik",
-    "status": "new",
-    "date": "22.10.2026 17:34"
+    "status": "done",
+    "date": "22.10.2026 17:34",
+    "done_at": "2026-10-22T18:44:12.016320"
   }
 }
