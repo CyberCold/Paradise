@@ -735,5 +735,16 @@
     "comment": null,
     "date": "21.10.2026 21:26",
     "sent_to_channel": true
+  },
+  "#0558_Vozol": {
+    "oid": "#0558",
+    "user_id": 1636239325,
+    "username": "rob4ik",
+    "product_name": "Vozol",
+    "flavor": "Cola Gummies",
+    "rating": 5,
+    "comment": null,
+    "date": "23.10.2026 18:45",
+    "sent_to_channel": true
   }
 }
