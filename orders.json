@@ -11754,5 +11754,30 @@
     "username": "Miss Ravager.",
     "status": "new",
     "date": "23.10.2026 11:04"
+  },
+  "#0560": {
+    "oid": "#0560",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Dragon Fruit Banana Cherry",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Grape Energy",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Dragon Fruit Banana Cherry, количество: 1\nYami, вкус: Grape Energy, количество: 1",
+    "source_key": "325400266:30775",
+    "source_chat_id": 325400266,
+    "source_message_id": 30775,
+    "user_id": 325400266,
+    "username": "𝕵𝖊𝖛𝖌𝖊𝖓𝖎𝖏",
+    "status": "new",
+    "date": "23.10.2026 14:23"
   }
 }
