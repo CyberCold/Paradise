@@ -11899,5 +11899,24 @@
     "username": "###",
     "status": "new",
     "date": "24.10.2026 15:38"
+  },
+  "#0567": {
+    "oid": "#0567",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Lemon sherbet",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Lemon sherbet, количество: 1",
+    "source_key": "349400151:30949",
+    "source_chat_id": 349400151,
+    "source_message_id": 30949,
+    "user_id": 349400151,
+    "username": "Ди🧘‍♀️",
+    "status": "new",
+    "date": "24.10.2026 16:35"
   }
 }
