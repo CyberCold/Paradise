@@ -11936,7 +11936,8 @@
     "source_message_id": 31005,
     "user_id": 5775312541,
     "username": "Edvard",
-    "status": "new",
-    "date": "24.10.2026 17:57"
+    "status": "done",
+    "date": "24.10.2026 17:57",
+    "done_at": "2026-10-24T19:31:21.436784"
   }
 }
