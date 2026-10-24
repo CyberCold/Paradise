@@ -11839,5 +11839,24 @@
     "status": "done",
     "date": "23.10.2026 19:57",
     "done_at": "2026-10-23T20:08:25.406713"
+  },
+  "#0564": {
+    "oid": "#0564",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Grape Energy",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Grape Energy, количество: 1",
+    "source_key": "5581672715:30910",
+    "source_chat_id": 5581672715,
+    "source_message_id": 30910,
+    "user_id": 5581672715,
+    "username": "Valerij",
+    "status": "new",
+    "date": "24.10.2026 11:23"
   }
 }
