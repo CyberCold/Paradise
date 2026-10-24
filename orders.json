@@ -11880,5 +11880,24 @@
     "username": "ksewas245_is",
     "status": "new",
     "date": "24.10.2026 15:26"
+  },
+  "#0566": {
+    "oid": "#0566",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Blackberry lemon",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Blackberry lemon, количество: 1",
+    "source_key": "1357708699:30939",
+    "source_chat_id": 1357708699,
+    "source_message_id": 30939,
+    "user_id": 1357708699,
+    "username": "###",
+    "status": "new",
+    "date": "24.10.2026 15:38"
   }
 }
