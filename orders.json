@@ -11753,8 +11753,9 @@
     "source_message_id": 30762,
     "user_id": 5920742754,
     "username": "Miss Ravager.",
-    "status": "new",
-    "date": "23.10.2026 11:04"
+    "status": "done",
+    "date": "23.10.2026 11:04",
+    "done_at": "2026-10-24T15:31:32.285982"
   },
   "#0560": {
     "oid": "#0560",
