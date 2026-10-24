@@ -906,7 +906,7 @@
         "cf_ray": "a4f8b2bb682ce4e0",
         "screen": "390x844@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -64495,8 +64495,8 @@
     "is_premium": false,
     "source": "webapp",
     "registered": "2026-07-26T10:00:55.071Z",
-    "last_seen": "2026-10-23T14:30:27.536Z",
-    "visit_count": 15,
+    "last_seen": "2026-10-24T11:54:29.229Z",
+    "visit_count": 16,
     "ips": [
       {
         "ip": "2a00:f503:150:a86a:f59c:edad:77e4:c748",
@@ -64508,8 +64508,8 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-10-23T14:30:27.536Z",
-        "last_seen": "2026-10-23T14:30:27.536Z",
-        "visits": 1
+        "last_seen": "2026-10-24T11:54:29.229Z",
+        "visits": 2
       },
       {
         "ip": "84.15.219.74",
@@ -64643,6 +64643,42 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-10-24T11:54:29.229Z",
+        "ip": "2a00:f503:150:a86a:f59c:edad:77e4:c748",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a4f8c97c88b30429",
+        "screen": "390x844@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-10-23T14:30:27.536Z",
         "ip": "2a00:f503:150:a86a:f59c:edad:77e4:c748",
@@ -65207,7 +65243,7 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-10-23T14:30:27.536Z"
+      "updated_at": "2026-10-24T11:54:29.229Z"
     },
     "device_keys": [
       "1568682f88e5121e209c9f29d84b2cbc06d95da58c2b1a16367d1396c7c8bee3",
