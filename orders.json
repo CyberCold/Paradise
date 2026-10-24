@@ -11859,5 +11859,24 @@
     "username": "Valerij",
     "status": "new",
     "date": "24.10.2026 11:23"
+  },
+  "#0565": {
+    "oid": "#0565",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Cola Gummies",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Cola Gummies, количество: 1",
+    "source_key": "7979500125:30938",
+    "source_chat_id": 7979500125,
+    "source_message_id": 30938,
+    "user_id": 7979500125,
+    "username": "ksewas245_is",
+    "status": "new",
+    "date": "24.10.2026 15:26"
   }
 }
