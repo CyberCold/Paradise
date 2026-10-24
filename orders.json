@@ -11857,8 +11857,9 @@
     "source_message_id": 30910,
     "user_id": 5581672715,
     "username": "Valerij",
-    "status": "new",
-    "date": "24.10.2026 11:23"
+    "status": "done",
+    "date": "24.10.2026 11:23",
+    "done_at": "2026-10-24T15:31:27.534588"
   },
   "#0565": {
     "oid": "#0565",
