@@ -757,5 +757,16 @@
     "comment": null,
     "date": "24.10.2026 20:10",
     "sent_to_channel": true
+  },
+  "#0560_Yami": {
+    "oid": "#0560",
+    "user_id": 325400266,
+    "username": "𝕵𝖊𝖛𝖌𝖊𝖓𝖎𝖏",
+    "product_name": "Yami",
+    "flavor": "Dragon Fruit Banana Cherry",
+    "rating": 5,
+    "comment": "Вкусно. Сочно. Заходит на ура. 💪💪💪",
+    "date": "24.10.2026 22:06",
+    "sent_to_channel": true
   }
 }
