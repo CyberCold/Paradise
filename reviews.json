@@ -768,5 +768,16 @@
     "comment": "Вкусно. Сочно. Заходит на ура. 💪💪💪",
     "date": "24.10.2026 22:06",
     "sent_to_channel": true
+  },
+  "#0559_Vozol": {
+    "oid": "#0559",
+    "user_id": 5920742754,
+    "username": "Miss Ravager.",
+    "product_name": "Vozol",
+    "flavor": "Cola Gummies",
+    "rating": 4,
+    "comment": null,
+    "date": "25.10.2026 17:02",
+    "sent_to_channel": true
   }
 }
