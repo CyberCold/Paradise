@@ -146725,5 +146725,16 @@
     ],
     "registered": "2026-10-25T14:49:22.420793",
     "last_seen": "2026-10-25T14:51:40.237586"
+  },
+  "674731189": {
+    "id": 674731189,
+    "first_name": "опустошённый",
+    "username": "idonthaveanyideasforname",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-10-25T15:28:48.581962",
+    "last_seen": "2026-10-25T15:28:48.581962"
   }
 }
