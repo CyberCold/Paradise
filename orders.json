@@ -11958,8 +11958,9 @@
     "source_message_id": 31075,
     "user_id": 8129594031,
     "username": "wakaa",
-    "status": "new",
-    "date": "25.10.2026 14:51"
+    "status": "done",
+    "date": "25.10.2026 14:51",
+    "done_at": "2026-10-25T18:31:39.351855"
   },
   "#0570": {
     "oid": "#0570",
