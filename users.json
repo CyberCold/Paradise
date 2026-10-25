@@ -146713,5 +146713,16 @@
     ],
     "registered": "2026-10-25T06:20:55.559080",
     "last_seen": "2026-10-25T06:20:55.559080"
+  },
+  "8129594031": {
+    "id": 8129594031,
+    "first_name": "wakaa",
+    "username": "waka535",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-10-25T14:49:22.420793",
+    "last_seen": "2026-10-25T14:49:22.420793"
   }
 }
