@@ -146742,9 +146742,10 @@
     "username": "liltveek",
     "source": "chat",
     "sources": [
-      "chat"
+      "chat",
+      "bot_start"
     ],
     "registered": "2026-10-25T16:11:55.054045",
-    "last_seen": "2026-10-25T16:11:55.054045"
+    "last_seen": "2026-10-25T16:14:49.743645"
   }
 }
