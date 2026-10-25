@@ -146720,9 +146720,10 @@
     "username": "waka535",
     "source": "bot_start",
     "sources": [
-      "bot_start"
+      "bot_start",
+      "chat"
     ],
     "registered": "2026-10-25T14:49:22.420793",
-    "last_seen": "2026-10-25T14:49:22.420793"
+    "last_seen": "2026-10-25T14:51:40.237586"
   }
 }
