@@ -11997,7 +11997,8 @@
     "source_message_id": 31149,
     "user_id": 731373167,
     "username": "Aqox",
-    "status": "new",
-    "date": "25.10.2026 18:30"
+    "status": "done",
+    "date": "25.10.2026 18:30",
+    "done_at": "2026-10-25T18:58:56.901630"
   }
 }
