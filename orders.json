@@ -11979,5 +11979,24 @@
     "username": "🩷",
     "status": "cancelled",
     "date": "25.10.2026 16:16"
+  },
+  "#0571": {
+    "oid": "#0571",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Blueberry cherry cranberry",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Blueberry cherry cranberry, количество: 1",
+    "source_key": "731373167:31149",
+    "source_chat_id": 731373167,
+    "source_message_id": 31149,
+    "user_id": 731373167,
+    "username": "Aqox",
+    "status": "new",
+    "date": "25.10.2026 18:30"
   }
 }
