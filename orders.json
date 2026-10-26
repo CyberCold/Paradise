@@ -12104,5 +12104,42 @@
     "status": "done",
     "date": "26.10.2026 17:36",
     "done_at": "2026-10-26T18:29:24.004995"
+  },
+  "#0577": {
+    "oid": "#0577",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Cherry sour raspberry",
+        "qty": 1
+      },
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Cherry",
+        "qty": 2
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Watermelon Cherry",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Cherry Cola",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Cherry sour raspberry, количество: 1\nElfliq, вкус: Cherry, количество: 2\nYami, вкус: Watermelon Cherry, количество: 1\nYami, вкус: Cherry Cola, количество: 1",
+    "source_key": "970444238:31267",
+    "source_chat_id": 970444238,
+    "source_message_id": 31267,
+    "user_id": 970444238,
+    "username": "Несокрушимый Алкоголик",
+    "status": "new",
+    "date": "26.10.2026 18:53"
   }
 }
