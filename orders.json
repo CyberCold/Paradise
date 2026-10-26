@@ -12039,5 +12039,24 @@
     "status": "done",
     "date": "25.10.2026 19:58",
     "done_at": "2026-10-25T23:57:15.085819"
+  },
+  "#0574": {
+    "oid": "#0574",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Blueberry raspberry pomegranate",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Blueberry raspberry pomegranate, количество: 1",
+    "source_key": "6347638514:31215",
+    "source_chat_id": 6347638514,
+    "source_message_id": 31215,
+    "user_id": 6347638514,
+    "username": "Кристофер",
+    "status": "new",
+    "date": "26.10.2026 14:03"
   }
 }
