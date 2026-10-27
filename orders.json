@@ -12141,5 +12141,24 @@
     "username": "Несокрушимый Алкоголик",
     "status": "cancelled",
     "date": "26.10.2026 18:53"
+  },
+  "#0578": {
+    "oid": "#0578",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Peach Mango Watermelon",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Peach Mango Watermelon, количество: 1",
+    "source_key": "1854547165:31314",
+    "source_chat_id": 1854547165,
+    "source_message_id": 31314,
+    "user_id": 1854547165,
+    "username": "•",
+    "status": "new",
+    "date": "27.10.2026 11:30"
   }
 }
