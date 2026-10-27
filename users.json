@@ -148545,5 +148545,16 @@
     ],
     "registered": "2026-10-26T20:39:34.818469",
     "last_seen": "2026-10-26T20:39:34.818469"
+  },
+  "5948288544": {
+    "id": 5948288544,
+    "first_name": "Okar",
+    "username": "isjustnothere",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-10-27T09:26:24.781612",
+    "last_seen": "2026-10-27T09:26:24.781612"
   }
 }
