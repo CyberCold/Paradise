@@ -64194,9 +64194,22 @@
     "is_premium": false,
     "source": "webapp",
     "registered": "2026-10-21T17:21:00.271Z",
-    "last_seen": "2026-10-21T17:24:12.616Z",
-    "visit_count": 2,
+    "last_seen": "2026-10-27T20:02:36.619Z",
+    "visit_count": 3,
     "ips": [
+      {
+        "ip": "90.133.52.181",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Mobile Services Latvia",
+        "asn": 1257,
+        "lat": 56.946,
+        "lon": 24.10589,
+        "first_seen": "2026-10-27T20:02:36.619Z",
+        "last_seen": "2026-10-27T20:02:36.619Z",
+        "visits": 1
+      },
       {
         "ip": "5.240.213.205",
         "country": "LV",
@@ -64212,6 +64225,47 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-10-27T20:02:36.619Z",
+        "ip": "90.133.52.181",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 15; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.47 Mobile Safari/537.36 Telegram-Android/13.1.1 (Xiaomi 23053RN02Y; Android 15; SDK 35; AVERAGE)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "156.0.8078.47",
+        "os": "Android",
+        "os_version": "15",
+        "language": "ru",
+        "cf_ray": "a5144ca28d15e4e3",
+        "screen": "393x895@2.75",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 8,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru",
+          "ru-RU",
+          "lv-LV",
+          "ja-JP",
+          "uk-UA",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-10-21T17:24:12.616Z",
         "ip": "5.240.213.205",
@@ -64323,7 +64377,7 @@
       "device": "Android Phone",
       "browser": "Chrome",
       "os": "Android",
-      "updated_at": "2026-10-21T17:24:12.616Z"
+      "updated_at": "2026-10-27T20:02:36.619Z"
     },
     "device_keys": [
       "8dedcde242a2dda901558dc66f62a8dd348314fcb6017197d1039559bff7f6f0",
@@ -64335,7 +64389,7 @@
       "region": "Riga",
       "timezone": "Europe/Riga",
       "asn": 1257,
-      "isp": "Tele2 Latvia",
+      "isp": "Mobile Services Latvia",
       "lat": 56.946,
       "lon": 24.10589
     }
@@ -67836,7 +67890,7 @@
         "cf_ray": "a512fbad599c0429",
         "screen": "384x854@2.8125",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "Linux aarch64",
         "memory": 8,
