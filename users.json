@@ -148641,5 +148641,16 @@
     ],
     "registered": "2026-10-27T09:26:24.781612",
     "last_seen": "2026-10-27T09:26:24.781612"
+  },
+  "7225827234": {
+    "id": 7225827234,
+    "first_name": "Li",
+    "username": "Jeremyli930",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-10-27T12:43:13.684923",
+    "last_seen": "2026-10-27T12:43:13.684923"
   }
 }
