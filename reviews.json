@@ -801,5 +801,16 @@
     "comment": null,
     "date": "27.10.2026 09:50",
     "sent_to_channel": true
+  },
+  "#0574_Elfliq": {
+    "oid": "#0574",
+    "user_id": 6347638514,
+    "username": "Кристофер",
+    "product_name": "Elfliq",
+    "flavor": "Blueberry raspberry pomegranate",
+    "rating": 5,
+    "comment": null,
+    "date": "27.10.2026 18:30",
+    "sent_to_channel": true
   }
 }
