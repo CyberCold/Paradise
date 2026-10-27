@@ -12179,5 +12179,30 @@
     "username": "L",
     "status": "new",
     "date": "27.10.2026 17:15"
+  },
+  "#0580": {
+    "oid": "#0580",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Mixed Berries",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Blueberry Sour Raspberry",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Mixed Berries, количество: 1\nYami, вкус: Blueberry Sour Raspberry, количество: 1",
+    "source_key": "594415373:31346",
+    "source_chat_id": 594415373,
+    "source_message_id": 31346,
+    "user_id": 594415373,
+    "username": "F@CE£E$$",
+    "status": "new",
+    "date": "27.10.2026 18:05"
   }
 }
