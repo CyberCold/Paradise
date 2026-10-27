@@ -790,5 +790,16 @@
     "comment": "Я ждал курилку 7-8 часов \nИ в добавок курилка переодически отдаёт Гариком",
     "date": "26.10.2026 12:28",
     "sent_to_channel": true
+  },
+  "#0573_Elfliq": {
+    "oid": "#0573",
+    "user_id": 6922140645,
+    "username": "Ваня 🙃  𒉭",
+    "product_name": "Elfliq",
+    "flavor": "Blue razz lemonade",
+    "rating": 5,
+    "comment": null,
+    "date": "27.10.2026 09:50",
+    "sent_to_channel": true
   }
 }
