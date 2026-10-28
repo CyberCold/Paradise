@@ -812,5 +812,16 @@
     "comment": null,
     "date": "27.10.2026 18:30",
     "sent_to_channel": true
+  },
+  "#0580_Yami": {
+    "oid": "#0580",
+    "user_id": 594415373,
+    "username": "F@CE£E$$",
+    "product_name": "Yami",
+    "flavor": "Mixed Berries",
+    "rating": 5,
+    "comment": "просто ахуенно",
+    "date": "28.10.2026 20:22",
+    "sent_to_channel": true
   }
 }
