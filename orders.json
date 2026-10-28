@@ -12223,8 +12223,9 @@
     "source_message_id": 31363,
     "user_id": 1041832382,
     "username": "Violanta",
-    "status": "new",
-    "date": "28.10.2026 11:12"
+    "status": "done",
+    "date": "28.10.2026 11:12",
+    "done_at": "2026-10-28T19:16:06.479009"
   },
   "#0582": {
     "oid": "#0582",
