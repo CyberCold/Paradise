@@ -148047,10 +148047,11 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-10-23T19:55:14.040488",
-    "last_seen": "2026-10-28T11:11:13.187207"
+    "last_seen": "2026-10-28T11:12:11.842171"
   },
   "5122973888": {
     "id": 5122973888,
