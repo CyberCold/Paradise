@@ -12225,5 +12225,30 @@
     "username": "Violanta",
     "status": "new",
     "date": "28.10.2026 11:12"
+  },
+  "#0582": {
+    "oid": "#0582",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Lemon Lime",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Cola Gummies",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Lemon Lime, количество: 1\nVozol, вкус: Cola Gummies, количество: 1",
+    "source_key": "8362458060:31384",
+    "source_chat_id": 8362458060,
+    "source_message_id": 31384,
+    "user_id": 8362458060,
+    "username": "Саша",
+    "status": "new",
+    "date": "28.10.2026 19:00"
   }
 }
