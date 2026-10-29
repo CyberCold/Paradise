@@ -12385,8 +12385,9 @@
     "source_message_id": 31475,
     "user_id": 797019214,
     "username": "yulya",
-    "status": "new",
-    "date": "29.10.2026 16:09"
+    "status": "done",
+    "date": "29.10.2026 16:09",
+    "done_at": "2026-10-29T17:38:25.678406"
   },
   "#0590": {
     "oid": "#0590",
