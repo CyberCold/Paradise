@@ -12407,5 +12407,24 @@
     "username": "???",
     "status": "cancelled",
     "date": "29.10.2026 16:24"
+  },
+  "#0591": {
+    "oid": "#0591",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Blue Razz Cherry",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Blue Razz Cherry, количество: 1",
+    "source_key": "7835047426:31550",
+    "source_chat_id": 7835047426,
+    "source_message_id": 31550,
+    "user_id": 7835047426,
+    "username": "Денчик",
+    "status": "new",
+    "date": "29.10.2026 21:29"
   }
 }
