@@ -12368,5 +12368,24 @@
     "username": "пиздохряк",
     "status": "cancelled",
     "date": "29.10.2026 15:56"
+  },
+  "#0589": {
+    "oid": "#0589",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Blue razz lemonade",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Blue razz lemonade, количество: 1",
+    "source_key": "797019214:31475",
+    "source_chat_id": 797019214,
+    "source_message_id": 31475,
+    "user_id": 797019214,
+    "username": "yulya",
+    "status": "new",
+    "date": "29.10.2026 16:09"
   }
 }
