@@ -12387,5 +12387,24 @@
     "username": "yulya",
     "status": "new",
     "date": "29.10.2026 16:09"
+  },
+  "#0590": {
+    "oid": "#0590",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Cherry sour raspberry",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Cherry sour raspberry, количество: 1",
+    "source_key": "1535821356:31482",
+    "source_chat_id": 1535821356,
+    "source_message_id": 31482,
+    "user_id": 1535821356,
+    "username": "???",
+    "status": "new",
+    "date": "29.10.2026 16:24"
   }
 }
