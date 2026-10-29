@@ -149904,5 +149904,16 @@
     ],
     "registered": "2026-10-28T21:18:40.263Z",
     "last_seen": "2026-10-28T21:27:39.642Z"
+  },
+  "1198107863": {
+    "id": 1198107863,
+    "first_name": "Андрей",
+    "username": "Jastreb_777",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-10-29T02:00:48.225551",
+    "last_seen": "2026-10-29T02:00:48.225551"
   }
 }
