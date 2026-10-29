@@ -12251,5 +12251,24 @@
     "username": "Саша",
     "status": "new",
     "date": "28.10.2026 19:00"
+  },
+  "#0583": {
+    "oid": "#0583",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Peach Mango Watermelon",
+        "qty": 2
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Peach Mango Watermelon, количество: 2",
+    "source_key": "6171256154:31404",
+    "source_chat_id": 6171256154,
+    "source_message_id": 31404,
+    "user_id": 6171256154,
+    "username": "Кирилл",
+    "status": "new",
+    "date": "29.10.2026 07:37"
   }
 }
