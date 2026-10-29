@@ -150716,5 +150716,15 @@
     ],
     "registered": "2026-10-29T10:21:06.244Z",
     "last_seen": "2026-10-29T10:26:02.036Z"
+  },
+  "5448855399": {
+    "id": 5448855399,
+    "first_name": "iloveyou",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-10-29T13:21:31.695741",
+    "last_seen": "2026-10-29T13:21:31.695741"
   }
 }
