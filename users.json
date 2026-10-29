@@ -149762,7 +149762,7 @@
     "username": "Kiric228h",
     "language_code": "ru",
     "is_premium": false,
-    "visit_count": 2,
+    "visit_count": 3,
     "ips": [
       {
         "ip": "5.241.139.101",
@@ -149774,11 +149774,49 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-10-28T21:18:40.263Z",
-        "last_seen": "2026-10-28T21:27:39.642Z",
-        "visits": 2
+        "last_seen": "2026-10-29T05:36:23.449Z",
+        "visits": 3
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-10-29T05:36:23.449Z",
+        "ip": "5.241.139.101",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.8059.43 Mobile Safari/537.36 Telegram-Android/12.10.1 (Huawei VOG-L29; Android 10; SDK 29; HIGH)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "155.0.8059.43",
+        "os": "Android",
+        "os_version": "10",
+        "language": "ru",
+        "cf_ray": "a51fd2826f75a885",
+        "screen": "360x780@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 4,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru",
+          "ru-RU",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-10-28T21:27:39.642Z",
         "ip": "5.241.139.101",
@@ -149881,7 +149919,7 @@
       "device": "Android Phone",
       "browser": "Chrome",
       "os": "Android",
-      "updated_at": "2026-10-28T21:27:39.642Z"
+      "updated_at": "2026-10-29T05:36:23.449Z"
     },
     "device_keys": [
       "6d0223d4e35989b1681e81ec98a12ae4eb79b07552fd3b577548337453178aeb",
@@ -149903,7 +149941,7 @@
       "webapp"
     ],
     "registered": "2026-10-28T21:18:40.263Z",
-    "last_seen": "2026-10-28T21:27:39.642Z"
+    "last_seen": "2026-10-29T05:36:23.449Z"
   },
   "1198107863": {
     "id": 1198107863,
@@ -149946,7 +149984,7 @@
         "cf_ray": "a51f9815ede9e4d7",
         "screen": "384x832@2.8125",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "Linux aarch64",
         "memory": 8,
