@@ -149938,10 +149938,11 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-10-28T21:18:40.263Z",
-    "last_seen": "2026-10-29T05:36:23.449Z"
+    "last_seen": "2026-10-29T07:37:24.768283"
   },
   "1198107863": {
     "id": 1198107863,
