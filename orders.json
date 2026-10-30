@@ -12534,5 +12534,24 @@
     "username": "𝓀",
     "status": "new",
     "date": "30.10.2026 18:41"
+  },
+  "#0597": {
+    "oid": "#0597",
+    "items": [
+      {
+        "pid": "dojo",
+        "product_name": "Dojo Sphere X",
+        "flavor": "Blue Razz Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nDojo Sphere X, вкус: Blue Razz Ice, количество: 1",
+    "source_key": "5428316045:31616",
+    "source_chat_id": 5428316045,
+    "source_message_id": 31616,
+    "user_id": 5428316045,
+    "username": "noir",
+    "status": "new",
+    "date": "30.10.2026 21:03"
   }
 }
