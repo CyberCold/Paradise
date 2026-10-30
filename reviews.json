@@ -834,5 +834,16 @@
     "comment": null,
     "date": "30.10.2026 13:50",
     "sent_to_channel": true
+  },
+  "#0584_Vozol": {
+    "oid": "#0584",
+    "user_id": 748636930,
+    "username": "а",
+    "product_name": "Vozol",
+    "flavor": "Strawberry Ice",
+    "rating": 5,
+    "comment": "ахуенчикс изи изи изи бриджи бэм бэм бэм литэнерджи аккуратненько",
+    "date": "30.10.2026 15:09",
+    "sent_to_channel": true
   }
 }
