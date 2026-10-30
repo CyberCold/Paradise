@@ -823,5 +823,16 @@
     "comment": "просто ахуенно",
     "date": "28.10.2026 20:22",
     "sent_to_channel": true
+  },
+  "#0586_Vozol": {
+    "oid": "#0586",
+    "user_id": 5343367585,
+    "username": "Гунтис",
+    "product_name": "Vozol",
+    "flavor": "Blue Cotton Candy",
+    "rating": 5,
+    "comment": null,
+    "date": "30.10.2026 13:50",
+    "sent_to_channel": true
   }
 }
