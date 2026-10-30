@@ -41,7 +41,7 @@
       ],
       "stock": "in",
       "badge": "new",
-      "hidden": false
+      "hidden": true
     },
     "elfliq": {
       "id": "elfliq",
