@@ -12493,8 +12493,9 @@
     "source_message_id": 31573,
     "user_id": 7147710833,
     "username": "Electric",
-    "status": "new",
-    "date": "30.10.2026 16:00"
+    "status": "done",
+    "date": "30.10.2026 16:00",
+    "done_at": "2026-10-30T18:38:20.718052"
   },
   "#0595": {
     "oid": "#0595",
