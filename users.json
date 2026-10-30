@@ -36107,12 +36107,108 @@
     "id": 1636547289,
     "first_name": "евчик",
     "username": "jamrovska",
+    "language_code": "ru",
+    "is_premium": false,
+    "visit_count": 1,
+    "ips": [
+      {
+        "ip": "2a00:f503:150:7d9b:f569:574:897d:ce83",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Bite Latvija    users",
+        "asn": 13194,
+        "lat": 56.946,
+        "lon": 24.10589,
+        "first_seen": "2026-10-30T10:14:39.555Z",
+        "last_seen": "2026-10-30T10:14:39.555Z",
+        "visits": 1
+      }
+    ],
+    "visits": [
+      {
+        "timestamp": "2026-10-30T10:14:39.555Z",
+        "ip": "2a00:f503:150:7d9b:f569:574:897d:ce83",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a529a780e9f6f00d",
+        "screen": "402x874@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      }
+    ],
+    "fingerprint": {
+      "screen": "402x874@3",
+      "timezone": "Europe/Riga",
+      "color_depth": 24,
+      "touch": 5,
+      "platform": "iPhone",
+      "memory": 0,
+      "cores": 4,
+      "connection": null,
+      "webgl_vendor": "Apple Inc.",
+      "webgl_renderer": "Apple GPU",
+      "languages": [
+        "ru"
+      ],
+      "ua_platform": null,
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": false,
+      "device": "iPhone",
+      "browser": "unknown",
+      "os": "iOS",
+      "updated_at": "2026-10-30T10:14:39.555Z"
+    },
+    "device_keys": [
+      "65c89702505cf7c12c8de757658da690caeef83d9c2a1ab6104f62b84a9a47f4",
+      "73a49f0c25a50dd0f851d763e6a0867cc99e57d87265fa0fdf67e0ae802a24cd"
+    ],
+    "geo": {
+      "country": "LV",
+      "city": "Riga",
+      "region": "Riga",
+      "timezone": "Europe/Riga",
+      "asn": 13194,
+      "isp": "Bite Latvija    users",
+      "lat": 56.946,
+      "lon": 24.10589
+    },
     "source": "chat",
     "sources": [
-      "chat"
+      "chat",
+      "webapp"
     ],
     "registered": "2026-07-14T22:14:59.350590",
-    "last_seen": "2026-07-16T19:39:44.467989"
+    "last_seen": "2026-10-30T10:14:39.555Z"
   },
   "1655714696": {
     "id": 1655714696,
@@ -152270,7 +152366,7 @@
         "cf_ray": "a529a49b9d25c9d5",
         "screen": "384x832@2.8125",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "Linux aarch64",
         "memory": 4,
