@@ -153722,9 +153722,10 @@
     "first_name": "Кара🐈⬛",
     "source": "chat",
     "sources": [
-      "chat"
+      "chat",
+      "bot_start"
     ],
     "registered": "2026-10-31T11:42:19.510905",
-    "last_seen": "2026-10-31T11:42:19.510905"
+    "last_seen": "2026-10-31T12:17:22.265220"
   }
 }
