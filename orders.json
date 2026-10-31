@@ -12572,5 +12572,36 @@
     "username": "kristian",
     "status": "new",
     "date": "31.10.2026 10:26"
+  },
+  "#0599": {
+    "oid": "#0599",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Pink Lemonade",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Purple Candy",
+        "qty": 1
+      },
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Blueberry Raspberry Pomegranate",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Pink Lemonade, количество: 1\nVozol, вкус: Purple Candy, количество: 1\nElfliq, вкус: Blueberry Raspberry Pomegranate, количество: 1",
+    "source_key": "1350105420:31630",
+    "source_chat_id": 1350105420,
+    "source_message_id": 31630,
+    "user_id": 1350105420,
+    "username": "Hammer",
+    "status": "new",
+    "date": "31.10.2026 12:10"
   }
 }
