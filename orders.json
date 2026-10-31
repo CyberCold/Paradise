@@ -12456,8 +12456,9 @@
     "source_message_id": 31566,
     "user_id": 5035724495,
     "username": "Tomass",
-    "status": "new",
-    "date": "30.10.2026 14:56"
+    "status": "done",
+    "date": "30.10.2026 14:56",
+    "done_at": "2026-10-31T14:44:23.947208"
   },
   "#0593": {
     "oid": "#0593",
