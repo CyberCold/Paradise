@@ -12601,8 +12601,9 @@
     "source_message_id": 31630,
     "user_id": 1350105420,
     "username": "Hammer",
-    "status": "new",
-    "date": "31.10.2026 12:10"
+    "status": "done",
+    "date": "31.10.2026 12:10",
+    "done_at": "2026-10-31T14:44:07.195746"
   },
   "#0600": {
     "oid": "#0600",
