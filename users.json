@@ -153894,9 +153894,10 @@
     "username": "TaPo4eKlv",
     "source": "chat",
     "sources": [
-      "chat"
+      "chat",
+      "bot_start"
     ],
     "registered": "2026-10-31T12:30:34.822694",
-    "last_seen": "2026-10-31T12:30:34.822694"
+    "last_seen": "2026-10-31T12:36:21.626456"
   }
 }
