@@ -49629,7 +49629,7 @@
         "cf_ray": "a53be28cae77f00d",
         "screen": "390x844@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -99366,8 +99366,8 @@
     "is_premium": true,
     "source": "webapp",
     "registered": "2026-07-18T07:28:24.041Z",
-    "last_seen": "2026-10-29T13:56:40.075Z",
-    "visit_count": 32,
+    "last_seen": "2026-11-01T15:56:45.310Z",
+    "visit_count": 33,
     "ips": [
       {
         "ip": "2a00:f503:251:155a:5c45:a8f:b100:8543",
@@ -99418,8 +99418,8 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-09-26T06:55:29.346Z",
-        "last_seen": "2026-10-24T11:16:22.902Z",
-        "visits": 4
+        "last_seen": "2026-11-01T15:56:45.310Z",
+        "visits": 5
       },
       {
         "ip": "2a00:f503:250:f75c:fcd7:ef95:994c:947e",
@@ -99566,6 +99566,42 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-11-01T15:56:45.310Z",
+        "ip": "87.110.95.145",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a53c175efdb9a89c",
+        "screen": "430x932@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-10-29T13:56:40.075Z",
         "ip": "2a00:f503:251:155a:5c45:a8f:b100:8543",
@@ -100607,40 +100643,6 @@
         "ua_bitness": null,
         "ua_model": null,
         "ua_mobile": false
-      },
-      {
-        "timestamp": "2026-07-18T08:41:08.365Z",
-        "ip": "84.15.217.136",
-        "country": "LV",
-        "city": "Riga",
-        "region": "Riga",
-        "url": "https://paradise-users.dnynzvtpyb.workers.dev/",
-        "referrer": "https://paradiseminiapp.pages.dev/",
-        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
-        "device": "iPhone",
-        "browser": "unknown",
-        "browser_version": null,
-        "os": "iOS",
-        "os_version": "18.7",
-        "language": "ru",
-        "cf_ray": "a1d02f834d9fec3e",
-        "screen": null,
-        "tz_client": null,
-        "color_depth": 0,
-        "touch": 0,
-        "platform": null,
-        "memory": 0,
-        "cores": 0,
-        "connection": null,
-        "webgl_vendor": null,
-        "webgl_renderer": null,
-        "languages": [],
-        "ua_platform": null,
-        "ua_platform_version": null,
-        "ua_architecture": null,
-        "ua_bitness": null,
-        "ua_model": null,
-        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -100666,7 +100668,7 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-10-29T13:56:40.075Z"
+      "updated_at": "2026-11-01T15:56:45.310Z"
     },
     "device_keys": [
       "c509896c38054474bfe51841ebb21b8ee6f35a9a3b866ac18bd138b4c0e9eb6b",
@@ -100677,8 +100679,8 @@
       "city": "Riga",
       "region": "Riga",
       "timezone": "Europe/Riga",
-      "asn": 13194,
-      "isp": "Bite Latvija    users",
+      "asn": 12578,
+      "isp": "Address pool for LTC-HOME customers",
       "lat": 56.946,
       "lon": 24.10589
     }
