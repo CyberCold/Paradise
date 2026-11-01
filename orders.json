@@ -12796,5 +12796,30 @@
     "username": "🩵👼",
     "status": "new",
     "date": "01.11.2026 17:22"
+  },
+  "#0609": {
+    "oid": "#0609",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Grape Energy",
+        "qty": 2
+      },
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Elf Jack",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Grape Energy, количество: 2\nElfliq, вкус: Elf Jack, количество: 1",
+    "source_key": "1135397601:31889",
+    "source_chat_id": 1135397601,
+    "source_message_id": 31889,
+    "user_id": 1135397601,
+    "username": "Saphartron",
+    "status": "new",
+    "date": "01.11.2026 19:01"
   }
 }
