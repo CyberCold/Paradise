@@ -3630,7 +3630,10 @@
     {
       "poll_id": "2026-11",
       "date": "01.11.2026",
-      "answers": {},
+      "answers": {
+        "Vozol cotton": 1,
+        "Vozol viski": 1
+      },
       "sent_to": [
         297126842,
         349400151,
