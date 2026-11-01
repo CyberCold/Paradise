@@ -3782,8 +3782,8 @@
     "is_premium": false,
     "source": "webapp",
     "registered": "2026-07-18T16:02:19.790Z",
-    "last_seen": "2026-10-06T14:45:44.568Z",
-    "visit_count": 18,
+    "last_seen": "2026-11-01T14:58:06.159Z",
+    "visit_count": 19,
     "ips": [
       {
         "ip": "2a00:808:113:f7eb::35f5:dd9b",
@@ -3808,8 +3808,8 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-09-09T14:47:10.832Z",
-        "last_seen": "2026-10-06T06:21:21.683Z",
-        "visits": 4
+        "last_seen": "2026-11-01T14:58:06.159Z",
+        "visits": 5
       },
       {
         "ip": "2a00:808:11c:fbe1::227f:c3ff",
@@ -3891,6 +3891,47 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-11-01T14:58:06.159Z",
+        "ip": "77.38.222.53",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 OPR/138.0.0.0",
+        "device": "Desktop",
+        "browser": "Opera",
+        "browser_version": "138.0.0.0",
+        "os": "Windows",
+        "os_version": null,
+        "language": "ru",
+        "cf_ray": "a53bc1745f51cc2f",
+        "screen": "2560x1440@1",
+        "tz_client": "Europe/Kiev",
+        "color_depth": null,
+        "touch": 0,
+        "platform": "Win32",
+        "memory": 32,
+        "cores": 16,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru",
+          "en-US",
+          "en",
+          "lv",
+          "lt",
+          "fr"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-10-06T14:45:44.568Z",
         "ip": "2a00:808:113:f7eb::35f5:dd9b",
@@ -4565,38 +4606,42 @@
       }
     ],
     "fingerprint": {
-      "screen": "384x832@2.8125",
-      "timezone": "Europe/Riga",
+      "screen": "2560x1440@1",
+      "timezone": "Europe/Kiev",
       "color_depth": 24,
-      "touch": 5,
-      "platform": "Linux aarch64",
-      "memory": 8,
-      "cores": 8,
+      "touch": 0,
+      "platform": "Win32",
+      "memory": 32,
+      "cores": 16,
       "connection": "4g",
-      "webgl_vendor": "Samsung Electronics Co., Ltd.",
-      "webgl_renderer": "ANGLE (Samsung Xclipse 530) on Vulkan 1.3.231",
+      "webgl_vendor": "Google Inc. (NVIDIA)",
+      "webgl_renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 5070 (0x00002F04) Direct3D11 vs_5_0 ps_5_0, D3D11)",
       "languages": [
         "ru",
-        "ru-RU",
-        "en-US"
+        "en-US",
+        "en",
+        "lv",
+        "lt",
+        "fr"
       ],
-      "ua_platform": "Android",
-      "ua_platform_version": null,
-      "ua_architecture": null,
-      "ua_bitness": null,
+      "ua_platform": "Windows",
+      "ua_platform_version": "10.0.0",
+      "ua_architecture": "x86",
+      "ua_bitness": "64",
       "ua_model": null,
-      "ua_mobile": true,
-      "device": "Android Phone",
-      "browser": "Chrome",
-      "os": "Android",
-      "updated_at": "2026-10-06T14:45:44.568Z"
+      "ua_mobile": false,
+      "device": "Desktop",
+      "browser": "Opera",
+      "os": "Windows",
+      "updated_at": "2026-11-01T14:58:06.159Z"
     },
     "device_keys": [
+      "341ebdaf3e36a657bba47f94e039daaf9af6dda31983bdb19ceb398733e5bbd1",
+      "69f7012be8c878938114a258b60102bf2ae365c09060f292d2a2c8dad2c2793d",
       "caa3664049419d3d547cd4ba8a2bee86c343032b75a929c68370e43314b75e82",
       "c52a3e4e3092bd933ab9160339a0bcbdaf4a86aae4019925d68f21f0f9076959",
       "1a67c767e6d13f7465f96a6f8305335ccab7cf66623458fa7cc2df5650ba91f0",
       "094db6c77e51b5912e611f5793240892be585008265595ce4856d2a4e6b76689",
-      "341ebdaf3e36a657bba47f94e039daaf9af6dda31983bdb19ceb398733e5bbd1",
       "761cf8674435b0773694adb362faaef21e2a9faf15745411dc4f238517a63faf"
     ],
     "geo": {
@@ -4604,10 +4649,10 @@
       "city": "Riga",
       "region": "Riga",
       "timezone": "Europe/Riga",
-      "asn": 1257,
-      "isp": "Tele2 Latvia",
+      "asn": 20910,
+      "isp": "BALTCOM Broadband Customers",
       "lat": 56.946,
-      "lon": 24.1059
+      "lon": 24.10589
     }
   },
   "527067894": {
@@ -41462,7 +41507,7 @@
         "cf_ray": "a53ba5ce4c08c037",
         "screen": "390x844@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
