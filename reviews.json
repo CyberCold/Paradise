@@ -856,5 +856,16 @@
     "comment": "Очень горькая и испортила картридж, сгорел спустя один бак",
     "date": "01.11.2026 15:41",
     "sent_to_channel": true
+  },
+  "#0592_Vozol": {
+    "oid": "#0592",
+    "user_id": 5035724495,
+    "username": "Tomass",
+    "product_name": "Vozol",
+    "flavor": "Cola Gummies",
+    "rating": 3,
+    "comment": null,
+    "date": "01.11.2026 16:27",
+    "sent_to_channel": true
   }
 }
