@@ -12819,7 +12819,8 @@
     "source_message_id": 31889,
     "user_id": 1135397601,
     "username": "Saphartron",
-    "status": "new",
-    "date": "01.11.2026 19:01"
+    "status": "done",
+    "date": "01.11.2026 19:01",
+    "done_at": "2026-11-01T21:46:09.645591"
   }
 }
