@@ -19622,7 +19622,7 @@
     "username": "a_vskaa",
     "language_code": "lv",
     "is_premium": false,
-    "visit_count": 9,
+    "visit_count": 10,
     "ips": [
       {
         "ip": "2a00:808:122:d65b:a1fc:159d:dd54:11c2",
@@ -19634,8 +19634,8 @@
         "lat": 56.946,
         "lon": 24.1059,
         "first_seen": "2026-11-01T14:36:06.566Z",
-        "last_seen": "2026-11-01T14:36:06.566Z",
-        "visits": 1
+        "last_seen": "2026-11-01T14:39:13.723Z",
+        "visits": 2
       },
       {
         "ip": "2a00:808:131:cd16:66:bec9:10df:70d6",
@@ -19731,6 +19731,42 @@
     ],
     "visits": [
       {
+        "timestamp": "2026-11-01T14:39:13.723Z",
+        "ip": "2a00:808:122:d65b:a1fc:159d:dd54:11c2",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "lv-LV",
+        "cf_ray": "a53ba5ce4c08c037",
+        "screen": "390x844@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "lv-LV"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
+      {
         "timestamp": "2026-11-01T14:36:06.566Z",
         "ip": "2a00:808:122:d65b:a1fc:159d:dd54:11c2",
         "country": "LV",
@@ -19748,7 +19784,7 @@
         "cf_ray": "a53ba13ce8c7e4e7",
         "screen": "390x844@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -20078,7 +20114,7 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-11-01T14:36:06.566Z"
+      "updated_at": "2026-11-01T14:39:13.723Z"
     },
     "device_keys": [
       "4318fe73f4d7abec1dd51dc29e60a17fda0cdbdf0a8768116ef50a82b91eadd7",
@@ -20102,7 +20138,7 @@
       "webapp"
     ],
     "registered": "2026-07-03T16:26:47.114253",
-    "last_seen": "2026-11-01T16:38:08.630014"
+    "last_seen": "2026-11-01T14:39:13.723Z"
   },
   "1133519413": {
     "id": 1133519413,
