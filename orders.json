@@ -12713,5 +12713,30 @@
     "username": "лера",
     "status": "cancelled",
     "date": "31.10.2026 16:58"
+  },
+  "#0605": {
+    "oid": "#0605",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Strawberry Ice",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Mixed Berries",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Strawberry Ice, количество: 1\nYami, вкус: Mixed Berries, количество: 1",
+    "source_key": "1269534545:31804",
+    "source_chat_id": 1269534545,
+    "source_message_id": 31804,
+    "user_id": 1269534545,
+    "username": "Кара🐈‍⬛",
+    "status": "new",
+    "date": "01.11.2026 08:37"
   }
 }
