@@ -12777,5 +12777,24 @@
     "username": "⋆˚࿔ otsukare 𝜗𝜚˚⋆",
     "status": "new",
     "date": "01.11.2026 14:38"
+  },
+  "#0608": {
+    "oid": "#0608",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Blackberry Lemon",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Blackberry Lemon, количество: 1",
+    "source_key": "1210151096:31862",
+    "source_chat_id": 1210151096,
+    "source_message_id": 31862,
+    "user_id": 1210151096,
+    "username": "🩵👼",
+    "status": "new",
+    "date": "01.11.2026 17:22"
   }
 }
