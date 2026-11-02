@@ -10970,10 +10970,11 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-05-27T12:19:09.893223",
-    "last_seen": "2026-11-01T22:41:48.635Z"
+    "last_seen": "2026-11-02T11:24:59.608486"
   },
   "891152397": {
     "id": 891152397,
