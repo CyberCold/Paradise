@@ -12919,5 +12919,24 @@
     "username": "Андрик",
     "status": "new",
     "date": "02.11.2026 17:30"
+  },
+  "#0615": {
+    "oid": "#0615",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Red Mojito",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Red Mojito, количество: 1",
+    "source_key": "2065941330:32026",
+    "source_chat_id": 2065941330,
+    "source_message_id": 32026,
+    "user_id": 2065941330,
+    "username": "Андрик",
+    "status": "new",
+    "date": "02.11.2026 17:30"
   }
 }
