@@ -12860,8 +12860,9 @@
     "source_message_id": 31995,
     "user_id": 5363595957,
     "username": "yellow",
-    "status": "new",
-    "date": "02.11.2026 14:51"
+    "status": "done",
+    "date": "02.11.2026 14:51",
+    "done_at": "2026-11-02T19:34:27.362580"
   },
   "#0612": {
     "oid": "#0612",
