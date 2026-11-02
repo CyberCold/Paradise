@@ -867,5 +867,16 @@
     "comment": null,
     "date": "01.11.2026 16:27",
     "sent_to_channel": true
+  },
+  "#0608_Elfliq": {
+    "oid": "#0608",
+    "user_id": 1210151096,
+    "username": "🩵👼",
+    "product_name": "Elfliq",
+    "flavor": "Blackberry Lemon",
+    "rating": 5,
+    "comment": null,
+    "date": "02.11.2026 21:48",
+    "sent_to_channel": true
   }
 }
