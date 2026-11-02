@@ -29852,10 +29852,11 @@
     "username": "Name_MeVB",
     "source": "bot_start",
     "sources": [
-      "bot_start"
+      "bot_start",
+      "chat"
     ],
     "registered": "2026-07-12T21:43:09.514708",
-    "last_seen": "2026-07-12T21:43:57.358790"
+    "last_seen": "2026-11-02T15:27:12.217482"
   },
   "1369931246": {
     "id": 1369931246,
