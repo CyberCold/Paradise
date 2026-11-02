@@ -12843,5 +12843,24 @@
     "username": "yellow",
     "status": "new",
     "date": "02.11.2026 14:45"
+  },
+  "#0611": {
+    "oid": "#0611",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Blueberry Rose Mint",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Blueberry Rose Mint, количество: 1",
+    "source_key": "5363595957:31995",
+    "source_chat_id": 5363595957,
+    "source_message_id": 31995,
+    "user_id": 5363595957,
+    "username": "yellow",
+    "status": "new",
+    "date": "02.11.2026 14:51"
   }
 }
