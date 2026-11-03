@@ -157582,5 +157582,16 @@
     ],
     "registered": "2026-11-03T12:17:52.986600",
     "last_seen": "2026-11-03T12:17:52.986600"
+  },
+  "5728203628": {
+    "id": 5728203628,
+    "first_name": "Areri",
+    "username": "Arerikotola",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-03T12:57:53.600087",
+    "last_seen": "2026-11-03T12:57:53.600087"
   }
 }
