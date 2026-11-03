@@ -140662,7 +140662,7 @@
     "username": "SergeantGod",
     "language_code": "ru",
     "is_premium": false,
-    "visit_count": 12,
+    "visit_count": 13,
     "ips": [
       {
         "ip": "2a03:ec00:b98b:f1d2:2174:5c0d:4922:41ab",
@@ -140687,8 +140687,8 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-10-02T10:59:24.361Z",
-        "last_seen": "2026-10-09T05:48:57.744Z",
-        "visits": 2
+        "last_seen": "2026-11-03T14:17:28.812Z",
+        "visits": 3
       },
       {
         "ip": "77.38.167.49",
@@ -140718,6 +140718,42 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-11-03T14:17:28.812Z",
+        "ip": "94.30.243.31",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a54c00b2cb35e4cc",
+        "screen": "393x852@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-10-31T08:24:32.939Z",
         "ip": "77.38.167.49",
@@ -141174,7 +141210,7 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-10-31T08:24:32.939Z"
+      "updated_at": "2026-11-03T14:17:28.812Z"
     },
     "device_keys": [
       "f7e1b539c901e0021fa233e9562f5f3ad0c89aa7ff114b67cd1979ea83552021",
@@ -141197,7 +141233,7 @@
       "webapp"
     ],
     "registered": "2026-09-28T18:09:04.206355",
-    "last_seen": "2026-10-31T08:24:32.939Z"
+    "last_seen": "2026-11-03T14:17:28.812Z"
   },
   "1482744758": {
     "id": 1482744758,
@@ -151562,7 +151598,7 @@
         "cf_ray": "a54b0a5a9e362aa2",
         "screen": "390x844@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
