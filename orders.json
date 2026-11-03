@@ -12999,5 +12999,24 @@
     "status": "done",
     "date": "03.11.2026 11:44",
     "done_at": "2026-11-03T16:25:10.448980"
+  },
+  "#0619": {
+    "oid": "#0619",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Mixed Berries",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Mixed Berries, количество: 1",
+    "source_key": "5581672715:32114",
+    "source_chat_id": 5581672715,
+    "source_message_id": 32114,
+    "user_id": 5581672715,
+    "username": "Valerij",
+    "status": "new",
+    "date": "03.11.2026 16:55"
   }
 }
