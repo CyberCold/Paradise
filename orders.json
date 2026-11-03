@@ -13017,7 +13017,8 @@
     "source_message_id": 32114,
     "user_id": 5581672715,
     "username": "Valerij",
-    "status": "new",
-    "date": "03.11.2026 16:55"
+    "status": "done",
+    "date": "03.11.2026 16:55",
+    "done_at": "2026-11-03T17:26:46.449728"
   }
 }
