@@ -45694,9 +45694,9 @@
     "id": 7682695094,
     "first_name": "Paradise Manager",
     "username": "smkParadiseManager",
-    "language_code": "ru",
+    "language_code": "en",
     "is_premium": true,
-    "visit_count": 55,
+    "visit_count": 56,
     "ips": [
       {
         "ip": "2a00:808:12f:c5a6:69ac:7eb4:6742:138f",
@@ -45721,8 +45721,8 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-10-31T09:56:59.773Z",
-        "last_seen": "2026-10-31T09:56:59.773Z",
-        "visits": 1
+        "last_seen": "2026-11-05T17:02:55.337Z",
+        "visits": 2
       },
       {
         "ip": "2a00:808:126:fe58:5191:2105:6dfa:b026",
@@ -45960,6 +45960,42 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-11-05T17:02:55.337Z",
+        "ip": "94.30.253.210",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "en-GB",
+        "cf_ray": "a55d6dcbadf1e4dd",
+        "screen": "420x912@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "en-GB"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-10-31T18:15:15.838Z",
         "ip": "2a00:808:12f:c5a6:69ac:7eb4:6742:138f",
@@ -47024,47 +47060,11 @@
         "ua_bitness": null,
         "ua_model": null,
         "ua_mobile": false
-      },
-      {
-        "timestamp": "2026-09-02T08:34:41.025Z",
-        "ip": "2a00:808:113:e4b9:2cfe:d810:194a:bbef",
-        "country": "LV",
-        "city": "Riga",
-        "region": "Riga",
-        "url": "https://paradiseminiapp.pages.dev/app",
-        "referrer": null,
-        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
-        "device": "iPhone",
-        "browser": "unknown",
-        "browser_version": null,
-        "os": "iOS",
-        "os_version": "18.7",
-        "language": "ru",
-        "cf_ray": "a34b2d4e3ff3e4d6",
-        "screen": "420x912@3",
-        "tz_client": "Europe/Riga",
-        "color_depth": 0,
-        "touch": 5,
-        "platform": "iPhone",
-        "memory": 0,
-        "cores": 4,
-        "connection": null,
-        "webgl_vendor": null,
-        "webgl_renderer": null,
-        "languages": [
-          "ru"
-        ],
-        "ua_platform": null,
-        "ua_platform_version": null,
-        "ua_architecture": null,
-        "ua_bitness": null,
-        "ua_model": null,
-        "ua_mobile": false
       }
     ],
     "fingerprint": {
       "screen": "420x912@3",
-      "timezone": "Europe/Vilnius",
+      "timezone": "Europe/Riga",
       "color_depth": 24,
       "touch": 5,
       "platform": "iPhone",
@@ -47085,27 +47085,27 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-10-31T18:15:15.838Z"
+      "updated_at": "2026-11-05T17:02:55.337Z"
     },
     "geo": {
       "country": "LV",
       "city": "Riga",
       "region": "Riga",
       "timezone": "Europe/Riga",
-      "asn": 1257,
-      "isp": "Tele2 Latvia",
+      "asn": 20910,
+      "isp": "BALTCOM Broadband Customers",
       "lat": 56.946,
-      "lon": 24.1059
+      "lon": 24.10589
     },
     "device_keys": [
       "5365872560382ad52dd3f18d9a2150a1596033d1ecc74d766cdb81de906cd814",
+      "9583a235c3f0aa7bf92d988cacc52d17ab6a43c85dba3f86afbdfce06c8eb099",
       "177da0a54d0638a99d8686a78e435772d8f4e729fe48ce2a97be9d0e8b7715ea",
       "9400d6c2ce5cbd8237c843fc580ed1f3a9df634b441188d9c2d5a42dbc69eeb1",
       "9259d299569f299daf22284e8edc247b709f2c3641d06e7427027a9f52fe628b",
       "370b00e75a078f52c137994e7283ad537b895f65dcde4f158ae68aef1811529b",
       "73a49f0c25a50dd0f851d763e6a0867cc99e57d87265fa0fdf67e0ae802a24cd",
-      "c3ea803c7fddd28a70eee6b1d27ff990d383cbea1e2d1694467e54709a9dafae",
-      "710d2e9e1d454f1575a3cfb46e214496502e202692fe6c286ad5bb246442fc24"
+      "c3ea803c7fddd28a70eee6b1d27ff990d383cbea1e2d1694467e54709a9dafae"
     ],
     "source": "bot_start",
     "sources": [
@@ -47114,7 +47114,7 @@
       "chat"
     ],
     "registered": "2026-05-22T14:22:22.431Z",
-    "last_seen": "2026-10-31T18:15:15.838Z"
+    "last_seen": "2026-11-05T17:02:55.337Z"
   },
   "8468357797": {
     "id": 8468357797,
@@ -127649,7 +127649,7 @@
         "cf_ray": "a55d6b2e9bc5e4ea",
         "screen": "440x956@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
