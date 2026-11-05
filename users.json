@@ -131792,7 +131792,7 @@
         "cf_ray": "a55f897a9f92440a",
         "screen": "384x832@2.8125",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "Linux aarch64",
         "memory": 8,
@@ -143765,13 +143765,114 @@
   },
   "8835930707": {
     "id": 8835930707,
-    "first_name": "Jester",
+    "first_name": ".",
+    "username": "l1ke_a_moon",
+    "language_code": "ru",
+    "is_premium": false,
+    "visit_count": 1,
+    "ips": [
+      {
+        "ip": "2a03:ec00:b15d:be3e::c224:ad68",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Latvijas Mobilais Telefons SIA",
+        "asn": 24921,
+        "lat": 56.946,
+        "lon": 24.10589,
+        "first_seen": "2026-11-05T23:48:20.702Z",
+        "last_seen": "2026-11-05T23:48:20.702Z",
+        "visits": 1
+      }
+    ],
+    "visits": [
+      {
+        "timestamp": "2026-11-05T23:48:20.702Z",
+        "ip": "2a03:ec00:b15d:be3e::c224:ad68",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 17; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.47 Mobile Safari/537.36 Telegram-Android/13.1.1 (Google Pixel 10a; Android 17; SDK 37; HIGH)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "156.0.8078.47",
+        "os": "Android",
+        "os_version": "17",
+        "language": "ru",
+        "cf_ray": "a55fbfad2c62e4e0",
+        "screen": "412x924@2.625",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 8,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru",
+          "ru-RU",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      }
+    ],
+    "fingerprint": {
+      "screen": "412x924@2.625",
+      "timezone": "Europe/Riga",
+      "color_depth": 24,
+      "touch": 5,
+      "platform": "Linux aarch64",
+      "memory": 8,
+      "cores": 8,
+      "connection": "4g",
+      "webgl_vendor": "ARM",
+      "webgl_renderer": "Mali-G715",
+      "languages": [
+        "ru",
+        "ru-RU",
+        "en-US"
+      ],
+      "ua_platform": "Android",
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": true,
+      "device": "Android Phone",
+      "browser": "Chrome",
+      "os": "Android",
+      "updated_at": "2026-11-05T23:48:20.702Z"
+    },
+    "device_keys": [
+      "0884d36f9431ef551c6ca6027e731d6202e03a3ba208bb365ea0c19004ba5ad2",
+      "880885d9289a6638e9a89478143035d2586b881869e4cc810072552c43930bc1"
+    ],
+    "geo": {
+      "country": "LV",
+      "city": "Riga",
+      "region": "Riga",
+      "timezone": "Europe/Riga",
+      "asn": 24921,
+      "isp": "Latvijas Mobilais Telefons SIA",
+      "lat": 56.946,
+      "lon": 24.10589
+    },
     "source": "bot_start",
     "sources": [
-      "bot_start"
+      "bot_start",
+      "webapp"
     ],
     "registered": "2026-09-30T17:09:29.325108",
-    "last_seen": "2026-09-30T17:09:29.325108"
+    "last_seen": "2026-11-05T23:48:20.702Z"
   },
   "1820970504": {
     "id": 1820970504,
