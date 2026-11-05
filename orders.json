@@ -13064,5 +13064,30 @@
     "username": "🩷",
     "status": "new",
     "date": "04.11.2026 16:31"
+  },
+  "#0622": {
+    "oid": "#0622",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Red Mojito",
+        "qty": 2
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Dragon Fruit Banana Cherry",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Red Mojito, количество: 2\nYami, вкус: Dragon Fruit Banana Cherry, количество: 1",
+    "source_key": "6623819066:32319",
+    "source_chat_id": 6623819066,
+    "source_message_id": 32319,
+    "user_id": 6623819066,
+    "username": "Котэ",
+    "status": "new",
+    "date": "05.11.2026 13:57"
   }
 }
