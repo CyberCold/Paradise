@@ -161047,5 +161047,16 @@
     ],
     "registered": "2026-11-05T17:21:30.458236",
     "last_seen": "2026-11-05T17:21:30.458236"
+  },
+  "890560841": {
+    "id": 890560841,
+    "first_name": "Dark_Tom",
+    "username": "darktom00",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-05T18:46:53.732973",
+    "last_seen": "2026-11-05T18:46:53.732973"
   }
 }
