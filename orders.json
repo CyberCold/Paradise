@@ -13108,5 +13108,24 @@
     "username": "Ваня 🙃  𒉭",
     "status": "new",
     "date": "05.11.2026 14:19"
+  },
+  "#0624": {
+    "oid": "#0624",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Blue Razz Lemonade",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Blue Razz Lemonade, количество: 1",
+    "source_key": "6922140645:32325",
+    "source_chat_id": 6922140645,
+    "source_message_id": 32325,
+    "user_id": 6922140645,
+    "username": "Ваня 🙃  𒉭",
+    "status": "new",
+    "date": "05.11.2026 14:20"
   }
 }
