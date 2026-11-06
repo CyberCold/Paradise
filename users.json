@@ -162954,9 +162954,10 @@
     "username": "xZ4YDx",
     "source": "chat",
     "sources": [
-      "chat"
+      "chat",
+      "bot_start"
     ],
     "registered": "2026-11-06T16:53:08.049483",
-    "last_seen": "2026-11-06T16:53:08.049483"
+    "last_seen": "2026-11-06T16:53:50.764257"
   }
 }
