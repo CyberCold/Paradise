@@ -162900,5 +162900,16 @@
     ],
     "registered": "2026-11-06T13:54:02.174208",
     "last_seen": "2026-11-06T11:55:50.376Z"
+  },
+  "895312680": {
+    "id": 895312680,
+    "first_name": "Арианда",
+    "username": "ariandai",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-06T16:07:59.768480",
+    "last_seen": "2026-11-06T16:07:59.768480"
   }
 }
