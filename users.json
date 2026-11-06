@@ -162788,10 +162788,11 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-11-06T11:42:41.764549",
-    "last_seen": "2026-11-06T09:42:42.850Z"
+    "last_seen": "2026-11-06T17:39:46.676388"
   },
   "5323092922": {
     "id": 5323092922,
