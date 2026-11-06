@@ -177,6 +177,24 @@
       "stock": "in",
       "badge": "hit",
       "hidden": false
+    },
+    {
+      "id": "elfbarbc45k",
+      "name": "ELFBAR BC 45k puffs",
+      "tag": "Disposable",
+      "subtitle": "45 000 puffs • salt nicotine",
+      "price": "15€",
+      "image": "https://i.postimg.cc/9Q1bQ53D/AF39720C-0119-4742-94EC-22BA1186A4F0.png",
+      "flavors": [
+        "Red Raspberry Strawberry",
+        "Pomegranate Raspberry Lime",
+        "Blackberry Lemonade",
+        "Cherry Peach Soda",
+        "Blackcurrant Grape"
+      ],
+      "stock": "in",
+      "badge": "new",
+      "hidden": false
     }
   ],
   "order": [
@@ -190,6 +208,7 @@
     "truesalt",
     "elfbarlushkingpro",
     "dojo",
-    "vozolneon"
+    "vozolneon",
+    "elfbarbc45k"
   ]
 }
