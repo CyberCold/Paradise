@@ -162039,5 +162039,16 @@
     ],
     "registered": "2026-11-05T18:46:53.732973",
     "last_seen": "2026-11-05T16:46:55.269Z"
+  },
+  "9036584619": {
+    "id": 9036584619,
+    "first_name": "disillusion",
+    "username": "glamstarr",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-06T11:42:41.764549",
+    "last_seen": "2026-11-06T11:42:41.764549"
   }
 }
