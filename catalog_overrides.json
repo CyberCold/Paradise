@@ -195,6 +195,26 @@
       "stock": "in",
       "badge": "new",
       "hidden": false
+    },
+    {
+      "id": "vozolrave40k",
+      "name": "Vozol Rave 40k puffs",
+      "tag": "Salt Nicotine",
+      "subtitle": "Salt Nicotine • 40 000 Puffs",
+      "price": "15€",
+      "image": "https://i.postimg.cc/Ls1J0LVg/BCEFC268-416E-4EC8-BEB7-ECD17763ACF3.png",
+      "flavors": [
+        "Date Shake Molasses",
+        "Dragon Banana Strawberry",
+        "Watermelon Bubblegum",
+        "Watermelon Razz Rancher",
+        "Strawberry Watermelon",
+        "Melon Bubblegum",
+        "Blueberry Ice"
+      ],
+      "stock": "in",
+      "badge": "new",
+      "hidden": false
     }
   ],
   "order": [
@@ -209,6 +229,7 @@
     "elfbarlushkingpro",
     "dojo",
     "vozolneon",
-    "elfbarbc45k"
+    "elfbarbc45k",
+    "vozolrave40k"
   ]
 }
