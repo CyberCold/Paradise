@@ -13224,5 +13224,24 @@
     "username": "Flakosha.",
     "status": "new",
     "date": "06.11.2026 13:02"
+  },
+  "#0629": {
+    "oid": "#0629",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "LOVE 777",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: LOVE 777, количество: 1",
+    "source_key": "7872473935:32453",
+    "source_chat_id": 7872473935,
+    "source_message_id": 32453,
+    "user_id": 7872473935,
+    "username": "Artur🪽🌛",
+    "status": "new",
+    "date": "06.11.2026 15:34"
   }
 }
