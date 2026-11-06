@@ -13306,5 +13306,24 @@
     "username": "disillusion",
     "status": "new",
     "date": "06.11.2026 17:39"
+  },
+  "#0633": {
+    "oid": "#0633",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Blueberry Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol Rave 40k puffs, вкус: Blueberry Ice, количество: 1",
+    "source_key": "1157241519:32584",
+    "source_chat_id": 1157241519,
+    "source_message_id": 32584,
+    "user_id": 1157241519,
+    "username": "Akula geng",
+    "status": "new",
+    "date": "06.11.2026 17:58"
   }
 }
