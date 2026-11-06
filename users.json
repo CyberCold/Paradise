@@ -38594,8 +38594,21 @@
     "username": "karmaa178",
     "language_code": "ru",
     "is_premium": false,
-    "visit_count": 37,
+    "visit_count": 38,
     "ips": [
+      {
+        "ip": "2a00:f503:150:6a7a:a80c:7de2:3c28:6da8",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Bite Latvija    users",
+        "asn": 13194,
+        "lat": 56.946,
+        "lon": 24.10589,
+        "first_seen": "2026-11-06T14:19:49.915Z",
+        "last_seen": "2026-11-06T14:19:49.915Z",
+        "visits": 1
+      },
       {
         "ip": "2a00:f503:251:37b3:807a:451:a678:9147",
         "country": "LV",
@@ -38842,22 +38855,45 @@
         "first_seen": "2026-08-16T10:55:10.530Z",
         "last_seen": "2026-08-16T10:55:10.530Z",
         "visits": 1
-      },
-      {
-        "ip": "150.228.123.175",
-        "country": "LV",
-        "city": "Riga",
-        "region": "Riga",
-        "isp": "SpaceX Services, Inc.",
-        "asn": 14593,
-        "lat": 56.946,
-        "lon": 24.10589,
-        "first_seen": "2026-08-10T16:22:56.189Z",
-        "last_seen": "2026-08-10T16:23:17.582Z",
-        "visits": 2
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-11-06T14:19:49.915Z",
+        "ip": "2a00:f503:150:6a7a:a80c:7de2:3c28:6da8",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a564bc44df03cc3b",
+        "screen": "393x852@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-11-06T08:44:28.431Z",
         "ip": "2a00:f503:251:37b3:807a:451:a678:9147",
@@ -39901,42 +39937,6 @@
         "ua_bitness": null,
         "ua_model": null,
         "ua_mobile": false
-      },
-      {
-        "timestamp": "2026-08-25T08:00:24.091Z",
-        "ip": "2a00:f503:250:99a4:5cce:671e:3b82:5f93",
-        "country": "LV",
-        "city": "Riga",
-        "region": "Riga",
-        "url": "https://paradiseminiapp.pages.dev/app",
-        "referrer": null,
-        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
-        "device": "iPhone",
-        "browser": "unknown",
-        "browser_version": null,
-        "os": "iOS",
-        "os_version": "18.7",
-        "language": "ru",
-        "cf_ray": "a30910166970c5d3",
-        "screen": "393x852@3",
-        "tz_client": "Europe/Riga",
-        "color_depth": 0,
-        "touch": 5,
-        "platform": "iPhone",
-        "memory": 0,
-        "cores": 4,
-        "connection": null,
-        "webgl_vendor": null,
-        "webgl_renderer": null,
-        "languages": [
-          "ru"
-        ],
-        "ua_platform": null,
-        "ua_platform_version": null,
-        "ua_architecture": null,
-        "ua_bitness": null,
-        "ua_model": null,
-        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -39962,7 +39962,7 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-11-06T08:44:28.431Z"
+      "updated_at": "2026-11-06T14:19:49.915Z"
     },
     "geo": {
       "country": "LV",
@@ -39985,7 +39985,7 @@
       "bot_start"
     ],
     "registered": "2026-05-23T20:07:31.654Z",
-    "last_seen": "2026-11-06T08:44:28.431Z"
+    "last_seen": "2026-11-06T14:19:49.915Z"
   },
   "1790910230": {
     "id": 1790910230,
@@ -154896,7 +154896,7 @@
         "cf_ray": "a564aeef0abfec3e",
         "screen": "390x844@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
