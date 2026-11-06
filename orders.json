@@ -13168,5 +13168,36 @@
     "username": "ni.",
     "status": "new",
     "date": "05.11.2026 21:16"
+  },
+  "#0627": {
+    "oid": "#0627",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Blue Razz Cherry",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Cherry Cola",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Grape Energy",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Blue Razz Cherry, количество: 1\nYami, вкус: Cherry Cola, количество: 1\nYami, вкус: Grape Energy, количество: 1",
+    "source_key": "260688351:32357",
+    "source_chat_id": 260688351,
+    "source_message_id": 32357,
+    "user_id": 260688351,
+    "username": "Айвар",
+    "status": "new",
+    "date": "06.11.2026 08:46"
   }
 }
