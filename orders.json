@@ -13325,5 +13325,30 @@
     "username": "Akula geng",
     "status": "new",
     "date": "06.11.2026 17:58"
+  },
+  "#0634": {
+    "oid": "#0634",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Cherry Vanilla Cream",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Purple Candy",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Cherry Vanilla Cream, количество: 1\nVozol, вкус: Purple Candy, количество: 1",
+    "source_key": "1028237692:32589",
+    "source_chat_id": 1028237692,
+    "source_message_id": 32589,
+    "user_id": 1028237692,
+    "username": "gena",
+    "status": "new",
+    "date": "06.11.2026 17:59"
   }
 }
