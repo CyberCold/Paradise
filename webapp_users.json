@@ -132529,7 +132529,7 @@
         "cf_ray": "a56f0ca46d41a87b",
         "screen": "375x812@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -137107,8 +137107,8 @@
     "is_premium": true,
     "source": "webapp",
     "registered": "2026-09-01T14:41:10.171Z",
-    "last_seen": "2026-10-31T14:01:25.995Z",
-    "visit_count": 20,
+    "last_seen": "2026-11-07T21:48:07.520Z",
+    "visit_count": 21,
     "ips": [
       {
         "ip": "77.38.223.254",
@@ -137120,8 +137120,8 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-10-30T19:02:25.865Z",
-        "last_seen": "2026-10-31T14:01:25.995Z",
-        "visits": 2
+        "last_seen": "2026-11-07T21:48:07.520Z",
+        "visits": 3
       },
       {
         "ip": "84.15.216.189",
@@ -137190,6 +137190,45 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-11-07T21:48:07.520Z",
+        "ip": "77.38.223.254",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+        "device": "Desktop",
+        "browser": "Edge",
+        "browser_version": "157.0.0.0",
+        "os": "Windows",
+        "os_version": null,
+        "language": "ru",
+        "cf_ray": "a56f8a52be0ce4d2",
+        "screen": "1920x1080@1",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 0,
+        "platform": "Win32",
+        "memory": 32,
+        "cores": 12,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru",
+          "en",
+          "en-GB",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-10-31T14:01:25.995Z",
         "ip": "77.38.223.254",
@@ -137966,39 +138005,39 @@
       }
     ],
     "fingerprint": {
-      "screen": "412x915@2.625",
+      "screen": "1920x1080@1",
       "timezone": "Europe/Riga",
       "color_depth": 24,
-      "touch": 5,
-      "platform": "Linux aarch64",
-      "memory": 4,
-      "cores": 8,
+      "touch": 0,
+      "platform": "Win32",
+      "memory": 32,
+      "cores": 12,
       "connection": "4g",
-      "webgl_vendor": "ARM",
-      "webgl_renderer": "Mali-G72",
+      "webgl_vendor": "Google Inc. (NVIDIA)",
+      "webgl_renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 (0x00002882) Direct3D11 vs_5_0 ps_5_0, D3D11)",
       "languages": [
         "ru",
-        "ru-RU",
-        "uk-UA",
+        "en",
+        "en-GB",
         "en-US"
       ],
-      "ua_platform": "Android",
-      "ua_platform_version": null,
-      "ua_architecture": null,
-      "ua_bitness": null,
+      "ua_platform": "Windows",
+      "ua_platform_version": "19.0.0",
+      "ua_architecture": "x86",
+      "ua_bitness": "64",
       "ua_model": null,
-      "ua_mobile": true,
-      "device": "Android Phone",
-      "browser": "Chrome",
-      "os": "Android",
-      "updated_at": "2026-10-31T14:01:25.995Z"
+      "ua_mobile": false,
+      "device": "Desktop",
+      "browser": "Edge",
+      "os": "Windows",
+      "updated_at": "2026-11-07T21:48:07.520Z"
     },
     "device_keys": [
+      "043cf9b4895c33d8df6c9df3c80ed74c2247a6082cfd364cb92264e7479dbdfe",
+      "c535ceec923ed5d3eaa74023e75b0e04ecd3ea9e4e0dc334dd70112349597ed1",
       "6a21f0d62d8a1fc0409be1fbd543a4c1ba69c213bd6fe4d8d7ed4bd0fbe5042d",
       "0f487aaf8ee8a7c17da46cfc160a301037c765b57e90025dc887c2598f083576",
-      "6f770d2203691e776b735a02a3b81a2442fdf7960069d709497dcbc0da64bf80",
-      "043cf9b4895c33d8df6c9df3c80ed74c2247a6082cfd364cb92264e7479dbdfe",
-      "c535ceec923ed5d3eaa74023e75b0e04ecd3ea9e4e0dc334dd70112349597ed1"
+      "6f770d2203691e776b735a02a3b81a2442fdf7960069d709497dcbc0da64bf80"
     ],
     "geo": {
       "country": "LV",
