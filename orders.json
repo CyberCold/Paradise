@@ -13571,5 +13571,24 @@
     "username": "syrnik",
     "status": "new",
     "date": "08.11.2026 17:43"
+  },
+  "#0646": {
+    "oid": "#0646",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Elf Jack",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Elf Jack, количество: 1",
+    "source_key": "2144149419:32710",
+    "source_chat_id": 2144149419,
+    "source_message_id": 32710,
+    "user_id": 2144149419,
+    "username": "Артур",
+    "status": "new",
+    "date": "08.11.2026 19:32"
   }
 }
