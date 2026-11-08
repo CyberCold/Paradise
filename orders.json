@@ -13426,5 +13426,24 @@
     "username": "Howtokeepgoing.coM",
     "status": "new",
     "date": "07.11.2026 16:38"
+  },
+  "#0639": {
+    "oid": "#0639",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Strawberry Raspberry Cherry Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Strawberry Raspberry Cherry Ice, количество: 1",
+    "source_key": "1368666525:32646",
+    "source_chat_id": 1368666525,
+    "source_message_id": 32646,
+    "user_id": 1368666525,
+    "username": "Валя",
+    "status": "new",
+    "date": "08.11.2026 09:28"
   }
 }
