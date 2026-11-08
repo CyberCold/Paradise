@@ -13533,5 +13533,24 @@
     "username": "✨Persik✨",
     "status": "new",
     "date": "08.11.2026 15:46"
+  },
+  "#0644": {
+    "oid": "#0644",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Strawberry Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Strawberry Ice, количество: 1",
+    "source_key": "5741391309:32664",
+    "source_chat_id": 5741391309,
+    "source_message_id": 32664,
+    "user_id": 5741391309,
+    "username": "Sadness",
+    "status": "new",
+    "date": "08.11.2026 17:27"
   }
 }
