@@ -13464,5 +13464,30 @@
     "username": "noir",
     "status": "new",
     "date": "08.11.2026 12:04"
+  },
+  "#0641": {
+    "oid": "#0641",
+    "items": [
+      {
+        "pid": "elfbarbc45k",
+        "product_name": "ELFBAR BC 45k puffs",
+        "flavor": "Pomegranate Raspberry Lime",
+        "qty": 1
+      },
+      {
+        "pid": "vozolrave40k",
+        "product_name": "Vozol Rave 40k puffs",
+        "flavor": "Watermelon Razz Rancher",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nELFBAR BC 45k puffs, вкус: Pomegranate Raspberry Lime, количество: 1\nVozol Rave 40k puffs, вкус: Watermelon Razz Rancher, количество: 1",
+    "source_key": "8015821813:32650",
+    "source_chat_id": 8015821813,
+    "source_message_id": 32650,
+    "user_id": 8015821813,
+    "username": "Margaret",
+    "status": "new",
+    "date": "08.11.2026 12:43"
   }
 }
