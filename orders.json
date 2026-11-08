@@ -13489,5 +13489,30 @@
     "username": "Margaret",
     "status": "new",
     "date": "08.11.2026 12:43"
+  },
+  "#0642": {
+    "oid": "#0642",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Blue Razz Cherry",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Purple Candy",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Blue Razz Cherry, количество: 1\nVozol, вкус: Purple Candy, количество: 1",
+    "source_key": "1008881675:32653",
+    "source_chat_id": 1008881675,
+    "source_message_id": 32653,
+    "user_id": 1008881675,
+    "username": "Сергей",
+    "status": "new",
+    "date": "08.11.2026 13:47"
   }
 }
