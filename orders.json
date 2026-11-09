@@ -13659,5 +13659,24 @@
     "username": "terumikami",
     "status": "new",
     "date": "09.11.2026 11:17"
+  },
+  "#0650": {
+    "oid": "#0650",
+    "items": [
+      {
+        "pid": "elfbarbc45k",
+        "product_name": "ELFBAR BC 45k puffs",
+        "flavor": "Cherry Peach Soda",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте,хочу купить 1 cherry peach soda, есть ли возможность сегодня в 16:15 в центре, Parādes iela 17?",
+    "source_key": "1366573213:32754",
+    "source_chat_id": 1366573213,
+    "source_message_id": 32754,
+    "user_id": 1366573213,
+    "username": "Сабина",
+    "status": "new",
+    "date": "09.11.2026 11:18"
   }
 }
