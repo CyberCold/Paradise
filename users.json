@@ -167109,5 +167109,15 @@
     ],
     "registered": "2026-11-09T12:36:34.476421",
     "last_seen": "2026-11-09T15:29:06.429659"
+  },
+  "657488703": {
+    "id": 657488703,
+    "username": "fentiedessie",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-09T19:23:34.717626",
+    "last_seen": "2026-11-09T19:23:34.717626"
   }
 }
