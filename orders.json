@@ -13868,5 +13868,30 @@
     "username": "sinčuks ❤️",
     "status": "new",
     "date": "09.11.2026 18:17"
+  },
+  "#0661": {
+    "oid": "#0661",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Cherry Cola",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Strawberry Raspberry Cherry Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Cherry Cola, количество: 1\nYami, вкус: Strawberry Raspberry Cherry Ice, количество: 1",
+    "source_key": "1027661184:32954",
+    "source_chat_id": 1027661184,
+    "source_message_id": 32954,
+    "user_id": 1027661184,
+    "username": "Лиза ×>×",
+    "status": "new",
+    "date": "09.11.2026 20:37"
   }
 }
