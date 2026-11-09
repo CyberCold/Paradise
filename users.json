@@ -166442,5 +166442,16 @@
     ],
     "registered": "2026-11-09T08:42:58.256834",
     "last_seen": "2026-11-09T07:14:13.897Z"
+  },
+  "5359292225": {
+    "id": 5359292225,
+    "first_name": "Le monde",
+    "username": "wKGgCxAUZ",
+    "source": "chat",
+    "sources": [
+      "chat"
+    ],
+    "registered": "2026-11-09T12:36:34.476421",
+    "last_seen": "2026-11-09T12:36:34.476421"
   }
 }
