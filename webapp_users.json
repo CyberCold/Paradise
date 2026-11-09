@@ -101202,7 +101202,7 @@
         "cf_ray": "a57cee4ac865719d",
         "screen": "420x912@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -155177,6 +155177,114 @@
       "timezone": "Europe/Riga",
       "asn": 13194,
       "isp": "Bite Latvija    users",
+      "lat": 56.946,
+      "lon": 24.10589
+    }
+  },
+  "5359292225": {
+    "id": 5359292225,
+    "first_name": "Le monde",
+    "last_name": "",
+    "username": "wKGgCxAUZ",
+    "language_code": "ru",
+    "is_premium": false,
+    "source": "webapp",
+    "registered": "2026-11-09T13:00:12.765Z",
+    "last_seen": "2026-11-09T13:00:12.765Z",
+    "visit_count": 1,
+    "ips": [
+      {
+        "ip": "2a03:ec00:b15d:9302:b41c:93ff:fe57:489c",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Latvijas Mobilais Telefons SIA",
+        "asn": 24921,
+        "lat": 56.946,
+        "lon": 24.10589,
+        "first_seen": "2026-11-09T13:00:12.765Z",
+        "last_seen": "2026-11-09T13:00:12.765Z",
+        "visits": 1
+      }
+    ],
+    "visits": [
+      {
+        "timestamp": "2026-11-09T13:00:12.765Z",
+        "ip": "2a03:ec00:b15d:9302:b41c:93ff:fe57:489c",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 16; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.47 Mobile Safari/537.36 Telegram-Android/13.2.1 (Xiaomi 24115RA8EG; Android 16; SDK 36; HIGH)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "156.0.8078.47",
+        "os": "Android",
+        "os_version": "16",
+        "language": "ru",
+        "cf_ray": "a57cffc3987974f5",
+        "screen": "407x904@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 8,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru",
+          "lv-LV",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      }
+    ],
+    "fingerprint": {
+      "screen": "407x904@3",
+      "timezone": "Europe/Riga",
+      "color_depth": 24,
+      "touch": 5,
+      "platform": "Linux aarch64",
+      "memory": 8,
+      "cores": 8,
+      "connection": "4g",
+      "webgl_vendor": "Qualcomm",
+      "webgl_renderer": "Adreno (TM) 810",
+      "languages": [
+        "ru",
+        "lv-LV",
+        "en-US"
+      ],
+      "ua_platform": "Android",
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
+      "ua_model": null,
+      "ua_mobile": true,
+      "device": "Android Phone",
+      "browser": "Chrome",
+      "os": "Android",
+      "updated_at": "2026-11-09T13:00:12.765Z"
+    },
+    "device_keys": [
+      "83577bd6a6ca7be998c8c5a715dd206f3fae7f1ca635ee2fc7ce1954b2a7f047",
+      "a86cc313d323ac8ed922a9c443e0526aab5b744a02c30f5924b7fe21408ee8b4"
+    ],
+    "geo": {
+      "country": "LV",
+      "city": "Riga",
+      "region": "Riga",
+      "timezone": "Europe/Riga",
+      "asn": 24921,
+      "isp": "Latvijas Mobilais Telefons SIA",
       "lat": 56.946,
       "lon": 24.10589
     }
