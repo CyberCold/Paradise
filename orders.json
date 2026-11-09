@@ -13735,5 +13735,24 @@
     "username": "Howtokeepgoing.coM",
     "status": "new",
     "date": "09.11.2026 15:22"
+  },
+  "#0654": {
+    "oid": "#0654",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Blue Cotton Candy",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу повторить заказ:\nVozol, вкус: Blue Cotton Candy, количество: 1",
+    "source_key": "7511735897:32921",
+    "source_chat_id": 7511735897,
+    "source_message_id": 32921,
+    "user_id": 7511735897,
+    "username": "ﾠ",
+    "status": "new",
+    "date": "09.11.2026 15:53"
   }
 }
