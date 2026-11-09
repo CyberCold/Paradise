@@ -13640,5 +13640,24 @@
     "username": "noir",
     "status": "new",
     "date": "09.11.2026 10:30"
+  },
+  "#0649": {
+    "oid": "#0649",
+    "items": [
+      {
+        "pid": "elfbarbc45k",
+        "product_name": "ELFBAR BC 45k puffs",
+        "flavor": "Cherry Peach Soda",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nELFBAR BC 45k puffs, вкус: Cherry Peach Soda, количество: 1",
+    "source_key": "5704178591:32744",
+    "source_chat_id": 5704178591,
+    "source_message_id": 32744,
+    "user_id": 5704178591,
+    "username": "terumikami",
+    "status": "new",
+    "date": "09.11.2026 11:17"
   }
 }
