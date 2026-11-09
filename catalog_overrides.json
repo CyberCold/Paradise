@@ -51,14 +51,11 @@
       "price": "10€",
       "image": "https://i.postimg.cc/zvZqbZZh/elfliq.png",
       "flavors": [
-        "Blue Razz Lemonade",
-        "Lemon Sherbet",
-        "Blue Razz Cherry",
         "Elf Jack"
       ],
       "stock": "in",
       "badge": "hit",
-      "hidden": true
+      "hidden": false
     },
     "vozolckick": {
       "id": "vozolckick",
