@@ -58,7 +58,7 @@
       ],
       "stock": "in",
       "badge": "hit",
-      "hidden": false
+      "hidden": true
     },
     "vozolckick": {
       "id": "vozolckick",
