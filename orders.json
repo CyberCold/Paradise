@@ -13621,5 +13621,24 @@
     "username": "Αλ๒ϐα",
     "status": "new",
     "date": "08.11.2026 23:03"
+  },
+  "#0648": {
+    "oid": "#0648",
+    "items": [
+      {
+        "pid": "vozolrave40k",
+        "product_name": "Vozol Rave 40k puffs",
+        "flavor": "Dragon Banana Strawberry",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol Rave 40k puffs, вкус: Dragon Banana Strawberry, количество: 1",
+    "source_key": "5428316045:32736",
+    "source_chat_id": 5428316045,
+    "source_message_id": 32736,
+    "user_id": 5428316045,
+    "username": "noir",
+    "status": "new",
+    "date": "09.11.2026 10:30"
   }
 }
