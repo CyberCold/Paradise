@@ -167280,5 +167280,16 @@
     ],
     "registered": "2026-11-09T19:23:34.717626",
     "last_seen": "2026-11-09T19:23:34.717626"
+  },
+  "6518339689": {
+    "id": 6518339689,
+    "first_name": "Qq",
+    "username": "qqwerfa4",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T01:50:32.699797",
+    "last_seen": "2026-11-10T01:50:32.699797"
   }
 }
