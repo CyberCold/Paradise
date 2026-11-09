@@ -13697,5 +13697,24 @@
     "username": "™🐻🐻مرحبا أيتها الدمية🐻🐻 ™",
     "status": "new",
     "date": "09.11.2026 14:28"
+  },
+  "#0652": {
+    "oid": "#0652",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Blueberry Sour Raspberry",
+        "qty": 3
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Blueberry Sour Raspberry, количество: 3",
+    "source_key": "5359292225:32890",
+    "source_chat_id": 5359292225,
+    "source_message_id": 32890,
+    "user_id": 5359292225,
+    "username": "Le monde",
+    "status": "new",
+    "date": "09.11.2026 15:02"
   }
 }
