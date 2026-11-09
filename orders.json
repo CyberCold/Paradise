@@ -13678,5 +13678,24 @@
     "username": "Сабина",
     "status": "new",
     "date": "09.11.2026 11:18"
+  },
+  "#0651": {
+    "oid": "#0651",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Blue Razz Cherry",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Blue Razz Cherry, количество: 1",
+    "source_key": "1416047291:32880",
+    "source_chat_id": 1416047291,
+    "source_message_id": 32880,
+    "user_id": 1416047291,
+    "username": "™🐻🐻مرحبا أيتها الدمية🐻🐻 ™",
+    "status": "new",
+    "date": "09.11.2026 14:28"
   }
 }
