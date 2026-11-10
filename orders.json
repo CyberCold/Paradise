@@ -13931,5 +13931,24 @@
     "username": "креветка",
     "status": "new",
     "date": "10.11.2026 14:34"
+  },
+  "#0664": {
+    "oid": "#0664",
+    "items": [
+      {
+        "pid": "elfbarbc45k",
+        "product_name": "ELFBAR BC 45k puffs",
+        "flavor": "Red Raspberry Strawberry",
+        "qty": 2
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nELFBAR BC 45k puffs, вкус: Red Raspberry Strawberry, количество: 2",
+    "source_key": "1497974867:33016",
+    "source_chat_id": 1497974867,
+    "source_message_id": 33016,
+    "user_id": 1497974867,
+    "username": "okosov",
+    "status": "new",
+    "date": "10.11.2026 14:41"
   }
 }
