@@ -168034,5 +168034,77 @@
     ],
     "registered": "2026-11-10T13:10:18.471828",
     "last_seen": "2026-11-10T13:10:18.471828"
+  },
+  "6775178345": {
+    "id": 6775178345,
+    "first_name": "Joseph",
+    "username": "JosephMitchell_k0",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:07.882985",
+    "last_seen": "2026-11-10T16:25:07.882985"
+  },
+  "6023740219": {
+    "id": 6023740219,
+    "first_name": "Val",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:11.805722",
+    "last_seen": "2026-11-10T16:25:11.805722"
+  },
+  "9297764079": {
+    "id": 9297764079,
+    "first_name": "Melissa",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:11.962336",
+    "last_seen": "2026-11-10T16:25:11.962336"
+  },
+  "7768201771": {
+    "id": 7768201771,
+    "first_name": "Donnam",
+    "username": "Donnamost",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:12.715942",
+    "last_seen": "2026-11-10T16:25:12.715942"
+  },
+  "7519188396": {
+    "id": 7519188396,
+    "first_name": "Grover",
+    "username": "ShyOrganizedNicholas",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:12.864297",
+    "last_seen": "2026-11-10T16:25:12.864297"
+  },
+  "8975647022": {
+    "id": 8975647022,
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:14.636258",
+    "last_seen": "2026-11-10T16:25:14.636258"
+  },
+  "6504524888": {
+    "id": 6504524888,
+    "first_name": "Melissa",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:15.062553",
+    "last_seen": "2026-11-10T16:25:15.062553"
   }
 }
