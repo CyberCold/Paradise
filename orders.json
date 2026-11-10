@@ -13912,5 +13912,24 @@
     "username": "vladvladvladvladvlad",
     "status": "new",
     "date": "10.11.2026 10:47"
+  },
+  "#0663": {
+    "oid": "#0663",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Strawberry Banana",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Strawberry Banana, количество: 1",
+    "source_key": "1790910230:33015",
+    "source_chat_id": 1790910230,
+    "source_message_id": 33015,
+    "user_id": 1790910230,
+    "username": "креветка",
+    "status": "new",
+    "date": "10.11.2026 14:34"
   }
 }
