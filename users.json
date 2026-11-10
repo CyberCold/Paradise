@@ -169145,5 +169145,16 @@
     ],
     "registered": "2026-11-10T17:35:03.044325",
     "last_seen": "2026-11-10T17:35:03.044325"
+  },
+  "7311530210": {
+    "id": 7311530210,
+    "first_name": "Nestor",
+    "username": "silverlining204",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T19:29:21.092530",
+    "last_seen": "2026-11-10T19:29:21.092530"
   }
 }
