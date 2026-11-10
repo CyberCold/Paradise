@@ -167638,9 +167638,10 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-11-10T10:43:51.500641",
-    "last_seen": "2026-11-10T08:45:53.808Z"
+    "last_seen": "2026-11-10T10:47:40.924039"
   }
 }
