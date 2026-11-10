@@ -14013,5 +14013,30 @@
     "username": "Лиза ×>×",
     "status": "new",
     "date": "10.11.2026 19:37"
+  },
+  "#0668": {
+    "oid": "#0668",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Blue Razz Lemonade",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Strawberry Banana",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Blue Razz Lemonade, количество: 1\nYami, вкус: Strawberry Banana, количество: 1",
+    "source_key": "1027661184:33066",
+    "source_chat_id": 1027661184,
+    "source_message_id": 33066,
+    "user_id": 1027661184,
+    "username": "Лиза ×>×",
+    "status": "new",
+    "date": "10.11.2026 19:39"
   }
 }
