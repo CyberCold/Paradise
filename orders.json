@@ -13988,5 +13988,30 @@
     "username": "Valerij",
     "status": "new",
     "date": "10.11.2026 19:05"
+  },
+  "#0667": {
+    "oid": "#0667",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Pink Lemonade",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Energy Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Pink Lemonade, количество: 1\nYami, вкус: Energy Ice, количество: 1",
+    "source_key": "1027661184:33064",
+    "source_chat_id": 1027661184,
+    "source_message_id": 33064,
+    "user_id": 1027661184,
+    "username": "Лиза ×>×",
+    "status": "new",
+    "date": "10.11.2026 19:37"
   }
 }
