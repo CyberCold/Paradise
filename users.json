@@ -51497,8 +51497,21 @@
     "username": "Valera777k",
     "language_code": "ru",
     "is_premium": false,
-    "visit_count": 24,
+    "visit_count": 25,
     "ips": [
+      {
+        "ip": "84.15.219.165",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Bite Latvija",
+        "asn": 13194,
+        "lat": 56.946,
+        "lon": 24.1059,
+        "first_seen": "2026-11-10T17:05:32.636Z",
+        "last_seen": "2026-11-10T17:05:32.636Z",
+        "visits": 1
+      },
       {
         "ip": "2a00:f503:150:f629:b637:8759:30af:2590",
         "country": "LV",
@@ -51605,6 +51618,44 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-11-10T17:05:32.636Z",
+        "ip": "84.15.219.165",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 12; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.50 Mobile Safari/537.36 Telegram-Android/13.1.1 (Xiaomi M2007J20CG; Android 12; SDK 31; AVERAGE)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "156.0.8078.50",
+        "os": "Android",
+        "os_version": "12",
+        "language": "ru",
+        "cf_ray": "a586a482c9a2c5d3",
+        "screen": "393x873@2.75",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 4,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru",
+          "ru-RU",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-11-03T14:54:26.412Z",
         "ip": "2a00:f503:150:f629:b637:8759:30af:2590",
@@ -52518,7 +52569,7 @@
       }
     ],
     "fingerprint": {
-      "screen": "873x393@2.75",
+      "screen": "393x873@2.75",
       "timezone": "Europe/Riga",
       "color_depth": 24,
       "touch": 5,
@@ -52529,6 +52580,7 @@
       "webgl_vendor": "Qualcomm",
       "webgl_renderer": "Adreno (TM) 618",
       "languages": [
+        "ru",
         "ru-RU",
         "en-US"
       ],
@@ -52541,12 +52593,12 @@
       "device": "Android Phone",
       "browser": "Chrome",
       "os": "Android",
-      "updated_at": "2026-11-03T14:54:26.412Z"
+      "updated_at": "2026-11-10T17:05:32.636Z"
     },
     "device_keys": [
       "57631d96ba2a0adab448cd02fa91f3873d7d7075c36e659b3ce3a6895c5b6821",
-      "1d4b1bb79246c0450b2b994e296416b81934d9b8d0702ebaad5e8443fe49b9e9",
-      "b7174f21a73e7d59795055a3d7928dbac50dc4dc0160d290ab9ff3badc81b10d"
+      "b7174f21a73e7d59795055a3d7928dbac50dc4dc0160d290ab9ff3badc81b10d",
+      "1d4b1bb79246c0450b2b994e296416b81934d9b8d0702ebaad5e8443fe49b9e9"
     ],
     "geo": {
       "country": "LV",
@@ -52554,9 +52606,9 @@
       "region": "Riga",
       "timezone": "Europe/Riga",
       "asn": 13194,
-      "isp": "Bite Latvija    users",
+      "isp": "Bite Latvija",
       "lat": 56.946,
-      "lon": 24.10589
+      "lon": 24.1059
     },
     "source": "chat",
     "sources": [
@@ -52564,7 +52616,7 @@
       "webapp"
     ],
     "registered": "2026-05-24T11:11:41.370Z",
-    "last_seen": "2026-11-10T18:43:02.271998"
+    "last_seen": "2026-11-10T19:05:55.916549"
   },
   "5141991801": {
     "id": 5141991801,
@@ -71352,7 +71404,7 @@
         "cf_ray": "a586a35929c771a0",
         "screen": "390x844@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -137166,7 +137218,7 @@
       "webapp"
     ],
     "registered": "2026-09-13T13:04:38.803979",
-    "last_seen": "2026-11-10T13:06:05.114256"
+    "last_seen": "2026-11-10T19:06:09.418180"
   },
   "8176873894": {
     "id": 8176873894,
