@@ -13969,5 +13969,24 @@
     "username": "Slo",
     "status": "new",
     "date": "10.11.2026 14:59"
+  },
+  "#0666": {
+    "oid": "#0666",
+    "items": [
+      {
+        "pid": "elfbarbc45k",
+        "product_name": "ELFBAR BC 45k puffs",
+        "flavor": "Blackcurrant Grape",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nELFBAR BC 45k puffs, вкус: Blackcurrant Grape, количество: 1",
+    "source_key": "5581672715:33044",
+    "source_chat_id": 5581672715,
+    "source_message_id": 33044,
+    "user_id": 5581672715,
+    "username": "Valerij",
+    "status": "new",
+    "date": "10.11.2026 19:05"
   }
 }
