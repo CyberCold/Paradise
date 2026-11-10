@@ -150110,7 +150110,7 @@
         "cf_ray": "a58523f96f3aa873",
         "screen": "390x844@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -167804,7 +167804,7 @@
     "username": "ufeelmee1",
     "language_code": "en",
     "is_premium": false,
-    "visit_count": 4,
+    "visit_count": 5,
     "ips": [
       {
         "ip": "2a03:ec00:b191:efed:40b4:e295:77f0:1308",
@@ -167816,11 +167816,47 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-11-10T08:43:52.941Z",
-        "last_seen": "2026-11-10T08:45:53.808Z",
-        "visits": 4
+        "last_seen": "2026-11-10T14:25:15.634Z",
+        "visits": 5
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-11-10T14:25:15.634Z",
+        "ip": "2a03:ec00:b191:efed:40b4:e295:77f0:1308",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "en-GB",
+        "cf_ray": "a585b9b89b6fa875",
+        "screen": "402x874@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "en-GB"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-11-10T08:45:53.808Z",
         "ip": "2a03:ec00:b191:efed:40b4:e295:77f0:1308",
@@ -167989,7 +168025,7 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-11-10T08:45:53.808Z"
+      "updated_at": "2026-11-10T14:25:15.634Z"
     },
     "device_keys": [
       "99f29d433e2513d49471297f6b7ce37ca6522109a1dfc1309ae21939421b088d",
@@ -168012,7 +168048,7 @@
       "chat"
     ],
     "registered": "2026-11-10T10:43:51.500641",
-    "last_seen": "2026-11-10T13:33:14.144311"
+    "last_seen": "2026-11-10T14:25:15.634Z"
   },
   "1639116364": {
     "id": 1639116364,
@@ -168106,5 +168142,622 @@
     ],
     "registered": "2026-11-10T16:25:15.062553",
     "last_seen": "2026-11-10T16:25:15.062553"
+  },
+  "7831871675": {
+    "id": 7831871675,
+    "first_name": "Terrence",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:30.716439",
+    "last_seen": "2026-11-10T16:25:30.716439"
+  },
+  "8273922142": {
+    "id": 8273922142,
+    "first_name": "Abigail",
+    "username": "AbigailBailey_pA",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:31.090457",
+    "last_seen": "2026-11-10T16:25:31.090457"
+  },
+  "8262817137": {
+    "id": 8262817137,
+    "first_name": "Lada",
+    "username": "chemosynthesis_us",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:31.273931",
+    "last_seen": "2026-11-10T16:25:31.273931"
+  },
+  "8328304249": {
+    "id": 8328304249,
+    "first_name": "Bogdan",
+    "username": "dqZMOj",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:31.373480",
+    "last_seen": "2026-11-10T16:25:31.373480"
+  },
+  "7832002936": {
+    "id": 7832002936,
+    "first_name": "Эклер сливочный",
+    "username": "nyamanyama654",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:31.416495",
+    "last_seen": "2026-11-10T16:25:31.416495"
+  },
+  "7999914501": {
+    "id": 7999914501,
+    "first_name": "Michael957g",
+    "username": "sxrXcC",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:31.517540",
+    "last_seen": "2026-11-10T16:25:31.517540"
+  },
+  "8431734260": {
+    "id": 8431734260,
+    "first_name": "Samuel",
+    "username": "samuelclements",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:32.055454",
+    "last_seen": "2026-11-10T16:25:32.055454"
+  },
+  "7521044913": {
+    "id": 7521044913,
+    "first_name": "Reine",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:32.593045",
+    "last_seen": "2026-11-10T16:25:32.593045"
+  },
+  "7867710217": {
+    "id": 7867710217,
+    "first_name": "Yolanda",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:33.004143",
+    "last_seen": "2026-11-10T16:25:33.004143"
+  },
+  "7880510232": {
+    "id": 7880510232,
+    "first_name": "Jessica",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:33.667024",
+    "last_seen": "2026-11-10T16:25:33.667024"
+  },
+  "8852440953": {
+    "id": 8852440953,
+    "first_name": "Lana",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:34.269571",
+    "last_seen": "2026-11-10T16:25:34.269571"
+  },
+  "8063086194": {
+    "id": 8063086194,
+    "first_name": "Karen",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:34.487432",
+    "last_seen": "2026-11-10T16:25:34.487432"
+  },
+  "7715910177": {
+    "id": 7715910177,
+    "first_name": "🐾Nanile",
+    "username": "Nanile559",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:35.264416",
+    "last_seen": "2026-11-10T16:25:35.264961"
+  },
+  "7378992406": {
+    "id": 7378992406,
+    "first_name": "Kerry",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:36.225551",
+    "last_seen": "2026-11-10T16:25:36.225551"
+  },
+  "7129434765": {
+    "id": 7129434765,
+    "first_name": "Prestonloua",
+    "username": "molly_jargoons",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:36.704180",
+    "last_seen": "2026-11-10T16:25:36.704180"
+  },
+  "8676856886": {
+    "id": 8676856886,
+    "first_name": "Оля",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:36.799574",
+    "last_seen": "2026-11-10T16:25:36.799574"
+  },
+  "6726911158": {
+    "id": 6726911158,
+    "first_name": "Данила",
+    "username": "ikrQrH",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:37.853668",
+    "last_seen": "2026-11-10T16:25:37.853668"
+  },
+  "8998737262": {
+    "id": 8998737262,
+    "first_name": "Cindy",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:37.948591",
+    "last_seen": "2026-11-10T16:25:37.948591"
+  },
+  "7337333115": {
+    "id": 7337333115,
+    "first_name": "Michael",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:38.409304",
+    "last_seen": "2026-11-10T16:25:38.409304"
+  },
+  "7865841567": {
+    "id": 7865841567,
+    "first_name": "Clémentine",
+    "username": "Ascensioncougar",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:39.880444",
+    "last_seen": "2026-11-10T16:25:39.880444"
+  },
+  "8496049434": {
+    "id": 8496049434,
+    "first_name": "khana",
+    "username": "poeiwuus33",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:40.187282",
+    "last_seen": "2026-11-10T16:25:40.187282"
+  },
+  "7382026018": {
+    "id": 7382026018,
+    "first_name": "Uliana",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:40.333322",
+    "last_seen": "2026-11-10T16:25:40.333322"
+  },
+  "8021887196": {
+    "id": 8021887196,
+    "first_name": "Sheri",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:42.070037",
+    "last_seen": "2026-11-10T16:25:42.070037"
+  },
+  "7948571795": {
+    "id": 7948571795,
+    "first_name": "Margaret🐾🌱SEED",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:42.477244",
+    "last_seen": "2026-11-10T16:25:42.477244"
+  },
+  "8723465029": {
+    "id": 8723465029,
+    "first_name": "хихивидный",
+    "username": "oeueca",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:42.950018",
+    "last_seen": "2026-11-10T16:25:42.950018"
+  },
+  "7802071079": {
+    "id": 7802071079,
+    "first_name": "Carolyn",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:43.022051",
+    "last_seen": "2026-11-10T16:25:43.022051"
+  },
+  "7578840224": {
+    "id": 7578840224,
+    "first_name": "Wendy🌱SEED🐾",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:43.325679",
+    "last_seen": "2026-11-10T16:25:43.325679"
+  },
+  "7708050039": {
+    "id": 7708050039,
+    "first_name": "Лёша",
+    "username": "KXsELG",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:43.631314",
+    "last_seen": "2026-11-10T16:25:43.631314"
+  },
+  "6881937292": {
+    "id": 6881937292,
+    "first_name": "Roma",
+    "username": "Proletarianised_1968",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:43.944650",
+    "last_seen": "2026-11-10T16:25:43.944650"
+  },
+  "9295170331": {
+    "id": 9295170331,
+    "first_name": "Jacob",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:44.354774",
+    "last_seen": "2026-11-10T16:25:44.354774"
+  },
+  "7735308083": {
+    "id": 7735308083,
+    "first_name": "Ангелина",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:44.816625",
+    "last_seen": "2026-11-10T16:25:44.816625"
+  },
+  "7490433452": {
+    "id": 7490433452,
+    "first_name": "Lance 5🐾",
+    "username": "ancarsen",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:45.251680",
+    "last_seen": "2026-11-10T16:25:45.251680"
+  },
+  "7315108569": {
+    "id": 7315108569,
+    "first_name": "Johnw",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:45.325820",
+    "last_seen": "2026-11-10T16:25:45.325820"
+  },
+  "8037448372": {
+    "id": 8037448372,
+    "first_name": "Robert",
+    "username": "zzgkokdmucby",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:45.384360",
+    "last_seen": "2026-11-10T16:25:45.384360"
+  },
+  "7556991378": {
+    "id": 7556991378,
+    "first_name": "Sophia",
+    "username": "yWROLKYR2",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:45.554928",
+    "last_seen": "2026-11-10T16:25:45.554928"
+  },
+  "8565934225": {
+    "id": 8565934225,
+    "first_name": "Virginia",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:46.268881",
+    "last_seen": "2026-11-10T16:25:46.268881"
+  },
+  "7718538240": {
+    "id": 7718538240,
+    "first_name": "Daniel",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:46.785136",
+    "last_seen": "2026-11-10T16:25:46.785136"
+  },
+  "7915855964": {
+    "id": 7915855964,
+    "first_name": "🐤 Gra-Gra",
+    "username": "AiWsBYqPjBsR",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:47.411107",
+    "last_seen": "2026-11-10T16:25:47.411107"
+  },
+  "8912359358": {
+    "id": 8912359358,
+    "first_name": "Meghan",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:47.728438",
+    "last_seen": "2026-11-10T16:25:47.728438"
+  },
+  "8088603143": {
+    "id": 8088603143,
+    "first_name": "Isabella",
+    "username": "IsabellaRuiz_WU",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:48.480951",
+    "last_seen": "2026-11-10T16:25:48.480951"
+  },
+  "6512631320": {
+    "id": 6512631320,
+    "first_name": "Vishundev",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:48.600038",
+    "last_seen": "2026-11-10T16:25:48.600038"
+  },
+  "7985711126": {
+    "id": 7985711126,
+    "first_name": "Вика",
+    "username": "xz57u",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:48.758597",
+    "last_seen": "2026-11-10T16:25:48.758597"
+  },
+  "8914647167": {
+    "id": 8914647167,
+    "first_name": "Devin",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:48.792107",
+    "last_seen": "2026-11-10T16:25:48.792107"
+  },
+  "7538504338": {
+    "id": 7538504338,
+    "first_name": "lwwkppxxp",
+    "username": "vivosmartfon2",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:49.451982",
+    "last_seen": "2026-11-10T16:25:49.451982"
+  },
+  "6856186379": {
+    "id": 6856186379,
+    "first_name": "lina",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:50.582288",
+    "last_seen": "2026-11-10T16:25:50.582288"
+  },
+  "9149169695": {
+    "id": 9149169695,
+    "first_name": "Lisa",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:51.769902",
+    "last_seen": "2026-11-10T16:25:51.769902"
+  },
+  "7823052284": {
+    "id": 7823052284,
+    "first_name": "Sarah",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:51.825314",
+    "last_seen": "2026-11-10T16:25:51.825314"
+  },
+  "9052100840": {
+    "id": 9052100840,
+    "first_name": "Susan",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:52.153640",
+    "last_seen": "2026-11-10T16:25:52.153640"
+  },
+  "7682243154": {
+    "id": 7682243154,
+    "first_name": "Tammy",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:52.274293",
+    "last_seen": "2026-11-10T16:25:52.274293"
+  },
+  "6314064390": {
+    "id": 6314064390,
+    "first_name": "Andrea",
+    "username": "skJ8qapjx5iWn",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:52.495433",
+    "last_seen": "2026-11-10T16:25:52.495433"
+  },
+  "8575886957": {
+    "id": 8575886957,
+    "first_name": "Janette",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:52.495934",
+    "last_seen": "2026-11-10T16:25:52.495934"
+  },
+  "8227674669": {
+    "id": 8227674669,
+    "first_name": "Joan",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:52.904682",
+    "last_seen": "2026-11-10T16:25:52.904682"
+  },
+  "7343735339": {
+    "id": 7343735339,
+    "first_name": "John",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:53.495641",
+    "last_seen": "2026-11-10T16:25:53.495641"
+  },
+  "7917019039": {
+    "id": 7917019039,
+    "first_name": "Jessica",
+    "username": "JessicaNguyen_r",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:54.117954",
+    "last_seen": "2026-11-10T16:25:54.117954"
+  },
+  "8160735728": {
+    "id": 8160735728,
+    "first_name": "Teresa",
+    "username": "TeresaMartin8",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:54.594069",
+    "last_seen": "2026-11-10T16:25:54.594069"
+  },
+  "7115666526": {
+    "id": 7115666526,
+    "first_name": "Макс",
+    "username": "VjmRZv",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:54.813727",
+    "last_seen": "2026-11-10T16:25:54.813727"
+  },
+  "7361494692": {
+    "id": 7361494692,
+    "first_name": "Mack олл",
+    "username": "sandwechus",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:55.314496",
+    "last_seen": "2026-11-10T16:25:55.314496"
+  },
+  "8073026844": {
+    "id": 8073026844,
+    "first_name": "Everh 🐾",
+    "username": "gfghtyg",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:56.876998",
+    "last_seen": "2026-11-10T16:25:56.876998"
+  },
+  "7958940592": {
+    "id": 7958940592,
+    "first_name": "1",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-10T16:25:58.312040",
+    "last_seen": "2026-11-10T16:25:58.312040"
   }
 }
