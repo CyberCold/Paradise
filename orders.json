@@ -13893,5 +13893,24 @@
     "username": "Лиза ×>×",
     "status": "new",
     "date": "09.11.2026 20:37"
+  },
+  "#0662": {
+    "oid": "#0662",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Elf Jack",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Elf Jack, количество: 1\n\nесли есть возможность,могу ли я оплатить картой,мол я не живу в Лавтии и у меня нету карты что бы снять наличку",
+    "source_key": "1662930612:33002",
+    "source_chat_id": 1662930612,
+    "source_message_id": 33002,
+    "user_id": 1662930612,
+    "username": "vladvladvladvladvlad",
+    "status": "new",
+    "date": "10.11.2026 10:47"
   }
 }
