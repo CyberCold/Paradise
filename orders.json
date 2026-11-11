@@ -14196,5 +14196,24 @@
     "username": "disillusion",
     "status": "new",
     "date": "11.11.2026 16:11"
+  },
+  "#0677": {
+    "oid": "#0677",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "LOVE 777",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: LOVE 777, количество: 1",
+    "source_key": "5048258548:33227",
+    "source_chat_id": 5048258548,
+    "source_message_id": 33227,
+    "user_id": 5048258548,
+    "username": "🍁",
+    "status": "new",
+    "date": "11.11.2026 16:12"
   }
 }
