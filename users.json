@@ -7265,7 +7265,7 @@
         "cf_ray": "a58c69245a8ae4e9",
         "screen": "390x844@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -57437,8 +57437,21 @@
     "username": "blooddbladee",
     "language_code": "ru",
     "is_premium": true,
-    "visit_count": 36,
+    "visit_count": 37,
     "ips": [
+      {
+        "ip": "2a00:f503:260:5177:f87c:82e3:8036:49fb",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Bite Latvija    users",
+        "asn": 13194,
+        "lat": 56.946,
+        "lon": 24.10589,
+        "first_seen": "2026-11-11T10:09:36.769Z",
+        "last_seen": "2026-11-11T10:09:36.769Z",
+        "visits": 1
+      },
       {
         "ip": "2a00:f503:260:6d59:886c:1508:5c1e:60ef",
         "country": "LV",
@@ -57685,22 +57698,45 @@
         "first_seen": "2026-09-13T16:39:59.413Z",
         "last_seen": "2026-09-13T16:39:59.413Z",
         "visits": 1
-      },
-      {
-        "ip": "2a00:f503:260:4acf:e980:c384:56db:d516",
-        "country": "LV",
-        "city": "Riga",
-        "region": "Riga",
-        "isp": "Bite Latvija    users",
-        "asn": 13194,
-        "lat": 56.946,
-        "lon": 24.10589,
-        "first_seen": "2026-08-31T11:29:58.210Z",
-        "last_seen": "2026-08-31T11:29:58.210Z",
-        "visits": 1
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-11-11T10:09:36.769Z",
+        "ip": "2a00:f503:260:5177:f87c:82e3:8036:49fb",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "en-GB",
+        "cf_ray": "a58c809c490af00d",
+        "screen": "402x874@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "en-GB"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-11-10T18:37:44.817Z",
         "ip": "2a00:f503:260:6d59:886c:1508:5c1e:60ef",
@@ -58744,42 +58780,6 @@
         "ua_bitness": null,
         "ua_model": null,
         "ua_mobile": false
-      },
-      {
-        "timestamp": "2026-07-31T20:24:50.869Z",
-        "ip": "2a00:f503:160:5661:6d55:bce4:db7d:d78a",
-        "country": "LV",
-        "city": "Riga",
-        "region": "Riga",
-        "url": "https://paradiseminiapp.pages.dev/app",
-        "referrer": null,
-        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
-        "device": "iPhone",
-        "browser": "unknown",
-        "browser_version": null,
-        "os": "iOS",
-        "os_version": "18.7",
-        "language": "en-GB",
-        "cf_ray": "a23f5435df44c5d3",
-        "screen": "393x852@3",
-        "tz_client": "Europe/Riga",
-        "color_depth": 0,
-        "touch": 5,
-        "platform": "iPhone",
-        "memory": 0,
-        "cores": 4,
-        "connection": null,
-        "webgl_vendor": null,
-        "webgl_renderer": null,
-        "languages": [
-          "en-GB"
-        ],
-        "ua_platform": null,
-        "ua_platform_version": null,
-        "ua_architecture": null,
-        "ua_bitness": null,
-        "ua_model": null,
-        "ua_mobile": false
       }
     ],
     "fingerprint": {
@@ -58805,7 +58805,7 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-11-10T18:37:44.817Z"
+      "updated_at": "2026-11-11T10:09:36.769Z"
     },
     "geo": {
       "country": "LV",
@@ -58829,7 +58829,7 @@
       "webapp"
     ],
     "registered": "2026-05-27T12:19:09.893223",
-    "last_seen": "2026-11-10T18:37:44.817Z"
+    "last_seen": "2026-11-11T10:09:36.769Z"
   },
   "5187563254": {
     "id": 5187563254,
