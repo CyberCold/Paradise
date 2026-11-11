@@ -14101,5 +14101,24 @@
     "username": "Miss Ravager.",
     "status": "new",
     "date": "11.11.2026 10:21"
+  },
+  "#0672": {
+    "oid": "#0672",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Strawberry Banana",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Strawberry Banana, количество: 1",
+    "source_key": "5581672715:33137",
+    "source_chat_id": 5581672715,
+    "source_message_id": 33137,
+    "user_id": 5581672715,
+    "username": "Valerij",
+    "status": "new",
+    "date": "11.11.2026 10:49"
   }
 }
