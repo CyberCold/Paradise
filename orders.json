@@ -14139,5 +14139,24 @@
     "username": "Nonemad",
     "status": "new",
     "date": "11.11.2026 13:39"
+  },
+  "#0674": {
+    "oid": "#0674",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Watermelon Cherry",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Watermelon Cherry, количество: 1",
+    "source_key": "5855218937:33184",
+    "source_chat_id": 5855218937,
+    "source_message_id": 33184,
+    "user_id": 5855218937,
+    "username": "Ken4lk",
+    "status": "new",
+    "date": "11.11.2026 14:56"
   }
 }
