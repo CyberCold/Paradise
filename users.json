@@ -169455,5 +169455,16 @@
     ],
     "registered": "2026-11-11T08:42:52.700020",
     "last_seen": "2026-11-11T08:42:52.700020"
+  },
+  "8289260145": {
+    "id": 8289260145,
+    "first_name": "HEIN",
+    "username": "heinzeyarhtun",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-11T09:21:40.913875",
+    "last_seen": "2026-11-11T09:21:40.913875"
   }
 }
