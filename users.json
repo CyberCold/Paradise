@@ -170202,9 +170202,10 @@
     "username": "youilssb",
     "source": "chat",
     "sources": [
-      "chat"
+      "chat",
+      "bot_start"
     ],
     "registered": "2026-11-11T16:07:33.619670",
-    "last_seen": "2026-11-11T16:07:33.619670"
+    "last_seen": "2026-11-11T16:11:09.319038"
   }
 }
