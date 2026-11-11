@@ -74861,10 +74861,11 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-07-12T13:02:15.423031",
-    "last_seen": "2026-11-11T12:54:00.079Z"
+    "last_seen": "2026-11-11T14:56:35.918166"
   },
   "7407630511": {
     "id": 7407630511,
