@@ -171795,5 +171795,16 @@
     ],
     "registered": "2026-11-12T15:53:36.358Z",
     "last_seen": "2026-11-12T17:57:33.916205"
+  },
+  "5299530562": {
+    "id": 5299530562,
+    "first_name": "Geo.Linn Htut",
+    "username": "NaungLinnHtut",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-12T18:40:01.933599",
+    "last_seen": "2026-11-12T18:40:01.933599"
   }
 }
