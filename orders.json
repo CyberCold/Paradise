@@ -14359,5 +14359,30 @@
     "username": "karolina",
     "status": "new",
     "date": "12.11.2026 12:42"
+  },
+  "#0684": {
+    "oid": "#0684",
+    "items": [
+      {
+        "pid": "elfbarbc45k",
+        "product_name": "ELFBAR BC 45k puffs",
+        "flavor": "Red Raspberry Strawberry",
+        "qty": 1
+      },
+      {
+        "pid": "elfbarbc45k",
+        "product_name": "ELFBAR BC 45k puffs",
+        "flavor": "Pomegranate Raspberry Lime",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nELFBAR BC 45k puffs, вкус: Red Raspberry Strawberry, количество: 1\nELFBAR BC 45k puffs, вкус: Pomegranate Raspberry Lime, количество: 1",
+    "source_key": "6868097943:33376",
+    "source_chat_id": 6868097943,
+    "source_message_id": 33376,
+    "user_id": 6868097943,
+    "username": "А",
+    "status": "new",
+    "date": "12.11.2026 14:27"
   }
 }
