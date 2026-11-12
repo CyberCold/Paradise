@@ -171752,9 +171752,10 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-11-12T15:53:36.358Z",
-    "last_seen": "2026-11-12T17:53:38.663355"
+    "last_seen": "2026-11-12T17:57:33.916205"
   }
 }
