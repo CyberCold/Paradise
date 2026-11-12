@@ -14284,5 +14284,42 @@
     "username": "guakamoli",
     "status": "new",
     "date": "11.11.2026 20:32"
+  },
+  "#0681": {
+    "oid": "#0681",
+    "items": [
+      {
+        "pid": "elfbarbc45k",
+        "product_name": "ELFBAR BC 45k puffs",
+        "flavor": "Red Raspberry Strawberry",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Mixed Berries",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Pink Lemonade",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Cherry Cola",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел бы уточнить информацию по товару:\nELFBAR BC 45k puffs, вкус: Red Raspberry Strawberry, количество: 1\nYami, вкус: Mixed Berries, количество: 1\nYami, вкус: Pink Lemonade, количество: 1\nYami, вкус: Cherry Cola, количество: 1",
+    "source_key": "8716402981:33351",
+    "source_chat_id": 8716402981,
+    "source_message_id": 33351,
+    "user_id": 8716402981,
+    "username": "guakamoli",
+    "status": "new",
+    "date": "12.11.2026 08:29"
   }
 }
