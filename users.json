@@ -170816,5 +170816,16 @@
     ],
     "registered": "2026-11-12T10:46:26.608144",
     "last_seen": "2026-11-12T10:46:26.608144"
+  },
+  "8024767377": {
+    "id": 8024767377,
+    "first_name": "Win",
+    "username": "winkoko48",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-12T11:29:06.041880",
+    "last_seen": "2026-11-12T11:29:06.041880"
   }
 }
