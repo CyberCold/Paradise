@@ -172611,5 +172611,16 @@
     ],
     "registered": "2026-11-13T18:59:34.866005",
     "last_seen": "2026-11-13T18:59:34.866005"
+  },
+  "5342229690": {
+    "id": 5342229690,
+    "first_name": "KO KO",
+    "username": "ayemin19965",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-13T19:45:49.431507",
+    "last_seen": "2026-11-13T19:45:49.431507"
   }
 }
