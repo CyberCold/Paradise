@@ -172491,9 +172491,10 @@
     "username": "smislatutnetili",
     "source": "bot_start",
     "sources": [
-      "bot_start"
+      "bot_start",
+      "chat"
     ],
     "registered": "2026-11-13T17:11:38.446517",
-    "last_seen": "2026-11-13T17:11:38.446517"
+    "last_seen": "2026-11-13T17:12:20.430392"
   }
 }
