@@ -14479,5 +14479,30 @@
     "username": "Каролина 😊",
     "status": "new",
     "date": "13.11.2026 20:56"
+  },
+  "#0690": {
+    "oid": "#0690",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Blue Cotton Candy",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Peach Mango Watermelon",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Blue Cotton Candy, количество: 1\nVozol, вкус: Peach Mango Watermelon, количество: 1",
+    "source_key": "1416047291:33612",
+    "source_chat_id": 1416047291,
+    "source_message_id": 33612,
+    "user_id": 1416047291,
+    "username": "™🐻🐻مرحبا أيتها الدمية🐻🐻 ™",
+    "status": "new",
+    "date": "14.11.2026 14:09"
   }
 }
