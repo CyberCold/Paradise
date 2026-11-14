@@ -14504,5 +14504,30 @@
     "username": "™🐻🐻مرحبا أيتها الدمية🐻🐻 ™",
     "status": "new",
     "date": "14.11.2026 14:09"
+  },
+  "#0691": {
+    "oid": "#0691",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Peach Mango Watermelon",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Mixed Berries",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Peach Mango Watermelon, количество: 1\nYami, вкус: Mixed Berries, количество: 1",
+    "source_key": "919731227:33622",
+    "source_chat_id": 919731227,
+    "source_message_id": 33622,
+    "user_id": 919731227,
+    "username": "Juritis",
+    "status": "new",
+    "date": "14.11.2026 17:13"
   }
 }
