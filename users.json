@@ -173263,5 +173263,16 @@
     ],
     "registered": "2026-11-14T07:11:09.224170",
     "last_seen": "2026-11-14T07:11:09.224170"
+  },
+  "6957480128": {
+    "id": 6957480128,
+    "first_name": "Ermac",
+    "username": "ermac13579",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-14T10:36:22.248234",
+    "last_seen": "2026-11-14T10:36:22.248234"
   }
 }
