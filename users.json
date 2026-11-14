@@ -174016,5 +174016,16 @@
     ],
     "registered": "2026-11-14T14:25:38.489147",
     "last_seen": "2026-11-14T14:25:38.489147"
+  },
+  "5404143199": {
+    "id": 5404143199,
+    "first_name": "Artjoms Ivanovs",
+    "username": "tjomaxx",
+    "source": "chat",
+    "sources": [
+      "chat"
+    ],
+    "registered": "2026-11-14T16:33:47.638498",
+    "last_seen": "2026-11-14T16:33:47.638498"
   }
 }
