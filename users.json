@@ -174936,5 +174936,16 @@
     ],
     "registered": "2026-11-15T12:30:22.670399",
     "last_seen": "2026-11-15T12:30:22.670399"
+  },
+  "2082597889": {
+    "id": 2082597889,
+    "first_name": "John",
+    "username": "bmrsyx",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-15T13:08:37.039369",
+    "last_seen": "2026-11-15T13:08:37.039369"
   }
 }
