@@ -174947,5 +174947,16 @@
     ],
     "registered": "2026-11-15T13:08:37.039369",
     "last_seen": "2026-11-15T13:08:37.039369"
+  },
+  "7381697999": {
+    "id": 7381697999,
+    "first_name": "Sishuai",
+    "username": "sishuai111111",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-15T13:10:09.463606",
+    "last_seen": "2026-11-15T13:10:09.463606"
   }
 }
