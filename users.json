@@ -175797,5 +175797,16 @@
     ],
     "registered": "2026-11-15T18:53:04.535Z",
     "last_seen": "2026-11-15T20:53:10.509362"
+  },
+  "8473143956": {
+    "id": 8473143956,
+    "first_name": "Mamux",
+    "username": "mamuxs",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-15T21:23:16.931224",
+    "last_seen": "2026-11-15T21:23:16.931224"
   }
 }
