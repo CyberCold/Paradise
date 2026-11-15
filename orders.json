@@ -14548,5 +14548,24 @@
     "username": "pitxrd",
     "status": "new",
     "date": "14.11.2026 22:00"
+  },
+  "#0693": {
+    "oid": "#0693",
+    "items": [
+      {
+        "pid": "elfbarbc45k",
+        "product_name": "ELFBAR BC 45k puffs",
+        "flavor": "Blackberry Lemonade",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nELFBAR BC 45k puffs, вкус: Blackberry Lemonade, количество: 1",
+    "source_key": "5428316045:33632",
+    "source_chat_id": 5428316045,
+    "source_message_id": 33632,
+    "user_id": 5428316045,
+    "username": "noir",
+    "status": "new",
+    "date": "15.11.2026 10:10"
   }
 }
