@@ -113919,10 +113919,11 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-08-16T14:58:56.585425",
-    "last_seen": "2026-11-15T09:17:57.339Z"
+    "last_seen": "2026-11-15T11:18:54.015733"
   },
   "8236041391": {
     "id": 8236041391,
