@@ -176627,5 +176627,16 @@
     ],
     "registered": "2026-11-16T13:20:56.268002",
     "last_seen": "2026-11-16T13:25:13.701603"
+  },
+  "8711248585": {
+    "id": 8711248585,
+    "first_name": "Laskova_ja",
+    "username": "Laskiva_ja",
+    "source": "chat",
+    "sources": [
+      "chat"
+    ],
+    "registered": "2026-11-16T16:29:43.498772",
+    "last_seen": "2026-11-16T16:29:43.498772"
   }
 }
