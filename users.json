@@ -26138,10 +26138,11 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-06-08T19:05:29.059073",
-    "last_seen": "2026-11-11T17:34:06.768Z"
+    "last_seen": "2026-11-16T13:23:12.941730"
   },
   "1237982371": {
     "id": 1237982371,
