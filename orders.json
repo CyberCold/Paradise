@@ -14782,5 +14782,30 @@
     "username": "Laskova_ja",
     "status": "new",
     "date": "16.11.2026 19:30"
+  },
+  "#0705": {
+    "oid": "#0705",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Purple Candy",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Energy Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Purple Candy, количество: 1\nYami, вкус: Energy Ice, количество: 1",
+    "source_key": "973082265:33785",
+    "source_chat_id": 973082265,
+    "source_message_id": 33785,
+    "user_id": 973082265,
+    "username": "Даниил",
+    "status": "new",
+    "date": "16.11.2026 23:58"
   }
 }
