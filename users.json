@@ -68165,10 +68165,11 @@
     "username": "skp_kps",
     "source": "bot_start",
     "sources": [
-      "bot_start"
+      "bot_start",
+      "chat"
     ],
     "registered": "2026-06-03T17:01:56.467684",
-    "last_seen": "2026-06-03T17:03:06.035525"
+    "last_seen": "2026-11-16T17:26:24.316321"
   },
   "5387714291": {
     "id": 5387714291,
