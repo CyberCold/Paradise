@@ -176320,5 +176320,16 @@
     ],
     "registered": "2026-11-15T22:31:50.286295",
     "last_seen": "2026-11-15T22:31:50.286295"
+  },
+  "7345190371": {
+    "id": 7345190371,
+    "first_name": "TRITON",
+    "username": "triton4hik",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-16T13:20:56.268002",
+    "last_seen": "2026-11-16T13:20:56.268002"
   }
 }
