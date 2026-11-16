@@ -176377,9 +176377,10 @@
     "username": "triton4hik",
     "source": "bot_start",
     "sources": [
-      "bot_start"
+      "bot_start",
+      "chat"
     ],
     "registered": "2026-11-16T13:20:56.268002",
-    "last_seen": "2026-11-16T13:20:56.268002"
+    "last_seen": "2026-11-16T13:25:13.701603"
   }
 }
