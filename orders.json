@@ -14807,5 +14807,36 @@
     "username": "Даниил",
     "status": "new",
     "date": "16.11.2026 23:58"
+  },
+  "#0706": {
+    "oid": "#0706",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "LOVE 777",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Dragon Fruit Banana Cherry",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Lemon Lime",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: LOVE 777, количество: 1\nYami, вкус: Dragon Fruit Banana Cherry, количество: 1\nYami, вкус: Lemon Lime, количество: 1",
+    "source_key": "7872473935:33790",
+    "source_chat_id": 7872473935,
+    "source_message_id": 33790,
+    "user_id": 7872473935,
+    "username": "Artur🪽🌛",
+    "status": "new",
+    "date": "17.11.2026 09:18"
   }
 }
