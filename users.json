@@ -178373,9 +178373,10 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-11-17T18:47:52.794325",
-    "last_seen": "2026-11-17T16:49:02.351Z"
+    "last_seen": "2026-11-17T18:51:30.798356"
   }
 }
