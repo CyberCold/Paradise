@@ -14920,5 +14920,24 @@
     "username": "𝖘𝖕𝖊𝖊𝖉_𝖉𝖗𝖎𝖛𝖊𝖊",
     "status": "new",
     "date": "17.11.2026 16:27"
+  },
+  "#0711": {
+    "oid": "#0711",
+    "items": [
+      {
+        "pid": "elfbarbc45k",
+        "product_name": "ELFBAR BC 45k puffs",
+        "flavor": "Pomegranate Raspberry Lime",
+        "qty": 2
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nELFBAR BC 45k puffs, вкус: Pomegranate Raspberry Lime, количество: 2",
+    "source_key": "1209665306:33922",
+    "source_chat_id": 1209665306,
+    "source_message_id": 33922,
+    "user_id": 1209665306,
+    "username": "S",
+    "status": "new",
+    "date": "17.11.2026 18:51"
   }
 }
