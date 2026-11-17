@@ -60888,7 +60888,7 @@
     "username": "Speed_drivee",
     "language_code": "ru",
     "is_premium": false,
-    "visit_count": 16,
+    "visit_count": 17,
     "ips": [
       {
         "ip": "2a03:ec00:b179:f06a:989f:5cff:fec9:870",
@@ -60900,8 +60900,8 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-11-17T14:22:49.403Z",
-        "last_seen": "2026-11-17T14:22:58.013Z",
-        "visits": 2
+        "last_seen": "2026-11-17T15:22:51.695Z",
+        "visits": 3
       },
       {
         "ip": "2a03:ec00:b17c:a9ac:6847:f1ff:fe10:4678",
@@ -61009,6 +61009,44 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-11-17T15:22:51.695Z",
+        "ip": "2a03:ec00:b179:f06a:989f:5cff:fec9:870",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 15; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.8103.38 Mobile Safari/537.36 Telegram-Android/13.1.1 (Honor ALI-NX1; Android 15; SDK 35; AVERAGE)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "157.0.8103.38",
+        "os": "Android",
+        "os_version": "15",
+        "language": "ru",
+        "cf_ray": "a5bfbbb8fd16e4d2",
+        "screen": "370x816@3.25",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 8,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru",
+          "ru-LV",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-11-17T14:22:58.013Z",
         "ip": "2a03:ec00:b179:f06a:989f:5cff:fec9:870",
@@ -61642,7 +61680,7 @@
       "device": "Android Phone",
       "browser": "Chrome",
       "os": "Android",
-      "updated_at": "2026-11-17T14:22:58.013Z"
+      "updated_at": "2026-11-17T15:22:51.695Z"
     },
     "geo": {
       "country": "LV",
@@ -61665,7 +61703,7 @@
       "chat"
     ],
     "registered": "2026-05-28T06:24:39.853Z",
-    "last_seen": "2026-11-17T17:21:13.690279"
+    "last_seen": "2026-11-17T17:22:51.921565"
   },
   "7281427280": {
     "id": 7281427280,
@@ -159550,7 +159588,7 @@
         "cf_ray": "a5bf98ae6bf2e4da",
         "screen": "393x852@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -159975,7 +160013,7 @@
       "webapp"
     ],
     "registered": "2026-10-13T15:44:30.770829",
-    "last_seen": "2026-11-17T14:58:56.399Z"
+    "last_seen": "2026-11-17T17:23:06.669738"
   },
   "6662912317": {
     "id": 6662912317,
