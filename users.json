@@ -178069,9 +178069,10 @@
     "username": "flamylv",
     "source": "bot_start",
     "sources": [
-      "bot_start"
+      "bot_start",
+      "chat"
     ],
     "registered": "2026-11-17T15:49:57.595060",
-    "last_seen": "2026-11-17T15:49:57.595060"
+    "last_seen": "2026-11-17T15:52:17.991666"
   }
 }
