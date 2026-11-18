@@ -179018,5 +179018,16 @@
     ],
     "registered": "2026-11-18T02:01:19.231490",
     "last_seen": "2026-11-18T02:01:19.231490"
+  },
+  "1615629866": {
+    "id": 1615629866,
+    "first_name": "Zinko",
+    "username": "ZkLwin",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-18T11:44:59.547221",
+    "last_seen": "2026-11-18T11:44:59.547221"
   }
 }
