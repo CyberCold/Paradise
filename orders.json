@@ -14977,5 +14977,24 @@
     "username": "Grimus †",
     "status": "new",
     "date": "18.11.2026 14:25"
+  },
+  "#0714": {
+    "oid": "#0714",
+    "items": [
+      {
+        "pid": "vozolrave40k",
+        "product_name": "Vozol Rave 40k puffs",
+        "flavor": "Blueberry Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol Rave 40k puffs, вкус: Blueberry Ice, количество: 1",
+    "source_key": "1889960622:33983",
+    "source_chat_id": 1889960622,
+    "source_message_id": 33983,
+    "user_id": 1889960622,
+    "username": "Chmonja",
+    "status": "new",
+    "date": "18.11.2026 14:36"
   }
 }
