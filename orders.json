@@ -14958,5 +14958,24 @@
     "username": "ev",
     "status": "new",
     "date": "17.11.2026 18:59"
+  },
+  "#0713": {
+    "oid": "#0713",
+    "items": [
+      {
+        "pid": "vozolrave40k",
+        "product_name": "Vozol Rave 40k puffs",
+        "flavor": "Strawberry Watermelon",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol Rave 40k puffs, вкус: Strawberry Watermelon, количество: 1\nДоставка есть после 6 вечера надо",
+    "source_key": "8080938020:33982",
+    "source_chat_id": 8080938020,
+    "source_message_id": 33982,
+    "user_id": 8080938020,
+    "username": "Grimus †",
+    "status": "new",
+    "date": "18.11.2026 14:25"
   }
 }
