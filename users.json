@@ -179861,5 +179861,16 @@
     ],
     "registered": "2026-11-18T18:11:32.531431",
     "last_seen": "2026-11-18T18:11:43.624973"
+  },
+  "6224298445": {
+    "id": 6224298445,
+    "first_name": "Ye Yint",
+    "username": "yeherry",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-18T18:12:54.257854",
+    "last_seen": "2026-11-18T18:12:54.257854"
   }
 }
