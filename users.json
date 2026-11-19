@@ -180157,5 +180157,16 @@
     ],
     "registered": "2026-11-18T18:12:54.257854",
     "last_seen": "2026-11-18T18:12:54.257854"
+  },
+  "6753191621": {
+    "id": 6753191621,
+    "first_name": "Vitalik",
+    "username": "vitaljkabo",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-19T11:32:40.459576",
+    "last_seen": "2026-11-19T11:32:40.459576"
   }
 }
