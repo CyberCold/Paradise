@@ -156726,8 +156726,21 @@
     "username": "okos0v",
     "language_code": "ru",
     "is_premium": false,
-    "visit_count": 4,
+    "visit_count": 5,
     "ips": [
+      {
+        "ip": "2a00:f503:150:8f0a:7b33:b2b8:ec60:f64d",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Bite Latvija    users",
+        "asn": 13194,
+        "lat": 56.946,
+        "lon": 24.10589,
+        "first_seen": "2026-11-19T22:14:26.535Z",
+        "last_seen": "2026-11-19T22:14:26.535Z",
+        "visits": 1
+      },
       {
         "ip": "2a00:f503:150:9eb1:adc0:b2b2:2fc:77d1",
         "country": "LV",
@@ -156769,6 +156782,45 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-11-19T22:14:26.535Z",
+        "ip": "2a00:f503:150:8f0a:7b33:b2b8:ec60:f64d",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+        "device": "Desktop",
+        "browser": "Edge",
+        "browser_version": "157.0.0.0",
+        "os": "Windows",
+        "os_version": null,
+        "language": "ru",
+        "cf_ray": "a5d2915f9cfcf00d",
+        "screen": "1920x1080@1",
+        "tz_client": "Asia/Jerusalem",
+        "color_depth": null,
+        "touch": 0,
+        "platform": "Win32",
+        "memory": 16,
+        "cores": 12,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru",
+          "en",
+          "en-GB",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-11-17T20:27:46.303Z",
         "ip": "2a00:f503:150:9eb1:adc0:b2b2:2fc:77d1",
@@ -156915,31 +156967,36 @@
       }
     ],
     "fingerprint": {
-      "screen": "402x874@3",
-      "timezone": "Europe/Riga",
+      "screen": "1920x1080@1",
+      "timezone": "Asia/Jerusalem",
       "color_depth": 24,
-      "touch": 5,
-      "platform": "iPhone",
-      "memory": 0,
-      "cores": 4,
-      "connection": null,
-      "webgl_vendor": "Apple Inc.",
-      "webgl_renderer": "Apple GPU",
+      "touch": 0,
+      "platform": "Win32",
+      "memory": 16,
+      "cores": 12,
+      "connection": "4g",
+      "webgl_vendor": "Google Inc. (NVIDIA)",
+      "webgl_renderer": "ANGLE (NVIDIA, NVIDIA GeForce GTX 1650 (0x00002188) Direct3D11 vs_5_0 ps_5_0, D3D11)",
       "languages": [
-        "ru"
+        "ru",
+        "en",
+        "en-GB",
+        "en-US"
       ],
-      "ua_platform": null,
-      "ua_platform_version": null,
-      "ua_architecture": null,
-      "ua_bitness": null,
+      "ua_platform": "Windows",
+      "ua_platform_version": "10.0.0",
+      "ua_architecture": "x86",
+      "ua_bitness": "64",
       "ua_model": null,
       "ua_mobile": false,
-      "device": "iPhone",
-      "browser": "unknown",
-      "os": "iOS",
-      "updated_at": "2026-11-17T20:27:46.303Z"
+      "device": "Desktop",
+      "browser": "Edge",
+      "os": "Windows",
+      "updated_at": "2026-11-19T22:14:26.535Z"
     },
     "device_keys": [
+      "8cf1916e92250be5213238556218a0b3a37d710b9792db7afa996aaf6946affb",
+      "211f91193992b91cc777c7e6538aec467ac75c07ffb1fdb8c0ba805e3c030854",
       "6c5c6fed98b2bfea2e55d0532949d4d50789cd49a31f2f4be32a4fdcbce1aae2",
       "73a49f0c25a50dd0f851d763e6a0867cc99e57d87265fa0fdf67e0ae802a24cd",
       "65ba22650b060922ebfcc97fca3febb8d209aebdaba2bb733e393b46185575c0"
@@ -156961,7 +157018,7 @@
       "chat"
     ],
     "registered": "2026-10-05T16:57:13.553310",
-    "last_seen": "2026-11-17T20:27:46.303Z"
+    "last_seen": "2026-11-19T22:14:26.535Z"
   },
   "5150492939": {
     "id": 5150492939,
@@ -160257,7 +160314,7 @@
         "cf_ray": "a5d27fba4b6e9e92",
         "screen": "402x874@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
