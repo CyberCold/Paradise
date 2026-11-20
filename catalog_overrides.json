@@ -208,6 +208,29 @@
       "stock": "in",
       "badge": "new",
       "hidden": false
+    },
+    {
+      "id": "crystalbar20k",
+      "name": "Crystal Bar 20K",
+      "tag": "Salt Nicotine",
+      "subtitle": "20 000 puffs",
+      "price": "10€",
+      "image": "https://i.postimg.cc/dVD0qR5H/image.png",
+      "flavors": [
+        "Apple Kiwi",
+        "Blueberry Raspberry",
+        "Cherry Ice",
+        "Grape Cherry",
+        "Grape Mint",
+        "Lemon Lime",
+        "Mixed Berries",
+        "Pink Lemonade",
+        "Red Bull",
+        "Sour Watermelon Gummy"
+      ],
+      "stock": "in",
+      "badge": "new",
+      "hidden": false
     }
   ],
   "order": [
@@ -223,6 +246,7 @@
     "truesalt",
     "elfbarlushkingpro",
     "dojo",
-    "vozolneon"
+    "vozolneon",
+    "crystalbar20k"
   ]
 }
