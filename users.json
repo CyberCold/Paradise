@@ -181692,5 +181692,16 @@
     ],
     "registered": "2026-11-20T05:38:30.458045",
     "last_seen": "2026-11-20T05:38:30.458045"
+  },
+  "2130328653": {
+    "id": 2130328653,
+    "first_name": "Mario 🚶🚶🚶",
+    "username": "Lwinmyo20",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-20T08:51:58.639180",
+    "last_seen": "2026-11-20T08:51:58.639180"
   }
 }
