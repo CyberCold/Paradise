@@ -170201,10 +170201,11 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-10-26T15:01:02.497Z",
-    "last_seen": "2026-11-20T13:50:23.622Z"
+    "last_seen": "2026-11-20T15:51:47.462773"
   },
   "8072600714": {
     "id": 8072600714,
