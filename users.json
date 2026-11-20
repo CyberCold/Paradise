@@ -181956,5 +181956,16 @@
     ],
     "registered": "2026-11-20T09:31:46.569925",
     "last_seen": "2026-11-20T09:31:46.569925"
+  },
+  "7404270542": {
+    "id": 7404270542,
+    "first_name": "Min",
+    "username": "blackstone1234",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-20T13:19:50.761686",
+    "last_seen": "2026-11-20T13:19:50.761686"
   }
 }
