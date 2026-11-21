@@ -15249,5 +15249,30 @@
     "username": "𝐤𝐫𝐢𝐬𝐭𝐢𝐧𝐤𝐚",
     "status": "new",
     "date": "20.11.2026 21:16"
+  },
+  "#0728": {
+    "oid": "#0728",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Purple Candy",
+        "qty": 1
+      },
+      {
+        "pid": "vozolrave40k",
+        "product_name": "Vozol Rave 40k puffs",
+        "flavor": "Blueberry Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Purple Candy, количество: 1\nVozol Rave 40k puffs, вкус: Blueberry Ice, количество: 1",
+    "source_key": "1058460931:34475",
+    "source_chat_id": 1058460931,
+    "source_message_id": 34475,
+    "user_id": 1058460931,
+    "username": "mariya",
+    "status": "new",
+    "date": "21.11.2026 09:35"
   }
 }
