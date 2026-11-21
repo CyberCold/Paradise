@@ -179317,10 +179317,11 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-11-12T14:53:33.485Z",
-    "last_seen": "2026-11-21T07:33:31.047Z"
+    "last_seen": "2026-11-21T09:35:49.787567"
   },
   "943575960": {
     "id": 943575960,
