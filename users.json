@@ -182907,5 +182907,16 @@
     ],
     "registered": "2026-11-21T09:11:32.657557",
     "last_seen": "2026-11-21T09:11:32.657557"
+  },
+  "1386701728": {
+    "id": 1386701728,
+    "first_name": "Thuta",
+    "username": "Thuta_Zaw",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-21T09:41:02.804758",
+    "last_seen": "2026-11-21T09:41:02.804758"
   }
 }
