@@ -43951,7 +43951,7 @@
         "cf_ray": "a5e1e1625af7a866",
         "screen": "402x874@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -158264,8 +158264,8 @@
     "is_premium": false,
     "source": "webapp",
     "registered": "2026-09-28T15:11:06.176Z",
-    "last_seen": "2026-11-10T16:31:50.746Z",
-    "visit_count": 16,
+    "last_seen": "2026-11-21T22:48:40.528Z",
+    "visit_count": 17,
     "ips": [
       {
         "ip": "87.110.177.188",
@@ -158316,8 +158316,8 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-09-28T19:52:30.673Z",
-        "last_seen": "2026-11-08T13:45:56.940Z",
-        "visits": 9
+        "last_seen": "2026-11-21T22:48:40.528Z",
+        "visits": 10
       },
       {
         "ip": "2a03:ec00:b18e:e441:8043:855e:30ff:2b99",
@@ -158334,6 +158334,42 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-11-21T22:48:40.528Z",
+        "ip": "77.38.167.49",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a5e33e451de0a87e",
+        "screen": "393x852@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-11-10T16:31:50.746Z",
         "ip": "87.110.177.188",
@@ -158934,7 +158970,7 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-11-10T16:31:50.746Z"
+      "updated_at": "2026-11-21T22:48:40.528Z"
     },
     "device_keys": [
       "f7e1b539c901e0021fa233e9562f5f3ad0c89aa7ff114b67cd1979ea83552021",
@@ -158946,8 +158982,8 @@
       "city": "Riga",
       "region": "Riga",
       "timezone": "Europe/Riga",
-      "asn": 12578,
-      "isp": "GYM LATVIJA, SIA",
+      "asn": 20910,
+      "isp": "BALTCOM Broadband Customers",
       "lat": 56.946,
       "lon": 24.10589
     }
