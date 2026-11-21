@@ -15274,5 +15274,24 @@
     "username": "mariya",
     "status": "new",
     "date": "21.11.2026 09:35"
+  },
+  "#0729": {
+    "oid": "#0729",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Lemon Lime",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nCrystal Bar 20K, вкус: Lemon Lime, количество: 1",
+    "source_key": "6922140645:34479",
+    "source_chat_id": 6922140645,
+    "source_message_id": 34479,
+    "user_id": 6922140645,
+    "username": "Ваня 🙃  𒉭",
+    "status": "new",
+    "date": "21.11.2026 11:18"
   }
 }
