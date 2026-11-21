@@ -15337,5 +15337,30 @@
     "username": "Valerij",
     "status": "new",
     "date": "21.11.2026 15:23"
+  },
+  "#0732": {
+    "oid": "#0732",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Strawberry Banana",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Red Mojito",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Strawberry Banana, количество: 1\nYami, вкус: Red Mojito, количество: 1",
+    "source_key": "594415373:34498",
+    "source_chat_id": 594415373,
+    "source_message_id": 34498,
+    "user_id": 594415373,
+    "username": "F@CE£E$$",
+    "status": "new",
+    "date": "21.11.2026 15:46"
   }
 }
