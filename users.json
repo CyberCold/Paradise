@@ -184719,5 +184719,16 @@
     ],
     "registered": "2026-11-22T15:21:11.264870",
     "last_seen": "2026-11-22T15:21:11.264870"
+  },
+  "5852391558": {
+    "id": 5852391558,
+    "first_name": "Wamuu",
+    "username": "wamuuzzz",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-22T16:20:24.677177",
+    "last_seen": "2026-11-22T16:20:24.677177"
   }
 }
