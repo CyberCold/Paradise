@@ -184326,9 +184326,10 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-11-22T11:18:02.164503",
-    "last_seen": "2026-11-22T09:18:06.249Z"
+    "last_seen": "2026-11-22T11:20:06.128846"
   }
 }
