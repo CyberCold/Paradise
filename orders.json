@@ -15457,5 +15457,24 @@
     "username": "Никки",
     "status": "new",
     "date": "22.11.2026 14:15"
+  },
+  "#0738": {
+    "oid": "#0738",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Pink lemonade",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Pink lemonade, количество: 1",
+    "source_key": "1357708699:34532",
+    "source_chat_id": 1357708699,
+    "source_message_id": 34532,
+    "user_id": 1357708699,
+    "username": "###",
+    "status": "new",
+    "date": "22.11.2026 16:26"
   }
 }
