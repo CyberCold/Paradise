@@ -184175,5 +184175,16 @@
     ],
     "registered": "2026-11-21T20:59:32.955529",
     "last_seen": "2026-11-21T20:59:32.955529"
+  },
+  "7189200473": {
+    "id": 7189200473,
+    "first_name": "Swan Htet Aung",
+    "username": "SSHA1987",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-22T04:32:53.375100",
+    "last_seen": "2026-11-22T04:32:53.375100"
   }
 }
