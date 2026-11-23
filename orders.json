@@ -15608,5 +15608,48 @@
     "username": "Эрик",
     "status": "new",
     "date": "23.11.2026 19:35"
+  },
+  "#0745": {
+    "oid": "#0745",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Grape Energy",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Lemon Lime",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Mixed Berries",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Watermelon Cherry",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Dragon Fruit Banana Cherry",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Grape Energy, количество: 1\nYami, вкус: Lemon Lime, количество: 1\nYami, вкус: Mixed Berries, количество: 1\nYami, вкус: Watermelon Cherry, количество: 1\nYami, вкус: Dragon Fruit Banana Cherry, количество: 1",
+    "source_key": "970444238:34728",
+    "source_chat_id": 970444238,
+    "source_message_id": 34728,
+    "user_id": 970444238,
+    "username": "Несокрушимый Алкоголик",
+    "status": "new",
+    "date": "23.11.2026 21:13"
   }
 }
