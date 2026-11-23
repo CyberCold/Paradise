@@ -186582,5 +186582,16 @@
     ],
     "registered": "2026-11-23T20:10:08.087750",
     "last_seen": "2026-11-23T20:13:36.729084"
+  },
+  "5156990940": {
+    "id": 5156990940,
+    "first_name": "Adrian",
+    "username": "pivnaja_kega",
+    "source": "chat",
+    "sources": [
+      "chat"
+    ],
+    "registered": "2026-11-23T20:56:27.671362",
+    "last_seen": "2026-11-23T20:56:27.671362"
   }
 }
