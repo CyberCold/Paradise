@@ -15520,5 +15520,24 @@
     "username": "Котэ",
     "status": "new",
     "date": "22.11.2026 18:43"
+  },
+  "#0741": {
+    "oid": "#0741",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Strawberry Raspberry Cherry Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Привет, хочу купить \nYami Strawberry Raspberry Cherry Ice",
+    "source_key": "510557368:34607",
+    "source_chat_id": 510557368,
+    "source_message_id": 34607,
+    "user_id": 510557368,
+    "username": "Arman",
+    "status": "new",
+    "date": "23.11.2026 15:57"
   }
 }
