@@ -15651,5 +15651,24 @@
     "username": "Несокрушимый Алкоголик",
     "status": "new",
     "date": "23.11.2026 21:13"
+  },
+  "#0746": {
+    "oid": "#0746",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Purple Candy",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Purple Candy, количество: 1",
+    "source_key": "1280785661:34748",
+    "source_chat_id": 1280785661,
+    "source_message_id": 34748,
+    "user_id": 1280785661,
+    "username": "ni.",
+    "status": "new",
+    "date": "23.11.2026 21:30"
   }
 }
