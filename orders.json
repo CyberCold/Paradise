@@ -15564,5 +15564,30 @@
     "username": "Эдгар",
     "status": "new",
     "date": "23.11.2026 17:50"
+  },
+  "#0743": {
+    "oid": "#0743",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Red Mojito",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Watermelon Cherry",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Red Mojito, количество: 1\nYami, вкус: Watermelon Cherry, количество: 1",
+    "source_key": "1382284598:34648",
+    "source_chat_id": 1382284598,
+    "source_message_id": 34648,
+    "user_id": 1382284598,
+    "username": "Эдгар",
+    "status": "new",
+    "date": "23.11.2026 18:49"
   }
 }
