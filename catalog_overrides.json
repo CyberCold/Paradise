@@ -180,11 +180,18 @@
       "price": "15€",
       "image": "https://i.postimg.cc/9Q1bQ53D/AF39720C-0119-4742-94EC-22BA1186A4F0.png",
       "flavors": [
-        "Red Raspberry Strawberry",
-        "Pomegranate Raspberry Lime",
-        "Blackberry Lemonade",
         "Cherry Peach Soda",
-        "Blackcurrant Grape"
+        "Double Mint",
+        "Grapefruit Green Tea",
+        "Kiwi Pineapple Peach",
+        "Lemon Lime",
+        "Pear Soda",
+        "Pomegranate Burst",
+        "Pomegranate Raspberry Lime",
+        "Red Raspberry Strawberry",
+        "Sour Apple Kiwi",
+        "Strawberry Grapefruit",
+        "Watermelon Ice"
       ],
       "stock": "in",
       "badge": "new",
