@@ -186522,5 +186522,16 @@
     ],
     "registered": "2026-11-23T17:03:31.023300",
     "last_seen": "2026-11-23T17:03:31.023300"
+  },
+  "583050232": {
+    "id": 583050232,
+    "first_name": "Stashevity",
+    "username": "Stashevity",
+    "source": "chat",
+    "sources": [
+      "chat"
+    ],
+    "registered": "2026-11-23T20:10:08.087750",
+    "last_seen": "2026-11-23T20:10:08.087750"
   }
 }
