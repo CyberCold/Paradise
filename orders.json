@@ -15727,5 +15727,24 @@
     "username": "Алёна",
     "status": "new",
     "date": "24.11.2026 13:05"
+  },
+  "#0750": {
+    "oid": "#0750",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Cherry Cola",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Cherry Cola, количество: 1",
+    "source_key": "872778084:34756",
+    "source_chat_id": 872778084,
+    "source_message_id": 34756,
+    "user_id": 872778084,
+    "username": "Алёна",
+    "status": "new",
+    "date": "24.11.2026 13:06"
   }
 }
