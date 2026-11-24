@@ -15708,5 +15708,24 @@
     "username": "Akula geng",
     "status": "new",
     "date": "24.11.2026 12:53"
+  },
+  "#0749": {
+    "oid": "#0749",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Strawberry Banana",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Strawberry Banana, количество: 1",
+    "source_key": "872778084:34755",
+    "source_chat_id": 872778084,
+    "source_message_id": 34755,
+    "user_id": 872778084,
+    "username": "Алёна",
+    "status": "new",
+    "date": "24.11.2026 13:05"
   }
 }
