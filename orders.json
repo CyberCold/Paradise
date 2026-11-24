@@ -15784,5 +15784,30 @@
     "username": "Adrian",
     "status": "new",
     "date": "24.11.2026 17:24"
+  },
+  "#0753": {
+    "oid": "#0753",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Peach Mango Watermelon",
+        "qty": 1
+      },
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Elf Jack",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Peach Mango Watermelon, количество: 1\nElfliq, вкус: Elf Jack, количество: 1",
+    "source_key": "5775312541:34977",
+    "source_chat_id": 5775312541,
+    "source_message_id": 34977,
+    "user_id": 5775312541,
+    "username": "Edvard",
+    "status": "new",
+    "date": "24.11.2026 18:11"
   }
 }
