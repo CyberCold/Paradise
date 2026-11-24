@@ -15847,5 +15847,30 @@
     "username": "Эрвин👾",
     "status": "new",
     "date": "24.11.2026 18:34"
+  },
+  "#0756": {
+    "oid": "#0756",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Peach Mango Watermelon",
+        "qty": 1
+      },
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Purple Candy",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Peach Mango Watermelon, количество: 1\nVozol, вкус: Purple Candy, количество: 1",
+    "source_key": "893025467:35004",
+    "source_chat_id": 893025467,
+    "source_message_id": 35004,
+    "user_id": 893025467,
+    "username": "Эрвин👾",
+    "status": "new",
+    "date": "24.11.2026 18:40"
   }
 }
