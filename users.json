@@ -189990,9 +189990,10 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-11-25T13:29:59.910871",
-    "last_seen": "2026-11-25T11:30:06.703Z"
+    "last_seen": "2026-11-25T13:33:12.295920"
   }
 }
