@@ -138462,8 +138462,8 @@
     "is_premium": false,
     "source": "webapp",
     "registered": "2026-08-04T14:14:33.535Z",
-    "last_seen": "2026-11-25T06:14:46.676Z",
-    "visit_count": 19,
+    "last_seen": "2026-11-25T06:18:11.011Z",
+    "visit_count": 20,
     "ips": [
       {
         "ip": "87.110.92.116",
@@ -138475,8 +138475,8 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-11-25T06:14:46.676Z",
-        "last_seen": "2026-11-25T06:14:46.676Z",
-        "visits": 1
+        "last_seen": "2026-11-25T06:18:11.011Z",
+        "visits": 2
       },
       {
         "ip": "2a00:808:121:e4a5::150c:c14b",
@@ -138611,6 +138611,45 @@
     ],
     "visits": [
       {
+        "timestamp": "2026-11-25T06:18:11.011Z",
+        "ip": "87.110.92.116",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 17; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.8103.50 Mobile Safari/537.36 Telegram-Android/13.3.1 (Samsung SM-A566B; Android 17; SDK 37; HIGH)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "157.0.8103.50",
+        "os": "Android",
+        "os_version": "17",
+        "language": "ru",
+        "cf_ray": "a5fe88daa9baa89c",
+        "screen": "384x832@2.8125",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 8,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru",
+          "ru-RU",
+          "lv-LV",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
+      {
         "timestamp": "2026-11-25T06:14:46.676Z",
         "ip": "87.110.92.116",
         "country": "LV",
@@ -138628,7 +138667,7 @@
         "cf_ray": "a5fe83dd8e6da89f",
         "screen": "384x832@2.8125",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "Linux aarch64",
         "memory": 8,
@@ -139357,6 +139396,7 @@
       "webgl_vendor": "Samsung Electronics Co., Ltd.",
       "webgl_renderer": "ANGLE ((Samsung Xclipse 540) on Vulkan 1.3.304)",
       "languages": [
+        "ru",
         "ru-RU",
         "lv-LV",
         "en-US"
@@ -139370,12 +139410,12 @@
       "device": "Android Phone",
       "browser": "Chrome",
       "os": "Android",
-      "updated_at": "2026-11-25T06:14:46.676Z"
+      "updated_at": "2026-11-25T06:18:11.011Z"
     },
     "device_keys": [
       "c2bf250323d34826e5f58a80c0f0cbc34c8e9a021f80c88348c8b5d9d6bfe4f0",
-      "535dd9f8c202dbd5854d56b89f79fe1565c7f6c87c82223a136485b14e93111b",
       "ea216eb1e9e28f9da9b5f0ec52ea4691598284eb635f44eff9b2b9e778a58936",
+      "535dd9f8c202dbd5854d56b89f79fe1565c7f6c87c82223a136485b14e93111b",
       "32685e1ac627bf7add80e37e68558e686599d915809573e2d0bb4545d1df5a50",
       "f6e9db9ff7c3d42283061aac25e015185773b3743678800efcf4e245b2fc33da"
     ],
