@@ -15897,5 +15897,24 @@
     "username": "Sadness",
     "status": "new",
     "date": "25.11.2026 08:21"
+  },
+  "#0758": {
+    "oid": "#0758",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Spearmint",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу купить сегодня жижу spearmint",
+    "source_key": "1474389161:35090",
+    "source_chat_id": 1474389161,
+    "source_message_id": 35090,
+    "user_id": 1474389161,
+    "username": "viktorija",
+    "status": "new",
+    "date": "25.11.2026 10:08"
   }
 }
