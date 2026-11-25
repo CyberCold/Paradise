@@ -188780,5 +188780,16 @@
     ],
     "registered": "2026-11-24T17:52:08.520366",
     "last_seen": "2026-11-24T18:30:47.111773"
+  },
+  "7199366043": {
+    "id": 7199366043,
+    "first_name": "Макс",
+    "username": "Zalupeskaiop",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-25T03:38:15.248827",
+    "last_seen": "2026-11-25T03:38:15.248827"
   }
 }
