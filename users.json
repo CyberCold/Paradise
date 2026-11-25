@@ -672,6 +672,43 @@
     "username": "s4w0k",
     "visits": [
       {
+        "timestamp": "2026-11-25T14:35:10.480Z",
+        "ip": "77.38.222.53",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 14; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.8103.50 Mobile Safari/537.36 Telegram-Android/13.3.1 (Samsung SM-A556B; Android 14; SDK 34; HIGH)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "157.0.8103.50",
+        "os": "Android",
+        "os_version": "14",
+        "language": "ru-RU",
+        "cf_ray": "a60160de49c3e4de",
+        "screen": "384x832@2.8125",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 8,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru-RU",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
+      {
         "timestamp": "2026-11-01T14:58:06.159Z",
         "ip": "77.38.222.53",
         "country": "LV",
@@ -1385,7 +1422,7 @@
         "ua_mobile": false
       }
     ],
-    "visit_count": 19,
+    "visit_count": 20,
     "ips": [
       {
         "ip": "2a00:808:113:f7eb::35f5:dd9b",
@@ -1410,8 +1447,8 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-09-09T14:47:10.832Z",
-        "last_seen": "2026-11-01T14:58:06.159Z",
-        "visits": 5
+        "last_seen": "2026-11-25T14:35:10.480Z",
+        "visits": 6
       },
       {
         "ip": "2a00:808:11c:fbe1::227f:c3ff",
@@ -1495,34 +1532,30 @@
     "language_code": "ru",
     "is_premium": false,
     "fingerprint": {
-      "screen": "2560x1440@1",
-      "timezone": "Europe/Kiev",
+      "screen": "384x832@2.8125",
+      "timezone": "Europe/Riga",
       "color_depth": 24,
-      "touch": 0,
-      "platform": "Win32",
-      "memory": 32,
-      "cores": 16,
+      "touch": 5,
+      "platform": "Linux aarch64",
+      "memory": 8,
+      "cores": 8,
       "connection": "4g",
-      "webgl_vendor": "Google Inc. (NVIDIA)",
-      "webgl_renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 5070 (0x00002F04) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "webgl_vendor": "Samsung Electronics Co., Ltd.",
+      "webgl_renderer": "ANGLE (Samsung Xclipse 530) on Vulkan 1.3.231",
       "languages": [
-        "ru",
-        "en-US",
-        "en",
-        "lv",
-        "lt",
-        "fr"
+        "ru-RU",
+        "en-US"
       ],
-      "ua_platform": "Windows",
-      "ua_platform_version": "10.0.0",
-      "ua_architecture": "x86",
-      "ua_bitness": "64",
+      "ua_platform": "Android",
+      "ua_platform_version": null,
+      "ua_architecture": null,
+      "ua_bitness": null,
       "ua_model": null,
-      "ua_mobile": false,
-      "device": "Desktop",
-      "browser": "Opera",
-      "os": "Windows",
-      "updated_at": "2026-11-01T14:58:06.159Z"
+      "ua_mobile": true,
+      "device": "Android Phone",
+      "browser": "Chrome",
+      "os": "Android",
+      "updated_at": "2026-11-25T14:35:10.480Z"
     },
     "geo": {
       "country": "LV",
@@ -1535,12 +1568,12 @@
       "lon": 24.10589
     },
     "device_keys": [
+      "caa3664049419d3d547cd4ba8a2bee86c343032b75a929c68370e43314b75e82",
+      "094db6c77e51b5912e611f5793240892be585008265595ce4856d2a4e6b76689",
       "341ebdaf3e36a657bba47f94e039daaf9af6dda31983bdb19ceb398733e5bbd1",
       "69f7012be8c878938114a258b60102bf2ae365c09060f292d2a2c8dad2c2793d",
-      "caa3664049419d3d547cd4ba8a2bee86c343032b75a929c68370e43314b75e82",
       "c52a3e4e3092bd933ab9160339a0bcbdaf4a86aae4019925d68f21f0f9076959",
       "1a67c767e6d13f7465f96a6f8305335ccab7cf66623458fa7cc2df5650ba91f0",
-      "094db6c77e51b5912e611f5793240892be585008265595ce4856d2a4e6b76689",
       "761cf8674435b0773694adb362faaef21e2a9faf15745411dc4f238517a63faf"
     ],
     "source": "chat",
@@ -1549,7 +1582,7 @@
       "webapp"
     ],
     "registered": "2026-05-27T22:22:47.826Z",
-    "last_seen": "2026-11-23T15:57:05.928733"
+    "last_seen": "2026-11-25T14:35:10.480Z"
   },
   "527067894": {
     "id": 527067894,
@@ -116554,7 +116587,7 @@
         "cf_ray": "a601149b697d0429",
         "screen": "440x956@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
