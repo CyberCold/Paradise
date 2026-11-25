@@ -111828,8 +111828,21 @@
     "first_name": "Parad",
     "language_code": "ru",
     "is_premium": false,
-    "visit_count": 23,
+    "visit_count": 24,
     "ips": [
+      {
+        "ip": "2a03:ec00:b95c:af00::c4fe:4332",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Latvijas Mobilais Telefons SIA",
+        "asn": 24921,
+        "lat": 56.946,
+        "lon": 24.1059,
+        "first_seen": "2026-11-25T16:27:02.587Z",
+        "last_seen": "2026-11-25T16:27:02.587Z",
+        "visits": 1
+      },
       {
         "ip": "2a03:ec00:b179:9151::a390:f5",
         "country": "LV",
@@ -111962,6 +111975,44 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-11-25T16:27:02.587Z",
+        "ip": "2a03:ec00:b95c:af00::c4fe:4332",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 14; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.8127.92 Mobile Safari/537.36 Telegram-Android/13.2.2 (Xiaomi 22126RN91Y; Android 14; SDK 34; AVERAGE)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "158.0.8127.92",
+        "os": "Android",
+        "os_version": "14",
+        "language": "ru",
+        "cf_ray": "a60204bd0a6be4e2",
+        "screen": "360x825@2",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 4,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru",
+          "ru-RU",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-11-02T20:20:50.665Z",
         "ip": "2a03:ec00:b179:9151::a390:f5",
@@ -112860,7 +112911,7 @@
       "device": "Android Phone",
       "browser": "Chrome",
       "os": "Android",
-      "updated_at": "2026-11-02T20:20:50.665Z"
+      "updated_at": "2026-11-25T16:27:02.587Z"
     },
     "device_keys": [
       "ad970ddf570ff7340065dbe0e03680810332b97b79d7ed9ddff8e87a62ed0ffb",
@@ -112877,15 +112928,16 @@
       "asn": 24921,
       "isp": "Latvijas Mobilais Telefons SIA",
       "lat": 56.946,
-      "lon": 24.10589
+      "lon": 24.1059
     },
+    "username": "skupkaNoutbukov1",
     "source": "webapp",
     "sources": [
       "webapp",
       "chat"
     ],
     "registered": "2026-08-08T08:55:47.825Z",
-    "last_seen": "2026-11-03T17:00:07.314214"
+    "last_seen": "2026-11-25T16:27:02.587Z"
   },
   "2052020377": {
     "id": 2052020377,
@@ -136969,7 +137021,7 @@
         "cf_ray": "a601c305fe6dc5d3",
         "screen": "390x844@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
