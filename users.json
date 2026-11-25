@@ -189436,10 +189436,11 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-11-25T09:57:26.312Z",
-    "last_seen": "2026-11-25T10:01:00.122Z"
+    "last_seen": "2026-11-25T12:09:57.755912"
   },
   "5388973658": {
     "id": 5388973658,
