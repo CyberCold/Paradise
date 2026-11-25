@@ -16087,5 +16087,24 @@
     "username": "Ri",
     "status": "new",
     "date": "25.11.2026 17:59"
+  },
+  "#0768": {
+    "oid": "#0768",
+    "items": [
+      {
+        "pid": "vozolrave40k",
+        "product_name": "Vozol Rave 40k puffs",
+        "flavor": "Watermelon Bubblegum",
+        "qty": 3
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol Rave 40k puffs, вкус: Watermelon Bubblegum, количество: 3",
+    "source_key": "1146965571:35136",
+    "source_chat_id": 1146965571,
+    "source_message_id": 35136,
+    "user_id": 1146965571,
+    "username": "Молодой Володя",
+    "status": "new",
+    "date": "25.11.2026 23:35"
   }
 }
