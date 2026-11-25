@@ -190294,5 +190294,16 @@
     ],
     "registered": "2026-11-25T11:47:43.971Z",
     "last_seen": "2026-11-25T11:47:43.971Z"
+  },
+  "1488869513": {
+    "id": 1488869513,
+    "first_name": "Egita",
+    "username": "egoshee",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-25T15:29:57.761667",
+    "last_seen": "2026-11-25T15:29:57.762167"
   }
 }
