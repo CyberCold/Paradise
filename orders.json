@@ -15872,5 +15872,30 @@
     "username": "Эрвин👾",
     "status": "new",
     "date": "24.11.2026 18:40"
+  },
+  "#0757": {
+    "oid": "#0757",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Blueberry Sour Raspberry",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Love 777",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Blueberry Sour Raspberry, количество: 1\nYami, вкус: Love 777, количество: 1",
+    "source_key": "5741391309:35089",
+    "source_chat_id": 5741391309,
+    "source_message_id": 35089,
+    "user_id": 5741391309,
+    "username": "Sadness",
+    "status": "new",
+    "date": "25.11.2026 08:21"
   }
 }
