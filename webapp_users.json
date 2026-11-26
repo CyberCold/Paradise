@@ -47756,7 +47756,7 @@
         "cf_ray": "a608028a3ab35433",
         "screen": "393x852@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
@@ -138467,9 +138467,22 @@
     "is_premium": true,
     "source": "webapp",
     "registered": "2026-08-01T09:07:31.637Z",
-    "last_seen": "2026-10-15T07:40:08.805Z",
-    "visit_count": 9,
+    "last_seen": "2026-11-26T10:23:39.434Z",
+    "visit_count": 10,
     "ips": [
+      {
+        "ip": "80.232.234.128",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "isp": "Bridge Group Static IP Customers",
+        "asn": 12578,
+        "lat": 56.946,
+        "lon": 24.10589,
+        "first_seen": "2026-11-26T10:23:39.434Z",
+        "last_seen": "2026-11-26T10:23:39.434Z",
+        "visits": 1
+      },
       {
         "ip": "2a00:808:130:ce42:8089:1cff:fe3b:a8cd",
         "country": "LV",
@@ -138550,6 +138563,44 @@
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-11-26T10:23:39.434Z",
+        "ip": "80.232.234.128",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 15; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.8127.46 Mobile Safari/537.36 Telegram-Android/13.3.1 (Xiaomi 23124RA7EO; Android 15; SDK 35; HIGH)",
+        "device": "Android Phone",
+        "browser": "Chrome",
+        "browser_version": "158.0.8127.46",
+        "os": "Android",
+        "os_version": "15",
+        "language": "ru",
+        "cf_ray": "a6082dced8fae4ea",
+        "screen": "393x873@2.75",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "Linux aarch64",
+        "memory": 8,
+        "cores": 8,
+        "connection": "4g",
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru",
+          "ru-RU",
+          "en-US"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-10-15T07:40:08.805Z",
         "ip": "2a00:808:130:ce42:8089:1cff:fe3b:a8cd",
@@ -138918,7 +138969,7 @@
       "device": "Android Phone",
       "browser": "Chrome",
       "os": "Android",
-      "updated_at": "2026-10-15T07:40:08.805Z"
+      "updated_at": "2026-11-26T10:23:39.434Z"
     },
     "device_keys": [
       "69966ce3e71614985ca3fb0c5a589e042beb8443a529ab3c0954e9f33a0f4e1f",
@@ -138929,10 +138980,10 @@
       "city": "Riga",
       "region": "Riga",
       "timezone": "Europe/Riga",
-      "asn": 1257,
-      "isp": "Tele2 Latvia",
+      "asn": 12578,
+      "isp": "Bridge Group Static IP Customers",
       "lat": 56.946,
-      "lon": 24.1059
+      "lon": 24.10589
     }
   },
   "6491742117": {
