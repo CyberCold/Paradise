@@ -16144,5 +16144,24 @@
     "username": "terumikami",
     "status": "new",
     "date": "26.11.2026 08:34"
+  },
+  "#0771": {
+    "oid": "#0771",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Energy Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Energy Ice, количество: 1",
+    "source_key": "7573068875:35175",
+    "source_chat_id": 7573068875,
+    "source_message_id": 35175,
+    "user_id": 7573068875,
+    "username": "︎ ︎",
+    "status": "new",
+    "date": "26.11.2026 12:53"
   }
 }
