@@ -16320,5 +16320,24 @@
     "username": "Ken4lk",
     "status": "new",
     "date": "26.11.2026 20:57"
+  },
+  "#0779": {
+    "oid": "#0779",
+    "items": [
+      {
+        "pid": "crystalbar20k",
+        "product_name": "Crystal Bar 20K",
+        "flavor": "Cherry Ice",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nCrystal Bar 20K, вкус: Cherry Ice, количество: 1",
+    "source_key": "8253922447:35230",
+    "source_chat_id": 8253922447,
+    "source_message_id": 35230,
+    "user_id": 8253922447,
+    "username": "Александр Дмитриевич",
+    "status": "new",
+    "date": "26.11.2026 21:51"
   }
 }
