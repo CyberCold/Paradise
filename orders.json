@@ -16301,5 +16301,24 @@
     "username": "Несокрушимый Алкоголик",
     "status": "new",
     "date": "26.11.2026 19:09"
+  },
+  "#0778": {
+    "oid": "#0778",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Dragon Fruit Banana Cherry",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Dragon Fruit Banana Cherry, количество: 1",
+    "source_key": "5855218937:35227",
+    "source_chat_id": 5855218937,
+    "source_message_id": 35227,
+    "user_id": 5855218937,
+    "username": "Ken4lk",
+    "status": "new",
+    "date": "26.11.2026 20:57"
   }
 }
