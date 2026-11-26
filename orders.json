@@ -16220,5 +16220,24 @@
     "username": "🩷",
     "status": "new",
     "date": "26.11.2026 16:42"
+  },
+  "#0775": {
+    "oid": "#0775",
+    "items": [
+      {
+        "pid": "vozolnew",
+        "product_name": "Vozol",
+        "flavor": "Purple Candy",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nVozol, вкус: Purple Candy, количество: 1",
+    "source_key": "6347638514:35205",
+    "source_chat_id": 6347638514,
+    "source_message_id": 35205,
+    "user_id": 6347638514,
+    "username": "Кристофер",
+    "status": "new",
+    "date": "26.11.2026 17:20"
   }
 }
