@@ -192653,5 +192653,16 @@
     ],
     "registered": "2026-11-26T21:44:30.657652",
     "last_seen": "2026-11-26T21:51:23.798962"
+  },
+  "6359454239": {
+    "id": 6359454239,
+    "first_name": "Alan4iks",
+    "username": "Alan4iks",
+    "source": "bot_start",
+    "sources": [
+      "bot_start"
+    ],
+    "registered": "2026-11-26T22:04:06.892956",
+    "last_seen": "2026-11-26T22:04:06.892956"
   }
 }
