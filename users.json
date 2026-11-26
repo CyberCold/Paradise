@@ -181794,10 +181794,11 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-11-05T18:46:53.732973",
-    "last_seen": "2026-11-26T10:57:28.729Z"
+    "last_seen": "2026-11-26T13:16:49.532619"
   },
   "9036584619": {
     "id": 9036584619,
