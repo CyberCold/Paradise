@@ -191684,9 +191684,10 @@
     "first_name": "Linda",
     "source": "chat",
     "sources": [
-      "chat"
+      "chat",
+      "bot_start"
     ],
     "registered": "2026-11-26T13:21:12.384320",
-    "last_seen": "2026-11-26T13:21:12.384320"
+    "last_seen": "2026-11-26T13:26:00.608470"
   }
 }
