@@ -16163,5 +16163,24 @@
     "username": "︎ ︎",
     "status": "new",
     "date": "26.11.2026 12:53"
+  },
+  "#0772": {
+    "oid": "#0772",
+    "items": [
+      {
+        "pid": "elfbarbc45k",
+        "product_name": "ELFBAR BC 45k puffs",
+        "flavor": "Kiwi Pineapple Peach",
+        "qty": 2
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nELFBAR BC 45k puffs, вкус: Kiwi Pineapple Peach, количество: 2",
+    "source_key": "890560841:35176",
+    "source_chat_id": 890560841,
+    "source_message_id": 35176,
+    "user_id": 890560841,
+    "username": "Dark_Tom",
+    "status": "new",
+    "date": "26.11.2026 13:16"
   }
 }
