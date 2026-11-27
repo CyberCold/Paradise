@@ -16484,5 +16484,24 @@
     "username": "noir",
     "status": "new",
     "date": "27.11.2026 17:29"
+  },
+  "#0787": {
+    "oid": "#0787",
+    "items": [
+      {
+        "pid": "elfbarbc45k",
+        "product_name": "ELFBAR BC 45k puffs",
+        "flavor": "Strawberry Grapefruit",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nELFBAR BC 45k puffs, вкус: Strawberry Grapefruit, количество: 1",
+    "source_key": "6518339689:35356",
+    "source_chat_id": 6518339689,
+    "source_message_id": 35356,
+    "user_id": 6518339689,
+    "username": "Qq",
+    "status": "new",
+    "date": "28.11.2026 00:10"
   }
 }
