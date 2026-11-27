@@ -193217,9 +193217,10 @@
     "first_name": "pie_kristina",
     "source": "chat",
     "sources": [
-      "chat"
+      "chat",
+      "bot_start"
     ],
     "registered": "2026-11-27T11:08:19.246217",
-    "last_seen": "2026-11-27T11:08:19.246217"
+    "last_seen": "2026-11-27T12:13:12.717029"
   }
 }
