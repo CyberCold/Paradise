@@ -184491,10 +184491,11 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-11-10T01:50:32.699797",
-    "last_seen": "2026-11-27T22:02:18.692Z"
+    "last_seen": "2026-11-28T00:10:00.409482"
   },
   "1662930612": {
     "id": 1662930612,
