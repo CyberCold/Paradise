@@ -16434,5 +16434,36 @@
     "username": "а",
     "status": "new",
     "date": "27.11.2026 15:26"
+  },
+  "#0785": {
+    "oid": "#0785",
+    "items": [
+      {
+        "pid": "elfbarbc45k",
+        "product_name": "ELFBAR BC 45k puffs",
+        "flavor": "Cherry Peach Soda",
+        "qty": 1
+      },
+      {
+        "pid": "elfbarbc45k",
+        "product_name": "ELFBAR BC 45k puffs",
+        "flavor": "Sour Apple Kiwi",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Grape Energy",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nELFBAR BC 45k puffs, вкус: Cherry Peach Soda, количество: 1\nELFBAR BC 45k puffs, вкус: Sour Apple Kiwi, количество: 1\nYami, вкус: Grape Energy, количество: 1",
+    "source_key": "886910684:35341",
+    "source_chat_id": 886910684,
+    "source_message_id": 35341,
+    "user_id": 886910684,
+    "username": "pie_kristina",
+    "status": "new",
+    "date": "27.11.2026 16:41"
   }
 }
