@@ -31324,7 +31324,7 @@
     "first_name": "Veronika",
     "language_code": "ru",
     "is_premium": false,
-    "visit_count": 8,
+    "visit_count": 9,
     "ips": [
       {
         "ip": "2a00:808:10a:d66e:48de:47e0:8a88:dc47",
@@ -31362,11 +31362,47 @@
         "lat": 56.946,
         "lon": 24.10589,
         "first_seen": "2026-07-26T12:35:43.624Z",
-        "last_seen": "2026-11-17T11:22:24.836Z",
-        "visits": 6
+        "last_seen": "2026-11-27T12:17:30.901Z",
+        "visits": 7
       }
     ],
     "visits": [
+      {
+        "timestamp": "2026-11-27T12:17:30.901Z",
+        "ip": "78.84.33.144",
+        "country": "LV",
+        "city": "Riga",
+        "region": "Riga",
+        "url": "https://paradiseminiapp.pages.dev/app",
+        "referrer": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+        "device": "iPhone",
+        "browser": "unknown",
+        "browser_version": null,
+        "os": "iOS",
+        "os_version": "18.7",
+        "language": "ru",
+        "cf_ray": "a61111f80bd9e4e7",
+        "screen": "402x874@3",
+        "tz_client": "Europe/Riga",
+        "color_depth": null,
+        "touch": 5,
+        "platform": "iPhone",
+        "memory": 0,
+        "cores": 4,
+        "connection": null,
+        "webgl_vendor": null,
+        "webgl_renderer": null,
+        "languages": [
+          "ru"
+        ],
+        "ua_platform": null,
+        "ua_platform_version": null,
+        "ua_architecture": null,
+        "ua_bitness": null,
+        "ua_model": null,
+        "ua_mobile": false
+      },
       {
         "timestamp": "2026-11-23T07:54:48.955Z",
         "ip": "2a00:808:10a:d66e:48de:47e0:8a88:dc47",
@@ -31679,7 +31715,7 @@
       "device": "iPhone",
       "browser": "unknown",
       "os": "iOS",
-      "updated_at": "2026-11-23T07:54:48.955Z"
+      "updated_at": "2026-11-27T12:17:30.901Z"
     },
     "device_keys": [
       "282242d4cb8bb779148327d01ed7b38c130b12ace8ee2968b350256ef424f047",
@@ -31690,10 +31726,10 @@
       "city": "Riga",
       "region": "Riga",
       "timezone": "Europe/Riga",
-      "asn": 1257,
-      "isp": "Tele2 Latvia",
+      "asn": 12578,
+      "isp": "Address pool for LTC-HOME customers",
       "lat": 56.946,
-      "lon": 24.1059
+      "lon": 24.10589
     },
     "source": "bot_start",
     "sources": [
@@ -31702,7 +31738,7 @@
       "chat"
     ],
     "registered": "2026-07-05T11:23:59.753794",
-    "last_seen": "2026-11-23T07:54:48.955Z"
+    "last_seen": "2026-11-27T12:17:30.901Z"
   },
   "1342465153": {
     "id": 1342465153,
@@ -186426,7 +186462,7 @@
         "cf_ray": "a610d2d64d6fe4cb",
         "screen": "390x844@3",
         "tz_client": "Europe/Riga",
-        "color_depth": null,
+        "color_depth": 0,
         "touch": 5,
         "platform": "iPhone",
         "memory": 0,
