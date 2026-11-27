@@ -16465,5 +16465,24 @@
     "username": "pie_kristina",
     "status": "new",
     "date": "27.11.2026 16:41"
+  },
+  "#0786": {
+    "oid": "#0786",
+    "items": [
+      {
+        "pid": "elfbarbc45k",
+        "product_name": "ELFBAR BC 45k puffs",
+        "flavor": "Sour Apple Kiwi",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nELFBAR BC 45k puffs, вкус: Sour Apple Kiwi, количество: 1",
+    "source_key": "5428316045:35342",
+    "source_chat_id": 5428316045,
+    "source_message_id": 35342,
+    "user_id": 5428316045,
+    "username": "noir",
+    "status": "new",
+    "date": "27.11.2026 17:29"
   }
 }
