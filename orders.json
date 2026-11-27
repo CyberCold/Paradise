@@ -16377,5 +16377,24 @@
     "username": "Miss Ravager.",
     "status": "new",
     "date": "27.11.2026 08:09"
+  },
+  "#0782": {
+    "oid": "#0782",
+    "items": [
+      {
+        "pid": "elfliq",
+        "product_name": "Elfliq",
+        "flavor": "Elf Jack",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nElfliq, вкус: Elf Jack, количество: 1",
+    "source_key": "5920742754:35313",
+    "source_chat_id": 5920742754,
+    "source_message_id": 35313,
+    "user_id": 5920742754,
+    "username": "Miss Ravager.",
+    "status": "new",
+    "date": "27.11.2026 12:16"
   }
 }
