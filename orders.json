@@ -16616,5 +16616,24 @@
     "username": "disillusion",
     "status": "new",
     "date": "28.11.2026 13:29"
+  },
+  "#0793": {
+    "oid": "#0793",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Lemon Lime",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Lemon Lime, количество: 1",
+    "source_key": "1369931246:35407",
+    "source_chat_id": 1369931246,
+    "source_message_id": 35407,
+    "user_id": 1369931246,
+    "username": "онтон",
+    "status": "new",
+    "date": "28.11.2026 17:12"
   }
 }
