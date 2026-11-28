@@ -16591,5 +16591,30 @@
     "username": "а",
     "status": "new",
     "date": "28.11.2026 13:17"
+  },
+  "#0792": {
+    "oid": "#0792",
+    "items": [
+      {
+        "pid": "elfbarbc45k",
+        "product_name": "ELFBAR BC 45k puffs",
+        "flavor": "Sour Apple Kiwi",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Grape Energy",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте, хочу повторить заказ:\nELFBAR BC 45k puffs, вкус: Sour Apple Kiwi, количество: 1\nYami, вкус: Grape Energy, количество: 1",
+    "source_key": "9036584619:35372",
+    "source_chat_id": 9036584619,
+    "source_message_id": 35372,
+    "user_id": 9036584619,
+    "username": "disillusion",
+    "status": "new",
+    "date": "28.11.2026 13:29"
   }
 }
