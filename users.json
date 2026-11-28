@@ -140119,10 +140119,11 @@
     "source": "bot_start",
     "sources": [
       "bot_start",
-      "webapp"
+      "webapp",
+      "chat"
     ],
     "registered": "2026-09-04T07:38:29.041628",
-    "last_seen": "2026-10-19T09:42:10.936Z"
+    "last_seen": "2026-11-28T16:40:23.269555"
   },
   "1474389161": {
     "id": 1474389161,
