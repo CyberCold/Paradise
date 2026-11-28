@@ -16503,5 +16503,30 @@
     "username": "Qq",
     "status": "new",
     "date": "28.11.2026 00:10"
+  },
+  "#0788": {
+    "oid": "#0788",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Dragon Fruit Banana Cherry",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Blueberry Sour Raspberry",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Dragon Fruit Banana Cherry, количество: 1\nYami, вкус: Blueberry Sour Raspberry, количество: 1",
+    "source_key": "1331893889:35357",
+    "source_chat_id": 1331893889,
+    "source_message_id": 35357,
+    "user_id": 1331893889,
+    "username": "Veronika",
+    "status": "new",
+    "date": "28.11.2026 11:32"
   }
 }
