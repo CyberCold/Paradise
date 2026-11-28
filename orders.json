@@ -16528,5 +16528,30 @@
     "username": "Veronika",
     "status": "new",
     "date": "28.11.2026 11:32"
+  },
+  "#0789": {
+    "oid": "#0789",
+    "items": [
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Blue Razz Lemonade",
+        "qty": 1
+      },
+      {
+        "pid": "yami",
+        "product_name": "Yami",
+        "flavor": "Pink Lemonade",
+        "qty": 1
+      }
+    ],
+    "raw_text": "Здравствуйте! Хотел(а) бы уточнить информацию по товару:\nYami, вкус: Blue Razz Lemonade, количество: 1\nYami, вкус: Pink Lemonade, количество: 1",
+    "source_key": "1380966145:35363",
+    "source_chat_id": 1380966145,
+    "source_message_id": 35363,
+    "user_id": 1380966145,
+    "username": "Виталий",
+    "status": "new",
+    "date": "28.11.2026 12:59"
   }
 }
